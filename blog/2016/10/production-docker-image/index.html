@@ -1,0 +1,288 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>My attempt at building a production grade docker image &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2016/10/production-docker-image/">
+                <h1>My attempt at building a production grade docker image</h1>
+            </a>
+            <p>2016-10-17 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/docker.png" alt="Book cover" /></p>
+
+<p>As I am self-hosting a couple of services, mainly for keeping my data for myself (Sorry Google, Facebook), I tried to build a &ldquo;production-grade docker image&rdquo;. Here&rsquo;s my attempt and what I learnt along the way.</p>
+
+<h2 id="radicale">Radicale</h2>
+
+<p>The first service I dockerized is <a href="http://radicale.org/">Radicale</a>, a calendar/contact server (CalDav/CardDav).</p>
+
+<p>Radicale is a good choice for a start due to its simplicity:</p>
+
+<ul>
+<li>written in python</li>
+<li>filesystem database</li>
+<li>single config file</li>
+<li>runnable directly with <code>radicale</code></li>
+<li>available in PyPI (<code>pip install radicale</code>)</li>
+</ul>
+
+<p>If we wanted to stop here, this Dockerfile is sufficient:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> debian:jessie</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span><span style="color:#e6db74"> DEBIAN_FRONTEND noninteractive</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> apt-get install -y python2.7 python-pip <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> rm -rf /var/lib/apt/lists/*<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install radicale<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span><span style="color:#e6db74"> [&#34;radicale&#34;]</span></code></pre></div>
+<h2 id="easy-use-a-smaller-base-image">Easy: Use a smaller base image</h2>
+
+<p>I started with a Debian base image, then switch to an Alpine image, then found there are even alpine+python images.</p>
+
+<p>The official Python images have an Alpine version: <a href="https://hub.docker.com/_/python/">https://hub.docker.com/_/python/</a></p>
+
+<p>I did not set a specific image version (eg. <code>python:3.5.2-alpine</code>) in the hope that it could ease upgrades and
+that a rebuild could be automatically fired by Docker hub using a configured dependency. Forget repeatable builds !</p>
+
+<p>Let&rsquo;s go for <code>python:3-alpine</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3-alpine</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install radicale<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span><span style="color:#e6db74"> [&#34;radicale&#34;]</span></code></pre></div>
+<h2 id="easy-process-management">Easy: Process management</h2>
+
+<p>It seems a good practice to use a process manager to handle PID 1 and reaping subprocesses.
+As I don&rsquo;t know if Radicale handles signals properly, nor if it would create new subprocesses and handle them well,
+let&rsquo;s use a process manager (this is more cargo-cult than scientific evidence).</p>
+
+<p>I started with <a href="https://github.com/Yelp/dumb-init">Yelp&rsquo;s Dumb Init</a> but:</p>
+
+<ul>
+<li>I got strange messages when stopping the container</li>
+<li>Dumb Init is in <code>PyPI</code> but requires a C compiler installed, which needs to be added to the Alpine image</li>
+</ul>
+
+<p>Alternative: use <a href="https://github.com/krallin/tini">Tini</a>, a <code>tiny but valid 'init' for containers</code>.
+Tini has the advantages of <em>just</em> working and installable in Alpine with <code>apk add --update tini</code>.</p>
+
+<p>Here is our image with Tini:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> python:3-alpine</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> pip install radicale<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span><span style="color:#e6db74"> [&#34;/tini&#34;, &#34;--&#34;]</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span><span style="color:#e6db74"> [&#34;radicale&#34;]</span></code></pre></div>
+<h2 id="hard-volumes-and-permission">Hard: Volumes and permission</h2>
+
+<p>Next best practices: Never Run As <strong>Root</strong>.
+We don&rsquo;t do that for hosted services since decades, so don&rsquo;t do that inside containers,
+especially publicly opened containers. The Docker Security team does not recommend it either
+(<a href="https://www.youtube.com/watch?v=LmUw2H6JgJo">https://www.youtube.com/watch?v=LmUw2H6JgJo</a>).</p>
+
+<p>That means: use the <code>USER</code> instruction or switch user when the container is run.
+Combined with a volume, that&rsquo;s were I started having <strong>permission problems</strong>.</p>
+
+<p>What seems to occur is that mounting a host volume (eg. <code>docker run ... -v /path:/data/radicale</code>)
+overwrites the permission <strong>in</strong> the container. What was owned by <code>radicale:radicale</code> became owned by <code>root:root</code> in the container.</p>
+
+<p>The reason is that the Docker daemon runs as <code>root</code>, so the mounted volume became root (UID=0) <strong>in</strong> the container, in which, UID=0 is also root. Note that, when the <code>radicale</code> user in the container has the UID 1000, which is my user on the host. Complete detail here: <a href="https://denibertovic.com/posts/handling-permissions-with-docker-volumes/">https://denibertovic.com/posts/handling-permissions-with-docker-volumes/</a></p>
+
+<p>I first found a solution from <a href="https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes">Stack Overflow</a> and
+in the book <a href="http://shop.oreilly.com/product/0636920035671.do">Using Docker</a> by Adrian Mouat (excellent book btw).</p>
+
+<p>The <a href="https://hub.docker.com/_/redis/">Redis docker image</a> handles the permission problem this way:</p>
+
+<ul>
+<li>First, use a custom entrypoint:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile">COPY docker-entrypoint.sh /usr/local/bin/<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span><span style="color:#e6db74"> [&#34;/usr/local/bin/docker-entrypoint.sh&#34;]</span></code></pre></div>
+<ul>
+<li>Then, <code>chown $user</code> the mounted volume in the entrypoint script:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;redis-server&#39;</span><span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+    chown -R redis .             <span style="color:#75715e"># Fix permissions</span>
+    exec gosu redis <span style="color:#e6db74">&#34;</span>$0<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>    <span style="color:#75715e"># Run as `redis` and not `root`</span>
+<span style="color:#66d9ef">fi</span></code></pre></div>
+<p>I reproduced the same behavior in my Radicale image with Tini:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Dockerfile" data-lang="Dockerfile">COPY docker-entrypoint.sh /usr/local/bin<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span><span style="color:#e6db74"> [&#34;/sbin/tini&#34;, &#34;--&#34;, &#34;docker-entrypoint.sh&#34;]</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span><span style="color:#e6db74"> [&#34;radicale&#34;, &#34;--config&#34;, &#34;/radicale/config&#34;]</span></code></pre></div>
+<p><a href="https://github.com/tomsquest/docker-radicale/blob/master/docker-entrypoint.sh">docker-entrypoint.sh</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;radicale&#39;</span> -a <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>id -u<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+    chown -R radicale .
+    exec su-exec radicale <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span></code></pre></div>
+<p>I used <a href="https://github.com/ncopa/su-exec">Su-exec</a>, a lightweight alternative to Gosu and more importantly,
+su-exec is available in Alpine repositories.</p>
+
+<h2 id="s6-the-alternative">S6, the alternative</h2>
+
+<p><a href="https://github.com/just-containers/s6-overlay">S6-Overlay</a> contains the <a href="http://skarnet.org/software/s6/overview.html">S6</a> series of scripts. As <code>overlay</code> they means a tgz to unpack in the image.</p>
+
+<p>S6-Overlay is a complete alternative, it provides:</p>
+
+<ul>
+<li>An init system; it could replace Tini.</li>
+<li>A script to fix permissions (custom scripts in <code>/etc/fix-attrs.d</code>); replace the <code>chown radicale</code></li>
+<li>Dropping privileges; replace Su-Exec</li>
+</ul>
+
+<p>I did not had the time to play with S6. The thing is quite complex and powerful, maybe more that what I need.</p>
+
+<h2 id="next">Next</h2>
+
+<p>There are still many things to do <strong>outside</strong> the image itself. I have yet to:</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Manage/Restart the container with Systemd</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Limit the number of automatic restart in Systemd</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Monitor the process in the container</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Limit the container capabilities</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Limit the container networking</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Limit the container resources</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Test automatically the process when rebuilding the image (the Python version is not enforced)</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Put the log in their own file and rotate them</label></li>
+</ul>
+
+<p>My Radicale image is available at:</p>
+
+<ul>
+<li>Docker Hub: <a href="https://hub.docker.com/r/tomsquest/docker-radicale/">https://hub.docker.com/r/tomsquest/docker-radicale/</a></li>
+<li>Github: <a href="https://github.com/tomsquest/docker-radicale">https://github.com/tomsquest/docker-radicale</a></li>
+</ul>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

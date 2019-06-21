@@ -1,0 +1,219 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Démarrer avec JPA, Spring, Maven et Glassfish &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2009/02/demarrer-avec-jpa-spring-maven-et-glassfish/">
+                <h1>Démarrer avec JPA, Spring, Maven et Glassfish</h1>
+            </a>
+            <p>2009-02-26 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2009/02/screenshot_06.jpeg" style="float:right"/></p>
+
+<p>Je vous propose un projet qui permettra de démarrer avec <a href="http://static.springframework.org/spring/docs/2.5.x/reference/">Spring</a>, de déployer sous <a href="https://glassfish.dev.java.net/">Glassfish v3</a> et de lancer les tests d&rsquo;intégration sans serveur d&rsquo;application, le tout avec le pom <a href="http://maven.apache.org/">Maven</a> qui va bien.</p>
+
+<h2 id="jpa">JPA</h2>
+
+<p>Le projet contient deux configurations de JPA : l&rsquo;une pour le déploiement, utilisée par Glassfish, l&rsquo;autre pour les tests d&rsquo;intégration.</p>
+
+<p>Les PersistentUnits sont configurés par :</p>
+
+<ul>
+<li>le fichier « persistence.xml » pour Glassfish, l&rsquo;attribut transaction-type doit valoir « JTA », sinon Glassfish refuse de démarrer ;</li>
+<li>le fichier « orm.xml » pour les test. L&rsquo;Attribut transaction-type vaut « RESOURCE_LOCAL »</li>
+</ul>
+
+<p>Spring est lui aussi configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.</p>
+
+<p><img src="/img/posts/2009/02/screenshot_05.jpeg" alt="" /></p>
+
+<p>Le fichier JPA pour le serveur est le suivant :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;jee:jndi-lookup</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#a6e22e">jndi-name=</span><span style="color:#e6db74">&#34;jdbc/springify&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;jee:jndi-lookup</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;entityManagerFactory&#34;</span> <span style="color:#a6e22e">jndi-name=</span><span style="color:#e6db74">&#34;persistence/springify&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;tx:jta-transaction-manager</span> <span style="color:#f92672">/&gt;</span></code></pre></div>
+<p>Le fichier JPA pour les tests d&rsquo;intégration est le suivant (un peu plus copieux) :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.jdbc.datasource.DriverManagerDataSource&#34;</span>
+    <span style="color:#a6e22e">p:driverClassName=</span><span style="color:#e6db74">&#34;com.mysql.jdbc.Driver&#34;</span> <span style="color:#a6e22e">p:url=</span><span style="color:#e6db74">&#34;jdbc:mysql://localhost:3306/springify&#34;</span>
+    <span style="color:#a6e22e">p:username=</span><span style="color:#e6db74">&#34;root&#34;</span> <span style="color:#a6e22e">p:password=</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">/&gt;</span>
+
+<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;entityManagerFactory&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean&#34;</span>
+    <span style="color:#a6e22e">p:dataSource-ref=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#a6e22e">p:persistenceXmlLocation=</span><span style="color:#e6db74">&#34;META-INF/orm.xml&#34;</span>
+    <span style="color:#a6e22e">p:persistence-unit-name=</span><span style="color:#e6db74">&#34;springify&#34;</span> <span style="color:#a6e22e">p:jpaVendorAdapter-ref=</span><span style="color:#e6db74">&#34;jpaAdapter&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;transactionManager&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.orm.jpa.JpaTransactionManager&#34;</span>
+    <span style="color:#a6e22e">p:entityManagerFactory-ref=</span><span style="color:#e6db74">&#34;entityManagerFactory&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;jpaAdapter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter&#34;</span>
+    <span style="color:#a6e22e">p:database=</span><span style="color:#e6db74">&#34;MYSQL&#34;</span> <span style="color:#a6e22e">p:showSql=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span></code></pre></div>
+<h2 id="glassfish">Glassfish</h2>
+
+<p>Côté Glassfish, il suffit de créer une nouvelle DataSource. Rien de très compliqué.
+Si vous utilisez MySQL, veillez à utiliser le moteur InnoDb afin que les transactions soient activées (sinon pas de rollback). Par exemple :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> Tag (
+    id      INT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span> AUTO_INCREMENT
+    ,label  VARCHAR(<span style="color:#ae81ff">256</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>
+    ,<span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (id)
+) Engine<span style="color:#f92672">=</span>InnoDB;</code></pre></div>
+<h3 id="noclassdeffounderror-javax-interceptor-invocationcontext">NoClassDefFoundError: javax/interceptor/InvocationContext</h3>
+
+<p>Cette erreur est visible au lancement de Glassfish mais elle n&rsquo;impacte pas le fonctionnement de l&rsquo;application. Apparemment, un Glassfish v3 n&rsquo;aurait pas les Jars EJB par défaut, comme dit dans <a href="http://markmail.org/message/j3p4jj4o6q27wfhn">ce message</a>. Je n&rsquo;ai pas poussé plus loin, « if it works, don&rsquo;t try to fix it ».</p>
+
+<p>Détail de l&rsquo;erreur pour info :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SEVERE: Class <span style="color:#f92672">[</span> javax<span style="color:#f92672">/</span>interceptor<span style="color:#f92672">/</span>InvocationContext <span style="color:#f92672">]</span> not found<span style="color:#f92672">.</span> Error <span style="color:#66d9ef">while</span> loading <span style="color:#f92672">[</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">org</span><span style="color:#f92672">.</span><span style="color:#a6e22e">springframework</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ejb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">interceptor</span><span style="color:#f92672">.</span><span style="color:#a6e22e">SpringBeanAutowiringInterceptor</span> <span style="color:#f92672">]</span>
+WARNING: Error in annotation processing: java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">NoClassDefFoundError</span><span style="color:#f92672">:</span> javax<span style="color:#f92672">/</span>interceptor<span style="color:#f92672">/</span>InvocationContext</code></pre></div>
+<h2 id="maven">Maven</h2>
+
+<p>Les dépendances dans le pom.xml ont été limitées au maximum. Pour démarrer, il faut :</p>
+
+<ul>
+<li>Spring et Spring-test pour les tests d&rsquo;intégration JPA ;</li>
+<li>Hibernate entity manager, c&rsquo;est l&rsquo;implémentation JPA utilisé pour les tests d&rsquo;intégration. Elle fournit aussi un lien vers le package javax.persistence ;</li>
+<li>J&rsquo;ai ajouté Spring-MVC pour monter une stack complète avec un Controleur Web annoté.</li>
+</ul>
+
+<h2 id="améliorations">Améliorations</h2>
+
+<p>Le &ldquo;petites&rdquo; choses à faire :</p>
+
+<ul>
+<li>Utiliser la même implémentation JPA que le serveur (EclipseLink avec Glassfish) pour les tests d&rsquo;intégration (Hibernate) pour éviter d&rsquo;éventuels écarts de comportement ;</li>
+<li>Configurer les transactions de manières déclaratives en utilisant Spring-AOP plutôt que des @Transactional un peu partout ;</li>
+<li>Séparer les tests d&rsquo;intégration des tests unitaires comme conseillé dans Better Builds With Maven ;</li>
+<li>Utiliser DBUnit pour ré-initialiser la base de données au démarrage des tests, ou passer à Unitils pour faire tout ça et encore plus.</li>
+</ul>
+
+<h2 id="le-projet">Le projet</h2>
+
+<p>Le code source est disponible sur Github : <a href="https://github.com/tomsquest/spring-jpa-maven-glassfish">https://github.com/tomsquest/spring-jpa-maven-glassfish</a></p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

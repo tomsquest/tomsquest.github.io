@@ -1,0 +1,225 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>JavaCamp 3 : Compte-rendu &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2009/02/javacamp-3-compte-rendu/">
+                <h1>JavaCamp 3 : Compte-rendu</h1>
+            </a>
+            <p>2009-02-01 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2009/02/parisjavacamp3.jpg" style="float:right"/></p>
+
+<p>J&rsquo;ai assisté hier au <a href="http://barcamp.org/JavaCampParis3">JavaCamp n°3</a> organisé par Valtech chez Sun. Une quinzaine de personnes étaient présentes et les sessions se sont rapidement organisées. Un compte rendu rapide des sessions auxquelles j&rsquo;ai participées.</p>
+
+<h2 id="le-test">Le TEST</h2>
+
+<p>Sujet général où nous avons parlé outils et méthodes.</p>
+
+<p><a href="http://ericlefevre.net/wordpress/">Eric Lefevre</a> explique que le test est avant tout une question de retour sur investissement (ROI). Le test pour le test n&rsquo;est pas une finalité, il faut tester ce qui est important et ce qui apporte de la valeur.</p>
+
+<p><img src="/img/posts/2009/02/cohn.jpg" style="float:right"/></p>
+
+<p>Il dessine rapidement la pyramide de Mike Cohn appliqué aux tests que je ne connaissais pas.</p>
+
+<p>Il y a quelques années la majorité des projets faisaient peu de tests unitaires, plus de tests fonctionnels et une majorité de tests graphiques (ah les fameux dossiers de recette). Aujourd&rsquo;hui, la tendance est à un maximum de tests unitaires et à beaucoup de tests graphiques (Selenium, robots). Hors ce type de test est coûteux en temps et dans la majorité des cas, on peut se contenter de tester les services plutôt que la couche graphique.</p>
+
+<p>Eric conseille de renverser la pyramide afin d&rsquo;avoir beaucoup de tests unitaires, un peu moins de tests fonctionnels (que l&rsquo;on pourrait appeler tests d&rsquo;intégration) et le moins possible de tests graphiques, servant uniquement à valider que la couche graphique soit fonctionnelle.</p>
+
+<p>Nous avons parlé d&rsquo;autres outils que <a href="http://fitnesse.org/">FitNesse</a> et <a href="http://www.greenpeppersoftware.com">GreenPepper</a>. Sébastien Letélié a repris la liste sur <a href="http://www.itaware.eu/2009/01/31/javacamp-iii-tdd-et-ddd/">son compte rendu du JavaCamp</a>.</p>
+
+<h2 id="ddd-quoi-qu-est-ce">DDD, quoi, qu&rsquo;est-ce ?</h2>
+
+<p>Cette session fut animée par Sébastien que je viens de citer. Je fais un rapide passage ici car il en a parlé sur <a href="http://www.itaware.eu/2008/08/24/programmation-orientee-composite/">son blog</a> et Xebia en a fait un <a href="http://blog.xebia.fr/2009/01/28/ddd-la-conception-qui-lie-le-fonctionnel-et-le-code/">article dernièrement</a>.</p>
+
+<p>Sébastien nous explique qu&rsquo;en <a href="http://en.wikipedia.org/wiki/Domain-driven_design">DDD</a>, on ne parle plus de classe mais d&rsquo;interface. Comme exemple, il cite un politicien qui a plusieurs rôles (Speaker, Décideur, Escroc). Chacun de ses rôles étant représentés par une interface qui seront combinées en Mixin qui sont en quelque sorte des classes d&rsquo;interface. On imagine déjà les avantages de séparer les responsabilités (testabilité) et le fait de pouvoir les combiner dynamiquement (réutilisabilité, évolutivité, souplesse).</p>
+
+<h2 id="scrum-is-evil">Scrum is Evil</h2>
+
+<p>Réuni pour parler de Scrum en général et notre façon de le pratiquer sur nos projets, on échange rapidement nos points de vue&hellip; différents. Eric est une nouvelle fois très à l&rsquo;aise pour discuter du sujet (voir <a href="http://ericlefevre.net/wordpress/2008/10/07/scrum-is-evil/">son article sur le sujet</a>).</p>
+
+<p>Une discussion est lancée sur la question « est-il possible d&rsquo;affecter certaines tâches d&rsquo;une itération plutôt que laisser l&rsquo;équipe les choisir ».</p>
+
+<p>Pour <a href="http://www.insideit.fr">Tarik Filali</a>, il est possible que le ScrumMaster affecte une tâche à quelqu&rsquo;un qui pourra la mener à bien, selon la criticité de celle-ci.</p>
+
+<p>Pour Eric, ce n&rsquo;est pas conseillé. Cette action a un effet bénéfique à court terme (tâche bien réalisée et finie à temps) mais elle a un mauvais effet à long terme. En effet, que doivent penser les développeurs à qui on n&rsquo;a pas osé confier cette tâche ? Quel est l&rsquo;effet sur leur moral ?</p>
+
+<p>Je vous passe les détails de la discussion que nous avons eue sur le fait de rester travailler tard le soir. Quel est l&rsquo;effet sur le moral de l&rsquo;équipe si le Scrum Master reste tard ? Ne doit-il pas montrer l&rsquo;exemple en prouvant que les estimations ont bien été faites et que tout va bien ?</p>
+
+<p>Sur la partie « Scrum is Evil », Eric nous rappelle que Scrum a des mauvais côtés, mais ce n&rsquo;est pas la méthode elle-même, c&rsquo;est sa popularité. Il rappelle le système de certification pyramidal et le fait de mettre en oeuvre les pratiques de Scrum sans penser aux valeurs qui doivent venir avec (collaboration, individus &amp; intéractions, logiciel fonctionnel, adaptation).</p>
+
+<p>Moralité : tous les mauvais côtés de Scrum se retrouvent dans les autres méthodes, donc Scrum est autant Evil que les autres :-) .</p>
+
+<h2 id="mock-ou-pas-mock">Mock ou pas Mock</h2>
+
+<p>Eric, très en forme ce jour-là, nous parle de trois approches :
+l&rsquo;approche Mock où on utilise un framework de Mock (EasyMock, JmockIt&hellip;) afin de vérifier le comportement de la classe en cours de test ;
+l&rsquo;approche Stub où l&rsquo;on va soi-même mettre en place des fausses classes pour comparer les entrées/sorties ;
+l&rsquo;approche « je ne teste pas les interactions mais uniquement la partie intéressante ».</p>
+
+<p>Cette 3ème approche mérite d&rsquo;être détaillée.
+Imaginez que vous vouliez tester la méthode suivante :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">calculeLaMoyenneDesSalaires</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    List employésSousPayés <span style="color:#f92672">=</span> chargeLaListeSilTePLait<span style="color:#f92672">();</span>
+    Pour chaque employé <span style="color:#f92672">{</span>
+        ajoute à la moyenne<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> laMoyenne<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Dans ce cas, on peut voir que ce qui est important dans la méthode, c&rsquo;est le comment on calcule la moyenne, non pas le chargement de la liste des employés. La 3ème approche consisterait à revoir le code pour avoir une méthode qui calcule la moyenne à partir d&rsquo;une liste d&rsquo;employés :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#a6e22e">calculeLaMoyenneDesSalaires</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    List employésSousPayés <span style="color:#f92672">=</span> chargeLaListeSilTePLait<span style="color:#f92672">();</span>
+    moyenne <span style="color:#f92672">=</span> calculeMoyenne<span style="color:#f92672">(</span>employésSousPayés<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">return</span> laMoyenne<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+<span style="color:#75715e">/* package */</span> calculeMoyenne<span style="color:#f92672">(</span>List employés<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    Pour chaque employé <span style="color:#f92672">{</span>
+        ajoute à la moyenne<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> laMoyenne<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Dans cette approche, le test se passe sur la méthode <code>calculeMoyenne(List employés)</code> et non sur la méthode appelante. L&rsquo;avantage est de se concentrer sur le code utile et non pas sur la glue (qu&rsquo;il faudrait mocker). L&rsquo;inconvénient principal est qu&rsquo;il faudra des tests d&rsquo;intégrations plus complets que dans une approche Mock ou Stub.</p>
+
+<p>L&rsquo;approche Mock consiste à vérifier les appels de méthode de la classe testée. Mais nous avons tendance à tester que tous les appels sont faits, dans l&rsquo;ordre, avec tous les bons paramètres. Eric pense qu&rsquo;il ne faut pas procéder ainsi. Il vaut mieux vérifier les appels qui nous intéresse vraiment. Par exemple, vérifier que la donnée est bien chargée et sauvegardée, mais ignorer la méthode fait un appel à une autre méthode en plus (approche <code>NiceMock</code> plutôt que <code>StrictMock</code> chez EasyMock).</p>
+
+<p>L&rsquo;approche Stub ne permet pas de contrôler tous les appels. On est donc plus libre dans les vérifications mais moins sévère. Dans ce cas, on utilise souvent une méthode Bottom-Up, c&rsquo;est-à-dire qu&rsquo;on va plutôt partir des DAO et remonter vers les services. C&rsquo;est l&rsquo;inverse de la méthode Mock où il est possible (et conseillé) de partir des services et de mocker les classes du dessous en attendant une vraie implémentation (« Top-Down »). Cela se rapproche du TDD et influence beaucoup le design des couches basses.</p>
+
+<p>Nous avons comparé rapidement les différents frameworks de Mock. EasyMock est le plus populaire mais pourtant pas le meilleur. Il n&rsquo;est pas facile d&rsquo;accès et il contraint à définir le comportement avant l&rsquo;appel à la méthode testée, ce qui rebute au début (on s&rsquo;attendrait à tester après).</p>
+
+<h2 id="une-bonne-journée">Une bonne journée</h2>
+
+<p>Mon premier JavaCamp ne sera pas le dernier. Plein de gens intéressants et motivés avec leurs expériences, cela donne un bon moment. Pas forcément de venir un samedi, mais c&rsquo;est tant mieux : seuls les gens motivés se déplacent :-) .</p>
+
+<p>Merci à tous pour ce que j&rsquo;ai appris ce jour-là et à <a href="http://valtech.fr">Valtech</a> pour l&rsquo;organisation.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

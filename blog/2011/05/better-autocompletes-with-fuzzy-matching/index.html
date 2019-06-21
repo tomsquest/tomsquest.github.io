@@ -1,0 +1,226 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Better autocompletes with Fuzzy Matching &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/">
+                <h1>Better autocompletes with Fuzzy Matching</h1>
+            </a>
+            <p>2011-05-13 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p>This article is an introduction to Fuzzy Matching and how it can improve an Autocomplete widget. Fuzzy Matching is used to find the most appropriate strings into a set of strings, like finding &ldquo;Sinatra&rdquo; when you mispelled it &ldquo;Senatra&rdquo;.</p>
+
+<p>We will setup a Sinatra application displaying an Ajax autocomplete widget, which call the backend to have the best matching results, even if the match is not strictly equal.</p>
+
+<h2 id="fuzzy-matching">Fuzzy Matching ?</h2>
+
+<p>Fuzzy Matching, aka <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Approximate_string_matching">Approximate String matching</a> on Wikipedia, is used mainly in spell checkers and in biology to measure the variation between DNA.</p>
+
+<p>In this article, we will use the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Levenshtein_distance">Levenshtein distance algorithm</a> to fetch results when there would be none using standard methods. Some other matching algorithms are also popular: the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Damerau%E2%80%93Levenshtein_distance">Damerau–Levenshtein distance</a> (Levenshtein with transposition of letters), the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Soundex">Soundex</a> (a phonetic algorithm for indexing names by sound) and also the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Bitap_algorithm">Bitap</a>. Many of them can be found in Ruby, or could also be hand coded.</p>
+
+<p>Using the Levenshtein algorithm, we get a distance between two strings. This gives for example :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#960050;background-color:#1e0010">$</span> distance(<span style="color:#e6db74">&#34;sinatra&#34;</span>, <span style="color:#e6db74">&#34;sinatra&#34;</span>) <span style="color:#75715e">#= 0, equality</span>
+<span style="color:#960050;background-color:#1e0010">$</span> distance(<span style="color:#e6db74">&#34;sinatra&#34;</span>, <span style="color:#e6db74">&#34;senatra&#34;</span>) <span style="color:#75715e">#= 1, one permutation</span>
+<span style="color:#960050;background-color:#1e0010">$</span> distance(<span style="color:#e6db74">&#34;sinatra&#34;</span>, <span style="color:#e6db74">&#34;rails&#34;</span>) <span style="color:#75715e">#= 6, many permutation</span></code></pre></div>
+<p>This allows us to display to the user not only the strings that match the input, but also the strings that are approximately equal.</p>
+
+<h2 id="the-application">The application</h2>
+
+<p>The application uses the following pieces of code :</p>
+
+<ul>
+<li>A Sinatra application</li>
+<li>JQuery UI for the Autocomplete</li>
+<li>The &ldquo;text&rdquo; gem which has an implementation of the Levenshtein distance algorithm (source: <a href="https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb">https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb</a>)</li>
+</ul>
+
+<p>The source code is available on : <a href="https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching">https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching</a></p>
+
+<h3 id="frontend">Frontend</h3>
+
+<p>The JQuery Autocomplete widget is simple to setup. The source is defined to call the &ldquo;countries&rdquo; URL and it will send it the input like &ldquo;countries?term=my_input&rdquo;.</p>
+
+<h4 id="1-add-an-input">1. Add an input</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ui-widget&#34;</span>&gt;
+ &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;country&#34;</span>&gt;Country:&lt;/<span style="color:#f92672">label</span>&gt;
+ &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;country&#34;</span> /&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+<h4 id="2-bind-the-js">2. Bind the JS</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#66d9ef">function</span>() {
+  <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#country&#34;</span>).<span style="color:#a6e22e">autocomplete</span>({
+    <span style="color:#a6e22e">source</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;countries&#34;</span>,
+    <span style="color:#a6e22e">select</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span>( <span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">ui</span> ) {
+      <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#results&#34;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#e6db74">&#34;input was: &#39;&#34;</span><span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">value</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;&#39; and selection was: &#34;</span><span style="color:#f92672">+</span> <span style="color:#a6e22e">ui</span>.<span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">value</span>);
+    }
+  });
+});
+</code></pre></div>
+<h3 id="backend">Backend</h3>
+
+<p>Even simpler, the backend is a simple get method which respond with JSON :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">get <span style="color:#e6db74">&#34;/countries&#34;</span> <span style="color:#66d9ef">do</span>
+ content_type <span style="color:#e6db74">:json</span>
+ find_countries(params<span style="color:#f92672">[</span><span style="color:#e6db74">:term</span><span style="color:#f92672">]</span>)<span style="color:#f92672">.</span>to_json
+<span style="color:#66d9ef">end</span></code></pre></div>
+<p>The real stuff is in the &ldquo;find_countries&rdquo; method :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_countries</span>(term)
+  <span style="color:#75715e"># Exact match</span>
+  countries <span style="color:#f92672">=</span> <span style="color:#66d9ef">COUNTRIES</span><span style="color:#f92672">.</span>find{<span style="color:#f92672">|</span>c<span style="color:#f92672">|</span> c<span style="color:#f92672">.</span>downcase <span style="color:#f92672">==</span> term<span style="color:#f92672">.</span>downcase}<span style="color:#f92672">.</span>to_a
+
+  <span style="color:#75715e"># Partial match</span>
+  <span style="color:#66d9ef">if</span> countries<span style="color:#f92672">.</span>empty?
+    countries <span style="color:#f92672">=</span> <span style="color:#66d9ef">COUNTRIES</span><span style="color:#f92672">.</span>find_all{<span style="color:#f92672">|</span>c<span style="color:#f92672">|</span> c<span style="color:#f92672">.</span>downcase<span style="color:#f92672">.</span>include? term<span style="color:#f92672">.</span>downcase }
+
+    <span style="color:#75715e"># Here is where we call the distance method of the text gem. It computes the Levenshtein distance and</span>
+    <span style="color:#75715e"># appends the results to the partial match done before</span>
+    max_distance <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#75715e"># Should be tweaked</span>
+    countries <span style="color:#f92672">+=</span> <span style="color:#66d9ef">COUNTRIES</span><span style="color:#f92672">.</span>find_all{<span style="color:#f92672">|</span>c<span style="color:#f92672">|</span> distance(c, term) <span style="color:#f92672">&lt;</span> max_distance}<span style="color:#f92672">.</span>sort_by{<span style="color:#f92672">|</span>c<span style="color:#f92672">|</span> distance(c, term) }
+
+    countries<span style="color:#f92672">.</span>uniq!
+  <span style="color:#66d9ef">end</span>
+
+  countries
+<span style="color:#66d9ef">end</span></code></pre></div>
+<p>The find_countries method can serve as an example. It uses exact and partial matching and use the Levenshtein distance to add some more results. A real-world-awesome-production implementation would be different, by narrowing the results (less results, lower distance).</p>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+
+<p>With a minimal mathematical background and a minimal technical setup (no indexing, no DB specific feature), we have boosted our autocomplete results.</p>
+
+<p>We&rsquo;ve seen how to setup a quick-and-simple sinatra app which computes on the Levenshtein distance on the backend. The Frontend was easily done using the JQuery UI Autocomplete widget.</p>
+
+<p>For advanced use cases, we should improve the way we mix the Fuzzy-maching results with the strictly matching results. Switching to a better algorithm, or a set of algorithm (Longest common substring + Dameau-Levenshtein) could also be easily done.</p>
+
+<p>`The complete source code is available on Github : <a href="https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching">https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching</a></p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

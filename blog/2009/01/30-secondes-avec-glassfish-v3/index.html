@@ -1,0 +1,191 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>30 secondes avec Glassfish v3 &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2009/01/30-secondes-avec-glassfish-v3/">
+                <h1>30 secondes avec Glassfish v3</h1>
+            </a>
+            <p>2009-01-15 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2009/01/glassfish_logo.jpg" style="float:right"/></p>
+
+<p><a href="https://glassfish.dev.java.net/">Glassfish</a>, le serveur d&rsquo;app dont on entend parler <a href="http://www.touilleur-express.fr/2009/01/14/compte-rendu-de-la-soiree-du-paris-jug-sur-jee6-et-glassfish/">un peu partout</a>.</p>
+
+<h2 id="1-intégration-avec-maven-semi-echec">1. Intégration avec Maven : semi-Echec</h2>
+
+<p>Glassfish n&rsquo;a apparemment pas de support de Maven officiel. Il existe quelques plugins Maven mais d&rsquo;après <a href="http://eskatos.wordpress.com/2008/03/28/maven-plugins-for-glassfish-ecosystem/">cet article</a>, rien de vraiment fonctionnel à part le plugin de l&rsquo;auteur.</p>
+
+<p>J&rsquo;ai donc essayé le plugin Maven « <a href="http://code.google.com/p/asadmin-maven-plugin/">Asadmin </a>» qui m&rsquo;a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version 0.3-snapshot » de Asadmin a fonctionné.</p>
+
+<p>Une autre solution serait de démarrer soi-même un Glassfish via l&rsquo;<a href="https://embedded-glassfish.dev.java.net/">API Embedded</a> (voir ce <a href="http://www.tomsquest.com/blog/2008/09/jetty-demarrage-rapide/#comment-11">ce commentaire</a> d&rsquo;Alexis MP). Mais apparemment, il s&rsquo;agit toujours de déployer un War. Il faut donc générer à chaque changement de code.</p>
+
+<p>Pour résumer :</p>
+
+<ul>
+<li>Pas de plugin Maven pour Glassfish aussi facile d&rsquo;accès que celui de Jetty ;</li>
+<li>Mais possibilité de déployer un War en ligne de commande facilement.</li>
+</ul>
+
+<h2 id="2-installation-succès">2. Installation : succès</h2>
+
+<p>Le site du projet a plusieurs liens vers différents guides de démarrage qui donnent à peu près les mêmes infos.</p>
+
+<ul>
+<li>Dézipper le zip ;</li>
+<li>Lancer $GLASSFISH_HOME/bin/asadmin start-domain ;</li>
+<li>Pour tester, copier l&rsquo;application hello.war dans le répertoire autodeploy ;</li>
+<li>En quelques secondes, l&rsquo;application devient accessible ainsi que la console d&rsquo;admin.</li>
+</ul>
+
+<p>Aucun problème d&rsquo;installation, Glassfish est très rapidement mis en place.</p>
+
+<p>Le démarrage est très rapide mais si on suppose vite que plein de choses se passent en tâche de fond (comme le précise la console au lancement).</p>
+
+<h2 id="3-intégration-à-eclipse-succès">3. Intégration à Eclipse : succès</h2>
+
+<p>L&rsquo;ajout d&rsquo;un serveur dans le WTP d&rsquo;Eclipse propose de télécharger des « server adaptor » additionnels, chose requise pour utiliser Glassfish. Ici encore, la <a href="https://glassfishplugins.dev.java.net/eclipse34/index.html">documentation</a> est détaillée avec des captures d&rsquo;écran.</p>
+
+<p>Mon impatience a failli me coûter cher. La liste a mis plusieurs minutes pour trouver le connecteur Glassfish. Si ça vous arrive, allez prendre un café en attendant.</p>
+
+<p>Une fois le serveur ajouté, le déploiement sur Glassfish d&rsquo;un projet Web prend quelques secondes, démarrage du serveur compris. Une modification d&rsquo;une classe Java est prise en compte quasiment immédiatement.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Glassfish est facilement installable. Sa mise en place dans un projet est rapide au travers d&rsquo;un IDE. Il démarre en quelques secondes, aussi vite que Jetty.</p>
+
+<p>Pourtant sur l&rsquo;aspect configuration et intégration à Maven, <a href="http://www.tomsquest.com/blog/2008/09/jetty-demarrage-rapide/">Jetty est encore imbattable</a> (plugin Maven au Top et simple fichier de config pour les dataSources).</p>
+
+<p>Il m&rsquo;a manqué du temps pour tester le rechargement à chaud des classes et la persistance des sessions mais si c&rsquo;est aussi facile que le reste, je l&rsquo;adopte pour mes dév.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

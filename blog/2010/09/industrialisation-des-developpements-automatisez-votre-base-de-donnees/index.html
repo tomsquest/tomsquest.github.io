@@ -1,0 +1,260 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Industrialisation des développements : automatisez votre base de données &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/">
+                <h1>Industrialisation des développements : automatisez votre base de données</h1>
+            </a>
+            <p>2010-09-16 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p>Le grand oubli dans l&rsquo;industrialisation des développements est la base de données, cette chose monolithique et statique qui n&rsquo;évolue pas aussi vite et aussi aisément que le code. Au même titre que l&rsquo;intégration continue et les systèmes de gestion de version pour le code source, il existe des outils permettant de fluidifier et d&rsquo;automatiser le travail autour du schéma physique des données. Travailler avec ces outils permet de compléter une démarche Agile en permettant une réactivité forte face aux changements.</p>
+
+<p>Une première partie de cet article concernera les principes et pratiques autour de ces outils (partie « boss compliant »). La deuxième est orientée technique (partie « geek aware »).</p>
+
+<h2 id="principes-directeurs">Principes directeurs</h2>
+
+<p>Dans son article paru en 2003 intitulé « <a href="http://martinfowler.com/articles/evodb.html">Evolutionary Database Design</a> », Martin Fowler pose les principes du design évolutif de base de données. Les points clés en sont :</p>
+
+<ul>
+<li>La base de données évolue en même temps que le code ;</li>
+<li>Il faut donc tester en continu la base de données pour permettre un refactoring sans conséquence, comme on le fait avec le code source ;</li>
+<li>Il faut outiller les processus autour de la base de données afin d&rsquo;améliorer la productivité des développements et leur industrialisation.</li>
+</ul>
+
+<p>Les outils existants reposent sur les principes suivants :</p>
+
+<ul>
+<li>Un schéma doit pouvoir être détruit et recréé de manière répétable ;</li>
+<li>La version du schéma doit être identifiable ;</li>
+<li>La montée et la descente de version doivent être automatisées ;</li>
+<li>Les changements appliqués doivent être connus ;</li>
+<li>Un changement doit pouvoir être défait ou annulé ;</li>
+<li>Un changement précédemment appliqué ne doit pas être modifié mais un nouveau changement doit être créé.</li>
+</ul>
+
+<h2 id="principes-techniques">Principes techniques</h2>
+
+<p>Sur le plan technique, le fonctionnement des outils de migration est simple. Ils se basent sur une table contenant la version de la base de données. La liste des scripts exécutés est conservée ainsi qu’une empreinte de chaque script afin de détecter une altération d’un script déjà exécuté.</p>
+
+<p>A chaque lancement, l’outil de migration compare la version de la base et les scripts existants et propose la mise à jour le cas échéant.</p>
+
+<p>Il est également possible de « descendre de version » le schéma (fonctionnalité disponible dans quasiment tous les outils). Il s’agit de remettre la base de données dans un état cohérent. Deux cas d’usage :</p>
+
+<ul>
+<li>développement d’une nouvelle fonctionnalité : il est ainsi possible de créer un script et de l’exécuter plusieurs fois (montée de version, test, modification, descente, puis nouvelle montée de version). La descente de version permet ainsi de faire revenir la base de données dans l’état précédent ;</li>
+<li>Ré-alignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.</li>
+</ul>
+
+<p>Même si la descente de version est utile, elle a néanmoins deux inconvénients. Le premier est que les instructions de descente doivent être écrites à la main. Les outils les plus simples fonctionnent sur le principe où chaque script contient une partie montée de version et une partie descente (voir l’exemple plus bas avec MyBatis). Seul Liquibase est capable de générer les instructions de descente de version grâce à son DSL.</p>
+
+<p>Le deuxième inconvénient est que certaines montées de version ne sont pas réversibles (suppression de table ou de données). Dans ce cas, la descente ne sera possible que jusqu&rsquo;à la version incluant ce type de modification. L&rsquo;alternative est de recréer le schéma de zéro, une fonctionnalité que tous les outils proposent et qui est en fin de compte très rapide.</p>
+
+<h2 id="bonnes-pratiques">Bonnes pratiques</h2>
+
+<p>Les bonnes pratiques poussées par ces outils sont :</p>
+
+<ul>
+<li>Scripts (SQL ou XML pour Liquibase) stockés avec le code source</li>
+<li>Une base de données par développeur (réaliste quand la gestion de la DB est automatisée, hors problème de coût de licence) ;</li>
+<li>Une base de données commune à l’équipe qui représente l’état complet et stable ;</li>
+<li>L’intégration continue déroule l’ensemble des scripts à chaque livraison ;</li>
+<li>Un script qui a déjà pu être exécuté ne doit plus être modifié. On risque sinon de désynchroniser les scripts et le schéma. La livraison d’un nouveau script est nécessaire dans ce cas. Ce script est un refactoring du précédent. La seule exception est un script buggé qui provoque la perte de la donnée. Il ne faut donc pas que ce script atteigne les autres environnements.</li>
+</ul>
+
+<h2 id="les-outils-existants">Les outils existants</h2>
+
+<h3 id="liquibase-puissant-mais-complexe">Liquibase : puissant mais complexe</h3>
+
+<p><a href="http://liquibase.org/">Liquibase</a> est le plus connu des outils de migration de base de données. Il se base sur les patterns décrits dans le livre « Refactoring database ». À ce titre, il est conçu autour d’une approche théorique par pattern de refactoring.</p>
+
+<p>Le noyau de Liquibase est son DSL basé sur XML qui a les avantages :</p>
+
+<ul>
+<li>d’être compatible avec plusieurs moteurs SQL ;</li>
+<li>de donner une sémantique aux opérations (on écrira un &lt;renameColumn&gt; plutôt qu’un alter table) ;</li>
+<li>de générer automatique des instructions de rollback (par exemple, un &lt;createColumn&gt; sera compensé par un &lt;dropColumn&gt;).</li>
+</ul>
+
+<p>Liquibase est complet. Il s’intègre à Maven, Grails, Spring et Hibernate et supporte la génération de documentation ou encore la création d’un diff entre schémas.</p>
+
+<p>L’inconvénient principal de Liquibase est une certaine complexité qui ne se retrouve pas dans les autres outils (XML, notion de changelog et de changeset, versionning sur id/auteur/chemin). La courbe d&rsquo;apprentissage est donc plus élevée que les autres outils se basant purement sur du SQL.</p>
+
+<p>Exemple de changeSet Liquibase :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;changeSet</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">author=</span><span style="color:#e6db74">&#34;bob&#34;</span><span style="color:#f92672">&gt;</span>
+ <span style="color:#f92672">&lt;createTable</span> <span style="color:#a6e22e">tableName=</span><span style="color:#e6db74">&#34;department&#34;</span><span style="color:#f92672">&gt;</span>
+  <span style="color:#f92672">&lt;column</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;id&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;int&#34;</span><span style="color:#f92672">&gt;</span>
+   <span style="color:#f92672">&lt;constraints</span> <span style="color:#a6e22e">primaryKey=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">nullable=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">/&gt;</span>
+  <span style="color:#f92672">&lt;/column&gt;</span>
+  <span style="color:#f92672">&lt;column</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;name&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;varchar(50)&#34;</span><span style="color:#f92672">/&gt;</span>
+ <span style="color:#f92672">&lt;/createTable&gt;</span>
+<span style="color:#f92672">&lt;/changeSet&gt;</span></code></pre></div>
+<h3 id="les-pragmatiques">Les pragmatiques</h3>
+
+<p>D’autres outils ne vont pas aussi loin que Liquibase en termes de fonctionnalités et d&rsquo;abstraction mais leur approche est pragmatique et plus simple. Ils visent avant tout à automatiser la gestion des scripts SQL. Les principaux sont <a href="http://www.mybatis.org/java.html">MyBatis Schema Migration</a>, <a href="http://dbmaintain.sourceforge.net/">DbMaintain</a> et <a href="http://code.google.com/p/c5-db-migration/">C5 DB Migration</a>.</p>
+
+<p>Le principe de ces outils est assez simple et consiste à lancer une série de scripts stockés dans une arborescence répartie en version. Les actions sont tracées ce qui permet de connaître l’état du schéma.</p>
+
+<p>Exemple d’arborescence organisée pour DbMaintain :</p>
+
+<pre><code>scripts/01_v1.0/01_products_and_orders.sql
+                02_users.sql
+        02_v1.1/01_add_barcode_column.sql
+                02_drop_itemcode_column.sql
+</code></pre>
+
+<p>Le schéma de base de données est mis à jour en exécutant :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dbmaintain.sh update chemin/vers/les/scripts</code></pre></div>
+<p>Dans le cas de MyBatis, les instructions de montée et de descente de version sont écrites dans le même script SQL.
+Exemple :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#75715e">--// create product table
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> PRODUCT (ID INT, NAME VARCHAR(<span style="color:#ae81ff">255</span>));
+
+<span style="color:#75715e">--//@UNDO
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> PRODUCT;</code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Les outils de migration de base de données permettent une meilleure productivité en levant certaines barrières au changement du schéma des données et ils rendent l&rsquo;industrialisation accessible.</p>
+
+<p>Les points clés à retenir sont :</p>
+
+<ul>
+<li>Les outils de migration de bases de données nous permettent de gagner en efficacité lors de la manipulation du schéma de la base de données ;</li>
+<li>Ces outils fiabilisent les traitements en les automatisant et en les intégrants à l’usine de développement ;</li>
+<li>Ces outils apportent de bonnes pratiques permettant un travail en équipe plus efficace ;</li>
+<li>Ces outils sont disponibles, simples à mettre en place et OpenSource.</li>
+</ul>
+
+<p>Par extension, on peut imaginer qu&rsquo;une application puisse se mettre à jour d&rsquo;elle-même. En effet, il s’agirait de permettre à l’application de lancer les migrations de schémas quand elle démarre. Cette fonctionnalité réduit le temps de mise en production en supprimant l’étape de passage des scripts par les DBA. Liquibase propose déjà cette fonctionnalité.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Présentation et retour sur GreenPepper &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/12/presentation-et-retour-sur-greenpepper/">
+                <h1>Présentation et retour sur GreenPepper</h1>
+            </a>
+            <p>2008-12-21 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2008/12/greenpepper-logo.png" style="float:right"/></p>
+
+<p>Au boulot, nous évaluons <a href="http://www.greenpeppersoftware.com">GreenPepper</a> de la société <a href="http://www.pyxis-tech.com/fr/">Pyxis</a>. GreenPepper est un outil de test fonctionnel et nous souhaitons à terme que les MOA l&rsquo;utilisent afin de rédiger les spécifications et les tests associés.</p>
+
+<p>Nous ne sommes qu&rsquo;en phase de POC technique et nous avons rencontré quelques soucis. Je vous fais mon retour au bout d&rsquo;une semaine avec GreenPepper.</p>
+
+<h2 id="spécification-exécutable">Spécification exécutable</h2>
+
+<p>La base de GreenPepper est le concept de spécification exécutable. Une spec est dite exécutable quand elle fournit directement les cas de tests qui permettent de la valider et que ceux-ci sont exécutables afin de déterminer si les règles sont bien implémentées. Le site du projet héberge une <a href="http://www.greenpeppersoftware.com/greenpepper-whatsin-videos/whatis-es/index.html">vidéo de présentation</a>.</p>
+
+<p>Dans la pratique, la création d&rsquo;une spécification exécutable avec GreenPepper prend la forme suivante :</p>
+
+<ul>
+<li>La MOA se connecte au Wiki et exprime sa règle métier en bon français ;</li>
+<li>Elle décrit également comment tester la fonctionnalité. La syntaxe se fait à base de tableaux qui permettent au système d&rsquo;extraire les méthodes et données de test à utiliser ;</li>
+<li>L&rsquo;équipe de développement écrit ensuite le liant entre la page de test et le code réel. Ce branchement est appelé « fixture ».</li>
+</ul>
+
+<h3 id="exemple-de-spécification-fonctionnelle">Exemple de spécification fonctionnelle</h3>
+
+<p><img src="/img/posts/2008/12/gp-test2.jpg" alt="" /></p>
+
+<p>Chaque page GreenPepper dispose d&rsquo;un bouton « Execute » qui permet d&rsquo;appeler les fixtures avec les paramètres du tableau. L&rsquo;appui sur ce bouton invoque le système testé qui récupère dans la page les classes à créer et invoque les méthodes avec les données.</p>
+
+<p>Dans l&rsquo;exemple ci-dessus, GreenPepper instancie la classe Cart et invoque deux fois la méthode « add » avec en paramètre « Persian Cat » puis « Dalmation » et enfin invoque la méthode numberOfItems. Celle-ci doit retourner 2. Si ce n&rsquo;est pas le cas, la case du tableau sera coloriée en rouge ou en vert si le résultat est valide.</p>
+
+<h2 id="le-coin-de-la-technique">Le coin de la technique</h2>
+
+<p><img src="/img/posts/2008/12/logo-confluence.gif" style="float:right"/></p>
+
+<p>GreenPepper est en réalité un plugin pour <a href="http://www.atlassian.com/software/confluence/">Confluence</a>, le wiki édité par Atlassian.</p>
+
+<p>C&rsquo;est LA différence avec <a href="http://fitnesse.org/">FitNesse</a>, un autre outil très populaire de test fonctionnel. FitNesse embarque son propre serveur Web et son propre Wiki. Chez Pyxis, il a été décidé de s&rsquo;appuyer sur un outil existant, réputé et fiable.</p>
+
+<p>GreenPepper se contente donc de rentre les pages du Wiki Confluence testables en leur ajoutant des macros et le fameux bouton « Execute » vu plus haut.</p>
+
+<h2 id="qualités-de-greenpepper">Qualités de GreenPepper</h2>
+
+<p>GreenPepper, c&rsquo;est avant tout Confluence. Ce dernier apporte une plateforme puissante permettant à tous les acteurs de communiquer autour du logiciel. C&rsquo;est un wiki donc il apporte des notions de collaboration, de versionning et de partage.</p>
+
+<p>GreenPepper s&rsquo;intègre également avec Jira, un autre produit Atlassian permettant de faire du bug tracking. On peut donc imaginer avoir un rapport de bug lié à une page de spécification qui contient le test permettant de reproduire le bug.</p>
+
+<p>L&rsquo;écriture des fixtures peut se faire en Java et en .Net. Une fixture est une simple classe et GreenPepper ne pose aucune contrainte à ce niveau. Le produit propose aussi de créer un SUD (System Under Developement) permettant de réaliser des actions quand une fixture est instanciée/libérée (sorte de « setUp/tearDown »), d&rsquo;enregistrer des convertisseurs (par exemple, convertir un numéro de client en Client) et d&rsquo;importer des packages de fixture par défaut. Dans notre SUD actuel, nous démarrons également le contexte Spring afin d&rsquo;injecter les beans dans les fixtures.</p>
+
+<h2 id="problèmes-rencontrés">Problèmes rencontrés</h2>
+
+<p>Nous avons rencontré plusieurs problèmes avec GreenPepper. Nous étions très confiants pour un produit « packagé » comme GreenPepper, mais la machine fut difficile à démarrer.</p>
+
+<h3 id="la-documentation">La documentation</h3>
+
+<p>Le plus gros point noir du produit est sa documentation. Elle forme un patchwork difficile à ingérer. On trouve des exemples mais pas toujours le code associé. Certaines fixtures sont détaillées, mais je n&rsquo;ai pas trouvé les exemples simples ni percutants.</p>
+
+<p>La courbe d&rsquo;apprentissage n&rsquo;est donc pas basse. C&rsquo;est laborieux. La documentation est difficilement compréhensible à la première lecture, voir à la deuxième. Après quelques jours, je commence enfin à en comprendre certaines sections.</p>
+
+<p>Un exemple vécu lors de l&rsquo;installation : le « step by step » est simple à suivre mais rien ne fonctionnait à la fin. Nous avons du désinstaller le plugin GreenPepper et le réinstaller différemment de ce qui est précisé dans la documentation. Pour cela, il a fallu chercher dans les forums afin de voir qu&rsquo;il était conseillé d&rsquo;installer le plugin directement dans WEB-INF/lib (plutôt que par l&rsquo;installateur Confluence comme indiqué dans la doc).</p>
+
+<h3 id="le-plugin-eclipse">Le plugin Eclipse</h3>
+
+<p>Le plugin permet de rapatrier les pages de tests et de les exécuter localement. Il offre la possibilité de générer le squelette des fixtures à partir des pages.</p>
+
+<p>Beaucoup d&rsquo;options sont proposées et on a du mal à savoir quoi mettre. Il faut un répertoire de spécs que je n&rsquo;ai pas. Un SUT ? Non, je n&rsquo;en ai pas (encore). Et le classpath, j&rsquo;ai celui d&rsquo;Eclipse, pourquoi j&rsquo;en utiliserai un autre ?</p>
+
+<p>Au bout de quelques heures, ça fonctionne à peu près. Entre temps, on a essayé toutes les options dans tous les sens. C&rsquo;est rigolo 5 minutes.</p>
+
+<p>A titre d&rsquo;info, voilà la procédure :</p>
+
+<ul>
+<li>Ecrire sa page dans Confluence et la marquer comme « Implemented » ;</li>
+<li>Rafraichir la vue « Repository » dans Eclipse : la page apparaît ;</li>
+<li>Executer une première fois la page depuis le menu de cette vue ;</li>
+<li>Ouvrir avec le WebBrowser d&rsquo;Eclipse le HTML de la page crée plus haut (répertoire /greenpepper) ;</li>
+<li>Executer la page une deuxième fois mais depuis le menu Run d&rsquo;Eclipse ;</li>
+<li>La page doit enfin montrer les résultats (du jaune si les fixtures n&rsquo;exisente pas) ;</li>
+</ul>
+
+<h3 id="autres-points">Autres points :</h3>
+
+<ul>
+<li>Le plugin Eclipse n&rsquo;est pas stable. La vue se freeze de temps en temps ;</li>
+<li>Il est en version bêta depuis un moment ;</li>
+<li>Eclipse 3.4 n&rsquo;est pas supporté mais il s&rsquo;est installé sans soucis.</li>
+</ul>
+
+<h3 id="capture-du-lancement-depuis-eclipse">Capture du lancement depuis Eclipse</h3>
+
+<p><img src="/img/posts/2008/12/gp-runeclipse.jpg" alt="" /></p>
+
+<h3 id="le-classpath-et-maven">Le classpath et Maven</h3>
+
+<p>Je n&rsquo;ai pas mis en place cette partie là sur notre projet actuel donc j&rsquo;ai peu à en dire. Ah si, une chose : beaucoup de sueur.</p>
+
+<p>Le plugin Maven permet de construire le classpath contenant l&rsquo;ensemble des dépendances pour permettre à GreenPepper d&rsquo;appeler les fixtures qui utilisent les classes de votre projet.</p>
+
+<p>Comme pour le plugin Eclipse, il a fallu batailler pour comprendre la doc, savoir quels paramètres saisir et comment configurer le SUT dans le plugin GreenPepper de Confluence (ne cherchez pas de définition de SUT dans la doc, il n&rsquo;y en a pas).</p>
+
+<p>Et quand ça ne fonctionne pas, il est difficile de trouver les erreurs et les exceptions remontées.</p>
+
+<h2 id="quelques-conseils-autour-de-greenpepper">Quelques conseils autour de GreenPepper</h2>
+
+<p>Eric Pantera, d&rsquo;<a href="http://www.octo.com/">Octo Technology</a>, est venu nous faire un retour sur GreenPepper. Il l&rsquo;utilise depuis 10 mois chez un de ses clients.</p>
+
+<p>Comme nous, l&rsquo;équipe a eu beaucoup de mal à mettre en place l&rsquo;outil. Mais dès les premières itérations, ils ont commencé à sentir d&rsquo;énormes gains : leur communication s&rsquo;est largement améliorée, tous les acteurs y voient plus clair, les MOA produisent les tests permettant d&rsquo;éprouver le système et le logiciel est au final beaucoup plus fiable.</p>
+
+<p>Pour accélérer la mise en place de GreenPepper, Eric nous a conseillé de :</p>
+
+<ul>
+<li>Soigner la HomePage. Au début du projet, il faut donner envie. La MOA va devoir se former à un nouvel outil et un Wiki est toujours un peu complexe. Il faut lutter contre la résistance au changement et montrer les avantages de cette solution ;</li>
+<li>Laisser libre la MOA pour les premières pages, puis repasser derrière et compléter les tests avec les noms des fixtures, par exemple. La MOA voit ensuite les modifications et utilisent celles-ci pour les tests suivants. Il faut donc éviter un maximum de restreindre la MOA à ses débuts.</li>
+<li>Regarder les plugins Confluence. Certains sont très utiles comme le plugin Office permettant d&rsquo;éditer ses pages depuis Word ;</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Pour résumer, GreenPepper est un produit très intéressant, mais qui souffre d&rsquo;une documentation défaillante. Il offre de nombreux avantages comme l&rsquo;intégration à Confluence, le plugin Eclipse et le support de Maven. La mise en place est déroutante car elle est laborieuse.</p>
+
+<p>D&rsquo;autre part, le produit évolue lentement. Les pages de documentation datent pour une bonne partie de 2007 et la dernière news du site concernant GreenPepper date de janvier 2008.</p>
+
+<p>Une question reste : est-ce que son concurrent direct, <a href="http://fitnesse.org/">FitNesse</a>, fait mieux ?</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

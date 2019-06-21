@@ -1,0 +1,190 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>JPA : les illusions sur les NamedQueries &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/">
+                <h1>JPA : les illusions sur les NamedQueries</h1>
+            </a>
+            <p>2010-03-28 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p>Un certain nombre d&rsquo;idées reçues existent sur les NamedQueries. On les dit plus performantes car mises en cache, on les dit plus sûres car validées au chargement. Etudions ces points et regardons quels sont les réels avantages des NamedQueries.</p>
+
+<h2 id="rappel-sur-les-namedqueries">Rappel sur les NamedQueries</h2>
+
+<p>Une NamedQuery est une requête nommée. Ce n&rsquo;est pas une nouveauté de la norme JPA car elles existaient dans Hibernate bien avant. Une namedQuery est un moyen de donner un non à une requête JPQL et de la rappeler par ce nom par la suite.</p>
+
+<p>Création :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Entity</span>
+<span style="color:#a6e22e">@NamedQuery</span><span style="color:#f92672">(</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;findAllCustomers&#34;</span><span style="color:#f92672">,</span> query <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Select c From Customers c&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Client</span> <span style="color:#f92672">{</span>
+  <span style="color:#f92672">...</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Utilisation :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> List <span style="color:#a6e22e">findAll</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">return</span> entityManager<span style="color:#f92672">.</span><span style="color:#a6e22e">createNamedQuery</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;findAllCustomers&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">getResultList</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<h2 id="une-namedquery-est-plus-performante">Une NamedQuery est plus performante</h2>
+
+<p>La rumeur dit qu&rsquo;une NamedQuery est plus performante car elle est mise en cache.</p>
+
+<p>Techniquement, au démarrage, le moteur JPA va compiler la NamedQuery puis la mettre en cache dans le statementCache des Connections. Cela rappelle fortement les PreparedStatement, non ? Or, Hibernate utilise de toute façon des PreparedStatements si le driver Jdbc le permet. Une NamedQuery ne fait donc pas mieux qu&rsquo;une requête dynamique, même s&rsquo;il y a le coût de parsing de la requête si celle-ci est dynamique.</p>
+
+<p>Je n&rsquo;ai pas trouvé de benchmark entre les deux approches (NamedQuery versus requête dynamique). La principale variable en jeu est le driver Jdbc et donc la base de données utilisée.</p>
+
+<h2 id="une-namedquery-est-validée">Une NamedQuery est validée</h2>
+
+<p>Une NamedQuery est validée au lancement de l&rsquo;application avant d&rsquo;être soit placée dans le statementCache. Cela permet théoriquement de contrôler la syntaxe JPQL, que le mapping est correct, que les entités utilisées sont annotées et que les colonnes ont bien un attribut (ou un getter/setter) dans les entités.</p>
+
+<p>Dans les faits, cette phase de validation est très limitée (testée avec Hibernate 3.3 et mysql) :</p>
+
+<ul>
+<li>Pour une entité inexistante (&ldquo;From EntiteInexistante&rdquo;), une erreur est remontée</li>
+<li>Pour une colonne inexistante (&ldquo;From Client where colonneInexistante is null&rdquo;), aucune erreur n&rsquo;est soulevée</li>
+</ul>
+
+<p>Aujourd&rsquo;hui, je ne vois donc pas en quoi cette phase de validation apporte de la valeur. Si la conversion JPQL vers SQL n&rsquo;est pas complète, elle n&rsquo;empêche pas de valider les requêtes sur <a href="http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/">la base de données cible</a>.</p>
+
+<h2 id="namedquery-alors-pourquoi">NamedQuery, alors pourquoi ?</h2>
+
+<p>Une fois éliminées ces illusions, il ne reste pas grand-chose d&rsquo;attrayant aux NamedQueries. On sait qu&rsquo;elles ne sont pas systématiquement pas plus performantes et que la validation n&rsquo;est pas complète. Il leur reste cependant trois petits avantages :</p>
+
+<ul>
+<li>Les NamedQueries sont réutilisables en plusieurs endroits. Ce cas est principalement utile quand l&rsquo;entityManager est injecté dans la couche de service (et donc qu&rsquo;il n&rsquo;y a pas de couche de DAO) ;</li>
+<li>Elles sont chargées au démarrage ce qui permet de diminuer la réponse de l&rsquo;application au premier accès, mais c&rsquo;est au détriment du temps de chargement de l&rsquo;application ;</li>
+<li>Les requêtes sont regroupées avec le mapping (@Column&hellip;), ce qui permet de faciliter leur écriture.</li>
+</ul>
+
+<p>Pour conclure, je pense que les NamedQueries résultent plus d&rsquo;une question de goût et de convention d&rsquo;écriture que d&rsquo;un réel intérêt technique et factuel.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

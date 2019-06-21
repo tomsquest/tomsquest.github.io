@@ -1,0 +1,249 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Jetty : démarrage rapide &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/09/jetty-demarrage-rapide/">
+                <h1>Jetty : démarrage rapide</h1>
+            </a>
+            <p>2008-09-09 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/jetty_logo.png" style="float:right"/></p>
+
+<p><a href="http://jetty.mortbay.org">Jetty</a> est un serveur d&rsquo;application léger, très léger. Il est en plus rapide et complètement intégré à Maven 2. Si vous voulez déployer une application Web sans devoir installer un serveur séparément, suivez le guide.</p>
+
+<h2 id="avantages">Avantages</h2>
+
+<p>Les avantages de Jetty sont :</p>
+
+<ul>
+<li>Lancement très rapide : sur ma machine : moins de 10 secondes au total (initialisation de la DataSource, contexte spring&hellip;) ;</li>
+<li>Rechargement de l&rsquo;application ultra-rapide : moins de 4 secondes pour qu&rsquo;une modification d&rsquo;une classe java puisse être testée dans le navigateur ;</li>
+<li>Compilation à la volée des JSP ;</li>
+<li>Intégration directe dans le pom.xml avec peu de configuration.</li>
+</ul>
+
+<h2 id="lancement">Lancement</h2>
+
+<p>Pour lancer Jetty, sans avoir fait aucune configuration préalable, il suffit de lancer la commande suivante depuis la racine de votre projet Web Maven :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mvn jetty:run</code></pre></div>
+<p>Cette commande démarre Jetty qui va utiliser la configuration de Maven pour savoir où est situé le code source et les ressources. Rendez-vous sur <a href="http://localhost:8080/">http://localhost:8080/</a> pour voir votre application déployée.</p>
+
+<p><img src="/img/posts/2008/09/jetty_run2.jpg" alt="" /></p>
+
+<p>Il est impressionnant de voir que Maven télécharge les dépendances de Jetty, configure son contexte et permet d&rsquo;avoir un serveur d&rsquo;application fonctionnel en quelques secondes.</p>
+
+<h2 id="datasource-mail-session-url-resource">Datasource, Mail Session, Url Resource</h2>
+
+<p>Maintenant, passons aux choses sérieuses. Si vous avez besoin d&rsquo;une DataSource, d&rsquo;une Session mail ou d&rsquo;une URL (pour par exemple externaliser la configuration de votre application), il suffit de créer un fichier de configuration qui contient ces déclarations.</p>
+
+<p>Pour cela, il suffit d&rsquo;ajouter au pom.xml de l&rsquo;application Web :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;profiles&gt;</span>
+    <span style="color:#f92672">&lt;profile&gt;</span>
+        <span style="color:#f92672">&lt;id&gt;</span>jetty<span style="color:#f92672">&lt;/id&gt;</span>
+        <span style="color:#f92672">&lt;build&gt;</span>
+            <span style="color:#f92672">&lt;defaultGoal&gt;</span>jetty:run<span style="color:#f92672">&lt;/defaultGoal&gt;</span>
+            <span style="color:#f92672">&lt;plugins&gt;</span>
+                <span style="color:#f92672">&lt;plugin&gt;</span>
+                    <span style="color:#f92672">&lt;groupId&gt;</span>org.mortbay.jetty<span style="color:#f92672">&lt;/groupId&gt;</span>
+                    <span style="color:#f92672">&lt;artifactId&gt;</span>maven-jetty-plugin<span style="color:#f92672">&lt;/artifactId&gt;</span>
+                    <span style="color:#f92672">&lt;configuration&gt;</span>
+                        <span style="color:#f92672">&lt;scanIntervalSeconds&gt;</span>2<span style="color:#f92672">&lt;/scanIntervalSeconds&gt;</span>
+                        <span style="color:#f92672">&lt;jettyEnvXml&gt;</span>
+                            ${basedir}\jetty\jetty-env.xml
+                        <span style="color:#f92672">&lt;/jettyEnvXml&gt;</span>
+                    <span style="color:#f92672">&lt;/configuration&gt;</span>
+                <span style="color:#f92672">&lt;/plugin&gt;</span>
+            <span style="color:#f92672">&lt;/plugins&gt;</span>
+        <span style="color:#f92672">&lt;/build&gt;</span>
+        <span style="color:#f92672">&lt;dependencies&gt;</span>
+            <span style="color:#f92672">&lt;dependency&gt;</span>
+                <span style="color:#f92672">&lt;groupId&gt;</span>com.experlog<span style="color:#f92672">&lt;/groupId&gt;</span>
+                <span style="color:#f92672">&lt;artifactId&gt;</span>xapool<span style="color:#f92672">&lt;/artifactId&gt;</span>
+                <span style="color:#f92672">&lt;version&gt;</span>1.5.0<span style="color:#f92672">&lt;/version&gt;</span>
+            <span style="color:#f92672">&lt;/dependency&gt;</span>
+        <span style="color:#f92672">&lt;/dependencies&gt;</span>
+    <span style="color:#f92672">&lt;/profile&gt;</span>
+<span style="color:#f92672">&lt;/profiles&gt;</span></code></pre></div>
+<p>Cette configuration fait référence au fichier <code>jetty-env.xml</code>. Ce fichier est placé dans le répertoire <code>jetty</code>à la racine du projet. Le fichier <code>webdefault.xml</code>peut être ignoré, il permet de configurer Jetty en profondeur.</p>
+
+<p><img src="/img/posts/2008/09/fichiers_jetty.jpg" alt="" /></p>
+
+<p>Nous avons également ajouté une dépendance vers <code>com.experlog.xapool</code> qui offre les classes nécessaires à Jetty pour avoir un pool de connexion. Le driver JDBC doit être présent dans votre projet en tant que dépendance, il n&rsquo;est pas montré ici.</p>
+
+<p>Voici un exemple de fichier jetty-env.xml :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;Configure</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.mortbay.jetty.webapp.WebAppContext&#34;</span><span style="color:#f92672">&gt;</span>
+
+    <span style="color:#f92672">&lt;New</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;myDataSource&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.mortbay.jetty.plus.naming.Resource&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;Arg&gt;</span>jdbc/myDataSource<span style="color:#f92672">&lt;/Arg&gt;</span>
+        <span style="color:#f92672">&lt;Arg&gt;</span>
+            <span style="color:#f92672">&lt;New</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.enhydra.jdbc.standard.StandardDataSource&#34;</span><span style="color:#f92672">&gt;</span>
+                <span style="color:#f92672">&lt;Set</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;DriverName&#34;</span><span style="color:#f92672">&gt;</span>com.microsoft.sqlserver.jdbc.SQLServerDriver<span style="color:#f92672">&lt;/Set&gt;</span>
+                <span style="color:#f92672">&lt;Set</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Url&#34;</span><span style="color:#f92672">&gt;</span>jdbc:sqlserver://server:1433;databaseName=TOMSQUESTDB<span style="color:#f92672">&lt;/Set&gt;</span>
+                <span style="color:#f92672">&lt;Set</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">&gt;</span>tomsquest<span style="color:#f92672">&lt;/Set&gt;</span>
+                <span style="color:#f92672">&lt;Set</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Password&#34;</span><span style="color:#f92672">&gt;</span>********<span style="color:#f92672">&lt;/Set&gt;</span>
+            <span style="color:#f92672">&lt;/New&gt;</span>
+        <span style="color:#f92672">&lt;/Arg&gt;</span>
+    <span style="color:#f92672">&lt;/New&gt;</span>
+
+    <span style="color:#f92672">&lt;New</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;mySession&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.mortbay.jetty.plus.naming.Resource&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;Arg&gt;</span>mail/mySession<span style="color:#f92672">&lt;/Arg&gt;</span>
+        <span style="color:#f92672">&lt;Arg&gt;</span>
+            <span style="color:#f92672">&lt;Call</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;getInstance&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;javax.mail.Session&#34;</span><span style="color:#f92672">&gt;</span>
+                <span style="color:#f92672">&lt;Arg&gt;</span>
+                    <span style="color:#f92672">&lt;New</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;java.util.Properties&#34;</span><span style="color:#f92672">&gt;</span>
+                        <span style="color:#f92672">&lt;Call</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;setProperty&#34;</span><span style="color:#f92672">&gt;</span>
+                            <span style="color:#f92672">&lt;Arg&gt;</span>mail.smtp.host<span style="color:#f92672">&lt;/Arg&gt;</span>
+                            <span style="color:#f92672">&lt;Arg&gt;</span>mail.tomsquest.com<span style="color:#f92672">&lt;/Arg&gt;</span>
+                        <span style="color:#f92672">&lt;/Call&gt;</span>
+                    <span style="color:#f92672">&lt;/New&gt;</span>
+                <span style="color:#f92672">&lt;/Arg&gt;</span>
+            <span style="color:#f92672">&lt;/Call&gt;</span>
+        <span style="color:#f92672">&lt;/Arg&gt;</span>
+    <span style="color:#f92672">&lt;/New&gt;</span>
+
+    <span style="color:#f92672">&lt;New</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;myConfig&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.mortbay.jetty.plus.naming.Resource&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;Arg&gt;</span>url/myConfig<span style="color:#f92672">&lt;/Arg&gt;</span>
+        <span style="color:#f92672">&lt;Arg&gt;</span>
+            <span style="color:#f92672">&lt;New</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;java.net.URL&#34;</span><span style="color:#f92672">&gt;</span>
+                <span style="color:#f92672">&lt;Arg&gt;</span>file:////home/tom/projects/tomsquest/config.properties<span style="color:#f92672">&lt;/Arg&gt;</span>
+            <span style="color:#f92672">&lt;/New&gt;</span>
+        <span style="color:#f92672">&lt;/Arg&gt;</span>
+    <span style="color:#f92672">&lt;/New&gt;</span>
+
+<span style="color:#f92672">&lt;/Configure&gt;</span></code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Quelques minutes de configuration pour avoir un serveur Web opérationnel qui se relance en quelques secondes ? Oui, c&rsquo;est possible. Nous avons vu comment configurer Jetty de manière complète et sans douleur.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

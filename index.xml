@@ -1,0 +1,2013 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Thomas Queste&#39;s blog</title>
+        <link>http://www.tomsquest.com/</link>
+        <description>Recent content on Thomas Queste&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
+        
+        <atom:link href="http://www.tomsquest.com/index.xml" rel="self" type="application/rss+xml" />
+        
+
+        
+        
+        <item>
+            <title>Better NPM&#39;ing, Tips and Tricks using NPM</title>
+            <link>http://www.tomsquest.com/blog/2018/10/better-npm-ing/</link>
+            <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2018/10/better-npm-ing/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/npm_logo.png&#34; alt=&#34;npm logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I discovered several tips working with NPM on a daily basis. Here are the top ones.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: save-exact, npm ci, npm audit fix, npx, updtr, &lt;code&gt;NVM_SYMLINK_CURRENT&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I presented those tips to my coworkers, &lt;a href=&#34;https://tomsquest.github.io/presentation-better-npm-ing/&#34;&gt;the slides are available online&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;reproducible-builds&#34;&gt;Reproducible builds&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: your local install can/will differ from another coworkers, even on the CI server!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cause&lt;/strong&gt;: Version range are problematic: &lt;code&gt;&amp;quot;rxjs&amp;quot;: &amp;quot;^6.2.2&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://greenkeeper.io&#34;&gt;Greenkeeper.io&lt;/a&gt; tells us that 15% of packages break the &lt;em&gt;minor&lt;/em&gt; or &lt;em&gt;patch&lt;/em&gt; updates:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/greenkeeper.png&#34; alt=&#34;Greekeeper&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Use &lt;code&gt;--save-exact&lt;/code&gt; when installing a dependency&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm install --save-exact aDependency
+&lt;span style=&#34;color:#75715e&#34;&gt;# Shorter:&lt;/span&gt;
+$ npm i -E aDependency&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Better solution&lt;/strong&gt;: Always exact, never use a range: &lt;code&gt;npm config set save-exact true&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm config set save-exact true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;installing-package&#34;&gt;Installing package&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Using &lt;code&gt;npm install&lt;/code&gt; will tries to resolves the dependency graph, possibly installing different versions (because of ranges declared in dependencies, not yours even if you used &lt;code&gt;--save-exact&lt;/code&gt;) and then updating the &lt;code&gt;package-lock.json&lt;/code&gt; even if you did not want to.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Use &lt;code&gt;npm ci&lt;/code&gt; which only read the &lt;code&gt;package-lock.json&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;↗ Speed (on CI and locally)&lt;/p&gt;
+
+&lt;p&gt;➕ Avoid dirty-ing the &lt;code&gt;package-lock.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm ci&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;global-package&#34;&gt;Global package&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Polluting the global &lt;code&gt;node_modules&lt;/code&gt; with global packages: nest-cli, create-react-apps (= hundreds of packages)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: &lt;code&gt;npx&lt;/code&gt; runs a package without installing it (but first, tries to find it locally in &lt;code&gt;node_modules&lt;/code&gt;)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Example with params given to cleaver&lt;/span&gt;
+$ npx cleaver watch index.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Finding packages with security flaws&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Use the builtin &lt;code&gt;npm audit&lt;/code&gt; and &lt;code&gt;npm audit fix&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;➕ Fails the build given integrated it in CI&lt;/p&gt;
+
+&lt;p&gt;Another solution is to use the builtin services of Github and Gitlab.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm audit fix&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;updating-packages&#34;&gt;Updating packages&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Updating dependency and finding the one that breaks the code is tedious.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution 1 (best)&lt;/strong&gt;: &lt;a href=&#34;https://www.npmjs.com/package/updtr&#34;&gt;updtr&lt;/a&gt; update one dependency, then run the tests, then repeat&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npx updtr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Solution 2&lt;/strong&gt;: &lt;a href=&#34;https://www.npmjs.com/package/npm-check&#34;&gt;npm-check&lt;/a&gt; show a pretty menu of all updates&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npx npm-check -u&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/npm-check-u.png&#34; alt=&#34;npx npm-check -u&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;current-node-version-in-tools&#34;&gt;Current Node version in Tools&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: When configuring Node/Typescript, the node &lt;strong&gt;path&lt;/strong&gt; is version-dependent&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png&#34; alt=&#34;List of node version from Intellij&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link &lt;code&gt;~/.nvm/current&lt;/code&gt; to, for example, &lt;code&gt;~/.nvm/versions/node/v11.0.0&lt;/code&gt; and recreate the link when changing of node version (automatically if you use &lt;a href=&#34;https://github.com/tomsquest/nvm-auto-use.zsh&#34;&gt;NVM auto-use ZSH plugin&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Put this in your .bashrc/.zshrc&lt;/span&gt;
+$ export NVM_SYMLINK_CURRENT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;true&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;bonus-follow-github-releases&#34;&gt;(Bonus) Follow Github Releases&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: Be notified of releases&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution 1&lt;/strong&gt;: (&lt;em&gt;Updated: 2018.12.02&lt;/em&gt;) Github now support watching releases of a repository: &lt;a href=&#34;https://help.github.com/articles/watching-and-unwatching-releases-for-a-repository/&#34;&gt;Documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution 2&lt;/strong&gt;: &lt;a href=&#34;https://gitpunch.com&#34;&gt;Gitpunch.com&lt;/a&gt; seems to solve the problem. It can follow all your Github stars and specific projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gitpunch.com&#34;&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/gitpunch.com.png&#34; alt=&#34;Git Punch&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Intellij Championship</title>
+            <link>http://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</link>
+            <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</guid>
+
+            
+            <description>&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/intellij.png&#34; alt=&#34;intellij logo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Last week I ran an &lt;strong&gt;&amp;ldquo;Intellij Master Championship&amp;rdquo;&lt;/strong&gt; class/presentation. There were prizes to win, like Jetbrains Yoyos, Intellij Stickers.&lt;/p&gt;
+
+&lt;p&gt;We had a great time sharing tips and counting points to nominate the &amp;ldquo;best-intellij-touch-typist-2k17&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The rules were one point by valid answer and each player answers secretly then the answer is given before I show it on screen and discuss it.&lt;/p&gt;
+
+&lt;p&gt;If you would like to run the presentation, the html is here: &lt;a href=&#34;https://tomsquest.github.io/intellij-master-presentation/&#34;&gt;https://tomsquest.github.io/intellij-master-presentation/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The PDF of the shortcuts is at: &lt;a href=&#34;https://github.com/tomsquest/intellij-master-presentation/blob/master/SHORTCUTS.pdf&#34;&gt;https://github.com/tomsquest/intellij-master-presentation/blob/master/SHORTCUTS.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And the whole source is on &lt;a href=&#34;https://github.com/tomsquest/intellij-master-presentation&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/intellij-master-swag.png&#34; alt=&#34;intellij logo&#34; /&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Global Day Of Coderetreat 2016</title>
+            <link>http://www.tomsquest.com/blog/2016/10/coderetreat-2016/</link>
+            <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2016/10/coderetreat-2016/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/coderetreat.png&#34; alt=&#34;Global Day of Coderetreat&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Saturday was the &lt;a href=&#34;http://globalday.coderetreat.org/&#34;&gt;Global day of Coderetreat&lt;/a&gt;, an event occurring every year and which brings people, on their free time, to pair-program with &lt;em&gt;complete&lt;/em&gt; strangers.
+The website tells about 115 participating cities and many many developers worldwide.&lt;/p&gt;
+
+&lt;p&gt;I was one of them, and Wow, it was really enjoyable!&lt;/p&gt;
+
+&lt;h2 id=&#34;what-we-did&#34;&gt;What we did&lt;/h2&gt;
+
+&lt;p&gt;Six rounds of 45 minutes, with another developer, starting fresh each time (the code is thrown every time, that robot voice shouting &amp;ldquo;DELETE THE CODE&amp;hellip;NOW!&amp;rdquo;).&lt;br /&gt;
+Each time with different constraints. I should say with different &lt;strong&gt;game&lt;/strong&gt; rules.&lt;/p&gt;
+
+&lt;p&gt;For example, we did:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a TDD approach, classical&lt;/li&gt;
+&lt;li&gt;a &lt;strong&gt;Fast&lt;/strong&gt; TDD loop, aka Ping-pong: one writes the test, the other the code, the first refactors, then we start over&lt;/li&gt;
+&lt;li&gt;an &lt;strong&gt;Extreme&lt;/strong&gt; TDD loop: &lt;code&gt;git reset --hard&lt;/code&gt; if something is not working in &lt;strong&gt;2 minutes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Silent pair-programming: no talking at all, no message, communicate just by coding&lt;/li&gt;
+&lt;li&gt;Develop with one or many constraints: only keyboard (no mouse/touchpad), no primitives&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;what-i-learnt&#34;&gt;What I learnt&lt;/h2&gt;
+
+&lt;p&gt;I learnt many things, and the first one is that I can write code (share the keyboard) with complete strangers and enjoy it a lot, in a saturday!&lt;/p&gt;
+
+&lt;p&gt;Two things I will try:&lt;/p&gt;
+
+&lt;p&gt;First, I will experiment with a Commit-per-Pomodoro approach. I sometimes commit more often than 25 minutes, and some times I do not commit for ours. Aiming for an task/subtask every 25 minutes can be a good thing to try.&lt;/p&gt;
+
+&lt;p&gt;Second, when pair-programming for too much time, I will propose to renew how we do it. Let&amp;rsquo;s add a new rule, like not using the mouse. This should be lightweight and fun. The purpose is to get a little boost of motivation when tired and when we &amp;ldquo;can&amp;rsquo;t&amp;rdquo; stop pair-programming.&lt;/p&gt;
+
+&lt;h2 id=&#34;next&#34;&gt;Next&lt;/h2&gt;
+
+&lt;p&gt;The global day was really fun. A log of good vibes, and interesting discussions at lunch.&lt;/p&gt;
+
+&lt;p&gt;Next year, I will be there!&lt;/p&gt;
+
+&lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&#34;https://twitter.com/jak78&#34;&gt;Julien Jakubowski&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/antoineblancke&#34;&gt;Antoine Blancke&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/FabienGoguillon&#34;&gt;Fabien GOGUILLON&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/xavierballoy&#34;&gt;Xavier Balloy&lt;/a&gt; for animating.&lt;br /&gt;
+Thanks to &lt;a href=&#34;https://www.axawebcenter.fr/&#34;&gt;Axa Web Center&lt;/a&gt; for hosting the event.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>My attempt at building a production grade docker image</title>
+            <link>http://www.tomsquest.com/blog/2016/10/production-docker-image/</link>
+            <pubDate>Mon, 17 Oct 2016 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2016/10/production-docker-image/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/docker.png&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As I am self-hosting a couple of services, mainly for keeping my data for myself (Sorry Google, Facebook), I tried to build a &amp;ldquo;production-grade docker image&amp;rdquo;. Here&amp;rsquo;s my attempt and what I learnt along the way.&lt;/p&gt;
+
+&lt;h2 id=&#34;radicale&#34;&gt;Radicale&lt;/h2&gt;
+
+&lt;p&gt;The first service I dockerized is &lt;a href=&#34;http://radicale.org/&#34;&gt;Radicale&lt;/a&gt;, a calendar/contact server (CalDav/CardDav).&lt;/p&gt;
+
+&lt;p&gt;Radicale is a good choice for a start due to its simplicity:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;written in python&lt;/li&gt;
+&lt;li&gt;filesystem database&lt;/li&gt;
+&lt;li&gt;single config file&lt;/li&gt;
+&lt;li&gt;runnable directly with &lt;code&gt;radicale&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;available in PyPI (&lt;code&gt;pip install radicale&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If we wanted to stop here, this Dockerfile is sufficient:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-dockerfile&#34; data-lang=&#34;dockerfile&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; debian:jessie&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ENV&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; DEBIAN_FRONTEND noninteractive&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RUN&lt;/span&gt; apt-get update &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get install -y python2.7 python-pip &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf /var/lib/apt/lists/*&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RUN&lt;/span&gt; pip install radicale&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CMD&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;radicale&amp;#34;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;easy-use-a-smaller-base-image&#34;&gt;Easy: Use a smaller base image&lt;/h2&gt;
+
+&lt;p&gt;I started with a Debian base image, then switch to an Alpine image, then found there are even alpine+python images.&lt;/p&gt;
+
+&lt;p&gt;The official Python images have an Alpine version: &lt;a href=&#34;https://hub.docker.com/_/python/&#34;&gt;https://hub.docker.com/_/python/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I did not set a specific image version (eg. &lt;code&gt;python:3.5.2-alpine&lt;/code&gt;) in the hope that it could ease upgrades and
+that a rebuild could be automatically fired by Docker hub using a configured dependency. Forget repeatable builds !&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s go for &lt;code&gt;python:3-alpine&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Dockerfile&#34; data-lang=&#34;Dockerfile&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; python:3-alpine&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RUN&lt;/span&gt; pip install radicale&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CMD&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;radicale&amp;#34;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;easy-process-management&#34;&gt;Easy: Process management&lt;/h2&gt;
+
+&lt;p&gt;It seems a good practice to use a process manager to handle PID 1 and reaping subprocesses.
+As I don&amp;rsquo;t know if Radicale handles signals properly, nor if it would create new subprocesses and handle them well,
+let&amp;rsquo;s use a process manager (this is more cargo-cult than scientific evidence).&lt;/p&gt;
+
+&lt;p&gt;I started with &lt;a href=&#34;https://github.com/Yelp/dumb-init&#34;&gt;Yelp&amp;rsquo;s Dumb Init&lt;/a&gt; but:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I got strange messages when stopping the container&lt;/li&gt;
+&lt;li&gt;Dumb Init is in &lt;code&gt;PyPI&lt;/code&gt; but requires a C compiler installed, which needs to be added to the Alpine image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Alternative: use &lt;a href=&#34;https://github.com/krallin/tini&#34;&gt;Tini&lt;/a&gt;, a &lt;code&gt;tiny but valid &#39;init&#39; for containers&lt;/code&gt;.
+Tini has the advantages of &lt;em&gt;just&lt;/em&gt; working and installable in Alpine with &lt;code&gt;apk add --update tini&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is our image with Tini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Dockerfile&#34; data-lang=&#34;Dockerfile&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; python:3-alpine&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;RUN&lt;/span&gt; pip install radicale&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ENTRYPOINT&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;/tini&amp;#34;, &amp;#34;--&amp;#34;]&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CMD&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;radicale&amp;#34;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;hard-volumes-and-permission&#34;&gt;Hard: Volumes and permission&lt;/h2&gt;
+
+&lt;p&gt;Next best practices: Never Run As &lt;strong&gt;Root&lt;/strong&gt;.
+We don&amp;rsquo;t do that for hosted services since decades, so don&amp;rsquo;t do that inside containers,
+especially publicly opened containers. The Docker Security team does not recommend it either
+(&lt;a href=&#34;https://www.youtube.com/watch?v=LmUw2H6JgJo&#34;&gt;https://www.youtube.com/watch?v=LmUw2H6JgJo&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;That means: use the &lt;code&gt;USER&lt;/code&gt; instruction or switch user when the container is run.
+Combined with a volume, that&amp;rsquo;s were I started having &lt;strong&gt;permission problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;What seems to occur is that mounting a host volume (eg. &lt;code&gt;docker run ... -v /path:/data/radicale&lt;/code&gt;)
+overwrites the permission &lt;strong&gt;in&lt;/strong&gt; the container. What was owned by &lt;code&gt;radicale:radicale&lt;/code&gt; became owned by &lt;code&gt;root:root&lt;/code&gt; in the container.&lt;/p&gt;
+
+&lt;p&gt;The reason is that the Docker daemon runs as &lt;code&gt;root&lt;/code&gt;, so the mounted volume became root (UID=0) &lt;strong&gt;in&lt;/strong&gt; the container, in which, UID=0 is also root. Note that, when the &lt;code&gt;radicale&lt;/code&gt; user in the container has the UID 1000, which is my user on the host. Complete detail here: &lt;a href=&#34;https://denibertovic.com/posts/handling-permissions-with-docker-volumes/&#34;&gt;https://denibertovic.com/posts/handling-permissions-with-docker-volumes/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I first found a solution from &lt;a href=&#34;https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes&#34;&gt;Stack Overflow&lt;/a&gt; and
+in the book &lt;a href=&#34;http://shop.oreilly.com/product/0636920035671.do&#34;&gt;Using Docker&lt;/a&gt; by Adrian Mouat (excellent book btw).&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://hub.docker.com/_/redis/&#34;&gt;Redis docker image&lt;/a&gt; handles the permission problem this way:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First, use a custom entrypoint:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Dockerfile&#34; data-lang=&#34;Dockerfile&#34;&gt;COPY docker-entrypoint.sh /usr/local/bin/&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ENTRYPOINT&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;/usr/local/bin/docker-entrypoint.sh&amp;#34;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Then, &lt;code&gt;chown $user&lt;/code&gt; the mounted volume in the entrypoint script:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;redis-server&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    chown -R redis .             &lt;span style=&#34;color:#75715e&#34;&gt;# Fix permissions&lt;/span&gt;
+    exec gosu redis &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$0&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$@&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Run as `redis` and not `root`&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I reproduced the same behavior in my Radicale image with Tini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-Dockerfile&#34; data-lang=&#34;Dockerfile&#34;&gt;COPY docker-entrypoint.sh /usr/local/bin&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ENTRYPOINT&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;/sbin/tini&amp;#34;, &amp;#34;--&amp;#34;, &amp;#34;docker-entrypoint.sh&amp;#34;]&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CMD&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; [&amp;#34;radicale&amp;#34;, &amp;#34;--config&amp;#34;, &amp;#34;/radicale/config&amp;#34;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/tomsquest/docker-radicale/blob/master/docker-entrypoint.sh&#34;&gt;docker-entrypoint.sh&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;radicale&amp;#39;&lt;/span&gt; -a &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;id -u&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    chown -R radicale .
+    exec su-exec radicale &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$@&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I used &lt;a href=&#34;https://github.com/ncopa/su-exec&#34;&gt;Su-exec&lt;/a&gt;, a lightweight alternative to Gosu and more importantly,
+su-exec is available in Alpine repositories.&lt;/p&gt;
+
+&lt;h2 id=&#34;s6-the-alternative&#34;&gt;S6, the alternative&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/just-containers/s6-overlay&#34;&gt;S6-Overlay&lt;/a&gt; contains the &lt;a href=&#34;http://skarnet.org/software/s6/overview.html&#34;&gt;S6&lt;/a&gt; series of scripts. As &lt;code&gt;overlay&lt;/code&gt; they means a tgz to unpack in the image.&lt;/p&gt;
+
+&lt;p&gt;S6-Overlay is a complete alternative, it provides:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An init system; it could replace Tini.&lt;/li&gt;
+&lt;li&gt;A script to fix permissions (custom scripts in &lt;code&gt;/etc/fix-attrs.d&lt;/code&gt;); replace the &lt;code&gt;chown radicale&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Dropping privileges; replace Su-Exec&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I did not had the time to play with S6. The thing is quite complex and powerful, maybe more that what I need.&lt;/p&gt;
+
+&lt;h2 id=&#34;next&#34;&gt;Next&lt;/h2&gt;
+
+&lt;p&gt;There are still many things to do &lt;strong&gt;outside&lt;/strong&gt; the image itself. I have yet to:&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Manage/Restart the container with Systemd&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Limit the number of automatic restart in Systemd&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Monitor the process in the container&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Limit the container capabilities&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Limit the container networking&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Limit the container resources&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Test automatically the process when rebuilding the image (the Python version is not enforced)&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Put the log in their own file and rotate them&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My Radicale image is available at:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker Hub: &lt;a href=&#34;https://hub.docker.com/r/tomsquest/docker-radicale/&#34;&gt;https://hub.docker.com/r/tomsquest/docker-radicale/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&#34;https://github.com/tomsquest/docker-radicale&#34;&gt;https://github.com/tomsquest/docker-radicale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Working Effectively with Unit Tests by Jay Fields</title>
+            <link>http://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</link>
+            <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/wewut-cover.jpg&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am very happy to have read Jay Fields&amp;rsquo; Working effectively with unit tests.
+This is a rare book where developers are taught how to be better at a very-argued discipline: testing.&lt;/p&gt;
+
+&lt;p&gt;Jay Fields explains its opinions on how he tests, what he tests and how best he thinks
+testing can be done. This is a rare event when somebody explains directly how and why
+he write code like that. In my professional life, events like that are not so common,
+especially when they are prepared and arguments well presented.&lt;/p&gt;
+
+&lt;p&gt;Here are some of my notes :&lt;/p&gt;
+
+&lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Better to have N tests than a single test with a loop&lt;/li&gt;
+&lt;li&gt;Inline setup is better that referencing a variable&lt;/li&gt;
+&lt;li&gt;Test names are comments under cover, they will mislead&lt;/li&gt;
+&lt;li&gt;Data builders is better than globally-defined object with default values (Object Mother)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;readability&#34;&gt;Readability&lt;/h2&gt;
+
+&lt;p&gt;Each method added to a test complicates the tiny universe of the tests.
+It is hard to know which abstraction will reduce the complexity and provide value.
+Being DRY in tests does more harm than good, so repeating ourselves may be better for readability.&lt;/p&gt;
+
+&lt;h2 id=&#34;roi&#34;&gt;ROI&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;Productively Unit Testing&amp;rdquo; is evaluating the cost of writing and maintaining a test.
+It is acceptable to delete a test after a TDD session or during a code review, if
+the value of the test does not seem positive.&lt;/p&gt;
+
+&lt;p&gt;Test what seems fragile and is expected to change, ignore the rest.&lt;/p&gt;
+
+&lt;h2 id=&#34;test-names&#34;&gt;Test names&lt;/h2&gt;
+
+&lt;p&gt;Test names are comments. They degrade with time, they may be wrong or worse they may mislead.&lt;/p&gt;
+
+&lt;p&gt;And, it is rare when a test name tells you what is going wrong. It will just indicate where to
+first look at (the body of the test method). So test names are just pointer to code. &lt;strong&gt;The shorter, the better.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Implementation over-specification&amp;rdquo; means a test is fragile because it knows too much about what
+it is trying to verify, and that a small change in the production code will break the test.&lt;/p&gt;
+
+&lt;p&gt;Solutions are to relax prepartion with Mockito&amp;rsquo;s anyString/anyLong/&amp;hellip; ; Null as a return value is acceptable.&lt;/p&gt;
+
+&lt;p&gt;It is simpler and more readable to compare a literal (aka primitive) value, than objects together.&lt;/p&gt;
+
+&lt;p&gt;To avoid cascading failures, he only knows two solutions :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;make the tests more intelligent&lt;/li&gt;
+&lt;li&gt;make the tests more ignorant.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;coverage&#34;&gt;Coverage&lt;/h2&gt;
+
+&lt;p&gt;He aims for 80% of coverage. Going for more that 80% is most likely that the motivation is a better greater number and not the ROI.&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t forget that it&amp;rsquo;s easy to fake a good coverage with tests without assertion&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;broad-stack-test&#34;&gt;Broad Stack Test&lt;/h2&gt;
+
+&lt;p&gt;These are End-to-End tests. They are complex and fragile.&lt;/p&gt;
+
+&lt;p&gt;He recommends that these tests will survive only if this is the author who maintains them and
+not the whole team. And if the author leaves, the time will be best invested recreating those
+tests than to try to fix them. I couldn&amp;rsquo;t agree more.&lt;/p&gt;
+
+&lt;p&gt;His Mike Cohn Test pyramid is divided into: 1 to 12 Broad Stack Tests, 20% of &amp;ldquo;sociable&amp;rdquo; tests
+(tests that interacts with others) and 80% unit tests.&lt;/p&gt;
+
+&lt;h2 id=&#34;paper-edition&#34;&gt;Paper edition&lt;/h2&gt;
+
+&lt;p&gt;I read a paper edition, found on Amazon. The overall quality is quite good, but the lack of
+emphasis/bold is disturbing on the code samples. Some lines are somewhat bold, but a
+vertical line or some ninja-stylized thing could make the UX better.
+This is one of the limit of using Markdown for publishing.&lt;/p&gt;
+
+&lt;p&gt;But this print edition is way better that the previous book I read (&amp;ldquo;Notes a software team leader&amp;rdquo; by Roy Osherove) where some markdown content was not parsed at all&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Author&amp;rsquo;s blog: &lt;a href=&#34;http://blog.jayfields.com/&#34;&gt;http://blog.jayfields.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The book: &lt;a href=&#34;http://signup.wewut.com/&#34;&gt;http://signup.wewut.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>The Secrets of Consulting by Gerald M. Weinberg</title>
+            <link>http://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</link>
+            <pubDate>Sun, 21 Sep 2014 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</guid>
+
+            
+            <description>&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/the-secrets-of-consulting.jpg&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The book &lt;a href=&#34;http://www.amazon.com/The-Secrets-Consulting-Getting-Successfully/dp/0932633013/&#34;&gt;&amp;ldquo;Secrets of Consulting&amp;rdquo;&lt;/a&gt; by Weinberg stayed for years on my shelve.
+I finally found why I did not read it just after I bought it, but why I should have read it before.&lt;/p&gt;
+
+&lt;p&gt;The book is about how to work effectively with customers as a consultant. As such, there are topics on changes, pitfalls, problems detection and prevention, but also on personal marketing and pricing.&lt;/p&gt;
+
+&lt;p&gt;At the end (~10-15 hours of reading), I still have a mixed feeling about the book. At first, the chapters seem very interesting with subjects on real problems, like how to deal with resistance and avoiding traps ; subjects you have to be good at. But part of the content is blurred in &amp;ldquo;laws&amp;rdquo; which either make sense or are hard to get. An example of a good one is &amp;ldquo;Change comes from stability&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;This is the spirit of the book: telling stories (true ones?), enumerating laws (5 to 10 per chapters) and no summary. At the end of some chapters, I was a bit advanced on the subject or deeply lost (moment like &amp;ldquo;what the heck? what can I use &lt;strong&gt;now&lt;/strong&gt;?&amp;ldquo;)&lt;/p&gt;
+
+&lt;p&gt;Gerald Weinberg is a great story teller. His human skills seems impressive and I would pay to see him in action. There are stories that will make you laugh, and some good examples of human tricks (for example: how he deals with a guy always telling &amp;ldquo;it won&amp;rsquo;t work, we already tried that&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;I would have preferred chapters to be a bit more detailed, or maybe more precise.
+Don&amp;rsquo;t expect recipes and bullet points. It is more about stories and broad ideas.&lt;/p&gt;
+
+&lt;p&gt;Maybe the underlying idea of Weinberg was not to provide common sense, but instead make you think deeply (hence the paradoxical laws) and to &amp;ldquo;plant the seed&amp;rdquo; which will make you a better consultant (chapter 14 is about farming&amp;hellip; yes, plant/seed/soil).&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Learning to touch type using the Colemak layout</title>
+            <link>http://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</link>
+            <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</guid>
+
+            
+            <description>
+
+&lt;p&gt;I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries and morover never looking back at my keyboard. After all Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touch type using a new layout, the &lt;a href=&#34;http://colemak.com/&#34;&gt;Colemak&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is the result on my experience on learning to touch type and how I remapped my brain (hard!) during a two-month period.&lt;/p&gt;
+
+&lt;h2 id=&#34;colemak&#34;&gt;Colemak&lt;/h2&gt;
+
+&lt;p&gt;As per the official site: &amp;ldquo;Colemak is a modern alternative to the QWERTY and Dvorak layouts, for English&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;I chose Colemak, because it beats Dvorak slightly at speed and it only changes seventeen keys on the Qwerty layout (compared to 24 for the Dvorak). Thus, it is easier to learn. It is also an international layout so I can type French accentuated characters.&lt;/p&gt;
+
+&lt;p&gt;Here is a visual of the Colemak layout:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_layout.png&#34; alt=&#34;Colemak layout&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_first20thhours_book.jpg&#34; title=&#34;Book cover the First 20th hours&#34; style=&#34;float:right&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;I used the method of the book &lt;a href=&#34;http://first20hours.com/&#34;&gt;&amp;ldquo;The First 20 Hours&amp;rdquo;&lt;/a&gt; by Josh Kaufman, the author behind the Personal MBA. This is an interesting book on how to learn (anything) fast. It contains two chapters on learning and how to do it well and a set of chapters on what the author learned : Yoga, Go, Programming, Ukulele and particularly &lt;strong&gt;Touch typing&lt;/strong&gt;. It&amp;rsquo;s basically the &lt;sup&gt;80&lt;/sup&gt;&amp;frasl;&lt;sub&gt;20&lt;/sub&gt; rules applied to learning.&lt;/p&gt;
+
+&lt;p&gt;The recipe involves deconstructing the subject of learning, getting the tools at hand, removing the obstacles and practicing for at least 20 hours to bypass the &amp;ldquo;barrier of exasperation&amp;rdquo;. Yes, this statement is really important.&lt;/p&gt;
+
+&lt;p&gt;On any hard enough activity, there is a barrier, which once crossed, will make you feel happy. And before it sucks, really. The barrier is at a moment between hard to practice and enough-good to take some pleasure. Try playing the guitar for the first time. For the author, the barrier is around 20th hours; depending of the subject and the learner.&lt;/p&gt;
+
+&lt;p&gt;I found the chapter of becoming a touch typist to be an excellent motivator because I was following the steps of an already successful learner and therefore knowing that I will surely succeed at the end.&lt;/p&gt;
+
+&lt;h2 id=&#34;keyboard&#34;&gt;Keyboard&lt;/h2&gt;
+
+&lt;p&gt;According the book, I had to get the needed tools to practice and to measure myself.&lt;/p&gt;
+
+&lt;p&gt;First thing first: the keyboard. You can take an old keyboard, move the keycaps around and voilà, you&amp;rsquo;re done. Or you can be a good consumer and buy a shiny piece of plastic.&lt;/p&gt;
+
+&lt;p&gt;One of my &lt;a href=&#34;https://twitter.com/BitardMichael&#34;&gt;teammate&lt;/a&gt; was using a &lt;a href=&#34;http://www.typematrix.com/&#34;&gt;Typematrix&lt;/a&gt; keyboard, a nice piece of hardware. The keyboard itself is small, not ergonomic, but it has a matrix design (hence the name) and it is one of the cheapest when considering to buy a blank keyboard.&lt;/p&gt;
+
+&lt;p&gt;Yes, completely &lt;strong&gt;blank&lt;/strong&gt; ! Like with nothing written on it. I do think this is the way to go to be a full touch typist and to never have a hope to give a look to find that key/letter/number you wanted to type. Truth is that it is sometimes disappointing for rarely used keys, or Page-Up/down keys which are fay away (you have to move your hand, so you lose a bit of precision). The company sold skins, sort of condoms to protect the keyboard, with small indications on them (special keys) that may be useful.&lt;/p&gt;
+
+&lt;p&gt;The Typematrix blank keyboard:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_typematrix_blank.png&#34; alt=&#34;Typematrix Blank&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;typing-trainers&#34;&gt;Typing trainers&lt;/h2&gt;
+
+&lt;p&gt;Two recommended typing trainers are &lt;a href=&#34;https://first20hours.github.io/keyzen-colemak/&#34;&gt;Keyzen&lt;/a&gt; and &lt;a href=&#34;https://code.google.com/p/amphetype/&#34;&gt;Amphetype&lt;/a&gt;. The first will get you mad and the second will make you cry :-) .&lt;/p&gt;
+
+&lt;p&gt;I started with Keyzen and my first hours of learning were completely boring but very rewarding. A session of Keyzen gives something like: Type &amp;lsquo;nnnttttntntn&amp;rsquo;, then &amp;lsquo;ntenntteetnte&amp;rsquo;, then restart because you made a mistake. After two hours, my progress were real and after six hours I completely managed the English layout. I was still discovering how to touch type, so I was very motivated.&lt;/p&gt;
+
+&lt;p&gt;Then, I started to practice with Amphetype. This tool is very handy because you can import your own set of words to learn, shuffle them and measure your progress by session, sitting or days (On Linux, just checkout the source and voilà).&lt;/p&gt;
+
+&lt;p&gt;Repeating and repeating exercises were very boring, especially at 21 o&amp;rsquo;clock when you have so much more distracting thing to do.&lt;/p&gt;
+
+&lt;h2 id=&#34;deliberate-practice&#34;&gt;Deliberate practice&lt;/h2&gt;
+
+&lt;p&gt;If you think a little bit about typing, you already knows that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;some words are typed more than others, like: the, of, and, to, in&amp;hellip;&lt;/li&gt;
+&lt;li&gt;some letters occur more often (that why the Colemak layout exits)&lt;/li&gt;
+&lt;li&gt;bigrams (two-letter), trigrams and quadrigrams can be extracted to find recurring patterns&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Which means: to type fast/faster, my brain and fingers have to learn the most used words and behind that the most used couples of letters.
+For example, when my eyes read &amp;ldquo;the&amp;rdquo;, I should not think &amp;ldquo;t&amp;rdquo;, &amp;ldquo;h&amp;rdquo;, &amp;ldquo;e&amp;rdquo; but it should be a reflex for my fingers (kind of burst typing).
+This is &lt;a href=&#34;https://en.wikipedia.org/wiki/Practice_%28learning_method%29#Deliberate_practice&#34;&gt;&lt;strong&gt;deliberate practice&lt;/strong&gt;&lt;/a&gt;. I had to learn effectively and efficiently (do the right thing right).&lt;/p&gt;
+
+&lt;p&gt;Josh Kaufman gives a link to the most used English words and bigrams, but I had to build mine for French, especially to learn accentuated characters.
+If you need mines, I should be able to export it from Amphetype.&lt;/p&gt;
+
+&lt;h2 id=&#34;progress&#34;&gt;Progress&lt;/h2&gt;
+
+&lt;p&gt;It was easy to start, I was very passionate about the subject, but it was hard to achieve my goal.&lt;/p&gt;
+
+&lt;p&gt;I targeted 60 WPM (words per minutes) for the end of November. I had two months to practice, which should be largely sufficient to find 20 hours of free-time (which is mostly prioritizing).&lt;/p&gt;
+
+&lt;p&gt;In October and November 2013, I track my sessions using a Seinfeld calendar (also named &amp;ldquo;Don&amp;rsquo;t break the chain&amp;rdquo;). It is a simple calendar where you circle days of practice and the circles make a chain that you should not break. It is a good visual motivator.&lt;/p&gt;
+
+&lt;p&gt;Amphetype gave my speed in WPM and my error rate by session and the calendar was stuck to the wall (hard to miss it).&lt;/p&gt;
+
+&lt;p&gt;Here is my seinfeld calendar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_seinfeld_calendar.jpg&#34; alt=&#34;Seinfeld calendar&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was really motivated in October and less in November (also due to a lot of work). But this is generally how things evolve.&lt;/p&gt;
+
+&lt;p&gt;I started using Amphetype when I was already at 20 WPM because I trained on &lt;a href=&#34;https://chrome.google.com/webstore/detail/type-fu/pofoighmmpljaikjiidkkfhldjndfdbk&#34;&gt;TypeFu&lt;/a&gt; at that time.&lt;/p&gt;
+
+&lt;p&gt;Then I think I hit the &lt;sup&gt;40&lt;/sup&gt;&amp;frasl;&lt;sub&gt;50&lt;/sub&gt; WPM mark at the end of November. Of course, speed depends on what I typed and in which language.
+I completely stopped deliberate practice after a few sessions in December and January.&lt;/p&gt;
+
+&lt;h2 id=&#34;today&#34;&gt;Today&lt;/h2&gt;
+
+&lt;p&gt;When writing this article, and with looking at 10 month back, I am pretty happy with my results. It was hard, and harder that I thought.&lt;/p&gt;
+
+&lt;p&gt;Today, I am near 60 words-per-minutes and I don&amp;rsquo;t think I will go much further without typing more and exercising. I am near my level on Azerty, but I don&amp;rsquo;t have so many reflex that experience gives. When I talk about reflex, I am speaking of typing in burst without thinking about it.&lt;/p&gt;
+
+&lt;p&gt;I feel very comfortable with the keyboard, my fingers move less, I can type numbers and punctuation without looking at the keyboard.
+I still make typing errors, but a lot less than in Azerty.&lt;/p&gt;
+
+&lt;p&gt;Graph of my speed (WPM) from October to November (on Amphetype), French and English (all results merged). The progress is slow, but steady:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_amphetype_progress.png&#34; alt=&#34;Speed result&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This post was written in Colemak on a blank Typematrix keyboard.&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>An introduction to Java Agent and bytecode manipulation</title>
+            <link>http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</link>
+            <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</guid>
+
+            
+            <description>
+
+&lt;p&gt;A few months ago, I wrote a little shell script to colorize Maven&amp;rsquo;s output
+(see &lt;a href=&#34;http://tomsquest.com/blog/2013/09/maven-in-colors&#34;&gt;this post&lt;/a&gt;).
+This is a good solution, but &lt;a href=&#34;https://twitter.com/jchristophegay&#34;&gt;Jean-Christophe Gay&lt;/a&gt; has written a pure Java version
+to solve the same problem with interesting bits of Java technologies.&lt;/p&gt;
+
+&lt;p&gt;In this post, we will see how a Java Agent and some bytecode manipulation can open the inner guts of code we don&amp;rsquo;t own.&lt;/p&gt;
+
+&lt;h2 id=&#34;code-sample&#34;&gt;Code sample&lt;/h2&gt;
+
+&lt;p&gt;I wrote a little test project to wire the stuff involved.
+There are two Maven module, one for the Agent and one for representing the external lib (we should not modify it).
+The whole code is here : &lt;a href=&#34;https://github.com/tomsquest/java-agent-asm-javassist-sample&#34;&gt;https://github.com/tomsquest/java-agent-asm-javassist-sample&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;agent&#34;&gt;Agent&lt;/h3&gt;
+
+&lt;p&gt;First, we need a Java Agent to inject and intercept real code.
+The agent framework is part of the JDK and allow us to operate on classes before (and even after) they are used.&lt;/p&gt;
+
+&lt;p&gt;Here is the code of the Agent. Note the premain static method which is called at start.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Agent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;premain&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String agentArgs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Instrumentation inst&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        inst&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addTransformer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Transformer&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ClassLoader classLoader&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String s&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Class&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&amp;gt;&lt;/span&gt; aClass&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; ProtectionDomain protectionDomain&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; bytes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; IllegalClassFormatException &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+                &lt;span style=&#34;color:#75715e&#34;&gt;// Intercept the call to the class Stuff
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;other/Stuff&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;equals&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                    &lt;span style=&#34;color:#75715e&#34;&gt;// ASM Code
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                    ClassReader reader &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ClassReader&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;bytes&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                    ClassWriter writer &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ClassWriter&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;reader&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                    ClassPrinter visitor &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ClassPrinter&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;writer&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                    reader&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;accept&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;visitor&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; writer&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;toByteArray&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The agent is called because the JVM is launched with the -javaagent:myjar.jar parameter and because the Manifest indicates this class.&lt;/p&gt;
+
+&lt;p&gt;Command line :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ java -javaagent:agent/target/agent-0.1-SNAPSHOT.jar -jar other/target/other-0.1-SNAPSHOT.jar
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;asm&#34;&gt;ASM&lt;/h3&gt;
+
+&lt;p&gt;In order to manipulate the bytecode, I used the ASM framework.
+&lt;a href=&#34;http://asm.ow2.org&#34;&gt;ASM&lt;/a&gt; is a Java bytecode manipulation and analysis framework used in many products.&lt;/p&gt;
+
+&lt;p&gt;In the example above, the ClassPrinter prints the signatures of the classes and methods visited.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ClassPrinter&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; ClassVisitor &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ClassPrinter&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ClassWriter writer&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ASM4&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; writer&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;visit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; version&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; access&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String name&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String signature&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String superName&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; interfaces&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;name &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; extends &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; superName &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; {&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;version&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; access&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; name&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; signature&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; superName&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; interfaces&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; MethodVisitor &lt;span style=&#34;color:#a6e22e&#34;&gt;visitMethod&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; access&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String name&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String desc&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String signature&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; exceptions&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; name &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; desc&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitMethod&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;access&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; name&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; desc&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; signature&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; exceptions&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;visitEnd&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitEnd&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is the output, as we intercepted the call to the &lt;code&gt;Stuff&lt;/code&gt; class :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;other&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;Stuff &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; java&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;lang&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;Object &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;init&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;()&lt;/span&gt;V
+ &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;V
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+I AM DOING SOME STUFF&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;javassist&#34;&gt;Javassist&lt;/h3&gt;
+
+&lt;p&gt;Javassist is another bytecode manipulation framework. I found it simpler due to higher level methods like addLocalVariable, insertBefore, insertAfter&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Here is a version of the Agent used to output the elapsed time for executing the &lt;code&gt;run&lt;/code&gt; method :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Agent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;premain&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String agentArgs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Instrumentation inst&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        inst&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addTransformer&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; ClassFileTransformer&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ClassLoader classLoader&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String s&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; Class&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&amp;gt;&lt;/span&gt; aClass&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; ProtectionDomain protectionDomain&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; bytes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;throws&lt;/span&gt; IllegalClassFormatException &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;other/Stuff&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;equals&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                    &lt;span style=&#34;color:#75715e&#34;&gt;// Javassist
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                    &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                        ClassPool cp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; ClassPool&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDefault&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+                        CtClass cc &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;other.Stuff&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                        CtMethod m &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cc&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDeclaredMethod&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;run&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                        m&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;addLocalVariable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;elapsedTime&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; CtClass&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;longType&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                        m&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;insertBefore&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;elapsedTime = System.currentTimeMillis();&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                        m&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;insertAfter&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{elapsedTime = System.currentTimeMillis() - elapsedTime;&amp;#34;&lt;/span&gt;
+                                &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;System.out.println(\&amp;#34;Method Executed in ms: \&amp;#34; + elapsedTime);}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                        &lt;span style=&#34;color:#66d9ef&#34;&gt;byte&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; byteCode &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cc&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;toBytecode&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+                        cc&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;detach&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+                        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; byteCode&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+                    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Exception ex&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                        ex&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;printStackTrace&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+                    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;});&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Output :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I AM DOING SOME STUFF...
+Method Executed in ms: 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;real-case-maven-colorization&#34;&gt;Real case : Maven colorization&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/jchristophegay&#34;&gt;Jean-Christophe Gay&lt;/a&gt; hacked Maven to colorize the output and to highlight warnings and errors.
+And it did that without altering Maven, but from the outside.
+The idea is to start Maven with an agent which enhance Maven (3.0) output with colorization.&lt;/p&gt;
+
+&lt;p&gt;It is interesting as a real world scenario because Maven does not expose an API to access the log in real time, and also
+because one needs to know exactly where to inject the custom code and how fragile it is to hack
+a third-party piece of code.&lt;/p&gt;
+
+&lt;p&gt;You can see his code here : &lt;a href=&#34;https://github.com/jcgay/maven-color&#34;&gt;https://github.com/jcgay/maven-color&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In its code, the author had to :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;start the agent when the target program is run, this was done using the MAVEN_OPTS environment variable&lt;/li&gt;
+&lt;li&gt;find where Maven was outputting relevant logs message (well, this has to be done for Maven and Surefire, which is even
+more susceptible to change.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createSetupAnsiColorLoggerMethod&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    MethodVisitor mv &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; cv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitMethod&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACC_PRIVATE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;setupLogger&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(Lorg/apache/maven/cli/MavenCli$CliRequest;)Lorg/codehaus/plexus/logging/Logger;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitCode&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitTypeInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;NEW&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;com/github/jcgay/maven/color/logger/AnsiColorLogger&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;DUP&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitMethodInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;INVOKESPECIAL&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;com/github/jcgay/maven/color/logger/AnsiColorLogger&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;init&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;()V&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitVarInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ASTORE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 2&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitVarInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ALOAD&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 2&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitVarInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ALOAD&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitFieldInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;GETFIELD&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;org/apache/maven/cli/MavenCli$CliRequest&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;request&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Lorg/apache/maven/execution/MavenExecutionRequest;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitMethodInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;INVOKEINTERFACE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;org/apache/maven/execution/MavenExecutionRequest&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;getLoggingLevel&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;()I&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitMethodInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;INVOKEINTERFACE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;org/codehaus/plexus/logging/Logger&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;setThreshold&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;(I)V&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitVarInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ALOAD&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 2&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitInsn&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Opcodes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ARETURN&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitMaxs&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;2&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 3&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+    mv&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;visitEnd&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Reading &lt;a href=&#34;http://www.slideshare.net/CharlesNutter/javaone-2011-jvm-bytecode-for-dummies&#34;&gt;Bytecode for Dummies&lt;/a&gt; will help, for sure.&lt;/p&gt;
+
+&lt;p&gt;For another real world usage, there is &lt;a href=&#34;https://www.jboss.org/byteman&#34;&gt;Byteman&lt;/a&gt; written by JBoss.
+This tool simplifies testing of Java programs. The documentation is difficult to read, IMHO, but the presentation I
+saw three years ago was really stunning. Byteman can be used to make untestable code testable.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Créer son EURL et devenir indépendant : les étapes</title>
+            <link>http://www.tomsquest.com/blog/2014/01/creer-son-eurl/</link>
+            <pubDate>Tue, 07 Jan 2014 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2014/01/creer-son-eurl/</guid>
+
+            
+            <description>
+
+&lt;p&gt;J&amp;rsquo;ai créé mon EURL courant octobre-novembre et je suis donc maintenant indépendant.
+Dans cet article, je liste les étapes qui m&amp;rsquo;ont permis de créer la société.
+Le parcours était finalement simple, même si beaucoup de questions se sont posées.
+Je suis parti avec une rupture conventionnelle, j&amp;rsquo;intègre donc les éléments Pole-Emploi.&lt;/p&gt;
+
+&lt;p&gt;Je ne me substitue pas à l&amp;rsquo;APCE (maintenant AFE &amp;ldquo;Agence France Entrepreneur&amp;rdquo;), ni à un expert-comptable. Je ne vais pas rentrer en détail sur les choix fiscaux car c&amp;rsquo;est un sujet complexe et j’y perdrai la tête.
+J’indique donc mes choix qui sont aussi ceux de plusieurs personnes autour de moi.
+Faites vos propres recherches pour compléter et bien comprendre le processus.&lt;/p&gt;
+
+&lt;h2 id=&#34;les-étapes&#34;&gt;Les étapes&lt;/h2&gt;
+
+&lt;p&gt;Dans l&amp;rsquo;ordre, j&amp;rsquo;ai réalisé les actions suivantes :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Inscription à Pole-Emploi car rupture conventionnelle&lt;/li&gt;
+&lt;li&gt;Publication d’une annonce légale&lt;/li&gt;
+&lt;li&gt;Ouverture d’un compte pro dans une banque pour déposer le capital&lt;/li&gt;
+&lt;li&gt;Envoi du dossier complet sur Guichet-entreprises.fr&lt;/li&gt;
+&lt;li&gt;Envoi de la demande d’Accre&lt;/li&gt;
+&lt;li&gt;Envoi des documents pour me mettre en création d&amp;rsquo;entreprise à Pole-Emploi&lt;/li&gt;
+&lt;li&gt;Dépôt des statuts aux impôts&lt;/li&gt;
+&lt;li&gt;Signature avec un cabinet d&amp;rsquo;expert-comptable&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;inscription-à-pole-emploi&#34;&gt;Inscription à Pole-Emploi&lt;/h2&gt;
+
+&lt;p&gt;Je suis parti avec une rupture conventionnelle, c’est à dire que je suis un futur chômeur indemnisable.
+L’intérêt est que Pole-Emploi peut me verser des allocations chômage pendant 15 mois ou du capital (45% du montant des droits) permettant de démarrer une activité.&lt;/p&gt;
+
+&lt;p&gt;Inscrit le premier jour de &amp;ldquo;liberté salariale&amp;rdquo;, j’ai eu mon rendez-vous Pole-Emploi trois semaines plus tard.
+Ce rendez-vous a duré 5 minutes, le temps d’être recalé car je n&amp;rsquo;avais pas de pièce d&amp;rsquo;identité (non le permis n&amp;rsquo;est pas une pièce d&amp;rsquo;identité,
+et non ma conseillère n&amp;rsquo;a pas voulu que je la dépose ensuite). C&amp;rsquo;est ma faute, c&amp;rsquo;est écrit sur les papiers fournis.&lt;/p&gt;
+
+&lt;p&gt;Le rendez-vous suivant s&amp;rsquo;est passé sans soucis, j&amp;rsquo;avais les documents relatifs à ma rupture conventionnelle,
+mes bulletins de paie et tout ce que j&amp;rsquo;ai pu prendre avec moi (acte de naissance, prélèvement sanguin, biographie de mon chat, empreinte génitale…).&lt;/p&gt;
+
+&lt;p&gt;Victoire, je suis reparti avec ma carte d&amp;rsquo;inscription.&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est seulement après cette étape qu’il est possible de déposer son dossier de création d&amp;rsquo;entreprise.
+Attention, ne faites pas l’inverse, ne créer pas la société avant votre inscription sinon vous risquez de ne pas être indemnisable.&lt;/p&gt;
+
+&lt;h2 id=&#34;annonce-légale&#34;&gt;Annonce légale&lt;/h2&gt;
+
+&lt;p&gt;Une étape très simple : il s’agit d’envoyer à un journal de petites annonces légales une demande de publication d’une annonce pour la création d’une entreprise.
+Vous trouverez sur internet les journaux habilités à publier des annonces légales (le CFE en donne également).
+Il faut faire des devis car on paie au caractère.&lt;/p&gt;
+
+&lt;p&gt;Ce modèle est optimisé pour minimiser le coût : &lt;a href=&#34;http://www.tomsquest.com/files/eurl/annonce_legale.rtf&#34;&gt;annonce legale.rtf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Les échanges que j’ai eu avec le journal :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;demande de devis pour le texte suivant&lt;/li&gt;
+&lt;li&gt;paiement par chèque d’un montant de 74,42 euros TTC&lt;/li&gt;
+&lt;li&gt;réception de l’attestation de parution&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;choisir-une-banque&#34;&gt;Choisir une banque&lt;/h2&gt;
+
+&lt;p&gt;La personne morale (la société) doit avoir un compte à son nom.
+Il serait possible d&amp;rsquo;ouvrir en autre compte personnel qui serait utilisé par la personne morale, mais le gérant s&amp;rsquo;expose
+alors au risque que son patrimoine personnel se confonde au patrimoine de la société. La responsabilité limitée de la société serait donc remise en cause.
+De plus, les conditions générales de certaines banques l&amp;rsquo;interdisent (i.e. pas de société sur un compte personnel).&lt;/p&gt;
+
+&lt;p&gt;Bref, le compte pro est quasi-obligatoire.&lt;/p&gt;
+
+&lt;p&gt;Coût moyen : ~300 euros de charges par an (~ 22 euros par mois HT).&lt;/p&gt;
+
+&lt;p&gt;J’ai choisis HSBC, j’ai rempli la dizaine de pages de leur dossier et joint un chèque de 2000 euros comme montant du capital.&lt;/p&gt;
+
+&lt;p&gt;J’ai reçu l’attestation de dépôts une semaine et quelques jours après (et suite à une confirmation avec un de leur conseiller).
+Ce document est requis pour le dossier de création de la société.&lt;/p&gt;
+
+&lt;h2 id=&#34;eurl-sasu-ou-autoentrepreneur&#34;&gt;EURL, SASU ou Autoentrepreneur&lt;/h2&gt;
+
+&lt;p&gt;Vaste sujet que je résume ainsi :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;EURL car c&amp;rsquo;est le type de société de 80% des indépendants en informatique, les comptables connaissent bien, beaucoup d’information sur internet&lt;/li&gt;
+&lt;li&gt;SASU : c&amp;rsquo;est devenu à la mode depuis la taxation des dividendes arrivée en 2013, mais il reste encore un léger avantage fiscal pour l&amp;rsquo;EURL.
+La SASU offre une meilleure protection sociale pour le gérant aux détriments de charges plus importantes.
+On évite aussi le RSI qui cause de nombreux problèmes, c&amp;rsquo;est un argument de poids pour certains.&lt;/li&gt;
+&lt;li&gt;Autoentrepreneur : 32K de chiffre d&amp;rsquo;affaire, c&amp;rsquo;est trop peu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;les-statuts&#34;&gt;Les statuts&lt;/h2&gt;
+
+&lt;p&gt;Les statuts sont une pièce importante du dossier, mais l’AFE fournit des statuts simplifiés prenant 2 pages et couvrant la situation classique de tout le monde.
+C’est ce modèle que j’ai utilisé. Libre à vous de comparer avec les modèles sur Internet.&lt;/p&gt;
+
+&lt;p&gt;Le modèle de statut simplifié est disponible ici : &lt;a href=&#34;https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html&#34;&gt;https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html&lt;/a&gt; (&lt;a href=&#34;http://www.tomsquest.com/files/eurl/afe_modele_statuts_types_eurl.txt&#34;&gt;copie&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Il existe également un modèle de statuts plus complet : &lt;a href=&#34;https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc&#34;&gt;https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc&lt;/a&gt; (&lt;a href=&#34;http://www.tomsquest.com/files/eurl/afe_statuts_eurl.doc&#34;&gt;copie&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;A vous de remplir les cases.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-dossier-sur-guichet-entreprise&#34;&gt;Le dossier sur Guichet-Entreprise&lt;/h2&gt;
+
+&lt;p&gt;Une liste d&amp;rsquo;écrans vous attend et une fois en fin du processus et les documents rattachés au dossier, vous pourrez payer en ligne. Vous recevrez alors votre Kbis quelques jours plus tard.&lt;/p&gt;
+
+&lt;p&gt;Le kbis est le document contenant le numéro Siret et qui atteste de l’existence de votre société.&lt;/p&gt;
+
+&lt;p&gt;Après réception de mon Kbis (ou juste avant je ne sais plus), j’ai reçu un courrier du CFE me demandant de compléter la liasse TNS (Travailleur Non Salarié)
+car apparemment le dossier transmis par internet n’était pas complet. Hop, un petit formulaire papier a compléter, ça ne fait pas trop de mal.&lt;/p&gt;
+
+&lt;p&gt;Voici mes réponses aux questions techniques posées sur les écrans (choix classiques simples) :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Régime d’imposition des bénéfices : Réel simplifié IS&lt;/li&gt;
+&lt;li&gt;Régime d’imposition de la TVA : Réel simplifié&lt;/li&gt;
+&lt;li&gt;Exercice fiscal : la première période sera longue, de 2013 au 31 décembre 2014 puis exercices normaux, du 1er janvier au 31 décembre&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les documents à fournir (de mémoire) :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Statuts signés (donc à imprimer, scanner puis uploader)&lt;/li&gt;
+&lt;li&gt;Attestation de dépôts des fonds fournis par la banque&lt;/li&gt;
+&lt;li&gt;Attestation de parution de l’annonce légale envoyée par le journal après paiement&lt;/li&gt;
+&lt;li&gt;Attestation de non-condamnation avec filiation (modèle : &lt;a href=&#34;http://www.tomsquest.com/files/eurl/declaration_non_condamnation.rtf&#34;&gt;declaration non condamnation.rtf&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Carte d&amp;rsquo;identité avec la mention sur l’honneur (donc à imprimer, annoter avec la mention sur l’honneur indiquée sur le site puis à uploader)&lt;/li&gt;
+&lt;li&gt;Copie du bail car je suis locataire : la société est domicilié chez moi et même si mon bail indique que je ne peux pas y avoir d’activité commerciale,
+c’est toléré pendant 5 ans (attention changer de domiciliation coûte de l’argent)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Coût : ~80 euros, payable en ligne.&lt;/p&gt;
+
+&lt;h2 id=&#34;envoi-de-la-demande-d-accre&#34;&gt;Envoi de la demande d’Accre&lt;/h2&gt;
+
+&lt;p&gt;L’Accre est une exonération de charge pour le chômeur créateur d’entreprise. Je vous envoie au site de l’APCE pour les infos.
+L’intérêt est de payer moins de taxe sur la rémunération que vous vous verserez.&lt;/p&gt;
+
+&lt;p&gt;J’ai fait la demande d’Accre car il me semblait qu’elle était obligatoire pour le maintien des allocations chômage,
+mais j’ai cru comprendre que j’aurai pu m’en passer. A confirmer dans votre cas, trop tard pour moi.&lt;/p&gt;
+
+&lt;p&gt;J’ai envoyé ma demande d’Accre juste après mon inscription à Pole-Emploi. C’est un formulaire simple.
+Vous recevrez une confirmation d’accord quelques semaines après.&lt;/p&gt;
+
+&lt;h2 id=&#34;le-dépôt-aux-impôts&#34;&gt;Le dépôt aux impôts&lt;/h2&gt;
+
+&lt;p&gt;Les impôts vont conserver un exemplaire de vos statuts pour archive. Vous avez un mois pour aller déposer les statuts.
+Il faut se rendre là-bas avec 4 ou 5 exemplaires signés qu’ils tamponneront et ils en garderont un.&lt;/p&gt;
+
+&lt;p&gt;Trouvez le service des impôts par rapport à votre adresse et rendez-vous là-bas.
+Ne faites pas la queue, il y a un service Entreprise.
+A 8h30, ils ont accepté de tamponner mes statuts dans la foulée, m&amp;rsquo;évitant un nouveau déplacement pour les récupérer.
+Je suis parti 7 minutes plus tard. Great !&lt;/p&gt;
+
+&lt;p&gt;Le dépôt des statuts est gratuit et il est apparemment possible d&amp;rsquo;envoyer les statuts par courrier avec une enveloppe
+affranchie pour le retour, mais je n&amp;rsquo;ai pas testé.&lt;/p&gt;
+
+&lt;p&gt;Dans un futur proche, il se pourrait que ce passage aux impôts soit inutiles, puisque ce sera le CFE qui leur
+transmettra le document car vous leur avait déjà fourni vos statuts par Guichet-Entreprise.&lt;/p&gt;
+
+&lt;h2 id=&#34;envoi-des-documents-à-pole-emploi&#34;&gt;Envoi des documents à Pole-Emploi&lt;/h2&gt;
+
+&lt;p&gt;Pour signifier à Pole-Emploi que vous souhaitez créer votre société, vous devez envoyer :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;un Kbis (j’ai envoyé un original)&lt;/li&gt;
+&lt;li&gt;vos statuts&lt;/li&gt;
+&lt;li&gt;une lettre expliquant ce que vous souhaitez faire : pour moi, maintien des allocations ou versement du capital, &lt;a href=&#34;http://www.tomsquest.com/files/eurl/courrier_poleemploi_creation_societe.rtf&#34;&gt;cf la lettre que j’ai envoyé&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;une copie signée du PV d’AG (Procès Verbal d’Assemblée Générale) déclarant la rémunération que vous souhaitez vous verser : &lt;a href=&#34;http://www.tomsquest.com/files/eurl/pv_ag_non_remuneration.rtf&#34;&gt;modèle PV AG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dans mon cas, j’ai rédigé un PV d’AG stipulant ma non-rémunération pour 2013 et 2014. Bien sûr, si je suis amené à me verser
+une rémunération, je dois en avertir Pole-Emploi, et de toute façon, mes déclarations au RSI leur permettront de savoir ce que je me suis versé.&lt;/p&gt;
+
+&lt;h2 id=&#34;cabinet-comptable&#34;&gt;Cabinet comptable&lt;/h2&gt;
+
+&lt;p&gt;Un cabinet comptable est obligatoire pour ce type de structure car il y a un certain nombre de documents légaux à produire pour chaque exercice fiscal.
+L&amp;rsquo;expert-comptable engage également sa responsabilité pour une partie de la gestion que vous ferez.&lt;/p&gt;
+
+&lt;p&gt;Le cabinet avec qui j&amp;rsquo;ai signé m&amp;rsquo;a été conseillé par un ami (&lt;a href=&#34;http://www.cestpasdur.com&#34;&gt;Damien Gouyette&lt;/a&gt;). Je vous recommande de faire marcher votre réseau,
+car il y a tout dans ce monde. Le premier critère est d&amp;rsquo;avoir quelqu&amp;rsquo;un qui sait de quoi il parle, qui vous conseille, plutôt que quelqu&amp;rsquo;un qui ne s&amp;rsquo;occupe
+que de la paperasse.&lt;/p&gt;
+
+&lt;p&gt;Coût pour une année : entre 1500 et 2500 euros HT en fonction des prestations (j&amp;rsquo;ai choisi de faire ma saisie, je scanne les docs mais j&amp;rsquo;aurai pu leur déléguer).&lt;/p&gt;
+
+&lt;h2 id=&#34;la-suite&#34;&gt;La suite&lt;/h2&gt;
+
+&lt;p&gt;Dans les semaines qui vont suivre l’immatriculation de la société, vous allez recevoir tout un tas de papier utiles et inutiles :
+immatriculation Urssaf, cotisation sociale pour les salariés (oui, même pour une entreprise uni-personnelle)&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;L’ensemble de la procédure m’as pris entre 3 et 4 semaines, car il est possible de lancer la procédure de compte pro avant le rendez-vous Pole-Emploi,
+idem pour l’annonce légale et de soumettre le dossier de création le lendemain de l’inscription en tant que chômeur.&lt;/p&gt;
+
+&lt;p&gt;Maintenant que la société est née, il reste la partie la plus importante : trouver une mission intéressante et un client à aider.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Maven in colors</title>
+            <link>http://www.tomsquest.com/blog/2013/09/maven-in-colors/</link>
+            <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2013/09/maven-in-colors/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2013/maven-logo.png&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Updated the 2014.01.21 - Added JCGay Maven Agent&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings ?
+Let&amp;rsquo;s see how to do it.&lt;/p&gt;
+
+&lt;p&gt;This post is an enhanced version of several shell scripts (like this &lt;a href=&#34;https://github.com/builddoctor/maven-antsy-color&#34;&gt;one&lt;/a&gt;)
+or Arnaud Heritier&amp;rsquo;s log4j2 approach : &lt;a href=&#34;http://aheritier.net/united-colors-of-maven/&#34;&gt;United Colors of Maven&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-it-looks&#34;&gt;How it looks&lt;/h2&gt;
+
+&lt;p&gt;Here is a screenshot of a successful build :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2013/maven-colors-success.png&#34; alt=&#34;Maven successful build with colors&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Screenshot of a failed build :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2013/maven-colors-failure.png&#34; alt=&#34;Maven failed build with colors&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;preferred-solution-shell-function&#34;&gt;Preferred solution : shell function&lt;/h2&gt;
+
+&lt;p&gt;My preferred solution is to pipe Maven&amp;rsquo;s output to &lt;strong&gt;sed&lt;/strong&gt; and to insert Ansi color sequences at the correct locations.
+It is done like this :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mvn $goal | sed -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/BUILD SUCCESS/$red BUILD SUCCESS/&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In reality, it is a bit more complex because we want to return the exit code of the maven command
+and not the one of sed or the other chained command.&lt;/p&gt;
+
+&lt;p&gt;The shell function (zsh and bash compatible) is available at :
+&lt;a href=&#34;https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zsh&#34;&gt;https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zsh&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You just have to put this file somewhere, source it and make an alias to mvn :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ source mvn-in-colors.zsh
+$ alias mvn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mvn-in-colors &lt;span style=&#34;color:#75715e&#34;&gt;# done !&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;restrictions&#34;&gt;Restrictions&lt;/h3&gt;
+
+&lt;p&gt;Using this method does not work when Maven asks for input, for example when using the release:prepare goal.&lt;/p&gt;
+
+&lt;p&gt;Workaround :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ignore the alias with &lt;code&gt;\mvn&lt;/code&gt; when releasing&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t use the release plugin and prefer the solution of Axel Fontaine :
+&lt;a href=&#34;http://axelfontaine.com/blog/final-nail.html&#34;&gt;Maven Release Plugin: The Final Nail in the Coffin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;maven-agent&#34;&gt;Maven Agent&lt;/h2&gt;
+
+&lt;p&gt;Jean-Christophe Gay wrote an interesting bit of code to handle the problem : a Java agent to hack Maven logging.&lt;/p&gt;
+
+&lt;p&gt;The code is here : &lt;a href=&#34;https://github.com/jcgay/maven-color&#34;&gt;Maven Color on GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;restrictions-1&#34;&gt;Restrictions&lt;/h3&gt;
+
+&lt;p&gt;The Readme says the agent will fail when using a plugin using itself a different version of ASM (use to change the bytecode).
+See the &lt;a href=&#34;https://github.com/jcgay/maven-color#known-issues&#34;&gt;Known issues&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;rainbow&#34;&gt;Rainbow&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/nicoulaj/rainbow&#34;&gt;Rainbow&lt;/a&gt; is a colorizer of commands outputs written in Python.
+It uses patterns to match strings to colors.&lt;/p&gt;
+
+&lt;p&gt;And &lt;strong&gt;Rainbow supports Maven out of the box&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Once installed, running Rainbow is as simple as :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ rainbow --config&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mvn3 -- mvn clean install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;restrictions-2&#34;&gt;Restrictions&lt;/h3&gt;
+
+&lt;p&gt;The original Rainbow version does not return the exit code of the specified program (mvn in our case).
+This is real problem when you want to chain mvn with a push. ie.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ rainbow --config&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;mvn3 -- mvn clean install &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git push &lt;span style=&#34;color:#75715e&#34;&gt;# will push even if the build failed !&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Some works try to fix the issues of rainbow. The &lt;a href=&#34;https://github.com/gfxmonk/rainbow&#34;&gt;one from GfxMonk&lt;/a&gt; seems to fix the lack of exit code.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Slides of my presentation : DB Migration Automation</title>
+            <link>http://www.tomsquest.com/blog/2013/09/database-migration-slides/</link>
+            <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2013/09/database-migration-slides/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Below are my slides about why and how we automated the migration of our databases.
+These slides were created for an internal presentation at my current gig.&lt;/p&gt;
+
+&lt;p&gt;We use &lt;a href=&#34;http://flywaydb.org&#34;&gt;Flyway&lt;/a&gt; because it is as simple as it can be and it still delivers a lot of value.&lt;/p&gt;
+
+&lt;h2 id=&#34;slides&#34;&gt;Slides&lt;/h2&gt;
+
+&lt;p&gt;&lt;p&gt;
+&lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/26092741&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Review : Play Framework Cookbook</title>
+            <link>http://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</link>
+            <pubDate>Thu, 06 Oct 2011 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/play_framework_cookbook.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Play!, the framework for the bored Java developers ! Very interesting and opinated framework.
+I didn&amp;rsquo;t play with it a lot in the previous months, but the new book &lt;a href=&#34;http://www.packtpub.com/play-framework-cookbook/book&#34;&gt;&amp;ldquo;Play Framework Cookbook&amp;rdquo;&lt;/a&gt; by Packt Publishing,
+released this summer was a good way to dig into the framework.
+The ebook was offered for free to people who wants to review it. No excuse.&lt;/p&gt;
+
+&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
+
+&lt;p&gt;The chapters are :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Basics of the Play Framework&lt;/li&gt;
+&lt;li&gt;Using Controllers&lt;/li&gt;
+&lt;li&gt;Leveraging Modules&lt;/li&gt;
+&lt;li&gt;Creating and Using APIs&lt;/li&gt;
+&lt;li&gt;Introduction to Writing Modules&lt;/li&gt;
+&lt;li&gt;Practical Module Examples&lt;/li&gt;
+&lt;li&gt;Running Into Production&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each subsection is divided in parts: &amp;ldquo;Getting ready&amp;rdquo;, &amp;ldquo;How to do it&amp;rdquo;, &amp;ldquo;How it works&amp;rdquo;, &amp;ldquo;There&amp;rsquo;s more&amp;rdquo;, &amp;ldquo;See also&amp;rdquo;.
+The most interesting part for me is the explanation of the internals, not the &amp;ldquo;tutorial&amp;rdquo; part.
+I have found practical information in nearly each of these.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;&amp;ldquo;There&amp;rsquo;s more&amp;rdquo;&lt;/em&gt; parts are cools because it shows additionnal/alternate/better ways to think about what you read before.
+For example, here is an excerpt from this part from the chapter &amp;ldquo;Understanding bytecode enhancement&amp;rdquo;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Overriding toString() via annotation&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Peter Hilton has written a very good article on how one can configure the output of the toString() method of an entity with the help of an annotation by using bytecode enhancement. You can check it out at &lt;a href=&#34;http://www.lunatech-research.com/archives/2011/01/11/declarative-model-class-enhancement-play&#34;&gt;http://www.lunatech-research.com/archives/2011/01/11/declarative-model-class-enhancement-play&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A lot of content is about modules (dependencies, events&amp;hellip;) with some examples (Solr, cache&amp;hellip;).
+The idea is to complete what you may find online or in the official documentation.&lt;/p&gt;
+
+&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+
+&lt;p&gt;I give a &amp;ldquo;B&amp;rdquo; to the book, as it is 1) easy to read and well written, 2) entertaining, 3) actionnable.
+The author, Alexander Reelsen, has done a very good work.&lt;/p&gt;
+
+&lt;p&gt;I learnt a lot, even as a beginner on the framework. Many of my questions were answered.
+The main benefit of the book is to complete the online documentation and going further on many topics.
+I really liked the given explanations, the additionnal references and that the framework&amp;rsquo;s code was referenced (in the form: &amp;ldquo;See this class for more info&amp;rdquo;).&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s missing ? Maybe a Scala chapter, but as the author wrote:
+&amp;ldquo;When I started writing this book, my Scala knowledge was far from competitive (and still is in many areas)&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.fr/gp/product/1849515522?ie=UTF8&amp;amp;tag=tosqu-21&#34;&gt;Book (Amazon)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.packtpub.com/play-framework-cookbook/book&#34;&gt;Book (Packt Publishing)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.lunatech-research.com/archives/2011/09/19/playframework-cookbook-review&#34;&gt;Additional review from Lunartech-research&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Better autocompletes with Fuzzy Matching</title>
+            <link>http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</link>
+            <pubDate>Fri, 13 May 2011 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</guid>
+
+            
+            <description>
+
+&lt;p&gt;This article is an introduction to Fuzzy Matching and how it can improve an Autocomplete widget. Fuzzy Matching is used to find the most appropriate strings into a set of strings, like finding &amp;ldquo;Sinatra&amp;rdquo; when you mispelled it &amp;ldquo;Senatra&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;We will setup a Sinatra application displaying an Ajax autocomplete widget, which call the backend to have the best matching results, even if the match is not strictly equal.&lt;/p&gt;
+
+&lt;h2 id=&#34;fuzzy-matching&#34;&gt;Fuzzy Matching ?&lt;/h2&gt;
+
+&lt;p&gt;Fuzzy Matching, aka &lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/Approximate_string_matching&#34;&gt;Approximate String matching&lt;/a&gt; on Wikipedia, is used mainly in spell checkers and in biology to measure the variation between DNA.&lt;/p&gt;
+
+&lt;p&gt;In this article, we will use the &lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/Levenshtein_distance&#34;&gt;Levenshtein distance algorithm&lt;/a&gt; to fetch results when there would be none using standard methods. Some other matching algorithms are also popular: the &lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/Damerau%E2%80%93Levenshtein_distance&#34;&gt;Damerau–Levenshtein distance&lt;/a&gt; (Levenshtein with transposition of letters), the &lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/Soundex&#34;&gt;Soundex&lt;/a&gt; (a phonetic algorithm for indexing names by sound) and also the &lt;a href=&#34;https://secure.wikimedia.org/wikipedia/en/wiki/Bitap_algorithm&#34;&gt;Bitap&lt;/a&gt;. Many of them can be found in Ruby, or could also be hand coded.&lt;/p&gt;
+
+&lt;p&gt;Using the Levenshtein algorithm, we get a distance between two strings. This gives for example :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$&lt;/span&gt; distance(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sinatra&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sinatra&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;#= 0, equality&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$&lt;/span&gt; distance(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sinatra&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;senatra&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;#= 1, one permutation&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;$&lt;/span&gt; distance(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sinatra&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rails&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#75715e&#34;&gt;#= 6, many permutation&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This allows us to display to the user not only the strings that match the input, but also the strings that are approximately equal.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-application&#34;&gt;The application&lt;/h2&gt;
+
+&lt;p&gt;The application uses the following pieces of code :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A Sinatra application&lt;/li&gt;
+&lt;li&gt;JQuery UI for the Autocomplete&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;text&amp;rdquo; gem which has an implementation of the Levenshtein distance algorithm (source: &lt;a href=&#34;https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb&#34;&gt;https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The source code is available on : &lt;a href=&#34;https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching&#34;&gt;https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;frontend&#34;&gt;Frontend&lt;/h3&gt;
+
+&lt;p&gt;The JQuery Autocomplete widget is simple to setup. The source is defined to call the &amp;ldquo;countries&amp;rdquo; URL and it will send it the input like &amp;ldquo;countries?term=my_input&amp;rdquo;.&lt;/p&gt;
+
+&lt;h4 id=&#34;1-add-an-input&#34;&gt;1. Add an input&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ui-widget&amp;#34;&lt;/span&gt;&amp;gt;
+ &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;label&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;country&amp;#34;&lt;/span&gt;&amp;gt;Country:&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;label&lt;/span&gt;&amp;gt;
+ &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;input&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;country&amp;#34;&lt;/span&gt; /&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&#34;2-bind-the-js&#34;&gt;2. Bind the JS&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;() {
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#country&amp;#34;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;autocomplete&lt;/span&gt;({
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;source&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;countries&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;select&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt;( &lt;span style=&#34;color:#a6e22e&#34;&gt;event&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;ui&lt;/span&gt; ) {
+      &lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#results&amp;#34;&lt;/span&gt;).&lt;span style=&#34;color:#a6e22e&#34;&gt;text&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;input was: &amp;#39;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#39; and selection was: &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ui&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;item&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;);
+    }
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;backend&#34;&gt;Backend&lt;/h3&gt;
+
+&lt;p&gt;Even simpler, the backend is a simple get method which respond with JSON :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;get &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/countries&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+ content_type &lt;span style=&#34;color:#e6db74&#34;&gt;:json&lt;/span&gt;
+ find_countries(params&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:term&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_json
+&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The real stuff is in the &amp;ldquo;find_countries&amp;rdquo; method :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_countries&lt;/span&gt;(term)
+  &lt;span style=&#34;color:#75715e&#34;&gt;# Exact match&lt;/span&gt;
+  countries &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;COUNTRIES&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find{&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;c&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; c&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;downcase &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; term&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;downcase}&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_a
+
+  &lt;span style=&#34;color:#75715e&#34;&gt;# Partial match&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; countries&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;empty?
+    countries &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;COUNTRIES&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find_all{&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;c&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; c&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;downcase&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;include? term&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;downcase }
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;# Here is where we call the distance method of the text gem. It computes the Levenshtein distance and&lt;/span&gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;# appends the results to the partial match done before&lt;/span&gt;
+    max_distance &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Should be tweaked&lt;/span&gt;
+    countries &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;COUNTRIES&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find_all{&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;c&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; distance(c, term) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; max_distance}&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sort_by{&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;c&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; distance(c, term) }
+
+    countries&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;uniq!
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+
+  countries
+&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The find_countries method can serve as an example. It uses exact and partial matching and use the Levenshtein distance to add some more results. A real-world-awesome-production implementation would be different, by narrowing the results (less results, lower distance).&lt;/p&gt;
+
+&lt;h2 id=&#34;wrapping-up&#34;&gt;Wrapping up&lt;/h2&gt;
+
+&lt;p&gt;With a minimal mathematical background and a minimal technical setup (no indexing, no DB specific feature), we have boosted our autocomplete results.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;ve seen how to setup a quick-and-simple sinatra app which computes on the Levenshtein distance on the backend. The Frontend was easily done using the JQuery UI Autocomplete widget.&lt;/p&gt;
+
+&lt;p&gt;For advanced use cases, we should improve the way we mix the Fuzzy-maching results with the strictly matching results. Switching to a better algorithm, or a set of algorithm (Longest common substring + Dameau-Levenshtein) could also be easily done.&lt;/p&gt;
+
+&lt;p&gt;`The complete source code is available on Github : &lt;a href=&#34;https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching&#34;&gt;https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>FitNesse technical setup</title>
+            <link>http://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</link>
+            <pubDate>Sat, 04 Dec 2010 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Getting &lt;a href=&#34;http://fitnesse.org&#34;&gt;FitNesse&lt;/a&gt; working for a development team is not particularly evident. You have many possibilities and some of them are not so effective.&lt;/p&gt;
+
+&lt;p&gt;The Setup proposed here has a good combination of pros and cons. It will enable the work of two teams: one team of functional people using a central server and one team of developers writing the fixture straight from their workspace.&lt;/p&gt;
+
+&lt;h2 id=&#34;advantages-and-disadvantages&#34;&gt;Advantages and disadvantages&lt;/h2&gt;
+
+&lt;p&gt;Pros:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Developer friendly&lt;/li&gt;
+&lt;li&gt;One unique source of test cases: the central server&lt;/li&gt;
+&lt;li&gt;Test pages backup along the source code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pages cannot be created locally; they have to be created on the central server&lt;/li&gt;
+&lt;li&gt;The backup task seems hacky, but it does the job&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;team-process&#34;&gt;Team process&lt;/h2&gt;
+
+&lt;p&gt;The functional people use the central server to manage the test pages&lt;/p&gt;
+
+&lt;p&gt;Each developer has its own FitNesse server, which imports the page from the central server and use the local workspace&lt;/p&gt;
+
+&lt;p&gt;A job adds, delete and commits the changes made on the central server’s pages&lt;/p&gt;
+
+&lt;p&gt;Basic rules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pages must be created on the central server, never locally&lt;/li&gt;
+&lt;li&gt;Pages must be modified remotely (using the “Edit Remotely” button); Local pages may be erased at the next sync, so use them carefully&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/fitnesse-schema_resized2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-central-server&#34;&gt;1. Central Server&lt;/h3&gt;
+
+&lt;h4 id=&#34;launcher&#34;&gt;Launcher&lt;/h4&gt;
+
+&lt;p&gt;The launcher will use a local checkout of the project. This checkout is used for compiling the fixture and project code, and also to be able to commit the changes made to the test pages.&lt;/p&gt;
+
+&lt;p&gt;Launcher command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java -jar fitnesse.jar -p 8086 -e 0 -r $dir_with_fitnesse_pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The “-e 0” argument disables the built-in versioning system of FitNesse.&lt;/p&gt;
+
+&lt;p&gt;The “-r $dir” argument tells FitNesse to use this directory as the repository of pages.&lt;/p&gt;
+
+&lt;p&gt;The whole command line arguments are described here: &lt;a href=&#34;http://fitnesse.org/FitNesse.UserGuide.CommandLineArguments&#34;&gt;http://fitnesse.org/FitNesse.UserGuide.CommandLineArguments&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;classpath&#34;&gt;Classpath&lt;/h4&gt;
+
+&lt;p&gt;We use the “root” page (&lt;a href=&#34;http://localhost:8086/root&#34;&gt;http://localhost:8086/root&lt;/a&gt;) to declare the server’s configuration and classpath.&lt;/p&gt;
+
+&lt;p&gt;This page won’t be added to source control, because its content will be different on a developer’s workstation.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/joel1di1/fitnesse-maven-classpath&#34;&gt;fitnesse-maven-plugin&lt;/a&gt; is used to create the list of jars we depend on. It reads the pom.xml file of our maven project, but it can also read a pom file directly from the central repository.&lt;/p&gt;
+
+&lt;p&gt;Content of the root page:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Use Slim engine instead of Fit
+!define TEST_SYSTEM {slim}
+
+Change the default port to avoid conflicts
+!define SLIM_PORT {62123}
+
+Classpath and pom file
+!path /home/hudson/workspace/myproject/fitnesse/target/test-classes
+!pomFile /home/hudson/workspace/myproject/fitnesse/pom.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;backup-job&#34;&gt;Backup job&lt;/h4&gt;
+
+&lt;p&gt;The backup job is simple. It is run by our Build server, every minute and launches a basic script, which adds, deletes and commits all changes within a directory.&lt;/p&gt;
+
+&lt;p&gt;Here is a simple batch file for Subversion.
+The first argument should be the directory to backup.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for /f &amp;quot;tokens=2*&amp;quot; %%i in (&#39;svn status %1 ^| find &amp;quot;?&amp;quot;&#39;) do svn add &amp;quot;%%i&amp;quot;
+for /f &amp;quot;tokens=2*&amp;quot; %%i in (&#39;svn status %1 ^| find &amp;quot;!&amp;quot;&#39;) do svn delete &amp;quot;%%i&amp;quot;
+svn commit -m &amp;quot;Automatic commit&amp;quot; %1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We did try to use a FitNesse plugin for Subversion to backup the pages automatically (and in a less hacky way) but that simply did not work at all. This plugin was: &lt;a href=&#34;http://code.google.com/p/cm-subversion&#34;&gt;http://code.google.com/p/cm-subversion&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;FitNesse has also a pseudo-native support of Git (see &lt;a href=&#34;http://fitnesse.org/FitNesse.UserGuide.SourceCodeControl.GitPlugin&#34;&gt;here&lt;/a&gt;) but corporate Git repositories are still not the standard.&lt;/p&gt;
+
+&lt;h4 id=&#34;svn-ignore&#34;&gt;SVN ignore&lt;/h4&gt;
+
+&lt;p&gt;All files in the working directory of FitNesse can be versioned, except:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The “root” page we used earlier, this is the content.txt and properties.xml at the root of the working directory&lt;/li&gt;
+&lt;li&gt;The “ErrorLogs” directory&lt;/li&gt;
+&lt;li&gt;All zip files “*.zip” (there should be none because of the “-e 0” flag&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Source: &lt;a href=&#34;http://stackoverflow.com/questions/249580/how-do-i-add-fitnesse-pages-to-version-control&#34;&gt;http://stackoverflow.com/questions/249580/how-do-i-add-fitnesse-pages-to-version-control&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-developer-server&#34;&gt;2. Developer server&lt;/h3&gt;
+
+&lt;h4 id=&#34;launcher-1&#34;&gt;Launcher&lt;/h4&gt;
+
+&lt;p&gt;On a developer server, we don’t need the “-r” flag. The pages will be imported from the central server.&lt;/p&gt;
+
+&lt;p&gt;Launcher command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java -jar fitnesse.jar -p 8086 -e 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;classpath-1&#34;&gt;Classpath&lt;/h4&gt;
+
+&lt;p&gt;As on the central server, the “root” page is used to configure the classpath.&lt;/p&gt;
+
+&lt;p&gt;The content is the same, with the exception of the local path:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Use Slim engine instead of Fit
+!define TEST_SYSTEM {slim}
+
+Change the default port to avoid conflicts
+!define SLIM_PORT {62123}
+
+Classpath and pom file
+!path /home/tom/dev/myproject/fitnesse/target/test-classes
+!pomFile /home/tom/dev/myproject/fitnesse/pom.xml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;wiki-import&#34;&gt;Wiki import&lt;/h4&gt;
+
+&lt;p&gt;The Wiki Import feature is used to, well&amp;hellip; import the pages from the central server.&lt;/p&gt;
+
+&lt;p&gt;How-to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;From the developer’s server, create a new page&lt;/li&gt;
+&lt;li&gt;From the properties, paste the URL to the parent page you wish to import (something like &lt;a href=&#34;http://fitnesse:8086/MyProject&#34;&gt;http://fitnesse:8086/MyProject&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/fitnesse_wiki_import.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;debugging&#34;&gt;Debugging&lt;/h4&gt;
+
+&lt;p&gt;Debugging is easy. Add a breakpoint to a fixture then create a “Remote Debug” configuration (within the Debug menu).&lt;/p&gt;
+
+&lt;p&gt;Under FitNesse, just append the following at the end of the page you want to debug:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;?responder=test&amp;amp;remote_debug=true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;random-problem-bind-socket-exception&#34;&gt;Random problem (Bind, Socket exception)&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/fitnesse_error.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you experience strange errors with no output, or better Socket and Bind exceptions (like in the screenshot), you should use the SLIM_PORT option (as used in this article). This basically shift the ports used by Slim to avoid conflicts with, let’s say, Tomcat.&lt;/p&gt;
+
+&lt;p&gt;Add this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;!define SLIM_PORT {62123}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Industrialisation des développements : automatisez votre base de données</title>
+            <link>http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</link>
+            <pubDate>Thu, 16 Sep 2010 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Le grand oubli dans l&amp;rsquo;industrialisation des développements est la base de données, cette chose monolithique et statique qui n&amp;rsquo;évolue pas aussi vite et aussi aisément que le code. Au même titre que l&amp;rsquo;intégration continue et les systèmes de gestion de version pour le code source, il existe des outils permettant de fluidifier et d&amp;rsquo;automatiser le travail autour du schéma physique des données. Travailler avec ces outils permet de compléter une démarche Agile en permettant une réactivité forte face aux changements.&lt;/p&gt;
+
+&lt;p&gt;Une première partie de cet article concernera les principes et pratiques autour de ces outils (partie « boss compliant »). La deuxième est orientée technique (partie « geek aware »).&lt;/p&gt;
+
+&lt;h2 id=&#34;principes-directeurs&#34;&gt;Principes directeurs&lt;/h2&gt;
+
+&lt;p&gt;Dans son article paru en 2003 intitulé « &lt;a href=&#34;http://martinfowler.com/articles/evodb.html&#34;&gt;Evolutionary Database Design&lt;/a&gt; », Martin Fowler pose les principes du design évolutif de base de données. Les points clés en sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;La base de données évolue en même temps que le code ;&lt;/li&gt;
+&lt;li&gt;Il faut donc tester en continu la base de données pour permettre un refactoring sans conséquence, comme on le fait avec le code source ;&lt;/li&gt;
+&lt;li&gt;Il faut outiller les processus autour de la base de données afin d&amp;rsquo;améliorer la productivité des développements et leur industrialisation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les outils existants reposent sur les principes suivants :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Un schéma doit pouvoir être détruit et recréé de manière répétable ;&lt;/li&gt;
+&lt;li&gt;La version du schéma doit être identifiable ;&lt;/li&gt;
+&lt;li&gt;La montée et la descente de version doivent être automatisées ;&lt;/li&gt;
+&lt;li&gt;Les changements appliqués doivent être connus ;&lt;/li&gt;
+&lt;li&gt;Un changement doit pouvoir être défait ou annulé ;&lt;/li&gt;
+&lt;li&gt;Un changement précédemment appliqué ne doit pas être modifié mais un nouveau changement doit être créé.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;principes-techniques&#34;&gt;Principes techniques&lt;/h2&gt;
+
+&lt;p&gt;Sur le plan technique, le fonctionnement des outils de migration est simple. Ils se basent sur une table contenant la version de la base de données. La liste des scripts exécutés est conservée ainsi qu’une empreinte de chaque script afin de détecter une altération d’un script déjà exécuté.&lt;/p&gt;
+
+&lt;p&gt;A chaque lancement, l’outil de migration compare la version de la base et les scripts existants et propose la mise à jour le cas échéant.&lt;/p&gt;
+
+&lt;p&gt;Il est également possible de « descendre de version » le schéma (fonctionnalité disponible dans quasiment tous les outils). Il s’agit de remettre la base de données dans un état cohérent. Deux cas d’usage :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;développement d’une nouvelle fonctionnalité : il est ainsi possible de créer un script et de l’exécuter plusieurs fois (montée de version, test, modification, descente, puis nouvelle montée de version). La descente de version permet ainsi de faire revenir la base de données dans l’état précédent ;&lt;/li&gt;
+&lt;li&gt;Ré-alignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Même si la descente de version est utile, elle a néanmoins deux inconvénients. Le premier est que les instructions de descente doivent être écrites à la main. Les outils les plus simples fonctionnent sur le principe où chaque script contient une partie montée de version et une partie descente (voir l’exemple plus bas avec MyBatis). Seul Liquibase est capable de générer les instructions de descente de version grâce à son DSL.&lt;/p&gt;
+
+&lt;p&gt;Le deuxième inconvénient est que certaines montées de version ne sont pas réversibles (suppression de table ou de données). Dans ce cas, la descente ne sera possible que jusqu&amp;rsquo;à la version incluant ce type de modification. L&amp;rsquo;alternative est de recréer le schéma de zéro, une fonctionnalité que tous les outils proposent et qui est en fin de compte très rapide.&lt;/p&gt;
+
+&lt;h2 id=&#34;bonnes-pratiques&#34;&gt;Bonnes pratiques&lt;/h2&gt;
+
+&lt;p&gt;Les bonnes pratiques poussées par ces outils sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scripts (SQL ou XML pour Liquibase) stockés avec le code source&lt;/li&gt;
+&lt;li&gt;Une base de données par développeur (réaliste quand la gestion de la DB est automatisée, hors problème de coût de licence) ;&lt;/li&gt;
+&lt;li&gt;Une base de données commune à l’équipe qui représente l’état complet et stable ;&lt;/li&gt;
+&lt;li&gt;L’intégration continue déroule l’ensemble des scripts à chaque livraison ;&lt;/li&gt;
+&lt;li&gt;Un script qui a déjà pu être exécuté ne doit plus être modifié. On risque sinon de désynchroniser les scripts et le schéma. La livraison d’un nouveau script est nécessaire dans ce cas. Ce script est un refactoring du précédent. La seule exception est un script buggé qui provoque la perte de la donnée. Il ne faut donc pas que ce script atteigne les autres environnements.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;les-outils-existants&#34;&gt;Les outils existants&lt;/h2&gt;
+
+&lt;h3 id=&#34;liquibase-puissant-mais-complexe&#34;&gt;Liquibase : puissant mais complexe&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://liquibase.org/&#34;&gt;Liquibase&lt;/a&gt; est le plus connu des outils de migration de base de données. Il se base sur les patterns décrits dans le livre « Refactoring database ». À ce titre, il est conçu autour d’une approche théorique par pattern de refactoring.&lt;/p&gt;
+
+&lt;p&gt;Le noyau de Liquibase est son DSL basé sur XML qui a les avantages :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;d’être compatible avec plusieurs moteurs SQL ;&lt;/li&gt;
+&lt;li&gt;de donner une sémantique aux opérations (on écrira un &amp;lt;renameColumn&amp;gt; plutôt qu’un alter table) ;&lt;/li&gt;
+&lt;li&gt;de générer automatique des instructions de rollback (par exemple, un &amp;lt;createColumn&amp;gt; sera compensé par un &amp;lt;dropColumn&amp;gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Liquibase est complet. Il s’intègre à Maven, Grails, Spring et Hibernate et supporte la génération de documentation ou encore la création d’un diff entre schémas.&lt;/p&gt;
+
+&lt;p&gt;L’inconvénient principal de Liquibase est une certaine complexité qui ne se retrouve pas dans les autres outils (XML, notion de changelog et de changeset, versionning sur id/auteur/chemin). La courbe d&amp;rsquo;apprentissage est donc plus élevée que les autres outils se basant purement sur du SQL.&lt;/p&gt;
+
+&lt;p&gt;Exemple de changeSet Liquibase :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;changeSet&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;author=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bob&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;createTable&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tableName=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;department&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;column&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;int&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;constraints&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;primaryKey=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nullable=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;false&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/column&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;column&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;varchar(50)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/createTable&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/changeSet&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;les-pragmatiques&#34;&gt;Les pragmatiques&lt;/h3&gt;
+
+&lt;p&gt;D’autres outils ne vont pas aussi loin que Liquibase en termes de fonctionnalités et d&amp;rsquo;abstraction mais leur approche est pragmatique et plus simple. Ils visent avant tout à automatiser la gestion des scripts SQL. Les principaux sont &lt;a href=&#34;http://www.mybatis.org/java.html&#34;&gt;MyBatis Schema Migration&lt;/a&gt;, &lt;a href=&#34;http://dbmaintain.sourceforge.net/&#34;&gt;DbMaintain&lt;/a&gt; et &lt;a href=&#34;http://code.google.com/p/c5-db-migration/&#34;&gt;C5 DB Migration&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le principe de ces outils est assez simple et consiste à lancer une série de scripts stockés dans une arborescence répartie en version. Les actions sont tracées ce qui permet de connaître l’état du schéma.&lt;/p&gt;
+
+&lt;p&gt;Exemple d’arborescence organisée pour DbMaintain :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scripts/01_v1.0/01_products_and_orders.sql
+                02_users.sql
+        02_v1.1/01_add_barcode_column.sql
+                02_drop_itemcode_column.sql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Le schéma de base de données est mis à jour en exécutant :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dbmaintain.sh update chemin/vers/les/scripts&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dans le cas de MyBatis, les instructions de montée et de descente de version sont écrites dans le même script SQL.
+Exemple :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--// create product table
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; PRODUCT (ID INT, NAME VARCHAR(&lt;span style=&#34;color:#ae81ff&#34;&gt;255&lt;/span&gt;));
+
+&lt;span style=&#34;color:#75715e&#34;&gt;--//@UNDO
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;DROP&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; PRODUCT;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Les outils de migration de base de données permettent une meilleure productivité en levant certaines barrières au changement du schéma des données et ils rendent l&amp;rsquo;industrialisation accessible.&lt;/p&gt;
+
+&lt;p&gt;Les points clés à retenir sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Les outils de migration de bases de données nous permettent de gagner en efficacité lors de la manipulation du schéma de la base de données ;&lt;/li&gt;
+&lt;li&gt;Ces outils fiabilisent les traitements en les automatisant et en les intégrants à l’usine de développement ;&lt;/li&gt;
+&lt;li&gt;Ces outils apportent de bonnes pratiques permettant un travail en équipe plus efficace ;&lt;/li&gt;
+&lt;li&gt;Ces outils sont disponibles, simples à mettre en place et OpenSource.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Par extension, on peut imaginer qu&amp;rsquo;une application puisse se mettre à jour d&amp;rsquo;elle-même. En effet, il s’agirait de permettre à l’application de lancer les migrations de schémas quand elle démarre. Cette fonctionnalité réduit le temps de mise en production en supprimant l’étape de passage des scripts par les DBA. Liquibase propose déjà cette fonctionnalité.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Notes sur Rework de 37signals</title>
+            <link>http://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</link>
+            <pubDate>Sun, 29 Aug 2010 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/rework_cover.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Mes notes sur le deuxième livre de la société 37signals, &lt;a href=&#34;http://37signals.com/rework/&#34;&gt;Rework&lt;/a&gt;. Il fait suite à Getting Real. J&amp;rsquo;ai avalé rapidement le livre car les idées sont tranchantes, inspirantes et quelque fois révoltantes. Mais le but est là : réaliser qu&amp;rsquo;il y a d&amp;rsquo;autres façons de faire du business. de concevoir son entreprise et de travailler.&lt;/p&gt;
+
+&lt;p&gt;Oui, il est possible de concevoir des applications avec moins de fonctionnalités que la concurrence. Non, l&amp;rsquo;argent des investisseurs n&amp;rsquo;est pas toujours bon à prendre.&lt;/p&gt;
+
+&lt;p&gt;Le livre est composé d&amp;rsquo;un ensemble de courts chapitres et décrit les recettes qu’applique 37Signals pour ces produits et sa façon d’être en tant que business.&lt;/p&gt;
+
+&lt;h2 id=&#34;learning-form-mistakes-is-overrated&#34;&gt;Learning form mistakes is overrated&lt;/h2&gt;
+
+&lt;p&gt;Apprendre de ses erreurs est surévalué, il vaut mieux apprendre de ses succès. L&amp;rsquo;échec n&amp;rsquo;est pas un pré requis du succès. Quelqu&amp;rsquo;un qui a déjà eu un succès a plus de chance de l&amp;rsquo;être à nouveau. Ceux qui ont eu un échec n&amp;rsquo;ont pas plus de chance d&amp;rsquo;avoir un succès que les nouveau.&lt;/p&gt;
+
+&lt;p&gt;Voir &lt;a href=&#34;http://www.nytimes.com/2009/03/22/business/22proto.html&#34;&gt;l&amp;rsquo;article de Leslie Berlin &amp;ldquo;Try, try again, or maybe not&amp;rdquo;&lt;/a&gt; qui montre que l&amp;rsquo;échec ne garantit pas le succès mais que le succès participe au succès.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-grow&#34;&gt;Why Grow ?&lt;/h2&gt;
+
+&lt;p&gt;Une entreprise avec beaucoup d’employé n’est pas forcément saine. Avec la taille viennent de nouveaux problèmes et une plus grande complexité. Chacun doit trouver la bonne taille pour son business en commençant petit et en voyant comment il grandit.&lt;/p&gt;
+
+&lt;h2 id=&#34;start-making-something&#34;&gt;Start making something&lt;/h2&gt;
+
+&lt;p&gt;Une idée ne vaut rien tant que vous n&amp;rsquo;en avez rien fait. La vraie question est de quelle bonne façon on la réalise.&lt;/p&gt;
+
+&lt;h2 id=&#34;no-time-is-no-excuse&#34;&gt;No time is no excuse&lt;/h2&gt;
+
+&lt;p&gt;Il est toujours possible de prendre quelques heures dans son planning pour travailler sur nos projets. Pas de temps, n&amp;rsquo;est pas une excuse !&lt;/p&gt;
+
+&lt;h2 id=&#34;outside-money-is-plan-z&#34;&gt;Outside Money is plan Z&lt;/h2&gt;
+
+&lt;p&gt;Prendre l’argent d’investisseurs peut ne pas en valoir le coût, car :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;il fait perdre une partie du contrôle : devoir prendre en compte les ordres d&amp;rsquo;autres personnes par exemple ;&lt;/li&gt;
+&lt;li&gt;il occasionne une baisse de qualité au détriment du retour sur investissement rapide ;&lt;/li&gt;
+&lt;li&gt;Dépenser l&amp;rsquo;argent des autres est addictif ;&lt;/li&gt;
+&lt;li&gt;C&amp;rsquo;est souvent un mauvais coup financier (au début, on n&amp;rsquo;a aucun levier pour gérer mieux le deal) ;&lt;/li&gt;
+&lt;li&gt;Le client ne devient plus le premier objectif, mais les objectifs des investisseurs le deviennent ;&lt;/li&gt;
+&lt;li&gt;Obtenir de l&amp;rsquo;argent prend beaucoup d&amp;rsquo;énergie et de temps.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;start-a-business-not-a-startup&#34;&gt;Start a business, not a startup&lt;/h2&gt;
+
+&lt;p&gt;Le mot Startup signifie être dispendieux, ne pas affronter les réalités du marché, être dans une bulle. Or la réalité est là. Mieux vaut créer un business qu’une Startup.&lt;/p&gt;
+
+&lt;h2 id=&#34;embrace-constraint&#34;&gt;Embrace constraint&lt;/h2&gt;
+
+&lt;p&gt;Moins (de temps, d&amp;rsquo;argent, de personne, d&amp;rsquo;expérience) est une vraie bonne chose. Cela force à être créatif et à éviter le gâchis.&lt;/p&gt;
+
+&lt;h2 id=&#34;illusions-of-agreement&#34;&gt;Illusions of agreement&lt;/h2&gt;
+
+&lt;p&gt;Essayer de supprimer les niveaux d&amp;rsquo;abstractions (docs, plans, rapports). Chacun peut imaginer une chose différente de chaque niveau. Seul le résultat (le produit) met tout le monde d&amp;rsquo;accord.&lt;/p&gt;
+
+&lt;h2 id=&#34;reasons-to-quit&#34;&gt;Reasons to quit&lt;/h2&gt;
+
+&lt;p&gt;Questions à se poser pour s&amp;rsquo;assurer que l&amp;rsquo;on travaille sur des choses qui importent :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pourquoi faites-vous cela ? A qui cela bénéficie, quelle est la motivation&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Quel problème résolvez-vous ?&lt;/li&gt;
+&lt;li&gt;Est-ce utile finalement ? Faire quelque chose ou quelque chose d&amp;rsquo;utile ?&lt;/li&gt;
+&lt;li&gt;Ajoutez vous de la valeur ?&lt;/li&gt;
+&lt;li&gt;Est-ce que cela changera quelque chose ?&lt;/li&gt;
+&lt;li&gt;Que pourriez-vous faire à la place ? Priorité…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ne pas hésiter à abandonner ce que l&amp;rsquo;on est en train de faire. Des fois, c&amp;rsquo;est la bonne chose à faire.&lt;/p&gt;
+
+&lt;h2 id=&#34;make-tiny-decisions&#34;&gt;Make tiny decisions&lt;/h2&gt;
+
+&lt;p&gt;Mieux vaut faire un ensemble de petites décisions qu&amp;rsquo;une grosse décision. Grosse décision égale de grosses erreurs. Cela n&amp;rsquo;est pas vrai pour de petites décisions qui seront réparables. Cela n&amp;rsquo;empêche pas d&amp;rsquo;avoir de grosses idées et de grands plans, juste que la meilleure façon de les réaliser, c&amp;rsquo;est par petite décision.&lt;/p&gt;
+
+&lt;p&gt;Les meilleurs buts sont ceux que l&amp;rsquo;on peut atteindre, puisqu&amp;rsquo;une fois réalisés, on peut construire dessus.&lt;/p&gt;
+
+&lt;h2 id=&#34;underdo-your-competition&#34;&gt;Underdo your competition&lt;/h2&gt;
+
+&lt;p&gt;Pour battre un compétiteur, pas besoin de faire plus. Viser à moins faire que ses concurrents, mais faire mieux. [Philosophie à la base des produits de 37Signals]&lt;/p&gt;
+
+&lt;h2 id=&#34;emulate-chefs&#34;&gt;Emulate Chefs&lt;/h2&gt;
+
+&lt;p&gt;Apprendre aux autres ce que l&amp;rsquo;on connait de son business, ne veut pas dire que les autres pourront nous copier plus facilement (image des chefs cuistot qui donnent leur recette).&lt;/p&gt;
+
+&lt;h2 id=&#34;drug-dealers-get-it-right&#34;&gt;Drug dealers get it right&lt;/h2&gt;
+
+&lt;p&gt;Pouvoir faire essayer un produit (une dose) car s’il est bon les clients reviendront pour se le payer.&lt;/p&gt;
+
+&lt;h2 id=&#34;résumés-are-ridiculous&#34;&gt;Résumés are ridiculous&lt;/h2&gt;
+
+&lt;p&gt;Un CV est toujours exagéré mais aussi toujours vague. Embauchez sur la base du CV est dangereux. Une lettre de motivation est déjà mieux car il n&amp;rsquo;est pas possible que le candidat ait envoyé une lettre personnalisée à 100 entreprises.&lt;/p&gt;
+
+&lt;h2 id=&#34;years-of-irrelevance&#34;&gt;Years of irrelevance&lt;/h2&gt;
+
+&lt;p&gt;Les années d&amp;rsquo;expérience ne veulent pas dire grand chose. Connaitre combien de temps une personne a fait une chose ne vaut pas savoir avec quelle qualité et comment elle l&amp;rsquo;a fait.&lt;/p&gt;
+
+&lt;h2 id=&#34;hire-great-writers&#34;&gt;Hire great writers&lt;/h2&gt;
+
+&lt;p&gt;Le talent pour l&amp;rsquo;écriture est un critère de choix entre candidats. Savoir bien écrire signifie savoir penser correctement, communiquer et savoir expliquer.&lt;/p&gt;
+
+&lt;h2 id=&#34;take-a-deep-breath&#34;&gt;Take a deep breath&lt;/h2&gt;
+
+&lt;p&gt;Les gens sont des créatures ave des habitudes, c&amp;rsquo;est pour cela que le changement est souvent vu comme négatif. Une réaction négative est presque toujours plus forte et plus passionnée qu&amp;rsquo;une réaction positive.&lt;/p&gt;
+
+&lt;p&gt;Quand on réalise en changement, il y aura toujours de mécontents. Il faut les écouter, attendre un peu, montrer que l&amp;rsquo;on est conscient du problème. Souvent les gens s&amp;rsquo;adapteront.&lt;/p&gt;
+
+&lt;h2 id=&#34;decisions-are-temporary&#34;&gt;Decisions are temporary&lt;/h2&gt;
+
+&lt;p&gt;Une décision n&amp;rsquo;est pas définitive. Il faut se laisser la possibilité d&amp;rsquo;y revenir. Décider pour maintenant et s&amp;rsquo;inquiéter pour le futur plus tard.&lt;/p&gt;
+
+&lt;h2 id=&#34;liens-annexes&#34;&gt;Liens annexes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Le site du livre : &lt;a href=&#34;http://37signals.com/rework/&#34;&gt;http://37signals.com/rework/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Les notes d&amp;rsquo;&lt;a href=&#34;http://ulrichinaction.blogspot.com&#34;&gt;Ulrich Vachon&lt;/a&gt; sur le livre : &lt;a href=&#34;http://ulrichinaction.blogspot.com/2010/08/retour-sur-rework.html&#34;&gt;http://ulrichinaction.blogspot.com/2010/08/retour-sur-rework.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Construire la nouvelle génération de leaders techniques</title>
+            <link>http://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</link>
+            <pubDate>Tue, 24 Aug 2010 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Transcription de la session de Patrick KUA à l&amp;rsquo;USI 2010 : &lt;a href=&#34;http://www.universite-du-si.com/en/conferences/6-paris-usi-2010/sessions/912-construire-la-nouvelle-generation-de-leaders-techniques&#34;&gt;Building the next génération of technical leaders&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;définition&#34;&gt;Définition&lt;/h2&gt;
+
+&lt;p&gt;Un leader technique est un développeur qui passe 30% de son temps à coder avec l’équipe et 70% en activités de leader. Il a donc deux types de compétences : le développement et le leadership.&lt;/p&gt;
+
+&lt;p&gt;Un leader technique ne doit pas être déconnecté de ce qu’il prône, sinon il risque de se baser sur ses opinions plutôt que sur des faits.&lt;/p&gt;
+
+&lt;p&gt;Un leader est facteur important pour la réussite d’une équipe.&lt;/p&gt;
+
+&lt;h2 id=&#34;de-mauvais-leaders-techniques&#34;&gt;De mauvais Leaders Techniques&lt;/h2&gt;
+
+&lt;p&gt;Différents types de mauvais leader technique :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Benevolent Dictator&amp;rdquo; : il dicte ce qu’il fait en étant soutenu par ses opinions plutôt que par du concret&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Do it yourself&amp;rdquo; : ne sait pas déléguer&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Hard Problems are mine&amp;rdquo; : ne prends que les sujets difficiles (intéressants)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il existe des développeurs dont la valeur produite est négative (leur impact nette est négative). Il en est de même pour les leaders techniques.  Ceux-ci peuvent provoquer une perte d’enthousiasme de l’équipe, de l’apathie ou encore de la déresponsabilisation.&lt;/p&gt;
+
+&lt;h2 id=&#34;former-de-bons-leader-techniques&#34;&gt;Former de bons leader techniques&lt;/h2&gt;
+
+&lt;p&gt;Nos systèmes ne savent pas produire de bons tech leads.  Le principe de Peter est souvent de rigueur. Ce principe stipule que dans une hiérarchie, un employé tend à s’élever jusque son niveau d’incompétence.&lt;/p&gt;
+
+&lt;p&gt;Patrick raconte une anecdote sur des chercheurs italiens qui ont démontré qu’une société est plus efficace si elle fait monter en grade les personnes aléatoirement plutôt qu’en se basant sur le mérite.&lt;/p&gt;
+
+&lt;p&gt;Un bon développeur ne fera pas forcément un bon leader technique. Les compétences de ces deux métiers ne sont tout simplement pas les mêmes.&lt;/p&gt;
+
+&lt;h2 id=&#34;des-compétences-différentes&#34;&gt;Des compétences différentes&lt;/h2&gt;
+
+&lt;p&gt;Compétences du développeur :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implémenter une fonctionnalité&lt;/li&gt;
+&lt;li&gt;Changer un comportement existant&lt;/li&gt;
+&lt;li&gt;Ecrire des tests&lt;/li&gt;
+&lt;li&gt;Coder proprement&lt;/li&gt;
+&lt;li&gt;Challenger les choses établies&lt;/li&gt;
+&lt;li&gt;Proposer des solutions annexes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Compétence du leader technique :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Aligner chacun sur une même vision&lt;/li&gt;
+&lt;li&gt;Résoudre les conflits&lt;/li&gt;
+&lt;li&gt;Prendre la responsabilité de la livraison&lt;/li&gt;
+&lt;li&gt;Raconter une histoire&lt;/li&gt;
+&lt;li&gt;Faire croitre les talents&lt;/li&gt;
+&lt;li&gt;Faire en sorte que chacun puisse décider&lt;/li&gt;
+&lt;li&gt;Créer un environnement d’équipe sain&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;solutions&#34;&gt;Solutions&lt;/h2&gt;
+
+&lt;p&gt;Pour avoir de meilleurs leaders techniques, Patrick recommande de :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reconnaître officiellement les différences entre un développeur et un leader technique : expliquer ce qu’est un leader technique, quelles sont les compétences à acquérir ;&lt;/li&gt;
+&lt;li&gt;Développer les compétences : un apprenti tech lead peut travailler avec un tech lead expert (pairing, one-on-one), donner le droit explicitement à l’apprenti de faire des erreurs et sans conséquence pour lui  (cela maximise sa progression).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;liens&#34;&gt;Liens&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.thekua.com/atwork/&#34;&gt;Blog de Patrick KUA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://qconlondon.com/london-2010/file?path=/qcon-london-2010/slides/PatrickKua_BuildingTheNextGenerationOfTechnicalLeaders.pdf&#34;&gt;Slides de la présentation faire à la QCon London (PDF)&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>JPA : les illusions sur les NamedQueries</title>
+            <link>http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</link>
+            <pubDate>Sun, 28 Mar 2010 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Un certain nombre d&amp;rsquo;idées reçues existent sur les NamedQueries. On les dit plus performantes car mises en cache, on les dit plus sûres car validées au chargement. Etudions ces points et regardons quels sont les réels avantages des NamedQueries.&lt;/p&gt;
+
+&lt;h2 id=&#34;rappel-sur-les-namedqueries&#34;&gt;Rappel sur les NamedQueries&lt;/h2&gt;
+
+&lt;p&gt;Une NamedQuery est une requête nommée. Ce n&amp;rsquo;est pas une nouveauté de la norme JPA car elles existaient dans Hibernate bien avant. Une namedQuery est un moyen de donner un non à une requête JPQL et de la rappeler par ce nom par la suite.&lt;/p&gt;
+
+&lt;p&gt;Création :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@Entity&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;@NamedQuery&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;findAllCustomers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; query &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Select c From Customers c&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Client&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Utilisation :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; List &lt;span style=&#34;color:#a6e22e&#34;&gt;findAll&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; entityManager&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;createNamedQuery&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;findAllCustomers&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getResultList&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;une-namedquery-est-plus-performante&#34;&gt;Une NamedQuery est plus performante&lt;/h2&gt;
+
+&lt;p&gt;La rumeur dit qu&amp;rsquo;une NamedQuery est plus performante car elle est mise en cache.&lt;/p&gt;
+
+&lt;p&gt;Techniquement, au démarrage, le moteur JPA va compiler la NamedQuery puis la mettre en cache dans le statementCache des Connections. Cela rappelle fortement les PreparedStatement, non ? Or, Hibernate utilise de toute façon des PreparedStatements si le driver Jdbc le permet. Une NamedQuery ne fait donc pas mieux qu&amp;rsquo;une requête dynamique, même s&amp;rsquo;il y a le coût de parsing de la requête si celle-ci est dynamique.&lt;/p&gt;
+
+&lt;p&gt;Je n&amp;rsquo;ai pas trouvé de benchmark entre les deux approches (NamedQuery versus requête dynamique). La principale variable en jeu est le driver Jdbc et donc la base de données utilisée.&lt;/p&gt;
+
+&lt;h2 id=&#34;une-namedquery-est-validée&#34;&gt;Une NamedQuery est validée&lt;/h2&gt;
+
+&lt;p&gt;Une NamedQuery est validée au lancement de l&amp;rsquo;application avant d&amp;rsquo;être soit placée dans le statementCache. Cela permet théoriquement de contrôler la syntaxe JPQL, que le mapping est correct, que les entités utilisées sont annotées et que les colonnes ont bien un attribut (ou un getter/setter) dans les entités.&lt;/p&gt;
+
+&lt;p&gt;Dans les faits, cette phase de validation est très limitée (testée avec Hibernate 3.3 et mysql) :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pour une entité inexistante (&amp;ldquo;From EntiteInexistante&amp;rdquo;), une erreur est remontée&lt;/li&gt;
+&lt;li&gt;Pour une colonne inexistante (&amp;ldquo;From Client where colonneInexistante is null&amp;rdquo;), aucune erreur n&amp;rsquo;est soulevée&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aujourd&amp;rsquo;hui, je ne vois donc pas en quoi cette phase de validation apporte de la valeur. Si la conversion JPQL vers SQL n&amp;rsquo;est pas complète, elle n&amp;rsquo;empêche pas de valider les requêtes sur &lt;a href=&#34;http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/&#34;&gt;la base de données cible&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;namedquery-alors-pourquoi&#34;&gt;NamedQuery, alors pourquoi ?&lt;/h2&gt;
+
+&lt;p&gt;Une fois éliminées ces illusions, il ne reste pas grand-chose d&amp;rsquo;attrayant aux NamedQueries. On sait qu&amp;rsquo;elles ne sont pas systématiquement pas plus performantes et que la validation n&amp;rsquo;est pas complète. Il leur reste cependant trois petits avantages :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Les NamedQueries sont réutilisables en plusieurs endroits. Ce cas est principalement utile quand l&amp;rsquo;entityManager est injecté dans la couche de service (et donc qu&amp;rsquo;il n&amp;rsquo;y a pas de couche de DAO) ;&lt;/li&gt;
+&lt;li&gt;Elles sont chargées au démarrage ce qui permet de diminuer la réponse de l&amp;rsquo;application au premier accès, mais c&amp;rsquo;est au détriment du temps de chargement de l&amp;rsquo;application ;&lt;/li&gt;
+&lt;li&gt;Les requêtes sont regroupées avec le mapping (@Column&amp;hellip;), ce qui permet de faciliter leur écriture.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour conclure, je pense que les NamedQueries résultent plus d&amp;rsquo;une question de goût et de convention d&amp;rsquo;écriture que d&amp;rsquo;un réel intérêt technique et factuel.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>8 raisons d&#39;aimer Ruby</title>
+            <link>http://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</link>
+            <pubDate>Wed, 11 Nov 2009 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/ruby_logo.png&#34; style=&#34;float:right&#34;/&gt;
+Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé pour faire de vraies choses (même en prod !). Cet article contient 8 points qui font de Ruby un très bon langage et une plateforme de choix pour réaliser ses futurs projets.&lt;/p&gt;
+
+&lt;h2 id=&#34;plus-productif&#34;&gt;Plus productif&lt;/h2&gt;
+
+&lt;p&gt;Martin Fowler a fait une synthèse de l’utilisation de Ruby chez ThoughtWorks.&lt;/p&gt;
+
+&lt;p&gt;La conclusion est une impression très forte d’une meilleure productivité. La majorité des projets ont ressenti un doublement de leur productivité (une impression car la productivité n’est pas mesurable).&lt;/p&gt;
+
+&lt;p&gt;Je vous encourage à lire l’article sur le site de Martin Fowler : &amp;ldquo;&lt;a href=&#34;http://martinfowler.com/articles/rubyAtThoughtWorks.html&#34;&gt;Ruby at ThoughtWorks&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;h2 id=&#34;meta-programming&#34;&gt;Meta-Programming&lt;/h2&gt;
+
+&lt;p&gt;Le meta-programming c’est la génération de code par le code. Cela permet par exemple d’écrire des DSL et de simplifier son code. C’est aussi une arme puissante à utiliser modérément.&lt;/p&gt;
+
+&lt;p&gt;L’équivalent de la génération d’une méthode au Runtime en Java serait la possibilité d&amp;rsquo;écrire le code suivant :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;genereUneMethode&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;/* cette méthode sera ajouté à la classe appelante */&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nouvelleMethode&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#75715e&#34;&gt;// Les commentaires de Chuck Norris sont compilés
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;duck-typing&#34;&gt;Duck Typing&lt;/h2&gt;
+
+&lt;p&gt;Le static typing s’oppose au duck typing. En Ruby, il n’y a pas de notion de type vérifié à la compilation.&lt;/p&gt;
+
+&lt;p&gt;Cela veut dire, qu’il est possible d’appeler une méthode avec un Array à la place d’une String. Tant que l’autre objet répond aux méthodes de l’objet attendu, le code est valide.&lt;/p&gt;
+
+&lt;p&gt;Le Duck Typing permet d’avoir du code beaucoup plus souple. La forte orientation vers les tests de Ruby en est la conséquence.&lt;/p&gt;
+
+&lt;p&gt;Il y a eu beaucoup de débats sur au sujet de « Static typing » contre « Duck typing ». Les auteurs de « Programming Ruby 1.9 » expliquent que le typage statique ne rend pas forcément un code plus fiable et peut diminuer la productivité. (Non, pas de Troll)&lt;/p&gt;
+
+&lt;p&gt;Plus d’info sur le &lt;a href=&#34;http://en.wikipedia.org/wiki/Duck_typing&#34;&gt;duck typing sur Wikipedia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;closures&#34;&gt;Closures&lt;/h2&gt;
+
+&lt;p&gt;Les Closures ont fortement animé les débats autour de leur inclusion (ou pas) dans Java.&lt;/p&gt;
+
+&lt;p&gt;Elles font partie de la syntaxe de base de Ruby.&lt;/p&gt;
+
+&lt;p&gt;Les Closures sont des méthodes dont l’exécution peut être retardée tout en retenant le contexte quand elles ont été créées. Elles ont plein d’usages mais ne sont pas pourtant pas évidentes à appréhender.&lt;/p&gt;
+
+&lt;h2 id=&#34;jruby&#34;&gt;JRuby&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jruby.org&#34;&gt;JRuby&lt;/a&gt; est une implémentation de Ruby pour la JVM. Avantages : un super garbage collector (merci Java), des threads efficaces, multi-plateformes… Il fait tourner des projets Rails sans problème.&lt;/p&gt;
+
+&lt;p&gt;L’avantage est également de pouvoir faire du Ruby sur nos serveurs d’app Java, comme Glassfish 3 qui supporte JRuby.&lt;/p&gt;
+
+&lt;h2 id=&#34;frameworks-novateurs&#34;&gt;Frameworks novateurs&lt;/h2&gt;
+
+&lt;p&gt;Rails, Capistrano ou encore Cucumber sont les fers de lance de Ruby et montrent ce que le langage permet de construire.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Rails&lt;/a&gt; : c’est le Framework Web qui a donné de la visibilité à Ruby. Rails permet de produire des sites Web très rapidement et de manière simple&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.capify.org/&#34;&gt;Capistrano&lt;/a&gt; simplifie fortement le déploiement de projets Ruby et permet par exemple de se brancher sur un SVN pour faire de la mise en production en continue&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cukes.info/&#34;&gt;Cucumber&lt;/a&gt; est un framework de BDD simple à prendre en main. Le Meta-Programming apporte beaucoup aux frameworks de tests en permettant l’écriture de DSL de tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gem-le-packaging-facile&#34;&gt;GEM : le packaging facile&lt;/h2&gt;
+
+&lt;p&gt;Les &lt;a href=&#34;http://www.rubyfrance.org/documentations/rubygem---introduction/&#34;&gt;GEM&lt;/a&gt; sont des archives de projet Ruby. Un peu comme nos JAR/WAR/EAR mais en mieux. Une Gem permet de packager son code, ses tests et ses scripts selon un format normé.&lt;/p&gt;
+
+&lt;p&gt;On installe une Gem en ligne de commande, idem pour la mettre à jour ou en rechercher d’autres.&lt;/p&gt;
+
+&lt;p&gt;Il est également très simple de pousser une Gem sur les repos (voir par exemple l’impressionnant de simplicité &lt;a href=&#34;http://gemcutter.org/&#34;&gt;Gemcutter&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;une-communauté-riche-et-aussi-en-france&#34;&gt;Une communauté riche (et aussi en France)&lt;/h2&gt;
+
+&lt;p&gt;Ruby bouge beaucoup et sa communauté est importante. Comme avec Java, il y a des sites de news, des podcasts, des screencasts&amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Des news : &lt;a href=&#34;http://www.rubyinside.com/&#34;&gt;RubyInside&lt;/a&gt;, &lt;a href=&#34;http://ruby.about.com/&#34;&gt;About Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Des podcasts : &lt;a href=&#34;http://railsenvy.com/&#34;&gt;RailsEnvy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Des screencasts : &lt;a href=&#34;http://www.learnivore.com&#34;&gt;Learnivore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Des challenges de programmation : &lt;a href=&#34;http://rubylearning.com/blog/&#34;&gt;RubyLearning &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les &lt;a href=&#34;http://www.rubyfrance.org/&#34;&gt;Apéros Ruby&lt;/a&gt; ressemblent à nos JUGs. Le prochain a lieu ce jeudi 12. Ils sont moins cadrés que les JUGs mais tout aussi intéressants : Coding Dojo, Lightning talk…&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Ruby dispose de nombreux atouts pour plaire, même face à ses concurrents dynamiques ou statiques (Scala par exemple).&lt;/p&gt;
+
+&lt;p&gt;Une des principales qualités de Ruby est sa communauté vivante et innovante. Découvrir une plateforme comme Ruby donne un nouvel élan et permet de faire fonctionner ses neurones sur d’autres paradigmes.&lt;/p&gt;
+
+&lt;p&gt;J’ai choisi Ruby pour toutes ces bonnes raisons et il y en a encore bien d’autres à découvrir.&lt;/p&gt;
+</description>
+        </item>
+        
+        <item>
+            <title>Tests d&#39;intégration : quid de la base de données ?</title>
+            <link>http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</link>
+            <pubDate>Mon, 12 Oct 2009 00:00:00 +0000</pubDate>
+            
+            <guid>http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</guid>
+
+            
+            <description>
+
+&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/serveur.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;La base de données est un élément important des tests d&amp;rsquo;intégration. Les deux questions à se poser sont :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Puis-je utiliser une base de données embarquée ?&lt;/li&gt;
+&lt;li&gt;Puis-je désactiver les contraintes d&amp;rsquo;intégrité ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;base-de-données-embarquée-ou-non&#34;&gt;Base de données embarquée ou non ?&lt;/h2&gt;
+
+&lt;p&gt;C&amp;rsquo;est Rod Johnson qui en parlait sur InfoQ : &amp;ldquo;&lt;a href=&#34;http://www.infoq.com/presentations/system-integration-testing-with-spring&#34;&gt;System Integration Testing using Spring&lt;/a&gt;&amp;rdquo; : une base de données embarquée est inutile dans la plupart des cas.&lt;/p&gt;
+
+&lt;p&gt;L&amp;rsquo;argument majeur en faveur d&amp;rsquo;une base embarquée est le travail en mode déconnecté. Dans une équipe disséminée (télétravail, multiples bureaux, déplacement fréquent), ce type de base fait l&amp;rsquo;affaire.&lt;/p&gt;
+
+&lt;p&gt;Mais il y a certains inconvénients importants :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Moteur SQL différent de la cible : il est possible de certaines requêtes s&amp;rsquo;exécutent sur la base embarquée mais pas sur le type de base utilisée en Prod (différences d&amp;rsquo;implémentation SQL par exemple, expérience vécue avec SQL Server) ;&lt;/li&gt;
+&lt;li&gt;Debugage difficile : si la base meurt à la fin des tests, il devient difficile d&amp;rsquo;étudier les opérations faites et d&amp;rsquo;étudier pourquoi une requête ne fonctionne pas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je vois peu d&amp;rsquo;intérêt aujourd&amp;rsquo;hui à utiliser une base de données embarquées si c&amp;rsquo;est pour se rendre compte qu&amp;rsquo;on ne valide pas un comportement similaire à celui de production. Créer une base par développeur sur Oracle ou autre, n&amp;rsquo;est pas si difficile.&lt;/p&gt;
+
+&lt;p&gt;Un inconvénient d&amp;rsquo;une base standard est qu&amp;rsquo;elle nécessite d&amp;rsquo;être maintenue (passage des scripts), mais cela est automatisable grâce à des outils comme DBMaintain ou LiquiBase.&lt;/p&gt;
+
+&lt;h2 id=&#34;contraintes-d-intégrité-actives-ou-non&#34;&gt;Contraintes d&amp;rsquo;intégrité actives ou non ?&lt;/h2&gt;
+
+&lt;p&gt;Filip Neven, le créateur d&amp;rsquo;Unitils et de DbMaintain, pointe le problème sur son blog (traduction libre) :&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Les gens pensent que la désactivation des contraintes produit une sérieuse dévaluation des tests, car le code qui a été validé avec succès par les tests unitaires pourrait ne pas fonctionner avec une base de données normales - &lt;a href=&#34;http://filipneven.blogspot.com/2008/02/disable-constraints-on-your-test.html&#34;&gt;Filip Neven&lt;/a&gt;
+La chose à retenir est : &amp;ldquo;il faut limiter au maximum les données de test&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Autrement dit : le moins de données de test il y a, le plus maintenable sont les tests.&lt;/p&gt;
+
+&lt;p&gt;Filip Neven résume parfaitement la situation :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Les tests doivent valider un fonctionnement et non vérifier l&amp;rsquo;intégrité de la base&lt;/li&gt;
+&lt;li&gt;Les tests unitaires ne sont pas le bon outil pour découvrir des problèmes de contraintes&lt;/li&gt;
+&lt;li&gt;Dans la plupart des cas, d&amp;rsquo;autres tests, comme les tests fonctionnels, permettront de découvrir les problèmes de contraintes&lt;/li&gt;
+&lt;li&gt;Désactiver les contraintes est un gain de temps important pour l&amp;rsquo;écriture des tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En effet, les jeux de données ne font généralement que croitre. Une fois qu&amp;rsquo;une donnée est ajoutée à un jeu de tests, il devient laborieux de savoir si cette donnée est utilisée d&amp;rsquo;une manière ou d&amp;rsquo;une autre et donc de la retirer.&lt;/p&gt;
+
+&lt;p&gt;En désactivant les contraintes d&amp;rsquo;intégrité, il devient possible que les jeux de données ne contiennent que les données utilisées dans les Where et dans les jointures ; c&amp;rsquo;est-à-dire les données &lt;strong&gt;réellement utiles&lt;/strong&gt;. Cette façon de voir les choses simplifie énormément la maintenance des jeux de tests. Finis les fichiers DBUnit.xml qui contiennent 80% de données dues aux colonnes not-null donc inutiles pour le test courant.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.unitils.org/tutorial.html#Automatic_test_database_maintenance&#34;&gt;Unitils/DbMaintain&lt;/a&gt; propose une méthode rapide pour désactiver ces contraintes (not null et foreign key).&lt;/p&gt;
+
+&lt;h2 id=&#34;une-fausse-sensation-de-sécurité&#34;&gt;Une fausse sensation de sécurité&lt;/h2&gt;
+
+&lt;p&gt;Il faut se poser la question : est-ce que l&amp;rsquo;on nuit à la qualité de nos tests si nous touchons à l&amp;rsquo;intégrité de la base de données par la désactivation des contraintes ?&lt;/p&gt;
+
+&lt;p&gt;En effet, si les tests passent sur une base qui sera identique à la production (colonnes non nulles, clés étrangères, utilisateur non privilégié), alors nous validons en totalité le fonctionnement cible. Au contraire, si nous avons désactivé les contraintes, alors nous risquons de rencontrer des erreurs plus tard dans la vie du projet, et donc que cela soit plus dur à corriger.&lt;/p&gt;
+
+&lt;p&gt;La réponse est double :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Oui, nous nous écartons du fonctionnement cible (like &amp;ldquo;Prod&amp;rdquo;) en modifiant le comportement de la base de données ;&lt;/li&gt;
+&lt;li&gt;Non, ce la ne nuit pas à la qualité des tests.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pourquoi ?&lt;/p&gt;
+
+&lt;p&gt;Tester &amp;ldquo;comme en prod&amp;rdquo; donne un &lt;strong&gt;faux sentiment de sécurité&lt;/strong&gt;. Les erreurs susceptibles de ne pas être détectée avant la production ne sont pas des problèmes récurrents. Ok, vous allez détecter qu&amp;rsquo;il manque un &amp;ldquo;GRANT select&amp;rdquo; mais cette erreur ne se reproduira pas.&lt;/p&gt;
+
+&lt;p&gt;D&amp;rsquo;autant plus que les tests d&amp;rsquo;intégration seront complétés par les tests fonctionnels et que détecteront les erreurs de not-null/foreign key laissées derrière.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Je suis aujourd&amp;rsquo;hui pour une gestion &amp;ldquo;Agile&amp;rdquo; de la base de données utilisée pour les tests. La bonne voie est pour moi d&amp;rsquo;éviter l&amp;rsquo;usage d&amp;rsquo;une base embarquée car il y a trop de différences entre moteurs SQL mais de désactiver certaines contraintes sur la base de test afin de faciliter le vrai travail : l&amp;rsquo;écriture de test qui valident les requêtes (le DML) et non les restrictions SQL (le DDL).&lt;/p&gt;
+
+&lt;p&gt;Et vous, avez-vous d&amp;rsquo;autres recommandations pour vos tests d&amp;rsquo;intégration ?&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

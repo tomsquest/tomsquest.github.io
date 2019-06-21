@@ -1,0 +1,178 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Tuning de Tomcat par Mark Thomas &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/11/tuning-de-tomcat-par-mark-thomas/">
+                <h1>Tuning de Tomcat par Mark Thomas</h1>
+            </a>
+            <p>2008-11-13 - Thomas Queste</p>
+        </header>
+        <section>
+            <p><img src="/img/posts/2008/11/tomcat-logo.gif" style="float:right"/></p>
+
+<p>Ce matin, aux <a href="http://www.rencontres-spring.com/">Rencontres Spring</a>, Mark Thomas a parlé du tuning de Tomcat en production. J&rsquo;y ai appris plusieurs choses intéressantes que je résume ici.</p>
+
+<p>Saviez-vous que 80% du temps de traitement d&rsquo;une requête est faite dans l&rsquo;application et non dans Tomcat.</p>
+
+<p>Les logs devraient être configurés :</p>
+
+<ul>
+<li>De manière asynchrone :
+
+<ul>
+<li>Ils sont synchrones par défaut,</li>
+<li>Attention à la taille des buffers qui pourraient conduire à des OutOfMemory,</li>
+<li>Mettre les loggers en fallback synchrone si les buffers sont pleins ;</li>
+</ul></li>
+<li>Ne pas logger tout et n&rsquo;importe quoi :
+
+<ul>
+<li>Remonter le niveau de log au maximum (selon la politique locale),</li>
+<li>Ne pas logger dans la console.</li>
+</ul></li>
+</ul>
+
+<p>Il est possible de cacher du contenu statique :</p>
+
+<ul>
+<li>Par défaut, 10Mo de contenu sont retenus pendant 5 secondes. A changer si on a de la RAM et du contenu vraiment statique ;</li>
+<li>Il existe la fonctionnalité « SEND_FILE » des connecteurs NIO et APR permettant d&rsquo;indiquer à l&rsquo;OS d&rsquo;envoyer directement le contenu statique du disque dur vers la carte réseau.</li>
+</ul>
+
+<p>Côté JVM, Mark rappelle que trop de mémoire est néfaste pour les performances : les GC seront plus longs. Il faut donc avoir les valeurs de XMS/XMX les plus faibles possibles. Pour cela, il faut étudier les besoins de l&rsquo;application et mettre les valeurs en fonction.</p>
+
+<p>Pour le load-balancing et la réplication des Sessions, le frontal sait qu&rsquo;une session est affectée à un noeud tout simplement par l&rsquo;usage d&rsquo;un cookie spécial qui est reconnu par le frontal (mod_proxy_http par exemple).</p>
+
+<p>Pour configurer le FailOver, Il suffit d&rsquo;une ligne de conf. Mais la conf est plus complexe pour la Prod où il faut par exemple que les noeuds découvrent les autres membres du cluster.</p>
+
+<p>Faire du load balancing avec du clustering demande un minimum de 3 instances. Mark conseille de tester cette configuration en dév et non la réserver pour la prod.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

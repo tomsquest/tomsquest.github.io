@@ -1,0 +1,230 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Selenium : Boostez vos tests avec Tellurium &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/10/selenium-boostez-vos-tests-avec-tellurium/">
+                <h1>Selenium : Boostez vos tests avec Tellurium</h1>
+            </a>
+            <p>2008-10-29 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2008/10/tellurium.png" style="float:right"/></p>
+
+<p>Au commencement, vous écriviez vos tests Selenium en HTML. Mais cela posait des problèmes : aucune factorisation possible, pas de setUp()/tearDown()&hellip;</p>
+
+<p>Puis, vous avez commencé à <a href="http://www.tomsquest.com/blog/2008/09/selenium-en-java-demarrage-rapide/">écrire vos tests en Java</a> et la vie fut plus belle. Mais cela devint verbeux et vous développiez de plus en plus de code custom pour améliorer vos tests. Et vous vous demandiez comment faire encore mieux&hellip;</p>
+
+<p>Enfin, vous découvrez l&rsquo;arme ultime, ce projet nommé Tellurium qui ne vous rendra certainement pas plus riche ni plus beau mais qui améliorera vos tests Selenium.</p>
+
+<p>Vous l&rsquo;avez compris, <a href="http://code.google.com/p/aost">Tellurium</a> est un projet qui vise à améliorer l&rsquo;écriture de tests Selenium.</p>
+
+<p>Ils le disent eux-mêmes :</p>
+
+<blockquote>
+<p>Tellurium is more robust, flexible, modularized, easier to maintain and refactor</p>
+</blockquote>
+
+<p>Qu&rsquo;est-ce qu&rsquo;il y a dans la boite ?</p>
+
+<h2 id="la-possibilité-de-structurer-ses-tests">La possibilité de structurer ses tests</h2>
+
+<p>Tellurium offre la possibilité de décrire la structure des éléments d&rsquo;une page. C&rsquo;est ce qui est appelé OLM pour « Object To Locator Mapping ».</p>
+
+<p>Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d&rsquo;une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d&rsquo;UI. Je pense qu&rsquo;il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre « tout au même endroit. ».</p>
+
+<p>Exemple de description de la page d&rsquo;accueil de google.fr :</p>
+
+<pre><code>ui.Container(uid: &quot;google_start_page&quot;){
+    InputBox(uid: &quot;inputbox&quot;, locator: &quot;//input[@title='Google Search']&quot;)
+    Button(uid: &quot;button&quot;, locator: &quot;//input[@name='btnG' and @type='submit']&quot;)
+}
+</code></pre>
+
+<p>Le TestCase associé :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GoogleStartPageJavaTestCase</span> <span style="color:#66d9ef">extends</span> TelluriumJavaTestCase <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">static</span> NewGoogleStartPage ngsp<span style="color:#f92672">;</span>
+    <span style="color:#a6e22e">@BeforeClass</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">initUi</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        ngsp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> NewGoogleStartPage<span style="color:#f92672">();</span>
+        ngsp<span style="color:#f92672">.</span><span style="color:#a6e22e">defineUi</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#a6e22e">@Test</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">testGoogleSearch</span><span style="color:#f92672">(){</span>
+        connectUrl<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;http://www.google.com&#34;</span><span style="color:#f92672">);</span>
+        ngsp<span style="color:#f92672">.</span><span style="color:#a6e22e">doGoogleSearch</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;tellurium selenium Groovy Test&#34;</span><span style="color:#f92672">);</span>
+   <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<h2 id="un-dsl-pour-écrire-ses-tests-en-selenium">Un DSL pour écrire ses tests en Selenium</h2>
+
+<p>Tellurium permet d&rsquo;écrire les cas de tests directement en utilisant la syntaxe de Selenium.</p>
+
+<p>Exemple :</p>
+
+<pre><code>openUrl &quot;http://www.google.com&quot;
+type &quot;google_start_page.searchbox&quot;, &quot;Tellurium Selenium&quot;
+pause 500
+click &quot;google_start_page.SubmitButton&quot;
+waitForPageToLoad 30000
+</code></pre>
+
+<p>Les avantages sont :</p>
+
+<ul>
+<li>Une lecture et maintenance plus aisée ;</li>
+<li>Une écriture facilitée, y compris par une personne qui ne connait pas Java. On pourrait un jour imaginer la MOA nous fournir des cas de tests dans ce format. Mais je rêve, non ?</li>
+</ul>
+
+<h2 id="support-des-données-de-tests">Support des données de tests</h2>
+
+<p>Tellurium propose d&rsquo;associer des données aux tests. C&rsquo;est ce que les auteurs nomment « Data Driven Test ». Le moteur se charge de lire les données et les injectent dans les tests. C&rsquo;est en quelque sorte ce que l&rsquo;on fait dans les tableaux <a href="http://fitnesse.org/">FitNesse</a> mais directement intégré au TestCase.</p>
+
+<p>Un jeu de données de test ressemble à ça :</p>
+
+<pre><code># TEST | CATEGORY | SIZE
+checkBookList|Fiction|8
+checkBookList|SciFi|3
+</code></pre>
+
+<h2 id="par-où-commencer">Par où commencer ?</h2>
+
+<p>Tellurium posséde un projet de référence pour Eclipse (mais aussi pour IntelliJ Idea et Netbeans) : <a href="http://code.google.com/p/aost/wiki/TelluriumReferenceProjectEclipseSetup">http://code.google.com/p/aost/wiki/TelluriumReferenceProjectEclipseSetup</a></p>
+
+<p>Le projet est également mavenisé : <a href="http://code.google.com/p/aost/wiki/MavenHowTo">http://code.google.com/p/aost/wiki/MavenHowTo</a></p>
+
+<p>Le plugin Groovy pour Eclipse peut être utile. Il est trouvable ici : <a href="http://dist.codehaus.org/groovy/distributions/update/">http://dist.codehaus.org/groovy/distributions/update/</a></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Les quelques tests que j&rsquo;ai effectués ont parfaitement fonctionné. Je suis parti d&rsquo;un projet Eclipse vide et en 20 minutes, j&rsquo;ai pu ajouter les dépendances, déclarer ma première structure de page (en <a href="http://groovy.codehaus.org/">groovy</a>) et écrire mon premier TestCase. Donc mission accomplie pour moi. Je suis convaincu des avantages de ce projet (DSL, Data Driven, Groovy). Mais il reste un doute sur sa maturité. Donc à tester à petite échelle en premier.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

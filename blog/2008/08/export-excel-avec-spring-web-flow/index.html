@@ -1,0 +1,223 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Export Excel avec Spring Web Flow &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/08/export-excel-avec-spring-web-flow/">
+                <h1>Export Excel avec Spring Web Flow</h1>
+            </a>
+            <p>2008-08-31 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/spring-webflow-logo.jpg" style="float:right"/></p>
+
+<p><a href="http://www.springframework.org/webflow">Spring Web Flow</a> s&rsquo;intègre à merveille à Spring MVC pour l&rsquo;enchaînement des pages. Son rôle essentiel est de sortir la logique de navigation des contrôleurs.</p>
+
+<p>Nous utilisons depuis quelques mois la version 1 de Spring Web Flow et c&rsquo;est sur cette version que nous allons répondre à la question :</p>
+
+<p>Comment générer un fichier Excel depuis une Action Spring Web Flow ?</p>
+
+<h2 id="procédure">Procédure</h2>
+
+<h3 id="1-déclarer-la-vue-d-export">1 - Déclarer la vue d&rsquo;export</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;view-state</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;exportView&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;render-actions&gt;</span>
+        <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">bean=</span><span style="color:#e6db74">&#34;exportAction&#34;</span> <span style="color:#a6e22e">method=</span><span style="color:#e6db74">&#34;export&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/render-actions&gt;</span>
+<span style="color:#f92672">&lt;/view-state&gt;</span></code></pre></div>
+<p>Il est important de remarquer que le view-state <code>V_export</code> n&rsquo;a pas de propriété <code>view</code>. En effet, il suffit d&rsquo;ignorer cette valeur car c&rsquo;est le fichier Excel qui correspond à la vue.</p>
+
+<h3 id="2-action-d-export">2 - Action d&rsquo;export</h3>
+
+<p>La création du fichier Excel peut être réalisé par différentes méthodes. Une des plus simples est d&rsquo;utiliser <a href="http://poi.apache.org/">POI</a> pour le faire.</p>
+
+<p>Ci-dessous la méthode <code>export</code> de la classe <code>ExportAction</code> :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> Event <span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>RequestContext context<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+    HSSFWorkbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+    buildExcelDocument<span style="color:#f92672">(</span>workbook<span style="color:#f92672">,</span> context<span style="color:#f92672">);</span>
+
+    HttpServletResponse response <span style="color:#f92672">=</span> WebFlowUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">getResponse</span><span style="color:#f92672">(</span>context<span style="color:#f92672">);</span>
+    response<span style="color:#f92672">.</span><span style="color:#a6e22e">addHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Content-Disposition&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment; filename=search.xls&#34;</span><span style="color:#f92672">);</span>
+    response<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentType</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;application/vnd.ms-excel; charset=cp1252&#34;</span><span style="color:#f92672">);</span>
+
+    ServletOutputStream out <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">getOutputStream</span><span style="color:#f92672">();</span>
+    workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>out<span style="color:#f92672">);</span>
+    out<span style="color:#f92672">.</span><span style="color:#a6e22e">flush</span><span style="color:#f92672">();</span>
+
+    <span style="color:#66d9ef">return</span> success<span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>La méthode <code>buildExcelDocument()</code> se charge de créer le fichier Excel et utilise pour cela l&rsquo;API de POI. Le détail n&rsquo;est pas montré ici.</p>
+
+<p>Deux choses à remarquer :</p>
+
+<ul>
+<li>Le nom du fichier est donnée dans le header &ldquo;Content-Disposition&rdquo; ;</li>
+<li>Le charset CP1252 est utilisé pour forcer Excel à lire correctement les caractères spéciaux comme les accents.</li>
+</ul>
+
+<h3 id="3-intégration-à-une-vue-existante">3 - Intégration à une vue existante</h3>
+
+<p>Exemple d&rsquo;intégration à une vue existante :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;view-state</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;usersView&#34;</span> <span style="color:#a6e22e">view=</span><span style="color:#e6db74">&#34;users&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;transition</span> <span style="color:#a6e22e">on=</span><span style="color:#e6db74">&#34;export&#34;</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;exportView&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/view-state&gt;</span></code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Nous avons vu comment exporter un fichier Excel à partir d&rsquo;une vue classique Spring Web Flow. La méthode est exactement la même pour un export PDF ou de toute autre type.</p>
+
+<h3 id="classe-webflowutils">Classe WebFlowUtils</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> utils<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Locale<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletRequest<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletResponse<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.webflow.context.servlet.ServletExternalContext<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.webflow.execution.RequestContext<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WebFlowUtils</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> HttpServletRequest <span style="color:#a6e22e">getRequest</span><span style="color:#f92672">(</span>RequestContext context<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        ServletExternalContext externalContext <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>ServletExternalContext<span style="color:#f92672">)</span> context
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">getExternalContext</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">return</span> externalContext<span style="color:#f92672">.</span><span style="color:#a6e22e">getRequest</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> HttpServletResponse <span style="color:#a6e22e">getResponse</span><span style="color:#f92672">(</span>RequestContext context<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        ServletExternalContext externalContext <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>ServletExternalContext<span style="color:#f92672">)</span> context
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">getExternalContext</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">return</span> externalContext<span style="color:#f92672">.</span><span style="color:#a6e22e">getResponse</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

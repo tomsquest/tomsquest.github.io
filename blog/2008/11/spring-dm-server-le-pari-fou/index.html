@@ -1,0 +1,190 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Spring DM Server, le pari fou ? &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/11/spring-dm-server-le-pari-fou/">
+                <h1>Spring DM Server, le pari fou ?</h1>
+            </a>
+            <p>2008-11-13 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2008/11/springsource_logo.png" style="float:right"/></p>
+
+<p>Après les Rencontres Spring qui ont eu lieu aujourd&rsquo;hui, nous avons eu le droit à quelques éléments de réponses à la question suivante :</p>
+
+<p>Comment SpringSource va tenter de convaincre la Prod de l&rsquo;intérêt de son serveur d&rsquo;application, <a href="http://www.springsource.com/products/suite/dmserver">Spring DM Server</a> ?</p>
+
+<h2 id="réponses">Réponses</h2>
+
+<ul>
+<li>Par son coût : l&rsquo;achat du serveur donne droit à du support qui est mutualisé entre la production et les équipes de développement ;</li>
+<li>Par son outillage :
+
+<ul>
+<li>Console de monitoring du serveur et des applications Spring déployées,</li>
+<li>Rechargement à chaud (OSGI est passé par là),</li>
+<li>Partenariat avec Terracotta : garantir le fonctionnement du serveur avec ce produit, offir du support et de la formation,</li>
+</ul></li>
+<li>En certifiant son serveur d&rsquo;application comme pouvant faire fonctionner les applications Spring d&rsquo;ancienne génération (1.x par exemple). Encore merci à OSGI et ses classloaders ;-) ;</li>
+<li>En vendant des « Perf Packs » pour certains backends. Ainsi le « Perf Packs » Oracle permettra par exemple de réaliser du fail-over de connexion en gardant le contexte transactionnel.</li>
+</ul>
+
+<p>Une phrase de Julien Dubois qui résume bien ce positionnement :</p>
+
+<blockquote>
+<p>SpringSource gèrera à la fois le développement et le déploiement</p>
+</blockquote>
+
+<p>Peter Cooper-Elis, en charge de la gamme des produits SpringSource, a également distinctement montré l&rsquo;implication de la société dans la partie « Deploy ». La société n&rsquo;est plus qu&rsquo;un framework mais propose un vrai triplet : développement, déploiement et support.</p>
+
+<p>La roadmap de Spring DM est :</p>
+
+<ul>
+<li>v1.2 pour le 1er trimestre 2009</li>
+<li>v2.0 pour le 2ème trimestre 2009</li>
+</ul>
+
+<h2 id="pour-ma-part">Pour ma part</h2>
+
+<p>Pour ma part, j&rsquo;ai encore un peu de mal à croire à Spring DM Server. Certes un nouveau serveur d&rsquo;application qui serait enfin &ldquo;à la mode&rdquo;, qui serait compatible de facto avec les frameworks que j&rsquo;utilise pour développer et avec qui viendrait du support pour l&rsquo;équipe de prod et mon équipe de dév&hellip; Là, <strong>oui</strong>, je signe.</p>
+
+<p>Mais je pense que convaincre le management passera essentiellement par la &ldquo;voix du chéquier&rdquo;. Il ne devrait pas y avoir de coût par CPU (une rente pour le fournisseur) mais un coût uniquement de Support. Donc si SpringSource se bat sur les prix, je pense que là, ils ont une chance. Je ne doute pas que ça marchera chez certains. Maic combien de temps cela mettra-t-il ?</p>
+
+<h2 id="plus-d-info">Plus d&rsquo;info</h2>
+
+<ul>
+<li>sur les Rencontres Spring, sur le blog du <a href="http://www.touilleur-express.fr/2008/11/13/compte-rendu-des-rencontres-spring-2008/">Touilleur Express</a></li>
+<li>sur Spring DM Server sur le blog d&rsquo;Olivier, <a href="http://olivier.croisier.free.fr/blog/index.php?2008/11/13/119-opensource-exchange-compte-rendu">The Coder&rsquo;s Breakfast</a></li>
+</ul>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

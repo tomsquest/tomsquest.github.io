@@ -1,0 +1,235 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Script de sauvegarde WordPress et MySQL &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/09/script-de-sauvegarde-wordpress-et-mysql/">
+                <h1>Script de sauvegarde WordPress et MySQL</h1>
+            </a>
+            <p>2008-09-01 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p>Qui dit nouveau blog, plugins à gogo, tests et expérimentations, dit un jour ou l&rsquo;autre : &ldquo;si j&rsquo;avais fait une sauvegarde, ça m&rsquo;aurait évité de perdre mon blog et tout son contenu !&rdquo;.</p>
+
+<p>Donc une des premières étapes de toute nouvelle installation de WordPress, il me fallait un script de backup digne de ce nom mais très simple (car &ldquo;Simple is more&rdquo; ;-) ).</p>
+
+<h2 id="mission-accomplie">Mission accomplie !</h2>
+
+<p>Le script que je mets ci-dessous s&rsquo;occupe de 3 choses :</p>
+
+<ul>
+<li>Faire une archive de l&rsquo;installation de WordPress ;</li>
+<li>Sauvegarder la base de données ;</li>
+<li>Envoyer un mail de confirmation.</li>
+</ul>
+
+<h2 id="le-secret">Le secret</h2>
+
+<p>Le gros avantage de ce script est que nous n&rsquo;avez pas à spécifier vos paramètres MySQL (nom de la base, machine, utilisateur, mot de passe). En effet, ils sont extrait du fichier wp-config.php situé dans le répertoire de WordPress.</p>
+
+<p>Pour cela, j&rsquo;ai utilisé un extrait du script de <a href="http://www.askapache.com">AskApache.org</a>, trouvable ici : <a href="http://www.askapache.com/wordpress/encrypted-wordpress-site-backups.html">Encrypted WordPress / phpBB Backups</a>. En particulier, le script utilise la commande <code>sed</code> pour extraire les variables MySQL et les créer en tant que variables dans le script. Une belle prouesse !</p>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+<li>Dézipper le script (unzip)</li>
+<li>Le rendre exécutable : <code>chmod 700 wpbackup.sh</code></li>
+<li>Modifier les 3 lignes :
+
+<ul>
+<li><code>EMAIL=monemail@mail.com</code> : email du destinataire</li>
+<li><code>WORDPRESS_PATH=&quot;/opt/wordpress&quot;</code> : chemin de l&rsquo;installation de WordPress</li>
+<li><code>BACKUP_PATH=&quot;/mnt/backups&quot;</code> : chemin vers les sauvegardes</li>
+</ul></li>
+</ol>
+
+<h2 id="améliorations">Améliorations</h2>
+
+<p>Ce script peut être amélioré sur les points suivants :</p>
+
+<ul>
+<li>Sécuriser la création des archives : vérifier que ce qui est dans l&rsquo;archive n&rsquo;est pas corrompu. Le projet <a href="http://www.codetrax.org/projects/veritar">VeriTAR</a> s&rsquo;occupe de cette partie en comparant le checksum MD5 des fichiers à l&rsquo;extérieur et à l&rsquo;intérieur de l&rsquo;archive. C&rsquo;est un projet Python. Un exemple est trouvable sur le site <a href="http://www.g-loaded.eu/2007/12/01/veritar-verify-checksums-of-files-within-a-tar-archive/">www.g-loaded.eu</a> ;</li>
+<li>Sauvegardes incrémentales : ne garder que les changements entre deux sauvegardes ;</li>
+<li>Copie sur un serveur distant : ne pas garder les sauvegardes uniquement sur la machine source. C&rsquo;est le principe du &ldquo;offsite backups&rdquo; qui évite de perdre ses données en cas de panne ou de vol de la machine source.</li>
+</ul>
+
+<h2 id="planification">Planification</h2>
+
+<p>Je vous conseille fortement de planifier le lancement de ce script. Par exemple, toutes les semaines ou tous les jours si vous avez un peu d&rsquo;espace disque.</p>
+
+<h2 id="contenu-du-script">Contenu du script</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>
+echo <span style="color:#e6db74">&#34;### Backup running...&#34;</span>
+
+#
+<span style="color:#75715e"># Customize these variables</span>
+#
+EMAIL<span style="color:#f92672">=</span>monemail@mail.com
+WORDPRESS_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/opt/wordpress&#34;</span>
+BACKUP_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/mnt/backups&#34;</span>
+
+<span style="color:#75715e"># valid path ?</span>
+<span style="color:#f92672">[</span> ! -d $WORDPRESS_PATH <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;Not a valid directory : </span>$WORDPRESS_PATH<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&amp;&amp;</span> exit <span style="color:#ae81ff">1</span>
+<span style="color:#f92672">[</span> ! -f $WORDPRESS_PATH/wp-config.php <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;Cannot find wordpress config file &#39;wp-config.php&#39;&#34;</span> <span style="color:#f92672">&amp;&amp;</span> exit <span style="color:#ae81ff">1</span>
+<span style="color:#f92672">[</span> ! -d $BACKUP_PATH <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> mkdir -p $BACKUP_PATH
+
+#
+<span style="color:#75715e"># Script variables</span>
+#
+NOW<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>date +%Y-%m-%d_%Hh%Mm%S<span style="color:#e6db74">`</span>
+WP_PARENT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>dirname $WORDPRESS_PATH<span style="color:#e6db74">`</span>
+WP_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>basename $WORDPRESS_PATH<span style="color:#e6db74">`</span>
+WP_BACKUPNAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$WP_DIR<span style="color:#e6db74">-</span>$NOW<span style="color:#e6db74">-wordpress.tar.bz2&#34;</span>
+MYSQL_BACKUPNAME<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$WP_DIR<span style="color:#e6db74">-</span>$NOW<span style="color:#e6db74">-mysql.sql.bz2&#34;</span>
+
+echo <span style="color:#e6db74">&#34;Wordpress backup...&#34;</span>
+cd $WP_PARENT
+tar -jcf $BACKUP_PATH/$WP_BACKUPNAME $WP_DIR
+cd $OLDPWD
+echo <span style="color:#e6db74">&#34;...done : </span>$BACKUP_PATH<span style="color:#e6db74">/</span>$WP_BACKUPNAME<span style="color:#e6db74">&#34;</span>
+
+echo <span style="color:#e6db74">&#34;Mysql backup...&#34;</span>
+
+<span style="color:#75715e"># read wordpress config</span>
+WP_CONFIG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$WORDPRESS_PATH<span style="color:#e6db74">/wp-config.php&#34;</span>
+PROPS<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>sed -e <span style="color:#e6db74">&#34;/define(&#39;DB_\(NAME\|USER\|PASSWORD\|HOST\)/!d&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span> -e <span style="color:#e6db74">&#34;s/[^&#39;]*&#39;DB_\(NAME\|USER\|PASSWORD\|HOST\)&#39;[^&#39;]*&#39;\([^&#39;]*\)&#39;.*</span>$<span style="color:#e6db74">/DB_\1=&#39;\2&#39;;/g&#34;</span> <span style="color:#e6db74">${</span>WP_CONFIG<span style="color:#e6db74">}</span><span style="color:#66d9ef">)</span> <span style="color:#f92672">&amp;&amp;</span> eval $PROPS;
+
+mysqldump --opt -h$DB_HOST -u$DB_USER -p$DB_PASSWORD --add-drop-table $DB_NAME | bzip2 -c9 &gt; $BACKUP_PATH/$MYSQL_BACKUPNAME
+echo <span style="color:#e6db74">&#34;...done : </span>$BACKUP_PATH<span style="color:#e6db74">/</span>$MYSQL_BACKUPNAME<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># send emails</span>
+echo <span style="color:#e6db74">&#34;Backup completed&#34;</span> | /usr/bin/mail -s <span style="color:#e6db74">&#34;Wordpress and Mysql backups completed on `date`&#34;</span> $EMAIL
+
+echo <span style="color:#e6db74">&#34;### Backup done.&#34;</span></code></pre></div>
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

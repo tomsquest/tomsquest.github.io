@@ -1,0 +1,218 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Gradle : vos builds aux petits oignons &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2009/06/gradle-vos-builds-aux-petits-oignons/">
+                <h1>Gradle : vos builds aux petits oignons</h1>
+            </a>
+            <p>2009-06-26 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/gradle.jpg" style="float:right"/></p>
+
+<p><a href="http://www.gradle.org/">Gradle</a> est un outil permettant d&rsquo;écrire ses scripts de build en groovy.
+Il nous a été présenté hier soir chez <a href="http://www.zenika.com/">Zenika</a> par son créateur, Hans Dockter.</p>
+
+<p>A première vue, c&rsquo;est un outil puissant et extrêmement souple. Il apporte beaucoup de bonnes idées et on s&rsquo;amuse vite à le comparer à Maven.</p>
+
+<p>Alors, Gradle pour tous ou seulement pour votre pire ennemi ?</p>
+
+<h2 id="donner-du-sens-à-vos-builds">Donner du sens à vos builds</h2>
+
+<p>Gradle, c&rsquo;est avant tout un DSL en Groovy pour décrire ses builds. Il bénéficie donc des améliorations du langage comme les closures et d&rsquo;une syntaxe épurée.</p>
+
+<p>Hans Docker insiste sur ce point : un script de build qui épouse votre projet est beaucoup plus intéressant qu&rsquo;un projet où la structure est imposée par l&rsquo;outil de build (comme Maven).</p>
+
+<p>Il fait un parallèle avec « l&rsquo;<a href="http://martinfowler.com/bliki/AnemicDomainModel.html">Anemic Object Model</a> » de Martin Fowler et le DDD dans le sens où votre build se décrit lui-même et ses buts se documentent eux-mêmes.</p>
+
+<p>Gradle propose donc de donner du sens à nos builds en permettant d&rsquo;améliorer la compréhension du système et des tâches réalisées.</p>
+
+<p>Hans oppose les notions de « Langage de build » (Gradle) et de « framework de build » (Maven). L&rsquo;un offre la flexibilité, l&rsquo;autre pose un cadre défini.</p>
+
+<h2 id="attention-outil-coupant">Attention, outil coupant</h2>
+
+<p>Vous avez déjà eu des projets complexes à construire, avec par exemple de la génération de code ou des fichiers à emboiter. Vous vous êtes battu avec Maven et vous avez souvent perdu (c&rsquo;est mon cas, je n&rsquo;ai pas encore ma ceinture noire de Maven).</p>
+
+<p>Gradle vient directement répondre à ce besoin : simplifier les builds complexes.
+C&rsquo;est d&rsquo;ailleurs son moto : « Make the impossible possible, the possible easy, and the easy elegant&rdquo;.</p>
+
+<p>Discussion faite avec Florent Ramière de Jaxio, nous sommes du même avis : Oui, Gradle est adapté pour les builds complexes mais 80% ont des besoins simples, réalisables avec Maven.</p>
+
+<p>Gradle est un outil puissant qui permet de faire précisément ce que vous voulez.
+Cette flexibilité extrême permet aussi de faire n&rsquo;importe quoi, y compris se tirer une balle dans le pied.
+Maven a pris beaucoup d&rsquo;ampleur en proposant des conventions et une structure commune (par exemple, les phases et les packages).</p>
+
+<p>Franchement, c&rsquo;est un bonheur de s&rsquo;y retrouver entre différents projets. Malheureusement, ces conventions ne peuvent pas se conformer à tous les projets.</p>
+
+<h2 id="un-peu-jeune">Un peu jeune</h2>
+
+<p>Gradle est « production ready » comme le dit Hans. Il est utilisé par certains gros projets aux besoins complexes.
+Pourtant, il est encore en fort développement, signe de bonne santé, mais aussi manque de maturité. Le projet n&rsquo;a pas encore un an.</p>
+
+<p>Il lui manque un certain nombre de fonctionnalités avant de devenir réellement complet, par exemple le support d&rsquo;autres langages que Java ou encore celui de Netbeans (mais « Why bother ? » comme dirait Antonio Goncalves).</p>
+
+<p>Bref, il y a du travail et ce n&rsquo;est pas la crise comme l&rsquo;indique la <a href="http://docs.codehaus.org/display/GRADLE/Roadmap">Roadmap</a>.</p>
+
+<h2 id="mon-avis">Mon avis</h2>
+
+<p>J&rsquo;aime :</p>
+
+<ul>
+<li>L&rsquo;usage d&rsquo;un DSL pour donner du sens à ses scripts de build ;</li>
+<li>La puissante de ce DSL pour faire des choses qui font rêver (par exemple, une tâche à accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;</li>
+<li>La réutilisation des tâches Ant facilement, ce qui veut dire qu&rsquo;on peut presque tout faire ;</li>
+<li>La flexibilité offerte. J&rsquo;adore les outils coupants qui me permettent de faire ce que je veux comme je le veux. Mais je reconnais que je n&rsquo;ai pas rencontré souvent de besoin très exotique ;</li>
+<li>Le Gradle Wrapper qui permet de dérouler un build Gradle sans aucune installation préalable (il télécharge ses dépendances automatiquement).</li>
+</ul>
+
+<p>Je n&rsquo;aime pas :</p>
+
+<ul>
+<li>Le fait de ne pas avoir une intégration/réutilisabilité complète avec Maven (la faute aux Plugins apparemment) ;</li>
+<li>Le trop peu de convention, même si c&rsquo;est le but du projet, car les conventions permettent d&rsquo;entrer dans l&rsquo;entreprise pour éviter que chacun puisse faire ce qu&rsquo;il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu&rsquo;on ne puisse pas poser une structure à respecter. Ce serait l&rsquo;équivalent des normes de codages ;</li>
+<li>Il n&rsquo;est pas à  mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostique, des performances ?)</li>
+<li>La jeunesse du projet qui ne garantit pas encore une pérennité suffisante pour l&rsquo;entreprise.</li>
+</ul>
+
+<h2 id="pour-allez-plus-loin">Pour allez plus loin</h2>
+
+<p>Zenika a publié des articles à propose de Gradle ainsi que deux podcasts. Le deuxième podcast couvre bien les avantages et inconvénients de Gradle :</p>
+
+<ul>
+<li>Les <a href="http://blog.zenika.com/index.php?tag/gradle">articles</a> ;</li>
+<li>Les <a href="http://blog.zenika.com/index.php?post/2009/05/29/Podcast-Gradle">podcasts</a>.</li>
+</ul>
+
+<p>Nicolas Martignole du Touilleur Express a fait un <a href="http://www.touilleur-express.fr/2009/06/23/jazoon-gradle-la-presentation-qui-aura-lieu-jeudi-soir/">compte rendu de la présentation</a> faite à Jazoon. Les commentaires sont également intéressants. J&rsquo;aime beaucoup le « Gradle as the assembly language for builds » de Vincent Massol.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>An introduction to Java Agent and bytecode manipulation &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/">
+                <h1>An introduction to Java Agent and bytecode manipulation</h1>
+            </a>
+            <p>2014-01-30 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p>A few months ago, I wrote a little shell script to colorize Maven&rsquo;s output
+(see <a href="http://tomsquest.com/blog/2013/09/maven-in-colors">this post</a>).
+This is a good solution, but <a href="https://twitter.com/jchristophegay">Jean-Christophe Gay</a> has written a pure Java version
+to solve the same problem with interesting bits of Java technologies.</p>
+
+<p>In this post, we will see how a Java Agent and some bytecode manipulation can open the inner guts of code we don&rsquo;t own.</p>
+
+<h2 id="code-sample">Code sample</h2>
+
+<p>I wrote a little test project to wire the stuff involved.
+There are two Maven module, one for the Agent and one for representing the external lib (we should not modify it).
+The whole code is here : <a href="https://github.com/tomsquest/java-agent-asm-javassist-sample">https://github.com/tomsquest/java-agent-asm-javassist-sample</a></p>
+
+<h3 id="agent">Agent</h3>
+
+<p>First, we need a Java Agent to inject and intercept real code.
+The agent framework is part of the JDK and allow us to operate on classes before (and even after) they are used.</p>
+
+<p>Here is the code of the Agent. Note the premain static method which is called at start.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Agent</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">premain</span><span style="color:#f92672">(</span>String agentArgs<span style="color:#f92672">,</span> Instrumentation inst<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        inst<span style="color:#f92672">.</span><span style="color:#a6e22e">addTransformer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Transformer<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">transform</span><span style="color:#f92672">(</span>ClassLoader classLoader<span style="color:#f92672">,</span> String s<span style="color:#f92672">,</span> Class<span style="color:#f92672">&lt;?&gt;</span> aClass<span style="color:#f92672">,</span> ProtectionDomain protectionDomain<span style="color:#f92672">,</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> bytes<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IllegalClassFormatException <span style="color:#f92672">{</span>
+
+                <span style="color:#75715e">// Intercept the call to the class Stuff
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;other/Stuff&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>s<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    <span style="color:#75715e">// ASM Code
+</span><span style="color:#75715e"></span>                    ClassReader reader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ClassReader<span style="color:#f92672">(</span>bytes<span style="color:#f92672">);</span>
+                    ClassWriter writer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ClassWriter<span style="color:#f92672">(</span>reader<span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>
+                    ClassPrinter visitor <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ClassPrinter<span style="color:#f92672">(</span>writer<span style="color:#f92672">);</span>
+                    reader<span style="color:#f92672">.</span><span style="color:#a6e22e">accept</span><span style="color:#f92672">(</span>visitor<span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>
+                    <span style="color:#66d9ef">return</span> writer<span style="color:#f92672">.</span><span style="color:#a6e22e">toByteArray</span><span style="color:#f92672">();</span>
+                <span style="color:#f92672">}</span>
+
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>The agent is called because the JVM is launched with the -javaagent:myjar.jar parameter and because the Manifest indicates this class.</p>
+
+<p>Command line :</p>
+
+<pre><code>$ java -javaagent:agent/target/agent-0.1-SNAPSHOT.jar -jar other/target/other-0.1-SNAPSHOT.jar
+</code></pre>
+
+<h3 id="asm">ASM</h3>
+
+<p>In order to manipulate the bytecode, I used the ASM framework.
+<a href="http://asm.ow2.org">ASM</a> is a Java bytecode manipulation and analysis framework used in many products.</p>
+
+<p>In the example above, the ClassPrinter prints the signatures of the classes and methods visited.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassPrinter</span> <span style="color:#66d9ef">extends</span> ClassVisitor <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">ClassPrinter</span><span style="color:#f92672">(</span>ClassWriter writer<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ASM4</span><span style="color:#f92672">,</span> writer<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">visit</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> version<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> access<span style="color:#f92672">,</span> String name<span style="color:#f92672">,</span> String signature<span style="color:#f92672">,</span> String superName<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> interfaces<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; extends &#34;</span> <span style="color:#f92672">+</span> superName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; {&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">visit</span><span style="color:#f92672">(</span>version<span style="color:#f92672">,</span> access<span style="color:#f92672">,</span> name<span style="color:#f92672">,</span> signature<span style="color:#f92672">,</span> superName<span style="color:#f92672">,</span> interfaces<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> MethodVisitor <span style="color:#a6e22e">visitMethod</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> access<span style="color:#f92672">,</span> String name<span style="color:#f92672">,</span> String desc<span style="color:#f92672">,</span> String signature<span style="color:#f92672">,</span> String<span style="color:#f92672">[]</span> exceptions<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> desc<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">visitMethod</span><span style="color:#f92672">(</span>access<span style="color:#f92672">,</span> name<span style="color:#f92672">,</span> desc<span style="color:#f92672">,</span> signature<span style="color:#f92672">,</span> exceptions<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">visitEnd</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;}&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">visitEnd</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Here is the output, as we intercepted the call to the <code>Stuff</code> class :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">other<span style="color:#f92672">/</span>Stuff <span style="color:#66d9ef">extends</span> java<span style="color:#f92672">/</span>lang<span style="color:#f92672">/</span>Object <span style="color:#f92672">{</span>
+ <span style="color:#f92672">&lt;</span>init<span style="color:#f92672">&gt;()</span>V
+ <span style="color:#a6e22e">run</span><span style="color:#f92672">()</span>V
+<span style="color:#f92672">}</span>
+I AM DOING SOME STUFF<span style="color:#f92672">...</span></code></pre></div>
+<h3 id="javassist">Javassist</h3>
+
+<p>Javassist is another bytecode manipulation framework. I found it simpler due to higher level methods like addLocalVariable, insertBefore, insertAfter&hellip;</p>
+
+<p>Here is a version of the Agent used to output the elapsed time for executing the <code>run</code> method :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Agent</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">premain</span><span style="color:#f92672">(</span>String agentArgs<span style="color:#f92672">,</span> Instrumentation inst<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        inst<span style="color:#f92672">.</span><span style="color:#a6e22e">addTransformer</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> ClassFileTransformer<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">transform</span><span style="color:#f92672">(</span>ClassLoader classLoader<span style="color:#f92672">,</span> String s<span style="color:#f92672">,</span> Class<span style="color:#f92672">&lt;?&gt;</span> aClass<span style="color:#f92672">,</span> ProtectionDomain protectionDomain<span style="color:#f92672">,</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> bytes<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IllegalClassFormatException <span style="color:#f92672">{</span>
+
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;other/Stuff&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>s<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+                    <span style="color:#75715e">// Javassist
+</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+                        ClassPool cp <span style="color:#f92672">=</span> ClassPool<span style="color:#f92672">.</span><span style="color:#a6e22e">getDefault</span><span style="color:#f92672">();</span>
+                        CtClass cc <span style="color:#f92672">=</span> cp<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;other.Stuff&#34;</span><span style="color:#f92672">);</span>
+                        CtMethod m <span style="color:#f92672">=</span> cc<span style="color:#f92672">.</span><span style="color:#a6e22e">getDeclaredMethod</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;run&#34;</span><span style="color:#f92672">);</span>
+                        m<span style="color:#f92672">.</span><span style="color:#a6e22e">addLocalVariable</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;elapsedTime&#34;</span><span style="color:#f92672">,</span> CtClass<span style="color:#f92672">.</span><span style="color:#a6e22e">longType</span><span style="color:#f92672">);</span>
+                        m<span style="color:#f92672">.</span><span style="color:#a6e22e">insertBefore</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;elapsedTime = System.currentTimeMillis();&#34;</span><span style="color:#f92672">);</span>
+                        m<span style="color:#f92672">.</span><span style="color:#a6e22e">insertAfter</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;{elapsedTime = System.currentTimeMillis() - elapsedTime;&#34;</span>
+                                <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;System.out.println(\&#34;Method Executed in ms: \&#34; + elapsedTime);}&#34;</span><span style="color:#f92672">);</span>
+                        <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> byteCode <span style="color:#f92672">=</span> cc<span style="color:#f92672">.</span><span style="color:#a6e22e">toBytecode</span><span style="color:#f92672">();</span>
+                        cc<span style="color:#f92672">.</span><span style="color:#a6e22e">detach</span><span style="color:#f92672">();</span>
+                        <span style="color:#66d9ef">return</span> byteCode<span style="color:#f92672">;</span>
+                    <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>Exception ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                        ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+                    <span style="color:#f92672">}</span>
+                <span style="color:#f92672">}</span>
+
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">});</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Output :</p>
+
+<pre><code>I AM DOING SOME STUFF...
+Method Executed in ms: 1
+</code></pre>
+
+<h2 id="real-case-maven-colorization">Real case : Maven colorization</h2>
+
+<p><a href="https://twitter.com/jchristophegay">Jean-Christophe Gay</a> hacked Maven to colorize the output and to highlight warnings and errors.
+And it did that without altering Maven, but from the outside.
+The idea is to start Maven with an agent which enhance Maven (3.0) output with colorization.</p>
+
+<p>It is interesting as a real world scenario because Maven does not expose an API to access the log in real time, and also
+because one needs to know exactly where to inject the custom code and how fragile it is to hack
+a third-party piece of code.</p>
+
+<p>You can see his code here : <a href="https://github.com/jcgay/maven-color">https://github.com/jcgay/maven-color</a></p>
+
+<p>In its code, the author had to :</p>
+
+<ul>
+<li>start the agent when the target program is run, this was done using the MAVEN_OPTS environment variable</li>
+<li>find where Maven was outputting relevant logs message (well, this has to be done for Maven and Surefire, which is even
+more susceptible to change.</li>
+</ul>
+
+<p>For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createSetupAnsiColorLoggerMethod</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    MethodVisitor mv <span style="color:#f92672">=</span> cv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitMethod</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ACC_PRIVATE</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;setupLogger&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;(Lorg/apache/maven/cli/MavenCli$CliRequest;)Lorg/codehaus/plexus/logging/Logger;&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitCode</span><span style="color:#f92672">();</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitTypeInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">NEW</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;com/github/jcgay/maven/color/logger/AnsiColorLogger&#34;</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">DUP</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitMethodInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">INVOKESPECIAL</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;com/github/jcgay/maven/color/logger/AnsiColorLogger&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;&lt;init&gt;&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;()V&#34;</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitVarInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ASTORE</span><span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitVarInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ALOAD</span><span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitVarInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ALOAD</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitFieldInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">GETFIELD</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;org/apache/maven/cli/MavenCli$CliRequest&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;request&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Lorg/apache/maven/execution/MavenExecutionRequest;&#34;</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitMethodInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">INVOKEINTERFACE</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;org/apache/maven/execution/MavenExecutionRequest&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;getLoggingLevel&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;()I&#34;</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitMethodInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">INVOKEINTERFACE</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;org/codehaus/plexus/logging/Logger&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;setThreshold&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;(I)V&#34;</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitVarInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ALOAD</span><span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitInsn</span><span style="color:#f92672">(</span>Opcodes<span style="color:#f92672">.</span><span style="color:#a6e22e">ARETURN</span><span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitMaxs</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> 3<span style="color:#f92672">);</span>
+    mv<span style="color:#f92672">.</span><span style="color:#a6e22e">visitEnd</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div>
+<p>Reading <a href="http://www.slideshare.net/CharlesNutter/javaone-2011-jvm-bytecode-for-dummies">Bytecode for Dummies</a> will help, for sure.</p>
+
+<p>For another real world usage, there is <a href="https://www.jboss.org/byteman">Byteman</a> written by JBoss.
+This tool simplifies testing of Java programs. The documentation is difficult to read, IMHO, but the presentation I
+saw three years ago was really stunning. Byteman can be used to make untestable code testable.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

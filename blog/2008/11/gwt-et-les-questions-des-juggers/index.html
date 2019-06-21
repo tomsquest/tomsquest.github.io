@@ -1,0 +1,178 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>GWT et les questions des Juggers &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/11/gwt-et-les-questions-des-juggers/">
+                <h1>GWT et les questions des Juggers</h1>
+            </a>
+            <p>2008-11-05 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2008/11/gwt.jpg" style="float:right"/></p>
+
+<p>Hier, le JUG parisien s&rsquo;est retrouvé pour une présentation de <a href="http://code.google.com/webtoolkit/">GWT</a> et de  <a href="http://code.google.com/p/gwt-rest/">REST-GWT</a>.</p>
+
+<p>Didier Girard s&rsquo;est occupé de la première partie. Je n&rsquo;aurai jamais dû l&rsquo;écouter ! Maintenant je suis presque triste d&rsquo;écrire du Spring MVC. J&rsquo;ai l&rsquo;impression de me sentir hors du coup, passé de mode. Il m&rsquo;a bien fait comprendre que je devais me mettre d&rsquo;urgence au toolkit de Google. Si j&rsquo;ai bien retenu, GWT c&rsquo;est simple, pas cher, solide, efficace, ergonomique&hellip; le graal du Web ? Pas pour tous. Flex est également bien positionné côté Java. Mais c&rsquo;est un autre débat.</p>
+
+<p>Si vous voulez un résumé de la soirée, le Touilleur a écrit le <a href="http://www.touilleur-express.fr/2008/11/05/soiree-gwt-et-restlet-au-paris-jug/">compte rendu de la soirée</a>.</p>
+
+<p>Pour revenir sur cette session, les juggers ont posé plusieurs questions intéressantes.</p>
+
+<h2 id="comment-gwt-s-intègre-à-une-mise-en-page-existante">Comment GWT s&rsquo;intègre à une mise en page existante ?</h2>
+
+<p>L&rsquo;outil de Google est dédié à la présentation. D&rsquo;après Didier, il permet de coder 5 fois plus vite la couche graphique Web de son application. GWT repose sur un modèle en composant. Par exemple, il dispose d&rsquo;objets Champ texte, Tableau&hellip; Chacun de ces composants supporte les CSS et est donc potentiellement skinnable.</p>
+
+<p>Donc côté intégration à un modèle de page fourni par un WebDesigner, il n&rsquo;y aurait aucun souci. Il suffit de partir du HTML et d&rsquo;appliquer les styles au composant GWT.</p>
+
+<h2 id="et-l-intégration-avec-maven-2">Et l&rsquo;intégration avec Maven 2 ?</h2>
+
+<p>Didier est direct : « Ca marche mais ce n&rsquo;est pas simple ». Les ingénieurs de Sfeir le font sur plusieurs de leurs projets, notamment pour lancer les tests fonctionnels dans leur processus d&rsquo;intégration continue.</p>
+
+<p>Petite recherche sur google avec « GWT maven » donne :</p>
+
+<ul>
+<li>En premier, un lien vers le projet GWT-Maven » qui permet d&rsquo;intègre les deux projets (génération du War, lancement&hellip;)</li>
+<li>En second, un article nommé : <a href="http://rbtech.blogspot.com/2007/06/gwt-and-maven-2-oh-pain.html">GWT and Maven2, Oh the pain !</a>.</li>
+</ul>
+
+<p>Donc oui, c&rsquo;est possible, certains le font mais ce n&rsquo;est pas « out of the box ».</p>
+
+<h2 id="et-la-testabilité">Et la testabilité ?</h2>
+
+<p>La question n&rsquo;a pas été posée au JUG mais j&rsquo;aurai aimé plus d&rsquo;infos à ce sujet donc je la pose ici. Didier a évoqué la possibilité de tester son IHM grâce à <a href="http://www.tomsquest.com/blog/2008/09/selenium-en-java-demarrage-rapide/">Selenium</a>. Je suis un peu surpris car si GWT produit du javascript à la pelle, il sera sûrement dur à tester. Sur notre projet, on a connu ça avec le composant Auto-complete de Yahoo UI qui nous a donné un peu de mal.</p>
+
+<p>En recherchant un peu, je vois que je me faisais des idées : oui, une interface GWT est testable sans soucis, ça reste du HTML avec une couche JS. J&rsquo;imagine qu&rsquo;il faut toujours rendre son code HTML testable (positionner des IDs et structurer son code).</p>
+
+<p>Matt Raible a posté une vidéo à ce sujet : <a href="http://raibledesigns.com/rd/entry/selenium_user_meetup_videos_posted">Selenium User Meeting</a>.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>

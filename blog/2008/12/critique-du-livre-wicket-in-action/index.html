@@ -1,0 +1,315 @@
+<!doctype html>
+
+
+
+
+<html class="no-js" lang=""> 
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title>Critique du livre &#34;Wicket In Action&#34; &ndash; Thomas Queste&#39;s blog</title>
+    <meta content="Thomas Queste's blog" name="description">
+    <meta content="Thomas Queste" name="author">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    
+    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
+    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
+    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
+    <meta content="#ffffff" name="theme-color">
+
+    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+
+    
+    <link href="http://www.tomsquest.com/main.min.a4144d95083f642ab50d5d09474e8f9dc1ffaa1e4455b8b1751d7751b3ff7c3b.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+<body>
+
+
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <a class="title" href="http://www.tomsquest.com/" title="homepage">
+            <img alt="Logo" src="/img/logo.png"/>
+        </a>
+        <nav>
+            <a href="/" title="Go to Blog">BLOG</a>
+            <a href="/about" title="Go to the About me page">ABOUT</a>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        
+<div class="post">
+    <article>
+        <header>
+            <a href="http://www.tomsquest.com/blog/2008/12/critique-du-livre-wicket-in-action/">
+                <h1>Critique du livre &#34;Wicket In Action&#34;</h1>
+            </a>
+            <p>2008-12-09 - Thomas Queste</p>
+        </header>
+        <section>
+            
+
+<p><img src="/img/posts/2008/12/wicket_in_action.jpg" style="float:right"/></p>
+
+<p>Je lorgnais depuis un sacré moment sur <a href="http://wicket.apache.org/">Wicket</a>, ce célèbre framework Web orienté composant. Les exemples du site m&rsquo;avaient fait saliver : découpage propre du HTML et du code Java, gestion des événements côté java (comme un onclick sur un lien), composants réutilisables, support Ajax natif, intégration à Spring et Hibernate&hellip; Beaucoup de qualités qui ont suscité ma curiosité.</p>
+
+<p>Heureux possesseur du livre « Wicket In Action » depuis quelques semaines, je me suis plongé dedans pour voir si ce framework tient vraiment toutes ses promesses. Je précise que je n&rsquo;ai pas fait de projet professionnel avec ce framework donc mon expérience se limite au livres, à ses exemples et au code que j&rsquo;ai écrit à côté.</p>
+
+<h2 id="mais-tout-d-abord-pourquoi-wicket">Mais tout d&rsquo;abord, pourquoi Wicket ?</h2>
+
+<p>Le framework a été conçu avec en tête :</p>
+
+<h3 id="découpage-fort-du-html-et-du-java">Découpage fort du HTML et du java</h3>
+
+<p>Wicket permet de séparer l&rsquo;HTML et le code Java. Les pages HTML restent à 99% prévisualisables dans un navigateur. Essayer avec une JSP pour voir&hellip; En fait, le framework se sert du HTML comme d&rsquo;un template en se permettant de modifier le source si le code Java le demande.</p>
+
+<p>Voici un exemple d&rsquo;un titre HTML, parfaitement valide au niveau HTML :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">wicket:id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;message&#34;</span>&gt;Hello, World!&lt;/<span style="color:#f92672">h1</span>&gt;</code></pre></div>
+<p>Et un peu de code Java, Wicket va utiliser l&rsquo;ID &ldquo;message&rdquo; pour remplacer le texte par autre chose. Et cela peut s&rsquo;appliquer à des éléments beaucoup plus complexe.</p>
+
+<h3 id="séparation-avec-le-monde-stateless">Séparation avec le monde Stateless</h3>
+
+<p>Wicket gère lui-même le maintien de l&rsquo;état et donc permet de s&rsquo;abstraire du modèle stateless HTTP. C&rsquo;est assez bien foutu de ce côté là. Adieu HttpServletRequest. Pour l&rsquo;instant avec mon usage, c&rsquo;est 100% vrai.</p>
+
+<h3 id="simplicité-productivité-fun">Simplicité/Productivité/Fun</h3>
+
+<p>Wicket se veut assez simple et rapide d&rsquo;accès pour arriver à des fonctionnalités avancées (Ajax de partout, intégration à Spring, Hibernate&hellip;). Dans la réalité, tout n&rsquo;est pas aussi simple. On voit vite qu&rsquo;écrire un composant réutilisable a un coût de développement plus important. On est très très loin de JSF mais il faut le souligner quand-même.</p>
+
+<p>Un aperçu et plus de détail sont directement dispo sur la page d&rsquo;<a href="http://wicket.apache.org/introduction.html">introduction à Wicket</a>.</p>
+
+<h2 id="pourquoi-se-mettre-à-wicket">Pourquoi se mettre à Wicket ?</h2>
+
+<ul>
+<li>Pour comprendre ce qu&rsquo;on entend par framework orienté composant ;</li>
+<li>Pour faire le pont entre le monde Swing et le Web ;</li>
+<li>Parce que Wicket est assez léger et simple à comprendre ;</li>
+<li>Parce que c&rsquo;est un framework très populaire (mais moins que GWT ou Flex) ;</li>
+<li>Parce qu&rsquo;il évolue vite et a un bon noyau de développement ;</li>
+<li>Pour ne plus jamais avoir envie de faire de JSF.</li>
+</ul>
+
+<h2 id="ce-que-j-ai-aimé-dans-le-livre">Ce que j&rsquo;ai aimé dans le livre</h2>
+
+<p>Le livre en lui-même est bien présenté et agréable à lire. Les chapitres sont courts et bien découpés, ce qui facilite son usage comme référence pour plus tard.</p>
+
+<p>Il a été écrit par deux des principaux Core Developers de Wicket depuis qu&rsquo;il est OpenSource. On peut donc leur faire confiance quand ils donnent des conseils ;-) . Les parties de code sont assez claires même si j&rsquo;ai eu un peu de mal à comprendre où rattacher quoi à certains moments.</p>
+
+<p>Les auteurs détaillent le framework progressivement même si l&rsquo;application est déjà bien lancée au chapitre 3. Chaque partie est expliquée en détail mais pas trop. Je ne me lancerai quand-même pas dans la publication d&rsquo;un composant sans y regarder à deux fois mais les principes et les bases sont évoqués.</p>
+
+<p>Le chapitre sur Spring est bien présenté, on voit différentes façons de l&rsquo;intégrer, y compris par les annotations. La partie sur « Aller en production » est vraiment intéressante car on y apprend que Wicket peut exposer des Mbeans pour se reconfigurer à chaud. Il est aussi expliquer comment tester ses composants et ses pages.</p>
+
+<h2 id="ce-que-je-n-ai-pas-aimé">Ce que je n&rsquo;ai pas aimé</h2>
+
+<p>J&rsquo;aurai aimé un chapitre sur les projets annexes que l&rsquo;on retrouve côté <a href="http://wicketstuff.org/confluence/display/STUFFWIKI/Wiki">Wicket Stuff</a>.</p>
+
+<p>Par exemple, dans le chapitre sur la sécurité, Acegi n&rsquo;est pas évoqué. Certes c&rsquo;est un livre sur Wicket, mais quelques paragraphes pour montrer les extensions annexes auraient été la bienvenue.</p>
+
+<p>De plus, le livre ne revient pas sur les changements qui ont eu lieu au fil des versions. Pourquoi ne pas parler de Wicket 2 qui est mort-né ? Et Wicket 1.4, quelles seront les nouveautés ? Allez, je demandais juste un bout d&rsquo;introduction. Cette version est à peine évoquée au fil des pages.</p>
+
+<h2 id="le-détail-des-chapitres">Le détail des chapitres</h2>
+
+<h3 id="1-ce-qu-est-wicket">1. Ce qu&rsquo;est Wicket</h3>
+
+<p>C&rsquo;est l&rsquo;habituel chapitre de présentation : d&rsquo;où vient le nom du framework, ce qu&rsquo;il fait et pourquoi il est si populaire.</p>
+
+<p>Pour résumer :</p>
+
+<ul>
+<li>Le framework est construit autour de l&rsquo;équation : « Just Java + Just HTML = Wicket » ;</li>
+<li>Il abstrait les notions HTTP derrière le langage Java permettant d&rsquo;être plus souple et plus puissant ;</li>
+<li>Il permet de faire des interfaces Web au delà des objets basiques comme les champs textes. Il apporte et permet de créer donc des composants évolués : Tab, panneaux, groupe d&rsquo;objets ou composants métiers&hellip;</li>
+</ul>
+
+<h3 id="2-l-architecture">2. L&rsquo;architecture</h3>
+
+<p>Ce chapitre démarre sur l&rsquo;explication des objets de base de Wicket : Application, Session. Puis il explique le trio Composant, Model et Html qui forme la base du framework.</p>
+
+<h3 id="3-l-application-exemple-cheesr">3. L&rsquo;application-exemple « CheesR »</h3>
+
+<p>L&rsquo;application du livre est une boutique de vente de fromage. Les auteurs expliquent qu&rsquo;ils aimeraient vendre du fromage en ligne car ils ont du mal à trouver de bons fromages aux US. Le code produit à ce niveau est déjà assez complet : on itère les fromages puis on ajoute de la pagination côté serveur, on ajoute ou enlève des éléments à son caddie, on gère les premiers événements et on crée un premier formulaire avec de la validation.</p>
+
+<p>Ce chapitre est simple à suivre et offre une bonne vue d&rsquo;ensemble. Il permet de bien comprendre comment le tout fonctionne et quelle est la structuration choisie par le framework.</p>
+
+<h3 id="4-les-models">4. Les Models</h3>
+
+<p>Les Models sont une des pierres angulaires. Ils sont une indirection entre un composant et un objet du domaine. Par exemple, un Model permet à un Label d&rsquo;afficher le champ « name » d&rsquo;un User. Pourtant à aucun moment, Label ne dépend de User et vice versa.</p>
+
+<p>Il existe différents Model qui permettent de peupler par réflexion un objet du domaine et l&rsquo;inverse, donc de faire du binding, ou encore de recharger l&rsquo;objet sous-jacent à chaque requête Web.</p>
+
+<h3 id="5-les-composants-de-base-label-lien-et-répéteurs">5. Les composants de base : label, lien et répéteurs</h3>
+
+<p>On se lance ici à la découverte des composants de base. C&rsquo;est en fait une présentation du deuxième pilier du framework : les Composants (le 3ème étant le Html).</p>
+
+<p>Je me suis rendu compte à ce niveau de la puissance des composants. Par exemple, cacher une partie entière d&rsquo;une page HTML est aussi simple que « panel.setVisible(false) ». Et ça se fait en java, fini les « &lt;c:if test=&hellip;&gt; ».</p>
+
+<h3 id="6-les-formulaires">6. Les formulaires</h3>
+
+<p>C&rsquo;est une des parties les plus importantes à mon goût : qu&rsquo;offre le framework pour me permettre de développer des applications de gestion plus rapidement ? Mon domaine est-il bindé facilement à un formulaire ? Quid de la validation ? Et si mon formulaire est très dynamique ?</p>
+
+<p>Le chapitre répond à toutes ces questions et là encore, Wicket fait des merveilles avec les formulaires. J&rsquo;aurai aimé que ce chapitre couvre également la validation en Ajax, chose qui ne sera pas traitée dans le livre. Idem pour la <a href="http://jcp.org/en/jsr/detail?id=303">JSR 303</a> qui concerne la validation des beans : pas un mot là dessus.</p>
+
+<h3 id="7-composer-ses-pages">7. Composer ses pages</h3>
+
+<p>Cette partie couvre :</p>
+
+<ul>
+<li>l&rsquo;organisation d&rsquo;une page en bloc, panneau et fragment ;</li>
+<li>l&rsquo;organisation des pages :
+
+<ul>
+<li>en répétant la structure ;</li>
+<li>en utilisant l&rsquo;héritage pour ne redéfinir que certaines portions (« Markup Inheritance »)</li>
+<li>en construisant des Panels.</li>
+</ul></li>
+</ul>
+
+<p>Parmi ces 3 derniers choix, lequel prendre ?</p>
+
+<p>Pour les auteurs, cela dépend des besoins en termes de rendu, de duplication de code, de navigabilité et de bookmarkabilité. Faire des pages pleines est valide avec un petit nombre de pages. L&rsquo;héritage permettra ensuite de simplifier le code une fois le design stabilisé. Enfin les Panels sont l&rsquo;arme ultime mais plus coûteux à développer qu&rsquo;une simple Page.</p>
+
+<h3 id="8-développer-ses-propres-composants">8. Développer ses propres composants</h3>
+
+<p>C&rsquo;est le chapitre le plus compliqué à mon goût mais c&rsquo;est normal. Comme l&rsquo;expliquent les auteurs, développer un composant c&rsquo;est du boulot en plus mais un gain en maintenance. Pour ceux qui connaissent, il est simple de développer des composants qui se comportent en quelque sorte comme des Portlets. Ils peuvent avoir leur propre ressource, offrir des écrans de configurations etc.</p>
+
+<h3 id="9-les-ressources-dynamiques-images-css-et-javascripts">9. Les ressources dynamiques, Images, css et Javascripts</h3>
+
+<p>On continue sur les composants : comment ceux-ci embarquent leurs propres ressources (css, image, javascripts) et comment un composant propose du contenu téléchargeable.</p>
+
+<h3 id="10-ajax-et-les-composants-riches">10. Ajax et les composants riches</h3>
+
+<p>Wicket a son propre moteur Ajax. Celui-ci a l&rsquo;avantage d&rsquo;être simple et directement destiné et intégré, mais il est donc moins puissant que Dojo par exemple. Si vous voulez utiliser un de ces projets, le chapitre n&rsquo;en parle pas. Il faudra donc se tourner vers les projets de Wicket-Stuff.</p>
+
+<p>Les composants de base ont souvent leur alternative Ajax. Par exemple, on trouve des AjaxLinks à côté des Links traditionnels (ou mieux des AjaxFallbackLinks), ou encore des AjaxEditableLabels qui offre la possibilité d&rsquo;éditer « In place ».</p>
+
+<h3 id="11-la-sécurité">11. La sécurité</h3>
+
+<p>Ce chapitre est dédié à l&rsquo;intégration de l&rsquo;authentification et de l&rsquo;autorisation à son application. Rien de surprenant ici quand on connait un peu Acegi. Ou plutôt si justement : pourquoi le tenor du marché n&rsquo;est pas évoqué ? Un encart élargit le sujet en parlant des projets « wicket-auth-roles » et « wicket-security-wasp/wicket-security-swarm » mais ça s&rsquo;arrête là. Manque de place ?</p>
+
+<h3 id="12-localisation-et-internationalisation">12. Localisation et internationalisation</h3>
+
+<p>Un sujet des moins passionnants mais passage obligé. On y parle aussi de la gestion des fichiers de ressources qui poussent plus loin le fonctionnement que l&rsquo;on peut en faire habituellement. La encore, l&rsquo;approche composant pousse Wicket à offrir plus de puissance.</p>
+
+<h3 id="13-spring-et-hibernate">13. Spring et Hibernate</h3>
+
+<p>C&rsquo;est « Spring Time » dans ce chapitre. On sort un peu de Wicket pour voir son intégration au monde extérieur car tout ne se fait pas côté Web (même si j&rsquo;en connais certains qui aiment les scriplets). Le chapitre montre différentes façons d&rsquo;intégrer Spring (par référence, par proxy, grâce à wicket-spring, puis par annotation). Hibernate fait partie du sujet couvert mais assez rapidement. S&rsquo;il n&rsquo;en parle pas beaucoup, c&rsquo;est que c&rsquo;est facile à intégrer, non ?</p>
+
+<h3 id="14-tester-ses-pages-de-belles-url-et-configuration-de-production-jmx">14. Tester ses pages, de belles URL et configuration de production + JMX</h3>
+
+<p>Le chapitre passe sur plusieurs sujets.</p>
+
+<p>WicketTester permet d&rsquo;écrire, comme son nom l&rsquo;indique, des tests de ses pages et composants, y compris quand Ajax rentre en jeu.</p>
+
+<p>Puis le montage d&rsquo;URL est évoqué. Il permet de faire de belles URL dans le style Rest-like, par exemple : <a href="http://www.tomsquest/book/wicket">http://www.tomsquest/book/wicket</a>.</p>
+
+<p>Enfin, partie surprenante, Wicket fonctionne par défaut en mode Développement. Cela lui permet d&rsquo;afficher de belles pages d&rsquo;erreur avec de belles stacktraces et tout un tas d&rsquo;autres choses pour le plaisir du développeur. Configurer en mode Prod, Wicket passe à la version boostée : cache des pages, compression Gzip, suppression des Id dans les pages&hellip;</p>
+
+<p>Le chapitre explique également configurer Wicket à l&rsquo;aide de Mbean JMX. Il est beau ce framework quand même, non ?</p>
+
+<h2 id="le-mot-de-la-fin">Le mot de la fin</h2>
+
+<p>Le livre a répondu à beaucoup des questions que je me posais. Son spectre n&rsquo;est pas très large (pas de Wicket Stuff) mais largement suffisant pour démarrer rapidement. Je le recommande à ce qui veulent tester Wicket et se lancer dans leur premier projet.</p>
+
+<p>Mais d&rsquo;ailleurs, vous devriez déjà être sur <a href="http://www.amazon.fr/Wicket-Action-Jonathan-Locke/dp/1932394982">Amazon</a> pour commander votre exemplaire.</p>
+
+<h3 id="a-noter-également">A noter également</h3>
+
+<p>Si vous êtes radin (ou pas bête), le site de Manning propose les chapitres suivants :</p>
+
+<ul>
+<li>Chap. 1 : <a href="http://www.manning.com/dashorst/ch01_dashorst.pdf">Ce qu&rsquo;est Wicket</a> ;</li>
+<li>Chap. 8 : <a href="http://www.manning.com/dashorst/ch08_dashorst.pdf">Développer ses propres composants</a> ;</li>
+<li>Un <a href="http://www.manning.com/dashorst/Wicket_Bonus-chapter15.pdf">chapitre supplémentaire</a> pour démarrer avec Wicket - Ant et Maven y sont couverts.</li>
+</ul>
+
+<p>Le <a href="http://wicketinaction.com/">site du livre</a> est également intéressant et propose quelques articles intéressants.</p>
+
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="http://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tomsquest" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </article>
+</div>
+
+    </div>
+</div>
+
+
+<footer>
+    <div class="links">
+        <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter"><img
+                alt="View Thomas Queste's profile on Twitter" border="0" height="48" src="/img/tw-48.png"
+                width="48"></a>
+        <a href="http://www.linkedin.com/in/thomasqueste" title="View Thomas Queste's profile on LinkedIn"><img
+                alt="View Thomas Queste's profile on LinkedIn" border="0" height="48" src="/img/li-48.png"
+                width="48"></a>
+        <a href="https://github.com/tomsquest" title="View Thomas Queste's profile on Github"><img
+                alt="View Thomas Queste's profile on Github" border="0" height="48" src="/img/gh-48.png" width="48"></a>
+    </div>
+    <p>
+        This work by
+        <a href="http://www.tomsquest.com" property="cc:attributionName" rel="cc:attributionURL">Thomas
+            Queste</a> is licensed under the following
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license">License</a>.
+        <br/>
+        <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" rel="license"><img
+                alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+                style="border-width:0"/></a>
+    </p>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-5368525-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
