@@ -2,28 +2,28 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Thomas Queste&#39;s blog</title>
-        <link>http://www.tomsquest.com/</link>
+        <link>https://www.tomsquest.com/</link>
         <description>Recent content on Thomas Queste&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
         
-        <atom:link href="http://www.tomsquest.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.tomsquest.com/index.xml" rel="self" type="application/rss+xml" />
         
 
         
         
         <item>
             <title>Better NPM&#39;ing, Tips and Tricks using NPM</title>
-            <link>http://www.tomsquest.com/blog/2018/10/better-npm-ing/</link>
+            <link>https://www.tomsquest.com/blog/2018/10/better-npm-ing/</link>
             <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2018/10/better-npm-ing/</guid>
+            <guid>https://www.tomsquest.com/blog/2018/10/better-npm-ing/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/npm_logo.png&#34; alt=&#34;npm logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/npm_logo.png&#34; alt=&#34;npm logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I discovered several tips working with NPM on a daily basis. Here are the top ones.&lt;/p&gt;
 
@@ -39,7 +39,7 @@
 
 &lt;p&gt;&lt;a href=&#34;https://greenkeeper.io&#34;&gt;Greenkeeper.io&lt;/a&gt; tells us that 15% of packages break the &lt;em&gt;minor&lt;/em&gt; or &lt;em&gt;patch&lt;/em&gt; updates:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/greenkeeper.png&#34; alt=&#34;Greekeeper&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/greenkeeper.png&#34; alt=&#34;Greekeeper&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Use &lt;code&gt;--save-exact&lt;/code&gt; when installing a dependency&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npm install --save-exact aDependency
@@ -82,13 +82,13 @@ $ npx cleaver watch index.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npx updtr&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Solution 2&lt;/strong&gt;: &lt;a href=&#34;https://www.npmjs.com/package/npm-check&#34;&gt;npm-check&lt;/a&gt; show a pretty menu of all updates&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ npx npm-check -u&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/npm-check-u.png&#34; alt=&#34;npx npm-check -u&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/npm-check-u.png&#34; alt=&#34;npx npm-check -u&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;current-node-version-in-tools&#34;&gt;Current Node version in Tools&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Problem&lt;/strong&gt;: When configuring Node/Typescript, the node &lt;strong&gt;path&lt;/strong&gt; is version-dependent&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png&#34; alt=&#34;List of node version from Intellij&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png&#34; alt=&#34;List of node version from Intellij&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link &lt;code&gt;~/.nvm/current&lt;/code&gt; to, for example, &lt;code&gt;~/.nvm/versions/node/v11.0.0&lt;/code&gt; and recreate the link when changing of node version (automatically if you use &lt;a href=&#34;https://github.com/tomsquest/nvm-auto-use.zsh&#34;&gt;NVM auto-use ZSH plugin&lt;/a&gt;).&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Put this in your .bashrc/.zshrc&lt;/span&gt;
@@ -101,19 +101,19 @@ $ export NVM_SYMLINK_CURRENT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span
 
 &lt;p&gt;&lt;strong&gt;Solution 2&lt;/strong&gt;: &lt;a href=&#34;https://gitpunch.com&#34;&gt;Gitpunch.com&lt;/a&gt; seems to solve the problem. It can follow all your Github stars and specific projects.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://gitpunch.com&#34;&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/gitpunch.com.png&#34; alt=&#34;Git Punch&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitpunch.com&#34;&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2018-10-02-better-npm-ing/gitpunch.com.png&#34; alt=&#34;Git Punch&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         
         <item>
             <title>Intellij Championship</title>
-            <link>http://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</link>
+            <link>https://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</link>
             <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</guid>
+            <guid>https://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</guid>
 
             
-            <description>&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/intellij.png&#34; alt=&#34;intellij logo&#34; /&gt;&lt;/p&gt;
+            <description>&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/intellij.png&#34; alt=&#34;intellij logo&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Last week I ran an &lt;strong&gt;&amp;ldquo;Intellij Master Championship&amp;rdquo;&lt;/strong&gt; class/presentation. There were prizes to win, like Jetbrains Yoyos, Intellij Stickers.&lt;/p&gt;
 
@@ -127,21 +127,21 @@ $ export NVM_SYMLINK_CURRENT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span
 
 &lt;p&gt;And the whole source is on &lt;a href=&#34;https://github.com/tomsquest/intellij-master-presentation&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/intellij-master-swag.png&#34; alt=&#34;intellij logo&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/intellij-master-swag.png&#34; alt=&#34;intellij logo&#34; /&gt;&lt;/p&gt;
 </description>
         </item>
         
         <item>
             <title>Global Day Of Coderetreat 2016</title>
-            <link>http://www.tomsquest.com/blog/2016/10/coderetreat-2016/</link>
+            <link>https://www.tomsquest.com/blog/2016/10/coderetreat-2016/</link>
             <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2016/10/coderetreat-2016/</guid>
+            <guid>https://www.tomsquest.com/blog/2016/10/coderetreat-2016/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/coderetreat.png&#34; alt=&#34;Global Day of Coderetreat&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/coderetreat.png&#34; alt=&#34;Global Day of Coderetreat&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Saturday was the &lt;a href=&#34;http://globalday.coderetreat.org/&#34;&gt;Global day of Coderetreat&lt;/a&gt;, an event occurring every year and which brings people, on their free time, to pair-program with &lt;em&gt;complete&lt;/em&gt; strangers.
 The website tells about 115 participating cities and many many developers worldwide.&lt;/p&gt;
@@ -188,15 +188,15 @@ Thanks to &lt;a href=&#34;https://www.axawebcenter.fr/&#34;&gt;Axa Web Center&lt
         
         <item>
             <title>My attempt at building a production grade docker image</title>
-            <link>http://www.tomsquest.com/blog/2016/10/production-docker-image/</link>
+            <link>https://www.tomsquest.com/blog/2016/10/production-docker-image/</link>
             <pubDate>Mon, 17 Oct 2016 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2016/10/production-docker-image/</guid>
+            <guid>https://www.tomsquest.com/blog/2016/10/production-docker-image/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/docker.png&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/docker.png&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As I am self-hosting a couple of services, mainly for keeping my data for myself (Sorry Google, Facebook), I tried to build a &amp;ldquo;production-grade docker image&amp;rdquo;. Here&amp;rsquo;s my attempt and what I learnt along the way.&lt;/p&gt;
 
@@ -347,15 +347,15 @@ su-exec is available in Alpine repositories.&lt;/p&gt;
         
         <item>
             <title>Working Effectively with Unit Tests by Jay Fields</title>
-            <link>http://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</link>
+            <link>https://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</link>
             <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</guid>
+            <guid>https://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/wewut-cover.jpg&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/wewut-cover.jpg&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I am very happy to have read Jay Fields&amp;rsquo; Working effectively with unit tests.
 This is a rare book where developers are taught how to be better at a very-argued discipline: testing.&lt;/p&gt;
@@ -447,13 +447,13 @@ This is one of the limit of using Markdown for publishing.&lt;/p&gt;
         
         <item>
             <title>The Secrets of Consulting by Gerald M. Weinberg</title>
-            <link>http://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</link>
+            <link>https://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</link>
             <pubDate>Sun, 21 Sep 2014 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</guid>
+            <guid>https://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</guid>
 
             
-            <description>&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/the-secrets-of-consulting.jpg&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
+            <description>&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/the-secrets-of-consulting.jpg&#34; alt=&#34;Book cover&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The book &lt;a href=&#34;http://www.amazon.com/The-Secrets-Consulting-Getting-Successfully/dp/0932633013/&#34;&gt;&amp;ldquo;Secrets of Consulting&amp;rdquo;&lt;/a&gt; by Weinberg stayed for years on my shelve.
 I finally found why I did not read it just after I bought it, but why I should have read it before.&lt;/p&gt;
@@ -475,10 +475,10 @@ Don&amp;rsquo;t expect recipes and bullet points. It is more about stories and b
         
         <item>
             <title>Learning to touch type using the Colemak layout</title>
-            <link>http://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</link>
+            <link>https://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</link>
             <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</guid>
+            <guid>https://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</guid>
 
             
             <description>
@@ -495,11 +495,11 @@ Don&amp;rsquo;t expect recipes and bullet points. It is more about stories and b
 
 &lt;p&gt;Here is a visual of the Colemak layout:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_layout.png&#34; alt=&#34;Colemak layout&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/colemak_layout.png&#34; alt=&#34;Colemak layout&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_first20thhours_book.jpg&#34; title=&#34;Book cover the First 20th hours&#34; style=&#34;float:right&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/colemak_first20thhours_book.jpg&#34; title=&#34;Book cover the First 20th hours&#34; style=&#34;float:right&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;I used the method of the book &lt;a href=&#34;http://first20hours.com/&#34;&gt;&amp;ldquo;The First 20 Hours&amp;rdquo;&lt;/a&gt; by Josh Kaufman, the author behind the Personal MBA. This is an interesting book on how to learn (anything) fast. It contains two chapters on learning and how to do it well and a set of chapters on what the author learned : Yoga, Go, Programming, Ukulele and particularly &lt;strong&gt;Touch typing&lt;/strong&gt;. It&amp;rsquo;s basically the &lt;sup&gt;80&lt;/sup&gt;&amp;frasl;&lt;sub&gt;20&lt;/sub&gt; rules applied to learning.&lt;/p&gt;
 
@@ -521,7 +521,7 @@ Don&amp;rsquo;t expect recipes and bullet points. It is more about stories and b
 
 &lt;p&gt;The Typematrix blank keyboard:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_typematrix_blank.png&#34; alt=&#34;Typematrix Blank&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/colemak_typematrix_blank.png&#34; alt=&#34;Typematrix Blank&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;typing-trainers&#34;&gt;Typing trainers&lt;/h2&gt;
 
@@ -562,7 +562,7 @@ If you need mines, I should be able to export it from Amphetype.&lt;/p&gt;
 
 &lt;p&gt;Here is my seinfeld calendar:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_seinfeld_calendar.jpg&#34; alt=&#34;Seinfeld calendar&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/colemak_seinfeld_calendar.jpg&#34; alt=&#34;Seinfeld calendar&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was really motivated in October and less in November (also due to a lot of work). But this is generally how things evolve.&lt;/p&gt;
 
@@ -582,7 +582,7 @@ I still make typing errors, but a lot less than in Azerty.&lt;/p&gt;
 
 &lt;p&gt;Graph of my speed (WPM) from October to November (on Amphetype), French and English (all results merged). The progress is slow, but steady:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/colemak_amphetype_progress.png&#34; alt=&#34;Speed result&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/colemak_amphetype_progress.png&#34; alt=&#34;Speed result&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This post was written in Colemak on a blank Typematrix keyboard.&lt;/em&gt;&lt;/p&gt;
 </description>
@@ -590,10 +590,10 @@ I still make typing errors, but a lot less than in Azerty.&lt;/p&gt;
         
         <item>
             <title>An introduction to Java Agent and bytecode manipulation</title>
-            <link>http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</link>
+            <link>https://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</link>
             <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</guid>
+            <guid>https://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</guid>
 
             
             <description>
@@ -770,10 +770,10 @@ saw three years ago was really stunning. Byteman can be used to make untestable 
         
         <item>
             <title>Créer son EURL et devenir indépendant : les étapes</title>
-            <link>http://www.tomsquest.com/blog/2014/01/creer-son-eurl/</link>
+            <link>https://www.tomsquest.com/blog/2014/01/creer-son-eurl/</link>
             <pubDate>Tue, 07 Jan 2014 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2014/01/creer-son-eurl/</guid>
+            <guid>https://www.tomsquest.com/blog/2014/01/creer-son-eurl/</guid>
 
             
             <description>
@@ -825,7 +825,7 @@ Attention, ne faites pas l’inverse, ne créer pas la société avant votre ins
 Vous trouverez sur internet les journaux habilités à publier des annonces légales (le CFE en donne également).
 Il faut faire des devis car on paie au caractère.&lt;/p&gt;
 
-&lt;p&gt;Ce modèle est optimisé pour minimiser le coût : &lt;a href=&#34;http://www.tomsquest.com/files/eurl/annonce_legale.rtf&#34;&gt;annonce legale.rtf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ce modèle est optimisé pour minimiser le coût : &lt;a href=&#34;https://www.tomsquest.com/files/eurl/annonce_legale.rtf&#34;&gt;annonce legale.rtf&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Les échanges que j’ai eu avec le journal :&lt;/p&gt;
 
@@ -868,9 +868,9 @@ On évite aussi le RSI qui cause de nombreux problèmes, c&amp;rsquo;est un argu
 &lt;p&gt;Les statuts sont une pièce importante du dossier, mais l’AFE fournit des statuts simplifiés prenant 2 pages et couvrant la situation classique de tout le monde.
 C’est ce modèle que j’ai utilisé. Libre à vous de comparer avec les modèles sur Internet.&lt;/p&gt;
 
-&lt;p&gt;Le modèle de statut simplifié est disponible ici : &lt;a href=&#34;https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html&#34;&gt;https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html&lt;/a&gt; (&lt;a href=&#34;http://www.tomsquest.com/files/eurl/afe_modele_statuts_types_eurl.txt&#34;&gt;copie&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Le modèle de statut simplifié est disponible ici : &lt;a href=&#34;https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html&#34;&gt;https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html&lt;/a&gt; (&lt;a href=&#34;https://www.tomsquest.com/files/eurl/afe_modele_statuts_types_eurl.txt&#34;&gt;copie&lt;/a&gt;)&lt;/p&gt;
 
-&lt;p&gt;Il existe également un modèle de statuts plus complet : &lt;a href=&#34;https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc&#34;&gt;https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc&lt;/a&gt; (&lt;a href=&#34;http://www.tomsquest.com/files/eurl/afe_statuts_eurl.doc&#34;&gt;copie&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Il existe également un modèle de statuts plus complet : &lt;a href=&#34;https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc&#34;&gt;https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc&lt;/a&gt; (&lt;a href=&#34;https://www.tomsquest.com/files/eurl/afe_statuts_eurl.doc&#34;&gt;copie&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;A vous de remplir les cases.&lt;/p&gt;
 
@@ -897,7 +897,7 @@ car apparemment le dossier transmis par internet n’était pas complet. Hop, un
 &lt;li&gt;Statuts signés (donc à imprimer, scanner puis uploader)&lt;/li&gt;
 &lt;li&gt;Attestation de dépôts des fonds fournis par la banque&lt;/li&gt;
 &lt;li&gt;Attestation de parution de l’annonce légale envoyée par le journal après paiement&lt;/li&gt;
-&lt;li&gt;Attestation de non-condamnation avec filiation (modèle : &lt;a href=&#34;http://www.tomsquest.com/files/eurl/declaration_non_condamnation.rtf&#34;&gt;declaration non condamnation.rtf&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Attestation de non-condamnation avec filiation (modèle : &lt;a href=&#34;https://www.tomsquest.com/files/eurl/declaration_non_condamnation.rtf&#34;&gt;declaration non condamnation.rtf&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Carte d&amp;rsquo;identité avec la mention sur l’honneur (donc à imprimer, annoter avec la mention sur l’honneur indiquée sur le site puis à uploader)&lt;/li&gt;
 &lt;li&gt;Copie du bail car je suis locataire : la société est domicilié chez moi et même si mon bail indique que je ne peux pas y avoir d’activité commerciale,
 c’est toléré pendant 5 ans (attention changer de domiciliation coûte de l’argent)&lt;/li&gt;
@@ -939,8 +939,8 @@ transmettra le document car vous leur avait déjà fourni vos statuts par Guiche
 &lt;ul&gt;
 &lt;li&gt;un Kbis (j’ai envoyé un original)&lt;/li&gt;
 &lt;li&gt;vos statuts&lt;/li&gt;
-&lt;li&gt;une lettre expliquant ce que vous souhaitez faire : pour moi, maintien des allocations ou versement du capital, &lt;a href=&#34;http://www.tomsquest.com/files/eurl/courrier_poleemploi_creation_societe.rtf&#34;&gt;cf la lettre que j’ai envoyé&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;une copie signée du PV d’AG (Procès Verbal d’Assemblée Générale) déclarant la rémunération que vous souhaitez vous verser : &lt;a href=&#34;http://www.tomsquest.com/files/eurl/pv_ag_non_remuneration.rtf&#34;&gt;modèle PV AG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;une lettre expliquant ce que vous souhaitez faire : pour moi, maintien des allocations ou versement du capital, &lt;a href=&#34;https://www.tomsquest.com/files/eurl/courrier_poleemploi_creation_societe.rtf&#34;&gt;cf la lettre que j’ai envoyé&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;une copie signée du PV d’AG (Procès Verbal d’Assemblée Générale) déclarant la rémunération que vous souhaitez vous verser : &lt;a href=&#34;https://www.tomsquest.com/files/eurl/pv_ag_non_remuneration.rtf&#34;&gt;modèle PV AG&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Dans mon cas, j’ai rédigé un PV d’AG stipulant ma non-rémunération pour 2013 et 2014. Bien sûr, si je suis amené à me verser
@@ -971,15 +971,15 @@ idem pour l’annonce légale et de soumettre le dossier de création le lendema
         
         <item>
             <title>Maven in colors</title>
-            <link>http://www.tomsquest.com/blog/2013/09/maven-in-colors/</link>
+            <link>https://www.tomsquest.com/blog/2013/09/maven-in-colors/</link>
             <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2013/09/maven-in-colors/</guid>
+            <guid>https://www.tomsquest.com/blog/2013/09/maven-in-colors/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2013/maven-logo.png&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2013/maven-logo.png&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Updated the 2014.01.21 - Added JCGay Maven Agent&lt;/em&gt;&lt;/p&gt;
 
@@ -993,11 +993,11 @@ or Arnaud Heritier&amp;rsquo;s log4j2 approach : &lt;a href=&#34;http://aheritie
 
 &lt;p&gt;Here is a screenshot of a successful build :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2013/maven-colors-success.png&#34; alt=&#34;Maven successful build with colors&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2013/maven-colors-success.png&#34; alt=&#34;Maven successful build with colors&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Screenshot of a failed build :&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/2013/maven-colors-failure.png&#34; alt=&#34;Maven failed build with colors&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2013/maven-colors-failure.png&#34; alt=&#34;Maven failed build with colors&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;preferred-solution-shell-function&#34;&gt;Preferred solution : shell function&lt;/h2&gt;
 
@@ -1056,10 +1056,10 @@ This is real problem when you want to chain mvn with a push. ie.&lt;/p&gt;
         
         <item>
             <title>Slides of my presentation : DB Migration Automation</title>
-            <link>http://www.tomsquest.com/blog/2013/09/database-migration-slides/</link>
+            <link>https://www.tomsquest.com/blog/2013/09/database-migration-slides/</link>
             <pubDate>Wed, 11 Sep 2013 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2013/09/database-migration-slides/</guid>
+            <guid>https://www.tomsquest.com/blog/2013/09/database-migration-slides/</guid>
 
             
             <description>
@@ -1079,15 +1079,15 @@ These slides were created for an internal presentation at my current gig.&lt;/p&
         
         <item>
             <title>Review : Play Framework Cookbook</title>
-            <link>http://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</link>
+            <link>https://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</link>
             <pubDate>Thu, 06 Oct 2011 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</guid>
+            <guid>https://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/play_framework_cookbook.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/play_framework_cookbook.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;Play!, the framework for the bored Java developers ! Very interesting and opinated framework.
 I didn&amp;rsquo;t play with it a lot in the previous months, but the new book &lt;a href=&#34;http://www.packtpub.com/play-framework-cookbook/book&#34;&gt;&amp;ldquo;Play Framework Cookbook&amp;rdquo;&lt;/a&gt; by Packt Publishing,
@@ -1148,10 +1148,10 @@ I really liked the given explanations, the additionnal references and that the f
         
         <item>
             <title>Better autocompletes with Fuzzy Matching</title>
-            <link>http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</link>
+            <link>https://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</link>
             <pubDate>Fri, 13 May 2011 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</guid>
+            <guid>https://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</guid>
 
             
             <description>
@@ -1245,10 +1245,10 @@ I really liked the given explanations, the additionnal references and that the f
         
         <item>
             <title>FitNesse technical setup</title>
-            <link>http://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</link>
+            <link>https://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</link>
             <pubDate>Sat, 04 Dec 2010 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</guid>
+            <guid>https://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</guid>
 
             
             <description>
@@ -1289,7 +1289,7 @@ I really liked the given explanations, the additionnal references and that the f
 &lt;li&gt;Pages must be modified remotely (using the “Edit Remotely” button); Local pages may be erased at the next sync, so use them carefully&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/fitnesse-schema_resized2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/fitnesse-schema_resized2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
 
@@ -1398,7 +1398,7 @@ Classpath and pom file
 &lt;li&gt;From the properties, paste the URL to the parent page you wish to import (something like &lt;a href=&#34;http://fitnesse:8086/MyProject&#34;&gt;http://fitnesse:8086/MyProject&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/fitnesse_wiki_import.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/fitnesse_wiki_import.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;debugging&#34;&gt;Debugging&lt;/h4&gt;
 
@@ -1411,7 +1411,7 @@ Classpath and pom file
 
 &lt;h4 id=&#34;random-problem-bind-socket-exception&#34;&gt;Random problem (Bind, Socket exception)&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/fitnesse_error.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/fitnesse_error.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you experience strange errors with no output, or better Socket and Bind exceptions (like in the screenshot), you should use the SLIM_PORT option (as used in this article). This basically shift the ports used by Slim to avoid conflicts with, let’s say, Tomcat.&lt;/p&gt;
 
@@ -1424,10 +1424,10 @@ Classpath and pom file
         
         <item>
             <title>Industrialisation des développements : automatisez votre base de données</title>
-            <link>http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</link>
+            <link>https://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</link>
             <pubDate>Thu, 16 Sep 2010 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</guid>
+            <guid>https://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</guid>
 
             
             <description>
@@ -1555,15 +1555,15 @@ Exemple :&lt;/p&gt;
         
         <item>
             <title>Notes sur Rework de 37signals</title>
-            <link>http://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</link>
+            <link>https://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</link>
             <pubDate>Sun, 29 Aug 2010 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</guid>
+            <guid>https://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/rework_cover.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/rework_cover.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;Mes notes sur le deuxième livre de la société 37signals, &lt;a href=&#34;http://37signals.com/rework/&#34;&gt;Rework&lt;/a&gt;. Il fait suite à Getting Real. J&amp;rsquo;ai avalé rapidement le livre car les idées sont tranchantes, inspirantes et quelque fois révoltantes. Mais le but est là : réaliser qu&amp;rsquo;il y a d&amp;rsquo;autres façons de faire du business. de concevoir son entreprise et de travailler.&lt;/p&gt;
 
@@ -1680,10 +1680,10 @@ Exemple :&lt;/p&gt;
         
         <item>
             <title>Construire la nouvelle génération de leaders techniques</title>
-            <link>http://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</link>
+            <link>https://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</link>
             <pubDate>Tue, 24 Aug 2010 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</guid>
+            <guid>https://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</guid>
 
             
             <description>
@@ -1762,10 +1762,10 @@ Exemple :&lt;/p&gt;
         
         <item>
             <title>JPA : les illusions sur les NamedQueries</title>
-            <link>http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</link>
+            <link>https://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</link>
             <pubDate>Sun, 28 Mar 2010 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</guid>
+            <guid>https://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</guid>
 
             
             <description>
@@ -1823,15 +1823,15 @@ Exemple :&lt;/p&gt;
         
         <item>
             <title>8 raisons d&#39;aimer Ruby</title>
-            <link>http://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</link>
+            <link>https://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</link>
             <pubDate>Wed, 11 Nov 2009 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</guid>
+            <guid>https://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/ruby_logo.png&#34; style=&#34;float:right&#34;/&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/ruby_logo.png&#34; style=&#34;float:right&#34;/&gt;
 Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé pour faire de vraies choses (même en prod !). Cet article contient 8 points qui font de Ruby un très bon langage et une plateforme de choix pour réaliser ses futurs projets.&lt;/p&gt;
 
 &lt;h2 id=&#34;plus-productif&#34;&gt;Plus productif&lt;/h2&gt;
@@ -1922,15 +1922,15 @@ Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé po
         
         <item>
             <title>Tests d&#39;intégration : quid de la base de données ?</title>
-            <link>http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</link>
+            <link>https://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</link>
             <pubDate>Mon, 12 Oct 2009 00:00:00 +0000</pubDate>
             
-            <guid>http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</guid>
+            <guid>https://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</guid>
 
             
             <description>
 
-&lt;p&gt;&lt;img src=&#34;http://www.tomsquest.com/img/posts/serveur.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/serveur.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;La base de données est un élément important des tests d&amp;rsquo;intégration. Les deux questions à se poser sont :&lt;/p&gt;
 

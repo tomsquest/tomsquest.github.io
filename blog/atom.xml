@@ -1,9 +1,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Thomas Queste&#39;s blog</title>
-    <id>http://www.tomsquest.com/blog/</id>
-    <updated>2019-06-21T16:13:55+02:00</updated>
-    <link href="http://www.tomsquest.com/blog/"/>
-    <link href="http://www.tomsquest.com/blog/"/><link href="http://www.tomsquest.com/blog//atom.xml" rel="self" type="application/atom.xml" />
+    <id>https://www.tomsquest.com/blog/</id>
+    <updated>2019-06-23T06:41:57+02:00</updated>
+    <link href="https://www.tomsquest.com/blog/"/>
+    <link href="https://www.tomsquest.com/blog/"/><link href="https://www.tomsquest.com/blog//atom.xml" rel="self" type="application/atom.xml" />
     <author>
         <name>Thomas Queste</name>
     </author>
@@ -11,8 +11,8 @@
     
         <entry>
             <title type="html"><![CDATA[Better NPM'ing, Tips and Tricks using NPM]]></title>
-            <link href="http://www.tomsquest.com/blog/2018/10/better-npm-ing/"/>
-            <id>http://www.tomsquest.com/blog/2018/10/better-npm-ing/</id>
+            <link href="https://www.tomsquest.com/blog/2018/10/better-npm-ing/"/>
+            <id>https://www.tomsquest.com/blog/2018/10/better-npm-ing/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -104,8 +104,8 @@ $ export NVM_SYMLINK_CURRENT<span style="color:#f92672">=</span>true</code></pre
     
         <entry>
             <title type="html"><![CDATA[Intellij Championship]]></title>
-            <link href="http://www.tomsquest.com/blog/2017/07/intellij-master-presentation/"/>
-            <id>http://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</id>
+            <link href="https://www.tomsquest.com/blog/2017/07/intellij-master-presentation/"/>
+            <id>https://www.tomsquest.com/blog/2017/07/intellij-master-presentation/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -131,8 +131,8 @@ $ export NVM_SYMLINK_CURRENT<span style="color:#f92672">=</span>true</code></pre
     
         <entry>
             <title type="html"><![CDATA[Global Day Of Coderetreat 2016]]></title>
-            <link href="http://www.tomsquest.com/blog/2016/10/coderetreat-2016/"/>
-            <id>http://www.tomsquest.com/blog/2016/10/coderetreat-2016/</id>
+            <link href="https://www.tomsquest.com/blog/2016/10/coderetreat-2016/"/>
+            <id>https://www.tomsquest.com/blog/2016/10/coderetreat-2016/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -187,8 +187,8 @@ Thanks to <a href="https://www.axawebcenter.fr/">Axa Web Center</a> for hosting 
     
         <entry>
             <title type="html"><![CDATA[My attempt at building a production grade docker image]]></title>
-            <link href="http://www.tomsquest.com/blog/2016/10/production-docker-image/"/>
-            <id>http://www.tomsquest.com/blog/2016/10/production-docker-image/</id>
+            <link href="https://www.tomsquest.com/blog/2016/10/production-docker-image/"/>
+            <id>https://www.tomsquest.com/blog/2016/10/production-docker-image/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -347,8 +347,8 @@ su-exec is available in Alpine repositories.</p>
     
         <entry>
             <title type="html"><![CDATA[Working Effectively with Unit Tests by Jay Fields]]></title>
-            <link href="http://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/"/>
-            <id>http://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</id>
+            <link href="https://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/"/>
+            <id>https://www.tomsquest.com/blog/2015/03/working-effectively-with-unit-tests/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -448,8 +448,8 @@ This is one of the limit of using Markdown for publishing.</p>
     
         <entry>
             <title type="html"><![CDATA[The Secrets of Consulting by Gerald M. Weinberg]]></title>
-            <link href="http://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/"/>
-            <id>http://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</id>
+            <link href="https://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/"/>
+            <id>https://www.tomsquest.com/blog/2014/09/the-secrets-of-consulting/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -477,8 +477,8 @@ Don&rsquo;t expect recipes and bullet points. It is more about stories and broad
     
         <entry>
             <title type="html"><![CDATA[Learning to touch type using the Colemak layout]]></title>
-            <link href="http://www.tomsquest.com/blog/2014/09/learning-to-touch-type/"/>
-            <id>http://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</id>
+            <link href="https://www.tomsquest.com/blog/2014/09/learning-to-touch-type/"/>
+            <id>https://www.tomsquest.com/blog/2014/09/learning-to-touch-type/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -593,8 +593,8 @@ I still make typing errors, but a lot less than in Azerty.</p>
     
         <entry>
             <title type="html"><![CDATA[An introduction to Java Agent and bytecode manipulation]]></title>
-            <link href="http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/"/>
-            <id>http://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</id>
+            <link href="https://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/"/>
+            <id>https://www.tomsquest.com/blog/2014/01/intro-java-agent-and-bytecode-manipulation/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -774,8 +774,8 @@ saw three years ago was really stunning. Byteman can be used to make untestable 
     
         <entry>
             <title type="html"><![CDATA[Créer son EURL et devenir indépendant : les étapes]]></title>
-            <link href="http://www.tomsquest.com/blog/2014/01/creer-son-eurl/"/>
-            <id>http://www.tomsquest.com/blog/2014/01/creer-son-eurl/</id>
+            <link href="https://www.tomsquest.com/blog/2014/01/creer-son-eurl/"/>
+            <id>https://www.tomsquest.com/blog/2014/01/creer-son-eurl/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -976,8 +976,8 @@ idem pour l’annonce légale et de soumettre le dossier de création le lendema
     
         <entry>
             <title type="html"><![CDATA[Maven in colors]]></title>
-            <link href="http://www.tomsquest.com/blog/2013/09/maven-in-colors/"/>
-            <id>http://www.tomsquest.com/blog/2013/09/maven-in-colors/</id>
+            <link href="https://www.tomsquest.com/blog/2013/09/maven-in-colors/"/>
+            <id>https://www.tomsquest.com/blog/2013/09/maven-in-colors/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1062,8 +1062,8 @@ This is real problem when you want to chain mvn with a push. ie.</p>
     
         <entry>
             <title type="html"><![CDATA[Slides of my presentation : DB Migration Automation]]></title>
-            <link href="http://www.tomsquest.com/blog/2013/09/database-migration-slides/"/>
-            <id>http://www.tomsquest.com/blog/2013/09/database-migration-slides/</id>
+            <link href="https://www.tomsquest.com/blog/2013/09/database-migration-slides/"/>
+            <id>https://www.tomsquest.com/blog/2013/09/database-migration-slides/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1086,8 +1086,8 @@ These slides were created for an internal presentation at my current gig.</p>
     
         <entry>
             <title type="html"><![CDATA[Review : Play Framework Cookbook]]></title>
-            <link href="http://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/"/>
-            <id>http://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</id>
+            <link href="https://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/"/>
+            <id>https://www.tomsquest.com/blog/2011/10/review-play-framework-cookbook/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1156,8 +1156,8 @@ I really liked the given explanations, the additionnal references and that the f
     
         <entry>
             <title type="html"><![CDATA[Better autocompletes with Fuzzy Matching]]></title>
-            <link href="http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/"/>
-            <id>http://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</id>
+            <link href="https://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/"/>
+            <id>https://www.tomsquest.com/blog/2011/05/better-autocompletes-with-fuzzy-matching/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1254,8 +1254,8 @@ I really liked the given explanations, the additionnal references and that the f
     
         <entry>
             <title type="html"><![CDATA[FitNesse technical setup]]></title>
-            <link href="http://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/"/>
-            <id>http://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</id>
+            <link href="https://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/"/>
+            <id>https://www.tomsquest.com/blog/2010/12/fitnesse-technical-setup/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1434,8 +1434,8 @@ Classpath and pom file
     
         <entry>
             <title type="html"><![CDATA[Industrialisation des développements : automatisez votre base de données]]></title>
-            <link href="http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/"/>
-            <id>http://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</id>
+            <link href="https://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/"/>
+            <id>https://www.tomsquest.com/blog/2010/09/industrialisation-des-developpements-automatisez-votre-base-de-donnees/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1566,8 +1566,8 @@ Exemple :</p>
     
         <entry>
             <title type="html"><![CDATA[Notes sur Rework de 37signals]]></title>
-            <link href="http://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/"/>
-            <id>http://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</id>
+            <link href="https://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/"/>
+            <id>https://www.tomsquest.com/blog/2010/08/notes-sur-rework-de-37signals/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1692,8 +1692,8 @@ Exemple :</p>
     
         <entry>
             <title type="html"><![CDATA[Construire la nouvelle génération de leaders techniques]]></title>
-            <link href="http://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/"/>
-            <id>http://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</id>
+            <link href="https://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/"/>
+            <id>https://www.tomsquest.com/blog/2010/08/construire-la-nouvelle-generation-de-leaders-techniques/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1775,8 +1775,8 @@ Exemple :</p>
     
         <entry>
             <title type="html"><![CDATA[JPA : les illusions sur les NamedQueries]]></title>
-            <link href="http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/"/>
-            <id>http://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</id>
+            <link href="https://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/"/>
+            <id>https://www.tomsquest.com/blog/2010/03/jpa-les-illusions-sur-les-namedqueries/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1837,8 +1837,8 @@ Exemple :</p>
     
         <entry>
             <title type="html"><![CDATA[8 raisons d'aimer Ruby]]></title>
-            <link href="http://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/"/>
-            <id>http://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</id>
+            <link href="https://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/"/>
+            <id>https://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
@@ -1937,8 +1937,8 @@ Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé po
     
         <entry>
             <title type="html"><![CDATA[Tests d'intégration : quid de la base de données ?]]></title>
-            <link href="http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/"/>
-            <id>http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</id>
+            <link href="https://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/"/>
+            <id>https://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</id>
             <author>
                 <name>Thomas Queste</name>
             </author>
