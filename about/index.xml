@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>About Thomas Queste on Thomas Queste&#39;s blog</title>
+        <link>https://www.tomsquest.com/about/</link>
+        <description>Recent content in About Thomas Queste on Thomas Queste&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        
+        <atom:link href="https://www.tomsquest.com/about/index.xml" rel="self" type="application/rss+xml" />
+        
+
+        
+        
+    </channel>
+</rss>
