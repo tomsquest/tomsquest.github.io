@@ -1,7 +1,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Thomas Queste&#39;s blog</title>
     <id>https://www.tomsquest.com/</id>
-    <updated>2019-06-24T08:41:49+02:00</updated>
+    <updated>2019-06-24T08:50:19+02:00</updated>
     <link href="https://www.tomsquest.com/"/>
     <link href="https://www.tomsquest.com//atom.xml" rel="self" type="application/atom.xml" />
     <author>
@@ -1583,7 +1583,7 @@ Exemple :</p>
 
 <p>Le livre est composé d&rsquo;un ensemble de courts chapitres et décrit les recettes qu’applique 37Signals pour ces produits et sa façon d’être en tant que business.</p>
 
-<h2 id="learning-form-mistakes-is-overrated">Learning form mistakes is overrated</h2>
+<h2 id="learning-from-mistakes-is-overrated">Learning from mistakes is overrated</h2>
 
 <p>Apprendre de ses erreurs est surévalué, il vaut mieux apprendre de ses succès. L&rsquo;échec n&rsquo;est pas un pré requis du succès. Quelqu&rsquo;un qui a déjà eu un succès a plus de chance de l&rsquo;être à nouveau. Ceux qui ont eu un échec n&rsquo;ont pas plus de chance d&rsquo;avoir un succès que les nouveau.</p>
 
