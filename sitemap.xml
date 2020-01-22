@@ -3,20 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.tomsquest.com/blog/2018/10/better-npm-ing/</loc>
-    <lastmod>2019-06-21T13:08:38+02:00</lastmod>
+    <loc>https://www.tomsquest.com/blog/</loc>
+    <lastmod>2020-01-22T07:19:27+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.tomsquest.com/blog/</loc>
-    <lastmod>2019-06-24T08:49:51+02:00</lastmod>
-    <priority>0</priority>
+    <loc>https://www.tomsquest.com/blog/2020/01/key-to-app/</loc>
+    <lastmod>2020-01-22T07:19:27+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.tomsquest.com/</loc>
-    <lastmod>2019-06-24T08:49:51+02:00</lastmod>
+    <lastmod>2020-01-22T07:19:27+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.tomsquest.com/blog/2018/10/better-npm-ing/</loc>
+    <lastmod>2019-06-21T13:08:38+02:00</lastmod>
   </url>
   
   <url>

@@ -6,12 +6,103 @@
         <description>Recent content in Blogs on Thomas Queste&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
         
         <atom:link href="https://www.tomsquest.com/blog/index.xml" rel="self" type="application/rss+xml" />
         
 
         
+        
+        <item>
+            <title>Switching app with a single key press</title>
+            <link>https://www.tomsquest.com/blog/2020/01/key-to-app/</link>
+            <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.tomsquest.com/blog/2020/01/key-to-app/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Some years ago, I found that using &lt;code&gt;alt-tab&lt;/code&gt; for app switching was not that convenient nor fast.&lt;/p&gt;
+
+&lt;p&gt;I bounded some key to directly access the app I had in mind with great success in term of efficiency.&lt;/p&gt;
+
+&lt;p&gt;This has worked greatly but I think I can go a bit further.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Configure key-to-app with Jumpapp, experiment with single-key press&lt;/p&gt;
+
+&lt;h2 id=&#34;efficiency-and-focus&#34;&gt;Efficiency and Focus&lt;/h2&gt;
+
+&lt;p&gt;Not being disturbed is the great idea here.&lt;/p&gt;
+
+&lt;p&gt;The desktop animation to switch from an app to an app is error prone and slow.&lt;/p&gt;
+
+&lt;p&gt;When I want to paste a StackOverflow to my code editor, I can copy, then &lt;strong&gt;switch in one&lt;/strong&gt; key to the editor, then paste.
+Want to search something, &lt;code&gt;Super-F1&lt;/code&gt; and the browser appears.&lt;/p&gt;
+
+&lt;p&gt;No more, alt-tab once thinking I just left the editor before going to the browser, or was it two windows away.&lt;/p&gt;
+
+&lt;p&gt;No more, &amp;ldquo;aperçu&amp;rdquo; of all running applications through the App Switcher/Alt-tab menu, searching for something like a code editor.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to&#34;&gt;How-to&lt;/h2&gt;
+
+&lt;h3 id=&#34;custom&#34;&gt;Custom&lt;/h3&gt;
+
+&lt;p&gt;I have used the following in Xfce to directly access my apps, bound to a key in Xfce:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell script&#34; data-lang=&#34;shell script&#34;&gt;sh -c &amp;#34;wmctrl -a jetbrains-idea -x || /home/tom/Apps/idea/current/bin/idea.sh&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It worked quite well, but it is not able to switch between apps &lt;strong&gt;of the same type&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;jumpapp&#34;&gt;Jumpapp&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2020-01-22-keybinding-to-app.md/jumpapp.png&#34; alt=&#34;Jumpapp&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Killer app for me. Jumpapp is a wrapper around wmctrl and makes it really easy to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;switch directly to an app by its &lt;code&gt;WM_CLASS&lt;/code&gt; or name&lt;/li&gt;
+&lt;li&gt;switch between app of the same type&lt;/li&gt;
+&lt;li&gt;open an instance of target app when not found&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;optimization&#34;&gt;Optimization&lt;/h2&gt;
+
+&lt;p&gt;I will try in the coming weeks to use a &lt;strong&gt;single&lt;/strong&gt; key to switch app.&lt;/p&gt;
+
+&lt;p&gt;The idea is to have a direct key to an app instead of a weird-two-fingers keybinging like &lt;code&gt;Super-F1&lt;/code&gt;, which is not that much ergonomic on a standard keyboard or a laptop keyboard.&lt;/p&gt;
+
+&lt;p&gt;Here is what I will try:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Press &lt;code&gt;F1&lt;/code&gt; to switch to my browser, instead of &lt;code&gt;Super-F1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;F2&lt;/code&gt; to switch to my terminal, instead of &lt;code&gt;Super-F2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;F3&lt;/code&gt; to switch to my code editor, instead of &lt;code&gt;Super-F3&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This will cause conflict in some applications.&lt;/p&gt;
+
+&lt;p&gt;There is no problem for &lt;code&gt;F1&lt;/code&gt; as it is the help screen, and can be skipped.&lt;/p&gt;
+
+&lt;p&gt;But, &lt;code&gt;F2&lt;/code&gt; is bound to go to next error in Intellij. This is a key I used often.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2020-01-22-keybinding-to-app.md/f2.png&#34; alt=&#34;F2 in Intellij&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Same for &lt;code&gt;F3&lt;/code&gt; which is bound to next occurrence.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/2020-01-22-keybinding-to-app.md/f3.png&#34; alt=&#34;F3 in Intellij&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;F4&lt;/code&gt; is also bounded, but to &lt;code&gt;Jump to source&lt;/code&gt; which I don&amp;rsquo;t think I use.&lt;/p&gt;
+
+&lt;h2 id=&#34;ideas&#34;&gt;Ideas&lt;/h2&gt;
+
+&lt;p&gt;3 things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Some have used default keys like &lt;code&gt;MAIL&lt;/code&gt; and &lt;code&gt;BROWSER&lt;/code&gt; to access their app, which can also be convenient.&lt;/li&gt;
+&lt;li&gt;There are some tutorials in the articles from &lt;a href=&#34;http://xahlee.info/linux/linux_keyboard_tools.html&#34;&gt;xahlee.info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Using a launcher (I use &lt;a href=&#34;https://albertlauncher.github.io/&#34;&gt;Albert&lt;/a&gt; on Linux and it has a plugin to switch to windows) can work but it is more tedious&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
         
         <item>
             <title>Better NPM&#39;ing, Tips and Tricks using NPM</title>
@@ -1917,95 +2008,6 @@ Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé po
 &lt;p&gt;Une des principales qualités de Ruby est sa communauté vivante et innovante. Découvrir une plateforme comme Ruby donne un nouvel élan et permet de faire fonctionner ses neurones sur d’autres paradigmes.&lt;/p&gt;
 
 &lt;p&gt;J’ai choisi Ruby pour toutes ces bonnes raisons et il y en a encore bien d’autres à découvrir.&lt;/p&gt;
-</description>
-        </item>
-        
-        <item>
-            <title>Tests d&#39;intégration : quid de la base de données ?</title>
-            <link>https://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</link>
-            <pubDate>Mon, 12 Oct 2009 00:00:00 +0000</pubDate>
-            
-            <guid>https://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/</guid>
-
-            
-            <description>
-
-&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/serveur.jpg&#34; style=&#34;float:right&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;La base de données est un élément important des tests d&amp;rsquo;intégration. Les deux questions à se poser sont :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Puis-je utiliser une base de données embarquée ?&lt;/li&gt;
-&lt;li&gt;Puis-je désactiver les contraintes d&amp;rsquo;intégrité ?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;base-de-données-embarquée-ou-non&#34;&gt;Base de données embarquée ou non ?&lt;/h2&gt;
-
-&lt;p&gt;C&amp;rsquo;est Rod Johnson qui en parlait sur InfoQ : &amp;ldquo;&lt;a href=&#34;http://www.infoq.com/presentations/system-integration-testing-with-spring&#34;&gt;System Integration Testing using Spring&lt;/a&gt;&amp;rdquo; : une base de données embarquée est inutile dans la plupart des cas.&lt;/p&gt;
-
-&lt;p&gt;L&amp;rsquo;argument majeur en faveur d&amp;rsquo;une base embarquée est le travail en mode déconnecté. Dans une équipe disséminée (télétravail, multiples bureaux, déplacement fréquent), ce type de base fait l&amp;rsquo;affaire.&lt;/p&gt;
-
-&lt;p&gt;Mais il y a certains inconvénients importants :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Moteur SQL différent de la cible : il est possible de certaines requêtes s&amp;rsquo;exécutent sur la base embarquée mais pas sur le type de base utilisée en Prod (différences d&amp;rsquo;implémentation SQL par exemple, expérience vécue avec SQL Server) ;&lt;/li&gt;
-&lt;li&gt;Debugage difficile : si la base meurt à la fin des tests, il devient difficile d&amp;rsquo;étudier les opérations faites et d&amp;rsquo;étudier pourquoi une requête ne fonctionne pas.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Je vois peu d&amp;rsquo;intérêt aujourd&amp;rsquo;hui à utiliser une base de données embarquées si c&amp;rsquo;est pour se rendre compte qu&amp;rsquo;on ne valide pas un comportement similaire à celui de production. Créer une base par développeur sur Oracle ou autre, n&amp;rsquo;est pas si difficile.&lt;/p&gt;
-
-&lt;p&gt;Un inconvénient d&amp;rsquo;une base standard est qu&amp;rsquo;elle nécessite d&amp;rsquo;être maintenue (passage des scripts), mais cela est automatisable grâce à des outils comme DBMaintain ou LiquiBase.&lt;/p&gt;
-
-&lt;h2 id=&#34;contraintes-d-intégrité-actives-ou-non&#34;&gt;Contraintes d&amp;rsquo;intégrité actives ou non ?&lt;/h2&gt;
-
-&lt;p&gt;Filip Neven, le créateur d&amp;rsquo;Unitils et de DbMaintain, pointe le problème sur son blog (traduction libre) :&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Les gens pensent que la désactivation des contraintes produit une sérieuse dévaluation des tests, car le code qui a été validé avec succès par les tests unitaires pourrait ne pas fonctionner avec une base de données normales - &lt;a href=&#34;http://filipneven.blogspot.com/2008/02/disable-constraints-on-your-test.html&#34;&gt;Filip Neven&lt;/a&gt;
-La chose à retenir est : &amp;ldquo;il faut limiter au maximum les données de test&amp;rdquo;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Autrement dit : le moins de données de test il y a, le plus maintenable sont les tests.&lt;/p&gt;
-
-&lt;p&gt;Filip Neven résume parfaitement la situation :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Les tests doivent valider un fonctionnement et non vérifier l&amp;rsquo;intégrité de la base&lt;/li&gt;
-&lt;li&gt;Les tests unitaires ne sont pas le bon outil pour découvrir des problèmes de contraintes&lt;/li&gt;
-&lt;li&gt;Dans la plupart des cas, d&amp;rsquo;autres tests, comme les tests fonctionnels, permettront de découvrir les problèmes de contraintes&lt;/li&gt;
-&lt;li&gt;Désactiver les contraintes est un gain de temps important pour l&amp;rsquo;écriture des tests&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En effet, les jeux de données ne font généralement que croitre. Une fois qu&amp;rsquo;une donnée est ajoutée à un jeu de tests, il devient laborieux de savoir si cette donnée est utilisée d&amp;rsquo;une manière ou d&amp;rsquo;une autre et donc de la retirer.&lt;/p&gt;
-
-&lt;p&gt;En désactivant les contraintes d&amp;rsquo;intégrité, il devient possible que les jeux de données ne contiennent que les données utilisées dans les Where et dans les jointures ; c&amp;rsquo;est-à-dire les données &lt;strong&gt;réellement utiles&lt;/strong&gt;. Cette façon de voir les choses simplifie énormément la maintenance des jeux de tests. Finis les fichiers DBUnit.xml qui contiennent 80% de données dues aux colonnes not-null donc inutiles pour le test courant.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.unitils.org/tutorial.html#Automatic_test_database_maintenance&#34;&gt;Unitils/DbMaintain&lt;/a&gt; propose une méthode rapide pour désactiver ces contraintes (not null et foreign key).&lt;/p&gt;
-
-&lt;h2 id=&#34;une-fausse-sensation-de-sécurité&#34;&gt;Une fausse sensation de sécurité&lt;/h2&gt;
-
-&lt;p&gt;Il faut se poser la question : est-ce que l&amp;rsquo;on nuit à la qualité de nos tests si nous touchons à l&amp;rsquo;intégrité de la base de données par la désactivation des contraintes ?&lt;/p&gt;
-
-&lt;p&gt;En effet, si les tests passent sur une base qui sera identique à la production (colonnes non nulles, clés étrangères, utilisateur non privilégié), alors nous validons en totalité le fonctionnement cible. Au contraire, si nous avons désactivé les contraintes, alors nous risquons de rencontrer des erreurs plus tard dans la vie du projet, et donc que cela soit plus dur à corriger.&lt;/p&gt;
-
-&lt;p&gt;La réponse est double :&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Oui, nous nous écartons du fonctionnement cible (like &amp;ldquo;Prod&amp;rdquo;) en modifiant le comportement de la base de données ;&lt;/li&gt;
-&lt;li&gt;Non, ce la ne nuit pas à la qualité des tests.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pourquoi ?&lt;/p&gt;
-
-&lt;p&gt;Tester &amp;ldquo;comme en prod&amp;rdquo; donne un &lt;strong&gt;faux sentiment de sécurité&lt;/strong&gt;. Les erreurs susceptibles de ne pas être détectée avant la production ne sont pas des problèmes récurrents. Ok, vous allez détecter qu&amp;rsquo;il manque un &amp;ldquo;GRANT select&amp;rdquo; mais cette erreur ne se reproduira pas.&lt;/p&gt;
-
-&lt;p&gt;D&amp;rsquo;autant plus que les tests d&amp;rsquo;intégration seront complétés par les tests fonctionnels et que détecteront les erreurs de not-null/foreign key laissées derrière.&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Je suis aujourd&amp;rsquo;hui pour une gestion &amp;ldquo;Agile&amp;rdquo; de la base de données utilisée pour les tests. La bonne voie est pour moi d&amp;rsquo;éviter l&amp;rsquo;usage d&amp;rsquo;une base embarquée car il y a trop de différences entre moteurs SQL mais de désactiver certaines contraintes sur la base de test afin de faciliter le vrai travail : l&amp;rsquo;écriture de test qui valident les requêtes (le DML) et non les restrictions SQL (le DDL).&lt;/p&gt;
-
-&lt;p&gt;Et vous, avez-vous d&amp;rsquo;autres recommandations pour vos tests d&amp;rsquo;intégration ?&lt;/p&gt;
 </description>
         </item>
         
