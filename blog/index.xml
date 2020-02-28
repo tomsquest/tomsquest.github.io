@@ -23,8 +23,6 @@
             
             <description>
 
-&lt;p&gt;rip&lt;/p&gt;
-
 &lt;p&gt;Reducing the size of JS compiled from Typescript is easy.&lt;/p&gt;
 
 &lt;p&gt;Here are some numbers and how to do it. It&amp;rsquo;s nearly free if you run on Node (!= browser).&lt;/p&gt;
