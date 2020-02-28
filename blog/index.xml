@@ -6,12 +6,101 @@
         <description>Recent content in Blogs on Thomas Queste&#39;s blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
         
         <atom:link href="https://www.tomsquest.com/blog/index.xml" rel="self" type="application/rss+xml" />
         
 
         
+        
+        <item>
+            <title>Think carbon, reduce typescript bundle size</title>
+            <link>https://www.tomsquest.com/blog/2020/02/think-carbon-reduce-typescript-bundle-size/</link>
+            <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+            
+            <guid>https://www.tomsquest.com/blog/2020/02/think-carbon-reduce-typescript-bundle-size/</guid>
+
+            
+            <description>
+
+&lt;p&gt;Reducing the size of JS compiled from Typescript is easy.&lt;/p&gt;
+
+&lt;p&gt;Here are some numbers and how to do it. It&amp;rsquo;s nearly free if you run on Node (!= browser).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: enable tslib/importHelpers, reduce the size of the JS files, reduce storage and network, &lt;strong&gt;think carbon&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;h2 id=&#34;size-matters&#34;&gt;Size matters&lt;/h2&gt;
+
+&lt;p&gt;Sizes after and before, with the difference in percent:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Before&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;After&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Diff&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;line count *.js&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4397 lines&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4011 lines&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-9%&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;size in bytes *.js&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;186k&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;153k&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-18%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;how-to&#34;&gt;How-to&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/microsoft/tslib&#34;&gt;Install tslib&lt;/a&gt;, the library that contains the helper code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell script&#34; data-lang=&#34;shell script&#34;&gt;npm i tslib&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Enable the import of the helper functions:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;compilerOptions&amp;#34;&lt;/span&gt;: {
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;importHelpers&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;what-does-it-do&#34;&gt;What does it do&lt;/h2&gt;
+
+&lt;p&gt;Typescript will create helper functions for decorators, extends, assign, etc. in each compiled file.&lt;/p&gt;
+
+&lt;p&gt;But, Typescript can use a reference library, &lt;a href=&#34;https://github.com/microsoft/tslib&#34;&gt;tslib&lt;/a&gt; and import the functions from there.&lt;/p&gt;
+
+&lt;p&gt;Sample of generated code without tslib/importHelpers:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;__decorate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;__decorate&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;decorators&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;desc&lt;/span&gt;) {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;arguments&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;desc&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;desc&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Object.&lt;span style=&#34;color:#a6e22e&#34;&gt;getOwnPropertyDescriptor&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;desc&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;typeof&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Reflect&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;object&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;typeof&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Reflect&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;decorate&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;function&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Reflect&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;decorate&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;decorators&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;desc&lt;/span&gt;);
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;decorators&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;decorators&lt;/span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;i&lt;/span&gt;]) &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;)) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; Object.&lt;span style=&#34;color:#a6e22e&#34;&gt;defineProperty&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;key&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;), &lt;span style=&#34;color:#a6e22e&#34;&gt;r&lt;/span&gt;;
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With tslib/importHelpers:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;use strict&amp;#34;&lt;/span&gt;;
+Object.&lt;span style=&#34;color:#a6e22e&#34;&gt;defineProperty&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;__esModule&amp;#34;&lt;/span&gt;, { &lt;span style=&#34;color:#a6e22e&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; });
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;tslib_1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tslib&amp;#34;&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;measuring&#34;&gt;Measuring&lt;/h2&gt;
+
+&lt;p&gt;I measured the size before and after with the following commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# don&amp;#39;t forget to do a clean-build&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# npm run clean &amp;amp;&amp;amp; npm run build&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# count lines&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; find ./dist -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*.js&amp;#39;&lt;/span&gt; -print0 | xargs -0 cat &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; | wc -l
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# total size in bytes&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; find dist -type f -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*.js&amp;#34;&lt;/span&gt; -printf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%s+&amp;#34;&lt;/span&gt;; echo &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; | bc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
         
         <item>
             <title>Switching app with a single key press</title>
@@ -1909,105 +1998,6 @@ Exemple :&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Pour conclure, je pense que les NamedQueries résultent plus d&amp;rsquo;une question de goût et de convention d&amp;rsquo;écriture que d&amp;rsquo;un réel intérêt technique et factuel.&lt;/p&gt;
-</description>
-        </item>
-        
-        <item>
-            <title>8 raisons d&#39;aimer Ruby</title>
-            <link>https://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</link>
-            <pubDate>Wed, 11 Nov 2009 00:00:00 +0000</pubDate>
-            
-            <guid>https://www.tomsquest.com/blog/2009/11/8-raisons-d-aimer-ruby/</guid>
-
-            
-            <description>
-
-&lt;p&gt;&lt;img src=&#34;https://www.tomsquest.com/img/posts/ruby_logo.png&#34; style=&#34;float:right&#34;/&gt;
-Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé pour faire de vraies choses (même en prod !). Cet article contient 8 points qui font de Ruby un très bon langage et une plateforme de choix pour réaliser ses futurs projets.&lt;/p&gt;
-
-&lt;h2 id=&#34;plus-productif&#34;&gt;Plus productif&lt;/h2&gt;
-
-&lt;p&gt;Martin Fowler a fait une synthèse de l’utilisation de Ruby chez ThoughtWorks.&lt;/p&gt;
-
-&lt;p&gt;La conclusion est une impression très forte d’une meilleure productivité. La majorité des projets ont ressenti un doublement de leur productivité (une impression car la productivité n’est pas mesurable).&lt;/p&gt;
-
-&lt;p&gt;Je vous encourage à lire l’article sur le site de Martin Fowler : &amp;ldquo;&lt;a href=&#34;http://martinfowler.com/articles/rubyAtThoughtWorks.html&#34;&gt;Ruby at ThoughtWorks&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;meta-programming&#34;&gt;Meta-Programming&lt;/h2&gt;
-
-&lt;p&gt;Le meta-programming c’est la génération de code par le code. Cela permet par exemple d’écrire des DSL et de simplifier son code. C’est aussi une arme puissante à utiliser modérément.&lt;/p&gt;
-
-&lt;p&gt;L’équivalent de la génération d’une méthode au Runtime en Java serait la possibilité d&amp;rsquo;écrire le code suivant :&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;genereUneMethode&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#75715e&#34;&gt;/* cette méthode sera ajouté à la classe appelante */&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;nouvelleMethode&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#75715e&#34;&gt;// Les commentaires de Chuck Norris sont compilés
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;duck-typing&#34;&gt;Duck Typing&lt;/h2&gt;
-
-&lt;p&gt;Le static typing s’oppose au duck typing. En Ruby, il n’y a pas de notion de type vérifié à la compilation.&lt;/p&gt;
-
-&lt;p&gt;Cela veut dire, qu’il est possible d’appeler une méthode avec un Array à la place d’une String. Tant que l’autre objet répond aux méthodes de l’objet attendu, le code est valide.&lt;/p&gt;
-
-&lt;p&gt;Le Duck Typing permet d’avoir du code beaucoup plus souple. La forte orientation vers les tests de Ruby en est la conséquence.&lt;/p&gt;
-
-&lt;p&gt;Il y a eu beaucoup de débats sur au sujet de « Static typing » contre « Duck typing ». Les auteurs de « Programming Ruby 1.9 » expliquent que le typage statique ne rend pas forcément un code plus fiable et peut diminuer la productivité. (Non, pas de Troll)&lt;/p&gt;
-
-&lt;p&gt;Plus d’info sur le &lt;a href=&#34;http://en.wikipedia.org/wiki/Duck_typing&#34;&gt;duck typing sur Wikipedia&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;closures&#34;&gt;Closures&lt;/h2&gt;
-
-&lt;p&gt;Les Closures ont fortement animé les débats autour de leur inclusion (ou pas) dans Java.&lt;/p&gt;
-
-&lt;p&gt;Elles font partie de la syntaxe de base de Ruby.&lt;/p&gt;
-
-&lt;p&gt;Les Closures sont des méthodes dont l’exécution peut être retardée tout en retenant le contexte quand elles ont été créées. Elles ont plein d’usages mais ne sont pas pourtant pas évidentes à appréhender.&lt;/p&gt;
-
-&lt;h2 id=&#34;jruby&#34;&gt;JRuby&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://jruby.org&#34;&gt;JRuby&lt;/a&gt; est une implémentation de Ruby pour la JVM. Avantages : un super garbage collector (merci Java), des threads efficaces, multi-plateformes… Il fait tourner des projets Rails sans problème.&lt;/p&gt;
-
-&lt;p&gt;L’avantage est également de pouvoir faire du Ruby sur nos serveurs d’app Java, comme Glassfish 3 qui supporte JRuby.&lt;/p&gt;
-
-&lt;h2 id=&#34;frameworks-novateurs&#34;&gt;Frameworks novateurs&lt;/h2&gt;
-
-&lt;p&gt;Rails, Capistrano ou encore Cucumber sont les fers de lance de Ruby et montrent ce que le langage permet de construire.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Rails&lt;/a&gt; : c’est le Framework Web qui a donné de la visibilité à Ruby. Rails permet de produire des sites Web très rapidement et de manière simple&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.capify.org/&#34;&gt;Capistrano&lt;/a&gt; simplifie fortement le déploiement de projets Ruby et permet par exemple de se brancher sur un SVN pour faire de la mise en production en continue&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cukes.info/&#34;&gt;Cucumber&lt;/a&gt; est un framework de BDD simple à prendre en main. Le Meta-Programming apporte beaucoup aux frameworks de tests en permettant l’écriture de DSL de tests&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;gem-le-packaging-facile&#34;&gt;GEM : le packaging facile&lt;/h2&gt;
-
-&lt;p&gt;Les &lt;a href=&#34;http://www.rubyfrance.org/documentations/rubygem---introduction/&#34;&gt;GEM&lt;/a&gt; sont des archives de projet Ruby. Un peu comme nos JAR/WAR/EAR mais en mieux. Une Gem permet de packager son code, ses tests et ses scripts selon un format normé.&lt;/p&gt;
-
-&lt;p&gt;On installe une Gem en ligne de commande, idem pour la mettre à jour ou en rechercher d’autres.&lt;/p&gt;
-
-&lt;p&gt;Il est également très simple de pousser une Gem sur les repos (voir par exemple l’impressionnant de simplicité &lt;a href=&#34;http://gemcutter.org/&#34;&gt;Gemcutter&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h2 id=&#34;une-communauté-riche-et-aussi-en-france&#34;&gt;Une communauté riche (et aussi en France)&lt;/h2&gt;
-
-&lt;p&gt;Ruby bouge beaucoup et sa communauté est importante. Comme avec Java, il y a des sites de news, des podcasts, des screencasts&amp;hellip;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Des news : &lt;a href=&#34;http://www.rubyinside.com/&#34;&gt;RubyInside&lt;/a&gt;, &lt;a href=&#34;http://ruby.about.com/&#34;&gt;About Ruby&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Des podcasts : &lt;a href=&#34;http://railsenvy.com/&#34;&gt;RailsEnvy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Des screencasts : &lt;a href=&#34;http://www.learnivore.com&#34;&gt;Learnivore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Des challenges de programmation : &lt;a href=&#34;http://rubylearning.com/blog/&#34;&gt;RubyLearning &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Les &lt;a href=&#34;http://www.rubyfrance.org/&#34;&gt;Apéros Ruby&lt;/a&gt; ressemblent à nos JUGs. Le prochain a lieu ce jeudi 12. Ils sont moins cadrés que les JUGs mais tout aussi intéressants : Coding Dojo, Lightning talk…&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Ruby dispose de nombreux atouts pour plaire, même face à ses concurrents dynamiques ou statiques (Scala par exemple).&lt;/p&gt;
-
-&lt;p&gt;Une des principales qualités de Ruby est sa communauté vivante et innovante. Découvrir une plateforme comme Ruby donne un nouvel élan et permet de faire fonctionner ses neurones sur d’autres paradigmes.&lt;/p&gt;
-
-&lt;p&gt;J’ai choisi Ruby pour toutes ces bonnes raisons et il y en a encore bien d’autres à découvrir.&lt;/p&gt;
 </description>
         </item>
         
