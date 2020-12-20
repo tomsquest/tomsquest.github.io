@@ -1,0 +1,27 @@
+{{ define "main" }}
+<h1>Page Not Found</h1>
+
+<p>Sorry, but the page you were trying to view does not exist.</p>
+
+<script>
+  var GOOG_FIXURL_LANG = (navigator.language || '').slice(0, 2), GOOG_FIXURL_SITE = location.host;
+</script>
+<script src="https://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+
+<script>
+  (function (b, o, i, l, e, r) {
+    b.GoogleAnalyticsObject = l;
+    b[l] || (b[l] =
+      function () {
+        (b[l].q = b[l].q || []).push(arguments)
+      });
+    b[l].l = +new Date;
+    e = o.createElement(i);
+    r = o.getElementsByTagName(i)[0];
+    e.src = '//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e, r)
+  }(window, document, 'script', 'ga'));
+  ga('create', 'UA-5368525-1', 'auto');
+  ga('send', 'event', '404', location.pathname + location.search, document.referrer);
+</script>
+{{ end }}

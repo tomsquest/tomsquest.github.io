@@ -1,0 +1,24 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ .Site.Title }}</title>
+    <id>{{ .Permalink }}</id>
+    <updated>{{ now.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+    <link href="{{ .Permalink }}"/>
+    <link href="{{ .Permalink }}/atom.xml" rel="self" type="application/atom.xml" />
+    <author>
+        <name>Thomas Queste</name>
+    </author>
+
+    {{ range first 20 (where .Pages "Section" "blog") }}
+        <entry>
+            {{ printf `<title type="html"><![CDATA[%s]]></title>` .Title | safeHTML }}
+            <link href="{{ .Permalink }}"/>
+            <id>{{ .Permalink }}</id>
+            <author>
+                <name>Thomas Queste</name>
+            </author>
+            <published>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</published>
+            <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+            {{ printf `<content type="html"><![CDATA[%s]]></content>` .Content | safeHTML }}
+        </entry>
+    {{ end }}
+</feed>

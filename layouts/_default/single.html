@@ -1,0 +1,28 @@
+{{ define "title" }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="post">
+    <article>
+        <header>
+            <a href="{{ .Permalink }}">
+                <h1>{{ .Title }}</h1>
+            </a>
+            <p>{{.Date.Format "2006-01-02"}} - Thomas Queste</p>
+        </header>
+        <section>
+            {{ .Content }}
+
+            <div class="written-by clearfix">
+                <div class="avatar"></div>
+                <div class="author">
+                    Written by: <h4><a href="https://www.tomsquest.com/about">Thomas Queste</a></h4>
+                </div>
+            </div>
+
+        </section>
+
+        {{ template "_internal/disqus.html" . }}
+
+    </article>
+</div>
+{{ end }}
