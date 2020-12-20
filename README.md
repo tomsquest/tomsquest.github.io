@@ -4,22 +4,16 @@ See https://www.tomsquest.com
 
 ## Build
 
-Install Hugo using the provided `hugow` wrapper script:
-
-```bash
-./hugow --get-extended --get-latest
-```
-
-Develop:
+Run Hugo live-reload:
 
 ```bash
 ./hugow server -D
 ```
 
-## Deploy
+## Publish
 
 ```bash
-./deploy.sh
+./hugo && git commit -am 'regenerate' && git push
 ```
 
 ## Thanks
