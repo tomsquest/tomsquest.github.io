@@ -1,32 +1,28 @@
 <!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang=""> <!--<![endif]-->
+<html>
 <head>
     <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <meta content="Thomas Queste's blog" name="description">
+    <meta name="description" content="Thomas Queste's blog">
     <meta content="Thomas Queste" name="author">
 
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Generated with https://realfavicongenerator.net -->
-    <link href="/apple-touch-icon.png?v=ngGEb8w68r" rel="apple-touch-icon" sizes="180x180">
-    <link href="/favicon-32x32.png?v=ngGEb8w68r" rel="icon" sizes="32x32" type="image/png">
-    <link href="/favicon-16x16.png?v=ngGEb8w68r" rel="icon" sizes="16x16" type="image/png">
-    <link href="/manifest.json?v=ngGEb8w68r" rel="manifest">
-    <link color="#5bbad5" href="/safari-pinned-tab.svg?v=ngGEb8w68r" rel="mask-icon">
-    <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
-    <meta content="#ffffff" name="theme-color">
+    <meta property="og:title" content="{{ .Title }}">
+    {{- if .IsPage }}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">
+    {{- else }}
+    <meta property="og:type" content="blog">
+    {{- end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:description" content="{{ .Description }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
 
-    <link href="/css/normalize.min.css?v=4" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link href="/css/normalize.min.css?v=5" rel="stylesheet">
 
     {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link href="{{ $style.Permalink }}" rel="stylesheet">
@@ -38,11 +34,6 @@
     {{ end -}}
 </head>
 <body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-        href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
 <div class="header-container">
     <header class="wrapper clearfix">
         <a class="title" href="{{ .Site.BaseURL }}" title="homepage">
