@@ -6,9 +6,7 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="Thomas Queste's blog">
     <meta content="Thomas Queste" name="author">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta property="og:title" content="{{ .Title }}">
     {{- if .IsPage }}
     <meta property="og:type" content="article">
@@ -20,16 +18,13 @@
     <meta property="og:description" content="{{ .Description }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
 
+    <link rel="canonical" href="{{ .Permalink }}">
     <link href="/favicon.ico?v=ngGEb8w68r" rel="shortcut icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=ngGEb8w68r">
-
     <link href="/css/normalize.min.css?v=5" rel="stylesheet">
-
     {{ $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link href="{{ $style.Permalink }}" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Noto+Serif" rel="stylesheet">
-
     {{ range .AlternativeOutputFormats -}}
     {{ printf `<link href="%s" rel="%s" title="%s" type="%s"/>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
