@@ -13,8 +13,8 @@ Run Hugo live-reload:
 ## Publish
 
 ```bash
-rm -rf docs || true && ./hugow && git commit -am 'regenerate' && git push
-```
+`rm -rf docs || true && ./hugow && git commit -am 'regenerate' && git push
+````
 
 ## Thanks
 
