@@ -1,6 +1,8 @@
+.idea/
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+old/
 vendor
 Gemfile.lock
