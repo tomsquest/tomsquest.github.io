@@ -12,3 +12,7 @@ plugins:
   - jekyll-feed
 sass:
   style: compressed
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
