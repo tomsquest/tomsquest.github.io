@@ -10,3 +10,5 @@ twitter_username: thomasqueste
 github_username:  tomsquest
 plugins:
   - jekyll-feed
+sass:
+  style: compressed

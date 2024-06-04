@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-gem "minima", "~> 2.5"
-
 group :jekyll_plugins do
     # To upgrade, run: bundle update github-pages
     # Check versions here: https://pages.github.com/versions/
