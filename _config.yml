@@ -8,6 +8,5 @@ baseurl: ""
 url: https://www.tomsquest.com/
 twitter_username: thomasqueste
 github_username:  tomsquest
-theme: minima
 plugins:
   - jekyll-feed
