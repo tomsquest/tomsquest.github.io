@@ -11,8 +11,3 @@ github_username:  tomsquest
 theme: minima
 plugins:
   - jekyll-feed
-exclude:
-  - .idea/
-  - old/
-  - README.md
-  - LICENSE
