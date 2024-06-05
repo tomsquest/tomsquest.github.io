@@ -1,4 +1,4 @@
---- 
+---
 title: "ClearCase : changer le comparateur de fichier"
 slug: clearcase-changer-le-comparateur-de-fichier
 date: 2008-12-30T00:00:00Z
@@ -38,4 +38,3 @@ _xml    xcompare    ..\..\bin\xmldiffmrg.exe
 ```
 
 Bonne année 2009 !
-

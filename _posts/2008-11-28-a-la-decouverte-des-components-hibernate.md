@@ -1,4 +1,4 @@
---- 
+---
 title: "A la découverte des Components Hibernate"
 slug: a-la-decouverte-des-components-hibernate
 date: 2008-11-28T00:00:00Z
@@ -8,7 +8,7 @@ date: 2008-11-28T00:00:00Z
 
 Plusieurs années avec Hibernate et j'apprends une de ses fonctionnalités de base : les [Components](http://www.hibernate.org/hib_docs/v3/reference/en/html_single/#mapping-declaration-component). Ceux-ci permettent de mapper plusieurs objets dans une même table.
 
-## Exemple 
+## Exemple
 
 Prenons ces deux classes :
 
@@ -39,10 +39,11 @@ Le mapping Hibernate devient :
     </class>
 </hibernate-mapping>
 ```
+
 ## Trois points à voir :
 
-* Côté code, si toutes les colonnes du Component sont nulles alors **l'objet n'est pas créé**. C'est-à-dire que `Person.getAddress()` retournera null ;
-* Un component peut contenir des données plus complexes comme des collections ou des références à d'autres objets ;
-* Il n'est pas possible pour plusieurs objets de pointer vers un même Component. Dans notre cas, ce serait plusieurs personnes pointant vers une même adresse.
+- Côté code, si toutes les colonnes du Component sont nulles alors **l'objet n'est pas créé**. C'est-à-dire que `Person.getAddress()` retournera null ;
+- Un component peut contenir des données plus complexes comme des collections ou des références à d'autres objets ;
+- Il n'est pas possible pour plusieurs objets de pointer vers un même Component. Dans notre cas, ce serait plusieurs personnes pointant vers une même adresse.
 
 Si vous voulez aller plus loin, il existe les Dynamic Component. Hibernate offre la possibilité de mapper des colonnes dans une Map. C'est à voir sur [cette page](http://www.hibernate.org/hib_docs/v3/reference/en/html_single/#components-dynamic).

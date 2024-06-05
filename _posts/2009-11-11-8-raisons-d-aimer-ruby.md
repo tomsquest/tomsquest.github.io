@@ -1,4 +1,4 @@
---- 
+---
 title: "8 raisons d'aimer Ruby"
 slug: 8-raisons-d-aimer-ruby
 date: 2009-11-11T00:00:00Z
@@ -21,7 +21,7 @@ Le meta-programming c’est la génération de code par le code. Cela permet par
 
 L’équivalent de la génération d’une méthode au Runtime en Java serait la possibilité d'écrire le code suivant :
 
-```java 
+```java
 void genereUneMethode() {
     /* cette méthode sera ajouté à la classe appelante */
     void nouvelleMethode() {
@@ -60,9 +60,9 @@ L’avantage est également de pouvoir faire du Ruby sur nos serveurs d’app Ja
 
 Rails, Capistrano ou encore Cucumber sont les fers de lance de Ruby et montrent ce que le langage permet de construire.
 
-* [Rails](http://rubyonrails.org/) : c’est le Framework Web qui a donné de la visibilité à Ruby. Rails permet de produire des sites Web très rapidement et de manière simple
-* [Capistrano](http://www.capify.org/) simplifie fortement le déploiement de projets Ruby et permet par exemple de se brancher sur un SVN pour faire de la mise en production en continue
-* [Cucumber](http://cukes.info/) est un framework de BDD simple à prendre en main. Le Meta-Programming apporte beaucoup aux frameworks de tests en permettant l’écriture de DSL de tests
+- [Rails](http://rubyonrails.org/) : c’est le Framework Web qui a donné de la visibilité à Ruby. Rails permet de produire des sites Web très rapidement et de manière simple
+- [Capistrano](http://www.capify.org/) simplifie fortement le déploiement de projets Ruby et permet par exemple de se brancher sur un SVN pour faire de la mise en production en continue
+- [Cucumber](http://cukes.info/) est un framework de BDD simple à prendre en main. Le Meta-Programming apporte beaucoup aux frameworks de tests en permettant l’écriture de DSL de tests
 
 ## GEM : le packaging facile
 
@@ -76,10 +76,10 @@ Il est également très simple de pousser une Gem sur les repos (voir par exempl
 
 Ruby bouge beaucoup et sa communauté est importante. Comme avec Java, il y a des sites de news, des podcasts, des screencasts...
 
-* Des news : [RubyInside](http://www.rubyinside.com/), [About Ruby](http://ruby.about.com/)
-* Des podcasts : [RailsEnvy](http://railsenvy.com/)
-* Des screencasts : [Learnivore](http://www.learnivore.com)
-* Des challenges de programmation : [RubyLearning ](http://rubylearning.com/blog/)
+- Des news : [RubyInside](http://www.rubyinside.com/), [About Ruby](http://ruby.about.com/)
+- Des podcasts : [RailsEnvy](http://railsenvy.com/)
+- Des screencasts : [Learnivore](http://www.learnivore.com)
+- Des challenges de programmation : [RubyLearning ](http://rubylearning.com/blog/)
 
 Les [Apéros Ruby](http://www.rubyfrance.org/) ressemblent à nos JUGs. Le prochain a lieu ce jeudi 12. Ils sont moins cadrés que les JUGs mais tout aussi intéressants : Coding Dojo, Lightning talk…
 

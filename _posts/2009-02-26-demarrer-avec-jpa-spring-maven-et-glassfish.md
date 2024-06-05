@@ -1,4 +1,4 @@
---- 
+---
 title: "Démarrer avec JPA, Spring, Maven et Glassfish"
 slug: demarrer-avec-jpa-spring-maven-et-glassfish
 date: 2009-02-26T00:00:00Z
@@ -14,8 +14,8 @@ Le projet contient deux configurations de JPA : l'une pour le déploiement, util
 
 Les PersistentUnits sont configurés par :
 
-* le fichier « persistence.xml » pour Glassfish, l'attribut transaction-type doit valoir « JTA », sinon Glassfish refuse de démarrer ;
-* le fichier « orm.xml » pour les test. L'Attribut transaction-type vaut « RESOURCE_LOCAL »
+- le fichier « persistence.xml » pour Glassfish, l'attribut transaction-type doit valoir « JTA », sinon Glassfish refuse de démarrer ;
+- le fichier « orm.xml » pour les test. L'Attribut transaction-type vaut « RESOURCE_LOCAL »
 
 Spring est lui aussi configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.
 
@@ -75,20 +75,19 @@ WARNING: Error in annotation processing: java.lang.NoClassDefFoundError: javax/i
 
 Les dépendances dans le pom.xml ont été limitées au maximum. Pour démarrer, il faut :
 
-* Spring et Spring-test pour les tests d'intégration JPA ;
-* Hibernate entity manager, c'est l'implémentation JPA utilisé pour les tests d'intégration. Elle fournit aussi un lien vers le package javax.persistence ;
-* J'ai ajouté Spring-MVC pour monter une stack complète avec un Controleur Web annoté.
+- Spring et Spring-test pour les tests d'intégration JPA ;
+- Hibernate entity manager, c'est l'implémentation JPA utilisé pour les tests d'intégration. Elle fournit aussi un lien vers le package javax.persistence ;
+- J'ai ajouté Spring-MVC pour monter une stack complète avec un Controleur Web annoté.
 
 ## Améliorations
 
 Le "petites" choses à faire :
 
-* Utiliser la même implémentation JPA que le serveur (EclipseLink avec Glassfish) pour les tests d'intégration (Hibernate) pour éviter d'éventuels écarts de comportement ;
-* Configurer les transactions de manières déclaratives en utilisant Spring-AOP plutôt que des @Transactional un peu partout ;
-* Séparer les tests d'intégration des tests unitaires comme conseillé dans Better Builds With Maven ;
-* Utiliser DBUnit pour ré-initialiser la base de données au démarrage des tests, ou passer à Unitils pour faire tout ça et encore plus.
+- Utiliser la même implémentation JPA que le serveur (EclipseLink avec Glassfish) pour les tests d'intégration (Hibernate) pour éviter d'éventuels écarts de comportement ;
+- Configurer les transactions de manières déclaratives en utilisant Spring-AOP plutôt que des @Transactional un peu partout ;
+- Séparer les tests d'intégration des tests unitaires comme conseillé dans Better Builds With Maven ;
+- Utiliser DBUnit pour ré-initialiser la base de données au démarrage des tests, ou passer à Unitils pour faire tout ça et encore plus.
 
 ## Le projet
 
 Le code source est disponible sur Github : https://github.com/tomsquest/spring-jpa-maven-glassfish
-

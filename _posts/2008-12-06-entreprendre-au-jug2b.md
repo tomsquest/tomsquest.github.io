@@ -1,4 +1,4 @@
---- 
+---
 title: Entreprendre au JUG2B
 slug: entreprendre-au-jug2b
 date: 2008-12-06T00:00:00Z
@@ -10,10 +10,10 @@ Jeudi soir s'est tenu le JUG2B ["Ma petite entreprise ne connaît pas la crise"]
 
 Assis à la table :
 
-* Anita Protopappas : co-fondatrice de [Port Parallèle](http://www.portparallele.com/), elle nous a présenté son activité et ce qu'est une SCOP ;
-* Françoise Fagois : responsable du développement à l'[Union régionale des entreprises coopératives](http://www.societe-cooperative.coop/createurs-entreprise/) ;
-* Yannis Salachas : conseiller en création d'entreprise à la [Boutique de Gestion PARIF](http://www.boutiques-de-gestion.com/bg/activ.php?id=35), il s'occupe essentiellement d'une couveuse d'entreprises ;
-* Loïc Dosseur : directeur adjoint de [Scientipole Initiative](http://www.scientipole-initiative.org/), c'est le financier de la table.
+- Anita Protopappas : co-fondatrice de [Port Parallèle](http://www.portparallele.com/), elle nous a présenté son activité et ce qu'est une SCOP ;
+- Françoise Fagois : responsable du développement à l'[Union régionale des entreprises coopératives](http://www.societe-cooperative.coop/createurs-entreprise/) ;
+- Yannis Salachas : conseiller en création d'entreprise à la [Boutique de Gestion PARIF](http://www.boutiques-de-gestion.com/bg/activ.php?id=35), il s'occupe essentiellement d'une couveuse d'entreprises ;
+- Loïc Dosseur : directeur adjoint de [Scientipole Initiative](http://www.scientipole-initiative.org/), c'est le financier de la table.
 
 Ces quatre personnes étaient installées devant nous par ordre de progression : à droite la couveuse, puis après maturation les SCOP et autres structures et enfin l'investisseur à gauche.
 
@@ -29,8 +29,8 @@ Quel que soit le type de société choisie (SA, SARL...), ce n'est pas un critè
 
 Deux chiffres intéressants :
 
-* 50% des entrepreneurs ne prennent aucun conseil avant de se lancer ;
-* 50% des entreprises ferment avant trois ans.
+- 50% des entrepreneurs ne prennent aucun conseil avant de se lancer ;
+- 50% des entreprises ferment avant trois ans.
 
 Difficile de ne pas voir une relation de cause à effet ici. Chacun intervenant a insisté fortement sur ce point. La France est un pays riche en terme d'encadrement à la création d'entreprise. Il y a les incubateurs, les SCOP et tout un tas d'organismes d'aide et de financement ; cela désoriente souvent.
 

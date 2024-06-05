@@ -1,4 +1,4 @@
---- 
+---
 title: Better autocompletes with Fuzzy Matching
 slug: better-autocompletes-with-fuzzy-matching
 date: 2011-05-13T00:00:00Z
@@ -28,9 +28,9 @@ This allows us to display to the user not only the strings that match the input,
 
 The application uses the following pieces of code :
 
-* A Sinatra application
-* JQuery UI for the Autocomplete
-* The "text" gem which has an implementation of the Levenshtein distance algorithm (source: https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb)
+- A Sinatra application
+- JQuery UI for the Autocomplete
+- The "text" gem which has an implementation of the Levenshtein distance algorithm (source: https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb)
 
 The source code is available on : https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching
 
@@ -42,20 +42,22 @@ The JQuery Autocomplete widget is simple to setup. The source is defined to call
 
 ```html
 <div class="ui-widget">
- <label for="country">Country:</label>
- <input id="country" />
+  <label for="country">Country:</label>
+  <input id="country" />
 </div>
 ```
 
 #### 2. Bind the JS
 
 ```javascript
-$(function() {
+$(function () {
   $("#country").autocomplete({
     source: "countries",
-    select: function( event, ui ) {
-      $("#results").text("input was: '"+ this.value + "' and selection was: "+ ui.item.value);
-    }
+    select: function (event, ui) {
+      $("#results").text(
+        "input was: '" + this.value + "' and selection was: " + ui.item.value,
+      );
+    },
   });
 });
 ```

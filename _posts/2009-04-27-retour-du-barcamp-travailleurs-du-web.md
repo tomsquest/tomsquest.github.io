@@ -1,4 +1,4 @@
---- 
+---
 title: Retour du Barcamp "Travailleurs Du Web"
 slug: retour-du-barcamp-travailleurs-du-web
 date: 2009-04-27T00:00:00Z
@@ -12,10 +12,10 @@ Le but du Barcamp était de faire rencontrer les acteurs du Web afin d'échanger
 
 Les sessions étaient nombreuses et j'ai assisté à :
 
-* Web Mobile
-* Freelance
-* SCOP
-* Vie/Travail
+- Web Mobile
+- Freelance
+- SCOP
+- Vie/Travail
 
 ## Web Mobile
 
@@ -29,9 +29,9 @@ Oui, l'Iphone se porte bien avec ses 1 milliard d'application téléchargés en 
 
 Les principales contraintes de développement sur mobile sont :
 
-* la taille de l'écran
-* la rapidité de réception/envoi     des données
-* la puissance du processeur
+- la taille de l'écran
+- la rapidité de réception/envoi des données
+- la puissance du processeur
 
 Pour Rémi, la principale limitation est le débit de réception. En effet, il faut éviter de streamer trop de données au risque de gâcher l'expérience utilisateur.
 
@@ -67,8 +67,8 @@ Cette session visait à échanger autour du statut de SCOP (Société Coopérati
 
 Mes notes ne seront jamais aussi complètes que la documentation de cette forme d'entreprise. Je vous renvoie à :
 
-* Wikipedia pour la [définition de SCOP](http://fr.wikipedia.org/wiki/Scop)
-* Un de mes compte-rendus traite aussi du sujet : [Ma petite entreprise ne connaît pas la crise](http://www.tomsquest.com/blog/entreprendre-au-jug2b/)
+- Wikipedia pour la [définition de SCOP](http://fr.wikipedia.org/wiki/Scop)
+- Un de mes compte-rendus traite aussi du sujet : [Ma petite entreprise ne connaît pas la crise](http://www.tomsquest.com/blog/entreprendre-au-jug2b/)
 
 Cédric, un des fondateurs de la Scop [La Green Team](http://www.lagreenteam.fr), était présent et nous a brièvement parlé de sa société. Comme son nom le dit, sa Scop est axée développement durable dans ses statuts. Ses salariés allouent une partie de leur temps (2 jours par mois) à former leur membre, assister aux formations des membres et participer bénévolement à un projet de développement durable. La Scop apporte également une marque et une vision. Elle se rémunère quand elle apporte une affaire.
 

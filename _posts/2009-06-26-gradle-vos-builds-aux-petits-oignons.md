@@ -1,4 +1,4 @@
---- 
+---
 title: "Gradle : vos builds aux petits oignons"
 slug: gradle-vos-builds-aux-petits-oignons
 date: 2009-06-26T00:00:00Z
@@ -53,24 +53,24 @@ Bref, il y a du travail et ce n'est pas la crise comme l'indique la [Roadmap](ht
 
 J'aime :
 
-* L'usage d'un DSL pour donner du sens à ses scripts de build ;
-* La puissante de ce DSL pour faire des choses qui font rêver (par exemple, une tâche à accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;
-* La réutilisation des tâches Ant facilement, ce qui veut dire qu'on peut presque tout faire ;
-* La flexibilité offerte. J'adore les outils coupants qui me permettent de faire ce que je veux comme je le veux. Mais je reconnais que je n'ai pas rencontré souvent de besoin très exotique ;
-* Le Gradle Wrapper qui permet de dérouler un build Gradle sans aucune installation préalable (il télécharge ses dépendances automatiquement).
+- L'usage d'un DSL pour donner du sens à ses scripts de build ;
+- La puissante de ce DSL pour faire des choses qui font rêver (par exemple, une tâche à accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;
+- La réutilisation des tâches Ant facilement, ce qui veut dire qu'on peut presque tout faire ;
+- La flexibilité offerte. J'adore les outils coupants qui me permettent de faire ce que je veux comme je le veux. Mais je reconnais que je n'ai pas rencontré souvent de besoin très exotique ;
+- Le Gradle Wrapper qui permet de dérouler un build Gradle sans aucune installation préalable (il télécharge ses dépendances automatiquement).
 
 Je n'aime pas :
 
-* Le fait de ne pas avoir une intégration/réutilisabilité complète avec Maven (la faute aux Plugins apparemment) ;
-* Le trop peu de convention, même si c'est le but du projet, car les conventions permettent d'entrer dans l'entreprise pour éviter que chacun puisse faire ce qu'il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu'on ne puisse pas poser une structure à respecter. Ce serait l'équivalent des normes de codages ;
-* Il n'est pas à  mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostique, des performances ?)
-* La jeunesse du projet qui ne garantit pas encore une pérennité suffisante pour l'entreprise.
+- Le fait de ne pas avoir une intégration/réutilisabilité complète avec Maven (la faute aux Plugins apparemment) ;
+- Le trop peu de convention, même si c'est le but du projet, car les conventions permettent d'entrer dans l'entreprise pour éviter que chacun puisse faire ce qu'il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu'on ne puisse pas poser une structure à respecter. Ce serait l'équivalent des normes de codages ;
+- Il n'est pas à mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostique, des performances ?)
+- La jeunesse du projet qui ne garantit pas encore une pérennité suffisante pour l'entreprise.
 
 ## Pour allez plus loin
 
 Zenika a publié des articles à propose de Gradle ainsi que deux podcasts. Le deuxième podcast couvre bien les avantages et inconvénients de Gradle :
 
-* Les [articles](http://blog.zenika.com/index.php?tag/gradle) ;
-* Les [podcasts](http://blog.zenika.com/index.php?post/2009/05/29/Podcast-Gradle).
+- Les [articles](http://blog.zenika.com/index.php?tag/gradle) ;
+- Les [podcasts](http://blog.zenika.com/index.php?post/2009/05/29/Podcast-Gradle).
 
 Nicolas Martignole du Touilleur Express a fait un [compte rendu de la présentation](http://www.touilleur-express.fr/2009/06/23/jazoon-gradle-la-presentation-qui-aura-lieu-jeudi-soir/) faite à Jazoon. Les commentaires sont également intéressants. J'aime beaucoup le « Gradle as the assembly language for builds » de Vincent Massol.

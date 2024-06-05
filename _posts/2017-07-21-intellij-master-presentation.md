@@ -5,8 +5,8 @@ date: 2017-07-21T00:00:00Z
 ---
 
 ![intellij logo](/assets/images/posts/intellij.png)
- 
-Last week I ran an **"Intellij Master Championship"** class/presentation. There were prizes to win, like Jetbrains Yoyos, Intellij Stickers. 
+
+Last week I ran an **"Intellij Master Championship"** class/presentation. There were prizes to win, like Jetbrains Yoyos, Intellij Stickers.
 
 We had a great time sharing tips and counting points to nominate the "best-intellij-touch-typist-2k17".
 

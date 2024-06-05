@@ -1,4 +1,4 @@
---- 
+---
 title: "Selenium : Boostez vos tests avec Tellurium"
 slug: selenium-boostez-vos-tests-avec-tellurium
 date: 2008-10-29T00:00:00Z
@@ -69,8 +69,8 @@ waitForPageToLoad 30000
 
 Les avantages sont :
 
-* Une lecture et maintenance plus aisée ;
-* Une écriture facilitée, y compris par une personne qui ne connait pas Java. On pourrait un jour imaginer la MOA nous fournir des cas de tests dans ce format. Mais je rêve, non ?
+- Une lecture et maintenance plus aisée ;
+- Une écriture facilitée, y compris par une personne qui ne connait pas Java. On pourrait un jour imaginer la MOA nous fournir des cas de tests dans ce format. Mais je rêve, non ?
 
 ## Support des données de tests
 

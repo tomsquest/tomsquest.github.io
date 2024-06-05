@@ -1,4 +1,4 @@
---- 
+---
 title: Critique du livre "Wicket In Action"
 slug: critique-du-livre-wicket-in-action
 date: 2008-12-09T00:00:00Z
@@ -38,14 +38,15 @@ Un aperçu et plus de détail sont directement dispo sur la page d'[introduction
 
 ## Pourquoi se mettre à Wicket ?
 
-* Pour comprendre ce qu'on entend par framework orienté composant ;
-* Pour faire le pont entre le monde Swing et le Web ;
-* Parce que Wicket est assez léger et simple à comprendre ;
-* Parce que c'est un framework très populaire (mais moins que GWT ou Flex) ;
-* Parce qu'il évolue vite et a un bon noyau de développement ;
-* Pour ne plus jamais avoir envie de faire de JSF.
+- Pour comprendre ce qu'on entend par framework orienté composant ;
+- Pour faire le pont entre le monde Swing et le Web ;
+- Parce que Wicket est assez léger et simple à comprendre ;
+- Parce que c'est un framework très populaire (mais moins que GWT ou Flex) ;
+- Parce qu'il évolue vite et a un bon noyau de développement ;
+- Pour ne plus jamais avoir envie de faire de JSF.
 
 ## Ce que j'ai aimé dans le livre
+
 Le livre en lui-même est bien présenté et agréable à lire. Les chapitres sont courts et bien découpés, ce qui facilite son usage comme référence pour plus tard.
 
 Il a été écrit par deux des principaux Core Developers de Wicket depuis qu'il est OpenSource. On peut donc leur faire confiance quand ils donnent des conseils ;-) . Les parties de code sont assez claires même si j'ai eu un peu de mal à comprendre où rattacher quoi à certains moments.
@@ -65,13 +66,14 @@ De plus, le livre ne revient pas sur les changements qui ont eu lieu au fil des 
 ## Le détail des chapitres
 
 ### 1. Ce qu'est Wicket
+
 C'est l'habituel chapitre de présentation : d'où vient le nom du framework, ce qu'il fait et pourquoi il est si populaire.
 
 Pour résumer :
 
-* Le framework est construit autour de l'équation : « Just Java + Just HTML = Wicket » ;
-* Il abstrait les notions HTTP derrière le langage Java permettant d'être plus souple et plus puissant ;
-* Il permet de faire des interfaces Web au delà des objets basiques comme les champs textes. Il apporte et permet de créer donc des composants évolués : Tab, panneaux, groupe d'objets ou composants métiers...
+- Le framework est construit autour de l'équation : « Just Java + Just HTML = Wicket » ;
+- Il abstrait les notions HTTP derrière le langage Java permettant d'être plus souple et plus puissant ;
+- Il permet de faire des interfaces Web au delà des objets basiques comme les champs textes. Il apporte et permet de créer donc des composants évolués : Tab, panneaux, groupe d'objets ou composants métiers...
 
 ### 2. L'architecture
 
@@ -105,11 +107,11 @@ Le chapitre répond à toutes ces questions et là encore, Wicket fait des merve
 
 Cette partie couvre :
 
-* l'organisation d'une page en bloc, panneau et fragment ;
-* l'organisation des pages :
-    * en répétant la structure ;
-    * en utilisant l'héritage pour ne redéfinir que certaines portions (« Markup Inheritance »)
-    * en construisant des Panels.
+- l'organisation d'une page en bloc, panneau et fragment ;
+- l'organisation des pages :
+  - en répétant la structure ;
+  - en utilisant l'héritage pour ne redéfinir que certaines portions (« Markup Inheritance »)
+  - en construisant des Panels.
 
 Parmi ces 3 derniers choix, lequel prendre ?
 
@@ -163,8 +165,8 @@ Mais d'ailleurs, vous devriez déjà être sur [Amazon](http://www.amazon.fr/Wic
 
 Si vous êtes radin (ou pas bête), le site de Manning propose les chapitres suivants :
 
-* Chap. 1 : [Ce qu'est Wicket](http://www.manning.com/dashorst/ch01_dashorst.pdf) ;
-* Chap. 8 : [Développer ses propres composants](http://www.manning.com/dashorst/ch08_dashorst.pdf) ;
-* Un [chapitre supplémentaire](http://www.manning.com/dashorst/Wicket_Bonus-chapter15.pdf) pour démarrer avec Wicket - Ant et Maven y sont couverts.
+- Chap. 1 : [Ce qu'est Wicket](http://www.manning.com/dashorst/ch01_dashorst.pdf) ;
+- Chap. 8 : [Développer ses propres composants](http://www.manning.com/dashorst/ch08_dashorst.pdf) ;
+- Un [chapitre supplémentaire](http://www.manning.com/dashorst/Wicket_Bonus-chapter15.pdf) pour démarrer avec Wicket - Ant et Maven y sont couverts.
 
 Le [site du livre](http://wicketinaction.com/) est également intéressant et propose quelques articles intéressants.

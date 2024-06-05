@@ -1,4 +1,4 @@
---- 
+---
 title: Tuning de Tomcat par Mark Thomas
 slug: tuning-de-tomcat-par-mark-thomas
 date: 2008-11-13T00:00:00Z
@@ -12,18 +12,18 @@ Saviez-vous que 80% du temps de traitement d'une requête est faite dans l'appli
 
 Les logs devraient être configurés :
 
-* De manière asynchrone :
-    * Ils sont synchrones par défaut,
-    * Attention à la taille des buffers qui pourraient conduire à des OutOfMemory,
-    * Mettre les loggers en fallback synchrone si les buffers sont pleins ;
-* Ne pas logger tout et n'importe quoi :
-    * Remonter le niveau de log au maximum (selon la politique locale),
-    * Ne pas logger dans la console.
+- De manière asynchrone :
+  - Ils sont synchrones par défaut,
+  - Attention à la taille des buffers qui pourraient conduire à des OutOfMemory,
+  - Mettre les loggers en fallback synchrone si les buffers sont pleins ;
+- Ne pas logger tout et n'importe quoi :
+  - Remonter le niveau de log au maximum (selon la politique locale),
+  - Ne pas logger dans la console.
 
 Il est possible de cacher du contenu statique :
 
-* Par défaut, 10Mo de contenu sont retenus pendant 5 secondes. A changer si on a de la RAM et du contenu vraiment statique ;
-* Il existe la fonctionnalité « SEND_FILE » des connecteurs NIO et APR permettant d'indiquer à l'OS d'envoyer directement le contenu statique du disque dur vers la carte réseau.
+- Par défaut, 10Mo de contenu sont retenus pendant 5 secondes. A changer si on a de la RAM et du contenu vraiment statique ;
+- Il existe la fonctionnalité « SEND_FILE » des connecteurs NIO et APR permettant d'indiquer à l'OS d'envoyer directement le contenu statique du disque dur vers la carte réseau.
 
 Côté JVM, Mark rappelle que trop de mémoire est néfaste pour les performances : les GC seront plus longs. Il faut donc avoir les valeurs de XMS/XMX les plus faibles possibles. Pour cela, il faut étudier les besoins de l'application et mettre les valeurs en fonction.
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Notes sur Rework de 37signals
 slug: notes-sur-rework-de-37signals
 date: 2010-08-29T00:00:00Z
@@ -34,12 +34,12 @@ Il est toujours possible de prendre quelques heures dans son planning pour trava
 
 Prendre l’argent d’investisseurs peut ne pas en valoir le coût, car :
 
-* il fait perdre une partie du contrôle : devoir prendre en compte les ordres d'autres personnes par exemple ;
-* il occasionne une baisse de qualité au détriment du retour sur investissement rapide ;
-* Dépenser l'argent des autres est addictif ;
-* C'est souvent un mauvais coup financier (au début, on n'a aucun levier pour gérer mieux le deal) ;
-* Le client ne devient plus le premier objectif, mais les objectifs des investisseurs le deviennent ;
-* Obtenir de l'argent prend beaucoup d'énergie et de temps.
+- il fait perdre une partie du contrôle : devoir prendre en compte les ordres d'autres personnes par exemple ;
+- il occasionne une baisse de qualité au détriment du retour sur investissement rapide ;
+- Dépenser l'argent des autres est addictif ;
+- C'est souvent un mauvais coup financier (au début, on n'a aucun levier pour gérer mieux le deal) ;
+- Le client ne devient plus le premier objectif, mais les objectifs des investisseurs le deviennent ;
+- Obtenir de l'argent prend beaucoup d'énergie et de temps.
 
 ## Start a business, not a startup
 
@@ -57,12 +57,12 @@ Essayer de supprimer les niveaux d'abstractions (docs, plans, rapports). Chacun 
 
 Questions à se poser pour s'assurer que l'on travaille sur des choses qui importent :
 
-* Pourquoi faites-vous cela ? A qui cela bénéficie, quelle est la motivation...
-* Quel problème résolvez-vous ?
-* Est-ce utile finalement ? Faire quelque chose ou quelque chose d'utile ?
-* Ajoutez vous de la valeur ?
-* Est-ce que cela changera quelque chose ?
-* Que pourriez-vous faire à la place ? Priorité…
+- Pourquoi faites-vous cela ? A qui cela bénéficie, quelle est la motivation...
+- Quel problème résolvez-vous ?
+- Est-ce utile finalement ? Faire quelque chose ou quelque chose d'utile ?
+- Ajoutez vous de la valeur ?
+- Est-ce que cela changera quelque chose ?
+- Que pourriez-vous faire à la place ? Priorité…
 
 Ne pas hésiter à abandonner ce que l'on est en train de faire. Des fois, c'est la bonne chose à faire.
 
@@ -108,6 +108,5 @@ Une décision n'est pas définitive. Il faut se laisser la possibilité d'y reve
 
 ## Liens annexes
 
-* Le site du livre : http://37signals.com/rework/
-* Les notes d'[Ulrich Vachon](http://ulrichinaction.blogspot.com) sur le livre : http://ulrichinaction.blogspot.com/2010/08/retour-sur-rework.html
-
+- Le site du livre : http://37signals.com/rework/
+- Les notes d'[Ulrich Vachon](http://ulrichinaction.blogspot.com) sur le livre : http://ulrichinaction.blogspot.com/2010/08/retour-sur-rework.html

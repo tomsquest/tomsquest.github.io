@@ -1,4 +1,4 @@
---- 
+---
 title: Export Excel avec Spring Web Flow
 slug: export-excel-avec-spring-web-flow
 date: 2008-08-31T00:00:00Z
@@ -53,8 +53,8 @@ La méthode `buildExcelDocument()` se charge de créer le fichier Excel et utili
 
 Deux choses à remarquer :
 
-* Le nom du fichier est donnée dans le header "Content-Disposition" ;
-* Le charset CP1252 est utilisé pour forcer Excel à lire correctement les caractères spéciaux comme les accents.
+- Le nom du fichier est donnée dans le header "Content-Disposition" ;
+- Le charset CP1252 est utilisé pour forcer Excel à lire correctement les caractères spéciaux comme les accents.
 
 ### 3 - Intégration à une vue existante
 

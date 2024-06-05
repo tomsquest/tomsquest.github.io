@@ -1,4 +1,4 @@
---- 
+---
 title: "Compte-rendu de la présentation de Terracotta chez Zenika"
 slug: compte-rendu-terracotta-chez-zenika
 date: 2008-10-03T00:00:00Z
@@ -14,17 +14,17 @@ Dés le début, le ton est donné dans la salle : 6 personnes lèvent la main en
 
 Terracotta se propose de simplifier la vie des développeurs. Techniquement, il permet de partager la mémoire entre JVM. C'est une réduction simpliste mais l'idée est là. Je ne vais pas tenter de vous donner les détails techniques, on trouve beaucoup de ressources sur le Net à ce sujet. Le site propose des Patterns sur l'usage de Terracotta : qu'est-ce qu'il conseillé de faire avec ou non (pas de recherche par exemple).
 
-Ari Zilka nous explique que les JVM utilisent une mémoire « réseau », appelé NAM (Network  Attached Memory). Quand une JVM modifie une donnée, celle-ci est actualisée dans la NAM et elle est potentiellement mise à jour dans les autres JVM qui possèdent cette donnée. Les données ne sont pas partout à tout moment. Les Monitor (lock) sont également répliqués, une JVM pouvant indiquer qu'elle modifie cette donnée et que les autres ne doivent pas le faire. Cela est fait de manière transparente.
+Ari Zilka nous explique que les JVM utilisent une mémoire « réseau », appelé NAM (Network Attached Memory). Quand une JVM modifie une donnée, celle-ci est actualisée dans la NAM et elle est potentiellement mise à jour dans les autres JVM qui possèdent cette donnée. Les données ne sont pas partout à tout moment. Les Monitor (lock) sont également répliqués, une JVM pouvant indiquer qu'elle modifie cette donnée et que les autres ne doivent pas le faire. Cela est fait de manière transparente.
 
 Simple, non ?
 
 ## Bénéfices
 
-* clustering natif
-* scalability : il suffit d'ajouter une nouvelle JVM pour que celle-ci utilise la mémoire partagée
-* pas de messaging à écrire pour synchroniser les données
-* simplicité de mise en place
-* ...
+- clustering natif
+- scalability : il suffit d'ajouter une nouvelle JVM pour que celle-ci utilise la mémoire partagée
+- pas de messaging à écrire pour synchroniser les données
+- simplicité de mise en place
+- ...
 
 J'entends déjà le soulagement de dizaines de développeurs qui ont du écrire des solutions similaires.
 
@@ -44,9 +44,9 @@ J'espère avoir l'occasion de travailler avec ce produit dans une future mission
 
 ## Petits mots sur la soirée
 
-* Suite à une question de Nicolas Martignole, Ari Zilka a dissipé les rumeurs de rachat de Terracotta par Spring. Le détail sur le site du Touilleur Express : http://www.touilleur-express.fr/2008/10/02/springsource-rachete-terracotta-ou-pas/
-* L'évènement a permis de faire connaître la société Zenika. Celle-ci veut organiser ce genre d'évènement tous les trois mois en invitant des personnes influentes. Prochain tour : quelqu'un de chez Spring Source ? :-)
-* Encore une fois, ces événements permettent d'échanger avec des personnes très intéressantes : Julien Dubois (Spring Source), Florent Ramière (Jaxio), Nicolas Marignole, Erwan Alliaume (Xebia), Jérôme Van Der Linden (Octo)
+- Suite à une question de Nicolas Martignole, Ari Zilka a dissipé les rumeurs de rachat de Terracotta par Spring. Le détail sur le site du Touilleur Express : http://www.touilleur-express.fr/2008/10/02/springsource-rachete-terracotta-ou-pas/
+- L'évènement a permis de faire connaître la société Zenika. Celle-ci veut organiser ce genre d'évènement tous les trois mois en invitant des personnes influentes. Prochain tour : quelqu'un de chez Spring Source ? :-)
+- Encore une fois, ces événements permettent d'échanger avec des personnes très intéressantes : Julien Dubois (Spring Source), Florent Ramière (Jaxio), Nicolas Marignole, Erwan Alliaume (Xebia), Jérôme Van Der Linden (Octo)
 
 Merci à Ari Zilka pour sa présentation.
 

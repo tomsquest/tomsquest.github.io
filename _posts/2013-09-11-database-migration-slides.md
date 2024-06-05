@@ -14,5 +14,3 @@ We use [Flyway](http://flywaydb.org) because it is as simple as it can be and it
 <p>
 <iframe src="http://www.slideshare.net/slideshow/embed_code/26092741" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 <p>
-
-

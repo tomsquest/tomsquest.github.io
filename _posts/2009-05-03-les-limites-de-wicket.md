@@ -1,4 +1,4 @@
---- 
+---
 title: Les limites de Wicket
 slug: les-limites-de-wicket
 date: 2009-05-03T00:00:00Z
@@ -104,7 +104,7 @@ L'exemple suivant montre l'usage de [WiQuery](http://code.google.com/p/wiquery/)
 
 ```java
 public MyWebPage() {
-    Label example1 = new Label("example1", "Example 1"); 
+    Label example1 = new Label("example1", "Example 1");
 
     example1.add(new WiQueryEventBehavior(new Event(MouseEvent.CLICK) {
         @Override
@@ -116,7 +116,7 @@ public MyWebPage() {
                 }
             };
         }
-    })); 
+    }));
 
     add(example1);
 }

@@ -1,4 +1,4 @@
---- 
+---
 title: "Rencontre avec Jérôme Louvel, auteur de Restlet"
 slug: rencontre-avec-jerome-louvel-auteur-de-restlet
 date: 2008-11-11T00:00:00Z
@@ -11,6 +11,7 @@ Suite au dernier JUG, Jérôme Louvel, l'auteur de Restlet, a bien voulu répond
 ## Interview
 
 #### Tout d'abord, Jérôme, pourquoi tant d'intérêt dans REST ?
+
 A la base, j'ai une véritable passion pour le Web, son architecture, ses protocoles, le W3C. Je suis admiratif de la vision des fondateurs dont Tim Berners-Lee et Roy T. Fielding.
 
 Ensuite, pour le besoin d'un projet interne, j'ai voulu exploiter au mieux les standards du Web. Je n'avais aucune contrainte technique, juste d'utiliser Java. REST m'avait marqué et je me suis dit qu'il était possible d'en appliquer les concepts plus concrètement en Java qu'à travers l'API Servlet et les multiples frameworks MVC. Restlet était né! :)
