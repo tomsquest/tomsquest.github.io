@@ -4,7 +4,7 @@ slug: les-inconvenients-de-selenium
 date: 2008-11-24T00:00:00Z
 ---
 
-<img src="/img/posts/2008/09/selenium_small.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/09/selenium_small.jpg" style="float:right"/>
 
 Selenium est un très bon projet de test fonctionnel Web qui souffre de certains défauts.
 Il a énormément de qualité mais tout n'est pourtant pas rose.

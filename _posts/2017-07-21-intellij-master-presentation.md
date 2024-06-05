@@ -4,7 +4,7 @@ slug: intellij-master-presentation
 date: 2017-07-21T00:00:00Z
 ---
 
-![intellij logo](/img/posts/intellij.png)
+![intellij logo](/assets/images/posts/intellij.png)
  
 Last week I ran an **"Intellij Master Championship"** class/presentation. There were prizes to win, like Jetbrains Yoyos, Intellij Stickers. 
 
@@ -18,4 +18,4 @@ The PDF of the shortcuts is at: https://github.com/tomsquest/intellij-master-pre
 
 And the whole source is on [github](https://github.com/tomsquest/intellij-master-presentation).
 
-![intellij logo](/img/posts/intellij-master-swag.png)
+![intellij logo](/assets/images/posts/intellij-master-swag.png)

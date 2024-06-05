@@ -4,7 +4,7 @@ slug: configurer-quartz-sur-un-cluster
 date: 2008-11-11T00:00:00Z
 ---
 
-<img src="/img/posts/2008/11/quartz_logo.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/11/quartz_logo.jpg" style="float:right"/>
 
 [Quartz](http://www.opensymphony.com/quartz/) est un scheduler. Il permet de lancer des Job à intervalles spécifiés ou un jour donné. Par exemple, il peut être utiliser pour réaliser des calculs à une heure où la charge serveur est faible.
 

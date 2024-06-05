@@ -4,7 +4,7 @@ slug: presentation-et-retour-sur-greenpepper
 date: 2008-12-21T00:00:00Z
 ---
 
-<img src="/img/posts/2008/12/greenpepper-logo.png" style="float:right"/>
+<img src="/assets/images/posts/2008/12/greenpepper-logo.png" style="float:right"/>
 
 Au boulot, nous évaluons [GreenPepper](http://www.greenpeppersoftware.com) de la société [Pyxis](http://www.pyxis-tech.com/fr/). GreenPepper est un outil de test fonctionnel et nous souhaitons à terme que les MOA l'utilisent afin de rédiger les spécifications et les tests associés.
 
@@ -22,7 +22,7 @@ Dans la pratique, la création d'une spécification exécutable avec GreenPepper
 
 ### Exemple de spécification fonctionnelle
 
-![](/img/posts/2008/12/gp-test2.jpg)
+![](/assets/images/posts/2008/12/gp-test2.jpg)
 
 Chaque page GreenPepper dispose d'un bouton « Execute » qui permet d'appeler les fixtures avec les paramètres du tableau. L'appui sur ce bouton invoque le système testé qui récupère dans la page les classes à créer et invoque les méthodes avec les données.
 
@@ -30,7 +30,7 @@ Dans l'exemple ci-dessus, GreenPepper instancie la classe Cart et invoque deux f
 
 ## Le coin de la technique
 
-<img src="/img/posts/2008/12/logo-confluence.gif" style="float:right"/>
+<img src="/assets/images/posts/2008/12/logo-confluence.gif" style="float:right"/>
 
 GreenPepper est en réalité un plugin pour [Confluence](http://www.atlassian.com/software/confluence/), le wiki édité par Atlassian.
 
@@ -83,7 +83,7 @@ A titre d'info, voilà la procédure :
 
 ### Capture du lancement depuis Eclipse
 
-![](/img/posts/2008/12/gp-runeclipse.jpg)
+![](/assets/images/posts/2008/12/gp-runeclipse.jpg)
 
 ### Le classpath et Maven
 Je n'ai pas mis en place cette partie là sur notre projet actuel donc j'ai peu à en dire. Ah si, une chose : beaucoup de sueur.

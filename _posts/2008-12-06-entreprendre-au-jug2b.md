@@ -4,7 +4,7 @@ slug: entreprendre-au-jug2b
 date: 2008-12-06T00:00:00Z
 ---
 
-<img src="/img/posts/2008/12/parisjug-logo.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/12/parisjug-logo.jpg" style="float:right"/>
 
 Jeudi soir s'est tenu le JUG2B ["Ma petite entreprise ne connaît pas la crise"](http://parisjug.org/xwiki/bin/view/Meeting/20081204). J'ai eu le plaisir d'y assister et j'y ai appris pas mal de choses sur la création d'entreprise. Je poste ici ce que j'en ai retenu de mémoire.
 

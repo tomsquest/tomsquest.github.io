@@ -4,7 +4,7 @@ slug: maven-in-colors
 date: 2013-09-30T00:00:00Z
 ---
 
-<img src="/img/posts/2013/maven-logo.png" style="float:right"/>
+<img src="/assets/images/posts/2013/maven-logo.png" style="float:right"/>
 
 _Updated the 2014.01.21 - Added JCGay Maven Agent_
 
@@ -18,11 +18,11 @@ or Arnaud Heritier's log4j2 approach : [United Colors of Maven](http://aheritier
 
 Here is a screenshot of a successful build :
 
-![Maven successful build with colors](/img/posts/2013/maven-colors-success.png)
+![Maven successful build with colors](/assets/images/posts/2013/maven-colors-success.png)
 
 Screenshot of a failed build :
 
-![Maven failed build with colors](/img/posts/2013/maven-colors-failure.png)
+![Maven failed build with colors](/assets/images/posts/2013/maven-colors-failure.png)
 
 ## Preferred solution : shell function
 

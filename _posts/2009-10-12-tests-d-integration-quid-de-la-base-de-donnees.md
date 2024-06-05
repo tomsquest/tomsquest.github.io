@@ -4,7 +4,7 @@ slug: tests-d-integration-quid-de-la-base-de-donnees
 date: 2009-10-12T00:00:00Z
 ---
 
-<img src="/img/posts/serveur.jpg" style="float:right"/>
+<img src="/assets/images/posts/serveur.jpg" style="float:right"/>
 
 La base de données est un élément important des tests d'intégration. Les deux questions à se poser sont :
 

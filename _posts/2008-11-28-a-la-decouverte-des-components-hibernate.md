@@ -4,7 +4,7 @@ slug: a-la-decouverte-des-components-hibernate
 date: 2008-11-28T00:00:00Z
 ---
 
-<img src="/img/posts/2008/11/hibernate_logo.gif" style="float:right"/>
+<img src="/assets/images/posts/2008/11/hibernate_logo.gif" style="float:right"/>
 
 Plusieurs années avec Hibernate et j'apprends une de ses fonctionnalités de base : les [Components](http://www.hibernate.org/hib_docs/v3/reference/en/html_single/#mapping-declaration-component). Ceux-ci permettent de mapper plusieurs objets dans une même table.
 
@@ -12,11 +12,11 @@ Plusieurs années avec Hibernate et j'apprends une de ses fonctionnalités de ba
 
 Prenons ces deux classes :
 
-![](/img/posts/2008/11/diag_classes2.jpg)
+![](/assets/images/posts/2008/11/diag_classes2.jpg)
 
 Et mappons-les dans une même table :
 
-![](/img/posts/2008/11/diag_db2.jpg)
+![](/assets/images/posts/2008/11/diag_db2.jpg)
 
 Le mapping Hibernate devient :
 

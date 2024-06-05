@@ -4,7 +4,7 @@ slug: working-effectively-with-unit-tests
 date: 2015-03-20T00:00:00Z
 ---
 
-![Book cover](/img/posts/wewut-cover.jpg)
+![Book cover](/assets/images/posts/wewut-cover.jpg)
 
 I am very happy to have read Jay Fields' Working effectively with unit tests. 
 This is a rare book where developers are taught how to be better at a very-argued discipline: testing.

@@ -4,7 +4,7 @@ slug: demarrer-avec-jpa-spring-maven-et-glassfish
 date: 2009-02-26T00:00:00Z
 ---
 
-<img src="/img/posts/2009/02/screenshot_06.jpeg" style="float:right"/>
+<img src="/assets/images/posts/2009/02/screenshot_06.jpeg" style="float:right"/>
 
 Je vous propose un projet qui permettra de démarrer avec [Spring](http://static.springframework.org/spring/docs/2.5.x/reference/), de déployer sous [Glassfish v3](https://glassfish.dev.java.net/) et de lancer les tests d'intégration sans serveur d'application, le tout avec le pom [Maven](http://maven.apache.org/) qui va bien.
 
@@ -19,7 +19,7 @@ Les PersistentUnits sont configurés par :
 
 Spring est lui aussi configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.
 
-![](/img/posts/2009/02/screenshot_05.jpeg)
+![](/assets/images/posts/2009/02/screenshot_05.jpeg)
 
 Le fichier JPA pour le serveur est le suivant :
 

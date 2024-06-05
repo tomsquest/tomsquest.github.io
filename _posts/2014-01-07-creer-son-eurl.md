@@ -49,7 +49,7 @@ Une étape très simple : il s’agit d’envoyer à un journal de petites annon
 Vous trouverez sur internet les journaux habilités à publier des annonces légales (le CFE en donne également).
 Il faut faire des devis car on paie au caractère.
 
-Ce modèle est optimisé pour minimiser le coût : [annonce legale.rtf](/files/eurl/annonce_legale.rtf)
+Ce modèle est optimisé pour minimiser le coût : [annonce legale.rtf](/assets/files/eurl/annonce_legale.rtf)
 
 Les échanges que j’ai eu avec le journal :
 
@@ -88,9 +88,9 @@ On évite aussi le RSI qui cause de nombreux problèmes, c'est un argument de po
 Les statuts sont une pièce importante du dossier, mais l’AFE fournit des statuts simplifiés prenant 2 pages et couvrant la situation classique de tout le monde.
 C’est ce modèle que j’ai utilisé. Libre à vous de comparer avec les modèles sur Internet.
 
-Le modèle de statut simplifié est disponible ici : https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html ([copie](/files/eurl/afe_modele_statuts_types_eurl.txt))
+Le modèle de statut simplifié est disponible ici : https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html ([copie](/assets/files/eurl/afe_modele_statuts_types_eurl.txt))
 
-Il existe également un modèle de statuts plus complet : https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc ([copie](/files/eurl/afe_statuts_eurl.doc))
+Il existe également un modèle de statuts plus complet : https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc ([copie](/assets/files/eurl/afe_statuts_eurl.doc))
 
 A vous de remplir les cases.
 
@@ -114,7 +114,7 @@ Les documents à fournir (de mémoire) :
 - Statuts signés (donc à imprimer, scanner puis uploader)
 - Attestation de dépôts des fonds fournis par la banque
 - Attestation de parution de l’annonce légale envoyée par le journal après paiement
-- Attestation de non-condamnation avec filiation (modèle : [declaration non condamnation.rtf](/files/eurl/declaration_non_condamnation.rtf))
+- Attestation de non-condamnation avec filiation (modèle : [declaration non condamnation.rtf](/assets/files/eurl/declaration_non_condamnation.rtf))
 - Carte d'identité avec la mention sur l’honneur (donc à imprimer, annoter avec la mention sur l’honneur indiquée sur le site puis à uploader)
 - Copie du bail car je suis locataire : la société est domicilié chez moi et même si mon bail indique que je ne peux pas y avoir d’activité commerciale, 
 c’est toléré pendant 5 ans (attention changer de domiciliation coûte de l’argent)
@@ -154,8 +154,8 @@ Pour signifier à Pole-Emploi que vous souhaitez créer votre société, vous de
 
 - un Kbis (j’ai envoyé un original)
 - vos statuts
-- une lettre expliquant ce que vous souhaitez faire : pour moi, maintien des allocations ou versement du capital, [cf la lettre que j’ai envoyé](/files/eurl/courrier_poleemploi_creation_societe.rtf)
-- une copie signée du PV d’AG (Procès Verbal d’Assemblée Générale) déclarant la rémunération que vous souhaitez vous verser : [modèle PV AG](/files/eurl/pv_ag_non_remuneration.rtf)
+- une lettre expliquant ce que vous souhaitez faire : pour moi, maintien des allocations ou versement du capital, [cf la lettre que j’ai envoyé](/assets/files/eurl/courrier_poleemploi_creation_societe.rtf)
+- une copie signée du PV d’AG (Procès Verbal d’Assemblée Générale) déclarant la rémunération que vous souhaitez vous verser : [modèle PV AG](/assets/files/eurl/pv_ag_non_remuneration.rtf)
 
 Dans mon cas, j’ai rédigé un PV d’AG stipulant ma non-rémunération pour 2013 et 2014. Bien sûr, si je suis amené à me verser 
 une rémunération, je dois en avertir Pole-Emploi, et de toute façon, mes déclarations au RSI leur permettront de savoir ce que je me suis versé.

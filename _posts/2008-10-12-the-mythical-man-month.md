@@ -4,7 +4,7 @@ slug: the-mythical-man-month
 date: 2008-10-12T00:00:00Z
 ---
 
-<img src="/img/posts/2008/10/the_mythical_man_month_cover.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/10/the_mythical_man_month_cover.jpg" style="float:right"/>
 
 Le livre "The Mythical Man Month" figure dans le TOP 10 des livres à avoir lus. Revue du livre...
 

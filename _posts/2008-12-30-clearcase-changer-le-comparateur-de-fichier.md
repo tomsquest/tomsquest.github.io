@@ -25,9 +25,9 @@ text_file_delta xcompare    D:\Softs\WinMerge\WinMerge.exe
 
 Ce qui donne avant et après :
 
-![](/img/posts/2008/12/clearcase_compare_xml.jpg)
+![](/assets/images/posts/2008/12/clearcase_compare_xml.jpg)
 
-![](/img/posts/2008/12/winmerge_compare_xml.jpg)
+![](/assets/images/posts/2008/12/winmerge_compare_xml.jpg)
 
 Les autres formats de fichier comme le HTML et le XML peuvent être également modifiés.
 Il suffit de remplacer les lignes qui contiennent "xcompare".

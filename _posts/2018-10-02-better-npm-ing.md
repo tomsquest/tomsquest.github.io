@@ -4,7 +4,7 @@ slug: better-npm-ing
 date: 2018-10-02T00:00:00Z
 ---
 
-![npm logo](/img/posts/2018-10-02-better-npm-ing/npm_logo.png)
+![npm logo](/assets/images/posts/2018-10-02-better-npm-ing/npm_logo.png)
  
 I discovered several tips working with NPM on a daily basis. Here are the top ones.
 
@@ -20,7 +20,7 @@ I presented those tips to my coworkers, [the slides are available online](https:
 
 [Greenkeeper.io](https://greenkeeper.io) tells us that 15% of packages break the _minor_ or _patch_ updates:
 
-![Greekeeper](/img/posts/2018-10-02-better-npm-ing/greenkeeper.png)
+![Greekeeper](/assets/images/posts/2018-10-02-better-npm-ing/greenkeeper.png)
 
 **Solution**: Use `--save-exact` when installing a dependency
 
@@ -91,13 +91,13 @@ $ npx updtr
 $ npx npm-check -u
 ```
 
-![npx npm-check -u](/img/posts/2018-10-02-better-npm-ing/npm-check-u.png)
+![npx npm-check -u](/assets/images/posts/2018-10-02-better-npm-ing/npm-check-u.png)
 
 ## Current Node version in Tools
 
 **Problem**: When configuring Node/Typescript, the node **path** is version-dependent
 
-![List of node version from Intellij](/img/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png)
+![List of node version from Intellij](/assets/images/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png)
 
 **Solution**: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link `~/.nvm/current` to, for example, `~/.nvm/versions/node/v11.0.0` and recreate the link when changing of node version (automatically if you use [NVM auto-use ZSH plugin](https://github.com/tomsquest/nvm-auto-use.zsh)).
 
@@ -114,4 +114,4 @@ $ export NVM_SYMLINK_CURRENT=true
 
 **Solution 2**: [Gitpunch.com](https://gitpunch.com) seems to solve the problem. It can follow all your Github stars and specific projects.
 
-[![Git Punch](/img/posts/2018-10-02-better-npm-ing/gitpunch.com.png)](https://gitpunch.com)
+[![Git Punch](/assets/images/posts/2018-10-02-better-npm-ing/gitpunch.com.png)](https://gitpunch.com)

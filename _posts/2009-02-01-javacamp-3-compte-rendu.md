@@ -4,7 +4,7 @@ slug: javacamp-3-compte-rendu
 date: 2009-02-01T00:00:00Z
 ---
 
-<img src="/img/posts/2009/02/parisjavacamp3.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/02/parisjavacamp3.jpg" style="float:right"/>
 
 J'ai assisté hier au [JavaCamp n°3](http://barcamp.org/JavaCampParis3) organisé par Valtech chez Sun. Une quinzaine de personnes étaient présentes et les sessions se sont rapidement organisées. Un compte rendu rapide des sessions auxquelles j'ai participées.
 
@@ -14,7 +14,7 @@ Sujet général où nous avons parlé outils et méthodes.
 
 [Eric Lefevre](http://ericlefevre.net/wordpress/) explique que le test est avant tout une question de retour sur investissement (ROI). Le test pour le test n'est pas une finalité, il faut tester ce qui est important et ce qui apporte de la valeur.
 
-<img src="/img/posts/2009/02/cohn.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/02/cohn.jpg" style="float:right"/>
 
 Il dessine rapidement la pyramide de Mike Cohn appliqué aux tests que je ne connaissais pas.
 

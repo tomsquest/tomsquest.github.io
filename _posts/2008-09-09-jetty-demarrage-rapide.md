@@ -4,7 +4,7 @@ slug: jetty-demarrage-rapide
 date: 2008-09-09T00:00:00Z
 ---
 
-<img src="/img/posts/jetty_logo.png" style="float:right"/>
+<img src="/assets/images/posts/jetty_logo.png" style="float:right"/>
 
 [Jetty](http://jetty.mortbay.org) est un serveur d'application léger, très léger. Il est en plus rapide et complètement intégré à Maven 2. Si vous voulez déployer une application Web sans devoir installer un serveur séparément, suivez le guide.
 
@@ -27,7 +27,7 @@ $ mvn jetty:run
 
 Cette commande démarre Jetty qui va utiliser la configuration de Maven pour savoir où est situé le code source et les ressources. Rendez-vous sur http://localhost:8080/ pour voir votre application déployée.
 
-![](/img/posts/2008/09/jetty_run2.jpg)
+![](/assets/images/posts/2008/09/jetty_run2.jpg)
 
 Il est impressionnant de voir que Maven télécharge les dépendances de Jetty, configure son contexte et permet d'avoir un serveur d'application fonctionnel en quelques secondes.
 
@@ -69,7 +69,7 @@ Pour cela, il suffit d'ajouter au pom.xml de l'application Web :
 
 Cette configuration fait référence au fichier `jetty-env.xml`. Ce fichier est placé dans le répertoire `jetty `à la racine du projet. Le fichier `webdefault.xml `peut être ignoré, il permet de configurer Jetty en profondeur.
 
-![](/img/posts/2008/09/fichiers_jetty.jpg)
+![](/assets/images/posts/2008/09/fichiers_jetty.jpg)
 
 Nous avons également ajouté une dépendance vers `com.experlog.xapool` qui offre les classes nécessaires à Jetty pour avoir un pool de connexion. Le driver JDBC doit être présent dans votre projet en tant que dépendance, il n'est pas montré ici.
 
