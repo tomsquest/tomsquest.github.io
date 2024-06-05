@@ -2,6 +2,7 @@
 layout: page
 permalink: /about/
 title: About
+last_modified_at: 2024-06-05
 ---
 
 <img class="profile" alt="profile picture" src="https://gravatar.com/avatar/219f5e29792760ca6a6e4bf17da4fd7a.jpg?s=200"/>

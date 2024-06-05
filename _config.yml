@@ -5,14 +5,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: ""
-url: https://www.tomsquest.com/
+url: https://www.tomsquest.com
 twitter_username: thomasqueste
 github_username:  tomsquest
-plugins:
-  - jekyll-feed
 sass:
   style: compressed
 collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
