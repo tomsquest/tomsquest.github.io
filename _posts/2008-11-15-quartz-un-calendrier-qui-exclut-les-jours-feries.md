@@ -20,7 +20,7 @@ La liste des jours fériés est "hardcodées" dans un fichier de conf du projet.
 
 Cela donne quelque chose comme ça pour 2008 :
 
-``` js
+```js
 workingDays.legalHolidays=2008-01-01,2008-03-21,2008-03-24,2008-05-01,2008-05-08,2008-05-12,2008-07-14,2008-08-15,2008-11-11,2008-12-25
 ```
 
@@ -36,7 +36,7 @@ Ces calendriers sont configurés pour être enchainés les uns aux autres. Techn
 
 Dans la config Spring, cela donne :
 
-``` xml
+```xml
 <bean id="excludeWeekendsCalendar" class="org.quartz.impl.calendar.WeeklyCalendar" />
 
 <bean id="workingDaysCalendar" class="com.tomsquest.quartz.MultiDateCalendar">
@@ -59,7 +59,7 @@ Cette classe est un calendrier au sens Quartz. Il exclut une liste de dates pass
 
 Il est utilisé dans la config Spring pour exclure les jours fériés.
 
-``` java
+```java
 package com.tomsquest.quartz;
 
 import java.util.Date;

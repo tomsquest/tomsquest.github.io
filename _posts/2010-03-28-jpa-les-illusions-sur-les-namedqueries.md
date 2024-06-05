@@ -12,7 +12,7 @@ Une NamedQuery est une requête nommée. Ce n'est pas une nouveauté de la norme
 
 Création :
 
-``` java
+```java
 @Entity
 @NamedQuery(name = "findAllCustomers", query = "Select c From Customers c")
 public class Client {
@@ -22,7 +22,7 @@ public class Client {
 
 Utilisation :
 
-``` java
+```java
 public List findAll() {
   return entityManager.createNamedQuery("findAllCustomers").getResultList();
 }

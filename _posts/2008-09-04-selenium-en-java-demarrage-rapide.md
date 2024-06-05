@@ -35,7 +35,7 @@ Tout d'abord, commençons par éditer le `pom.xml` du module de test.
 
 ### 1 - Ajout des repos OpenQA (l'éditeur de Selenium)
 
-``` xml
+```xml
 <repositories>
     <repository>
         <id>openqa.org</id>
@@ -68,7 +68,7 @@ Tout d'abord, commençons par éditer le `pom.xml` du module de test.
 
 ### 2 - Dépendances
 
-``` xml
+```xml
 <dependency>
     <groupId>org.openqa.selenium.client-drivers</groupId>
     <artifactId>selenium-java-client-driver</artifactId>
@@ -89,7 +89,7 @@ Les dépendances devraient ressembler à celles-ci sous Eclipse :
 
 ### 3 - Configuration de la phase de test
 
-``` xml
+```xml
 <build>
     <plugins>
         <plugin>
@@ -151,7 +151,7 @@ Un test Selenium hérite de la classe `com.thoughtworks.selenium.SeleneseTestCas
 
 Je vous mets ci-dessous un test basique qui se connecte à une adresse locale (test.jsp) puis saisit un login, soumet le formulaire et enfin vérifier que la connexion a réussie.
 
-``` java
+```java
 package com.tomsquest.selenium;
 
 import com.thoughtworks.selenium.SeleneseTestCase;
@@ -176,7 +176,7 @@ Le test a besoin du serveur Selenium pour interagir avec l'application. Il faut 
 
 La commande de lancement du serveur est :
 
-``` bash
+```bash
 $ mvn selenium:start-server
 ```
 
@@ -184,7 +184,7 @@ $ mvn selenium:start-server
 
 Maven est configuré pour lancer tous les tests lors de la construction du module. Il n'y a cette fois pas besoin de lancer le serveur Selenium car Maven s'en charge tout seul. La commande pour lancer tous les tests est :
 
-``` bash
+```bash
 $ mvn clean install
 ```
 
@@ -196,7 +196,7 @@ Pour éviter de fermer et réouvrir le navigateur à chaque test, il est possibl
 
 Exemple de démarrage du serveur avec l'option `browserSessionReuse` :
 
-``` bash
+```bash
 $ mvn selenium:start-server -DbrowserSessionReuse=true
 ```
 

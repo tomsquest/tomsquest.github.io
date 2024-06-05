@@ -29,7 +29,7 @@ Screenshot of a failed build :
 My preferred solution is to pipe Maven's output to __sed__ and to insert Ansi color sequences at the correct locations. 
 It is done like this :
 
-``` bash
+```bash
 mvn $goal | sed -e '/BUILD SUCCESS/$red BUILD SUCCESS/'
 ```
 
@@ -41,7 +41,7 @@ https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zs
 
 You just have to put this file somewhere, source it and make an alias to mvn :
 
-``` bash
+```bash
 $ source mvn-in-colors.zsh
 $ alias mvn=mvn-in-colors # done !
 ```
@@ -76,7 +76,7 @@ And __Rainbow supports Maven out of the box__!
 
 Once installed, running Rainbow is as simple as :
 
-``` bash
+```bash
 $ rainbow --config=mvn3 -- mvn clean install
 ```
 
@@ -85,7 +85,7 @@ $ rainbow --config=mvn3 -- mvn clean install
 The original Rainbow version does not return the exit code of the specified program (mvn in our case).
 This is real problem when you want to chain mvn with a push. ie.
 
-``` bash
+```bash
 $ rainbow --config=mvn3 -- mvn clean install && git push # will push even if the build failed !
 ```
 Some works try to fix the issues of rainbow. The [one from GfxMonk](https://github.com/gfxmonk/rainbow) seems to fix the lack of exit code.

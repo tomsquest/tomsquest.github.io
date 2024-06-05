@@ -23,7 +23,7 @@ Spring est lui aussi configuré en deux fois (déploiement et test). Grâce aux 
 
 Le fichier JPA pour le serveur est le suivant :
 
-``` xml
+```xml
 <jee:jndi-lookup id="dataSource" jndi-name="jdbc/springify" />
 <jee:jndi-lookup id="entityManagerFactory" jndi-name="persistence/springify"/>
 <tx:jta-transaction-manager />
@@ -31,7 +31,7 @@ Le fichier JPA pour le serveur est le suivant :
 
 Le fichier JPA pour les tests d'intégration est le suivant (un peu plus copieux) :
 
-``` xml
+```xml
 <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
     p:driverClassName="com.mysql.jdbc.Driver" p:url="jdbc:mysql://localhost:3306/springify"
     p:username="root" p:password=""/>
@@ -52,7 +52,7 @@ Le fichier JPA pour les tests d'intégration est le suivant (un peu plus copieux
 Côté Glassfish, il suffit de créer une nouvelle DataSource. Rien de très compliqué.
 Si vous utilisez MySQL, veillez à utiliser le moteur InnoDb afin que les transactions soient activées (sinon pas de rollback). Par exemple :
 
-``` sql
+```sql
 CREATE TABLE Tag (
     id      INT NOT NULL AUTO_INCREMENT
     ,label  VARCHAR(256) NOT NULL
@@ -66,10 +66,10 @@ Cette erreur est visible au lancement de Glassfish mais elle n'impacte pas le fo
 
 Détail de l'erreur pour info :
 
-``` java
+```java
 SEVERE: Class [ javax/interceptor/InvocationContext ] not found. Error while loading [ class org.springframework.ejb.interceptor.SpringBeanAutowiringInterceptor ]
 WARNING: Error in annotation processing: java.lang.NoClassDefFoundError: javax/interceptor/InvocationContext
-``` 
+```
 
 ## Maven
 

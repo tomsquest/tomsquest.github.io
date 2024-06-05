@@ -68,7 +68,7 @@ L’inconvénient principal de Liquibase est une certaine complexité qui ne se 
 
 Exemple de changeSet Liquibase :
 
-``` xml
+```xml
 <changeSet id="1" author="bob">
  <createTable tableName="department">
   <column name="id" type="int">
@@ -95,14 +95,14 @@ scripts/01_v1.0/01_products_and_orders.sql
 ```
 Le schéma de base de données est mis à jour en exécutant :
 
-``` bash
+```bash
 dbmaintain.sh update chemin/vers/les/scripts
 ```
 
 Dans le cas de MyBatis, les instructions de montée et de descente de version sont écrites dans le même script SQL.
 Exemple :
 
-``` sql
+```sql
 --// create product table
 CREATE TABLE PRODUCT (ID INT, NAME VARCHAR(255));
 

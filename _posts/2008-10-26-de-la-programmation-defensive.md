@@ -10,7 +10,7 @@ Se prémunir de l'usage incorrecte de son code fait partie de ce que l'on nomme 
 
 Exemple d'assertion en java :
 
-``` java
+```java
 public void print(String message) {
     assert message != null : "Erreur : message est null";
     System.out.println(message);
@@ -25,7 +25,7 @@ Une pré-condition permet de garantir que le code ne se poursuivra pas si certai
 
 Une utilisation beaucoup plus rare est l'usage des assertions en tant que post-conditions. Celles-ci permettent de garantir que vous remplissez votre contrat du point de vue du client. Elles sont souvent placées à la sortie de la méthode. Par exemple, vous assurez à votre client que votre méthode de retournera jamais une liste vide.
 
-``` java
+```java
 public List<String> filter(List<Strin> mails) {
     assert myList != null : "Erreur : liste null";
     return myList;
@@ -64,7 +64,7 @@ Les deux projets ci-dessous répondent au même problème. Ils offrent la possib
 
 L'exemple du site donne un bon aperçu :
 
-``` java 
+```java 
 assertThat(yoda) //
   .isInstanceOf(Jedi.class)//
   .isEqualTo(foundJedi) //
@@ -77,13 +77,13 @@ assertThat(yoda) //
 
 Exemple :
 
-``` java
+```java
 assertThat(theBiscuit, equalTo(myBiscuit));
 ```
 
 Il existe dans différents langages : Java, Php, C++, Python, Objective-C. C'est en réalité un framework permettant de développer des « Matcher ». Plusieurs extensions existent. Par exemple, [Hamcrest-text-patterns](http://code.google.com/p/hamcrest-text-patterns/) permet d'écrire des expressions régulières de manière lisible. Ou encore [Hamcrest-collections](http://code.google.com/p/hamcrest-collections/) qui permet de filtrer des collections :
 
-``` java
+```java
 smiths = select(people, where(Person.class).getLastName(), equalToIgnoringCase("smith"));
 ```
 

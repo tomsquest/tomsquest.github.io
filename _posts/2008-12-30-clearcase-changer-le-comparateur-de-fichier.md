@@ -19,7 +19,7 @@ text_file_delta xcompare    ..\..\bin\cleardiffmrg.exe
 
 par :
 
-``` 
+```
 text_file_delta xcompare    D:\Softs\WinMerge\WinMerge.exe
 ```
 

@@ -16,7 +16,7 @@ Comment générer un fichier Excel depuis une Action Spring Web Flow ?
 
 ### 1 - Déclarer la vue d'export
 
-``` xml
+```xml
 <view-state id="exportView">
     <render-actions>
         <action bean="exportAction" method="export" />
@@ -32,7 +32,7 @@ La création du fichier Excel peut être réalisé par différentes méthodes. U
 
 Ci-dessous la méthode `export` de la classe `ExportAction` :
 
-``` java
+```java
 public Event export(RequestContext context) throws Exception {
     HSSFWorkbook workbook = new HSSFWorkbook();
     buildExcelDocument(workbook, context);
@@ -60,7 +60,7 @@ Deux choses à remarquer :
 
 Exemple d'intégration à une vue existante :
 
-``` xml
+```xml
 <view-state id="usersView" view="users">
     <transition on="export" to="exportView"/>
 </view-state>
@@ -72,7 +72,7 @@ Nous avons vu comment exporter un fichier Excel à partir d'une vue classique Sp
 
 ### Classe WebFlowUtils
 
-``` java
+```java
 package utils;
 
 import java.util.Locale;

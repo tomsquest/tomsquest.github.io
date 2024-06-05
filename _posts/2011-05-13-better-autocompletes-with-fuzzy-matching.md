@@ -16,7 +16,7 @@ In this article, we will use the [Levenshtein distance algorithm](https://secure
 
 Using the Levenshtein algorithm, we get a distance between two strings. This gives for example :
 
-``` ruby
+```ruby
 $ distance("sinatra", "sinatra") #= 0, equality
 $ distance("sinatra", "senatra") #= 1, one permutation
 $ distance("sinatra", "rails") #= 6, many permutation
@@ -40,7 +40,7 @@ The JQuery Autocomplete widget is simple to setup. The source is defined to call
 
 #### 1. Add an input
 
-``` html
+```html
 <div class="ui-widget">
  <label for="country">Country:</label>
  <input id="country" />
@@ -49,7 +49,7 @@ The JQuery Autocomplete widget is simple to setup. The source is defined to call
 
 #### 2. Bind the JS
 
-``` javascript
+```javascript
 $(function() {
   $("#country").autocomplete({
     source: "countries",
@@ -64,7 +64,7 @@ $(function() {
 
 Even simpler, the backend is a simple get method which respond with JSON :
 
-``` ruby
+```ruby
 get "/countries" do
  content_type :json
  find_countries(params[:term]).to_json
@@ -73,7 +73,7 @@ end
 
 The real stuff is in the "find_countries" method :
 
-``` ruby
+```ruby
 def find_countries(term)
   # Exact match
   countries = COUNTRIES.find{|c| c.downcase == term.downcase}.to_a

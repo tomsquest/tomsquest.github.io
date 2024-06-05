@@ -20,7 +20,7 @@ Et mappons-les dans une même table :
 
 Le mapping Hibernate devient :
 
-``` xml
+```xml
 <hibernate-mapping package="com.tomsquest">
     <class name="Person" table="t_person">
         <id name="id" column="id">

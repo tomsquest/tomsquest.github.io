@@ -37,7 +37,7 @@ ui.Container(uid: "google_start_page"){
 
 Le TestCase associé :
 
-``` java
+```java
 public class GoogleStartPageJavaTestCase extends TelluriumJavaTestCase {
     protected static NewGoogleStartPage ngsp;
     @BeforeClass
@@ -59,7 +59,7 @@ Tellurium permet d'écrire les cas de tests directement en utilisant la syntaxe 
 
 Exemple :
 
-``` 
+```
 openUrl "http://www.google.com"
 type "google_start_page.searchbox", "Tellurium Selenium"
 pause 500

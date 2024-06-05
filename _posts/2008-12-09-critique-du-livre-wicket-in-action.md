@@ -20,7 +20,7 @@ Wicket permet de séparer l'HTML et le code Java. Les pages HTML restent à 99% 
 
 Voici un exemple d'un titre HTML, parfaitement valide au niveau HTML :
 
-``` html
+```html
 <h1 wicket:id="message">Hello, World!</h1>
 ```
 
