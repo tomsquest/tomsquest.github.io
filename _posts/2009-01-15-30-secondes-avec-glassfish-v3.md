@@ -4,7 +4,7 @@ slug: 30-secondes-avec-glassfish-v3
 date: 2009-01-15T00:00:00Z
 ---
 
-<img src="/img/posts/2009/01/glassfish_logo.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/01/glassfish_logo.jpg" style="float:right"/>
 
 [Glassfish](https://glassfish.dev.java.net/), le serveur d'app dont on entend parler [un peu partout](http://www.touilleur-express.fr/2009/01/14/compte-rendu-de-la-soiree-du-paris-jug-sur-jee6-et-glassfish/).
 

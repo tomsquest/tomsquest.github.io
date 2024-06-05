@@ -4,7 +4,7 @@ slug: critique-du-livre-dont-make-me-think
 date: 2009-01-14T00:00:00Z
 ---
 
-<img src="/img/posts/2009/01/dmmt-cover-2nd.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/01/dmmt-cover-2nd.jpg" style="float:right"/>
 
 J'ai eu le plaisir de lire le livre de Steve Krug « [Don't Make Me Think](http://sensible.com/buythebook.html) » dont le sujet est l'usabilité Web. L'usabilité, c'est la conception d'un site afin qu'il fonctionne au mieux. Pourquoi faire un site utilisable ? Steve Krug cite sa femme : « Si quelque chose est difficile à utiliser, alors je l'utilise moins ».
 
@@ -24,7 +24,7 @@ Il propose dans son livre des conseils pour ceux qui n'ont pas les moyens d'emba
 
 ## Le livre
 
-<img src="/img/posts/2009/01/dmmt-cover-fr-je-ne-veux-pas-chercher.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/01/dmmt-cover-fr-je-ne-veux-pas-chercher.jpg" style="float:right"/>
 
 C'est un bel objet, on prend plaisir à le feuilleter. Il est aéré et son contenu est bien mis en valeur. Il contient beaucoup d'illustrations et de captures d'écran pour montrer par exemple les d'améliorations avant/après (convainquant !).
 
@@ -32,7 +32,7 @@ Le livre a été traduit sous le titre « [Je ne veux pas chercher](http://www.a
 
 ## Mon avis
 
-![](/img/posts/2009/01/dmmt-usability-glance.png)
+![](/assets/images/posts/2009/01/dmmt-usability-glance.png)
 
 Je recommande chaudement ce livre qui se veut très simple d'accès, intéressant et agréable à lire. Il m'a fait prendre conscience de nombreuses choses, aussi bien sur comment les utilisateurs voient un site, que les tests utilisateurs ou encore l'accessibilité. Le livre m'a étonné plusieurs fois. Et ça, c'est ce que je lui demandais.
 
@@ -42,7 +42,7 @@ Le livre une remise à plat de ce que l'on pense au niveau ergonomie et concepti
 
 ## Test Driven Website
 
-<img src="/img/posts/2009/01/dmmt-webdesignfunnies1.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/01/dmmt-webdesignfunnies1.jpg" style="float:right"/>
 
 Un des chapitres qui m'a le plus marqué dans le livre est celui où Steve Krug affirme que les discussions sur l'usabilité sont une perte de temps.
 
@@ -65,7 +65,7 @@ Cet aspect « bon sens » se retrouve dans chaque chapitre. L'auteur a réussi p
 
 ## L'accessibilité
 
-<img src="/img/posts/2009/01/screenshot001.jpg" style="float:right"/>
+<img src="/assets/images/posts/2009/01/screenshot001.jpg" style="float:right"/>
 
 Steve Krug expliquent que les aveugles scannent les pages, comme nous le faisons, mais de manière auditive. Les « screen readers » qui lisent les pages sont réglés pour lire très rapidement les premiers mots des phrases, permettant à l'utilisateur de sauter de section en section.
 

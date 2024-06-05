@@ -4,7 +4,7 @@ slug: selenium-boostez-vos-tests-avec-tellurium
 date: 2008-10-29T00:00:00Z
 ---
 
-<img src="/img/posts/2008/10/tellurium.png" style="float:right"/>
+<img src="/assets/images/posts/2008/10/tellurium.png" style="float:right"/>
 
 Au commencement, vous écriviez vos tests Selenium en HTML. Mais cela posait des problèmes : aucune factorisation possible, pas de setUp()/tearDown()...
 

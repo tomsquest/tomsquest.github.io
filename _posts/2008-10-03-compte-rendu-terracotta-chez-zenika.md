@@ -4,7 +4,7 @@ slug: compte-rendu-terracotta-chez-zenika
 date: 2008-10-03T00:00:00Z
 ---
 
-<img src="/img/posts/2008/10/logo_terracotta.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/10/logo_terracotta.jpg" style="float:right"/>
 
 J'ai assisté hier à la présentation de [Terracotta](http://www.terracotta.org/) par son CTO et co-fondateur, Ari Zilka, organisé par la société [Zenika](http://www.zenika.com/).
 

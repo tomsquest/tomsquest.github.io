@@ -8,7 +8,7 @@ date: 2008-11-12T00:00:00Z
 
 Il est accessible par : [Maven The Definitive Guide](http://blogs.sonatype.com/people/book/2008/11/11/searching-the-maven-repository/).
 
-![](/img/posts/2008/11/sonatype_nexus.jpeg)
+![](/assets/images/posts/2008/11/sonatype_nexus.jpeg)
 
 La news vient du blog du livre [Maven The Definitive Guide](http://blogs.sonatype.com/people/book/2008/11/11/searching-the-maven-repository/).
 

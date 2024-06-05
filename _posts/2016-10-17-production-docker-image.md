@@ -4,7 +4,7 @@ slug: production-docker-image
 date: 2016-10-17T00:00:00Z
 ---
 
-![Book cover](/img/posts/docker.png)
+![Book cover](/assets/images/posts/docker.png)
 
 As I am self-hosting a couple of services, mainly for keeping my data for myself (Sorry Google, Facebook), I tried to build a "production-grade docker image". Here's my attempt and what I learnt along the way.
 

@@ -4,7 +4,7 @@ slug: gwt-et-les-questions-des-juggers
 date: 2008-11-05T00:00:00Z
 ---
 
-<img src="/img/posts/2008/11/gwt.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/11/gwt.jpg" style="float:right"/>
 
 Hier, le JUG parisien s'est retrouvé pour une présentation de [GWT](http://code.google.com/webtoolkit/) et de  [REST-GWT](http://code.google.com/p/gwt-rest/).
 

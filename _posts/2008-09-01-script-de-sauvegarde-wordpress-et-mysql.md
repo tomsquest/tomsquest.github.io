@@ -45,7 +45,7 @@ Je vous conseille fortement de planifier le lancement de ce script. Par exemple,
 
 ## Contenu du script
 
-``` bash
+```bash
 #!/bin/sh
 
 echo "### Backup running..."

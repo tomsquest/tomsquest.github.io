@@ -4,7 +4,7 @@ slug: export-excel-avec-spring-web-flow
 date: 2008-08-31T00:00:00Z
 ---
 
-<img src="/img/posts/spring-webflow-logo.jpg" style="float:right"/>
+<img src="/assets/images/posts/spring-webflow-logo.jpg" style="float:right"/>
 
 [Spring Web Flow](http://www.springframework.org/webflow) s'intègre à merveille à Spring MVC pour l'enchaînement des pages. Son rôle essentiel est de sortir la logique de navigation des contrôleurs.
 

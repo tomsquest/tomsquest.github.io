@@ -4,7 +4,7 @@ slug: rencontre-avec-jerome-louvel-auteur-de-restlet
 date: 2008-11-11T00:00:00Z
 ---
 
-<img src="/img/posts/2008/11/restlet-logo.gif" style="float:right"/>
+<img src="/assets/images/posts/2008/11/restlet-logo.gif" style="float:right"/>
 
 Suite au dernier JUG, Jérôme Louvel, l'auteur de Restlet, a bien voulu répondre à mes questions. Les sujets incluent les apports de REST, à qui il est destiné, JAX-RS et l'intégration à un existant.
 
@@ -17,7 +17,7 @@ Ensuite, pour le besoin d'un projet interne, j'ai voulu exploiter au mieux les s
 
 #### Dans quels buts as-tu fondé la société Noelios Technologies ?
 
-<img src="/img/posts/2008/11/noelios-logo.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/11/noelios-logo.jpg" style="float:right"/>
 
 [Noelios Technologies](http://www.noelios.com/) a été créé pour accompagner nos clients dans la réalisation de leurs idées Web, au sens large. Nous apportons bien sûr notre expertise autour de REST et de Restlet avec différentes sortes de prestations, du support technique au développement spécifique en passant par la vente de licences commerciales au cas où la LGPL pose un problème.
 
@@ -81,7 +81,7 @@ Le plus simple c'est de voir un exemple: [http://www.mnot.net/webdesc/](http://w
 
 #### Tu m'as convaincu, demain, je veux faire du REST sur mon application, par où dois-je commencer ?
 
-<img src="/img/posts/2008/11/oreilly-book-restful-web-services.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/11/oreilly-book-restful-web-services.jpg" style="float:right"/>
 
 La bible REST est le livre d'O'Reilly, auquel nous avons d'ailleurs contribué une partie sur Restlet : http://www.restlet.org/documentation/books
 

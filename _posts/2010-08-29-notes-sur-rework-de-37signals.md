@@ -4,7 +4,7 @@ slug: notes-sur-rework-de-37signals
 date: 2010-08-29T00:00:00Z
 ---
 
-<img src="/img/posts/rework_cover.jpg" style="float:right"/>
+<img src="/assets/images/posts/rework_cover.jpg" style="float:right"/>
 
 Mes notes sur le deuxième livre de la société 37signals, [Rework](http://37signals.com/rework/). Il fait suite à Getting Real. J'ai avalé rapidement le livre car les idées sont tranchantes, inspirantes et quelque fois révoltantes. Mais le but est là : réaliser qu'il y a d'autres façons de faire du business. de concevoir son entreprise et de travailler.
 

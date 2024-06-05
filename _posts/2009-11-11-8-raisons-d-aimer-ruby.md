@@ -4,7 +4,7 @@ slug: 8-raisons-d-aimer-ruby
 date: 2009-11-11T00:00:00Z
 ---
 
-<img src="/img/posts/ruby_logo.png" style="float:right"/>
+<img src="/assets/images/posts/ruby_logo.png" style="float:right"/>
 Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé pour faire de vraies choses (même en prod !). Cet article contient 8 points qui font de Ruby un très bon langage et une plateforme de choix pour réaliser ses futurs projets.
 
 ## Plus productif

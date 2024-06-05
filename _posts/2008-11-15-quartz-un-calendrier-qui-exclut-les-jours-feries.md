@@ -4,7 +4,7 @@ slug: quartz-un-calendrier-qui-exclut-les-jours-feries
 date: 2008-11-15T00:00:00Z
 ---
 
-<img src="/img/posts/2008/11/quartz_logo.jpg" style="float:right"/>
+<img src="/assets/images/posts/2008/11/quartz_logo.jpg" style="float:right"/>
 
 L'idée part d'un besoin simple : lancer un job [Quartz](http://www.opensymphony.com/quartz/) toutes les heures ouvrées, hors week-end et jours fériés.
 

@@ -4,7 +4,7 @@ slug: review-play-framework-cookbook
 date: 2011-10-06T00:00:00Z
 ---
 
-<img src="/img/posts/play_framework_cookbook.jpg" style="float:right"/>
+<img src="/assets/images/posts/play_framework_cookbook.jpg" style="float:right"/>
 
 Play!, the framework for the bored Java developers ! Very interesting and opinated framework.
 I didn't play with it a lot in the previous months, but the new book ["Play Framework Cookbook"](http://www.packtpub.com/play-framework-cookbook/book) by Packt Publishing, 
