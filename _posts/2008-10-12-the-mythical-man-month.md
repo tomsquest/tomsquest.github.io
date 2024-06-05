@@ -26,9 +26,9 @@ Troisièmement, restons plus terre à terre. C'est un livre en anglais mais asse
 
 ## Dois-je conseiller ce livre à mon chef de projet/manager ?
 
-Oui, ce livre est intéressant pour les chefs de projet et les managers. Certains chapitres ont plus d'intérêts que d'autres. Parmi ceux-ci, les parties documentation, planification et communication fournissent des thèmes récurrents dans les projets. Cet ouvrage permet également d'ouvrir les yeux sur certains sujets. Par exemple :
+Oui, ce livre est intéressant pour les chefs de projet et les managers. Certains chapitres ont plus d'intérêts que d'autres. Parmi ceux-ci, les parties documentation, planification et communication fournissent des thèmes récurrents dans les projets. Cet ouvrage permet également d'ouvrir les yeux sur certains sujets. Par exemple :
 
-* En cas de retard sur votre projet, est-ce qu'ajouter une personne me permettra de rattraper ce retard ;
+* En cas de retard sur votre projet, est-ce qu'ajouter une personne me permettra de rattraper ce retard ;
 * Est-ce que je gère un planning qui me permet de gérer les priorités en cas de retard ;
 * Comment je gère ma documentation, comment je la maintiens et comment la partager entre     ceux qui l'écrivent et ceux qui la lisent.
 
@@ -42,12 +42,12 @@ J'aime développer et si vous lisez ce blog, c'est certainement que vous aussi. 
 
 ### The Mythical Man Month (chap 2)
 
-C'est la thèse la plus connue : ajouter des hommes à un projet en retard, ne le met que davantage en retard. Pourquoi ? Car il faut former les nouvelles personnes. Car la communication doit être encore plus large. Car la répartition du travail est plus dure. L'auteur explique également que le manque de temps est le premier facteur d'échec des projets. En effet, certaines tâches prennent du temps et les raccourcir se fera forcément au détriment d'autres tâches.
+C'est la thèse la plus connue : ajouter des hommes à un projet en retard, ne le met que davantage en retard. Pourquoi ? Car il faut former les nouvelles personnes. Car la communication doit être encore plus large. Car la répartition du travail est plus dure. L'auteur explique également que le manque de temps est le premier facteur d'échec des projets. En effet, certaines tâches prennent du temps et les raccourcir se fera forcément au détriment d'autres tâches.
 
 ### The surgical team (chap 3)
 
 Organiser son équipe comme dans un bloc opératoire : un chirurgien opère et les infirmières assistent. Est-ce que cela peut être appliqué à une équipe informatique ? L'idée est qu'il faut quelqu'un pour garder l'intégrité du projet et le reste pour suivre et l'aider dans ses tâches.
-Je doute fortement que ce type d'organisation puisse fonctionner longtemps ; pour une raison simple : personne n'a envie d'avoir un rôle subalterne. Je n'imagine pas comment cela pourrait s'appliquer dans un projet informatique car les rôles sont multiples et les tâches souvent transverses.
+Je doute fortement que ce type d'organisation puisse fonctionner longtemps ; pour une raison simple : personne n'a envie d'avoir un rôle subalterne. Je n'imagine pas comment cela pourrait s'appliquer dans un projet informatique car les rôles sont multiples et les tâches souvent transverses.
 
 ### Why did the tower of Babel fails (chap 7)
 
@@ -67,11 +67,11 @@ La plupart des problèmes viennent des choses qui n'ont jamais été réellement
 
 ### Hatching a catastrophe (chap 14)
 
-Comment un projet devient en retard ? Un jour à la fois. Comment savoir si on est en retard ? Il faut un planning avec des dates de fin estimées. Sans planning, les priorités ne sont pas fixées. L'auteur recommande de l'établir avec des étapes concrètes, spécifiques et mesurables. Celui-ci fournira un chemin critique permettant de savoir ce qui importe. La préparation du chemin critique est la principale raison de l'existence du planning car elle permet de voir les dépendances, le réseau, l'estimation des étapes et cela très tôt dans le projet. L'auteur insiste également sur les revues techniques qui donnent un statut réel, connu de tous. Cette étape ferait partie du planning et pourrait être documentée.
+Comment un projet devient en retard ? Un jour à la fois. Comment savoir si on est en retard ? Il faut un planning avec des dates de fin estimées. Sans planning, les priorités ne sont pas fixées. L'auteur recommande de l'établir avec des étapes concrètes, spécifiques et mesurables. Celui-ci fournira un chemin critique permettant de savoir ce qui importe. La préparation du chemin critique est la principale raison de l'existence du planning car elle permet de voir les dépendances, le réseau, l'estimation des étapes et cela très tôt dans le projet. L'auteur insiste également sur les revues techniques qui donnent un statut réel, connu de tous. Cette étape ferait partie du planning et pourrait être documentée.
 
 ### No Silver Bullet - Essence and accident (chap 16)
 
-Fred Brooks avait prédit en 1986 qu'il n'y aurait pas de gain important de productivité pendant les 10 prochaines années. Il a apparemment eu raison (moi, je n'y étais pas ;) ). Ce chapitre intègre les notions d'[accident](http://en.wikipedia.org/wiki/Accidental_complexity) et d'[essence](http://en.wikipedia.org/wiki/Essential_complexity) (difficile d'expliquer donc je renvoie vers Wikipedia).
+Fred Brooks avait prédit en 1986 qu'il n'y aurait pas de gain important de productivité pendant les 10 prochaines années. Il a apparemment eu raison (moi, je n'y étais pas ;) ). Ce chapitre intègre les notions d'[accident](http://en.wikipedia.org/wiki/Accidental_complexity) et d'[essence](http://en.wikipedia.org/wiki/Essential_complexity) (difficile d'expliquer donc je renvoie vers Wikipedia).
 
 ## Note finale
 

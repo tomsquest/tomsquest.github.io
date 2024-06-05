@@ -63,7 +63,7 @@ Je n'aime pas :
 
 * Le fait de ne pas avoir une intégration/réutilisabilité complète avec Maven (la faute aux Plugins apparemment) ;
 * Le trop peu de convention, même si c'est le but du projet, car les conventions permettent d'entrer dans l'entreprise pour éviter que chacun puisse faire ce qu'il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu'on ne puisse pas poser une structure à respecter. Ce serait l'équivalent des normes de codages ;
-* Il n'est pas à  mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostique, des performances ?)
+* Il n'est pas à  mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostique, des performances ?)
 * La jeunesse du projet qui ne garantit pas encore une pérennité suffisante pour l'entreprise.
 
 ## Pour allez plus loin

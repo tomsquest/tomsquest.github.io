@@ -14,8 +14,8 @@ Le projet contient deux configurations de JPA : l'une pour le déploiement, util
 
 Les PersistentUnits sont configurés par :
 
-* le fichier « persistence.xml » pour Glassfish, l'attribut transaction-type doit valoir « JTA », sinon Glassfish refuse de démarrer ;
-* le fichier « orm.xml » pour les test. L'Attribut transaction-type vaut « RESOURCE_LOCAL »
+* le fichier « persistence.xml » pour Glassfish, l'attribut transaction-type doit valoir « JTA », sinon Glassfish refuse de démarrer ;
+* le fichier « orm.xml » pour les test. L'Attribut transaction-type vaut « RESOURCE_LOCAL »
 
 Spring est lui aussi configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.
 
@@ -62,7 +62,7 @@ CREATE TABLE Tag (
 
 ### NoClassDefFoundError: javax/interceptor/InvocationContext
 
-Cette erreur est visible au lancement de Glassfish mais elle n'impacte pas le fonctionnement de l'application. Apparemment, un Glassfish v3 n'aurait pas les Jars EJB par défaut, comme dit dans [ce message](http://markmail.org/message/j3p4jj4o6q27wfhn). Je n'ai pas poussé plus loin, « if it works, don't try to fix it ».
+Cette erreur est visible au lancement de Glassfish mais elle n'impacte pas le fonctionnement de l'application. Apparemment, un Glassfish v3 n'aurait pas les Jars EJB par défaut, comme dit dans [ce message](http://markmail.org/message/j3p4jj4o6q27wfhn). Je n'ai pas poussé plus loin, « if it works, don't try to fix it ».
 
 Détail de l'erreur pour info :
 
@@ -73,7 +73,7 @@ WARNING: Error in annotation processing: java.lang.NoClassDefFoundError: javax/i
 
 ## Maven
 
-Les dépendances dans le pom.xml ont été limitées au maximum. Pour démarrer, il faut :
+Les dépendances dans le pom.xml ont été limitées au maximum. Pour démarrer, il faut :
 
 * Spring et Spring-test pour les tests d'intégration JPA ;
 * Hibernate entity manager, c'est l'implémentation JPA utilisé pour les tests d'intégration. Elle fournit aussi un lien vers le package javax.persistence ;

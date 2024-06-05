@@ -6,7 +6,7 @@ date: 2009-04-27T00:00:00Z
 
 <img src="/assets/images/posts/tdw_camp.jpg" style="float:right"/>
 
-Samedi a eu lieu le premier [Barcamp TDW](http://barcamp.pbwiki.com/TravailleursDuWebCamp) destinés aux personnes travaillant dans le Web ou s'y intéressant : designers, développeurs, webmasters, curieux et même un mec qui fait du Java (vous avez deviné qui).
+Samedi a eu lieu le premier [Barcamp TDW](http://barcamp.pbwiki.com/TravailleursDuWebCamp) destinés aux personnes travaillant dans le Web ou s'y intéressant : designers, développeurs, webmasters, curieux et même un mec qui fait du Java (vous avez deviné qui).
 
 Le but du Barcamp était de faire rencontrer les acteurs du Web afin d'échanger des points de vues et des idées, ainsi que de passer un moment convivial. Mission réussie.
 
@@ -27,7 +27,7 @@ J'ai tenu mon rôle en expliquant que Java était donc disponible (presque) part
 
 Oui, l'Iphone se porte bien avec ses 1 milliard d'application téléchargés en deux ans (cf [cette news sur techcrunch](http://fr.techcrunch.com/2009/04/24/bientot-deux-ans-un-milliard-dapplications-telechargees-liphone-se-porte-a-merveille/)).
 
-Les principales contraintes de développement sur mobile sont :
+Les principales contraintes de développement sur mobile sont :
 
 * la taille de l'écran
 * la rapidité de réception/envoi     des données
@@ -35,9 +35,9 @@ Les principales contraintes de développement sur mobile sont :
 
 Pour Rémi, la principale limitation est le débit de réception. En effet, il faut éviter de streamer trop de données au risque de gâcher l'expérience utilisateur.
 
-Certaines applications sont designées entièrement au type de téléphone. Facebook est cité et démonstration à l'appui : le Facebook de Symbian et celui de l'Iphone sont bien deux interfaces complètement distinctes. Du point de vue financier, seulement certains éditeurs vont se permettre de développer une interface par téléphone. A quand une homogénéisation ?
+Certaines applications sont designées entièrement au type de téléphone. Facebook est cité et démonstration à l'appui : le Facebook de Symbian et celui de l'Iphone sont bien deux interfaces complètement distinctes. Du point de vue financier, seulement certains éditeurs vont se permettre de développer une interface par téléphone. A quand une homogénéisation ?
 
-A ma question : "le Web Mobile pour quels usages ?". Je n'ai pas eu de réponse claire : oui pour les mails, la géo-localisation, les news, twitter... Mais est-ce tout ? Pas de réponse franche, mais une chose est sûre : le mobile est une nouvelle console de jeu et sert aussi de gadgets (avec en preuve cette application IPhone qui affiche des chiens en train de lécher l'intérieur de l'écran, si si, j'vous jure, 79 centimes sur l'AppStore). Quasiment tout le monde autour de la table a déjà acheté plusieurs applications sur Iphone.
+A ma question : "le Web Mobile pour quels usages ?". Je n'ai pas eu de réponse claire : oui pour les mails, la géo-localisation, les news, twitter... Mais est-ce tout ? Pas de réponse franche, mais une chose est sûre : le mobile est une nouvelle console de jeu et sert aussi de gadgets (avec en preuve cette application IPhone qui affiche des chiens en train de lécher l'intérieur de l'écran, si si, j'vous jure, 79 centimes sur l'AppStore). Quasiment tout le monde autour de la table a déjà acheté plusieurs applications sur Iphone.
 
 Le Wap est mort, je suis triste. En plus, j'ai enterré mon minitel la semaine dernière.
 
@@ -57,7 +57,7 @@ Mais attention, on me souffle à l'oreille que le statut d'auto-entrepreneur eng
 
 Au niveau de la concrétisation, un freelance jouît d'une plus grande liberté. Tous les freelances à la table organisent leur journée à leur convenance. La liberté est en effet un des attraits du statut. Travailler tôt ou tard, faire sa veille quotidienne, coder, toutes ces tâches s'enchaînent différemment selon les individus.
 
-La crise ! Ah, le gros mot. Au final pas grand monde pour me dire que la crise se fait durement sentir. Grosse surprise, pour Sébastien d'[Altrasys](http://www.altrasys.fr), la crise lui a apporté de nouveaux clients. Ceux-ci ne veulent plus payer pour des licences Windows onéreuses, ils veulent de l'OpenSource car c'est gratuit et non parce que c'est mieux.
+La crise ! Ah, le gros mot. Au final pas grand monde pour me dire que la crise se fait durement sentir. Grosse surprise, pour Sébastien d'[Altrasys](http://www.altrasys.fr), la crise lui a apporté de nouveaux clients. Ceux-ci ne veulent plus payer pour des licences Windows onéreuses, ils veulent de l'OpenSource car c'est gratuit et non parce que c'est mieux.
 
 Au niveau des contrats/paiement, la méthode "forfait puis à l'heure travaillée" semble convenir. Certaines personnes ont eu des problèmes de règlement quand le client fait le difficile pour payer la dernière partie de l'ardoise. Il faut bien s'arranger pour que cette dernière partie soit le "bonus", le bénéfice. Autrement dit, il ne faut pas compter dessus pour vivre et continuer à exercer son travail.
 
@@ -65,7 +65,7 @@ Au niveau des contrats/paiement, la méthode "forfait puis à l'heure travaillé
 
 Cette session visait à échanger autour du statut de SCOP (Société Coopérative de Production). C'est, de façon simplifié, une forme d'entreprise à but social (par exemple, tous les salariés ont droit de vote).
 
-Mes notes ne seront jamais aussi complètes que la documentation de cette forme d'entreprise. Je vous renvoie à :
+Mes notes ne seront jamais aussi complètes que la documentation de cette forme d'entreprise. Je vous renvoie à :
 
 * Wikipedia pour la [définition de SCOP](http://fr.wikipedia.org/wiki/Scop)
 * Un de mes compte-rendus traite aussi du sujet : [Ma petite entreprise ne connaît pas la crise](http://www.tomsquest.com/blog/entreprendre-au-jug2b/)
@@ -84,7 +84,7 @@ Sous cet angle de la réduction des intermédiaires, Babozor de [TDW](http://www
 
 On parle également d'identité des entreprises. Il est possible de devenir l'identité d'un domaine ou, autrement dit, la personne de référence d'un secteur, d'une marque ou d'une entreprise. Babozor explique cette personne qui twittait tout ce qui se faisait sur CNN et qui est ainsi devenu le représentant CNN non-officiel. Son compte Twitter a depuis été racheté par la société. Et vous, deviendrez-vous un porte-parole d'une marque par votre activité sur le Web ? Y a-t-il des places à prendre ?
 
-Pour revenir au sujet initial côté horaire de travail, Sébastien d'Altrasys se fixe sur ceux des bureaux : 9h-18h. Il souhaite limiter ses activités afin de ne pas dépasser et s'offrir une vraie coupure travail/Vie. Cela n'est pas facile quand on travaille de chez soi. De même, il ne répondra qu'exceptionnellement aux mails tardifs à 11h du soir afin de ne pas envoyer de message "je suis corvéable, allez-y à n'importe quelle heure".
+Pour revenir au sujet initial côté horaire de travail, Sébastien d'Altrasys se fixe sur ceux des bureaux : 9h-18h. Il souhaite limiter ses activités afin de ne pas dépasser et s'offrir une vraie coupure travail/Vie. Cela n'est pas facile quand on travaille de chez soi. De même, il ne répondra qu'exceptionnellement aux mails tardifs à 11h du soir afin de ne pas envoyer de message "je suis corvéable, allez-y à n'importe quelle heure".
 
 ## Conclusion
 
