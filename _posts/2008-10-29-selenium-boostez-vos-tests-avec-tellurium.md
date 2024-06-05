@@ -6,7 +6,7 @@ date: 2008-10-29T00:00:00Z
 
 <img src="/assets/images/posts/2008/10/tellurium.png" style="float:right"/>
 
-Au commencement, vous écriviez vos tests Selenium en HTML. Mais cela posait des problèmes : aucune factorisation possible, pas de setUp()/tearDown()...
+Au commencement, vous écriviez vos tests Selenium en HTML. Mais cela posait des problèmes : aucune factorisation possible, pas de setUp()/tearDown()...
 
 Puis, vous avez commencé à [écrire vos tests en Java](http://www.tomsquest.com/blog/2008/09/selenium-en-java-demarrage-rapide/) et la vie fut plus belle. Mais cela devint verbeux et vous développiez de plus en plus de code custom pour améliorer vos tests. Et vous vous demandiez comment faire encore mieux...
 
@@ -22,9 +22,9 @@ Qu'est-ce qu'il y a dans la boite ?
 
 ## La possibilité de structurer ses tests
 
-Tellurium offre la possibilité de décrire la structure des éléments d'une page. C'est ce qui est appelé OLM pour « Object To Locator Mapping ».
+Tellurium offre la possibilité de décrire la structure des éléments d'une page. C'est ce qui est appelé OLM pour « Object To Locator Mapping ».
 
-Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d'une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d'UI. Je pense qu'il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre « tout au même endroit. ».
+Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d'une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d'UI. Je pense qu'il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre « tout au même endroit. ».
 
 Exemple de description de la page d'accueil de google.fr :
 
@@ -74,7 +74,7 @@ Les avantages sont :
 
 ## Support des données de tests
 
-Tellurium propose d'associer des données aux tests. C'est ce que les auteurs nomment « Data Driven Test ». Le moteur se charge de lire les données et les injectent dans les tests. C'est en quelque sorte ce que l'on fait dans les tableaux [FitNesse](http://fitnesse.org/) mais directement intégré au TestCase.
+Tellurium propose d'associer des données aux tests. C'est ce que les auteurs nomment « Data Driven Test ». Le moteur se charge de lire les données et les injectent dans les tests. C'est en quelque sorte ce que l'on fait dans les tableaux [FitNesse](http://fitnesse.org/) mais directement intégré au TestCase.
 
 Un jeu de données de test ressemble à ça :
 
@@ -90,7 +90,7 @@ Tellurium posséde un projet de référence pour Eclipse (mais aussi pour Intell
 
 Le projet est également mavenisé : [http://code.google.com/p/aost/wiki/MavenHowTo](http://code.google.com/p/aost/wiki/MavenHowTo)
 
-Le plugin Groovy pour Eclipse peut être utile. Il est trouvable ici : [http://dist.codehaus.org/groovy/distributions/update/](http://dist.codehaus.org/groovy/distributions/update/)
+Le plugin Groovy pour Eclipse peut être utile. Il est trouvable ici : [http://dist.codehaus.org/groovy/distributions/update/](http://dist.codehaus.org/groovy/distributions/update/)
 
 ## Conclusion
 

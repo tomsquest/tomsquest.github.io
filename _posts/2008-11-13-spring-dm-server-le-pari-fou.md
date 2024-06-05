@@ -18,13 +18,13 @@ Comment SpringSource va tenter de convaincre la Prod de l'intérêt de son serve
     * Rechargement à chaud (OSGI est passé par là),
     * Partenariat avec Terracotta : garantir le fonctionnement du serveur avec ce produit, offir du support et de la formation,
 * En certifiant son serveur d'application comme pouvant faire fonctionner les applications Spring d'ancienne génération (1.x par exemple). Encore merci à OSGI et ses classloaders ;-) ;
-* En vendant des « Perf Packs » pour certains backends. Ainsi le « Perf Packs » Oracle permettra par exemple de réaliser du fail-over de connexion en gardant le contexte transactionnel.
+* En vendant des « Perf Packs » pour certains backends. Ainsi le « Perf Packs » Oracle permettra par exemple de réaliser du fail-over de connexion en gardant le contexte transactionnel.
 
 Une phrase de Julien Dubois qui résume bien ce positionnement :
 
 > SpringSource gèrera à la fois le développement et le déploiement
 
-Peter Cooper-Elis, en charge de la gamme des produits SpringSource, a également distinctement montré l'implication de la société dans la partie « Deploy ». La société n'est plus qu'un framework mais propose un vrai triplet : développement, déploiement et support.
+Peter Cooper-Elis, en charge de la gamme des produits SpringSource, a également distinctement montré l'implication de la société dans la partie « Deploy ». La société n'est plus qu'un framework mais propose un vrai triplet : développement, déploiement et support.
 
 La roadmap de Spring DM est :
 

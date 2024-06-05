@@ -16,17 +16,17 @@ La base de GreenPepper est le concept de spécification exécutable. Une spec es
 
 Dans la pratique, la création d'une spécification exécutable avec GreenPepper prend la forme suivante :
 
-* La MOA se connecte au Wiki et exprime sa règle métier en bon français ;
-* Elle décrit également comment tester la fonctionnalité. La syntaxe se fait à base de tableaux qui permettent au système d'extraire les méthodes et données de test à utiliser ;
-* L'équipe de développement écrit ensuite le liant entre la page de test et le code réel. Ce branchement est appelé « fixture ».
+* La MOA se connecte au Wiki et exprime sa règle métier en bon français ;
+* Elle décrit également comment tester la fonctionnalité. La syntaxe se fait à base de tableaux qui permettent au système d'extraire les méthodes et données de test à utiliser ;
+* L'équipe de développement écrit ensuite le liant entre la page de test et le code réel. Ce branchement est appelé « fixture ».
 
 ### Exemple de spécification fonctionnelle
 
 ![](/assets/images/posts/2008/12/gp-test2.jpg)
 
-Chaque page GreenPepper dispose d'un bouton « Execute » qui permet d'appeler les fixtures avec les paramètres du tableau. L'appui sur ce bouton invoque le système testé qui récupère dans la page les classes à créer et invoque les méthodes avec les données.
+Chaque page GreenPepper dispose d'un bouton « Execute » qui permet d'appeler les fixtures avec les paramètres du tableau. L'appui sur ce bouton invoque le système testé qui récupère dans la page les classes à créer et invoque les méthodes avec les données.
 
-Dans l'exemple ci-dessus, GreenPepper instancie la classe Cart et invoque deux fois la méthode « add » avec en paramètre « Persian Cat » puis « Dalmation » et enfin invoque la méthode numberOfItems. Celle-ci doit retourner 2. Si ce n'est pas le cas, la case du tableau sera coloriée en rouge ou en vert si le résultat est valide.
+Dans l'exemple ci-dessus, GreenPepper instancie la classe Cart et invoque deux fois la méthode « add » avec en paramètre « Persian Cat » puis « Dalmation » et enfin invoque la méthode numberOfItems. Celle-ci doit retourner 2. Si ce n'est pas le cas, la case du tableau sera coloriée en rouge ou en vert si le résultat est valide.
 
 ## Le coin de la technique
 
@@ -36,7 +36,7 @@ GreenPepper est en réalité un plugin pour [Confluence](http://www.atlassian.co
 
 C'est LA différence avec [FitNesse](http://fitnesse.org/), un autre outil très populaire de test fonctionnel. FitNesse embarque son propre serveur Web et son propre Wiki. Chez Pyxis, il a été décidé de s'appuyer sur un outil existant, réputé et fiable.
 
-GreenPepper se contente donc de rentre les pages du Wiki Confluence testables en leur ajoutant des macros et le fameux bouton « Execute » vu plus haut.
+GreenPepper se contente donc de rentre les pages du Wiki Confluence testables en leur ajoutant des macros et le fameux bouton « Execute » vu plus haut.
 
 ## Qualités de GreenPepper
 
@@ -44,11 +44,11 @@ GreenPepper, c'est avant tout Confluence. Ce dernier apporte une plateforme puis
 
 GreenPepper s'intègre également avec Jira, un autre produit Atlassian permettant de faire du bug tracking. On peut donc imaginer avoir un rapport de bug lié à une page de spécification qui contient le test permettant de reproduire le bug.
 
-L'écriture des fixtures peut se faire en Java et en .Net. Une fixture est une simple classe et GreenPepper ne pose aucune contrainte à ce niveau. Le produit propose aussi de créer un SUD (System Under Developement) permettant de réaliser des actions quand une fixture est instanciée/libérée (sorte de « setUp/tearDown »), d'enregistrer des convertisseurs (par exemple, convertir un numéro de client en Client) et d'importer des packages de fixture par défaut. Dans notre SUD actuel, nous démarrons également le contexte Spring afin d'injecter les beans dans les fixtures.
+L'écriture des fixtures peut se faire en Java et en .Net. Une fixture est une simple classe et GreenPepper ne pose aucune contrainte à ce niveau. Le produit propose aussi de créer un SUD (System Under Developement) permettant de réaliser des actions quand une fixture est instanciée/libérée (sorte de « setUp/tearDown »), d'enregistrer des convertisseurs (par exemple, convertir un numéro de client en Client) et d'importer des packages de fixture par défaut. Dans notre SUD actuel, nous démarrons également le contexte Spring afin d'injecter les beans dans les fixtures.
 
 ## Problèmes rencontrés
 
-Nous avons rencontré plusieurs problèmes avec GreenPepper. Nous étions très confiants pour un produit « packagé » comme GreenPepper, mais la machine fut difficile à démarrer.
+Nous avons rencontré plusieurs problèmes avec GreenPepper. Nous étions très confiants pour un produit « packagé » comme GreenPepper, mais la machine fut difficile à démarrer.
 
 ### La documentation
 
@@ -56,20 +56,20 @@ Le plus gros point noir du produit est sa documentation. Elle forme un patchwork
 
 La courbe d'apprentissage n'est donc pas basse. C'est laborieux. La documentation est difficilement compréhensible à la première lecture, voir à la deuxième. Après quelques jours, je commence enfin à en comprendre certaines sections.
 
-Un exemple vécu lors de l'installation : le « step by step » est simple à suivre mais rien ne fonctionnait à la fin. Nous avons du désinstaller le plugin GreenPepper et le réinstaller différemment de ce qui est précisé dans la documentation. Pour cela, il a fallu chercher dans les forums afin de voir qu'il était conseillé d'installer le plugin directement dans WEB-INF/lib (plutôt que par l'installateur Confluence comme indiqué dans la doc).
+Un exemple vécu lors de l'installation : le « step by step » est simple à suivre mais rien ne fonctionnait à la fin. Nous avons du désinstaller le plugin GreenPepper et le réinstaller différemment de ce qui est précisé dans la documentation. Pour cela, il a fallu chercher dans les forums afin de voir qu'il était conseillé d'installer le plugin directement dans WEB-INF/lib (plutôt que par l'installateur Confluence comme indiqué dans la doc).
 
 ### Le plugin Eclipse
 
 Le plugin permet de rapatrier les pages de tests et de les exécuter localement. Il offre la possibilité de générer le squelette des fixtures à partir des pages.
 
-Beaucoup d'options sont proposées et on a du mal à savoir quoi mettre. Il faut un répertoire de spécs que je n'ai pas. Un SUT ? Non, je n'en ai pas (encore). Et le classpath, j'ai celui d'Eclipse, pourquoi j'en utiliserai un autre ?
+Beaucoup d'options sont proposées et on a du mal à savoir quoi mettre. Il faut un répertoire de spécs que je n'ai pas. Un SUT ? Non, je n'en ai pas (encore). Et le classpath, j'ai celui d'Eclipse, pourquoi j'en utiliserai un autre ?
 
 Au bout de quelques heures, ça fonctionne à peu près. Entre temps, on a essayé toutes les options dans tous les sens. C'est rigolo 5 minutes.
 
 A titre d'info, voilà la procédure :
 
-* Ecrire sa page dans Confluence et la marquer comme « Implemented » ;
-* Rafraichir la vue « Repository » dans Eclipse : la page apparaît ;
+* Ecrire sa page dans Confluence et la marquer comme « Implemented » ;
+* Rafraichir la vue « Repository » dans Eclipse : la page apparaît ;
 * Executer une première fois la page depuis le menu de cette vue ;
 * Ouvrir avec le WebBrowser d'Eclipse le HTML de la page crée plus haut (répertoire /greenpepper) ;
 * Executer la page une deuxième fois mais depuis le menu Run d'Eclipse ;
@@ -77,8 +77,8 @@ A titre d'info, voilà la procédure :
 
 ### Autres points :
 
-* Le plugin Eclipse n'est pas stable. La vue se freeze de temps en temps ;
-* Il est en version bêta depuis un moment ;
+* Le plugin Eclipse n'est pas stable. La vue se freeze de temps en temps ;
+* Il est en version bêta depuis un moment ;
 * Eclipse 3.4 n'est pas supporté mais il s'est installé sans soucis.
 
 ### Capture du lancement depuis Eclipse
@@ -86,7 +86,7 @@ A titre d'info, voilà la procédure :
 ![](/assets/images/posts/2008/12/gp-runeclipse.jpg)
 
 ### Le classpath et Maven
-Je n'ai pas mis en place cette partie là sur notre projet actuel donc j'ai peu à en dire. Ah si, une chose : beaucoup de sueur.
+Je n'ai pas mis en place cette partie là sur notre projet actuel donc j'ai peu à en dire. Ah si, une chose : beaucoup de sueur.
 
 Le plugin Maven permet de construire le classpath contenant l'ensemble des dépendances pour permettre à GreenPepper d'appeler les fixtures qui utilisent les classes de votre projet.
 

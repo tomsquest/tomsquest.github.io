@@ -16,7 +16,7 @@ Il permet de :
 * Changer le nom et déplacer les tests lors d'un refactoring
 
 
-Je le trouve vraiment pratique pour switcher d'une méthode aux tests et inversement. Il montre également  les méthodes et classes qui ne sont pas testées et synchronise les tests quand je renomme une méthode. Un vrai gain de temps ! (c'est mon manager qui va être content).
+Je le trouve vraiment pratique pour switcher d'une méthode aux tests et inversement. Il montre également  les méthodes et classes qui ne sont pas testées et synchronise les tests quand je renomme une méthode. Un vrai gain de temps ! (c'est mon manager qui va être content).
 
 ## Quelques infos
 

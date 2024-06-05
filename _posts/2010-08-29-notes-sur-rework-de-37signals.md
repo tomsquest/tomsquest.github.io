@@ -34,11 +34,11 @@ Il est toujours possible de prendre quelques heures dans son planning pour trava
 
 Prendre l’argent d’investisseurs peut ne pas en valoir le coût, car :
 
-* il fait perdre une partie du contrôle : devoir prendre en compte les ordres d'autres personnes par exemple ;
-* il occasionne une baisse de qualité au détriment du retour sur investissement rapide ;
-* Dépenser l'argent des autres est addictif ;
-* C'est souvent un mauvais coup financier (au début, on n'a aucun levier pour gérer mieux le deal) ;
-* Le client ne devient plus le premier objectif, mais les objectifs des investisseurs le deviennent ;
+* il fait perdre une partie du contrôle : devoir prendre en compte les ordres d'autres personnes par exemple ;
+* il occasionne une baisse de qualité au détriment du retour sur investissement rapide ;
+* Dépenser l'argent des autres est addictif ;
+* C'est souvent un mauvais coup financier (au début, on n'a aucun levier pour gérer mieux le deal) ;
+* Le client ne devient plus le premier objectif, mais les objectifs des investisseurs le deviennent ;
 * Obtenir de l'argent prend beaucoup d'énergie et de temps.
 
 ## Start a business, not a startup
