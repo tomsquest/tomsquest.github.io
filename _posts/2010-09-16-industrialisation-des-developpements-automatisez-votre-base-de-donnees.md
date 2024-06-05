@@ -1,4 +1,4 @@
---- 
+---
 title: "Industrialisation des développements : automatisez votre base de données"
 slug: industrialisation-des-developpements-automatisez-votre-base-de-donnees
 date: 2010-09-16T00:00:00Z
@@ -12,18 +12,18 @@ Une première partie de cet article concernera les principes et pratiques autour
 
 Dans son article paru en 2003 intitulé « [Evolutionary Database Design](http://martinfowler.com/articles/evodb.html) », Martin Fowler pose les principes du design évolutif de base de données. Les points clés en sont :
 
-* La base de données évolue en même temps que le code ;
-* Il faut donc tester en continu la base de données pour permettre un refactoring sans conséquence, comme on le fait avec le code source ;
-* Il faut outiller les processus autour de la base de données afin d'améliorer la productivité des développements et leur industrialisation.
+- La base de données évolue en même temps que le code ;
+- Il faut donc tester en continu la base de données pour permettre un refactoring sans conséquence, comme on le fait avec le code source ;
+- Il faut outiller les processus autour de la base de données afin d'améliorer la productivité des développements et leur industrialisation.
 
 Les outils existants reposent sur les principes suivants :
 
-* Un schéma doit pouvoir être détruit et recréé de manière répétable ;
-* La version du schéma doit être identifiable ;
-* La montée et la descente de version doivent être automatisées ;
-* Les changements appliqués doivent être connus ;
-* Un changement doit pouvoir être défait ou annulé ;
-* Un changement précédemment appliqué ne doit pas être modifié mais un nouveau changement doit être créé.
+- Un schéma doit pouvoir être détruit et recréé de manière répétable ;
+- La version du schéma doit être identifiable ;
+- La montée et la descente de version doivent être automatisées ;
+- Les changements appliqués doivent être connus ;
+- Un changement doit pouvoir être défait ou annulé ;
+- Un changement précédemment appliqué ne doit pas être modifié mais un nouveau changement doit être créé.
 
 ## Principes techniques
 
@@ -33,8 +33,8 @@ A chaque lancement, l’outil de migration compare la version de la base et les 
 
 Il est également possible de « descendre de version » le schéma (fonctionnalité disponible dans quasiment tous les outils). Il s’agit de remettre la base de données dans un état cohérent. Deux cas d’usage :
 
-* développement d’une nouvelle fonctionnalité : il est ainsi possible de créer un script et de l’exécuter plusieurs fois (montée de version, test, modification, descente, puis nouvelle montée de version). La descente de version permet ainsi de faire revenir la base de données dans l’état précédent ;
-* Ré-alignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.
+- développement d’une nouvelle fonctionnalité : il est ainsi possible de créer un script et de l’exécuter plusieurs fois (montée de version, test, modification, descente, puis nouvelle montée de version). La descente de version permet ainsi de faire revenir la base de données dans l’état précédent ;
+- Ré-alignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.
 
 Même si la descente de version est utile, elle a néanmoins deux inconvénients. Le premier est que les instructions de descente doivent être écrites à la main. Les outils les plus simples fonctionnent sur le principe où chaque script contient une partie montée de version et une partie descente (voir l’exemple plus bas avec MyBatis). Seul Liquibase est capable de générer les instructions de descente de version grâce à son DSL.
 
@@ -44,11 +44,11 @@ Le deuxième inconvénient est que certaines montées de version ne sont pas ré
 
 Les bonnes pratiques poussées par ces outils sont :
 
-* Scripts (SQL ou XML pour Liquibase) stockés avec le code source
-* Une base de données par développeur (réaliste quand la gestion de la DB est automatisée, hors problème de coût de licence) ;
-* Une base de données commune à l’équipe qui représente l’état complet et stable ;
-* L’intégration continue déroule l’ensemble des scripts à chaque livraison ;
-* Un script qui a déjà pu être exécuté ne doit plus être modifié. On risque sinon de désynchroniser les scripts et le schéma. La livraison d’un nouveau script est nécessaire dans ce cas. Ce script est un refactoring du précédent. La seule exception est un script buggé qui provoque la perte de la donnée. Il ne faut donc pas que ce script atteigne les autres environnements.
+- Scripts (SQL ou XML pour Liquibase) stockés avec le code source
+- Une base de données par développeur (réaliste quand la gestion de la DB est automatisée, hors problème de coût de licence) ;
+- Une base de données commune à l’équipe qui représente l’état complet et stable ;
+- L’intégration continue déroule l’ensemble des scripts à chaque livraison ;
+- Un script qui a déjà pu être exécuté ne doit plus être modifié. On risque sinon de désynchroniser les scripts et le schéma. La livraison d’un nouveau script est nécessaire dans ce cas. Ce script est un refactoring du précédent. La seule exception est un script buggé qui provoque la perte de la donnée. Il ne faut donc pas que ce script atteigne les autres environnements.
 
 ## Les outils existants
 
@@ -58,9 +58,9 @@ Les bonnes pratiques poussées par ces outils sont :
 
 Le noyau de Liquibase est son DSL basé sur XML qui a les avantages :
 
-* d’être compatible avec plusieurs moteurs SQL ;
-* de donner une sémantique aux opérations (on écrira un &lt;renameColumn&gt; plutôt qu’un alter table) ;
-* de générer automatique des instructions de rollback (par exemple, un &lt;createColumn&gt; sera compensé par un &lt;dropColumn&gt;).
+- d’être compatible avec plusieurs moteurs SQL ;
+- de donner une sémantique aux opérations (on écrira un &lt;renameColumn&gt; plutôt qu’un alter table) ;
+- de générer automatique des instructions de rollback (par exemple, un &lt;createColumn&gt; sera compensé par un &lt;dropColumn&gt;).
 
 Liquibase est complet. Il s’intègre à Maven, Grails, Spring et Hibernate et supporte la génération de documentation ou encore la création d’un diff entre schémas.
 
@@ -93,6 +93,7 @@ scripts/01_v1.0/01_products_and_orders.sql
         02_v1.1/01_add_barcode_column.sql
                 02_drop_itemcode_column.sql
 ```
+
 Le schéma de base de données est mis à jour en exécutant :
 
 ```bash
@@ -116,9 +117,9 @@ Les outils de migration de base de données permettent une meilleure productivit
 
 Les points clés à retenir sont :
 
-* Les outils de migration de bases de données nous permettent de gagner en efficacité lors de la manipulation du schéma de la base de données ;
-* Ces outils fiabilisent les traitements en les automatisant et en les intégrants à l’usine de développement ;
-* Ces outils apportent de bonnes pratiques permettant un travail en équipe plus efficace ;
-* Ces outils sont disponibles, simples à mettre en place et OpenSource.
+- Les outils de migration de bases de données nous permettent de gagner en efficacité lors de la manipulation du schéma de la base de données ;
+- Ces outils fiabilisent les traitements en les automatisant et en les intégrants à l’usine de développement ;
+- Ces outils apportent de bonnes pratiques permettant un travail en équipe plus efficace ;
+- Ces outils sont disponibles, simples à mettre en place et OpenSource.
 
 Par extension, on peut imaginer qu'une application puisse se mettre à jour d'elle-même. En effet, il s’agirait de permettre à l’application de lancer les migrations de schémas quand elle démarre. Cette fonctionnalité réduit le temps de mise en production en supprimant l’étape de passage des scripts par les DBA. Liquibase propose déjà cette fonctionnalité.

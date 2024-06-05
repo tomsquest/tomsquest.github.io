@@ -1,4 +1,4 @@
---- 
+---
 title: "OSGI : oui mais non"
 slug: osgi-oui-mais-non
 date: 2008-10-15T00:00:00Z
@@ -8,7 +8,7 @@ date: 2008-10-15T00:00:00Z
 
 [Xebia ](http://www.xebia.fr/)a présenté hier soir « OSGI » au [Paris JUG](http://parisjug.org/). Ce fut une conférence très intéressante menée par Cyrille Le Clerc et Nicolas Griso. Tout leur discours a consisté à nous présenter honnêtement ce qu’est [OSGI](http://www.osgi.org/) et nous permettre de nous faire notre propre opinion.
 
-Nicolas Martignole a fait une très bonne revue de la [soirée](http://www.touilleur-express.fr/2008/10/15/presentation-dosgi-au-paris-jug-naphtaline-et-peinture-fraiche). D’ailleurs, je nomme le [Touilleur Express](http://www.touilleur-express.fr/" target="_parent) comme reporter officiel des JUG parisiens pour ses comptes rendus complets et les annotations qu’il fait.
+Nicolas Martignole a fait une très bonne revue de la [soirée](http://www.touilleur-express.fr/2008/10/15/presentation-dosgi-au-paris-jug-naphtaline-et-peinture-fraiche). D’ailleurs, je nomme le [Touilleur Express](http://www.touilleur-express.fr/" target="\_parent) comme reporter officiel des JUG parisiens pour ses comptes rendus complets et les annotations qu’il fait.
 
 Je voulais revenir sur les points que j’ai découverts et qui m’ont surpris pendant la soirée.
 
@@ -24,9 +24,9 @@ Je vais lister les points qui me titillent :
 
 OSGI est fermé et payant :
 
-* Plus fermé que le JCP, le « club » OSGI est composé de membres qui paient une adhésion (on parle de 20000 $ par membre, le JCP est, lui, gratuit) ;
-* Les débats sont privés et réservés aux membres tandis qu’ils sont publics au JCP ;
-* Les TCK (test compatibility kit) sont réservés aux membres payants.
+- Plus fermé que le JCP, le « club » OSGI est composé de membres qui paient une adhésion (on parle de 20000 $ par membre, le JCP est, lui, gratuit) ;
+- Les débats sont privés et réservés aux membres tandis qu’ils sont publics au JCP ;
+- Les TCK (test compatibility kit) sont réservés aux membres payants.
 
 Donc par rapport au JCP, le groupe OSGI se tient à l’écart et vit sur ces propres règles.
 

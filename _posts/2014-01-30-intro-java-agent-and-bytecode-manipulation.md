@@ -6,7 +6,7 @@ date: 2014-01-30T00:00:00Z
 
 A few months ago, I wrote a little shell script to colorize Maven's output
 (see [this post](http://tomsquest.com/blog/2013/09/maven-in-colors)).
-This is a good solution, but [Jean-Christophe Gay](https://twitter.com/jchristophegay) has written a pure Java version 
+This is a good solution, but [Jean-Christophe Gay](https://twitter.com/jchristophegay) has written a pure Java version
 to solve the same problem with interesting bits of Java technologies.
 
 In this post, we will see how a Java Agent and some bytecode manipulation can open the inner guts of code we don't own.
@@ -57,6 +57,7 @@ $ java -javaagent:agent/target/agent-0.1-SNAPSHOT.jar -jar other/target/other-0.
 ```
 
 ### ASM
+
 In order to manipulate the bytecode, I used the ASM framework.
 [ASM](http://asm.ow2.org) is a Java bytecode manipulation and analysis framework used in many products.
 
@@ -159,9 +160,9 @@ You can see his code here : https://github.com/jcgay/maven-color
 
 In its code, the author had to :
 
-* start the agent when the target program is run, this was done using the MAVEN_OPTS environment variable
-* find where Maven was outputting relevant logs message (well, this has to be done for Maven and Surefire, which is even
-more susceptible to change.
+- start the agent when the target program is run, this was done using the MAVEN_OPTS environment variable
+- find where Maven was outputting relevant logs message (well, this has to be done for Maven and Surefire, which is even
+  more susceptible to change.
 
 For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM :
 
@@ -190,5 +191,3 @@ Reading [Bytecode for Dummies](http://www.slideshare.net/CharlesNutter/javaone-2
 For another real world usage, there is [Byteman](https://www.jboss.org/byteman) written by JBoss.
 This tool simplifies testing of Java programs. The documentation is difficult to read, IMHO, but the presentation I
 saw three years ago was really stunning. Byteman can be used to make untestable code testable.
-
-

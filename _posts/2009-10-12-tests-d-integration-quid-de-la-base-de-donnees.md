@@ -1,4 +1,4 @@
---- 
+---
 title: "Tests d'intégration : quid de la base de données ?"
 slug: tests-d-integration-quid-de-la-base-de-donnees
 date: 2009-10-12T00:00:00Z
@@ -8,8 +8,8 @@ date: 2009-10-12T00:00:00Z
 
 La base de données est un élément important des tests d'intégration. Les deux questions à se poser sont :
 
-* Puis-je utiliser une base de données embarquée ?
-* Puis-je désactiver les contraintes d'intégrité ?
+- Puis-je utiliser une base de données embarquée ?
+- Puis-je désactiver les contraintes d'intégrité ?
 
 ## Base de données embarquée ou non ?
 
@@ -19,8 +19,8 @@ L'argument majeur en faveur d'une base embarquée est le travail en mode déconn
 
 Mais il y a certains inconvénients importants :
 
-* Moteur SQL différent de la cible : il est possible de certaines requêtes s'exécutent sur la base embarquée mais pas sur le type de base utilisée en Prod (différences d'implémentation SQL par exemple, expérience vécue avec SQL Server) ;
-* Debugage difficile : si la base meurt à la fin des tests, il devient difficile d'étudier les opérations faites et d'étudier pourquoi une requête ne fonctionne pas.
+- Moteur SQL différent de la cible : il est possible de certaines requêtes s'exécutent sur la base embarquée mais pas sur le type de base utilisée en Prod (différences d'implémentation SQL par exemple, expérience vécue avec SQL Server) ;
+- Debugage difficile : si la base meurt à la fin des tests, il devient difficile d'étudier les opérations faites et d'étudier pourquoi une requête ne fonctionne pas.
 
 Je vois peu d'intérêt aujourd'hui à utiliser une base de données embarquées si c'est pour se rendre compte qu'on ne valide pas un comportement similaire à celui de production. Créer une base par développeur sur Oracle ou autre, n'est pas si difficile.
 
@@ -31,16 +31,16 @@ Un inconvénient d'une base standard est qu'elle nécessite d'être maintenue (p
 Filip Neven, le créateur d'Unitils et de DbMaintain, pointe le problème sur son blog (traduction libre) :
 
 > Les gens pensent que la désactivation des contraintes produit une sérieuse dévaluation des tests, car le code qui a été validé avec succès par les tests unitaires pourrait ne pas fonctionner avec une base de données normales - [Filip Neven](http://filipneven.blogspot.com/2008/02/disable-constraints-on-your-test.html)
-La chose à retenir est : "il faut limiter au maximum les données de test".
+> La chose à retenir est : "il faut limiter au maximum les données de test".
 
 Autrement dit : le moins de données de test il y a, le plus maintenable sont les tests.
 
 Filip Neven résume parfaitement la situation :
 
-* Les tests doivent valider un fonctionnement et non vérifier l'intégrité de la base
-* Les tests unitaires ne sont pas le bon outil pour découvrir des problèmes de contraintes
-* Dans la plupart des cas, d'autres tests, comme les tests fonctionnels, permettront de découvrir les problèmes de contraintes
-* Désactiver les contraintes est un gain de temps important pour l'écriture des tests
+- Les tests doivent valider un fonctionnement et non vérifier l'intégrité de la base
+- Les tests unitaires ne sont pas le bon outil pour découvrir des problèmes de contraintes
+- Dans la plupart des cas, d'autres tests, comme les tests fonctionnels, permettront de découvrir les problèmes de contraintes
+- Désactiver les contraintes est un gain de temps important pour l'écriture des tests
 
 En effet, les jeux de données ne font généralement que croitre. Une fois qu'une donnée est ajoutée à un jeu de tests, il devient laborieux de savoir si cette donnée est utilisée d'une manière ou d'une autre et donc de la retirer.
 
@@ -56,8 +56,8 @@ En effet, si les tests passent sur une base qui sera identique à la production 
 
 La réponse est double :
 
-* Oui, nous nous écartons du fonctionnement cible (like "Prod") en modifiant le comportement de la base de données ;
-* Non, ce la ne nuit pas à la qualité des tests.
+- Oui, nous nous écartons du fonctionnement cible (like "Prod") en modifiant le comportement de la base de données ;
+- Non, ce la ne nuit pas à la qualité des tests.
 
 Pourquoi ?
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Présentation et retour sur GreenPepper"
 slug: presentation-et-retour-sur-greenpepper
 date: 2008-12-21T00:00:00Z
@@ -16,9 +16,9 @@ La base de GreenPepper est le concept de spécification exécutable. Une spec es
 
 Dans la pratique, la création d'une spécification exécutable avec GreenPepper prend la forme suivante :
 
-* La MOA se connecte au Wiki et exprime sa règle métier en bon français ;
-* Elle décrit également comment tester la fonctionnalité. La syntaxe se fait à base de tableaux qui permettent au système d'extraire les méthodes et données de test à utiliser ;
-* L'équipe de développement écrit ensuite le liant entre la page de test et le code réel. Ce branchement est appelé « fixture ».
+- La MOA se connecte au Wiki et exprime sa règle métier en bon français ;
+- Elle décrit également comment tester la fonctionnalité. La syntaxe se fait à base de tableaux qui permettent au système d'extraire les méthodes et données de test à utiliser ;
+- L'équipe de développement écrit ensuite le liant entre la page de test et le code réel. Ce branchement est appelé « fixture ».
 
 ### Exemple de spécification fonctionnelle
 
@@ -68,24 +68,25 @@ Au bout de quelques heures, ça fonctionne à peu près. Entre temps, on a essay
 
 A titre d'info, voilà la procédure :
 
-* Ecrire sa page dans Confluence et la marquer comme « Implemented » ;
-* Rafraichir la vue « Repository » dans Eclipse : la page apparaît ;
-* Executer une première fois la page depuis le menu de cette vue ;
-* Ouvrir avec le WebBrowser d'Eclipse le HTML de la page crée plus haut (répertoire /greenpepper) ;
-* Executer la page une deuxième fois mais depuis le menu Run d'Eclipse ;
-* La page doit enfin montrer les résultats (du jaune si les fixtures n'exisente pas) ;
+- Ecrire sa page dans Confluence et la marquer comme « Implemented » ;
+- Rafraichir la vue « Repository » dans Eclipse : la page apparaît ;
+- Executer une première fois la page depuis le menu de cette vue ;
+- Ouvrir avec le WebBrowser d'Eclipse le HTML de la page crée plus haut (répertoire /greenpepper) ;
+- Executer la page une deuxième fois mais depuis le menu Run d'Eclipse ;
+- La page doit enfin montrer les résultats (du jaune si les fixtures n'exisente pas) ;
 
 ### Autres points :
 
-* Le plugin Eclipse n'est pas stable. La vue se freeze de temps en temps ;
-* Il est en version bêta depuis un moment ;
-* Eclipse 3.4 n'est pas supporté mais il s'est installé sans soucis.
+- Le plugin Eclipse n'est pas stable. La vue se freeze de temps en temps ;
+- Il est en version bêta depuis un moment ;
+- Eclipse 3.4 n'est pas supporté mais il s'est installé sans soucis.
 
 ### Capture du lancement depuis Eclipse
 
 ![](/assets/images/posts/2008/12/gp-runeclipse.jpg)
 
 ### Le classpath et Maven
+
 Je n'ai pas mis en place cette partie là sur notre projet actuel donc j'ai peu à en dire. Ah si, une chose : beaucoup de sueur.
 
 Le plugin Maven permet de construire le classpath contenant l'ensemble des dépendances pour permettre à GreenPepper d'appeler les fixtures qui utilisent les classes de votre projet.
@@ -102,9 +103,9 @@ Comme nous, l'équipe a eu beaucoup de mal à mettre en place l'outil. Mais dès
 
 Pour accélérer la mise en place de GreenPepper, Eric nous a conseillé de :
 
-* Soigner la HomePage. Au début du projet, il faut donner envie. La MOA va devoir se former à un nouvel outil et un Wiki est toujours un peu complexe. Il faut lutter contre la résistance au changement et montrer les avantages de cette solution ;
-* Laisser libre la MOA pour les premières pages, puis repasser derrière et compléter les tests avec les noms des fixtures, par exemple. La MOA voit ensuite les modifications et utilisent celles-ci pour les tests suivants. Il faut donc éviter un maximum de restreindre la MOA à ses débuts.
-* Regarder les plugins Confluence. Certains sont très utiles comme le plugin Office permettant d'éditer ses pages depuis Word ;
+- Soigner la HomePage. Au début du projet, il faut donner envie. La MOA va devoir se former à un nouvel outil et un Wiki est toujours un peu complexe. Il faut lutter contre la résistance au changement et montrer les avantages de cette solution ;
+- Laisser libre la MOA pour les premières pages, puis repasser derrière et compléter les tests avec les noms des fixtures, par exemple. La MOA voit ensuite les modifications et utilisent celles-ci pour les tests suivants. Il faut donc éviter un maximum de restreindre la MOA à ses débuts.
+- Regarder les plugins Confluence. Certains sont très utiles comme le plugin Office permettant d'éditer ses pages depuis Word ;
 
 ## Conclusion
 

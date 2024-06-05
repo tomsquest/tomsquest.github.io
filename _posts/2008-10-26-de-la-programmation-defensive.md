@@ -40,13 +40,13 @@ En java, au moment de la compilation, la présence d'un flag permet de déclarer
 
 Dans le livre « [The Pragmatic Programmer](http://www.amazon.fr/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/) », les auteurs expliquent que les concepteurs du langage Java ont permis de désactiver les assertions pour deux raisons :
 
-* les assertions sont une fonctionnalité de débugage. Une fois que le code a été testé et livré, les assertions ne sont plus nécessaires ;
-* les assertions ajoutent de la charge au programme car il faut vérifier des choses qui ne devraient jamais arriver.
+- les assertions sont une fonctionnalité de débugage. Une fois que le code a été testé et livré, les assertions ne sont plus nécessaires ;
+- les assertions ajoutent de la charge au programme car il faut vérifier des choses qui ne devraient jamais arriver.
 
 Les auteurs pensent que ces idées sont fausses et trop optimistes car :
 
-* Les tests ne permettent jamais de trouver tous les bugs ;
-* Le monde extérieur est dangereux et vous ne maitrisez pas ce que font vos clients.
+- Les tests ne permettent jamais de trouver tous les bugs ;
+- Le monde extérieur est dangereux et vous ne maitrisez pas ce que font vos clients.
 
 Conclusion : Laissez vos assertions activées !
 
@@ -58,13 +58,13 @@ Les deux projets ci-dessous répondent au même problème. Ils offrent la possib
 
 [FEST-Assert](http://fest.easytesting.org/assert/) est mon projet préféré car :
 
-* Il est très simple à comprendre;
-* Il propose une interface « fluent ». Cela revient à écrire l'équivalent d'une phrase au lieu d'enchainer les méthodes;
-* Il est extensible. Il est possible de créer ses propres assertions, donc pourquoi pas des assertions métier.
+- Il est très simple à comprendre;
+- Il propose une interface « fluent ». Cela revient à écrire l'équivalent d'une phrase au lieu d'enchainer les méthodes;
+- Il est extensible. Il est possible de créer ses propres assertions, donc pourquoi pas des assertions métier.
 
 L'exemple du site donne un bon aperçu :
 
-```java 
+```java
 assertThat(yoda) //
   .isInstanceOf(Jedi.class)//
   .isEqualTo(foundJedi) //
@@ -88,20 +88,20 @@ smiths = select(people, where(Person.class).getLastName(), equalToIgnoringCase("
 ```
 
 ## Conclusion
-Adoptez un style de programmation défensif permet d'obtenir un code plus sûr et résistant. Les assertions permettent d'arrêter au plus tôt l'exécution du programme. 
+
+Adoptez un style de programmation défensif permet d'obtenir un code plus sûr et résistant. Les assertions permettent d'arrêter au plus tôt l'exécution du programme.
 
 ### Ce concept de « Fail Fast » a plusieurs avantages :
 
-* C'est une protection pour le code sous-jacent : moins de variations dans la paramètres donne moins de possibilité de bug ;
-* Les assertions fournissent de l'information. En effet, l'exception qui est lancée, informe du paramètre fautif et de qui en est le responsable ;
-* Le code est plus compréhensible car il déclare les plages de valeurs. Par exemple, il est souvent rageant de ne pas savoir si un paramètre est nullable (et vivement l'annotation @NotNull des JSR 303/305).
+- C'est une protection pour le code sous-jacent : moins de variations dans la paramètres donne moins de possibilité de bug ;
+- Les assertions fournissent de l'information. En effet, l'exception qui est lancée, informe du paramètre fautif et de qui en est le responsable ;
+- Le code est plus compréhensible car il déclare les plages de valeurs. Par exemple, il est souvent rageant de ne pas savoir si un paramètre est nullable (et vivement l'annotation @NotNull des JSR 303/305).
 
 ### Pourtant les assertions ont des inconvénients :
 
-* Elles sont redondantes avec la Javadoc : l'usage d'assertions ne permet pas de se passer de documentation pour décrire ce que vous attendez comme paramètre. Potentiellement, il peut y avoir une désynchronisation entre ce qui est précisé dans la Javadoc et la réalité du code ;
-* Elles sont encombrantes : écrire une liste d'assertion en début de chaque méthode peut rendre le code peu lisible et potentiellement cacher le code « utile » ;
-* Elles doivent être utilisées avec modération : théoriquement, chaque méthode doit avoir ses assertions. Dans la pratique, il n'y a pas besoin d'être un pessimiste extrémiste. Si vous avez une grande maitrise du code, les assertions peuvent être limitées. Dans la pratique, on les placera par exemple aux points d'entrées tels que les méthodes publiques visibles de l'extérieur ;
-* Elles ne remplaceront jamais les tests.
+- Elles sont redondantes avec la Javadoc : l'usage d'assertions ne permet pas de se passer de documentation pour décrire ce que vous attendez comme paramètre. Potentiellement, il peut y avoir une désynchronisation entre ce qui est précisé dans la Javadoc et la réalité du code ;
+- Elles sont encombrantes : écrire une liste d'assertion en début de chaque méthode peut rendre le code peu lisible et potentiellement cacher le code « utile » ;
+- Elles doivent être utilisées avec modération : théoriquement, chaque méthode doit avoir ses assertions. Dans la pratique, il n'y a pas besoin d'être un pessimiste extrémiste. Si vous avez une grande maitrise du code, les assertions peuvent être limitées. Dans la pratique, on les placera par exemple aux points d'entrées tels que les méthodes publiques visibles de l'extérieur ;
+- Elles ne remplaceront jamais les tests.
 
 Vous l'avez compris, je suis un partisan de la programmation défensive. J'en discuté récemment avec un ami qui me disait que pour lui, c'était une condition de survie. Il travaille sur des projets souvent mal codés et peu documentés. Il est obligé d'être pessimiste et cette démarche permet à son code de fonctionner sereinement et d'être déterministe dans un milieu presque chaotique (ou « bordélique » si vous préférez). Et vous, êtes-vous optimiste ou pessimiste ?
-

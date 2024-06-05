@@ -1,5 +1,5 @@
---- 
-title: "Présentation du livre \"The Mythical Man Month\""
+---
+title: 'Présentation du livre "The Mythical Man Month"'
 slug: the-mythical-man-month
 date: 2008-10-12T00:00:00Z
 ---
@@ -20,17 +20,17 @@ Troisièmement, restons plus terre à terre. C'est un livre en anglais mais asse
 
 ## Pourquoi ne pas lire ce livre ?
 
-* Si vous cherchez de la technique, il n'y a pas un seul petit bout de code ;
-* Si vous cherchez des recettes toutes faites pour améliorer la vie de votre équipe, il n'y en a pas. L'auteur pose les bases, il constate ce qui a fonctionné ou non selon son expérience, il conseille certaines manières de fonctionner et soumet quelques idées mais ce n'est en rien un manuel détaillé ;
-* Certains points sont discutables et d'autres vieillissants, notamment celui     qui parle des optimisations et du partage des ressources entre équipes. C'était l'époque des gros systèmes où le temps machine était divisé entre les équipes. Mais cela ne concerne qu'une infime partie du livre, heureusement.
+- Si vous cherchez de la technique, il n'y a pas un seul petit bout de code ;
+- Si vous cherchez des recettes toutes faites pour améliorer la vie de votre équipe, il n'y en a pas. L'auteur pose les bases, il constate ce qui a fonctionné ou non selon son expérience, il conseille certaines manières de fonctionner et soumet quelques idées mais ce n'est en rien un manuel détaillé ;
+- Certains points sont discutables et d'autres vieillissants, notamment celui qui parle des optimisations et du partage des ressources entre équipes. C'était l'époque des gros systèmes où le temps machine était divisé entre les équipes. Mais cela ne concerne qu'une infime partie du livre, heureusement.
 
 ## Dois-je conseiller ce livre à mon chef de projet/manager ?
 
 Oui, ce livre est intéressant pour les chefs de projet et les managers. Certains chapitres ont plus d'intérêts que d'autres. Parmi ceux-ci, les parties documentation, planification et communication fournissent des thèmes récurrents dans les projets. Cet ouvrage permet également d'ouvrir les yeux sur certains sujets. Par exemple :
 
-* En cas de retard sur votre projet, est-ce qu'ajouter une personne me permettra de rattraper ce retard ;
-* Est-ce que je gère un planning qui me permet de gérer les priorités en cas de retard ;
-* Comment je gère ma documentation, comment je la maintiens et comment la partager entre     ceux qui l'écrivent et ceux qui la lisent.
+- En cas de retard sur votre projet, est-ce qu'ajouter une personne me permettra de rattraper ce retard ;
+- Est-ce que je gère un planning qui me permet de gérer les priorités en cas de retard ;
+- Comment je gère ma documentation, comment je la maintiens et comment la partager entre ceux qui l'écrivent et ceux qui la lisent.
 
 ## Contenu
 
@@ -75,6 +75,6 @@ Fred Brooks avait prédit en 1986 qu'il n'y aurait pas de gain important de prod
 
 ## Note finale
 
-J'ai apprécié ce livre car il offre une vision de la gestion de projet basée sur l'expérience, écrite par une personne reconnue dans son domaine. Certains chapitres m'ont plus marqués que d'autres mais je garde un trés bon souvenir de l'ensemble. Il est également appréciable de voir l'auteur publier les critiques faites sur certaines de ses idées et en disant "oui, j'avais tort sur...". 
+J'ai apprécié ce livre car il offre une vision de la gestion de projet basée sur l'expérience, écrite par une personne reconnue dans son domaine. Certains chapitres m'ont plus marqués que d'autres mais je garde un trés bon souvenir de l'ensemble. Il est également appréciable de voir l'auteur publier les critiques faites sur certaines de ses idées et en disant "oui, j'avais tort sur...".
 
 Si je devais faire une autre critique sur ce livre, je dirai que sa présentation n'est peut-être pas assez "fun" et qu'il manque de pratique, d'une vision au jour le jour. C'est une vision large mais d'un peu plus haut que je l'aurai souhaité.

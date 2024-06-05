@@ -1,4 +1,4 @@
---- 
+---
 title: Moteur de recherche Maven par Sonatype
 slug: moteur-de-recherche-maven-par-sonatype
 date: 2008-11-12T00:00:00Z

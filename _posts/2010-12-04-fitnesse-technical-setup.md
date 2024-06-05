@@ -1,4 +1,4 @@
---- 
+---
 title: FitNesse technical setup
 slug: fitnesse-technical-setup
 date: 2010-12-04T00:00:00Z
@@ -12,14 +12,14 @@ The Setup proposed here has a good combination of pros and cons. It will enable 
 
 Pros:
 
-* Developer friendly
-* One unique source of test cases: the central server
-* Test pages backup along the source code
+- Developer friendly
+- One unique source of test cases: the central server
+- Test pages backup along the source code
 
 Cons:
 
-* Pages cannot be created locally; they have to be created on the central server
-* The backup task seems hacky, but it does the job
+- Pages cannot be created locally; they have to be created on the central server
+- The backup task seems hacky, but it does the job
 
 ## Team process
 
@@ -31,8 +31,8 @@ A job adds, delete and commits the changes made on the central server’s pages
 
 Basic rules:
 
-* Pages must be created on the central server, never locally
-* Pages must be modified remotely (using the “Edit Remotely” button); Local pages may be erased at the next sync, so use them carefully
+- Pages must be created on the central server, never locally
+- Pages must be modified remotely (using the “Edit Remotely” button); Local pages may be erased at the next sync, so use them carefully
 
 ![](/assets/images/posts/fitnesse-schema_resized2.jpg)
 
@@ -99,9 +99,9 @@ FitNesse has also a pseudo-native support of Git (see [here](http://fitnesse.org
 
 All files in the working directory of FitNesse can be versioned, except:
 
-* The “root” page we used earlier, this is the content.txt and properties.xml at the root of the working directory
-* The “ErrorLogs” directory
-* All zip files “*.zip” (there should be none because of the “-e 0” flag
+- The “root” page we used earlier, this is the content.txt and properties.xml at the root of the working directory
+- The “ErrorLogs” directory
+- All zip files “\*.zip” (there should be none because of the “-e 0” flag
 
 Source: [http://stackoverflow.com/questions/249580/how-do-i-add-fitnesse-pages-to-version-control](http://stackoverflow.com/questions/249580/how-do-i-add-fitnesse-pages-to-version-control)
 
@@ -141,8 +141,8 @@ The Wiki Import feature is used to, well... import the pages from the central se
 
 How-to:
 
-* From the developer’s server, create a new page
-* From the properties, paste the URL to the parent page you wish to import (something like http://fitnesse:8086/MyProject)
+- From the developer’s server, create a new page
+- From the properties, paste the URL to the parent page you wish to import (something like http://fitnesse:8086/MyProject)
 
 ![](/assets/images/posts/fitnesse_wiki_import.jpg)
 
@@ -159,7 +159,7 @@ Under FitNesse, just append the following at the end of the page you want to deb
 #### Random problem (Bind, Socket exception)
 
 ![](/assets/images/posts/fitnesse_error.jpg)
- 
+
 If you experience strange errors with no output, or better Socket and Bind exceptions (like in the screenshot), you should use the SLIM_PORT option (as used in this article). This basically shift the ports used by Slim to avoid conflicts with, let’s say, Tomcat.
 
 Add this:

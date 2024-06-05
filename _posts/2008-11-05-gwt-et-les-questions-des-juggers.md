@@ -1,4 +1,4 @@
---- 
+---
 title: GWT et les questions des Juggers
 slug: gwt-et-les-questions-des-juggers
 date: 2008-11-05T00:00:00Z
@@ -6,7 +6,7 @@ date: 2008-11-05T00:00:00Z
 
 <img src="/assets/images/posts/2008/11/gwt.jpg" style="float:right"/>
 
-Hier, le JUG parisien s'est retrouvé pour une présentation de [GWT](http://code.google.com/webtoolkit/) et de  [REST-GWT](http://code.google.com/p/gwt-rest/).
+Hier, le JUG parisien s'est retrouvé pour une présentation de [GWT](http://code.google.com/webtoolkit/) et de [REST-GWT](http://code.google.com/p/gwt-rest/).
 
 Didier Girard s'est occupé de la première partie. Je n'aurai jamais dû l'écouter ! Maintenant je suis presque triste d'écrire du Spring MVC. J'ai l'impression de me sentir hors du coup, passé de mode. Il m'a bien fait comprendre que je devais me mettre d'urgence au toolkit de Google. Si j'ai bien retenu, GWT c'est simple, pas cher, solide, efficace, ergonomique... le graal du Web ? Pas pour tous. Flex est également bien positionné côté Java. Mais c'est un autre débat.
 
@@ -26,8 +26,8 @@ Didier est direct : « Ca marche mais ce n'est pas simple ». Les ingénieurs de
 
 Petite recherche sur google avec « GWT maven » donne :
 
-* En premier, un lien vers le projet GWT-Maven » qui permet d'intègre les deux projets (génération du War, lancement...)
-* En second, un article nommé : [GWT and Maven2, Oh the pain !](http://rbtech.blogspot.com/2007/06/gwt-and-maven-2-oh-pain.html).
+- En premier, un lien vers le projet GWT-Maven » qui permet d'intègre les deux projets (génération du War, lancement...)
+- En second, un article nommé : [GWT and Maven2, Oh the pain !](http://rbtech.blogspot.com/2007/06/gwt-and-maven-2-oh-pain.html).
 
 Donc oui, c'est possible, certains le font mais ce n'est pas « out of the box ».
 

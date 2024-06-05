@@ -1,4 +1,4 @@
---- 
+---
 title: "Selenium en java : Démarrage rapide"
 slug: selenium-en-java-demarrage-rapide
 date: 2008-09-04T00:00:00Z
@@ -16,10 +16,10 @@ L'article est un guide de démarrage rapide pour l'écriture de tests Selenium e
 
 L'utilisation de fichiers HTML comme script de tests a les inconvénients suivants :
 
-* Impossible de factoriser le code pour, par exemple, répéter une vérification ;
-* Impossible de mettre la base de données dans un état spécifique avant un test ;
-* Difficile d'intégrer les tests HTML avec Maven. Des solutions existent mais elles ne fonctionnent pas à tous les coups ;
-* Difficile à maintenir : les tests sont monolithiques, peu compréhensibles sans commentaire.
+- Impossible de factoriser le code pour, par exemple, répéter une vérification ;
+- Impossible de mettre la base de données dans un état spécifique avant un test ;
+- Difficile d'intégrer les tests HTML avec Maven. Des solutions existent mais elles ne fonctionnent pas à tous les coups ;
+- Difficile à maintenir : les tests sont monolithiques, peu compréhensibles sans commentaire.
 
 ## Solution
 
@@ -206,8 +206,8 @@ Cela améliore grandement la vitesse de passage des tests mais peut influencer s
 
 Nous avons vu :
 
-* L'intégration de Selenium à un projet Maven ;
-* Le lancement d'un test Java/Selenium seul ;
-* Le lancement de tous les tests par Maven.
+- L'intégration de Selenium à un projet Maven ;
+- Le lancement d'un test Java/Selenium seul ;
+- Le lancement de tous les tests par Maven.
 
 N'hésitez pas à me faire un retour si vous aussi vous utilisez Selenium en passant par des tests Java. Sur notre projet, c'est un réel succès. Nous avions atteint un nombre de tests HTML trop important pour pouvoir être serein sur leur maintenance. Dorénavant, depuis que nous avons migré en "full java", nous dormons mieux la nuit et nos utilisateurs aussi :-) .

@@ -58,9 +58,9 @@ Repeating and repeating exercises were very boring, especially at 21 o'clock whe
 
 If you think a little bit about typing, you already knows that:
 
-* some words are typed more than others, like: the, of, and, to, in...
-* some letters occur more often (that why the Colemak layout exits)
-* bigrams (two-letter), trigrams and quadrigrams can be extracted to find recurring patterns
+- some words are typed more than others, like: the, of, and, to, in...
+- some letters occur more often (that why the Colemak layout exits)
+- bigrams (two-letter), trigrams and quadrigrams can be extracted to find recurring patterns
 
 Which means: to type fast/faster, my brain and fingers have to learn the most used words and behind that the most used couples of letters.
 For example, when my eyes read "the", I should not think "t", "h", "e" but it should be a reflex for my fingers (kind of burst typing).
@@ -103,4 +103,4 @@ Graph of my speed (WPM) from October to November (on Amphetype), French and Engl
 
 ![Speed result](/assets/images/posts/colemak_amphetype_progress.png)
 
-*This post was written in Colemak on a blank Typematrix keyboard.*
+_This post was written in Colemak on a blank Typematrix keyboard._

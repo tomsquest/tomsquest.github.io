@@ -1,4 +1,4 @@
---- 
+---
 title: Script de sauvegarde WordPress et MySQL
 slug: script-de-sauvegarde-wordpress-et-mysql
 date: 2008-09-01T00:00:00Z
@@ -12,9 +12,9 @@ Donc une des premières étapes de toute nouvelle installation de WordPress, il 
 
 Le script que je mets ci-dessous s'occupe de 3 choses :
 
-* Faire une archive de l'installation de WordPress ;
-* Sauvegarder la base de données ;
-* Envoyer un mail de confirmation.
+- Faire une archive de l'installation de WordPress ;
+- Sauvegarder la base de données ;
+- Envoyer un mail de confirmation.
 
 ## Le secret
 
@@ -27,17 +27,17 @@ Pour cela, j'ai utilisé un extrait du script de [AskApache.org](http://www.aska
 1. Dézipper le script (unzip)
 1. Le rendre exécutable : `chmod 700 wpbackup.sh`
 1. Modifier les 3 lignes :
-    * `EMAIL=monemail@mail.com` : email du destinataire
-    * `WORDPRESS_PATH="/opt/wordpress"` : chemin de l'installation de WordPress
-    * `BACKUP_PATH="/mnt/backups"` : chemin vers les sauvegardes
+   - `EMAIL=monemail@mail.com` : email du destinataire
+   - `WORDPRESS_PATH="/opt/wordpress"` : chemin de l'installation de WordPress
+   - `BACKUP_PATH="/mnt/backups"` : chemin vers les sauvegardes
 
 ## Améliorations
 
 Ce script peut être amélioré sur les points suivants :
 
-* Sécuriser la création des archives : vérifier que ce qui est dans l'archive n'est pas corrompu. Le projet [VeriTAR](http://www.codetrax.org/projects/veritar) s'occupe de cette partie en comparant le checksum MD5 des fichiers à l'extérieur et à l'intérieur de l'archive. C'est un projet Python. Un exemple est trouvable sur le site [www.g-loaded.eu](http://www.g-loaded.eu/2007/12/01/veritar-verify-checksums-of-files-within-a-tar-archive/) ;
-* Sauvegardes incrémentales : ne garder que les changements entre deux sauvegardes ;
-* Copie sur un serveur distant : ne pas garder les sauvegardes uniquement sur la machine source. C'est le principe du "offsite backups" qui évite de perdre ses données en cas de panne ou de vol de la machine source.
+- Sécuriser la création des archives : vérifier que ce qui est dans l'archive n'est pas corrompu. Le projet [VeriTAR](http://www.codetrax.org/projects/veritar) s'occupe de cette partie en comparant le checksum MD5 des fichiers à l'extérieur et à l'intérieur de l'archive. C'est un projet Python. Un exemple est trouvable sur le site [www.g-loaded.eu](http://www.g-loaded.eu/2007/12/01/veritar-verify-checksums-of-files-within-a-tar-archive/) ;
+- Sauvegardes incrémentales : ne garder que les changements entre deux sauvegardes ;
+- Copie sur un serveur distant : ne pas garder les sauvegardes uniquement sur la machine source. C'est le principe du "offsite backups" qui évite de perdre ses données en cas de panne ou de vol de la machine source.
 
 ## Planification
 
@@ -92,4 +92,3 @@ echo "Backup completed" | /usr/bin/mail -s "Wordpress and Mysql backups complete
 
 echo "### Backup done."
 ```
-

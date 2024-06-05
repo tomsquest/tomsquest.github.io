@@ -1,4 +1,4 @@
---- 
+---
 title: Critique du livre "Passionate Programmer"
 slug: passionate-programmer-critique-du-livre
 date: 2009-07-19T00:00:00Z
@@ -56,8 +56,8 @@ J'ai aimé ce livre car j'ai découvert un nouveau point de vue intéressant et 
 
 Ce que je n'ai pas aimé :
 
-* Certains chapitres sont trop simplistes ou évidents. Mais, sur 53 chapitres, c'est normal que tous ne soient pas bons.
-* Beaucoup d'anecdotes divertissantes sur l'auteur et la musique mais quelquefois trop écartés du sujet (Chad Fowler est un ancien musicien professionnel)
+- Certains chapitres sont trop simplistes ou évidents. Mais, sur 53 chapitres, c'est normal que tous ne soient pas bons.
+- Beaucoup d'anecdotes divertissantes sur l'auteur et la musique mais quelquefois trop écartés du sujet (Chad Fowler est un ancien musicien professionnel)
 
 **Note finale : 7/10**
 

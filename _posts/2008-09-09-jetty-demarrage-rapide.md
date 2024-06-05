@@ -12,10 +12,10 @@ date: 2008-09-09T00:00:00Z
 
 Les avantages de Jetty sont :
 
-* Lancement très rapide : sur ma machine : moins de 10 secondes au total (initialisation de la DataSource, contexte spring...) ;
-* Rechargement de l'application ultra-rapide : moins de 4 secondes pour qu'une modification d'une classe java puisse être testée dans le navigateur ;
-* Compilation à la volée des JSP ;
-* Intégration directe dans le pom.xml avec peu de configuration.
+- Lancement très rapide : sur ma machine : moins de 10 secondes au total (initialisation de la DataSource, contexte spring...) ;
+- Rechargement de l'application ultra-rapide : moins de 4 secondes pour qu'une modification d'une classe java puisse être testée dans le navigateur ;
+- Compilation à la volée des JSP ;
+- Intégration directe dans le pom.xml avec peu de configuration.
 
 ## Lancement
 

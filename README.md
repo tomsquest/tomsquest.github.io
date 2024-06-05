@@ -11,4 +11,3 @@ Setup:
 Run:
 
 1. `bundle exec jekyll serve --livereload`
-

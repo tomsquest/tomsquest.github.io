@@ -6,7 +6,7 @@ date: 2015-03-20T00:00:00Z
 
 ![Book cover](/assets/images/posts/wewut-cover.jpg)
 
-I am very happy to have read Jay Fields' Working effectively with unit tests. 
+I am very happy to have read Jay Fields' Working effectively with unit tests.
 This is a rare book where developers are taught how to be better at a very-argued discipline: testing.
 
 Jay Fields explains its opinions on how he tests, what he tests and how best he thinks
@@ -18,10 +18,10 @@ Here are some of my notes :
 
 ## Best practices
 
-* Better to have N tests than a single test with a loop
-* Inline setup is better that referencing a variable
-* Test names are comments under cover, they will mislead
-* Data builders is better than globally-defined object with default values (Object Mother)
+- Better to have N tests than a single test with a loop
+- Inline setup is better that referencing a variable
+- Test names are comments under cover, they will mislead
+- Data builders is better than globally-defined object with default values (Object Mother)
 
 ## Readability
 
@@ -47,14 +47,14 @@ first look at (the body of the test method). So test names are just pointer to c
 "Implementation over-specification" means a test is fragile because it knows too much about what
 it is trying to verify, and that a small change in the production code will break the test.
 
-Solutions are to relax prepartion with Mockito's anyString/anyLong/... ; Null as a return value is acceptable. 
+Solutions are to relax prepartion with Mockito's anyString/anyLong/... ; Null as a return value is acceptable.
 
 It is simpler and more readable to compare a literal (aka primitive) value, than objects together.
 
-To avoid cascading failures, he only knows two solutions : 
+To avoid cascading failures, he only knows two solutions :
 
-* make the tests more intelligent 
-* make the tests more ignorant.
+- make the tests more intelligent
+- make the tests more ignorant.
 
 ## Coverage
 
@@ -66,7 +66,7 @@ Don't forget that it's easy to fake a good coverage with tests without assertion
 
 These are End-to-End tests. They are complex and fragile.
 
-He recommends that these tests will survive only if this is the author who maintains them and 
+He recommends that these tests will survive only if this is the author who maintains them and
 not the whole team. And if the author leaves, the time will be best invested recreating those
 tests than to try to fix them. I couldn't agree more.
 
@@ -75,9 +75,9 @@ His Mike Cohn Test pyramid is divided into: 1 to 12 Broad Stack Tests, 20% of "s
 
 ## Paper edition
 
-I read a paper edition, found on Amazon. The overall quality is quite good, but the lack of 
-emphasis/bold is disturbing on the code samples. Some lines are somewhat bold, but a 
-vertical line or some ninja-stylized thing could make the UX better. 
+I read a paper edition, found on Amazon. The overall quality is quite good, but the lack of
+emphasis/bold is disturbing on the code samples. Some lines are somewhat bold, but a
+vertical line or some ninja-stylized thing could make the UX better.
 This is one of the limit of using Markdown for publishing.
 
 But this print edition is way better that the previous book I read ("Notes a software team leader" by Roy Osherove) where some markdown content was not parsed at all...
@@ -87,4 +87,3 @@ But this print edition is way better that the previous book I read ("Notes a sof
 Author's blog: http://blog.jayfields.com/
 
 The book: http://signup.wewut.com/
-

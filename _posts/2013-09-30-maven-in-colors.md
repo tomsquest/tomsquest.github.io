@@ -11,7 +11,7 @@ _Updated the 2014.01.21 - Added JCGay Maven Agent_
 Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings ?
 Let's see how to do it.
 
-This post is an enhanced version of several shell scripts (like this [one](https://github.com/builddoctor/maven-antsy-color)) 
+This post is an enhanced version of several shell scripts (like this [one](https://github.com/builddoctor/maven-antsy-color))
 or Arnaud Heritier's log4j2 approach : [United Colors of Maven](http://aheritier.net/united-colors-of-maven/).
 
 ## How it looks
@@ -26,17 +26,17 @@ Screenshot of a failed build :
 
 ## Preferred solution : shell function
 
-My preferred solution is to pipe Maven's output to __sed__ and to insert Ansi color sequences at the correct locations. 
+My preferred solution is to pipe Maven's output to **sed** and to insert Ansi color sequences at the correct locations.
 It is done like this :
 
 ```bash
 mvn $goal | sed -e '/BUILD SUCCESS/$red BUILD SUCCESS/'
 ```
 
-In reality, it is a bit more complex because we want to return the exit code of the maven command 
+In reality, it is a bit more complex because we want to return the exit code of the maven command
 and not the one of sed or the other chained command.
 
-The shell function (zsh and bash compatible) is available at : 
+The shell function (zsh and bash compatible) is available at :
 https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zsh
 
 You just have to put this file somewhere, source it and make an alias to mvn :
@@ -52,9 +52,9 @@ Using this method does not work when Maven asks for input, for example when usin
 
 Workaround :
 
-* Ignore the alias with `\mvn` when releasing
-* Don't use the release plugin and prefer the solution of Axel Fontaine :
-[Maven Release Plugin: The Final Nail in the Coffin](http://axelfontaine.com/blog/final-nail.html)
+- Ignore the alias with `\mvn` when releasing
+- Don't use the release plugin and prefer the solution of Axel Fontaine :
+  [Maven Release Plugin: The Final Nail in the Coffin](http://axelfontaine.com/blog/final-nail.html)
 
 ## Maven Agent
 
@@ -72,7 +72,7 @@ See the [Known issues](https://github.com/jcgay/maven-color#known-issues).
 [Rainbow](https://github.com/nicoulaj/rainbow) is a colorizer of commands outputs written in Python.
 It uses patterns to match strings to colors.
 
-And __Rainbow supports Maven out of the box__!
+And **Rainbow supports Maven out of the box**!
 
 Once installed, running Rainbow is as simple as :
 
@@ -88,4 +88,5 @@ This is real problem when you want to chain mvn with a push. ie.
 ```bash
 $ rainbow --config=mvn3 -- mvn clean install && git push # will push even if the build failed !
 ```
+
 Some works try to fix the issues of rainbow. The [one from GfxMonk](https://github.com/gfxmonk/rainbow) seems to fix the lack of exit code.

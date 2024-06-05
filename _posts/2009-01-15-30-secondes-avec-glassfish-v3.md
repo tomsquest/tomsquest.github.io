@@ -1,4 +1,4 @@
---- 
+---
 title: 30 secondes avec Glassfish v3
 slug: 30-secondes-avec-glassfish-v3
 date: 2009-01-15T00:00:00Z
@@ -18,17 +18,17 @@ Une autre solution serait de démarrer soi-même un Glassfish via l'[API Embedde
 
 Pour résumer :
 
-* Pas de plugin Maven pour Glassfish aussi facile d'accès que celui de Jetty ;
-* Mais possibilité de déployer un War en ligne de commande facilement.
+- Pas de plugin Maven pour Glassfish aussi facile d'accès que celui de Jetty ;
+- Mais possibilité de déployer un War en ligne de commande facilement.
 
 ## 2. Installation : succès
 
 Le site du projet a plusieurs liens vers différents guides de démarrage qui donnent à peu près les mêmes infos.
 
-* Dézipper le zip ;
-* Lancer $GLASSFISH_HOME/bin/asadmin start-domain ;
-* Pour tester, copier l'application hello.war dans le répertoire autodeploy ;
-* En quelques secondes, l'application devient accessible ainsi que la console d'admin.
+- Dézipper le zip ;
+- Lancer $GLASSFISH_HOME/bin/asadmin start-domain ;
+- Pour tester, copier l'application hello.war dans le répertoire autodeploy ;
+- En quelques secondes, l'application devient accessible ainsi que la console d'admin.
 
 Aucun problème d'installation, Glassfish est très rapidement mis en place.
 

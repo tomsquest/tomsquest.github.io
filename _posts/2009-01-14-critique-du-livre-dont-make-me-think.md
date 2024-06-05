@@ -1,4 +1,4 @@
---- 
+---
 title: Critique du livre "Don't Make Me Think"
 slug: critique-du-livre-dont-make-me-think
 date: 2009-01-14T00:00:00Z
@@ -11,10 +11,10 @@ J'ai eu le plaisir de lire le livre de Steve Krug « [Don't Make Me Think](http:
 Je cite [Wikipedia ](http://fr.wikipedia.org/wiki/Utilisabilit%C3%A9):
 
 > Les critères de l'usabilité (ou utilisabilité) sont :
-> 
-> * l'efficacité : le produit permet à ses utilisateurs d'atteindre le résultat prévu ;
-> * l'efficience : atteint le résultat avec un effort moindre ou requiert un temps minimal ;
-> * la satisfaction : confort et évaluation subjective de l’interaction pour l’utilisateur.
+>
+> - l'efficacité : le produit permet à ses utilisateurs d'atteindre le résultat prévu ;
+> - l'efficience : atteint le résultat avec un effort moindre ou requiert un temps minimal ;
+> - la satisfaction : confort et évaluation subjective de l’interaction pour l’utilisateur.
 
 ## L'auteur
 
@@ -50,7 +50,7 @@ Pour lui, seul les tests avec des utilisateurs montrent ce qui fonctionne ou non
 
 Pour limiter les débats au sein d'une équipe (auxquels on a tous participés), il propose de se poser les bonnes questions. Ce n'est pas : « Est-ce que les gens aiment les menus déroulants ? », mais « Est-ce que ce menu déroulant est utile dans ce contexte avec ce style et ces éléments sur cette page ? ».
 
-Et il n'y a qu'une seule réponse à ces débats : le test utilisateur. 
+Et il n'y a qu'une seule réponse à ces débats : le test utilisateur.
 Tester une page donne des réponses concrètes. On passe de « Ce qui est vrai ou faux » à « Ce qui fonctionne ou non ».
 
 Pour Steve Krug, les tests sont donc le moyen principal de rendre un site « utilisable » (ça et les quelques règles des premiers chapitres). Un autre chapitre détaille ce qu'est un test utilisateur, comment le mener (c'est facile), ce que ça coûte (presque rien) et surtout ce que cela apporte (beaucoup).
@@ -73,7 +73,6 @@ L'accessibilité est un sujet important, mais il pense qu'il demande beaucoup d'
 
 ## Quelques points négatifs
 
-* Certaines affirmations ne sont pas prouvées. Quelques fois certaines choses sont exprimées comme des faits alors qu'elles sont une opinion de l'auteur. J'aurai donc aimé qu'il cite ses sources.
-* Le chapitre « Mon boss me dit de faire » aurait mérité d'être plus étoffé. Dans ce chapitre, Steve Krug cite des arguments qui permettent de lutter contre un manager qui veut demander beaucoup d'infos personnelles au moment de l'inscription ou encore qui veut ajouter une multitude d'éléments Bling-bling inutiles. Ce chapitre est trop court.
-* Le [site de l'auteur](http://sensible.com) est pauvre. Dommage pour quelqu'un qui donne des conseils sur la conception d'un site. J'aurais aimé trouver d'autres exemples de ce qu'il a accompli ailleurs (quitte à changer les logos et couleurs).
-
+- Certaines affirmations ne sont pas prouvées. Quelques fois certaines choses sont exprimées comme des faits alors qu'elles sont une opinion de l'auteur. J'aurai donc aimé qu'il cite ses sources.
+- Le chapitre « Mon boss me dit de faire » aurait mérité d'être plus étoffé. Dans ce chapitre, Steve Krug cite des arguments qui permettent de lutter contre un manager qui veut demander beaucoup d'infos personnelles au moment de l'inscription ou encore qui veut ajouter une multitude d'éléments Bling-bling inutiles. Ce chapitre est trop court.
+- Le [site de l'auteur](http://sensible.com) est pauvre. Dommage pour quelqu'un qui donne des conseils sur la conception d'un site. J'aurais aimé trouver d'autres exemples de ce qu'il a accompli ailleurs (quitte à changer les logos et couleurs).

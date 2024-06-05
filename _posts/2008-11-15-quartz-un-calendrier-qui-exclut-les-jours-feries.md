@@ -1,4 +1,4 @@
---- 
+---
 title: "Quartz : un calendrier qui exclut les jours fériés"
 slug: quartz-un-calendrier-qui-exclut-les-jours-feries
 date: 2008-11-15T00:00:00Z
@@ -21,16 +21,25 @@ La liste des jours fériés est "hardcodées" dans un fichier de conf du projet.
 Cela donne quelque chose comme ça pour 2008 :
 
 ```js
-workingDays.legalHolidays=2008-01-01,2008-03-21,2008-03-24,2008-05-01,2008-05-08,2008-05-12,2008-07-14,2008-08-15,2008-11-11,2008-12-25
+(workingDays.legalHolidays = 2008 - 01 - 01),
+  2008 - 03 - 21,
+  2008 - 03 - 24,
+  2008 - 05 - 01,
+  2008 - 05 - 08,
+  2008 - 05 - 12,
+  2008 - 07 - 14,
+  2008 - 08 - 15,
+  2008 - 11 - 11,
+  2008 - 12 - 25;
 ```
 
 ## Configuration Spring
 
 Au total, il y aura trois calendriers :
 
-* Un qui exclut les week-ends (fourni avec Quartz) ;
-* Un qui exclut une plage horaire (fourni avec Quartz) ;
-* Un "fait-maison" qui exclut une plage de dates fournie en paramètre.
+- Un qui exclut les week-ends (fourni avec Quartz) ;
+- Un qui exclut une plage horaire (fourni avec Quartz) ;
+- Un "fait-maison" qui exclut une plage de dates fournie en paramètre.
 
 Ces calendriers sont configurés pour être enchainés les uns aux autres. Techniquement, chaque calendrier se voit injecter dans son constructeur un autre calendrier. Ainsi chacun demande à son suivant si la date actuelle doit être exclue ou non. C'est une fonctionnalité de base des calendriers Quartz.
 

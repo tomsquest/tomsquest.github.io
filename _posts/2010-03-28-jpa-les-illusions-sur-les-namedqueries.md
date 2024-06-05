@@ -1,4 +1,4 @@
---- 
+---
 title: "JPA : les illusions sur les NamedQueries"
 slug: jpa-les-illusions-sur-les-namedqueries
 date: 2010-03-28T00:00:00Z
@@ -42,8 +42,8 @@ Une NamedQuery est validée au lancement de l'application avant d'être soit pla
 
 Dans les faits, cette phase de validation est très limitée (testée avec Hibernate 3.3 et mysql) :
 
-* Pour une entité inexistante ("From EntiteInexistante"), une erreur est remontée
-* Pour une colonne inexistante ("From Client where colonneInexistante is null"), aucune erreur n'est soulevée
+- Pour une entité inexistante ("From EntiteInexistante"), une erreur est remontée
+- Pour une colonne inexistante ("From Client where colonneInexistante is null"), aucune erreur n'est soulevée
 
 Aujourd'hui, je ne vois donc pas en quoi cette phase de validation apporte de la valeur. Si la conversion JPQL vers SQL n'est pas complète, elle n'empêche pas de valider les requêtes sur [la base de données cible](http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/).
 
@@ -51,8 +51,8 @@ Aujourd'hui, je ne vois donc pas en quoi cette phase de validation apporte de la
 
 Une fois éliminées ces illusions, il ne reste pas grand-chose d'attrayant aux NamedQueries. On sait qu'elles ne sont pas systématiquement pas plus performantes et que la validation n'est pas complète. Il leur reste cependant trois petits avantages :
 
-* Les NamedQueries sont réutilisables en plusieurs endroits. Ce cas est principalement utile quand l'entityManager est injecté dans la couche de service (et donc qu'il n'y a pas de couche de DAO) ;
-* Elles sont chargées au démarrage ce qui permet de diminuer la réponse de l'application au premier accès, mais c'est au détriment du temps de chargement de l'application ;
-* Les requêtes sont regroupées avec le mapping (@Column...), ce qui permet de faciliter leur écriture.
+- Les NamedQueries sont réutilisables en plusieurs endroits. Ce cas est principalement utile quand l'entityManager est injecté dans la couche de service (et donc qu'il n'y a pas de couche de DAO) ;
+- Elles sont chargées au démarrage ce qui permet de diminuer la réponse de l'application au premier accès, mais c'est au détriment du temps de chargement de l'application ;
+- Les requêtes sont regroupées avec le mapping (@Column...), ce qui permet de faciliter leur écriture.
 
 Pour conclure, je pense que les NamedQueries résultent plus d'une question de goût et de convention d'écriture que d'un réel intérêt technique et factuel.

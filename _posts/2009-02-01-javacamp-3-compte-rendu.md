@@ -1,4 +1,4 @@
---- 
+---
 title: "JavaCamp 3 : Compte-rendu"
 slug: javacamp-3-compte-rendu
 date: 2009-02-01T00:00:00Z

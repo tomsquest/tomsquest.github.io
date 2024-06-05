@@ -4,7 +4,7 @@ slug: think-carbon-reduce-typescript-bundle-size
 date: 2020-02-28T00:00:00Z
 ---
 
-Reducing the size of JS compiled from Typescript is easy.  
+Reducing the size of JS compiled from Typescript is easy.
 
 Here are some numbers and how to do it. It's nearly free if you run on Node (!= browser).
 
@@ -14,10 +14,10 @@ Here are some numbers and how to do it. It's nearly free if you run on Node (!= 
 
 Sizes after and before, with the difference in percent:
 
-|                     | Before | After | Diff |
-| ------------------- | -----: | ----: | ---: |
-| line count \*.js    | 4397 lines  |  4011 lines |  -9% |
-| size in bytes \*.js | 186k   |  153k | -18% |
+|                     |     Before |      After | Diff |
+| ------------------- | ---------: | ---------: | ---: |
+| line count \*.js    | 4397 lines | 4011 lines |  -9% |
+| size in bytes \*.js |       186k |       153k | -18% |
 
 ## How-to
 
