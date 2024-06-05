@@ -62,7 +62,7 @@ In order to manipulate the bytecode, I used the ASM framework.
 
 In the example above, the ClassPrinter prints the signatures of the classes and methods visited.
 
-``` java
+```java
 public class ClassPrinter extends ClassVisitor {
 
     public ClassPrinter(ClassWriter writer) {
@@ -91,7 +91,7 @@ public class ClassPrinter extends ClassVisitor {
 
 Here is the output, as we intercepted the call to the `Stuff` class :
 
-``` java
+```java
 other/Stuff extends java/lang/Object {
  <init>()V
  run()V
@@ -105,7 +105,7 @@ Javassist is another bytecode manipulation framework. I found it simpler due to 
 
 Here is a version of the Agent used to output the elapsed time for executing the `run` method :
 
-``` java
+```java
 public class Agent {
 
     public static void premain(String agentArgs, Instrumentation inst) {
@@ -165,7 +165,7 @@ more susceptible to change.
 
 For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM :
 
-``` java
+```java
 private void createSetupAnsiColorLoggerMethod() {
     MethodVisitor mv = cv.visitMethod(Opcodes.ACC_PRIVATE, "setupLogger", "(Lorg/apache/maven/cli/MavenCli$CliRequest;)Lorg/codehaus/plexus/logging/Logger;", null, null);
     mv.visitCode();

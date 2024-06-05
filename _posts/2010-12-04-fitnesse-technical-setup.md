@@ -46,7 +46,7 @@ The launcher will use a local checkout of the project. This checkout is used for
 
 Launcher command line:
 
-```
+```bash
 java -jar fitnesse.jar -p 8086 -e 0 -r $dir_with_fitnesse_pages
 ```
 
@@ -85,7 +85,7 @@ The backup job is simple. It is run by our Build server, every minute and launch
 Here is a simple batch file for Subversion.
 The first argument should be the directory to backup.
 
-```
+```bash
 for /f "tokens=2*" %%i in ('svn status %1 ^| find "?"') do svn add "%%i"
 for /f "tokens=2*" %%i in ('svn status %1 ^| find "!"') do svn delete "%%i"
 svn commit -m "Automatic commit" %1
@@ -113,7 +113,7 @@ On a developer server, we don’t need the “-r” flag. The pages will be impo
 
 Launcher command line:
 
-```
+```bash
 java -jar fitnesse.jar -p 8086 -e 0
 ```
 

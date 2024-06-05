@@ -56,7 +56,7 @@ l'approche « je ne teste pas les interactions mais uniquement la partie intér
 Cette 3ème approche mérite d'être détaillée.
 Imaginez que vous vouliez tester la méthode suivante :
 
-``` java
+```java
 public calculeLaMoyenneDesSalaires() {
     List employésSousPayés = chargeLaListeSilTePLait();
     Pour chaque employé {
@@ -64,11 +64,11 @@ public calculeLaMoyenneDesSalaires() {
     }
     return laMoyenne;
 }
-``` 
+```
 
 Dans ce cas, on peut voir que ce qui est important dans la méthode, c'est le comment on calcule la moyenne, non pas le chargement de la liste des employés. La 3ème approche consisterait à revoir le code pour avoir une méthode qui calcule la moyenne à partir d'une liste d'employés :
 
-``` java
+```java
 public calculeLaMoyenneDesSalaires() {
     List employésSousPayés = chargeLaListeSilTePLait();
     moyenne = calculeMoyenne(employésSousPayés);

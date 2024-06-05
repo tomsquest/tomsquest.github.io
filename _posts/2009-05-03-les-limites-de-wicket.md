@@ -60,7 +60,7 @@ Intégrer SpringSecurity/Acegi à une application Wicket n'est pas une sinécure
 
 Wicket dispose de son propre framework de sécurité orienté composant (au lieu d'être orienté URL) donc il est plus granulaire. Avec ce système, Martin nous explique qu'il est très simple de ne pas afficher un lien si l'utilisateur n'a pas accès à sa destination. Illustration :
 
-``` java
+```java
 Link adminPage = new Link("admin") {
     @Override
     public void onClick() {
@@ -102,7 +102,7 @@ Comme toujours, un framework Javascript est d'un grand secours et Wicket ne fait
 
 L'exemple suivant montre l'usage de [WiQuery](http://code.google.com/p/wiquery/) qui intègre Jquery/JQueryUI à Wicket au travers des Behaviors, qui permettent d'ajouter des comportements à des objets existants (dont des attributs JS ou Ajax) :
 
-``` java
+```java
 public MyWebPage() {
     Label example1 = new Label("example1", "Example 1"); 
 

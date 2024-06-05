@@ -38,7 +38,7 @@ Bien vérifier s'il n'y a pas un problème avec la requête d'acquisition du loc
 
 L'exemple est tiré d'une configuration dont la base de données cible est un SQL Server. Il y a quelques changements pour une autre base de données mais rien de très compliqué.
 
-``` xml
+```xml
 <bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" >
     <property name="dataSource" ref="dataSource" />
     <property name="quartzProperties">

@@ -21,7 +21,7 @@ Les avantages de Jetty sont :
 
 Pour lancer Jetty, sans avoir fait aucune configuration préalable, il suffit de lancer la commande suivante depuis la racine de votre projet Web Maven :
 
-``` bash
+```bash
 $ mvn jetty:run
 ```
 
@@ -37,7 +37,7 @@ Maintenant, passons aux choses sérieuses. Si vous avez besoin d'une DataSource,
 
 Pour cela, il suffit d'ajouter au pom.xml de l'application Web :
 
-``` xml
+```xml
 <profiles>
     <profile>
         <id>jetty</id>
@@ -75,7 +75,7 @@ Nous avons également ajouté une dépendance vers `com.experlog.xapool` qui off
 
 Voici un exemple de fichier jetty-env.xml :
 
-``` xml
+```xml
 <Configure class="org.mortbay.jetty.webapp.WebAppContext">
 
     <New id="myDataSource" class="org.mortbay.jetty.plus.naming.Resource">

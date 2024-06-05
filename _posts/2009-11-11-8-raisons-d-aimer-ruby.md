@@ -21,7 +21,7 @@ Le meta-programming c’est la génération de code par le code. Cela permet par
 
 L’équivalent de la génération d’une méthode au Runtime en Java serait la possibilité d'écrire le code suivant :
 
-``` java 
+```java 
 void genereUneMethode() {
     /* cette méthode sera ajouté à la classe appelante */
     void nouvelleMethode() {

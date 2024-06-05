@@ -10,7 +10,7 @@ Pour tester rapidement une nouvelle configuration d’un Cron, par exemple "0 * 
 
 Exemple d'utilisation :
 
-``` java
+```java
 import org.quartz.CronExpression;
 
 public class QuartzExpressionTest extends TestCase {
@@ -30,7 +30,7 @@ public class QuartzExpressionTest extends TestCase {
 
 Sortie :
 
-``` bash
+```bash
 Fri Nov 14 22:58:00 CET 2008
 Fri Nov 14 22:59:00 CET 2008
 ```
