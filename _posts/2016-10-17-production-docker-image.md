@@ -108,7 +108,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 - Then, `chown $user` the mounted volume in the entrypoint script:
 
-```shell
+```bash
 if [ "$1" = 'redis-server']; then
     chown -R redis .             # Fix permissions
     exec gosu redis "$0" "$@"    # Run as `redis` and not `root`
@@ -125,7 +125,7 @@ CMD ["radicale", "--config", "/radicale/config"]
 
 [docker-entrypoint.sh](https://github.com/tomsquest/docker-radicale/blob/master/docker-entrypoint.sh):
 
-```shell
+```bash
 if [ "$1" = 'radicale' -a "$(id -u)" = '0' ]; then
     chown -R radicale .
     exec su-exec radicale "$@"
