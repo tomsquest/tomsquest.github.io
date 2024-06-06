@@ -23,7 +23,7 @@ Sizes after and before, with the difference in percent:
 
 [Install tslib](https://github.com/microsoft/tslib), the library that contains the helper code:
 
-```shell script
+```bash
 npm i tslib
 ```
 
