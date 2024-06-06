@@ -14,6 +14,8 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:day/:title/
+feed:
+  path: /atom.xml
 plugins:
   - jekyll-feed
   - jekyll-sitemap
