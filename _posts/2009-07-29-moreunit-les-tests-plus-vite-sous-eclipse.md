@@ -1,6 +1,7 @@
 ---
 title: "MoreUnit : les tests plus vite sous Eclipse"
 slug: moreunit-les-tests-plus-vite-sous-eclipse
+lang: fr
 date: 2009-07-29T00:00:00Z
 ---
 

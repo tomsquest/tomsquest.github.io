@@ -1,6 +1,7 @@
 ---
 title: "Industrialisation des développements : automatisez votre base de données"
 slug: industrialisation-des-developpements-automatisez-votre-base-de-donnees
+lang: fr
 date: 2010-09-16T00:00:00Z
 ---
 

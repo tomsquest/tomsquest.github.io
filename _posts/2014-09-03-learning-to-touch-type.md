@@ -1,6 +1,7 @@
 ---
 title: "Learning to touch type using the Colemak layout"
 slug: learning-to-touch-type
+lang: en
 date: 2014-09-03T00:00:00Z
 ---
 

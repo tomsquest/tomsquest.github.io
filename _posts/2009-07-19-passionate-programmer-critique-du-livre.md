@@ -1,6 +1,7 @@
 ---
 title: Critique du livre "Passionate Programmer"
 slug: passionate-programmer-critique-du-livre
+lang: fr
 date: 2009-07-19T00:00:00Z
 ---
 

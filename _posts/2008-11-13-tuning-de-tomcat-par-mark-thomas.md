@@ -1,6 +1,7 @@
 ---
 title: Tuning de Tomcat par Mark Thomas
 slug: tuning-de-tomcat-par-mark-thomas
+lang: fr
 date: 2008-11-13T00:00:00Z
 ---
 

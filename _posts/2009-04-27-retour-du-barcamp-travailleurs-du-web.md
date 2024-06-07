@@ -1,6 +1,7 @@
 ---
 title: Retour du Barcamp "Travailleurs Du Web"
 slug: retour-du-barcamp-travailleurs-du-web
+lang: fr
 date: 2009-04-27T00:00:00Z
 ---
 

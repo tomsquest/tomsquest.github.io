@@ -1,6 +1,7 @@
 ---
 title: 'Présentation du livre "The Mythical Man Month"'
 slug: the-mythical-man-month
+lang: fr
 date: 2008-10-12T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Better NPM'ing, Tips and Tricks using NPM
 slug: better-npm-ing
+lang: en
 date: 2018-10-02T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Configurer Quartz sur un Cluster
 slug: configurer-quartz-sur-un-cluster
+lang: fr
 date: 2008-11-11T00:00:00Z
 ---
 

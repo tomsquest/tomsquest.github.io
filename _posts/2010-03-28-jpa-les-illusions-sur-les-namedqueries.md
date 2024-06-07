@@ -1,6 +1,7 @@
 ---
 title: "JPA : les illusions sur les NamedQueries"
 slug: jpa-les-illusions-sur-les-namedqueries
+lang: fr
 date: 2010-03-28T00:00:00Z
 ---
 

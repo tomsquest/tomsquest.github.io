@@ -1,6 +1,7 @@
 ---
 title: "Selenium en java : Démarrage rapide"
 slug: selenium-en-java-demarrage-rapide
+lang: fr
 date: 2008-09-04T00:00:00Z
 ---
 

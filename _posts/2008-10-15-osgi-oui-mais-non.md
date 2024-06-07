@@ -1,6 +1,7 @@
 ---
 title: "OSGI : oui mais non"
 slug: osgi-oui-mais-non
+lang: fr
 date: 2008-10-15T00:00:00Z
 ---
 

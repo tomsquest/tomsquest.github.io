@@ -1,6 +1,7 @@
 ---
 title: Les limites de Wicket
 slug: les-limites-de-wicket
+lang: fr
 date: 2009-05-03T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Working Effectively with Unit Tests by Jay Fields"
 slug: working-effectively-with-unit-tests
+lang: en
 date: 2015-03-20T00:00:00Z
 ---
 
