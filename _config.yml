@@ -4,9 +4,23 @@ description: >-
   Tom's Quest: Software development insights, productivity tips, and engaging reads by a passionate engineer.
 baseurl: ""
 url: https://www.tomsquest.com
-# author is used by jekyll-feeds
+# author is used by jekyll-feeds and SEO
 author:
   name: Thomas Queste
+  twitter: ThomasQueste
+# seo
+logo: /assets/images/logo_512.png
+twitter:
+  username: ThomasQueste
+  card: summary
+social:
+  name: Thomas Queste
+  links:
+    - https://twitter.com/ThomasQueste
+    - https://www.linkedin.com/in/thomasqueste
+    - https://github.com/tomsquest
+    - https://keybase.io/thomasqueste
+# seo:end
 sass:
   style: compressed
 collections:
