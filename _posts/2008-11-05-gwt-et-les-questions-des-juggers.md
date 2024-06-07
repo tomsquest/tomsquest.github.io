@@ -1,6 +1,7 @@
 ---
 title: GWT et les questions des Juggers
 slug: gwt-et-les-questions-des-juggers
+lang: fr
 date: 2008-11-05T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Gradle : vos builds aux petits oignons"
 slug: gradle-vos-builds-aux-petits-oignons
+lang: fr
 date: 2009-06-26T00:00:00Z
 ---
 

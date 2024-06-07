@@ -1,6 +1,7 @@
 ---
 title: "De la programmation défensive"
 slug: de-la-programmation-defensive
+lang: fr
 date: 2008-10-26T00:00:00Z
 ---
 

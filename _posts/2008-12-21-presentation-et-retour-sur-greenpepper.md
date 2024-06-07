@@ -1,6 +1,7 @@
 ---
 title: "Présentation et retour sur GreenPepper"
 slug: presentation-et-retour-sur-greenpepper
+lang: fr
 date: 2008-12-21T00:00:00Z
 ---
 

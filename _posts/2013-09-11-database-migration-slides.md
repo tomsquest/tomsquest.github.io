@@ -1,6 +1,7 @@
 ---
 title: "Slides of my presentation : DB Migration Automation"
 slug: database-migration-slides
+lang: en
 date: 2013-09-11T00:00:00Z
 ---
 

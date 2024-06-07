@@ -1,6 +1,7 @@
 ---
 title: "Selenium : Boostez vos tests avec Tellurium"
 slug: selenium-boostez-vos-tests-avec-tellurium
+lang: fr
 date: 2008-10-29T00:00:00Z
 ---
 

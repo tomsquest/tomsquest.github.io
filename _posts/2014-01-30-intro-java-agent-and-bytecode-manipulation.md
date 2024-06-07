@@ -1,6 +1,7 @@
 ---
 title: "An introduction to Java Agent and bytecode manipulation"
 slug: intro-java-agent-and-bytecode-manipulation
+lang: en
 date: 2014-01-30T00:00:00Z
 ---
 

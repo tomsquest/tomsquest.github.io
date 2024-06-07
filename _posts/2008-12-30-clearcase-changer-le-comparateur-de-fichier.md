@@ -1,6 +1,7 @@
 ---
 title: "ClearCase : changer le comparateur de fichier"
 slug: clearcase-changer-le-comparateur-de-fichier
+lang: fr
 date: 2008-12-30T00:00:00Z
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "A la découverte des Components Hibernate"
 slug: a-la-decouverte-des-components-hibernate
+lang: fr
 date: 2008-11-28T00:00:00Z
 ---
 

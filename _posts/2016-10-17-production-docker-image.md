@@ -1,6 +1,7 @@
 ---
 title: "My attempt at building a production grade docker image"
 slug: production-docker-image
+lang: en
 date: 2016-10-17T00:00:00Z
 ---
 

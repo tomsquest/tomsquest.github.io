@@ -1,6 +1,7 @@
 ---
 title: "Tests d'intégration : quid de la base de données ?"
 slug: tests-d-integration-quid-de-la-base-de-donnees
+lang: fr
 date: 2009-10-12T00:00:00Z
 ---
 

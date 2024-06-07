@@ -1,6 +1,7 @@
 ---
 title: FitNesse technical setup
 slug: fitnesse-technical-setup
+lang: en
 date: 2010-12-04T00:00:00Z
 ---
 

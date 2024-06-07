@@ -1,6 +1,7 @@
 ---
 title: "Quartz : un calendrier qui exclut les jours fériés"
 slug: quartz-un-calendrier-qui-exclut-les-jours-feries
+lang: fr
 date: 2008-11-15T00:00:00Z
 ---
 

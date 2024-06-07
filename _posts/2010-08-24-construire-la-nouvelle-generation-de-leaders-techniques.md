@@ -1,6 +1,7 @@
 ---
 title: "Construire la nouvelle génération de leaders techniques"
 slug: construire-la-nouvelle-generation-de-leaders-techniques
+lang: fr
 date: 2010-08-24T00:00:00Z
 ---
 

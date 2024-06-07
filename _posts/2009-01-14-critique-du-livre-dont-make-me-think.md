@@ -1,6 +1,7 @@
 ---
 title: Critique du livre "Don't Make Me Think"
 slug: critique-du-livre-dont-make-me-think
+lang: fr
 date: 2009-01-14T00:00:00Z
 ---
 

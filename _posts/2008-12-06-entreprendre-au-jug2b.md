@@ -1,6 +1,7 @@
 ---
 title: Entreprendre au JUG2B
 slug: entreprendre-au-jug2b
+lang: fr
 date: 2008-12-06T00:00:00Z
 ---
 

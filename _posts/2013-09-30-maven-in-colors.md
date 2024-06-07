@@ -1,6 +1,7 @@
 ---
 title: "Maven in colors"
 slug: maven-in-colors
+lang: en
 date: 2013-09-30T00:00:00Z
 ---
 

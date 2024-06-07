@@ -1,6 +1,7 @@
 ---
 title: Better autocompletes with Fuzzy Matching
 slug: better-autocompletes-with-fuzzy-matching
+lang: en
 date: 2011-05-13T00:00:00Z
 ---
 
