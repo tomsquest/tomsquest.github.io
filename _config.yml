@@ -7,8 +7,6 @@ url: https://www.tomsquest.com
 # author is used by jekyll-feeds
 author:
   name: Thomas Queste
-twitter_username: thomasqueste
-github_username: tomsquest
 sass:
   style: compressed
 collections:
