@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://www.tomsquest.com/sitemap.xml
