@@ -16,5 +16,6 @@ collections:
 feed:
   path: /atom.xml
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
