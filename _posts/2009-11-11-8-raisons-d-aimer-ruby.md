@@ -37,7 +37,7 @@ Cela veut dire, qu’il est possible d’appeler une méthode avec un Array à l
 
 Le Duck Typing permet d’avoir du code beaucoup plus souple. La forte orientation vers les tests de Ruby en est la conséquence.
 
-Il y a eu beaucoup de débats sur au sujet de « Static typing » contre « Duck typing ». Les auteurs de « Programming Ruby 1.9 » expliquent que le typage statique ne rend pas forcément un code plus fiable et peut diminuer la productivité. (Non, pas de Troll)
+Il y a eu beaucoup de débats sur au sujet de "Static typing" contre "Duck typing". Les auteurs de "Programming Ruby 1.9" expliquent que le typage statique ne rend pas forcément un code plus fiable et peut diminuer la productivité. (Non, pas de Troll)
 
 Plus d’info sur le [duck typing sur Wikipedia](http://en.wikipedia.org/wiki/Duck_typing).
 

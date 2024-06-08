@@ -18,18 +18,18 @@ Gradle, c'est avant tout un DSL en Groovy pour décrire ses builds. Il bénéfic
 
 Hans Docker insiste sur ce point : un script de build qui épouse votre projet est beaucoup plus intéressant qu'un projet où la structure est imposée par l'outil de build (comme Maven).
 
-Il fait un parallèle avec « l'[Anemic Object Model](http://martinfowler.com/bliki/AnemicDomainModel.html) » de Martin Fowler et le DDD dans le sens où votre build se décrit lui-même et ses buts se documentent eux-mêmes.
+Il fait un parallèle avec "l'[Anemic Object Model](http://martinfowler.com/bliki/AnemicDomainModel.html)" de Martin Fowler et le DDD dans le sens où votre build se décrit lui-même et ses buts se documentent eux-mêmes.
 
 Gradle propose donc de donner du sens à nos builds en permettant d'améliorer la compréhension du système et des tâches réalisées.
 
-Hans oppose les notions de « Langage de build » (Gradle) et de « framework de build » (Maven). L'un offre la flexibilité, l'autre pose un cadre défini.
+Hans oppose les notions de "Langage de build" (Gradle) et de "framework de build" (Maven). L'un offre la flexibilité, l'autre pose un cadre défini.
 
 ## Attention, outil coupant
 
 Vous avez déjà eu des projets complexes à construire, avec par exemple de la génération de code ou des fichiers à emboiter. Vous vous êtes battu avec Maven et vous avez souvent perdu (c'est mon cas, je n'ai pas encore ma ceinture noire de Maven).
 
 Gradle vient directement répondre à ce besoin : simplifier les builds complexes.
-C'est d'ailleurs son moto : « Make the impossible possible, the possible easy, and the easy elegant".
+C'est d'ailleurs son moto : "Make the impossible possible, the possible easy, and the easy elegant".
 
 Discussion faite avec Florent Ramière de Jaxio, nous sommes du même avis : Oui, Gradle est adapté pour les builds complexes mais 80% ont des besoins simples, réalisables avec Maven.
 
@@ -41,10 +41,10 @@ Franchement, c'est un bonheur de s'y retrouver entre différents projets. Malheu
 
 ## Un peu jeune
 
-Gradle est « production ready » comme le dit Hans. Il est utilisé par certains gros projets aux besoins complexes.
+Gradle est "production ready" comme le dit Hans. Il est utilisé par certains gros projets aux besoins complexes.
 Pourtant, il est encore en fort développement, signe de bonne santé, mais aussi manque de maturité. Le projet n'a pas encore un an.
 
-Il lui manque un certain nombre de fonctionnalités avant de devenir réellement complet, par exemple le support d'autres langages que Java ou encore celui de Netbeans (mais « Why bother ? » comme dirait Antonio Goncalves).
+Il lui manque un certain nombre de fonctionnalités avant de devenir réellement complet, par exemple le support d'autres langages que Java ou encore celui de Netbeans (mais "Why bother ?" comme dirait Antonio Goncalves).
 
 Bref, il y a du travail et ce n'est pas la crise comme l'indique la [Roadmap](http://docs.codehaus.org/display/GRADLE/Roadmap).
 
@@ -72,4 +72,4 @@ Zenika a publié des articles à propose de Gradle ainsi que deux podcasts. Le d
 - Les [articles](http://blog.zenika.com/index.php?tag/gradle) ;
 - Les [podcasts](http://blog.zenika.com/index.php?post/2009/05/29/Podcast-Gradle).
 
-Nicolas Martignole du Touilleur Express a fait un [compte rendu de la présentation](http://www.touilleur-express.fr/2009/06/23/jazoon-gradle-la-presentation-qui-aura-lieu-jeudi-soir/) faite à Jazoon. Les commentaires sont également intéressants. J'aime beaucoup le « Gradle as the assembly language for builds » de Vincent Massol.
+Nicolas Martignole du Touilleur Express a fait un [compte rendu de la présentation](http://www.touilleur-express.fr/2009/06/23/jazoon-gradle-la-presentation-qui-aura-lieu-jeudi-soir/) faite à Jazoon. Les commentaires sont également intéressants. J'aime beaucoup le "Gradle as the assembly language for builds" de Vincent Massol.

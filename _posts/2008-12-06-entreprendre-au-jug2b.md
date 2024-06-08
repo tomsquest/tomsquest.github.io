@@ -47,11 +47,11 @@ Comme dit précédemment, une boite, ça coûte. Loïc Dosseur étudie réguliè
 
 ## Avoir l'esprit Startup
 
-Les investisseurs apprécient apparemment le « **grain de folie** ». Un entrepreneur plat qui n'aime pas le risque ou qu'il n'a pas cette envie d'innover ne fera pas un bon chef d'entreprise.
+Les investisseurs apprécient apparemment le "**grain de folie**". Un entrepreneur plat qui n'aime pas le risque ou qu'il n'a pas cette envie d'innover ne fera pas un bon chef d'entreprise.
 
 ## Un mot sur la SCOP Port Parallèle
 
-Une SCOP est une « Société coopérative de production ». Elle vise à placer ses salariés au centre de l'entreprise, les salariés étant le plus souvent des associés et ont un droit de vote : un homme égal une voix. Wikipedia a une section intéressante à ce propos : « [La SCOP, un modèle idéal d'entreprise ?](http://fr.wikipedia.org/wiki/Scop#La_Scop.2C_un_mod.C3.A8le_id.C3.A9al_d.27entreprise_.3F) ».
+Une SCOP est une "Société coopérative de production". Elle vise à placer ses salariés au centre de l'entreprise, les salariés étant le plus souvent des associés et ont un droit de vote : un homme égal une voix. Wikipedia a une section intéressante à ce propos : "[La SCOP, un modèle idéal d'entreprise ?](http://fr.wikipedia.org/wiki/Scop#La_Scop.2C_un_mod.C3.A8le_id.C3.A9al_d.27entreprise_.3F)".
 
 [Antonio Goncalves](http://www.antoniogoncalves.org) du JUG a rejoint depuis deux ans Port Parallèle et en est très content. Il bénéficie, comme chaque salarié de la SCOP d'un droit de vote, de la participation et surtout de la structure mise en place à qui il délègue sa compta et d'autres choses rébarbatives. Pourtant, c'est lui qui amène ses factures que ses clients règlent directement à Port Parallèle, qui lui transmet ensuite la somme correspondante. Simple, non ? Un autre avantage est que ce genre de structure permet une collaboration aisée avec les autres membres. Il est facile de rencontrer d'autres entrepreneurs et très facile de tester de travailler ensemble pour tester un projet et se tester.
 

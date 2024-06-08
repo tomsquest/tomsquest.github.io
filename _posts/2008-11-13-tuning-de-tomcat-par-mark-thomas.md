@@ -22,7 +22,7 @@ Les logs devraient être configurés :
 Il est possible de cacher du contenu statique :
 
 - Par défaut, 10Mo de contenu sont retenus pendant 5 secondes. A changer si on a de la RAM et du contenu vraiment statique ;
-- Il existe la fonctionnalité « SEND_FILE » des connecteurs NIO et APR permettant d'indiquer à l'OS d'envoyer directement le contenu statique du disque dur vers la carte réseau.
+- Il existe la fonctionnalité "SEND_FILE" des connecteurs NIO et APR permettant d'indiquer à l'OS d'envoyer directement le contenu statique du disque dur vers la carte réseau.
 
 Côté JVM, Mark rappelle que trop de mémoire est néfaste pour les performances : les GC seront plus longs. Il faut donc avoir les valeurs de XMS/XMX les plus faibles possibles. Pour cela, il faut étudier les besoins de l'application et mettre les valeurs en fonction.
 
