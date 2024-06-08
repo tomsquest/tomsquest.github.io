@@ -7,7 +7,11 @@ Reducing the size of JS compiled from Typescript is easy.
 
 Here are some numbers and how to do it. It's nearly free if you run on Node (!= browser).
 
-**TL;DR**: enable tslib/importHelpers, reduce the size of the JS files, reduce storage and network, **think carbon**!
+## **TL;DR**
+
+Enable `tslib` + `importHelpers`  
+= reduce JS file size = reduce storage and network  
+= **Think Carbon**!
 
 ## Size matters
 
@@ -23,7 +27,7 @@ Sizes after and before, with the difference in percent:
 [Install tslib](https://github.com/microsoft/tslib), the library that contains the helper code:
 
 ```bash
-npm i tslib
+npm install tslib
 ```
 
 Enable the import of the helper functions:
