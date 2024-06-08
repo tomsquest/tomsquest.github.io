@@ -1,11 +1,10 @@
 ---
 title: "Maven in colors"
 lang: en
+modified_date: 2014-01-21
 ---
 
 <img src="/assets/images/posts/2013/maven-logo.png" style="float:right"/>
-
-_Updated the 2014.01.21 - Added JCGay Maven Agent_
 
 Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings ?
 Let's see how to do it.
