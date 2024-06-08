@@ -2,7 +2,6 @@
 title: Critique du livre "Don't Make Me Think"
 slug: critique-du-livre-dont-make-me-think
 lang: fr
-date: 2009-01-14T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2009/01/dmmt-cover-2nd.jpg" style="float:right"/>

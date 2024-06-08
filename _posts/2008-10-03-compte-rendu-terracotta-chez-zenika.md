@@ -2,7 +2,6 @@
 title: "Compte-rendu de la présentation de Terracotta chez Zenika"
 slug: compte-rendu-terracotta-chez-zenika
 lang: fr
-date: 2008-10-03T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/10/logo_terracotta.jpg" style="float:right"/>

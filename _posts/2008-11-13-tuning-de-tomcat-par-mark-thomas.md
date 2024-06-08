@@ -2,7 +2,6 @@
 title: Tuning de Tomcat par Mark Thomas
 slug: tuning-de-tomcat-par-mark-thomas
 lang: fr
-date: 2008-11-13T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/11/tomcat-logo.gif" style="float:right"/>

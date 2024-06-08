@@ -2,7 +2,6 @@
 title: Better NPM'ing, Tips and Tricks using NPM
 slug: better-npm-ing
 lang: en
-date: 2018-10-02T00:00:00Z
 ---
 
 ![npm logo](/assets/images/posts/2018-10-02-better-npm-ing/npm_logo.png)

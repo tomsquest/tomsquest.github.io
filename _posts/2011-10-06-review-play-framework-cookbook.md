@@ -2,7 +2,6 @@
 title: "Review : Play Framework Cookbook"
 slug: review-play-framework-cookbook
 lang: en
-date: 2011-10-06T00:00:00Z
 ---
 
 <img src="/assets/images/posts/play_framework_cookbook.jpg" style="float:right"/>

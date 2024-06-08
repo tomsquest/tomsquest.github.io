@@ -2,7 +2,6 @@
 title: Entreprendre au JUG2B
 slug: entreprendre-au-jug2b
 lang: fr
-date: 2008-12-06T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/12/parisjug-logo.jpg" style="float:right"/>

@@ -2,7 +2,6 @@
 title: Critique du livre "Wicket In Action"
 slug: critique-du-livre-wicket-in-action
 lang: fr
-date: 2008-12-09T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/12/wicket_in_action.jpg" style="float:right"/>

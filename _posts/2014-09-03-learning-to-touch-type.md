@@ -2,7 +2,6 @@
 title: "Learning to touch type using the Colemak layout"
 slug: learning-to-touch-type
 lang: en
-date: 2014-09-03T00:00:00Z
 ---
 
 I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries and morover never looking back at my keyboard. After all Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touch type using a new layout, the [Colemak](http://colemak.com/).

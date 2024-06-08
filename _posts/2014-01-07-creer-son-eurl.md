@@ -2,7 +2,6 @@
 title: "Créer son EURL et devenir indépendant : les étapes"
 slug: creer-son-eurl
 lang: fr
-date: 2014-01-07T00:00:00Z
 ---
 
 J'ai créé mon EURL courant octobre-novembre et je suis donc maintenant indépendant.

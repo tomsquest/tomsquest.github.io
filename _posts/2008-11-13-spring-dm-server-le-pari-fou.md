@@ -2,7 +2,6 @@
 title: Spring DM Server, le pari fou ?
 slug: spring-dm-server-le-pari-fou
 lang: fr
-date: 2008-11-13T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/11/springsource_logo.png" style="float:right"/>

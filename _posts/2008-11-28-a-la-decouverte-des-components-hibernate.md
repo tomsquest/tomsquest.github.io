@@ -2,7 +2,6 @@
 title: "A la découverte des Components Hibernate"
 slug: a-la-decouverte-des-components-hibernate
 lang: fr
-date: 2008-11-28T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/11/hibernate_logo.gif" style="float:right"/>

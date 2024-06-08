@@ -2,7 +2,6 @@
 title: "OSGI : oui mais non"
 slug: osgi-oui-mais-non
 lang: fr
-date: 2008-10-15T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/12/parisjug-logo.jpg" style="float:right"/>

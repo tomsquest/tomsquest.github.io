@@ -2,7 +2,6 @@
 title: "Slides of my presentation : DB Migration Automation"
 slug: database-migration-slides
 lang: en
-date: 2013-09-11T00:00:00Z
 ---
 
 Below are my slides about why and how we automated the migration of our databases.

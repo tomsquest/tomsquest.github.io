@@ -2,7 +2,6 @@
 title: Script de sauvegarde WordPress et MySQL
 slug: script-de-sauvegarde-wordpress-et-mysql
 lang: fr
-date: 2008-09-01T00:00:00Z
 ---
 
 Qui dit nouveau blog, plugins à gogo, tests et expérimentations, dit un jour ou l'autre : "si j'avais fait une sauvegarde, ça m'aurait évité de perdre mon blog et tout son contenu !".

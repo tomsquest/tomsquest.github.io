@@ -2,7 +2,6 @@
 title: "Rencontre avec Jérôme Louvel, auteur de Restlet"
 slug: rencontre-avec-jerome-louvel-auteur-de-restlet
 lang: fr
-date: 2008-11-11T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/11/restlet-logo.gif" style="float:right"/>

@@ -2,7 +2,6 @@
 title: Better autocompletes with Fuzzy Matching
 slug: better-autocompletes-with-fuzzy-matching
 lang: en
-date: 2011-05-13T00:00:00Z
 ---
 
 This article is an introduction to Fuzzy Matching and how it can improve an Autocomplete widget. Fuzzy Matching is used to find the most appropriate strings into a set of strings, like finding "Sinatra" when you mispelled it "Senatra".

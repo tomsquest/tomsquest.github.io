@@ -2,7 +2,6 @@
 title: "An introduction to Java Agent and bytecode manipulation"
 slug: intro-java-agent-and-bytecode-manipulation
 lang: en
-date: 2014-01-30T00:00:00Z
 ---
 
 A few months ago, I wrote a little shell script to colorize Maven's output

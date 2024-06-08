@@ -2,7 +2,6 @@
 title: "Jetty : démarrage rapide"
 slug: jetty-demarrage-rapide
 lang: fr
-date: 2008-09-09T00:00:00Z
 ---
 
 <img src="/assets/images/posts/jetty_logo.png" style="float:right"/>

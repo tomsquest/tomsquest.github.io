@@ -2,7 +2,6 @@
 title: "Industrialisation des développements : automatisez votre base de données"
 slug: industrialisation-des-developpements-automatisez-votre-base-de-donnees
 lang: fr
-date: 2010-09-16T00:00:00Z
 ---
 
 Le grand oubli dans l'industrialisation des développements est la base de données, cette chose monolithique et statique qui n'évolue pas aussi vite et aussi aisément que le code. Au même titre que l'intégration continue et les systèmes de gestion de version pour le code source, il existe des outils permettant de fluidifier et d'automatiser le travail autour du schéma physique des données. Travailler avec ces outils permet de compléter une démarche Agile en permettant une réactivité forte face aux changements.
