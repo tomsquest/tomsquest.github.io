@@ -1,6 +1,5 @@
 ---
 title: "Présentation et retour sur GreenPepper"
-slug: presentation-et-retour-sur-greenpepper
 lang: fr
 ---
 

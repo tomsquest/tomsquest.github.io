@@ -1,6 +1,5 @@
 ---
 title: Moteur de recherche Maven par Sonatype
-slug: moteur-de-recherche-maven-par-sonatype
 lang: fr
 ---
 

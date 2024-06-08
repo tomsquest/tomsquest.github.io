@@ -1,6 +1,5 @@
 ---
 title: "Construire la nouvelle génération de leaders techniques"
-slug: construire-la-nouvelle-generation-de-leaders-techniques
 lang: fr
 ---
 

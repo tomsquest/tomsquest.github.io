@@ -1,6 +1,5 @@
 ---
 title: "Jetty : démarrage rapide"
-slug: jetty-demarrage-rapide
 lang: fr
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Better NPM'ing, Tips and Tricks using NPM
-slug: better-npm-ing
 lang: en
 ---
 

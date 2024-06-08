@@ -1,6 +1,5 @@
 ---
 title: "Learning to touch type using the Colemak layout"
-slug: learning-to-touch-type
 lang: en
 ---
 

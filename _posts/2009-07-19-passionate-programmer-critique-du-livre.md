@@ -1,6 +1,5 @@
 ---
 title: Critique du livre "Passionate Programmer"
-slug: passionate-programmer-critique-du-livre
 lang: fr
 ---
 

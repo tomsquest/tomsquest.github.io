@@ -1,6 +1,5 @@
 ---
 title: Better autocompletes with Fuzzy Matching
-slug: better-autocompletes-with-fuzzy-matching
 lang: en
 ---
 

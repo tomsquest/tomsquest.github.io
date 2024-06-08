@@ -1,6 +1,5 @@
 ---
 title: "JPA : les illusions sur les NamedQueries"
-slug: jpa-les-illusions-sur-les-namedqueries
 lang: fr
 ---
 

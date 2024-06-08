@@ -1,6 +1,5 @@
 ---
 title: "Rencontre avec Jérôme Louvel, auteur de Restlet"
-slug: rencontre-avec-jerome-louvel-auteur-de-restlet
 lang: fr
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "ClearCase : changer le comparateur de fichier"
-slug: clearcase-changer-le-comparateur-de-fichier
 lang: fr
 ---
 

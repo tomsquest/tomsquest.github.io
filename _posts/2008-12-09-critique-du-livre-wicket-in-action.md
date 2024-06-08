@@ -1,6 +1,5 @@
 ---
 title: Critique du livre "Wicket In Action"
-slug: critique-du-livre-wicket-in-action
 lang: fr
 ---
 

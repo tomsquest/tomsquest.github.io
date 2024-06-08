@@ -1,6 +1,5 @@
 ---
 title: "Les inconvénients de Selenium"
-slug: les-inconvenients-de-selenium
 lang: fr
 ---
 

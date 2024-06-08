@@ -1,6 +1,5 @@
 ---
 title: "Working Effectively with Unit Tests by Jay Fields"
-slug: working-effectively-with-unit-tests
 lang: en
 ---
 

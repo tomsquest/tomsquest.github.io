@@ -1,6 +1,5 @@
 ---
 title: Configurer Quartz sur un Cluster
-slug: configurer-quartz-sur-un-cluster
 lang: fr
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "OSGI : oui mais non"
-slug: osgi-oui-mais-non
 lang: fr
 ---
 

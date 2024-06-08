@@ -1,6 +1,5 @@
 ---
 title: "Slides of my presentation : DB Migration Automation"
-slug: database-migration-slides
 lang: en
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: GWT et les questions des Juggers
-slug: gwt-et-les-questions-des-juggers
 lang: fr
 ---
 

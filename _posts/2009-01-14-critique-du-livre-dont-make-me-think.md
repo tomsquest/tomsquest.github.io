@@ -1,6 +1,5 @@
 ---
 title: Critique du livre "Don't Make Me Think"
-slug: critique-du-livre-dont-make-me-think
 lang: fr
 ---
 

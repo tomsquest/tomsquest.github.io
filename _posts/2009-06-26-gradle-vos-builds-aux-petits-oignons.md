@@ -1,6 +1,5 @@
 ---
 title: "Gradle : vos builds aux petits oignons"
-slug: gradle-vos-builds-aux-petits-oignons
 lang: fr
 ---
 

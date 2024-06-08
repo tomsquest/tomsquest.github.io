@@ -1,6 +1,5 @@
 ---
 title: Entreprendre au JUG2B
-slug: entreprendre-au-jug2b
 lang: fr
 ---
 

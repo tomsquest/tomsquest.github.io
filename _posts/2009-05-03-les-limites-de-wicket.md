@@ -1,6 +1,5 @@
 ---
 title: Les limites de Wicket
-slug: les-limites-de-wicket
 lang: fr
 ---
 

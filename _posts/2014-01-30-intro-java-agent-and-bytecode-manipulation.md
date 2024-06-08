@@ -1,6 +1,5 @@
 ---
 title: "An introduction to Java Agent and bytecode manipulation"
-slug: intro-java-agent-and-bytecode-manipulation
 lang: en
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Industrialisation des développements : automatisez votre base de données"
-slug: industrialisation-des-developpements-automatisez-votre-base-de-donnees
 lang: fr
 ---
 

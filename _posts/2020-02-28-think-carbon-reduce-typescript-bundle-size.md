@@ -1,6 +1,5 @@
 ---
 title: Think carbon, reduce typescript bundle size
-slug: think-carbon-reduce-typescript-bundle-size
 lang: en
 ---
 

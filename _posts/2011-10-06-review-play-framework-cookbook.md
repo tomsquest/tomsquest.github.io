@@ -1,6 +1,5 @@
 ---
 title: "Review : Play Framework Cookbook"
-slug: review-play-framework-cookbook
 lang: en
 ---
 
