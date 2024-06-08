@@ -1,6 +1,5 @@
 ---
 title: "MoreUnit : les tests plus vite sous Eclipse"
-slug: moreunit-les-tests-plus-vite-sous-eclipse
 lang: fr
 ---
 

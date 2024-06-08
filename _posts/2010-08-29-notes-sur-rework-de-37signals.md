@@ -1,6 +1,5 @@
 ---
 title: Notes sur Rework de 37signals
-slug: notes-sur-rework-de-37signals
 lang: fr
 ---
 

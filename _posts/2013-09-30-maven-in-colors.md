@@ -1,6 +1,5 @@
 ---
 title: "Maven in colors"
-slug: maven-in-colors
 lang: en
 ---
 

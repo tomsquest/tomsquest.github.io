@@ -1,6 +1,5 @@
 ---
 title: Spring DM Server, le pari fou ?
-slug: spring-dm-server-le-pari-fou
 lang: fr
 ---
 

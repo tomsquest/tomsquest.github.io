@@ -1,6 +1,5 @@
 ---
 title: "Tests d'intégration : quid de la base de données ?"
-slug: tests-d-integration-quid-de-la-base-de-donnees
 lang: fr
 ---
 

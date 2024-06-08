@@ -1,6 +1,5 @@
 ---
 title: "Compte-rendu de la présentation de Terracotta chez Zenika"
-slug: compte-rendu-terracotta-chez-zenika
 lang: fr
 ---
 

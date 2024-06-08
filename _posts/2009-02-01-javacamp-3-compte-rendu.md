@@ -1,6 +1,5 @@
 ---
 title: "JavaCamp 3 : Compte-rendu"
-slug: javacamp-3-compte-rendu
 lang: fr
 ---
 

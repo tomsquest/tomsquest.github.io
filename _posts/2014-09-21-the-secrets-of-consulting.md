@@ -1,6 +1,5 @@
 ---
 title: "The Secrets of Consulting by Gerald M. Weinberg"
-slug: the-secrets-of-consulting
 lang: en
 ---
 

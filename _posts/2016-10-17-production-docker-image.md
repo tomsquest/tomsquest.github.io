@@ -1,6 +1,5 @@
 ---
 title: "My attempt at building a production grade docker image"
-slug: production-docker-image
 lang: en
 ---
 

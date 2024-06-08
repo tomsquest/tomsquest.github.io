@@ -1,6 +1,5 @@
 ---
 title: "Démarrer avec JPA, Spring, Maven et Glassfish"
-slug: demarrer-avec-jpa-spring-maven-et-glassfish
 lang: fr
 ---
 

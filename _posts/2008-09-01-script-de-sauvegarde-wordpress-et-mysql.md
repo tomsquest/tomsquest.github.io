@@ -1,6 +1,5 @@
 ---
 title: Script de sauvegarde WordPress et MySQL
-slug: script-de-sauvegarde-wordpress-et-mysql
 lang: fr
 ---
 

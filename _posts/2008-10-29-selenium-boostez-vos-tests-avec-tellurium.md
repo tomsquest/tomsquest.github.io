@@ -1,6 +1,5 @@
 ---
 title: "Selenium : Boostez vos tests avec Tellurium"
-slug: selenium-boostez-vos-tests-avec-tellurium
 lang: fr
 ---
 

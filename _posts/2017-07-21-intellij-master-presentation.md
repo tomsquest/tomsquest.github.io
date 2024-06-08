@@ -1,6 +1,5 @@
 ---
 title: "Intellij Championship"
-slug: intellij-master-presentation
 lang: en
 ---
 

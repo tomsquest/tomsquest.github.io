@@ -1,6 +1,5 @@
 ---
 title: Export Excel avec Spring Web Flow
-slug: export-excel-avec-spring-web-flow
 lang: fr
 ---
 

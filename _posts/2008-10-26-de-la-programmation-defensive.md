@@ -1,6 +1,5 @@
 ---
 title: "De la programmation défensive"
-slug: de-la-programmation-defensive
 lang: fr
 ---
 

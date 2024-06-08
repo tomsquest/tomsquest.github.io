@@ -1,6 +1,5 @@
 ---
 title: "Selenium en java : Démarrage rapide"
-slug: selenium-en-java-demarrage-rapide
 lang: fr
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Créer son EURL et devenir indépendant : les étapes"
-slug: creer-son-eurl
 lang: fr
 ---
 

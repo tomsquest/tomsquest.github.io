@@ -1,6 +1,5 @@
 ---
 title: Tuning de Tomcat par Mark Thomas
-slug: tuning-de-tomcat-par-mark-thomas
 lang: fr
 ---
 

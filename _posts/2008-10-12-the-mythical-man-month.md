@@ -1,6 +1,5 @@
 ---
 title: 'Présentation du livre "The Mythical Man Month"'
-slug: the-mythical-man-month
 lang: fr
 ---
 

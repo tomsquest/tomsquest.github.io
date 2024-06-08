@@ -1,6 +1,5 @@
 ---
 title: "Astuce Quartz : tester une expression Cron"
-slug: astuce-quartz-tester-une-expression-cron
 lang: fr
 ---
 

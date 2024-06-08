@@ -1,6 +1,5 @@
 ---
 title: FitNesse technical setup
-slug: fitnesse-technical-setup
 lang: en
 ---
 

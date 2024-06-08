@@ -1,6 +1,5 @@
 ---
 title: "8 raisons d'aimer Ruby"
-slug: 8-raisons-d-aimer-ruby
 lang: fr
 ---
 

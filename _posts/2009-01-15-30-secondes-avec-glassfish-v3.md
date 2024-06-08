@@ -1,6 +1,5 @@
 ---
 title: 30 secondes avec Glassfish v3
-slug: 30-secondes-avec-glassfish-v3
 lang: fr
 ---
 

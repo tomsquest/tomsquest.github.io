@@ -1,6 +1,5 @@
 ---
 title: "A la découverte des Components Hibernate"
-slug: a-la-decouverte-des-components-hibernate
 lang: fr
 ---
 
