@@ -21,9 +21,9 @@ Qu'est-ce qu'il y a dans la boite ?
 
 ## La possibilité de structurer ses tests
 
-Tellurium offre la possibilité de décrire la structure des éléments d'une page. C'est ce qui est appelé OLM pour « Object To Locator Mapping ».
+Tellurium offre la possibilité de décrire la structure des éléments d'une page. C'est ce qui est appelé OLM pour "Object To Locator Mapping".
 
-Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d'une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d'UI. Je pense qu'il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre « tout au même endroit. ».
+Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d'une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d'UI. Je pense qu'il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre "tout au même endroit.".
 
 Exemple de description de la page d'accueil de google.fr :
 
@@ -73,7 +73,7 @@ Les avantages sont :
 
 ## Support des données de tests
 
-Tellurium propose d'associer des données aux tests. C'est ce que les auteurs nomment « Data Driven Test ». Le moteur se charge de lire les données et les injectent dans les tests. C'est en quelque sorte ce que l'on fait dans les tableaux [FitNesse](http://fitnesse.org/) mais directement intégré au TestCase.
+Tellurium propose d'associer des données aux tests. C'est ce que les auteurs nomment "Data Driven Test". Le moteur se charge de lire les données et les injectent dans les tests. C'est en quelque sorte ce que l'on fait dans les tableaux [FitNesse](http://fitnesse.org/) mais directement intégré au TestCase.
 
 Un jeu de données de test ressemble à ça :
 

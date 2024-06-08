@@ -21,14 +21,14 @@ Donc côté intégration à un modèle de page fourni par un WebDesigner, il n'y
 
 ## Et l'intégration avec Maven 2 ?
 
-Didier est direct : « Ca marche mais ce n'est pas simple ». Les ingénieurs de Sfeir le font sur plusieurs de leurs projets, notamment pour lancer les tests fonctionnels dans leur processus d'intégration continue.
+Didier est direct : "Ca marche mais ce n'est pas simple". Les ingénieurs de Sfeir le font sur plusieurs de leurs projets, notamment pour lancer les tests fonctionnels dans leur processus d'intégration continue.
 
-Petite recherche sur google avec « GWT maven » donne :
+Petite recherche sur google avec "GWT maven" donne :
 
-- En premier, un lien vers le projet GWT-Maven » qui permet d'intègre les deux projets (génération du War, lancement...)
+- En premier, un lien vers le projet GWT-Maven" qui permet d'intègre les deux projets (génération du War, lancement...)
 - En second, un article nommé : [GWT and Maven2, Oh the pain !](http://rbtech.blogspot.com/2007/06/gwt-and-maven-2-oh-pain.html).
 
-Donc oui, c'est possible, certains le font mais ce n'est pas « out of the box ».
+Donc oui, c'est possible, certains le font mais ce n'est pas "out of the box".
 
 ## Et la testabilité ?
 

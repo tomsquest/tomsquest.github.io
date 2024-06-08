@@ -17,7 +17,7 @@ C'est l'outil de base que l'on découvre en premier grâce au plugin Firefox.
 Quelques points à connaître :
 
 - Les tests enregistrés dans un langage autre que le HTML ne peuvent être relus par l'IDE. L'IDE ne sait que générer dans un autre langage et ne sait pas faire l'inverse ;
-- Impossible de factoriser du code en créant une méthode dans un test et en la réutilisant. A la rigueur, il est possible d'avoir des variables globales mais c'est tout. Par exemple, il est impossible de créer d'une méthode « login » qui permettrait de ne pas dupliquer le code de connexion dans chaque test (ouvrir la page, saisir le login, appuyer sur ok, vérifier que la connexion est ok) ;
+- Impossible de factoriser du code en créant une méthode dans un test et en la réutilisant. A la rigueur, il est possible d'avoir des variables globales mais c'est tout. Par exemple, il est impossible de créer d'une méthode "login" qui permettrait de ne pas dupliquer le code de connexion dans chaque test (ouvrir la page, saisir le login, appuyer sur ok, vérifier que la connexion est ok) ;
 - Il est assez buggé :
   - Le copier/coller qui fonctionne mal de temps en temps,
   - L'enregistrement qui plante de temps en temps, obligeant à fermer le navigateur ;

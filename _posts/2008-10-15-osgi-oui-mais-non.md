@@ -5,7 +5,7 @@ lang: fr
 
 <img src="/assets/images/posts/2008/12/parisjug-logo.jpg" style="float:right"/>
 
-[Xebia](http://www.xebia.fr/) a présenté hier soir « OSGI » au [Paris JUG](http://parisjug.org/). Ce fut une conférence très intéressante menée par Cyrille Le Clerc et Nicolas Griso. Tout leur discours a consisté à nous présenter honnêtement ce qu’est [OSGI](http://www.osgi.org/) et nous permettre de nous faire notre propre opinion.
+[Xebia](http://www.xebia.fr/) a présenté hier soir "OSGI" au [Paris JUG](http://parisjug.org/). Ce fut une conférence très intéressante menée par Cyrille Le Clerc et Nicolas Griso. Tout leur discours a consisté à nous présenter honnêtement ce qu’est [OSGI](http://www.osgi.org/) et nous permettre de nous faire notre propre opinion.
 
 Nicolas Martignole a fait une très bonne revue de la [soirée](http://www.touilleur-express.fr/2008/10/15/presentation-dosgi-au-paris-jug-naphtaline-et-peinture-fraiche). D’ailleurs, je nomme le [Touilleur Express](http://www.touilleur-express.fr/" target="\_parent) comme reporter officiel des JUG parisiens pour ses comptes rendus complets et les annotations qu’il fait.
 
@@ -15,7 +15,7 @@ Je voulais revenir sur les points que j’ai découverts et qui m’ont surpris 
 
 Regardez un peu cette page : [Why OSGI ?](http://www.osgi.org/About/WhyOSGi) et dites moi si après ça vous n’avez pas envie de vous y mettre. On dirait une page écrite par un commercial d’IBM. OSGI y est défini comme simple, transparent, sécurisé, non intrusif, utilisable partout, et je ne liste pas tous les autres adjectifs… Même si je le voulais, je n’arriverais pas à trouver quelque chose qui manque.
 
-OSGI propose la Modularité avec un grand « M » : les modules (« bundles ») sont liés entre eux par des interfaces déclarées ayant des numéros de version et ayant un cycle de vie maitrisé. Ce framework propose une solution aux limitations des JAR : pas de réalité au runtime (uniquement au build), pas de versionning, pas d’interface externe, pas de gestion des dépendances, pas de cycle de vie. Donc oui, sur ce point, OSGI semble être LA réponse.
+OSGI propose la Modularité avec un grand "M" : les modules ("bundles") sont liés entre eux par des interfaces déclarées ayant des numéros de version et ayant un cycle de vie maitrisé. Ce framework propose une solution aux limitations des JAR : pas de réalité au runtime (uniquement au build), pas de versionning, pas d’interface externe, pas de gestion des dépendances, pas de cycle de vie. Donc oui, sur ce point, OSGI semble être LA réponse.
 
 ## La réalité
 
@@ -23,7 +23,7 @@ Je vais lister les points qui me titillent :
 
 OSGI est fermé et payant :
 
-- Plus fermé que le JCP, le « club » OSGI est composé de membres qui paient une adhésion (on parle de 20000 $ par membre, le JCP est, lui, gratuit) ;
+- Plus fermé que le JCP, le "club" OSGI est composé de membres qui paient une adhésion (on parle de 20000 $ par membre, le JCP est, lui, gratuit) ;
 - Les débats sont privés et réservés aux membres tandis qu’ils sont publics au JCP ;
 - Les TCK (test compatibility kit) sont réservés aux membres payants.
 
@@ -39,12 +39,12 @@ L’ensemble des RFC (request for comment) d’OSGI est très large et fait de l
 
 ## Alors OSGI, c’est pour moi ?
 
-A part dans l’embarqué, je ne vois que Eclipse et plusieurs serveurs d’application qui profitent d’OSGI. Eclipse est « osgifiée » depuis la 3.1 et son architecture de plugin repose dessus. Mais d’autres savent en faire autant et sans OSGI. Pour les serveurs d’app, il s’agit essentiellement de pouvoir réutiliser les modules au travers de plusieurs déclinaisons du produit.
+A part dans l’embarqué, je ne vois que Eclipse et plusieurs serveurs d’application qui profitent d’OSGI. Eclipse est "osgifiée" depuis la 3.1 et son architecture de plugin repose dessus. Mais d’autres savent en faire autant et sans OSGI. Pour les serveurs d’app, il s’agit essentiellement de pouvoir réutiliser les modules au travers de plusieurs déclinaisons du produit.
 
 ## L’avenir
 
-L’avenir concerne avant tout le mode distribué (communication des runtimes OSGI entre JVM), l’intégration à J2E (transaction, sécurité) et l’ouverture à d’autres langages. Alors oui, vous avez bien lu « transaction ». Actuellement, plusieurs choses courantes aujourd’hui sont des problématiques au niveau OSGI. Il y a des problèmes avec le ThreadLocal qui existe depuis des années en java. Un fichier dans le classpath (par exemple le log4j.properties) n’est plus partagé, il faut donc le gérer différemment. Idem pour les fichiers hbm.xml utilisés par Spring pour configurer Hibernate. Bref, de nouvelles choses à apprendre et le terrain est difficile.
+L’avenir concerne avant tout le mode distribué (communication des runtimes OSGI entre JVM), l’intégration à J2E (transaction, sécurité) et l’ouverture à d’autres langages. Alors oui, vous avez bien lu "transaction". Actuellement, plusieurs choses courantes aujourd’hui sont des problématiques au niveau OSGI. Il y a des problèmes avec le ThreadLocal qui existe depuis des années en java. Un fichier dans le classpath (par exemple le log4j.properties) n’est plus partagé, il faut donc le gérer différemment. Idem pour les fichiers hbm.xml utilisés par Spring pour configurer Hibernate. Bref, de nouvelles choses à apprendre et le terrain est difficile.
 
 ## Conclusion
 
-OSGI est à la fois mature et jeune, ou comme le dit Nicolas Martignole, c’est « naphtaline et peinture fraîche ». OSGI existe depuis 10 ans, il a pondu des standards respectés mais il manque cruellement de maturité concernant le monde J2E. C’est pour ça qu’il ne perce pas davantage dans l’informatique de gestion. Le framework va être amené à évoluer fortement dans les prochaines années, peut-être fortement tiré par [Spring DM](http://www.springframework.org/osgi) (suspense…).
+OSGI est à la fois mature et jeune, ou comme le dit Nicolas Martignole, c’est "naphtaline et peinture fraîche". OSGI existe depuis 10 ans, il a pondu des standards respectés mais il manque cruellement de maturité concernant le monde J2E. C’est pour ça qu’il ne perce pas davantage dans l’informatique de gestion. Le framework va être amené à évoluer fortement dans les prochaines années, peut-être fortement tiré par [Spring DM](http://www.springframework.org/osgi) (suspense…).

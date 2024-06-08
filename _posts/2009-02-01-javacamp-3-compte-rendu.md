@@ -33,7 +33,7 @@ Sébastien nous explique qu'en [DDD](http://en.wikipedia.org/wiki/Domain-driven_
 
 Réuni pour parler de Scrum en général et notre façon de le pratiquer sur nos projets, on échange rapidement nos points de vue... différents. Eric est une nouvelle fois très à l'aise pour discuter du sujet (voir [son article sur le sujet](http://ericlefevre.net/wordpress/2008/10/07/scrum-is-evil/)).
 
-Une discussion est lancée sur la question « est-il possible d'affecter certaines tâches d'une itération plutôt que laisser l'équipe les choisir ».
+Une discussion est lancée sur la question "est-il possible d'affecter certaines tâches d'une itération plutôt que laisser l'équipe les choisir".
 
 Pour [Tarik Filali](http://www.insideit.fr), il est possible que le ScrumMaster affecte une tâche à quelqu'un qui pourra la mener à bien, selon la criticité de celle-ci.
 
@@ -41,7 +41,7 @@ Pour Eric, ce n'est pas conseillé. Cette action a un effet bénéfique à court
 
 Je vous passe les détails de la discussion que nous avons eue sur le fait de rester travailler tard le soir. Quel est l'effet sur le moral de l'équipe si le Scrum Master reste tard ? Ne doit-il pas montrer l'exemple en prouvant que les estimations ont bien été faites et que tout va bien ?
 
-Sur la partie « Scrum is Evil », Eric nous rappelle que Scrum a des mauvais côtés, mais ce n'est pas la méthode elle-même, c'est sa popularité. Il rappelle le système de certification pyramidal et le fait de mettre en oeuvre les pratiques de Scrum sans penser aux valeurs qui doivent venir avec (collaboration, individus & intéractions, logiciel fonctionnel, adaptation).
+Sur la partie "Scrum is Evil", Eric nous rappelle que Scrum a des mauvais côtés, mais ce n'est pas la méthode elle-même, c'est sa popularité. Il rappelle le système de certification pyramidal et le fait de mettre en oeuvre les pratiques de Scrum sans penser aux valeurs qui doivent venir avec (collaboration, individus & intéractions, logiciel fonctionnel, adaptation).
 
 Moralité : tous les mauvais côtés de Scrum se retrouvent dans les autres méthodes, donc Scrum est autant Evil que les autres :-) .
 
@@ -50,7 +50,7 @@ Moralité : tous les mauvais côtés de Scrum se retrouvent dans les autres mét
 Eric, très en forme ce jour-là, nous parle de trois approches :
 l'approche Mock où on utilise un framework de Mock (EasyMock, JmockIt...) afin de vérifier le comportement de la classe en cours de test ;
 l'approche Stub où l'on va soi-même mettre en place des fausses classes pour comparer les entrées/sorties ;
-l'approche « je ne teste pas les interactions mais uniquement la partie intéressante ».
+l'approche "je ne teste pas les interactions mais uniquement la partie intéressante".
 
 Cette 3ème approche mérite d'être détaillée.
 Imaginez que vous vouliez tester la méthode suivante :
@@ -85,7 +85,7 @@ Dans cette approche, le test se passe sur la méthode `calculeMoyenne(List emplo
 
 L'approche Mock consiste à vérifier les appels de méthode de la classe testée. Mais nous avons tendance à tester que tous les appels sont faits, dans l'ordre, avec tous les bons paramètres. Eric pense qu'il ne faut pas procéder ainsi. Il vaut mieux vérifier les appels qui nous intéresse vraiment. Par exemple, vérifier que la donnée est bien chargée et sauvegardée, mais ignorer la méthode fait un appel à une autre méthode en plus (approche `NiceMock` plutôt que `StrictMock` chez EasyMock).
 
-L'approche Stub ne permet pas de contrôler tous les appels. On est donc plus libre dans les vérifications mais moins sévère. Dans ce cas, on utilise souvent une méthode Bottom-Up, c'est-à-dire qu'on va plutôt partir des DAO et remonter vers les services. C'est l'inverse de la méthode Mock où il est possible (et conseillé) de partir des services et de mocker les classes du dessous en attendant une vraie implémentation (« Top-Down »). Cela se rapproche du TDD et influence beaucoup le design des couches basses.
+L'approche Stub ne permet pas de contrôler tous les appels. On est donc plus libre dans les vérifications mais moins sévère. Dans ce cas, on utilise souvent une méthode Bottom-Up, c'est-à-dire qu'on va plutôt partir des DAO et remonter vers les services. C'est l'inverse de la méthode Mock où il est possible (et conseillé) de partir des services et de mocker les classes du dessous en attendant une vraie implémentation ("Top-Down"). Cela se rapproche du TDD et influence beaucoup le design des couches basses.
 
 Nous avons comparé rapidement les différents frameworks de Mock. EasyMock est le plus populaire mais pourtant pas le meilleur. Il n'est pas facile d'accès et il contraint à définir le comportement avant l'appel à la méthode testée, ce qui rebute au début (on s'attendrait à tester après).
 

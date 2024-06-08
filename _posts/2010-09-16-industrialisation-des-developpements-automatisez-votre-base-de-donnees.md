@@ -5,11 +5,11 @@ lang: fr
 
 Le grand oubli dans l'industrialisation des développements est la base de données, cette chose monolithique et statique qui n'évolue pas aussi vite et aussi aisément que le code. Au même titre que l'intégration continue et les systèmes de gestion de version pour le code source, il existe des outils permettant de fluidifier et d'automatiser le travail autour du schéma physique des données. Travailler avec ces outils permet de compléter une démarche Agile en permettant une réactivité forte face aux changements.
 
-Une première partie de cet article concernera les principes et pratiques autour de ces outils (partie « boss compliant »). La deuxième est orientée technique (partie « geek aware »).
+Une première partie de cet article concernera les principes et pratiques autour de ces outils (partie "boss compliant"). La deuxième est orientée technique (partie "geek aware").
 
 ## Principes directeurs
 
-Dans son article paru en 2003 intitulé « [Evolutionary Database Design](http://martinfowler.com/articles/evodb.html) », Martin Fowler pose les principes du design évolutif de base de données. Les points clés en sont :
+Dans son article paru en 2003 intitulé "[Evolutionary Database Design](http://martinfowler.com/articles/evodb.html)", Martin Fowler pose les principes du design évolutif de base de données. Les points clés en sont :
 
 - La base de données évolue en même temps que le code ;
 - Il faut donc tester en continu la base de données pour permettre un refactoring sans conséquence, comme on le fait avec le code source ;
@@ -30,7 +30,7 @@ Sur le plan technique, le fonctionnement des outils de migration est simple. Ils
 
 A chaque lancement, l’outil de migration compare la version de la base et les scripts existants et propose la mise à jour le cas échéant.
 
-Il est également possible de « descendre de version » le schéma (fonctionnalité disponible dans quasiment tous les outils). Il s’agit de remettre la base de données dans un état cohérent. Deux cas d’usage :
+Il est également possible de "descendre de version" le schéma (fonctionnalité disponible dans quasiment tous les outils). Il s’agit de remettre la base de données dans un état cohérent. Deux cas d’usage :
 
 - développement d’une nouvelle fonctionnalité : il est ainsi possible de créer un script et de l’exécuter plusieurs fois (montée de version, test, modification, descente, puis nouvelle montée de version). La descente de version permet ainsi de faire revenir la base de données dans l’état précédent ;
 - Ré-alignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.
@@ -53,7 +53,7 @@ Les bonnes pratiques poussées par ces outils sont :
 
 ### Liquibase : puissant mais complexe
 
-[Liquibase](http://liquibase.org/) est le plus connu des outils de migration de base de données. Il se base sur les patterns décrits dans le livre « Refactoring database ». À ce titre, il est conçu autour d’une approche théorique par pattern de refactoring.
+[Liquibase](http://liquibase.org/) est le plus connu des outils de migration de base de données. Il se base sur les patterns décrits dans le livre "Refactoring database". À ce titre, il est conçu autour d’une approche théorique par pattern de refactoring.
 
 Le noyau de Liquibase est son DSL basé sur XML qui a les avantages :
 

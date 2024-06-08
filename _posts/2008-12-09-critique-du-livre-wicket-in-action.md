@@ -7,7 +7,7 @@ lang: fr
 
 Je lorgnais depuis un sacré moment sur [Wicket](http://wicket.apache.org/), ce célèbre framework Web orienté composant. Les exemples du site m'avaient fait saliver : découpage propre du HTML et du code Java, gestion des événements côté java (comme un onclick sur un lien), composants réutilisables, support Ajax natif, intégration à Spring et Hibernate... Beaucoup de qualités qui ont suscité ma curiosité.
 
-Heureux possesseur du livre « Wicket In Action » depuis quelques semaines, je me suis plongé dedans pour voir si ce framework tient vraiment toutes ses promesses. Je précise que je n'ai pas fait de projet professionnel avec ce framework donc mon expérience se limite au livres, à ses exemples et au code que j'ai écrit à côté.
+Heureux possesseur du livre "Wicket In Action" depuis quelques semaines, je me suis plongé dedans pour voir si ce framework tient vraiment toutes ses promesses. Je précise que je n'ai pas fait de projet professionnel avec ce framework donc mon expérience se limite au livres, à ses exemples et au code que j'ai écrit à côté.
 
 ## Mais tout d'abord, pourquoi Wicket ?
 
@@ -52,7 +52,7 @@ Il a été écrit par deux des principaux Core Developers de Wicket depuis qu'il
 
 Les auteurs détaillent le framework progressivement même si l'application est déjà bien lancée au chapitre 3. Chaque partie est expliquée en détail mais pas trop. Je ne me lancerai quand-même pas dans la publication d'un composant sans y regarder à deux fois mais les principes et les bases sont évoqués.
 
-Le chapitre sur Spring est bien présenté, on voit différentes façons de l'intégrer, y compris par les annotations. La partie sur « Aller en production » est vraiment intéressante car on y apprend que Wicket peut exposer des Mbeans pour se reconfigurer à chaud. Il est aussi expliquer comment tester ses composants et ses pages.
+Le chapitre sur Spring est bien présenté, on voit différentes façons de l'intégrer, y compris par les annotations. La partie sur "Aller en production" est vraiment intéressante car on y apprend que Wicket peut exposer des Mbeans pour se reconfigurer à chaud. Il est aussi expliquer comment tester ses composants et ses pages.
 
 ## Ce que je n'ai pas aimé
 
@@ -70,7 +70,7 @@ C'est l'habituel chapitre de présentation : d'où vient le nom du framework, ce
 
 Pour résumer :
 
-- Le framework est construit autour de l'équation : « Just Java + Just HTML = Wicket » ;
+- Le framework est construit autour de l'équation : "Just Java + Just HTML = Wicket" ;
 - Il abstrait les notions HTTP derrière le langage Java permettant d'être plus souple et plus puissant ;
 - Il permet de faire des interfaces Web au delà des objets basiques comme les champs textes. Il apporte et permet de créer donc des composants évolués : Tab, panneaux, groupe d'objets ou composants métiers...
 
@@ -78,7 +78,7 @@ Pour résumer :
 
 Ce chapitre démarre sur l'explication des objets de base de Wicket : Application, Session. Puis il explique le trio Composant, Model et Html qui forme la base du framework.
 
-### 3. L'application-exemple « CheesR »
+### 3. L'application-exemple "CheesR"
 
 L'application du livre est une boutique de vente de fromage. Les auteurs expliquent qu'ils aimeraient vendre du fromage en ligne car ils ont du mal à trouver de bons fromages aux US. Le code produit à ce niveau est déjà assez complet : on itère les fromages puis on ajoute de la pagination côté serveur, on ajoute ou enlève des éléments à son caddie, on gère les premiers événements et on crée un premier formulaire avec de la validation.
 
@@ -86,7 +86,7 @@ Ce chapitre est simple à suivre et offre une bonne vue d'ensemble. Il permet de
 
 ### 4. Les Models
 
-Les Models sont une des pierres angulaires. Ils sont une indirection entre un composant et un objet du domaine. Par exemple, un Model permet à un Label d'afficher le champ « name » d'un User. Pourtant à aucun moment, Label ne dépend de User et vice versa.
+Les Models sont une des pierres angulaires. Ils sont une indirection entre un composant et un objet du domaine. Par exemple, un Model permet à un Label d'afficher le champ "name" d'un User. Pourtant à aucun moment, Label ne dépend de User et vice versa.
 
 Il existe différents Model qui permettent de peupler par réflexion un objet du domaine et l'inverse, donc de faire du binding, ou encore de recharger l'objet sous-jacent à chaque requête Web.
 
@@ -94,7 +94,7 @@ Il existe différents Model qui permettent de peupler par réflexion un objet du
 
 On se lance ici à la découverte des composants de base. C'est en fait une présentation du deuxième pilier du framework : les Composants (le 3ème étant le Html).
 
-Je me suis rendu compte à ce niveau de la puissance des composants. Par exemple, cacher une partie entière d'une page HTML est aussi simple que « panel.setVisible(false) ». Et ça se fait en java, fini les « &lt;c:if test=...&gt; ».
+Je me suis rendu compte à ce niveau de la puissance des composants. Par exemple, cacher une partie entière d'une page HTML est aussi simple que "panel.setVisible(false)". Et ça se fait en java, fini les "&lt;c:if test=...&gt;".
 
 ### 6. Les formulaires
 
@@ -109,7 +109,7 @@ Cette partie couvre :
 - l'organisation d'une page en bloc, panneau et fragment ;
 - l'organisation des pages :
   - en répétant la structure ;
-  - en utilisant l'héritage pour ne redéfinir que certaines portions (« Markup Inheritance »)
+  - en utilisant l'héritage pour ne redéfinir que certaines portions ("Markup Inheritance")
   - en construisant des Panels.
 
 Parmi ces 3 derniers choix, lequel prendre ?
@@ -128,11 +128,11 @@ On continue sur les composants : comment ceux-ci embarquent leurs propres ressou
 
 Wicket a son propre moteur Ajax. Celui-ci a l'avantage d'être simple et directement destiné et intégré, mais il est donc moins puissant que Dojo par exemple. Si vous voulez utiliser un de ces projets, le chapitre n'en parle pas. Il faudra donc se tourner vers les projets de Wicket-Stuff.
 
-Les composants de base ont souvent leur alternative Ajax. Par exemple, on trouve des AjaxLinks à côté des Links traditionnels (ou mieux des AjaxFallbackLinks), ou encore des AjaxEditableLabels qui offre la possibilité d'éditer « In place ».
+Les composants de base ont souvent leur alternative Ajax. Par exemple, on trouve des AjaxLinks à côté des Links traditionnels (ou mieux des AjaxFallbackLinks), ou encore des AjaxEditableLabels qui offre la possibilité d'éditer "In place".
 
 ### 11. La sécurité
 
-Ce chapitre est dédié à l'intégration de l'authentification et de l'autorisation à son application. Rien de surprenant ici quand on connait un peu Acegi. Ou plutôt si justement : pourquoi le tenor du marché n'est pas évoqué ? Un encart élargit le sujet en parlant des projets « wicket-auth-roles » et « wicket-security-wasp/wicket-security-swarm » mais ça s'arrête là. Manque de place ?
+Ce chapitre est dédié à l'intégration de l'authentification et de l'autorisation à son application. Rien de surprenant ici quand on connait un peu Acegi. Ou plutôt si justement : pourquoi le tenor du marché n'est pas évoqué ? Un encart élargit le sujet en parlant des projets "wicket-auth-roles" et "wicket-security-wasp/wicket-security-swarm" mais ça s'arrête là. Manque de place ?
 
 ### 12. Localisation et internationalisation
 
@@ -140,7 +140,7 @@ Un sujet des moins passionnants mais passage obligé. On y parle aussi de la ges
 
 ### 13. Spring et Hibernate
 
-C'est « Spring Time » dans ce chapitre. On sort un peu de Wicket pour voir son intégration au monde extérieur car tout ne se fait pas côté Web (même si j'en connais certains qui aiment les scriplets). Le chapitre montre différentes façons d'intégrer Spring (par référence, par proxy, grâce à wicket-spring, puis par annotation). Hibernate fait partie du sujet couvert mais assez rapidement. S'il n'en parle pas beaucoup, c'est que c'est facile à intégrer, non ?
+C'est "Spring Time" dans ce chapitre. On sort un peu de Wicket pour voir son intégration au monde extérieur car tout ne se fait pas côté Web (même si j'en connais certains qui aiment les scriplets). Le chapitre montre différentes façons d'intégrer Spring (par référence, par proxy, grâce à wicket-spring, puis par annotation). Hibernate fait partie du sujet couvert mais assez rapidement. S'il n'en parle pas beaucoup, c'est que c'est facile à intégrer, non ?
 
 ### 14. Tester ses pages, de belles URL et configuration de production + JMX
 

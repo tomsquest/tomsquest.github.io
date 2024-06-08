@@ -7,13 +7,13 @@ lang: fr
 
 J'ai assisté hier à la présentation de [Terracotta](http://www.terracotta.org/) par son CTO et co-fondateur, Ari Zilka, organisé par la société [Zenika](http://www.zenika.com/).
 
-Dés le début, le ton est donné dans la salle : 6 personnes lèvent la main en réponse à la question : « Qui a déjà essayé Terracotta ? ». Terracotta bénéficie d'un bon buzz, au vu du monde présent à cette présentation. Malgré cela, la société ne croule pas sous le nombre de partenariat payant, une soixantaine d'après Ari Zilka. Beaucoup plus de monde s'intéresse à la partie gratuite et open source. La tendance qui se dégage est que les clients s'intéressent d'abord à la partie librement disponible et se transforme de temps en temps en client payant. Pourtant, le produit fonctionne et même très bien. Il se fait connaitre de plus en plus et marque des points. Il a beaucoup d'atout dans sa manche comme nous allons le voir.
+Dés le début, le ton est donné dans la salle : 6 personnes lèvent la main en réponse à la question : "Qui a déjà essayé Terracotta ?". Terracotta bénéficie d'un bon buzz, au vu du monde présent à cette présentation. Malgré cela, la société ne croule pas sous le nombre de partenariat payant, une soixantaine d'après Ari Zilka. Beaucoup plus de monde s'intéresse à la partie gratuite et open source. La tendance qui se dégage est que les clients s'intéressent d'abord à la partie librement disponible et se transforme de temps en temps en client payant. Pourtant, le produit fonctionne et même très bien. Il se fait connaitre de plus en plus et marque des points. Il a beaucoup d'atout dans sa manche comme nous allons le voir.
 
 ## Terracotta, c'est quoi ?
 
 Terracotta se propose de simplifier la vie des développeurs. Techniquement, il permet de partager la mémoire entre JVM. C'est une réduction simpliste mais l'idée est là. Je ne vais pas tenter de vous donner les détails techniques, on trouve beaucoup de ressources sur le Net à ce sujet. Le site propose des Patterns sur l'usage de Terracotta : qu'est-ce qu'il conseillé de faire avec ou non (pas de recherche par exemple).
 
-Ari Zilka nous explique que les JVM utilisent une mémoire « réseau », appelé NAM (Network Attached Memory). Quand une JVM modifie une donnée, celle-ci est actualisée dans la NAM et elle est potentiellement mise à jour dans les autres JVM qui possèdent cette donnée. Les données ne sont pas partout à tout moment. Les Monitor (lock) sont également répliqués, une JVM pouvant indiquer qu'elle modifie cette donnée et que les autres ne doivent pas le faire. Cela est fait de manière transparente.
+Ari Zilka nous explique que les JVM utilisent une mémoire "réseau", appelé NAM (Network Attached Memory). Quand une JVM modifie une donnée, celle-ci est actualisée dans la NAM et elle est potentiellement mise à jour dans les autres JVM qui possèdent cette donnée. Les données ne sont pas partout à tout moment. Les Monitor (lock) sont également répliqués, une JVM pouvant indiquer qu'elle modifie cette donnée et que les autres ne doivent pas le faire. Cela est fait de manière transparente.
 
 Simple, non ?
 
