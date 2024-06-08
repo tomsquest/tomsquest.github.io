@@ -1,11 +1,14 @@
-<header>
-  <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
+<header class="nav">
+  <div class="logo">
+    <a href="/">
+      <img src="/assets/images/logo.svg" alt="Logo" width="48px" height="48px">
+      <span>{{ site.title | escape }}</span>
+    </a>
+  </div>
   <nav>
-    {%- for page in site.pages -%}
-      {%- if page.title and page.url != "/" -%}
-        <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-      {%- endif -%}
-    {%- endfor -%}
+    <ul>
+      <li><a href="/blog"><span aria-hidden="true">/</span>Blog</a></li>
+      <li><a href="/about"><span aria-hidden="true">/</span>About</a></li>
+    </ul>
   </nav>
 </header>
