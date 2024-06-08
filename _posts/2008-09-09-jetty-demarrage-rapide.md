@@ -24,7 +24,7 @@ Pour lancer Jetty, sans avoir fait aucune configuration préalable, il suffit de
 $ mvn jetty:run
 ```
 
-Cette commande démarre Jetty qui va utiliser la configuration de Maven pour savoir où est situé le code source et les ressources. Rendez-vous sur http://localhost:8080/ pour voir votre application déployée.
+Cette commande démarre Jetty qui va utiliser la configuration de Maven pour savoir où est situé le code source et les ressources. Rendez-vous sur [http://localhost:8080](http://localhost:8080) pour voir votre application déployée.
 
 ![](/assets/images/posts/2008/09/jetty_run2.jpg)
 

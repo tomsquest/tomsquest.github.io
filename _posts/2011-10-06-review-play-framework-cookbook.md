@@ -31,7 +31,7 @@ For example, here is an excerpt from this part from the chapter "Understanding b
 
 > _Overriding toString() via annotation_
 >
-> Peter Hilton has written a very good article on how one can configure the output of the toString() method of an entity with the help of an annotation by using bytecode enhancement. You can check it out at http://www.lunatech-research.com/archives/2011/01/11/declarative-model-class-enhancement-play
+> Peter Hilton has written a very good article on how one can configure the output of the toString() method of an entity with the help of an annotation by using bytecode enhancement. You can check it out at [lunatech-research](http://www.lunatech-research.com/archives/2011/01/11/declarative-model-class-enhancement-play)
 
 A lot of content is about modules (dependencies, events...) with some examples (Solr, cache...).
 The idea is to complete what you may find online or in the official documentation.

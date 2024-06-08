@@ -5,7 +5,7 @@ lang: fr
 
 <img src="/assets/images/posts/2008/12/parisjug-logo.jpg" style="float:right"/>
 
-[Xebia ](http://www.xebia.fr/)a présenté hier soir « OSGI » au [Paris JUG](http://parisjug.org/). Ce fut une conférence très intéressante menée par Cyrille Le Clerc et Nicolas Griso. Tout leur discours a consisté à nous présenter honnêtement ce qu’est [OSGI](http://www.osgi.org/) et nous permettre de nous faire notre propre opinion.
+[Xebia](http://www.xebia.fr/) a présenté hier soir « OSGI » au [Paris JUG](http://parisjug.org/). Ce fut une conférence très intéressante menée par Cyrille Le Clerc et Nicolas Griso. Tout leur discours a consisté à nous présenter honnêtement ce qu’est [OSGI](http://www.osgi.org/) et nous permettre de nous faire notre propre opinion.
 
 Nicolas Martignole a fait une très bonne revue de la [soirée](http://www.touilleur-express.fr/2008/10/15/presentation-dosgi-au-paris-jug-naphtaline-et-peinture-fraiche). D’ailleurs, je nomme le [Touilleur Express](http://www.touilleur-express.fr/" target="\_parent) comme reporter officiel des JUG parisiens pour ses comptes rendus complets et les annotations qu’il fait.
 
@@ -29,7 +29,7 @@ OSGI est fermé et payant :
 
 Donc par rapport au JCP, le groupe OSGI se tient à l’écart et vit sur ces propres règles.
 
-OSGI est complexe à mettre en œuvre. Techniquement, il n’y a pas d’injection des dépendances et pas de configuration par annotation (mais c’est en cours, voir [spring-dm](http://www.springframework.org/osgi)). Cyrille et Nicolas de Xebia nous ont fait quelques demos rondement menées. Conclusion : ça marche mais ce n’est pas magique. La réalité est dure de ce côté-là.
+OSGI est complexe à mettre en œuvre. Techniquement, il n’y a pas d’injection des dépendances et pas de configuration par annotation (mais c’est en cours, voir [Spring DM](http://www.springframework.org/osgi)). Cyrille et Nicolas de Xebia nous ont fait quelques demos rondement menées. Conclusion : ça marche mais ce n’est pas magique. La réalité est dure de ce côté-là.
 
 Chaque fournisseur de bundles est responsable de son packaging à la sauce OSGI. C'est-à-dire que si IBM a besoin de log4j, il va créer son bundle. Idem pour Eclipse. Et donc chacun va déclarer les méta-données qu’il veut : dépendances et numéro de version. Ainsi, IBM propose un bundle java7. Etonnant, non ? Ca risque de devenir un beau cauchemar si ce ne sont pas les équipes qui développent le JAR qui lui associent ses méta-données.
 

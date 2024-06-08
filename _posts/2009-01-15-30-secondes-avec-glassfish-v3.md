@@ -11,7 +11,7 @@ lang: fr
 
 Glassfish n'a apparemment pas de support de Maven officiel. Il existe quelques plugins Maven mais d'après [cet article](http://eskatos.wordpress.com/2008/03/28/maven-plugins-for-glassfish-ecosystem/), rien de vraiment fonctionnel à part le plugin de l'auteur.
 
-J'ai donc essayé le plugin Maven « [Asadmin ](http://code.google.com/p/asadmin-maven-plugin/)» qui m'a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version 0.3-snapshot » de Asadmin a fonctionné.
+J'ai donc essayé le plugin Maven « [Asadmin](http://code.google.com/p/asadmin-maven-plugin/) » qui m'a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version 0.3-snapshot » de Asadmin a fonctionné.
 
 Une autre solution serait de démarrer soi-même un Glassfish via l'[API Embedded](https://embedded-glassfish.dev.java.net/) (voir ce [ce commentaire](http://www.tomsquest.com/blog/2008/09/jetty-demarrage-rapide/#comment-11) d'Alexis MP). Mais apparemment, il s'agit toujours de déployer un War. Il faut donc générer à chaque changement de code.
 
