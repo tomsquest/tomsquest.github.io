@@ -2,18 +2,19 @@
 layout: base
 ---
 
-<div class="home">
+<div>
   <h1>All posts</h1>
 
-  <ul class="post-list">
+  <ul>
     {%- for post in site.posts -%}
     <li>
-      <span class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M" }}</span>
+      <span>{{ post.date | date: "%Y-%m-%d %H:%M" }}</span>
       <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
+        <a href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>
+
       {%- if site.show_excerpts -%}
       {{ post.excerpt }}
       {%- endif -%}
