@@ -12,7 +12,7 @@ Martin Fowler a fait une synthèse de l’utilisation de Ruby chez ThoughtWorks.
 
 La conclusion est une impression très forte d’une meilleure productivité. La majorité des projets ont ressenti un doublement de leur productivité (une impression car la productivité n’est pas mesurable).
 
-Je vous encourage à lire l’article sur le site de Martin Fowler : "[Ruby at ThoughtWorks](http://martinfowler.com/articles/rubyAtThoughtWorks.html)"
+Je vous encourage à lire l’article sur le site de Martin Fowler : [Ruby at ThoughtWorks](http://martinfowler.com/articles/rubyAtThoughtWorks.html)
 
 ## Meta-Programming
 
