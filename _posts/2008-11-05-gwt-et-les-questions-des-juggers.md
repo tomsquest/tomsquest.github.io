@@ -2,7 +2,6 @@
 title: GWT et les questions des Juggers
 slug: gwt-et-les-questions-des-juggers
 lang: fr
-date: 2008-11-05T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/11/gwt.jpg" style="float:right"/>

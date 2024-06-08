@@ -2,7 +2,6 @@
 title: FitNesse technical setup
 slug: fitnesse-technical-setup
 lang: en
-date: 2010-12-04T00:00:00Z
 ---
 
 Getting [FitNesse](http://fitnesse.org) working for a development team is not particularly evident. You have many possibilities and some of them are not so effective.

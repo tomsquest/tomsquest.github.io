@@ -2,7 +2,6 @@
 title: "The Secrets of Consulting by Gerald M. Weinberg"
 slug: the-secrets-of-consulting
 lang: en
-date: 2014-09-21T00:00:00Z
 ---
 
 ![Book cover](/assets/images/posts/the-secrets-of-consulting.jpg)

@@ -2,7 +2,6 @@
 title: "Intellij Championship"
 slug: intellij-master-presentation
 lang: en
-date: 2017-07-21T00:00:00Z
 ---
 
 ![intellij logo](/assets/images/posts/intellij.png)

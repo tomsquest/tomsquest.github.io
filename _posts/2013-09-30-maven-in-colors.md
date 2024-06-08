@@ -2,7 +2,6 @@
 title: "Maven in colors"
 slug: maven-in-colors
 lang: en
-date: 2013-09-30T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2013/maven-logo.png" style="float:right"/>

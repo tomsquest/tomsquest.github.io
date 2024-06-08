@@ -2,7 +2,6 @@
 title: "Les inconvénients de Selenium"
 slug: les-inconvenients-de-selenium
 lang: fr
-date: 2008-11-24T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2008/09/selenium_small.jpg" style="float:right"/>

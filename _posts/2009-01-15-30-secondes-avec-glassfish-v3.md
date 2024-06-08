@@ -2,7 +2,6 @@
 title: 30 secondes avec Glassfish v3
 slug: 30-secondes-avec-glassfish-v3
 lang: fr
-date: 2009-01-15T00:00:00Z
 ---
 
 <img src="/assets/images/posts/2009/01/glassfish_logo.jpg" style="float:right"/>

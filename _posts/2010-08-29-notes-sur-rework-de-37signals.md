@@ -2,7 +2,6 @@
 title: Notes sur Rework de 37signals
 slug: notes-sur-rework-de-37signals
 lang: fr
-date: 2010-08-29T00:00:00Z
 ---
 
 <img src="/assets/images/posts/rework_cover.jpg" style="float:right"/>

@@ -2,7 +2,6 @@
 title: "8 raisons d'aimer Ruby"
 slug: 8-raisons-d-aimer-ruby
 lang: fr
-date: 2009-11-11T00:00:00Z
 ---
 
 <img src="/assets/images/posts/ruby_logo.png" style="float:right"/>

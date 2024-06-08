@@ -2,7 +2,6 @@
 title: Think carbon, reduce typescript bundle size
 slug: think-carbon-reduce-typescript-bundle-size
 lang: en
-date: 2020-02-28T00:00:00Z
 ---
 
 Reducing the size of JS compiled from Typescript is easy.

@@ -2,7 +2,6 @@
 title: "Construire la nouvelle génération de leaders techniques"
 slug: construire-la-nouvelle-generation-de-leaders-techniques
 lang: fr
-date: 2010-08-24T00:00:00Z
 ---
 
 Transcription de la session de Patrick KUA à l'USI 2010 : [Building the next génération of technical leaders](http://www.universite-du-si.com/en/conferences/6-paris-usi-2010/sessions/912-construire-la-nouvelle-generation-de-leaders-techniques).
