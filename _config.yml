@@ -29,6 +29,7 @@ collections:
     permalink: /blog/:year/:month/:title/
 feed:
   path: /atom.xml
+  posts_limit: 20
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
