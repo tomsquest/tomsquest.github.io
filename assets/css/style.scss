@@ -1,8 +1,130 @@
 ---
 ---
 
-@import "github";
+@import "manni";
 
-h1 {
-  color: red;
+:root {
+  --b-font-main: "IBM Plex Sans", sans-serif;
+  --b-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --b-txt: #2e3440;
+  --b-bg-1: #fff;
+  --b-bg-2: #faf8ff;
+  --b-bg-3: #f3e3ff; // ajout perso
+  --b-line: #eceff4;
+  --b-link: #b948f3;
+  --b-btn-bg: #242933;
+  --b-btn-txt: #fff;
+  --b-focus: #d8dee9;
+}
+
+pre.highlight {
+  border: 1px solid var(--b-link);
+
+  code {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+
+:not(pre) > code {
+  background-color: var(--b-bg-3);
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+}
+
+header.nav {
+  margin-top: 4rem;
+  border-bottom: 1px solid var(--b-line);
+
+  .logo {
+    padding-bottom: 2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--b-txt);
+
+      img {
+        height: 48px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      gap: 3em;
+
+      li {
+        a {
+          color: var(--b-link);
+          font-weight: bold;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+article.post {
+  header {
+    margin-bottom: 4rem;
+  }
+
+  a {
+    font-weight: bold;
+
+    &::after {
+      content: " 🔗";
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 4rem;
+  }
+
+  .section-link {
+    margin-left: 0.5em;
+    color: var(--b-link);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  h1:hover .section-link,
+  h2:hover .section-link,
+  h3:hover .section-link,
+  h4:hover .section-link,
+  h5:hover .section-link,
+  h6:hover .section-link {
+    opacity: 1;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--b-line);
+  padding: 4rem 0;
+  text-align: center;
+
+  a {
+    font-weight: bold;
+  }
 }
