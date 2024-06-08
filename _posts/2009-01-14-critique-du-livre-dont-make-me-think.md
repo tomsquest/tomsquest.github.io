@@ -7,7 +7,7 @@ lang: fr
 
 J'ai eu le plaisir de lire le livre de Steve Krug « [Don't Make Me Think](http://sensible.com/buythebook.html) » dont le sujet est l'usabilité Web. L'usabilité, c'est la conception d'un site afin qu'il fonctionne au mieux. Pourquoi faire un site utilisable ? Steve Krug cite sa femme : « Si quelque chose est difficile à utiliser, alors je l'utilise moins ».
 
-Je cite [Wikipedia ](http://fr.wikipedia.org/wiki/Utilisabilit%C3%A9):
+Je cite [Wikipedia](http://fr.wikipedia.org/wiki/Utilisabilit%C3%A9):
 
 > Les critères de l'usabilité (ou utilisabilité) sont :
 >

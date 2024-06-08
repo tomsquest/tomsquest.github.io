@@ -43,7 +43,7 @@ J'espère avoir l'occasion de travailler avec ce produit dans une future mission
 
 ## Petits mots sur la soirée
 
-- Suite à une question de Nicolas Martignole, Ari Zilka a dissipé les rumeurs de rachat de Terracotta par Spring. Le détail sur le site du Touilleur Express : http://www.touilleur-express.fr/2008/10/02/springsource-rachete-terracotta-ou-pas/
+- Suite à une question de Nicolas Martignole, Ari Zilka a dissipé les rumeurs de rachat de Terracotta par Spring. Le détail sur le [site du Touilleur Express](http://www.touilleur-express.fr/2008/10/02/springsource-rachete-terracotta-ou-pas/)
 - L'évènement a permis de faire connaître la société Zenika. Celle-ci veut organiser ce genre d'évènement tous les trois mois en invitant des personnes influentes. Prochain tour : quelqu'un de chez Spring Source ? :-)
 - Encore une fois, ces événements permettent d'échanger avec des personnes très intéressantes : Julien Dubois (Spring Source), Florent Ramière (Jaxio), Nicolas Marignole, Erwan Alliaume (Xebia), Jérôme Van Der Linden (Octo)
 

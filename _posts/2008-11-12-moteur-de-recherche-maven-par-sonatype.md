@@ -11,4 +11,4 @@ Il est accessible par : [Maven The Definitive Guide](http://blogs.sonatype.com/p
 
 La news vient du blog du livre [Maven The Definitive Guide](http://blogs.sonatype.com/people/book/2008/11/11/searching-the-maven-repository/).
 
-Si celui là ne vous convient pas, il reste toujours http://www.mvnrepository.com/ (quand il est dispo...) et http://javarepo.xoocode.org .
+Si celui là ne vous convient pas, il reste toujours [MVN repository](http://www.mvnrepository.com/) (quand il est dispo...) et [Javarepo de Xocode](http://javarepo.xoocode.org).

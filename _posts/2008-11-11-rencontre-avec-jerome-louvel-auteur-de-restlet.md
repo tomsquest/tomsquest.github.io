@@ -83,7 +83,7 @@ Le plus simple c'est de voir un exemple: [http://www.mnot.net/webdesc/](http://w
 
 <img src="/assets/images/posts/2008/11/oreilly-book-restful-web-services.jpg" style="float:right"/>
 
-La bible REST est le livre d'O'Reilly, auquel nous avons d'ailleurs contribué une partie sur Restlet : http://www.restlet.org/documentation/books
+La bible REST est le livre chez O'Reilly, auquel nous avons d'ailleurs contribué une partie sur Restlet ([voir les livres](http://www.restlet.org/documentation/books)).
 
 #### Merci
 

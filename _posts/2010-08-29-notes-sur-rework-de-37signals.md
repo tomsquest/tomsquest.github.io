@@ -107,5 +107,5 @@ Une décision n'est pas définitive. Il faut se laisser la possibilité d'y reve
 
 ## Liens annexes
 
-- Le site du livre : http://37signals.com/rework/
-- Les notes d'[Ulrich Vachon](http://ulrichinaction.blogspot.com) sur le livre : http://ulrichinaction.blogspot.com/2010/08/retour-sur-rework.html
+- [Le site du livre](http://37signals.com/rework/)
+- Les notes d'[Ulrich Vachon](http://ulrichinaction.blogspot.com) sur [le livre](http://ulrichinaction.blogspot.com/2010/08/retour-sur-rework.html)

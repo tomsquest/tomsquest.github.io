@@ -20,9 +20,8 @@ Je le trouve vraiment pratique pour switcher d'une méthode aux tests et inverse
 
 MoreUnit est compatible avec Eclipse 3.5 (Galileo). Il fonctionne parfaitement avec un project Maven.
 
-Le site : http://moreunit.sourceforge.net
-
-L'update site : http://moreunit.sourceforge.net/org.moreunit.updatesite/
+- [Le site](http://moreunit.sourceforge.net)
+- [L'update site](http://moreunit.sourceforge.net/org.moreunit.updatesite/)
 
 ## Configuration
 

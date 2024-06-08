@@ -83,6 +83,5 @@ But this print edition is way better that the previous book I read ("Notes a sof
 
 ## Links
 
-Author's blog: http://blog.jayfields.com/
-
-The book: http://signup.wewut.com/
+- [Author's blog](http://blog.jayfields.com/)
+- [The book](http://signup.wewut.com/)

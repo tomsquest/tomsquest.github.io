@@ -78,7 +78,7 @@ Ruby bouge beaucoup et sa communauté est importante. Comme avec Java, il y a de
 - Des news : [RubyInside](http://www.rubyinside.com/), [About Ruby](http://ruby.about.com/)
 - Des podcasts : [RailsEnvy](http://railsenvy.com/)
 - Des screencasts : [Learnivore](http://www.learnivore.com)
-- Des challenges de programmation : [RubyLearning ](http://rubylearning.com/blog/)
+- Des challenges de programmation : [RubyLearning](http://rubylearning.com/blog/)
 
 Les [Apéros Ruby](http://www.rubyfrance.org/) ressemblent à nos JUGs. Le prochain a lieu ce jeudi 12. Ils sont moins cadrés que les JUGs mais tout aussi intéressants : Coding Dojo, Lightning talk…
 
