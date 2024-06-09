@@ -4,7 +4,7 @@ layout: base
 
 <article>
   <header>
-    <h1>{{ page.title | escape }}</h1>
+    <h1>{{ page.h1 | default: page.title | escape }}</h1>
   </header>
 
   <div class="{{ page.class }}">
