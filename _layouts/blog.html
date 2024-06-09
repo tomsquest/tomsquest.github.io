@@ -3,15 +3,10 @@ layout: base
 ---
 
 <div class="home">
-  <h1>Hey 👋 I'm Tom.</h1>
-
-  <p>Welcome to my blog.</p>
-  <p>I write about software development, productivity, and other things I find interesting.</p>
-
-  <h1>Latest Posts</h1>
+  <h1>Posts</h1>
 
   <ul class="post-list">
-    {%- for post in site.posts limit:5 -%}
+    {%- for post in site.posts -%}
     <li>
       <time datetime="{{ post.date | date_to_xmlschema }}">
         {{ post.date | date: "%Y-%m-%d" }}
@@ -21,14 +16,10 @@ layout: base
       </a>
       <p class="excerpt">
         {%- if page.excerpt -%}
-        {{ post.excerpt }}
+         {{ post.excerpt }}
         {%- endif -%}
       </p>
     </li>
     {%- endfor -%}
   </ul>
-
-  <p>
-    <a href="/blog/">View All Posts</a>
-  </p>
 </div>
