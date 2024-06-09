@@ -36,10 +36,6 @@ layout: base
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-  {%- endif -%}
-
   <a href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
