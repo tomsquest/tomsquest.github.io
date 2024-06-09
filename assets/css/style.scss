@@ -80,6 +80,32 @@ header.nav {
   }
 }
 
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--b-line);
+  padding: 4rem 0;
+  text-align: center;
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.home {
+  ul.post-list {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 3rem;
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 article.post {
   header {
     margin-bottom: 4rem;
@@ -126,16 +152,5 @@ article.post {
     th, td {
       padding: 1em 2em;
     }
-  }
-}
-
-footer {
-  margin-top: 4rem;
-  border-top: 1px solid var(--b-line);
-  padding: 4rem 0;
-  text-align: center;
-
-  a {
-    font-weight: bold;
   }
 }
