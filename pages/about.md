@@ -3,18 +3,22 @@ layout: page
 permalink: /about/
 title: About
 last_modified_at: 2024-06-05
+class: about
 ---
 
 <img class="profile" alt="profile picture" src="https://gravatar.com/avatar/219f5e29792760ca6a6e4bf17da4fd7a.jpg?s=200"/>
 
-I am a software engineer with a deep interest in building **products**.  
-I am also a freelancer, and I live in France.
+`Software engineer` with a deep interest in building **Products**.
+
+Freelancer, living in France.
 
 When not in front of a computer, I :
 
 - Run and train ~3 hours per week
-- Read a lot of Sci-fi and (some) business books
+- Read a lot of Sci-fi and business books
 - Transform as a Dad x2
+
+## Social links
 
 <ul class="links">
     <li>
