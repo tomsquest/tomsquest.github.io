@@ -44,7 +44,7 @@ Dans les faits, cette phase de validation est très limitée (testée avec Hiber
 - Pour une entité inexistante ("From EntiteInexistante"), une erreur est remontée
 - Pour une colonne inexistante ("From Client where colonneInexistante is null"), aucune erreur n'est soulevée
 
-Aujourd'hui, je ne vois donc pas en quoi cette phase de validation apporte de la valeur. Si la conversion JPQL vers SQL n'est pas complète, elle n'empêche pas de valider les requêtes sur [la base de données cible](http://www.tomsquest.com/blog/2009/10/tests-d-integration-quid-de-la-base-de-donnees/).
+Aujourd'hui, je ne vois donc pas en quoi cette phase de validation apporte de la valeur. Si la conversion JPQL vers SQL n'est pas complète, elle n'empêche pas de valider les requêtes sur [la base de données cible]({% post_url 2009-10-12-tests-d-integration-quid-de-la-base-de-donnees %}).
 
 ## NamedQuery, alors pourquoi ?
 

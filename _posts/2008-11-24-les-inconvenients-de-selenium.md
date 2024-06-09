@@ -25,7 +25,7 @@ Quelques points à connaître :
 
 ## Selenium RC
 
-L'[intégration avec Maven2](http://www.tomsquest.com/blog/2008/09/selenium-en-java-demarrage-rapide/) n'est pas aisée. Avec quelques efforts et un peu de temps, on arrive à quelque chose de fonctionnel. Mais quelques bugs aléatoires surviennent/ IE refuse de s'ouvrir et des timeouts se produisent sans cause avérée.
+L'[intégration avec Maven2]({% post_url 2008-09-04-selenium-en-java-demarrage-rapide %}) n'est pas aisée. Avec quelques efforts et un peu de temps, on arrive à quelque chose de fonctionnel. Mais quelques bugs aléatoires surviennent/ IE refuse de s'ouvrir et des timeouts se produisent sans cause avérée.
 
 L'intégration à [Hudson](https://hudson.dev.java.net/) a été également difficile. Mais comme pour Maven2, cela fonctionne avec un peu de travail. Il nous a fallu par exemple régler les paramètres de sécurité des droits de l'utilisateur utilisé sur l'intégration continue. De plus, à cause des bugs cités plus haut, il nous arrive régulièrement d'avoir des builds en erreur, chose relativement gênante.
 
@@ -34,7 +34,7 @@ L'intégration à [Hudson](https://hudson.dev.java.net/) a été également diff
 Ce qu'il manque pour avoir un outil meilleur :
 
 - Une gestion du l'upload et du download sans utiliser de gros hacks ;
-- Une gestion simple des données de test séparées des tests eux-mêmes. C'est-à-dire pourvoir jouer plusieurs fois un test avec des donnés différentes. Des projets comme [Tellurium](http://www.tomsquest.com/blog/2008/10/selenium-boostez-vos-tests-avec-tellurium/) sont peut-être la solution ;
+- Une gestion simple des données de test séparées des tests eux-mêmes. C'est-à-dire pourvoir jouer plusieurs fois un test avec des donnés différentes. Des projets comme [Tellurium]({% post_url 2008-10-29-selenium-boostez-vos-tests-avec-tellurium %}) sont peut-être la solution ;
 - Une meilleure performance. Au delà d'un certain nombre de tests, les temps de retour sont longs, trés longs. Il devient presque impossible de tous les passer depuis un poste de dév et d'avoir un retour en quelques minutes. D'où la mise en place de l'intégration continue. Sur le point des performances, il faudrait regarder du côté de [Selenium Grid](http://selenium-grid.seleniumhq.org/) qui permet de paralléliser les tests ;
 - Une intégration à Internet Explorer pour utiliser Selenium IDE avec ce navigateur (si c'est le navigateur choisi comme cible par votre client par exemple).
 

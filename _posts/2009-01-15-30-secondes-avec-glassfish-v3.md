@@ -13,7 +13,8 @@ Glassfish n'a apparemment pas de support de Maven officiel. Il existe quelques p
 
 J'ai donc essayé le plugin Maven "[Asadmin](http://code.google.com/p/asadmin-maven-plugin/)" qui m'a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version 0.3-snapshot" de Asadmin a fonctionné.
 
-Une autre solution serait de démarrer soi-même un Glassfish via l'[API Embedded](https://embedded-glassfish.dev.java.net/) (voir ce [ce commentaire](http://www.tomsquest.com/blog/2008/09/jetty-demarrage-rapide/#comment-11) d'Alexis MP). Mais apparemment, il s'agit toujours de déployer un War. Il faut donc générer à chaque changement de code.
+Une autre solution serait de démarrer soi-même un Glassfish via l'[API Embedded](https://embedded-glassfish.dev.java.net/). 
+Mais apparemment, il s'agit toujours de déployer un War. Il faut donc générer à chaque changement de code.
 
 Pour résumer :
 
@@ -45,6 +46,6 @@ Une fois le serveur ajouté, le déploiement sur Glassfish d'un projet Web prend
 
 Glassfish est facilement installable. Sa mise en place dans un projet est rapide au travers d'un IDE. Il démarre en quelques secondes, aussi vite que Jetty.
 
-Pourtant sur l'aspect configuration et intégration à Maven, [Jetty est encore imbattable](http://www.tomsquest.com/blog/2008/09/jetty-demarrage-rapide/) (plugin Maven au Top et simple fichier de config pour les dataSources).
+Pourtant sur l'aspect configuration et intégration à Maven, [Jetty est encore imbattable]({% post_url 2008-09-09-jetty-demarrage-rapide %}) (plugin Maven au Top et simple fichier de config pour les dataSources).
 
 Il m'a manqué du temps pour tester le rechargement à chaud des classes et la persistance des sessions mais si c'est aussi facile que le reste, je l'adopte pour mes dév.
