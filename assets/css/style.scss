@@ -33,8 +33,13 @@ pre.highlight {
   border-radius: 1em;
 }
 
+// Separate more subsections from content
+h2, h3, h4, h5, h6 {
+  margin-top: 3rem;
+}
+
 header.nav {
-  margin-top: 4rem;
+  margin-top: 3rem;
   border-bottom: 1px solid var(--b-line);
 
   .logo {
@@ -149,10 +154,6 @@ article.post {
       font-style: italic;
       padding: 0.1em;
     }
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 4rem;
   }
 
   .section-link {
