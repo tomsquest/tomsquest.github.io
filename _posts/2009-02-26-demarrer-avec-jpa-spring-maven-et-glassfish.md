@@ -89,4 +89,4 @@ Le "petites" choses à faire :
 
 ## Le projet
 
-Le code source est disponible sur Github : https://github.com/tomsquest/spring-jpa-maven-glassfish
+Le code source est disponible sur Github : <https://github.com/tomsquest/spring-jpa-maven-glassfish>

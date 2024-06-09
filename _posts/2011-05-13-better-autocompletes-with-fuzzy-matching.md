@@ -29,9 +29,9 @@ The application uses the following pieces of code :
 
 - A Sinatra application
 - JQuery UI for the Autocomplete
-- The "text" gem which has an implementation of the Levenshtein distance algorithm (source: https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb)
+- The "text" gem which has an implementation of the Levenshtein distance algorithm (source: <`https://github.com/threedaymonk/text/blob/master/lib/text/levenshtein.rb>)
 
-The source code is available on : https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching
+The source code is available on: <https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching>.
 
 ### Frontend
 
@@ -105,4 +105,4 @@ We've seen how to setup a quick-and-simple sinatra app which computes on the Lev
 
 For advanced use cases, we should improve the way we mix the Fuzzy-maching results with the strictly matching results. Switching to a better algorithm, or a set of algorithm (Longest common substring + Dameau-Levenshtein) could also be easily done.
 
-`The complete source code is available on Github : https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching
+The complete source code is available on Github: <https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching>

@@ -156,7 +156,7 @@ It is interesting as a real world scenario because Maven does not expose an API 
 because one needs to know exactly where to inject the custom code and how fragile it is to hack
 a third-party piece of code.
 
-You can see his code here : https://github.com/jcgay/maven-color
+You can see his code here : <https://github.com/jcgay/maven-color>
 
 In its code, the author had to :
 

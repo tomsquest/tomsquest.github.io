@@ -87,9 +87,9 @@ Vaste sujet que je résume ainsi :
 Les statuts sont une pièce importante du dossier, mais l’AFE fournit des statuts simplifiés prenant 2 pages et couvrant la situation classique de tout le monde.
 C’est ce modèle que j’ai utilisé. Libre à vous de comparer avec les modèles sur Internet.
 
-Le modèle de statut simplifié est disponible ici : https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html ([copie](/assets/files/eurl/afe_modele_statuts_types_eurl.txt))
+Le modèle de statut simplifié est disponible ici : <https://www.afecreation.fr/cid46379/modele-statuts-types-eurl.html> ([copie](/assets/files/eurl/afe_modele_statuts_types_eurl.txt))
 
-Il existe également un modèle de statuts plus complet : https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc ([copie](/assets/files/eurl/afe_statuts_eurl.doc))
+Il existe également un modèle de statuts plus complet : <https://media.afecreation.fr/file/03/3/statuts_eurl_(2016).37033.doc> ([copie](/assets/files/eurl/afe_statuts_eurl.doc))
 
 A vous de remplir les cases.
 

@@ -80,7 +80,7 @@ Exemple de changeSet Liquibase :
 
 ### Les pragmatiques
 
-D’autres outils ne vont pas aussi loin que Liquibase en termes de fonctionnalités et d'abstraction mais leur approche est pragmatique et plus simple. Ils visent avant tout à automatiser la gestion des scripts SQL. Les principaux sont [MyBatis Schema Migration](http://www.mybatis.org/java.html), [DbMaintain](http://dbmaintain.sourceforge.net/) et [C5 DB Migration](http://code.google.com/p/c5-db-migration/).
+D’autres outils ne vont pas aussi loin que Liquibase en termes de fonctionnalités et d'abstraction, mais leur approche est pragmatique et plus simple. Ils visent avant tout à automatiser la gestion des scripts SQL. Les principaux sont [MyBatis Schema Migration](http://www.mybatis.org/java.html), [DbMaintain](http://dbmaintain.sourceforge.net/) et [C5 DB Migration](http://code.google.com/p/c5-db-migration/).
 
 Le principe de ces outils est assez simple et consiste à lancer une série de scripts stockés dans une arborescence répartie en version. Les actions sont tracées ce qui permet de connaître l’état du schéma.
 
