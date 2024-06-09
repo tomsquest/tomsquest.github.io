@@ -48,7 +48,6 @@ header.nav {
     a {
       display: flex;
       align-items: center;
-      text-decoration: none;
       color: var(--b-txt);
 
       img {
@@ -74,11 +73,6 @@ header.nav {
         a {
           color: var(--b-link);
           font-weight: bold;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
         }
       }
     }
@@ -124,18 +118,18 @@ footer {
     padding-left: 0;
     list-style-type: none;
 
-    a {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-    }
-
     li {
       margin: 10px 0;
-    }
 
-    img {
-      margin-right: 10px;
+      a {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      img {
+        margin-right: 10px;
+      }
     }
   }
 }
