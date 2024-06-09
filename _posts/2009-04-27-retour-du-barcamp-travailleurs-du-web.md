@@ -52,7 +52,7 @@ Il peut donc être intéressant de transiter de son activité salarié vers le s
 
 Le statut d'auto-entrepreneur permet d'avoir une activité annexe sur laquelle on ne paye des charges que s'il y a chiffre d'affaire. Dans les services, le chiffre d'affaire max est de 32000 euros (au-delà, il faudra changer de statut).
 
-Mais attention, on me souffle à l'oreille que le statut d'auto-entrepreneur engage la responsabilité illimité de l'entrepreneur. Ouch ! A lire dans [Odyssée d'une traducteuse au régime - l'entreprenariat, volet 2](http://transtextuel.wordpress.com/2009/04/09/odyssee-d%E2%80%99une-traducteuse-au-regime-l%E2%80%99entreprenariat-volet-2/).
+Mais attention, on me souffle à l'oreille que le statut d'auto-entrepreneur engage la responsabilité illimité de l'entrepreneur. Ouch ! A lire dans [Odyssée d'une traducteuse au régime - l'entrepreneuriat, volet 2](http://transtextuel.wordpress.com/2009/04/09/odyssee-d%E2%80%99une-traducteuse-au-regime-l%E2%80%99entreprenariat-volet-2/).
 
 Au niveau de la concrétisation, un freelance jouît d'une plus grande liberté. Tous les freelances à la table organisent leur journée à leur convenance. La liberté est en effet un des attraits du statut. Travailler tôt ou tard, faire sa veille quotidienne, coder, toutes ces tâches s'enchaînent différemment selon les individus.
 

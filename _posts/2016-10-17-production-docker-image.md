@@ -38,7 +38,7 @@ CMD ["radicale"]
 
 I started with a Debian base image, then switch to an Alpine image, then found there are even alpine+python images.
 
-The official Python images have an Alpine version: https://hub.docker.com/_/python/
+The official Python images have an Alpine version: <https://hub.docker.com/_/python/>
 
 I did not set a specific image version (eg. `python:3.5.2-alpine`) in the hope that it could ease upgrades and
 that a rebuild could be automatically fired by Docker hub using a configured dependency. Forget repeatable builds !
@@ -91,7 +91,7 @@ Combined with a volume, that's were I started having **permission problems**.
 What seems to occur is that mounting a host volume (eg. `docker run ... -v /path:/data/radicale`)
 overwrites the permission **in** the container. What was owned by `radicale:radicale` became owned by `root:root` in the container.
 
-The reason is that the Docker daemon runs as `root`, so the mounted volume became root (UID=0) **in** the container, in which, UID=0 is also root. Note that, when the `radicale` user in the container has the UID 1000, which is my user on the host. Complete detail here: https://denibertovic.com/posts/handling-permissions-with-docker-volumes/
+The reason is that the Docker daemon runs as `root`, so the mounted volume became root (UID=0) **in** the container, in which, UID=0 is also root. Note that, when the `radicale` user in the container has the UID 1000, which is my user on the host. Complete detail here: <https://denibertovic.com/posts/handling-permissions-with-docker-volumes/>
 
 I first found a solution from [Stack Overflow](https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes) and
 in the book [Using Docker](http://shop.oreilly.com/product/0636920035671.do) by Adrian Mouat (excellent book btw).
@@ -161,5 +161,5 @@ There are still many things to do **outside** the image itself. I have yet to:
 
 My Radicale image is available at:
 
-- Docker Hub: https://hub.docker.com/r/tomsquest/docker-radicale/
-- Github: https://github.com/tomsquest/docker-radicale
+- Docker Hub: <https://hub.docker.com/r/tomsquest/docker-radicale/>
+- Github: <https://github.com/tomsquest/docker-radicale>

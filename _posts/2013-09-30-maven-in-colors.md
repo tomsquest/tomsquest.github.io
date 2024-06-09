@@ -34,8 +34,8 @@ mvn $goal | sed -e '/BUILD SUCCESS/$red BUILD SUCCESS/'
 In reality, it is a bit more complex because we want to return the exit code of the maven command
 and not the one of sed or the other chained command.
 
-The shell function (zsh and bash compatible) is available at :
-https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zsh
+The shell function (zsh and bash compatible) is available at:
+<https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zsh>
 
 You just have to put this file somewhere, source it and make an alias to mvn :
 

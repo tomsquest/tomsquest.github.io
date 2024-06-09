@@ -61,7 +61,7 @@ En tous cas, avec le projet Restlet, vous avez accès à ces deux approches qui 
 
 #### Puis-je réutiliser mon modéle de domaine en tant qu'objets REST ?
 
-Le modèle de votre domaine reste la base d'une bonne conception REST. Cela dit, il est indispensable de dériver ce modèle métier de haut niveau en un modèle orienté-ressources (ie. une API REST). C'est tout le rôle de notre méthodologie ROA/D que nous couvrons dans notre prochain livre ([http://book.restlet.org](http://book.restlet.org)).
+Le modèle de votre domaine reste la base d'une bonne conception REST. Cela dit, il est indispensable de dériver ce modèle métier de haut niveau en un modèle orienté-ressources (ie. une API REST). C'est tout le rôle de notre méthodologie ROA/D que nous couvrons dans notre prochain livre (<http://book.restlet.org>).
 
 > Au delà de l'implémentation de votre API REST métier dans un framework ou un autre, l'avantage est que cette API métier est réellement interopérable, quel que soit le langage ou le type de client. Après, tout est question de productivité et de qualité de conception.
 
@@ -77,7 +77,7 @@ Pas d'impact particulier, une application Restlet peut tourner dans Tomcat ou si
 
 #### Tu as également parlé de WADL, la javadoc du REST. A quoi cela sert-il ? Peux-tu donner un exemple ?
 
-Le plus simple c'est de voir un exemple: [http://www.mnot.net/webdesc/](http://www.mnot.net/webdesc/). Vous verrez sur cette page le service de recherche REST de Yahoo! décrit en WADL/XML et en HTML. Avec Restlet pour pouvez obtenir exactement ce format de sortie, nous embarquons la feuille de style de Yahoo! pour le rendu HTML.
+Le plus simple c'est de voir un exemple: <http://www.mnot.net/webdesc/>. Vous verrez sur cette page le service de recherche REST de Yahoo! décrit en WADL/XML et en HTML. Avec Restlet pour pouvez obtenir exactement ce format de sortie, nous embarquons la feuille de style de Yahoo! pour le rendu HTML.
 
 #### Tu m'as convaincu, demain, je veux faire du REST sur mon application, par où dois-je commencer ?
 
@@ -87,4 +87,4 @@ La bible REST est le livre chez O'Reilly, auquel nous avons d'ailleurs contribu�
 
 #### Merci
 
-Merci beaucoup à Jérôme d'avoir répondu avec simplicité à ces questions. Vous pouvez retrouver l'actualité de Restlet sur le [blog de Noelios](http://blog.noelios.com) et sur le site http://www.Restlet.org .
+Merci beaucoup à Jérôme d'avoir répondu avec simplicité à ces questions. Vous pouvez retrouver l'actualité de Restlet sur le [blog de Noelios](http://blog.noelios.com) et sur le site <http://www.Restlet.org>.

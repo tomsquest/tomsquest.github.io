@@ -61,6 +61,5 @@ Pour avoir de meilleurs leaders techniques, Patrick recommande de :
 
 ## Liens
 
-[Blog de Patrick KUA](http://www.thekua.com/atwork/)
-
-[Slides de la présentation faire à la QCon London (PDF)](http://qconlondon.com/london-2010/file?path=/qcon-london-2010/slides/PatrickKua_BuildingTheNextGenerationOfTechnicalLeaders.pdf)
+- [Blog de Patrick KUA](http://www.thekua.com/atwork/)
+- [Slides de la présentation faire à la QCon London (PDF)](http://qconlondon.com/london-2010/file?path=/qcon-london-2010/slides/PatrickKua_BuildingTheNextGenerationOfTechnicalLeaders.pdf)

@@ -41,7 +41,7 @@ Le projet WicketTester est intégré au framework même s'il n'a pas été déve
 
 En réalité, ces limitations ne sont pas bloquante, juste gênantes. Certains projets Wicket utilisant WicketTester ont une couverture de code importante. Martin nous a montré après la conférence des exemples de tests réels assez convainquant. Ca reste proche de l'API Selenium (sans ses bugs aléatoires, j'espère).
 
-Wicket 1.5 devrait apporter un framework de test plus complet et basé sur une partie du travail accomplit sur JDave. JDave est un framework de BDD (Behavior Driven Development) qui permet de spécifier par l'exemple les comportements des objets. Plus d'infos sur : [http://www.jdave.org/bdd-wicket/](http://www.jdave.org/bdd-wicket/).
+Wicket 1.5 devrait apporter un framework de test plus complet et basé sur une partie du travail accomplit sur JDave. JDave est un framework de BDD (Behavior Driven Development) qui permet de spécifier par l'exemple les comportements des objets. Plus d'infos sur : <http://www.jdave.org/bdd-wicket/>.
 
 L'article "[Testing Wicket with FitNesse](http://blog.xebia.com/2008/07/06/testing-wicket-with-fitnesse/)" illustre également certains problèmes rencontrés et leurs solutions pour l'écriture de fixture FitNesse.
 

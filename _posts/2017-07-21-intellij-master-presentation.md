@@ -11,9 +11,9 @@ We had a great time sharing tips and counting points to nominate the "best-intel
 
 The rules were one point by valid answer and each player answers secretly then the answer is given before I show it on screen and discuss it.
 
-If you would like to run the presentation, the html is here: https://tomsquest.github.io/intellij-master-presentation/
+If you would like to run the presentation, the html is here: <https://tomsquest.github.io/intellij-master-presentation/>
 
-The PDF of the shortcuts is at: https://github.com/tomsquest/intellij-master-presentation/blob/master/SHORTCUTS.pdf
+The PDF of the shortcuts is at: <https://github.com/tomsquest/intellij-master-presentation/blob/master/SHORTCUTS.pdf>
 
 And the whole source is on [github](https://github.com/tomsquest/intellij-master-presentation).
 

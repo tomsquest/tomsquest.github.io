@@ -27,7 +27,7 @@ Et un peu de code Java, Wicket va utiliser l'ID "message" pour remplacer le text
 
 ### Séparation avec le monde Stateless
 
-Wicket gère lui-même le maintien de l'état et donc permet de s'abstraire du modèle stateless HTTP. C'est assez bien foutu de ce côté là. Adieu HttpServletRequest. Pour l'instant avec mon usage, c'est 100% vrai.
+Wicket gère lui-même le maintien de l'état et donc permet de s'abstraire du modèle stateless HTTP. C'est assez bien foutu de ce côté-là. Adieu HttpServletRequest. Pour l'instant avec mon usage, c'est 100% vrai.
 
 ### Simplicité/Productivité/Fun
 
@@ -58,7 +58,7 @@ Le chapitre sur Spring est bien présenté, on voit différentes façons de l'in
 
 J'aurai aimé un chapitre sur les projets annexes que l'on retrouve côté [Wicket Stuff](http://wicketstuff.org/confluence/display/STUFFWIKI/Wiki).
 
-Par exemple, dans le chapitre sur la sécurité, Acegi n'est pas évoqué. Certes c'est un livre sur Wicket, mais quelques paragraphes pour montrer les extensions annexes auraient été la bienvenue.
+Par exemple, dans le chapitre sur la sécurité, Acegi n'est pas évoqué. Certes, c'est un livre sur Wicket, mais quelques paragraphes pour montrer les extensions annexes auraient été la bienvenue.
 
 De plus, le livre ne revient pas sur les changements qui ont eu lieu au fil des versions. Pourquoi ne pas parler de Wicket 2 qui est mort-né ? Et Wicket 1.4, quelles seront les nouveautés ? Allez, je demandais juste un bout d'introduction. Cette version est à peine évoquée au fil des pages.
 
