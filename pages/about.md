@@ -33,7 +33,7 @@ When not in front of a computer, I :
     </li>
     <li>
         <a href="https://twitter.com/ThomasQueste" title="View Thomas Queste's profile on Twitter">
-            <img src="/assets/images/tw-48.png" width="48" height="48" alt="View Thomas Queste's profile on Twitter">@ThomasQueste
+            <img src="/assets/images/tw-48.png" width="48" height="48" alt="View Thomas Queste's profile on Twitter">Twitter @ThomasQueste
         </a>
     </li>
     <li>
