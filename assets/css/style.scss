@@ -100,17 +100,15 @@ footer {
   }
 }
 
-.home {
-  ul.post-list {
-    padding-left: 0;
-    list-style: none;
+ul.post-list {
+  padding-left: 0;
+  list-style: none;
 
-    li {
-      margin-bottom: 3rem;
+  li {
+    margin-bottom: 3rem;
 
-      h2 {
-        margin-top: 0;
-      }
+    h2 {
+      margin-top: 0;
     }
   }
 }
