@@ -3,7 +3,7 @@ title: Les limites de Wicket
 lang: fr
 ---
 
-<img src="/assets/images/posts/wicket_logo.png" style="float:right"/>
+<img src="/assets/images/posts/wicket_logo.jpg" style="float:right"/>
 
 Connaître un framework, c'est aussi reconnaître ses limites et ses points faibles. Pour [Wicket](http://wicketframework.org/), il m'a fallu creuser profondément. J'ai interrogé les pros de Wicket présent à cette soirée, Carl Azoury, un des boss de Zenika et Martin Dashort, committer Wicket.
 
@@ -15,7 +15,7 @@ Quelles sont les limites de Wicket ? Quelles sont leurs solutions ?
 
 <img src="/assets/images/posts/zenika_logo.gif" style="float:right"/>
 
-L'invité de la soirée [Zenika](http://www.zenika.com/) du 29 avril était [Martin Dashorst](http://wicketinaction.com/), un des committers principaux de Wicket et coauteur du livre "Wicket In Action", dont vous trouverez [la critique ici-même](http://www.tomsquest.com/blog/2008/12/critique-du-livre-wicket-in-action/).
+L'invité de la soirée [Zenika](http://www.zenika.com/) du 29 avril était [Martin Dashorst](http://wicketinaction.com/), un des committers principaux de Wicket et coauteur du livre "Wicket In Action", dont vous trouverez [la critique ici-même]({% post_url 2008-12-09-critique-du-livre-wicket-in-action %}).
 
 Martin a réalisé une introduction d'une heure à Wicket en montrant ses principaux avantages et les façons de faire les choses. La présentation a été convaincante mais j'aurai aimé plus de détails et d'exemples sur le futur de Wicket.
 

@@ -4,7 +4,7 @@ lang: en
 ---
 
 A few months ago, I wrote a little shell script to colorize Maven's output
-(see [this post](http://tomsquest.com/blog/2013/09/maven-in-colors)).
+(see [this post]({% post_url 2013-09-30-maven-in-colors %})).
 This is a good solution, but [Jean-Christophe Gay](https://twitter.com/jchristophegay) has written a pure Java version
 to solve the same problem with interesting bits of Java technologies.
 
@@ -14,7 +14,8 @@ In this post, we will see how a Java Agent and some bytecode manipulation can op
 
 I wrote a little test project to wire the stuff involved.
 There are two Maven module, one for the Agent and one for representing the external lib (we should not modify it).
-The whole code is here : https://github.com/tomsquest/java-agent-asm-javassist-sample
+
+The whole code is [on Github](https://github.com/tomsquest/java-agent-asm-javassist-sample)
 
 ### Agent
 
