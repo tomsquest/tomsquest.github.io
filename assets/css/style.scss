@@ -81,8 +81,11 @@ header.nav {
 
       li {
         a {
-          color: var(--b-link);
           font-weight: bold;
+
+          &::before {
+            content: "/";
+          }
         }
       }
     }
