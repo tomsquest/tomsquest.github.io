@@ -122,7 +122,7 @@ ul.post-list {
   li {
     margin-bottom: 3rem;
 
-    h2,h3 {
+    h2, h3 {
       margin-top: 0;
     }
   }
@@ -198,5 +198,11 @@ article.post {
     th, td {
       padding: 1em 2em;
     }
+  }
+
+  .edit-on-github {
+    text-align: right;
+    font-size: small;
+    margin-top: 3rem;
   }
 }
