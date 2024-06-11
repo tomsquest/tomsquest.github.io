@@ -11,6 +11,15 @@
   --b-focus: #88c0d0
 }
 
+@media(prefers-color-scheme: dark) {
+  :root {
+    --b-txt: #eceff4;
+    --b-bg-1: #2e3440;
+    --b-bg-2: #3b4252;
+    --b-line: #3b4252
+  }
+}
+
 *, ::before, ::after {
   box-sizing: border-box
 }
@@ -364,4 +373,10 @@ progress {
 
 select:not([multiple]):not([size]) {
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' fill='%232e3440'%3E%3Cpath d='M5 6l5 5 5-5 2 1-7 7-7-7 2-1z'/%3E%3C/svg%3E")
+}
+
+@media(prefers-color-scheme: dark) {
+  select:not([multiple]):not([size]) {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' fill='%23eceff4'%3E%3Cpath d='M5 6l5 5 5-5 2 1-7 7-7-7 2-1z'/%3E%3C/svg%3E")
+  }
 }
