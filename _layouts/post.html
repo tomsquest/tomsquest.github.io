@@ -44,13 +44,13 @@ layout: base
 </article>
 
 <script>
-  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(header => {
-    if (!header.querySelector('.section-link')) {
-      const link = document.createElement('a')
-      link.href = `#${header.id}`
-      link.innerText = '§'
-      link.classList.add('section-link')
-      header.appendChild(link)
+  document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(header => {
+    if (!header.querySelector(".anchor-link")) {
+      const anchor = document.createElement("a")
+      anchor.href = `#${header.id}`
+      anchor.className = "anchor-link";
+      anchor.innerHTML = "<span class='sr-only'>Permalink</span><span aria-hidden='true'>§</span>";
+      header.appendChild(anchor)
     }
   })
 </script>
