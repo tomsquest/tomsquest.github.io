@@ -5,15 +5,21 @@ lang: en
 
 ![npm logo](/assets/images/posts/2018-10-02-better-npm-ing/npm_logo.png)
 
-I discovered several tips working with NPM on a daily basis. Here are the top ones.
-
-**TL;DR**: save-exact, npm ci, npm audit fix, npx, updtr, `NVM_SYMLINK_CURRENT`
+I discovered several tips for working with NPM on a daily basis. Here are the top ones.
 
 I presented those tips to my coworkers, [the slides are available online](https://tomsquest.github.io/presentation-better-npm-ing/).
 
+## **TL;DR**: 
+
+- Use `save-exact` for consistent installs
+- Run `npm ci` for fast and consistent installs
+- Run `npm audit fix` to fix security issues, quickly
+- Use `npx npm-check -u` or `npx updtr` to update dependencies
+- Use `NVM_SYMLINK_CURRENT` to have a symlink to the current node version
+
 ## Reproducible builds
 
-**Problem**: your local install can/will differ from another coworkers, even on the CI server!
+**Problem**: your local installation can/will differ from another coworker, even on the CI server!
 
 **Cause**: Version range are problematic: `"rxjs": "^6.2.2"`
 
@@ -37,7 +43,7 @@ $ npm config set save-exact true
 
 ## Installing package
 
-**Problem**: Using `npm install` will tries to resolves the dependency graph, possibly installing different versions (because of ranges declared in dependencies, not yours even if you used `--save-exact`) and then updating the `package-lock.json` even if you did not want to.
+**Problem**: Using `npm install` will try to resolve the dependency graph, possibly installing different versions (because of ranges declared in dependencies, not yours even if you used `--save-exact`) and then updating the `package-lock.json` even if you did not want to.
 
 **Solution**: Use `npm ci` which only read the `package-lock.json`
 
@@ -68,7 +74,7 @@ $ npx cleaver watch index.md
 
 ➕ Fails the build given integrated it in CI
 
-Another solution is to use the builtin services of Github and Gitlab.
+Another solution is to use the builtin services of GitHub and Gitlab.
 
 ```bash
 $ npm audit fix
@@ -98,19 +104,19 @@ $ npx npm-check -u
 
 ![List of node version from Intellij](/assets/images/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png)
 
-**Solution**: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link `~/.nvm/current` to, for example, `~/.nvm/versions/node/v11.0.0` and recreate the link when changing of node version (automatically if you use [NVM auto-use ZSH plugin](https://github.com/tomsquest/nvm-auto-use.zsh)).
+**Solution**: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link `~/.nvm/current` to, for example, `~/.nvm/versions/node/v11.0.0` and recreate the link when changing of node versions (automatically if you use [NVM auto-use ZSH plugin](https://github.com/tomsquest/nvm-auto-use.zsh)).
 
 ```bash
 # Put this in your .bashrc/.zshrc
 $ export NVM_SYMLINK_CURRENT=true
 ```
 
-## (Bonus) Follow Github Releases
+## (Bonus) Follow GitHub Releases
 
 **Problem**: Be notified of releases
 
-**Solution 1**: (_Updated: 2018.12.02_) Github now support watching releases of a repository: [Documentation](https://help.github.com/articles/watching-and-unwatching-releases-for-a-repository/).
+**Solution 1**: (_Updated: 2018.12.02_) GitHub now supports watching releases of a repository: [Documentation](https://help.github.com/articles/watching-and-unwatching-releases-for-a-repository/).
 
-**Solution 2**: [Gitpunch.com](https://gitpunch.com) seems to solve the problem. It can follow all your Github stars and specific projects.
+**Solution 2**: [Gitpunch.com](https://gitpunch.com) seems to solve the problem. It can follow all your GitHub stars and specific projects.
 
 [![Git Punch](/assets/images/posts/2018-10-02-better-npm-ing/gitpunch.com.png)](https://gitpunch.com)

@@ -9,9 +9,10 @@ Here are some numbers and how to do it. It's nearly free if you run on Node (!= 
 
 ## **TL;DR**
 
-Enable `tslib` + `importHelpers`  
-= reduce JS file size = reduce storage and network  
-= **Think Carbon**!
+- Install `tslib`
+- Configure `importHelpers`
+
+= reduce JS file size = reduce storage and network = 🌿 **Reduce carbon footprint**!
 
 ## Size matters
 
