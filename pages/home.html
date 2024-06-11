@@ -20,11 +20,6 @@ class: home
   <a href="{{ post.url | relative_url }}">
     <h3>{{ post.title | escape }}</h3>
   </a>
-  <p class="excerpt">
-    {%- if page.excerpt -%}
-    {{ post.excerpt }}
-    {%- endif -%}
-  </p>
 </li>
 {%- endfor -%}
 </ul>
