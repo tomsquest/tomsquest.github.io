@@ -9,7 +9,7 @@ class: home
 <p>Welcome to my blog.</p>
 <p>I write about software development, productivity, and other things I find interesting.</p>
 
-<h1>Latest Posts</h1>
+<h2>Latest Posts</h2>
 
 <ul class="post-list">
 {%- for post in site.posts limit:5 -%}
@@ -18,7 +18,7 @@ class: home
     {{ post.date | date: "%Y-%m-%d" }}
   </time>
   <a href="{{ post.url | relative_url }}">
-    <h2>{{ post.title | escape }}</h2>
+    <h3>{{ post.title | escape }}</h3>
   </a>
   <p class="excerpt">
     {%- if page.excerpt -%}
