@@ -2,34 +2,34 @@
 layout: base
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1 itemprop="name headline">
+    <h1 class="p-name" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
 
-    <p>
+    <p class="post-meta">
       📅 Published:
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
 
       {%- if page.modified_date -%}
       ~ Updated:
       {%- assign modified_date = page.modified_date | date_to_xmlschema -%}
-      <time datetime="{{ modified_date }}" itemprop="dateModified">
+      <time class="dt-modified" datetime="{{ modified_date }}" itemprop="dateModified">
         {{ modified_date | date: date_format }}
       </time>
       {%- endif -%}
       •
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">{{ site.author.name }}</span>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="p-author h-card">
+        <span itemprop="name" class="p-name">{{ site.author.name }}</span>
       </span>
     </p>
   </header>
 
-  <div itemprop="articleBody">
+  <div class="e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -37,7 +37,7 @@ layout: base
     <a href="https://github.com/tomsquest/tomsquest.github.io/edit/master/{{ page.path }}">Improve this post</a>
   </p>
 
-  <a href="{{ page.url | relative_url }}" hidden></a>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
 <script>
