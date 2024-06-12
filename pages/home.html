@@ -12,16 +12,16 @@ class: home
 <h2>Latest Posts</h2>
 
 <ul class="post-list">
-{%- for post in site.posts limit:5 -%}
-<li>
-  <time datetime="{{ post.date | date_to_xmlschema }}">
-    {{ post.date | date: "%Y-%m-%d" }}
-  </time>
-  <a href="{{ post.url | relative_url }}">
-    <h3>{{ post.title | escape }}</h3>
-  </a>
-</li>
-{%- endfor -%}
+  {%- for post in site.posts limit:5 -%}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%Y-%m-%d" }}
+    </time>
+    <h3>
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h3>
+  </li>
+  {%- endfor -%}
 </ul>
 
 <p>
