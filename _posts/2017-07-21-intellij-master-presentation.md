@@ -17,4 +17,4 @@ The PDF of the shortcuts is at: <https://github.com/tomsquest/intellij-master-pr
 
 And the whole source is on [github](https://github.com/tomsquest/intellij-master-presentation).
 
-![intellij logo](/assets/images/posts/intellij-master-swag.png)
+![intellij swag](/assets/images/posts/intellij-master-swag.png)
