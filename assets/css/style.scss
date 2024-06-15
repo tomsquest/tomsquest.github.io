@@ -116,14 +116,34 @@ header.nav {
   }
 }
 
-footer {
+footer.footer-container {
   margin-top: 3rem;
   border-top: 1px solid var(--b-line);
   padding: 3rem 0;
-  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-left, .footer-right {
+    flex: 1;
+  }
 
   a {
     font-weight: bold;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      a {
+        &::before {
+          content: "/";
+        }
+      }
+    }
   }
 }
 
