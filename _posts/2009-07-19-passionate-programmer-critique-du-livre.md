@@ -1,9 +1,8 @@
 ---
 title: Critique du livre "Passionate Programmer"
 lang: fr
+image: /assets/images/posts/the_passionate_programmer.jpg
 ---
-
-<img src="/assets/images/posts/the_passionate_programmer.jpg" style="float:right"/>
 
 Dans "[The Passionate Programmer](http://www.pragprog.com/titles/cfcar2/the-passionate-programmer)", apprenez comment gérer votre carrière de geek, comment booster votre vie professionnelle, et avoir du fun et l'argent du fun.
 

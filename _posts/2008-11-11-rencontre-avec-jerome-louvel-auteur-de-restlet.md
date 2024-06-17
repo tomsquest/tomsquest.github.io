@@ -1,9 +1,8 @@
 ---
 title: "Rencontre avec Jérôme Louvel, auteur de Restlet"
 lang: fr
+image: /assets/images/posts/2008/11/restlet-logo.gif
 ---
-
-<img src="/assets/images/posts/2008/11/restlet-logo.gif" style="float:right"/>
 
 Suite au dernier JUG, Jérôme Louvel, l'auteur de Restlet, a bien voulu répondre à mes questions. Les sujets incluent les apports de REST, à qui il est destiné, JAX-RS et l'intégration à un existant.
 

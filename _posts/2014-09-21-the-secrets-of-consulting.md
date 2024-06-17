@@ -1,9 +1,8 @@
 ---
 title: "The Secrets of Consulting by Gerald M. Weinberg"
 lang: en
+image: /assets/images/posts/the-secrets-of-consulting.jpg
 ---
-
-![Book cover](/assets/images/posts/the-secrets-of-consulting.jpg)
 
 The book ["Secrets of Consulting"](http://www.amazon.com/The-Secrets-Consulting-Getting-Successfully/dp/0932633013/) by Weinberg stayed for years on my shelve.
 I finally found why I did not read it just after I bought it, but why I should have read it before.

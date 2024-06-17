@@ -1,9 +1,8 @@
 ---
 title: "Gradle : vos builds aux petits oignons"
 lang: fr
+image: /assets/images/posts/gradle.jpg
 ---
-
-<img src="/assets/images/posts/gradle.jpg" style="float:right"/>
 
 [Gradle](http://www.gradle.org/) est un outil permettant d'écrire ses scripts de build en groovy.
 Il nous a été présenté hier soir chez [Zenika](http://www.zenika.com/) par son créateur, Hans Dockter.

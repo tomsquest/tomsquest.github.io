@@ -1,9 +1,8 @@
 ---
 title: "Selenium en java : Démarrage rapide"
 lang: fr
+image: /assets/images/posts/2008/09/selenium_small.jpg
 ---
-
-<img src="/assets/images/posts/2008/09/selenium_small.jpg" style="float:right"/>
 
 L'article est un guide de démarrage rapide pour l'écriture de tests Selenium en Java. Nous allons voir ce qu'il faut configurer dans le pom.xml de Maven et comme lancer l'ensemble des tests.
 

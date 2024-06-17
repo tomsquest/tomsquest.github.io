@@ -27,6 +27,12 @@ layout: base
     </p>
   </header>
 
+  {%- if page.image -%}
+  <p class="post-image">
+    <img src="{{ page.image }}" alt="{{ page.title | escape }}">
+  </p>
+  {%- endif -%}
+
   <div>
     {{ content }}
   </div>

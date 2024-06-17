@@ -1,9 +1,8 @@
 ---
 title: Tuning de Tomcat par Mark Thomas
 lang: fr
+image: /assets/images/posts/2008/11/tomcat-logo.gif
 ---
-
-<img src="/assets/images/posts/2008/11/tomcat-logo.gif" style="float:right"/>
 
 Ce matin, aux [Rencontres Spring](http://www.rencontres-spring.com/), Mark Thomas a parlé du tuning de Tomcat en production. J'y ai appris plusieurs choses intéressantes que je résume ici.
 

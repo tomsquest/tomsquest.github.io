@@ -1,9 +1,8 @@
 ---
 title: "Jetty : démarrage rapide"
 lang: fr
+image: /assets/images/posts/jetty_logo.png
 ---
-
-<img src="/assets/images/posts/jetty_logo.png" style="float:right"/>
 
 [Jetty](http://jetty.mortbay.org) est un serveur d'application léger, très léger. Il est en plus rapide et complètement intégré à Maven 2. Si vous voulez déployer une application Web sans devoir installer un serveur séparément, suivez le guide.
 

@@ -1,9 +1,8 @@
 ---
 title: "Présentation et retour sur GreenPepper"
 lang: fr
+image: /assets/images/posts/2008/12/greenpepper-logo.png
 ---
-
-<img src="/assets/images/posts/2008/12/greenpepper-logo.png" style="float:right"/>
 
 Au boulot, nous évaluons [GreenPepper](http://www.greenpeppersoftware.com) de la société [Pyxis](http://www.pyxis-tech.com/fr/). GreenPepper est un outil de test fonctionnel et nous souhaitons à terme que les MOA l'utilisent afin de rédiger les spécifications et les tests associés.
 

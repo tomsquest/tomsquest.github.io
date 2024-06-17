@@ -1,9 +1,8 @@
 ---
 title: "Compte-rendu de la présentation de Terracotta chez Zenika"
 lang: fr
+image: /assets/images/posts/2008/10/logo_terracotta.jpg
 ---
-
-<img src="/assets/images/posts/2008/10/logo_terracotta.jpg" style="float:right"/>
 
 J'ai assisté hier à la présentation de [Terracotta](http://www.terracotta.org/) par son CTO et co-fondateur, Ari Zilka, organisé par la société [Zenika](http://www.zenika.com/).
 

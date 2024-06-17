@@ -1,11 +1,10 @@
 ---
 title: "Review : Play Framework Cookbook"
 lang: en
+image: /assets/images/posts/play_framework_cookbook.jpg
 ---
 
-<img src="/assets/images/posts/play_framework_cookbook.jpg" style="float:right"/>
-
-Play!, the framework for the bored Java developers ! Very interesting and opinated framework.
+Play!, the framework for the bored Java developers! Very interesting and opinated framework.
 I didn't play with it a lot in the previous months, but the new book ["Play Framework Cookbook"](http://www.packtpub.com/play-framework-cookbook/book) by Packt Publishing,
 released this summer was a good way to dig into the framework.
 The ebook was offered for free to people who wants to review it. No excuse.

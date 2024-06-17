@@ -1,11 +1,12 @@
 ---
 title: "De la programmation défensive"
 lang: fr
+image: /assets/images/posts/2008/10/thepragmaticprogrammerfromjourneymantomaster.jpg
 ---
 
-Vous aviez développé un nouveau service. Les interfaces et les données échangées étaient définies. Vous étiez optimiste, vous connaissiez bien le client. Malheureusement celui-ci utilisait de temps en temps mal votre API, vous fournissant des paramètres invalides. Vous voilà en train de corrompre l'intégrité de vos données. Pourtant même la Javadoc précisait le format des données. Avez-vous été trop optimiste ? Et votre code, comment aurait-il dû réagir ? Est-ce votre faute ou celle du client ?
+Vous aviez développé un nouveau service. Les interfaces et les données échangées étaient définies. Vous étiez optimiste, vous connaissiez bien le client. Malheureusement celui-ci utilisait de temps en temps mal votre API, vous fournissant des paramètres invalides. Vous voilà en train de corrompre l'intégrité de vos données. Pourtant, même la Javadoc précisait le format des données. Avez-vous été trop optimiste ? Et votre code, comment aurait-il dû réagir ? Est-ce votre faute ou celle du client ?
 
-Se prémunir de l'usage incorrecte de son code fait partie de ce que l'on nomme la **programmation défensive**. On pourrait parler de codage "pessimiste". C'est une façon de penser son code de façon à éliminer le maximum de problèmes venant de l'extérieur. On retrouve ce concept en Java sous le terme "d'[Assertions](http://java.sun.com/j2se/1.4.2/docs/guide/lang/assert.html)". Une assertion est une condition qui doit être vraie pour pouvoir continuer le déroulement du programme.
+Se prémunir de l'usage incorrect de son code fait partie de ce que l'on nomme la **programmation défensive**. On pourrait parler de codage "pessimiste". C'est une façon de penser son code de façon à éliminer le maximum de problèmes venant de l'extérieur. On retrouve ce concept en Java sous le terme "d'[Assertions](http://java.sun.com/j2se/1.4.2/docs/guide/lang/assert.html)". Une assertion est une condition qui doit être vraie pour pouvoir continuer le déroulement du programme.
 
 Exemple d'assertion en java :
 

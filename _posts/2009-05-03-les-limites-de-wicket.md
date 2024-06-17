@@ -1,9 +1,8 @@
 ---
 title: Les limites de Wicket
 lang: fr
+image: /assets/images/posts/wicket_logo.jpg
 ---
-
-<img src="/assets/images/posts/wicket_logo.jpg" alt="logo wicket" style="float:right"/>
 
 Connaître un framework, c'est aussi reconnaître ses limites et ses points faibles. Pour [Wicket](http://wicketframework.org/), il m'a fallu creuser profondément. J'ai interrogé les pros de Wicket présent à cette soirée, Carl Azoury, un des boss de Zenika et Martin Dashort, committer Wicket.
 

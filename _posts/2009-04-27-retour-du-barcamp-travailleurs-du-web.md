@@ -1,9 +1,8 @@
 ---
 title: Retour du Barcamp "Travailleurs Du Web"
 lang: fr
+image: /assets/images/posts/tdw_camp.jpg
 ---
-
-<img src="/assets/images/posts/tdw_camp.jpg" style="float:right"/>
 
 Samedi a eu lieu le premier [Barcamp TDW](http://barcamp.pbwiki.com/TravailleursDuWebCamp) destinés aux personnes travaillant dans le Web ou s'y intéressant : designers, développeurs, webmasters, curieux et même un mec qui fait du Java (vous avez deviné qui).
 

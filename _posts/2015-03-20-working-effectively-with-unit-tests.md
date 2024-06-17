@@ -1,9 +1,8 @@
 ---
 title: "Working Effectively with Unit Tests by Jay Fields"
 lang: en
+image: /assets/images/posts/wewut-cover.jpg
 ---
-
-![Book cover](/assets/images/posts/wewut-cover.jpg)
 
 I am very happy to have read Jay Fields' Working effectively with unit tests.
 This is a rare book where developers are taught how to be better at a very-argued discipline: testing.

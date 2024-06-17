@@ -1,9 +1,8 @@
 ---
 title: "Démarrer avec JPA, Spring, Maven et Glassfish"
 lang: fr
+image: /assets/images/posts/2009/02/screenshot_06.jpeg
 ---
-
-<img src="/assets/images/posts/2009/02/screenshot_06.jpeg" style="float:right"/>
 
 Je vous propose un projet qui permettra de démarrer avec [Spring](http://static.springframework.org/spring/docs/2.5.x/reference/), de déployer sous [Glassfish v3](https://glassfish.dev.java.net/) et de lancer les tests d'intégration sans serveur d'application, le tout avec le pom [Maven](http://maven.apache.org/) qui va bien.
 
