@@ -1,7 +1,6 @@
 ---
 title: "De la programmation défensive"
 lang: fr
-image: /assets/images/posts/2008/10/thepragmaticprogrammerfromjourneymantomaster.jpg
 ---
 
 Vous aviez développé un nouveau service. Les interfaces et les données échangées étaient définies. Vous étiez optimiste, vous connaissiez bien le client. Malheureusement celui-ci utilisait de temps en temps mal votre API, vous fournissant des paramètres invalides. Vous voilà en train de corrompre l'intégrité de vos données. Pourtant, même la Javadoc précisait le format des données. Avez-vous été trop optimiste ? Et votre code, comment aurait-il dû réagir ? Est-ce votre faute ou celle du client ?
@@ -36,7 +35,7 @@ public List<String> filter(List<Strin> mails) {
 
 En java, au moment de la compilation, la présence d'un flag permet de déclarer si oui ou non le code embarquera les assertions. Alors à quoi beau peaufiner ses assertions si elles ne sont pas actives tout le temps ?
 
-<img src="/assets/images/posts/2008/10/thepragmaticprogrammerfromjourneymantomaster.jpg" style="float:right"/>
+![Couverture Pragmatic Programmer](/assets/images/posts/2008/10/thepragmaticprogrammerfromjourneymantomaster.jpg)
 
 Dans le livre "[The Pragmatic Programmer](http://www.amazon.fr/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/)", les auteurs expliquent que les concepteurs du langage Java ont permis de désactiver les assertions pour deux raisons :
 

@@ -22,7 +22,7 @@ Il propose dans son livre des conseils pour ceux qui n'ont pas les moyens d'emba
 
 ## Le livre
 
-<img src="/assets/images/posts/2009/01/dmmt-cover-fr-je-ne-veux-pas-chercher.jpg" style="float:right"/>
+![Couverture Je Ne Veux Pas Chercher](/assets/images/posts/2009/01/dmmt-cover-fr-je-ne-veux-pas-chercher.jpg)
 
 C'est un bel objet, on prend plaisir à le feuilleter. Il est aéré et son contenu est bien mis en valeur. Il contient beaucoup d'illustrations et de captures d'écran pour montrer par exemple les d'améliorations avant/après (convainquant !).
 
@@ -40,7 +40,7 @@ Le livre une remise à plat de ce que l'on pense au niveau ergonomie et concepti
 
 ## Test Driven Website
 
-<img src="/assets/images/posts/2009/01/dmmt-webdesignfunnies1.jpg" style="float:right"/>
+![Web Design Funnies](/assets/images/posts/2009/01/dmmt-webdesignfunnies1.jpg)
 
 Un des chapitres qui m'a le plus marqué dans le livre est celui où Steve Krug affirme que les discussions sur l'usabilité sont une perte de temps.
 
@@ -62,8 +62,6 @@ Le slogan du livre est "A Common Sense Approach To Web Usability". Pour Steve Kr
 Cet aspect "bon sens" se retrouve dans chaque chapitre. L'auteur a réussi parfaitement son exercice de vulgarisation.
 
 ## L'accessibilité
-
-<img src="/assets/images/posts/2009/01/screenshot001.jpg" style="float:right"/>
 
 Steve Krug expliquent que les aveugles scannent les pages, comme nous le faisons, mais de manière auditive. Les "screen readers" qui lisent les pages sont réglés pour lire très rapidement les premiers mots des phrases, permettant à l'utilisateur de sauter de section en section.
 

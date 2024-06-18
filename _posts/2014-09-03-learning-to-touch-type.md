@@ -21,7 +21,7 @@ Here is a visual of the Colemak layout:
 
 ## Learning
 
-<img src="/assets/images/posts/colemak_first20thhours_book.jpg" style="float:right"/>
+![Couverture First 20 hours book](/assets/images/posts/colemak_first20thhours_book.jpg)
 
 I used the method of the book ["The First 20 Hours"](http://first20hours.com/) by Josh Kaufman, the author behind the Personal MBA. This is an interesting book on how to learn (anything) fast. It contains two chapters on learning and how to do it well and a set of chapters on what the author learned: Yoga, Go, Programming, Ukulele and particularly **Touch typing**. It's basically the 80/20 rules applied to learning.
 

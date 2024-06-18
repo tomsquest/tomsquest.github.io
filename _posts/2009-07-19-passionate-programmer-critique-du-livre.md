@@ -61,7 +61,7 @@ Ce que je n'ai pas aimé :
 
 ### Will code for food
 
-<img src="/assets/images/posts/my_job_went_to_india.jpg" style="float:right"/>
+![Couverture My Job Went To India](/assets/images/posts/my_job_went_to_india.jpg)
 
 Pour l'anecdote, la première version du livre était intitulée : [My Job went to India](http://www.pragprog.com/titles/mjwti/my-job-went-to-india) (ce qui a bien fait rire mes collègues de Singapour).
 

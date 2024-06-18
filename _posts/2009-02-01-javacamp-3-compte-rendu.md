@@ -12,7 +12,7 @@ Sujet général où nous avons parlé outils et méthodes.
 
 [Eric Lefevre](http://ericlefevre.net/wordpress/) explique que le test est avant tout une question de retour sur investissement (ROI). Le test pour le test n'est pas une finalité, il faut tester ce qui est important et ce qui apporte de la valeur.
 
-<img src="/assets/images/posts/2009/02/cohn.jpg" style="float:right"/>
+![Mike Cohn](/assets/images/posts/2009/02/cohn.jpg)
 
 Il dessine rapidement la pyramide de Mike Cohn appliqué aux tests que je ne connaissais pas.
 

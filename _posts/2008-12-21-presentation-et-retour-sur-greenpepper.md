@@ -28,7 +28,7 @@ Dans l'exemple ci-dessus, GreenPepper instancie la classe Cart et invoque deux f
 
 ## Le coin de la technique
 
-<img src="/assets/images/posts/2008/12/logo-confluence.gif" style="float:right"/>
+![Logo Confluence](/assets/images/posts/2008/12/logo-confluence.gif)
 
 GreenPepper est en réalité un plugin pour [Confluence](http://www.atlassian.com/software/confluence/), le wiki édité par Atlassian.
 

@@ -12,7 +12,7 @@ Quelles sont les limites de Wicket ? Quelles sont leurs solutions ?
 
 ## Un mot sur la conférence Wicket/Zenika
 
-<img src="/assets/images/posts/zenika_logo.png" alt="logo Zenika" style="float:right"/>
+![logo Zenika](/assets/images/posts/zenika_logo.png)
 
 L'invité de la soirée [Zenika](http://www.zenika.com/) du 29 avril était [Martin Dashorst](http://wicketinaction.com/), un des committers principaux de Wicket et coauteur du livre "Wicket In Action", dont vous trouverez [la critique ici-même]({% post_url 2008-12-09-critique-du-livre-wicket-in-action %}).
 
