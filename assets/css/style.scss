@@ -195,6 +195,12 @@ article.post {
     margin-bottom: 3rem;
   }
 
+  img {
+    display: block;
+    // Use same margin down as Bamboo for <p>
+    margin: 0 auto 1.5rem;
+  }
+
   a {
     font-weight: bold;
     text-decoration: none;
@@ -204,10 +210,6 @@ article.post {
       font-style: italic;
       padding: 0.1em;
     }
-  }
-
-  .post-image {
-    text-align: center;
   }
 
   .anchor-link {
