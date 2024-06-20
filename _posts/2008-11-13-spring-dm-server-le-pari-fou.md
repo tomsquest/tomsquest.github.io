@@ -22,7 +22,7 @@ Une phrase de Julien Dubois qui résume bien ce positionnement :
 
 > SpringSource gèrera à la fois le développement et le déploiement
 
-Peter Cooper-Elis, en charge de la gamme des produits SpringSource, a également distinctement montré l'implication de la société dans la partie "Deploy". La société n'est plus qu'un framework mais propose un vrai triplet : développement, déploiement et support.
+Peter Cooper-Elis, en charge de la gamme des produits SpringSource, a également distinctement montré l'implication de la société dans la partie "Deploy". La société n'est plus qu'un framework, mais propose un vrai triplet : développement, déploiement et support.
 
 La roadmap de Spring DM est :
 

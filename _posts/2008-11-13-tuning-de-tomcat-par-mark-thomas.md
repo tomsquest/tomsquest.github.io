@@ -20,12 +20,12 @@ Les logs devraient être configurés :
 
 Il est possible de cacher du contenu statique :
 
-- Par défaut, 10Mo de contenu sont retenus pendant 5 secondes. A changer si on a de la RAM et du contenu vraiment statique ;
+- Par défaut, 10Mo de contenu sont retenus pendant 5 secondes. À changer si on a de la RAM et du contenu vraiment statique ;
 - Il existe la fonctionnalité "SEND_FILE" des connecteurs NIO et APR permettant d'indiquer à l'OS d'envoyer directement le contenu statique du disque dur vers la carte réseau.
 
 Côté JVM, Mark rappelle que trop de mémoire est néfaste pour les performances : les GC seront plus longs. Il faut donc avoir les valeurs de XMS/XMX les plus faibles possibles. Pour cela, il faut étudier les besoins de l'application et mettre les valeurs en fonction.
 
-Pour le load-balancing et la réplication des Sessions, le frontal sait qu'une session est affectée à un noeud tout simplement par l'usage d'un cookie spécial qui est reconnu par le frontal (mod_proxy_http par exemple).
+Pour le load balancing et la réplication des Sessions, le frontal sait qu'une session est affectée à un noeud tout simplement par l'usage d'un cookie spécial qui est reconnu par le frontal (mod_proxy_http par exemple).
 
 Pour configurer le FailOver, Il suffit d'une ligne de conf. Mais la conf est plus complexe pour la Prod où il faut par exemple que les noeuds découvrent les autres membres du cluster.
 

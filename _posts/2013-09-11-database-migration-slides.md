@@ -6,7 +6,7 @@ lang: en
 Below are my slides about why and how we automated the migration of our databases.
 These slides were created for an internal presentation at my current gig.
 
-We use [Flyway](http://flywaydb.org) because it is as simple as it can be and it still delivers a lot of value.
+We use [Flyway](http://flywaydb.org) because it is as simple as it can be, and it still delivers a lot of value.
 
 ## Slides
 

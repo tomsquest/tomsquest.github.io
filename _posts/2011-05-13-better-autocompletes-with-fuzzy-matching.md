@@ -3,7 +3,7 @@ title: Better autocompletes with Fuzzy Matching
 lang: en
 ---
 
-This article is an introduction to Fuzzy Matching and how it can improve an Autocomplete widget. Fuzzy Matching is used to find the most appropriate strings into a set of strings, like finding "Sinatra" when you misspelled it "Senatra".
+This article is an introduction to Fuzzy Matching and how it can improve an Autocomplete widget. Fuzzy Matching is used to find the most appropriate strings into a set of strings, like finding `Sinatra` when you misspelled it `Senatra`.
 
 We will set up a Sinatra application displaying an Ajax autocomplete widget, which calls the backend to have the best matching results, even if the match is not strictly equal.
 
@@ -103,6 +103,6 @@ With a minimal mathematical background and a minimal technical setup (no indexin
 
 We've seen how to set up a quick-and-simple sinatra app which computes on the Levenshtein distance on the backend. The Frontend was easily done using the JQuery UI Autocomplete widget.
 
-For advanced use cases, we should improve the way we mix the Fuzzy-maching results with the strictly matching results. Switching to a better algorithm, or a set of algorithms (Longest common substring + Dameau-Levenshtein) could also be easily done.
+For advanced use cases, we should improve the way we mix the Fuzzy-matching results with the strictly matching results. Switching to a better algorithm, or a set of algorithms (Longest common substring + Dameau-Levenshtein) could also be easily done.
 
 The complete source code is available on GitHub: <https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching>

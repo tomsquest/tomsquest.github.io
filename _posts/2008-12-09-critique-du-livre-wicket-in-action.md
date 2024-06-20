@@ -71,7 +71,7 @@ Pour résumer :
 
 - Le framework est construit autour de l'équation : "Just Java + Just HTML = Wicket" ;
 - Il abstrait les notions HTTP derrière le langage Java permettant d'être plus souple et plus puissant ;
-- Il permet de faire des interfaces Web au delà des objets basiques comme les champs textes. Il apporte et permet de créer donc des composants évolués : Tab, panneaux, groupe d'objets ou composants métiers...
+- Il permet de faire des interfaces Web au-delà des objets basiques comme les champs textes. Il apporte et permet de créer donc des composants évolués : Tab, panneaux, groupe d'objets ou composants métiers...
 
 ### 2. L'architecture
 

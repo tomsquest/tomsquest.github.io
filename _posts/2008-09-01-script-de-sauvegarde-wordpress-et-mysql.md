@@ -5,7 +5,7 @@ lang: fr
 
 Qui dit nouveau blog, plugins à gogo, tests et expérimentations, dit un jour ou l'autre : "si j'avais fait une sauvegarde, ça m'aurait évité de perdre mon blog et tout son contenu !".
 
-Donc une des premières étapes de toute nouvelle installation de WordPress, il me fallait un script de backup digne de ce nom mais très simple (car "Simple is more" ;-) ).
+Donc une des premières étapes de toute nouvelle installation de WordPress, il me fallait un script de backup digne de ce nom, mais très simple (car "Simple is more" 😉).
 
 ## Mission accomplie !
 
@@ -24,8 +24,8 @@ Pour cela, j'ai utilisé un extrait du script de [AskApache.org](http://www.aska
 ## Installation
 
 1. Dézipper le script (unzip)
-1. Le rendre exécutable : `chmod 700 wpbackup.sh`
-1. Modifier les 3 lignes :
+2. Le rendre exécutable : `chmod 700 wpbackup.sh`
+3. Modifier les 3 lignes :
    - `EMAIL=monemail@mail.com` : email du destinataire
    - `WORDPRESS_PATH="/opt/wordpress"` : chemin de l'installation de WordPress
    - `BACKUP_PATH="/mnt/backups"` : chemin vers les sauvegardes

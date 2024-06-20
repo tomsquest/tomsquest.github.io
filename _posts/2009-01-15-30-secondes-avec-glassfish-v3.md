@@ -6,9 +6,9 @@ image: /assets/images/posts/2009/01/glassfish_logo.jpg
 
 [Glassfish](https://glassfish.dev.java.net/), le serveur d'app dont on entend parler [un peu partout](http://www.touilleur-express.fr/2009/01/14/compte-rendu-de-la-soiree-du-paris-jug-sur-jee6-et-glassfish/).
 
-## 1. Intégration avec Maven : semi-Echec
+## 1. Intégration avec Maven : semi echec
 
-Glassfish n'a apparemment pas de support de Maven officiel. Il existe quelques plugins Maven mais d'après [cet article](http://eskatos.wordpress.com/2008/03/28/maven-plugins-for-glassfish-ecosystem/), rien de vraiment fonctionnel à part le plugin de l'auteur.
+Glassfish n'a apparemment pas de support de Maven officiel. Il existe quelques plugins Maven, mais d'après [cet article](http://eskatos.wordpress.com/2008/03/28/maven-plugins-for-glassfish-ecosystem/), rien de vraiment fonctionnel à part le plugin de l'auteur.
 
 J'ai donc essayé le plugin Maven "[Asadmin](http://code.google.com/p/asadmin-maven-plugin/)" qui m'a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version 0.3-snapshot" de Asadmin a fonctionné.
 
@@ -31,7 +31,7 @@ Le site du projet a plusieurs liens vers différents guides de démarrage qui do
 
 Aucun problème d'installation, Glassfish est très rapidement mis en place.
 
-Le démarrage est très rapide mais si on suppose vite que plein de choses se passent en tâche de fond (comme le précise la console au lancement).
+Le démarrage est très rapide, mais si on suppose vite que plein de choses se passent en tâche de fond (comme le précise la console au lancement).
 
 ## 3. Intégration à Eclipse : succès
 
@@ -45,6 +45,6 @@ Une fois le serveur ajouté, le déploiement sur Glassfish d'un projet Web prend
 
 Glassfish est facilement installable. Sa mise en place dans un projet est rapide au travers d'un IDE. Il démarre en quelques secondes, aussi vite que Jetty.
 
-Pourtant sur l'aspect configuration et intégration à Maven, [Jetty est encore imbattable]({% post_url 2008-09-09-jetty-demarrage-rapide %}) (plugin Maven au Top et simple fichier de config pour les dataSources).
+Pourtant, sur l'aspect configuration et intégration à Maven, [Jetty est encore imbattable]({% post_url 2008-09-09-jetty-demarrage-rapide %}) (plugin Maven au Top et simple fichier de config pour les dataSources).
 
-Il m'a manqué du temps pour tester le rechargement à chaud des classes et la persistance des sessions mais si c'est aussi facile que le reste, je l'adopte pour mes dév.
+Il m'a manqué du temps pour tester le rechargement à chaud des classes et la persistance des sessions, mais si c'est aussi facile que le reste, je l'adopte pour mes dév.

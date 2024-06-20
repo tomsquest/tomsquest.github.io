@@ -4,7 +4,7 @@ lang: fr
 image: /assets/images/posts/rework_cover.jpg
 ---
 
-Mes notes sur le deuxième livre de la société 37signals, [Rework](http://37signals.com/rework/). Il fait suite à Getting Real. J'ai avalé rapidement le livre car les idées sont tranchantes, inspirantes et quelque fois révoltantes. Mais le but est là : réaliser qu'il y a d'autres façons de faire du business. de concevoir son entreprise et de travailler.
+Mes notes sur le deuxième livre de la société 37signals, [Rework](http://37signals.com/rework/). Il fait suite à Getting Real. J'ai avalé rapidement le livre, car les idées sont tranchantes, inspirantes et quelques fois révoltantes. Mais le but est là : réaliser qu'il y a d'autres façons de faire du business. de concevoir son entreprise et de travailler.
 
 Oui, il est possible de concevoir des applications avec moins de fonctionnalités que la concurrence. Non, l'argent des investisseurs n'est pas toujours bon à prendre.
 
@@ -12,17 +12,17 @@ Le livre est composé d'un ensemble de courts chapitres et décrit les recettes 
 
 ## Learning from mistakes is overrated
 
-Apprendre de ses erreurs est surévalué, il vaut mieux apprendre de ses succès. L'échec n'est pas un pré requis du succès. Quelqu'un qui a déjà eu un succès a plus de chance de l'être à nouveau. Ceux qui ont eu un échec n'ont pas plus de chance d'avoir un succès que les nouveau.
+Apprendre de ses erreurs est surévalué, il vaut mieux apprendre de ses succès. L'échec n'est pas un prérequis du succès. Quelqu'un qui a déjà eu un succès a plus de chance de l'être à nouveau. Ceux qui ont eu un échec n'ont pas plus de chance d'avoir un succès que les nouveaux.
 
-Voir [l'article de Leslie Berlin "Try, try again, or maybe not"](http://www.nytimes.com/2009/03/22/business/22proto.html) qui montre que l'échec ne garantit pas le succès mais que le succès participe au succès.
+Voir [l'article de Leslie Berlin "Try, try again, or maybe not"](http://www.nytimes.com/2009/03/22/business/22proto.html) qui montre que l'échec ne garantit pas le succès, mais que le succès participe au succès.
 
-## Why Grow ?
+## Why Grow?
 
 Une entreprise avec beaucoup d’employé n’est pas forcément saine. Avec la taille viennent de nouveaux problèmes et une plus grande complexité. Chacun doit trouver la bonne taille pour son business en commençant petit et en voyant comment il grandit.
 
 ## Start making something
 
-Une idée ne vaut rien tant que vous n'en avez rien fait. La vraie question est de quelle bonne façon on la réalise.
+Une idée ne vaut rien tant que vous n'en avez rien fait. La vraie question est de quelle bonne façon, on la réalise.
 
 ## No time is no excuse
 
@@ -41,7 +41,7 @@ Prendre l’argent d’investisseurs peut ne pas en valoir le coût, car :
 
 ## Start a business, not a startup
 
-Le mot Startup signifie être dispendieux, ne pas affronter les réalités du marché, être dans une bulle. Or la réalité est là. Mieux vaut créer un business qu’une Startup.
+Le mot Startup signifie être dispendieux, ne pas affronter les réalités du marché, être dans une bulle. Or la réalité est là. Il vaut mieux créer un business qu’une Startup.
 
 ## Embrace constraint
 
@@ -55,7 +55,7 @@ Essayer de supprimer les niveaux d'abstractions (docs, plans, rapports). Chacun 
 
 Questions à se poser pour s'assurer que l'on travaille sur des choses qui importent :
 
-- Pourquoi faites-vous cela ? A qui cela bénéficie, quelle est la motivation...
+- Pourquoi faites-vous cela ? À qui cela bénéficie, quelle est la motivation...
 - Quel problème résolvez-vous ?
 - Est-ce utile finalement ? Faire quelque chose ou quelque chose d'utile ?
 - Ajoutez vous de la valeur ?
@@ -84,11 +84,11 @@ Pouvoir faire essayer un produit (une dose) car s’il est bon les clients revie
 
 ## Résumés are ridiculous
 
-Un CV est toujours exagéré mais aussi toujours vague. Embauchez sur la base du CV est dangereux. Une lettre de motivation est déjà mieux car il n'est pas possible que le candidat ait envoyé une lettre personnalisée à 100 entreprises.
+Un CV est toujours exagéré, mais aussi toujours vague. Embauchez sur la base du CV est dangereux. Une lettre de motivation est déjà mieux, car il n'est pas possible que le candidat ait envoyé une lettre personnalisée à 100 entreprises.
 
 ## Years of irrelevance
 
-Les années d'expérience ne veulent pas dire grand chose. Connaitre combien de temps une personne a fait une chose ne vaut pas savoir avec quelle qualité et comment elle l'a fait.
+Les années d'expérience ne veulent pas dire grand-chose. Connaitre combien de temps une personne a fait une chose ne vaut pas savoir avec quelle qualité et comment elle l'a fait.
 
 ## Hire great writers
 

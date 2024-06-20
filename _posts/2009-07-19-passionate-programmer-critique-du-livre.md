@@ -18,7 +18,7 @@ C'est sur cette notion de R.O.I. personnelle que Chad Fowler conseille de se pos
 
 ## Ta carrière, c'est ta vie (ou presque)
 
-Vivre une vie remarquable n'est souvent pas un but quand on débute sa carrière. C'est beaucoup plus facile de suivre le courant et de se laisser guider par les autres. Vous avez déjà entendu le commercial vous dire : "C'est la mission qu'il te faut" pour être déçu dès les cinq premières minutes de l'entretien.
+Vivre une vie remarquable n'est souvent pas un but quand on commence sa carrière. C'est beaucoup plus facile de suivre le courant et de se laisser guider par les autres. Vous avez déjà entendu le commercial vous dire : "C'est la mission qu'il te faut" pour être déçu dès les cinq premières minutes de l'entretien.
 
 Le travail représente 50% du temps éveillé. Si vous n'aimez pas ce que vous faites au boulot, ce chiffre devrait vous choquer. Cela veut aussi dire que l'on passe plus de temps avec ses collègues qu'avec notre femme !
 
@@ -30,7 +30,7 @@ Donc aimer son boulot, c'est aussi aimer sa vie. On se leurre souvent en chercha
 
 Chad Fowler conseille de se construire une liste des compétences que l'on veut acquérir. Cette liste est une roadmap équivalent à celle d'un projet qui permettra de planifier et de définir vers où on veut aller.
 
-L'exercice peut se faire sur son passé : de où je viens, ce que j'ai appris à chaque fois jusque maintenant.
+L'exercice peut se faire sur son passé : d'où je viens, ce que j'ai appris à chaque fois jusqu'à maintenant.
 
 ### Ne pas mettre tous ses oeufs dans le panier de quelqu'un d'autre
 
@@ -42,20 +42,20 @@ S'élargir à d'autres technos, c'est limité les risques. Comme en bourse, il s
 
 ### Savoir dire Non
 
-Oser dire Non à son client ou à son manager est un bon challenge quand on commence sa carrière. Nous avons tous un devoir de conseil qui passe, parfois, par l'émission d'un Non motivé. C'est assez dur à faire car on se sent souvent en infériorité (par exemple, développeur contre client). Il faut être courageux pour savoir dire Non.
+Oser dire Non à son client ou à son manager est un bon challenge quand on commence sa carrière. Nous avons tous un devoir de conseil qui passe, parfois, par l'émission d'un Non motivé. C'est assez dur à faire, car on se sent souvent en infériorité (par exemple, développeur contre client). Il faut être courageux pour savoir dire Non.
 
-D'autre part, savoir dire Non renforce notre Oui car les personnes savent alors que cette réponse est sérieuse et motivée.
+D'autre part, savoir dire Non renforce notre Oui, car les personnes savent alors que cette réponse est sérieuse et motivée.
 
 Petit bémol, dans certains contextes un "Oui, mais" permet de sauver sa peau.
 
 ## Mon avis
 
-J'ai aimé ce livre car j'ai découvert un nouveau point de vue intéressant et une vision du business différente de la vision traditionnelle. On ne vit pas dans un monde de Bisounours comme diraient les Cast Codeurs.J'en tire de nombreux conseils et des actions afin de me remettre régulièrement en question et progresser.
+J'ai aimé ce livre, car j'ai découvert un nouveau point de vue intéressant et une vision du business différente de la vision traditionnelle. On ne vit pas dans un monde de Bisounours comme diraient les Cast Codeurs.J'en tire de nombreux conseils et des actions afin de me remettre régulièrement en question et progresser.
 
 Ce que je n'ai pas aimé :
 
 - Certains chapitres sont trop simplistes ou évidents. Mais, sur 53 chapitres, c'est normal que tous ne soient pas bons.
-- Beaucoup d'anecdotes divertissantes sur l'auteur et la musique mais quelquefois trop écartés du sujet (Chad Fowler est un ancien musicien professionnel)
+- Beaucoup d'anecdotes divertissantes sur l'auteur et la musique, mais quelquefois trop écartés du sujet (Chad Fowler est un ancien musicien professionnel)
 
 **Note finale : 7/10**
 

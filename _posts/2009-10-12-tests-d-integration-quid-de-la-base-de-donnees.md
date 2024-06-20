@@ -17,7 +17,7 @@ L'argument majeur en faveur d'une base embarquée est le travail en mode déconn
 
 Mais il y a certains inconvénients importants :
 
-- Moteur SQL différent de la cible : il est possible de certaines requêtes s'exécutent sur la base embarquée mais pas sur le type de base utilisée en Prod (différences d'implémentation SQL par exemple, expérience vécue avec SQL Server) ;
+- Moteur SQL différent de la cible : il est possible de certaines requêtes s'exécutent sur la base embarquée, mais pas sur le type de base utilisée en Prod (différences d'implémentation SQL par exemple, expérience vécue avec SQL Server) ;
 - Debugage difficile : si la base meurt à la fin des tests, il devient difficile d'étudier les opérations faites et d'étudier pourquoi une requête ne fonctionne pas.
 
 Je vois peu d'intérêt aujourd'hui à utiliser une base de données embarquées si c'est pour se rendre compte qu'on ne valide pas un comportement similaire à celui de production. Créer une base par développeur sur Oracle ou autre, n'est pas si difficile.
@@ -42,7 +42,7 @@ Filip Neven résume parfaitement la situation :
 
 En effet, les jeux de données ne font généralement que croitre. Une fois qu'une donnée est ajoutée à un jeu de tests, il devient laborieux de savoir si cette donnée est utilisée d'une manière ou d'une autre et donc de la retirer.
 
-En désactivant les contraintes d'intégrité, il devient possible que les jeux de données ne contiennent que les données utilisées dans les Where et dans les jointures ; c'est-à-dire les données **réellement utiles**. Cette façon de voir les choses simplifie énormément la maintenance des jeux de tests. Finis les fichiers DBUnit.xml qui contiennent 80% de données dues aux colonnes not-null donc inutiles pour le test courant.
+En désactivant les contraintes d'intégrité, il devient possible que les jeux de données ne contiennent que les données utilisées dans les Where et dans les jointures ; c'est-à-dire les données **réellement utiles**. Cette façon de voir les choses simplifie énormément la maintenance des jeux de tests. Finis les fichiers DBUnit.xml qui contiennent 80% de données dues aux colonnes `not null` donc inutiles pour le test courant.
 
 [Unitils/DbMaintain](http://www.unitils.org/tutorial.html#Automatic_test_database_maintenance) propose une méthode rapide pour désactiver ces contraintes (not null et foreign key).
 
@@ -65,6 +65,6 @@ D'autant plus que les tests d'intégration seront complétés par les tests fonc
 
 ## Conclusion
 
-Je suis aujourd'hui pour une gestion "Agile" de la base de données utilisée pour les tests. La bonne voie est pour moi d'éviter l'usage d'une base embarquée car il y a trop de différences entre moteurs SQL mais de désactiver certaines contraintes sur la base de test afin de faciliter le vrai travail : l'écriture de test qui valident les requêtes (le DML) et non les restrictions SQL (le DDL).
+Je suis aujourd'hui pour une gestion "Agile" de la base de données utilisée pour les tests. La bonne voie est pour moi d'éviter l'usage d'une base embarquée car il y a trop de différences entre moteurs SQL, mais de désactiver certaines contraintes sur la base de test afin de faciliter le vrai travail : l'écriture de test qui valident les requêtes (le DML) et non les restrictions SQL (le DDL).
 
 Et vous, avez-vous d'autres recommandations pour vos tests d'intégration ?

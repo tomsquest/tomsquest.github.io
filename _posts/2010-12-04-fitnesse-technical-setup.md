@@ -3,7 +3,7 @@ title: FitNesse technical setup
 lang: en
 ---
 
-Getting [FitNesse](http://fitnesse.org) working for a development team is not particularly evident. You have many possibilities and some of them are not so effective.
+Getting [FitNesse](http://fitnesse.org) working for a development team is not particularly clear. You have many possibilities and some of them are not so effective.
 
 The Setup proposed here has a good combination of pros and cons. It will enable the work of two teams: one team of functional people using a central server and one team of developers writing the fixture straight from their workspace.
 
@@ -24,7 +24,7 @@ Cons:
 
 The functional people use the central server to manage the test pages
 
-Each developer has its own FitNesse server, which imports the page from the central server and use the local workspace
+Each developer has its own FitNesse server, which imports the page from the central server and uses the local workspace
 
 A job adds, delete and commits the changes made on the central server’s pages
 
@@ -59,7 +59,7 @@ The whole command line arguments are described here: [http://fitnesse.org/FitNes
 
 We use the “root” page ([http://localhost:8086/root](http://localhost:8086/root)) to declare the server’s configuration and classpath.
 
-This page won’t be added to source control, because its content will be different on a developer’s workstation.
+This page won’t be added to source control because its content will be different on a developer’s workstation.
 
 The [fitnesse-maven-plugin](https://github.com/joel1di1/fitnesse-maven-classpath) is used to create the list of jars we depend on. It reads the pom.xml file of our maven project, but it can also read a pom file directly from the central repository.
 
@@ -79,7 +79,7 @@ Classpath and pom file
 
 #### Backup job
 
-The backup job is simple. It is run by our Build server, every minute and launches a basic script, which adds, deletes and commits all changes within a directory.
+The backup job is straightforward. It is run by our Build server every minute and launches a basic script, which adds, deletes and commits all changes within a directory.
 
 Here is a simple batch file for Subversion.
 The first argument should be the directory to backup.
@@ -90,9 +90,9 @@ for /f "tokens=2*" %%i in ('svn status %1 ^| find "!"') do svn delete "%%i"
 svn commit -m "Automatic commit" %1
 ```
 
-We did try to use a FitNesse plugin for Subversion to backup the pages automatically (and in a less hacky way) but that simply did not work at all. This plugin was: [http://code.google.com/p/cm-subversion](http://code.google.com/p/cm-subversion)
+We did try to use a FitNesse plugin for Subversion to backup the pages automatically (and in a less hacky way), but that simply did not work at all. This plugin was: [http://code.google.com/p/cm-subversion](http://code.google.com/p/cm-subversion)
 
-FitNesse has also a pseudo-native support of Git (see [here](http://fitnesse.org/FitNesse.UserGuide.SourceCodeControl.GitPlugin)) but corporate Git repositories are still not the standard.
+FitNesse has also a pseudo-native support for Git (see [here](http://fitnesse.org/FitNesse.UserGuide.SourceCodeControl.GitPlugin)), but corporate Git repositories are still not the standard.
 
 #### SVN ignore
 
@@ -120,7 +120,7 @@ java -jar fitnesse.jar -p 8086 -e 0
 
 As on the central server, the “root” page is used to configure the classpath.
 
-The content is the same, with the exception of the local path:
+The content is the same, except the local path:
 
 ```
 Use Slim engine instead of Fit
@@ -147,9 +147,9 @@ How-to:
 
 #### Debugging
 
-Debugging is easy. Add a breakpoint to a fixture then create a “Remote Debug” configuration (within the Debug menu).
+Debugging is straightforward. Add a breakpoint to a fixture then create a “Remote Debug” configuration (within the Debug menu).
 
-Under FitNesse, just append the following at the end of the page you want to debug:
+Under FitNesse, append the following at the end of the page you want to debug:
 
 ```
 ?responder=test&remote_debug=true
@@ -159,7 +159,7 @@ Under FitNesse, just append the following at the end of the page you want to deb
 
 ![](/assets/images/posts/fitnesse_error.jpg)
 
-If you experience strange errors with no output, or better Socket and Bind exceptions (like in the screenshot), you should use the SLIM_PORT option (as used in this article). This basically shift the ports used by Slim to avoid conflicts with, let’s say, Tomcat.
+If you experience strange errors with no output, or better Socket and Bind exceptions (like in the screenshot), you should use the SLIM_PORT option (as used in this article). This basically shifts the ports used by Slim to avoid conflicts with, let’s say, Tomcat.
 
 Add this:
 

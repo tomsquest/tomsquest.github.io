@@ -22,7 +22,7 @@ Les assertions peuvent servir de pré-conditions et de post-conditions.
 
 Une pré-condition permet de garantir que le code ne se poursuivra pas si certaines conditions ne sont pas remplies. Elles sont placées au début de la méthode. C'est la manière la plus courante de programmer défensivement. Le mot d'ordre ici est de dire : "Je n'accepte que ce que j'ai définit. Je m'arrête si je suis victime d'un appel incorrect".
 
-Une utilisation beaucoup plus rare est l'usage des assertions en tant que post-conditions. Celles-ci permettent de garantir que vous remplissez votre contrat du point de vue du client. Elles sont souvent placées à la sortie de la méthode. Par exemple, vous assurez à votre client que votre méthode de retournera jamais une liste vide.
+Une utilisation beaucoup plus rare est l'usage des assertions en tant que post-conditions. Celles-ci permettent de garantir que vous remplissez votre contrat du point de vue du client. Elles sont souvent placées à la sortie de la méthode. Par exemple, vous assurez à votre client que votre méthode ne retournera jamais une liste vide.
 
 ```java
 public List<String> filter(List<Strin> mails) {
@@ -92,15 +92,15 @@ Adoptez un style de programmation défensif permet d'obtenir un code plus sûr e
 
 ### Ce concept de "Fail Fast" a plusieurs avantages :
 
-- C'est une protection pour le code sous-jacent : moins de variations dans la paramètres donne moins de possibilité de bug ;
+- C'est une protection pour le code sous-jacent : moins de variations dans les paramètres donne moins de possibilité de bug ;
 - Les assertions fournissent de l'information. En effet, l'exception qui est lancée, informe du paramètre fautif et de qui en est le responsable ;
-- Le code est plus compréhensible car il déclare les plages de valeurs. Par exemple, il est souvent rageant de ne pas savoir si un paramètre est nullable (et vivement l'annotation @NotNull des JSR 303/305).
+- Le code est plus compréhensible, car il déclare les plages de valeurs. Par exemple, il est souvent rageant de ne pas savoir si un paramètre est nullable (et vivement l'annotation @NotNull des JSR 303/305).
 
-### Pourtant les assertions ont des inconvénients :
+### Pourtant, les assertions ont des inconvénients :
 
 - Elles sont redondantes avec la Javadoc : l'usage d'assertions ne permet pas de se passer de documentation pour décrire ce que vous attendez comme paramètre. Potentiellement, il peut y avoir une désynchronisation entre ce qui est précisé dans la Javadoc et la réalité du code ;
 - Elles sont encombrantes : écrire une liste d'assertion en début de chaque méthode peut rendre le code peu lisible et potentiellement cacher le code "utile" ;
 - Elles doivent être utilisées avec modération : théoriquement, chaque méthode doit avoir ses assertions. Dans la pratique, il n'y a pas besoin d'être un pessimiste extrémiste. Si vous avez une grande maitrise du code, les assertions peuvent être limitées. Dans la pratique, on les placera par exemple aux points d'entrées tels que les méthodes publiques visibles de l'extérieur ;
 - Elles ne remplaceront jamais les tests.
 
-Vous l'avez compris, je suis un partisan de la programmation défensive. J'en discuté récemment avec un ami qui me disait que pour lui, c'était une condition de survie. Il travaille sur des projets souvent mal codés et peu documentés. Il est obligé d'être pessimiste et cette démarche permet à son code de fonctionner sereinement et d'être déterministe dans un milieu presque chaotique (ou "bordélique" si vous préférez). Et vous, êtes-vous optimiste ou pessimiste ?
+Vous l'avez compris, je suis un partisan de la programmation défensive. J'en discutais récemment avec un ami qui me disait que pour lui, c'était une condition de survie. Il travaille sur des projets souvent mal codés et peu documentés. Il est obligé d'être pessimiste et cette démarche permet à son code de fonctionner sereinement et d'être déterministe dans un milieu presque chaotique (ou "bordélique" si vous préférez). Et vous, êtes-vous optimiste ou pessimiste ?

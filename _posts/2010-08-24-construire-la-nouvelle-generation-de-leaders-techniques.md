@@ -21,11 +21,11 @@ Différents types de mauvais leader technique :
 - "Do it yourself" : ne sait pas déléguer
 - "Hard Problems are mine" : ne prends que les sujets difficiles (intéressants)
 
-Il existe des développeurs dont la valeur produite est négative (leur impact nette est négative). Il en est de même pour les leaders techniques. Ceux-ci peuvent provoquer une perte d’enthousiasme de l’équipe, de l’apathie ou encore de la déresponsabilisation.
+Il existe des développeurs dont la valeur produite est négative (leur impact net est négative). Il en est de même pour les leaders techniques. Ceux-ci peuvent provoquer une perte d’enthousiasme de l’équipe, de l’apathie ou encore de la déresponsabilisation.
 
-## Former de bons leader techniques
+## Former de bons leaders techniques
 
-Nos systèmes ne savent pas produire de bons tech leads. Le principe de Peter est souvent de rigueur. Ce principe stipule que dans une hiérarchie, un employé tend à s’élever jusque son niveau d’incompétence.
+Nos systèmes ne savent pas produire de bons tech leads. Le principe de Peter est souvent de rigueur. Ce principe stipule que dans une hiérarchie, un employé tend à s’élever jusqu'à son niveau d’incompétence.
 
 Patrick raconte une anecdote sur des chercheurs italiens qui ont démontré qu’une société est plus efficace si elle fait monter en grade les personnes aléatoirement plutôt qu’en se basant sur le mérite.
 
@@ -37,7 +37,7 @@ Compétences du développeur :
 
 - Implémenter une fonctionnalité
 - Changer un comportement existant
-- Ecrire des tests
+- Écrire des tests
 - Coder proprement
 - Challenger les choses établies
 - Proposer des solutions annexes

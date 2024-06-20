@@ -7,7 +7,7 @@ image: /assets/images/posts/gradle.jpg
 [Gradle](http://www.gradle.org/) est un outil permettant d'écrire ses scripts de build en groovy.
 Il nous a été présenté hier soir chez [Zenika](http://www.zenika.com/) par son créateur, Hans Dockter.
 
-A première vue, c'est un outil puissant et extrêmement souple. Il apporte beaucoup de bonnes idées et on s'amuse vite à le comparer à Maven.
+À première vue, c'est un outil puissant et extrêmement souple. Il apporte beaucoup de bonnes idées et on s'amuse vite à le comparer à Maven.
 
 Alors, Gradle pour tous ou seulement pour votre pire ennemi ?
 
@@ -30,7 +30,7 @@ Vous avez déjà eu des projets complexes à construire, avec par exemple de la 
 Gradle vient directement répondre à ce besoin : simplifier les builds complexes.
 C'est d'ailleurs son moto : "Make the impossible possible, the possible easy, and the easy elegant".
 
-Discussion faite avec Florent Ramière de Jaxio, nous sommes du même avis : Oui, Gradle est adapté pour les builds complexes mais 80% ont des besoins simples, réalisables avec Maven.
+Discussion faite avec Florent Ramière de Jaxio, nous sommes du même avis : Oui, Gradle est adapté pour les builds complexes, mais 80% ont des besoins simples, réalisables avec Maven.
 
 Gradle est un outil puissant qui permet de faire précisément ce que vous voulez.
 Cette flexibilité extrême permet aussi de faire n'importe quoi, y compris se tirer une balle dans le pied.
@@ -52,7 +52,7 @@ Bref, il y a du travail et ce n'est pas la crise comme l'indique la [Roadmap](ht
 J'aime :
 
 - L'usage d'un DSL pour donner du sens à ses scripts de build ;
-- La puissante de ce DSL pour faire des choses qui font rêver (par exemple, une tâche à accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;
+- La puissante de ce DSL pour faire des choses qui font rêver (par exemple, une tâche a accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;
 - La réutilisation des tâches Ant facilement, ce qui veut dire qu'on peut presque tout faire ;
 - La flexibilité offerte. J'adore les outils coupants qui me permettent de faire ce que je veux comme je le veux. Mais je reconnais que je n'ai pas rencontré souvent de besoin très exotique ;
 - Le Gradle Wrapper qui permet de dérouler un build Gradle sans aucune installation préalable (il télécharge ses dépendances automatiquement).
@@ -61,12 +61,12 @@ Je n'aime pas :
 
 - Le fait de ne pas avoir une intégration/réutilisabilité complète avec Maven (la faute aux Plugins apparemment) ;
 - Le trop peu de convention, même si c'est le but du projet, car les conventions permettent d'entrer dans l'entreprise pour éviter que chacun puisse faire ce qu'il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu'on ne puisse pas poser une structure à respecter. Ce serait l'équivalent des normes de codages ;
-- Il n'est pas à mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostique, des performances ?)
+- Il n'est pas à mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostic, des performances ?)
 - La jeunesse du projet qui ne garantit pas encore une pérennité suffisante pour l'entreprise.
 
-## Pour allez plus loin
+## Pour aller plus loin
 
-Zenika a publié des articles à propose de Gradle ainsi que deux podcasts. Le deuxième podcast couvre bien les avantages et inconvénients de Gradle :
+Zenika a publié des articles à propos de Gradle ainsi que deux podcasts. Le deuxième podcast couvre bien les avantages et inconvénients de Gradle :
 
 - Les [articles](http://blog.zenika.com/index.php?tag/gradle) ;
 - Les [podcasts](http://blog.zenika.com/index.php?post/2009/05/29/Podcast-Gradle).

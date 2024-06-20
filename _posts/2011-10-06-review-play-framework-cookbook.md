@@ -1,5 +1,5 @@
 ---
-title: "Review : Play Framework Cookbook"
+title: "Review: Play Framework Cookbook"
 lang: en
 image: /assets/images/posts/play_framework_cookbook.jpg
 ---
@@ -7,7 +7,7 @@ image: /assets/images/posts/play_framework_cookbook.jpg
 Play!, the framework for the bored Java developers! Very interesting and opinated framework.
 I didn't play with it a lot in the previous months, but the new book ["Play Framework Cookbook"](http://www.packtpub.com/play-framework-cookbook/book) by Packt Publishing,
 released this summer was a good way to dig into the framework.
-The ebook was offered for free to people who wants to review it. No excuse.
+The ebook was offered for free to people who want to review it. No excuse.
 
 ## Contents
 
@@ -25,7 +25,7 @@ Each subsection is divided in parts: "Getting ready", "How to do it", "How it wo
 The most interesting part for me is the explanation of the internals, not the "tutorial" part.
 I have found practical information in nearly each of these.
 
-The _"There's more"_ parts are cools because it shows additionnal/alternate/better ways to think about what you read before.
+The _"There's more"_ parts are cool because it shows additional/alternate/better ways to think about what you read before.
 For example, here is an excerpt from this part from the chapter "Understanding bytecode enhancement":
 
 > _Overriding toString() via annotation_
@@ -41,11 +41,12 @@ I give a "B" to the book, as it is 1) easy to read and well written, 2) entertai
 The author, Alexander Reelsen, has done a very good work.
 
 I learnt a lot, even as a beginner on the framework. Many of my questions were answered.
-The main benefit of the book is to complete the online documentation and going further on many topics.
-I really liked the given explanations, the additionnal references and that the framework's code was referenced (in the form: "See this class for more info").
+The main benefit of the book is to complete the online documentation and go further on many topics.
+I really liked the given explanations, the additional references and that the framework's code was referenced (in the form: "See this class for more info").
 
-What's missing ? Maybe a Scala chapter, but as the author wrote:
-"When I started writing this book, my Scala knowledge was far from competitive (and still is in many areas)".
+What's missing? Maybe a Scala chapter, but as the author wrote:
+
+> When I started writing this book, my Scala knowledge was far from competitive (and still is in many areas).
 
 ## Links
 

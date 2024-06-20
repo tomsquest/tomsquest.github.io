@@ -1,11 +1,11 @@
 ---
-title: "Learning to touch type using the Colemak layout"
+title: "Learning to touchtype using the Colemak layout"
 lang: en
 ---
 
-I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries, and morover never looking back at my keyboard. After all, Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touch type using a new layout, the [Colemak](http://colemak.com/).
+I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries, and morover never looking back at my keyboard. After all, Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touchtype using a new layout, the [Colemak](http://colemak.com/).
 
-This is the result of my experience in learning to touch type and how I remapped my brain (hard!) during a two-month period.
+This is the result of my experience in learning to touchtype and how I remapped my brain (hard!) during a two-month period.
 
 ## Colemak
 
@@ -49,7 +49,7 @@ The Typematrix blank keyboard:
 
 Two recommended typing trainers are [Keyzen](https://first20hours.github.io/keyzen-colemak/) and [Amphetype](https://code.google.com/p/amphetype/). The first will get you mad, and the second will make you cry :-) .
 
-I started with Keyzen, and my first hours of learning were completely boring but very rewarding. A session of Keyzen gives something like: Type 'nnnttttntntn', then 'ntenntteetnte', then restart because you made a mistake. After two hours, my progress was real, and after six hours I completely managed the English layout. I was still discovering how to touch type, so I was very motivated.
+I started with Keyzen, and my first hours of learning were completely boring but very rewarding. A session of Keyzen gives something like: Type `nnnttttntntn`, then `ntenntteetnte`, then restart because you made a mistake. After two hours, my progress was real, and after six hours I completely managed the English layout. I was still discovering how to touchtype, so I was very motivated.
 
 Then, I started to practice with Amphetype. This tool is very handy because you can import your own set of words to learn, shuffle them and measure your progress by session, sitting or days (On Linux, just checkout the source and voilà).
 
@@ -74,7 +74,7 @@ If you need mines, I should be able to export it from Amphetype.
 
 It was easy to start, I was very passionate about the subject, but it was hard to achieve my goal.
 
-I targeted 60 WPM (words per minute) for the end of November. I had two months to practice, which should be largely enough to find 20 hours of free-time (which is mostly prioritizing).
+I targeted 60 WPM (words per minute) for the end of November. I had two months to practice, which should be largely enough to find 20 hours of free-time (which is mostly prioritizing subjects).
 
 In October and November 2013, I tracked my sessions using a Seinfeld calendar (also named "Don't break the chain"). It is a simple calendar where you circle days of practice, and the circles make a chain that you should not break. It is a good visual motivator.
 

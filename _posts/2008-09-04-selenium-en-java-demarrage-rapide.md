@@ -21,7 +21,7 @@ L'utilisation de fichiers HTML comme script de tests a les inconvénients suivan
 
 ## Solution
 
-Afin de pallier à tous ces problèmes, une solution est d'utiliser l'IDE pour enregistrer les tests en Java puis d'intégrer ces scénarios comme tests JUnit à part entière. Les tests ainsi créés feront partis des tests fonctionnels de l'application. Les développeurs Java voient tout de suite les avantages : création de méthode de tests, factorisation, lancement de script SQL avant et après un test.
+Afin de pallier tous ces problèmes, une solution est d'utiliser l'IDE pour enregistrer les tests en Java puis d'intégrer ces scénarios comme tests JUnit à part entière. Les tests ainsi créés feront partis des tests fonctionnels de l'application. Les développeurs Java voient tout de suite les avantages : création de méthode de tests, factorisation, lancement de script SQL avant et après un test.
 
 Place au concret, nous allons voir comme intégrer ces tests à un projet Maven et comme faire en sorte que celui-ci puisse les exécuter et rapporter les éventuelles erreurs.
 
@@ -145,7 +145,7 @@ Les dépendances devraient ressembler à celles-ci sous Eclipse :
 
 ## Premier test Java
 
-Un test Selenium hérite de la classe `com.thoughtworks.selenium.SeleneseTestCase` dont nous avons inclut le Jar dans les dépendances. Celle-ci offre un objet `selenium` permettant de piloter le navigateur et étend également la classe `TestCase` de JUnit, permettant de faire des assertions comme dans un test classique.
+Un test Selenium hérite de la classe `com.thoughtworks.selenium.SeleneseTestCase` dont nous avons inclus le Jar dans les dépendances. Celle-ci offre un objet `selenium` permettant de piloter le navigateur et étend également la classe `TestCase` de JUnit, permettant de faire des assertions comme dans un test classique.
 
 Je vous mets ci-dessous un test basique qui se connecte à une adresse locale (test.jsp) puis saisit un login, soumet le formulaire et enfin vérifier que la connexion a réussie.
 
@@ -186,11 +186,11 @@ Maven est configuré pour lancer tous les tests lors de la construction du modul
 $ mvn clean install
 ```
 
-Une fenêtre du navigateur est ouverte pour chaque tests et vous verrez que le rapport de fin sur la console.
+Une fenêtre du navigateur est ouverte pour chaque test et vous verrez que le rapport de fin sur la console.
 
 ## Astuce
 
-Pour éviter de fermer et réouvrir le navigateur à chaque test, il est possible d'utiliser l'option : `browserSessionReuse.` Un seul navigateur est alors ouvert pour l'ensemble de tests.
+Pour éviter de fermer et rouvrir le navigateur à chaque test, il est possible d'utiliser l'option : `browserSessionReuse.` Un seul navigateur est alors ouvert pour l'ensemble de tests.
 
 Exemple de démarrage du serveur avec l'option `browserSessionReuse` :
 
@@ -198,7 +198,7 @@ Exemple de démarrage du serveur avec l'option `browserSessionReuse` :
 $ mvn selenium:start-server -DbrowserSessionReuse=true
 ```
 
-Cela améliore grandement la vitesse de passage des tests mais peut influencer sur ceux-ci car le navigateur pourrait conserver des élements dans sa session. Donc à utiliser à bon escient.
+Cela améliore grandement la vitesse de passage des tests, mais peut influencer sur ceux-ci car le navigateur pourrait conserver des élements dans sa session. Donc à utiliser à bon escient.
 
 ## Conclusion
 
@@ -208,4 +208,4 @@ Nous avons vu :
 - Le lancement d'un test Java/Selenium seul ;
 - Le lancement de tous les tests par Maven.
 
-N'hésitez pas à me faire un retour si vous aussi vous utilisez Selenium en passant par des tests Java. Sur notre projet, c'est un réel succès. Nous avions atteint un nombre de tests HTML trop important pour pouvoir être serein sur leur maintenance. Dorénavant, depuis que nous avons migré en "full java", nous dormons mieux la nuit et nos utilisateurs aussi :-) .
+N'hésitez pas à me faire un retour si vous aussi, vous utilisez Selenium en passant par des tests Java. Sur notre projet, c'est un réel succès. Nous avions atteint un nombre de tests HTML trop important pour pouvoir être serein sur leur maintenance. Dorénavant, depuis que nous avons migré en "full java", nous dormons mieux la nuit et nos utilisateurs aussi ☺️.

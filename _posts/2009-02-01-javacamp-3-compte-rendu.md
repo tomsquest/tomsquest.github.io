@@ -24,7 +24,7 @@ Nous avons parlé d'autres outils que [FitNesse](http://fitnesse.org/) et [Green
 
 ## DDD, quoi, qu'est-ce ?
 
-Cette session fut animée par Sébastien que je viens de citer. Je fais un rapide passage ici car il en a parlé sur [son blog](http://www.itaware.eu/2008/08/24/programmation-orientee-composite/) et Xebia en a fait un [article dernièrement](http://blog.xebia.fr/2009/01/28/ddd-la-conception-qui-lie-le-fonctionnel-et-le-code/).
+Cette session fut animée par Sébastien que je viens de citer. Je fais un rapide passage ici, car il en a parlé sur [son blog](http://www.itaware.eu/2008/08/24/programmation-orientee-composite/) et Xebia en a fait un [article dernièrement](http://blog.xebia.fr/2009/01/28/ddd-la-conception-qui-lie-le-fonctionnel-et-le-code/).
 
 Sébastien nous explique qu'en [DDD](http://en.wikipedia.org/wiki/Domain-driven_design), on ne parle plus de classe mais d'interface. Comme exemple, il cite un politicien qui a plusieurs rôles (Speaker, Décideur, Escroc). Chacun de ses rôles étant représentés par une interface qui seront combinées en Mixin qui sont en quelque sorte des classes d'interface. On imagine déjà les avantages de séparer les responsabilités (testabilité) et le fait de pouvoir les combiner dynamiquement (réutilisabilité, évolutivité, souplesse).
 
@@ -82,14 +82,14 @@ public calculeLaMoyenneDesSalaires() {
 
 Dans cette approche, le test se passe sur la méthode `calculeMoyenne(List employés)` et non sur la méthode appelante. L'avantage est de se concentrer sur le code utile et non pas sur la glue (qu'il faudrait mocker). L'inconvénient principal est qu'il faudra des tests d'intégrations plus complets que dans une approche Mock ou Stub.
 
-L'approche Mock consiste à vérifier les appels de méthode de la classe testée. Mais nous avons tendance à tester que tous les appels sont faits, dans l'ordre, avec tous les bons paramètres. Eric pense qu'il ne faut pas procéder ainsi. Il vaut mieux vérifier les appels qui nous intéresse vraiment. Par exemple, vérifier que la donnée est bien chargée et sauvegardée, mais ignorer la méthode fait un appel à une autre méthode en plus (approche `NiceMock` plutôt que `StrictMock` chez EasyMock).
+L'approche Mock consiste à vérifier les appels de méthode de la classe testée. Mais nous avons tendance à tester que tous les appels sont faits, dans l'ordre, avec tous les bons paramètres. Eric pense qu'il ne faut pas procéder ainsi. Il vaut mieux vérifier les appels qui nous intéressent vraiment. Par exemple, vérifier que la donnée est bien chargée et sauvegardée, mais ignorer la méthode fait un appel à une autre méthode en plus (approche `NiceMock` plutôt que `StrictMock` chez EasyMock).
 
-L'approche Stub ne permet pas de contrôler tous les appels. On est donc plus libre dans les vérifications mais moins sévère. Dans ce cas, on utilise souvent une méthode Bottom-Up, c'est-à-dire qu'on va plutôt partir des DAO et remonter vers les services. C'est l'inverse de la méthode Mock où il est possible (et conseillé) de partir des services et de mocker les classes du dessous en attendant une vraie implémentation ("Top-Down"). Cela se rapproche du TDD et influence beaucoup le design des couches basses.
+L'approche Stub ne permet pas de contrôler tous les appels. On est donc plus libre dans les vérifications, mais moins sévère. Dans ce cas, on utilise souvent une méthode Bottom-Up, c'est-à-dire qu'on va plutôt partir des DAO et remonter vers les services. C'est l'inverse de la méthode Mock où il est possible (et conseillé) de partir des services et de mocker les classes du dessous en attendant une vraie implémentation ("Top-Down"). Cela se rapproche du TDD et influence beaucoup le design des couches basses.
 
-Nous avons comparé rapidement les différents frameworks de Mock. EasyMock est le plus populaire mais pourtant pas le meilleur. Il n'est pas facile d'accès et il contraint à définir le comportement avant l'appel à la méthode testée, ce qui rebute au début (on s'attendrait à tester après).
+Nous avons comparé rapidement les différents frameworks de Mock. EasyMock est le plus populaire, mais pourtant pas le meilleur. Il n'est pas facile d'accès et il contraint à définir le comportement avant l'appel à la méthode testée, ce qui rebute au début (on s'attendrait à tester après).
 
 ## Une bonne journée
 
-Mon premier JavaCamp ne sera pas le dernier. Plein de gens intéressants et motivés avec leurs expériences, cela donne un bon moment. Pas forcément de venir un samedi, mais c'est tant mieux : seuls les gens motivés se déplacent :-) .
+Mon premier JavaCamp ne sera pas le dernier. Plein de gens intéressants et motivés avec leurs expériences, cela donne un bon moment. Pas forcément de venir un samedi, mais c'est tant mieux : seuls les gens motivés se déplacent 😊.
 
 Merci à tous pour ce que j'ai appris ce jour-là et à [Valtech](http://valtech.fr) pour l'organisation.

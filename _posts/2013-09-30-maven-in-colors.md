@@ -5,11 +5,11 @@ modified_date: 2014-01-21
 image: /assets/images/posts/2013/maven-logo.png
 ---
 
-Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings ?
+Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings?
 Let's see how to do it.
 
 This post is an enhanced version of several shell scripts (like this [one](https://github.com/builddoctor/maven-antsy-color))
-or Arnaud Heritier's log4j2 approach : [United Colors of Maven](http://aheritier.net/united-colors-of-maven/).
+or Arnaud Heritier's log4j2 approach: [United Colors of Maven](http://aheritier.net/united-colors-of-maven/).
 
 ## How it looks
 
@@ -21,7 +21,7 @@ Screenshot of a failed build :
 
 ![Maven failed build with colors](/assets/images/posts/2013/maven-colors-failure.png)
 
-## Preferred solution : shell function
+## Preferred solution: shell function
 
 My preferred solution is to pipe Maven's output to **sed** and to insert Ansi color sequences at the correct locations.
 It is done like this :
@@ -45,19 +45,19 @@ $ alias mvn=mvn-in-colors # done !
 
 ### Restrictions
 
-Using this method does not work when Maven asks for input, for example when using the release:prepare goal.
+Using this method does not work when Maven asks for input, for example, when using the release:prepare goal.
 
 Workaround :
 
 - Ignore the alias with `\mvn` when releasing
-- Don't use the release plugin and prefer the solution of Axel Fontaine :
+- Don't use the release plugin and prefer the solution of Axel Fontaine:
   [Maven Release Plugin: The Final Nail in the Coffin](http://axelfontaine.com/blog/final-nail.html)
 
 ## Maven Agent
 
-Jean-Christophe Gay wrote an interesting bit of code to handle the problem : a Java agent to hack Maven logging.
+Jean-Christophe Gay wrote an interesting bit of code to handle the problem: a Java agent to hack Maven logging.
 
-The code is here : [Maven Color on GitHub](https://github.com/jcgay/maven-color)
+The code is here: [Maven Color on GitHub](https://github.com/jcgay/maven-color)
 
 ### Restrictions
 
@@ -80,7 +80,7 @@ $ rainbow --config=mvn3 -- mvn clean install
 ### Restrictions
 
 The original Rainbow version does not return the exit code of the specified program (mvn in our case).
-This is real problem when you want to chain mvn with a push. ie.
+This is a real problem when you want to chain mvn with a push. ie.
 
 ```bash
 $ rainbow --config=mvn3 -- mvn clean install && git push # will push even if the build failed !

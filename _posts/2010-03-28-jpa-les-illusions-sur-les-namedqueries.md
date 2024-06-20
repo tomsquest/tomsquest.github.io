@@ -3,7 +3,7 @@ title: "JPA : les illusions sur les NamedQueries"
 lang: fr
 ---
 
-Un certain nombre d'idées reçues existent sur les NamedQueries. On les dit plus performantes car mises en cache, on les dit plus sûres car validées au chargement. Etudions ces points et regardons quels sont les réels avantages des NamedQueries.
+Un certain nombre d'idées reçues existent sur les NamedQueries. On les dit plus performantes, car mises en cache, on les dit plus sûres car validées au chargement. Etudions ces points et regardons quels sont les réels avantages des NamedQueries.
 
 ## Rappel sur les NamedQueries
 
@@ -29,7 +29,7 @@ public List findAll() {
 
 ## Une NamedQuery est plus performante
 
-La rumeur dit qu'une NamedQuery est plus performante car elle est mise en cache.
+La rumeur dit qu'une NamedQuery est plus performante, car elle est mise en cache.
 
 Techniquement, au démarrage, le moteur JPA va compiler la NamedQuery puis la mettre en cache dans le statementCache des Connections. Cela rappelle fortement les PreparedStatement, non ? Or, Hibernate utilise de toute façon des PreparedStatements si le driver Jdbc le permet. Une NamedQuery ne fait donc pas mieux qu'une requête dynamique, même s'il y a le coût de parsing de la requête si celle-ci est dynamique.
 

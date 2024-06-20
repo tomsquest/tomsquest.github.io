@@ -8,7 +8,7 @@ image: /assets/images/posts/2008/11/quartz_logo.jpg
 
 Nous allons pousser un peu l'usage de Quartz pour que celui-ci fonctionne sur un Cluster. Cette configuration a l'avantage de permettre de faire du Fail-Over : si un noeud du Cluster tombe, un autre prend le relais.
 
-Cette configuration pourrait paraître facultative mais elle est en réalité obligatoire dés que votre application est déployée sur plusieurs noeuds. En effet, comment s'assurer que chaque JVM ne démarre pas son propre Quartz ? Ainsi les scheduler ne doivent pas tous démarrer mais un seul doit être actif au même moment.
+Cette configuration pourrait paraître facultative, mais elle est en réalité obligatoire dés que votre application est déployée sur plusieurs noeuds. En effet, comment s'assurer que chaque JVM ne démarre pas son propre Quartz ? Ainsi les scheduler ne doivent pas tous démarrer, mais un seul doit être actif au même moment.
 
 Nous sommes passés par plusieurs problèmes avec cette configuration. Je détaille ci-dessous ce qui a fonctionné pour nous. Je n'explique pas les notions de base de Quartz (trigger, calendar et job).
 
@@ -18,7 +18,7 @@ Quartz s'intègre assez facilement dans une config Spring. Il faut indiquer à Q
 
 Quartz a donc besoin de tables dans votre base de données pour qu'il puisse y mettre ses données. De cette façon si un noeud tombe, le suivant pourra reprendre là où l'autre s'est arrêté. Les scripts SQL sont livrés dans la distribution de Quartz.
 
-Nous avons rencontrés les problèmes suivants :
+Nous avons rencontré les problèmes suivants :
 
 ### Impossible de sérialiser la config en base de données, erreur au lancement
 
@@ -34,7 +34,7 @@ Bien vérifier s'il n'y a pas un problème avec la requête d'acquisition du loc
 
 ## Config Spring de Quartz
 
-L'exemple est tiré d'une configuration dont la base de données cible est un SQL Server. Il y a quelques changements pour une autre base de données mais rien de très compliqué.
+L'exemple est tiré d'une configuration dont la base de données cible est un SQL Server. Il y a quelques changements pour une autre base de données, mais rien de très compliqué.
 
 ```xml
 <bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" >
@@ -95,4 +95,4 @@ L'exemple est tiré d'une configuration dont la base de données cible est un SQ
 
 ## Pour conclure
 
-Quartz est "intriguant". Sur une seule machine, il est simple à mettre en oeuvre, grâce à Spring. Mais dés qu'on a des contraintes plus importantes, comme le fonctionnement dans un Cluster, les difficultés surgissent. Nous avons beaucoup bataillé avec ce projet mais la solution actuelle fonctionne parfaitement. Comme quoi, un peu de sueur dans les rouages et ça schedule...
+Quartz est "intriguant". Sur une seule machine, il est simple à mettre en oeuvre, grâce à Spring. Mais dès qu'on a des contraintes plus importantes, comme le fonctionnement dans un Cluster, les difficultés surgissent. Nous avons beaucoup bataillé avec ce projet, mais la solution actuelle fonctionne parfaitement. Comme quoi, un peu de sueur dans les rouages et ça schedule...

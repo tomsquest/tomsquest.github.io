@@ -43,7 +43,7 @@ public class Agent {
 
                 return null;
             }
-        }
+        });
     }
 }
 ```
@@ -150,9 +150,9 @@ Method Executed in ms: 1
 
 [Jean-Christophe Gay](https://twitter.com/jchristophegay) hacked Maven to colorize the output and to highlight warnings and errors.
 And it did that without altering Maven, but from the outside.
-The idea is to start Maven with an agent which enhance Maven (3.0) output with colorization.
+The idea is to start Maven with an agent which enhances Maven (3.0) output with colorization.
 
-It is interesting as a real world scenario because Maven does not expose an API to access the log in real time, and also
+It is interesting as a real world scenario. Maven does not expose an API to access the log in real time, and also
 because one needs to know exactly where to inject the custom code and how fragile it is to hack
 a third-party piece of code.
 
@@ -161,7 +161,7 @@ You can see his code here : <https://github.com/jcgay/maven-color>
 In its code, the author had to :
 
 - start the agent when the target program is run, this was done using the MAVEN_OPTS environment variable
-- find where Maven was outputting relevant logs message (well, this has to be done for Maven and Surefire, which is even
+- find where Maven was outputting the relevant logs message (well, this has to be done for Maven and Surefire, which is even
   more susceptible to change.
 
 For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM :

@@ -41,4 +41,4 @@ Pour voir le marqueur sur les méthodes (caché par d'autres annotations Eclipse
 
 Il est possible de créer une nouvelle méthode de test en appuyant plusieurs fois sur ctrl+u depuis la méthode de test.
 
-La vue qui montre les tests manquants fonctionnent partiellement donc je ne m'en sers pas.
+La vue qui montre les tests manquants fonctionne partiellement donc je ne m'en sers pas.

@@ -38,7 +38,7 @@ Certes certaines pratiques recommandées par Wicket sont assez dures à comprend
 
 Le projet WicketTester est intégré au framework même s'il n'a pas été développé par l'équipe principale. D'après Martin, il s'écarte un peu du modèle du framework lui-même et souffre de certaines limitations. Parmi celles-ci, il faut connaître le chemin complet d'un composant dans la hiérarchie pour y accéder (exemple : pour tester un lien d'un form d'un panel, il faut connaître cette hiérarchie pour cliquer sur le lien).
 
-En réalité, ces limitations ne sont pas bloquante, juste gênantes. Certains projets Wicket utilisant WicketTester ont une couverture de code importante. Martin nous a montré après la conférence des exemples de tests réels assez convainquant. Ca reste proche de l'API Selenium (sans ses bugs aléatoires, j'espère).
+En réalité, ces limitations ne sont pas bloquante, juste gênantes. Certains projets Wicket utilisant WicketTester ont une couverture de code importante. Martin nous a montré après la conférence des exemples de tests réels assez convaincant. Ca reste proche de l'API Selenium (sans ses bugs aléatoires, j'espère).
 
 Wicket 1.5 devrait apporter un framework de test plus complet et basé sur une partie du travail accomplit sur JDave. JDave est un framework de BDD (Behavior Driven Development) qui permet de spécifier par l'exemple les comportements des objets. Plus d'infos sur : <http://www.jdave.org/bdd-wicket/>.
 

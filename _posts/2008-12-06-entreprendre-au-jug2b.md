@@ -19,7 +19,7 @@ La soirée fut animée par beaucoup de questions et de rires. Je reviens sur les
 
 ## Le statut d'une entreprise n'est qu'une coquille
 
-Il y a eu beaucoup de questions sur la structure à choisir avant de se lancer. La réponse a toujours été la même : la structure est un élément de la création d'une entreprise mais elle n'est pas si importante que ça. Pour tous les intervenants, il faut vraiment voir sa société comme un support, une **coquille**.
+Il y a eu beaucoup de questions sur la structure à choisir avant de se lancer. La réponse a toujours été la même : la structure est un élément de la création d'une entreprise, mais elle n'est pas si importante que ça. Pour tous les intervenants, il faut vraiment voir sa société comme un support, une **coquille**.
 
 Quel que soit le type de société choisie (SA, SARL...), ce n'est pas un critère principal de réussite. La question du statut de l'entreprise sera posée, mais bien plus tard quand d'autres sujets seront bien avancés. Le tout est de se faire accompagner.
 
@@ -38,7 +38,7 @@ Ce qu'a dit et redit, Loïc Dosseur, c'est qu'**un bon projet attire les investi
 
 ## Ne pas se sous-financer
 
-Françoise Fagois entendait par sous-financement le fait de croire que l'entreprise peut vivre sans capital pendant longtemps. Monter une entreprise requiert de l'argent. Cela est très variable en fonction des secteurs même si en informatique, il y a peu de besoin de capitaux car un ordinateur et un téléphone suffisent pour se lancer.
+Françoise Fagois entendait par sous-financement le fait de croire que l'entreprise peut vivre sans capital pendant longtemps. Monter une entreprise requiert de l'argent. Cela est très variable en fonction des secteurs même si en informatique, il y a peu de besoin de capitaux, car un ordinateur et un téléphone suffisent pour se lancer.
 
 ## Définir ses limites
 
@@ -50,7 +50,7 @@ Les investisseurs apprécient apparemment le "**grain de folie**". Un entreprene
 
 ## Un mot sur la SCOP Port Parallèle
 
-Une SCOP est une "Société coopérative de production". Elle vise à placer ses salariés au centre de l'entreprise, les salariés étant le plus souvent des associés et ont un droit de vote : un homme égal une voix. Wikipedia a une section intéressante à ce propos : "[La SCOP, un modèle idéal d'entreprise ?](http://fr.wikipedia.org/wiki/Scop#La_Scop.2C_un_mod.C3.A8le_id.C3.A9al_d.27entreprise_.3F)".
+Une SCOP est une "Société coopérative de production". Elle vise à placer ses salariés au centre de l'entreprise, les salariés étant le plus souvent des associés et ont un droit de vote : un homme égal une voix. Wikipédia a une section intéressante à ce propos : "[La SCOP, un modèle idéal d'entreprise ?](http://fr.wikipedia.org/wiki/Scop#La_Scop.2C_un_mod.C3.A8le_id.C3.A9al_d.27entreprise_.3F)".
 
 [Antonio Goncalves](http://www.antoniogoncalves.org) du JUG a rejoint depuis deux ans Port Parallèle et en est très content. Il bénéficie, comme chaque salarié de la SCOP d'un droit de vote, de la participation et surtout de la structure mise en place à qui il délègue sa compta et d'autres choses rébarbatives. Pourtant, c'est lui qui amène ses factures que ses clients règlent directement à Port Parallèle, qui lui transmet ensuite la somme correspondante. Simple, non ? Un autre avantage est que ce genre de structure permet une collaboration aisée avec les autres membres. Il est facile de rencontrer d'autres entrepreneurs et très facile de tester de travailler ensemble pour tester un projet et se tester.
 

@@ -5,7 +5,7 @@ lang: fr
 
 L'astuce du jour est : "se passer de ClearCase pour comparer les fichiers".
 
-[ClearCase](http://www-01.ibm.com/software/awdtools/clearcase/) permet de comparer les différences entres les versions de fichier avec ses propres outils.
+[ClearCase](http://www-01.ibm.com/software/awdtools/clearcase/) permet de comparer les différences entre les versions de fichier avec ses propres outils.
 Mais les comparateurs proposés par défaut de ClearCase ne sont pas les meilleurs. Il y a des outils plus souples comme [WinMerge](http://winmerge.org/).
 
 ## Comment faire ?

@@ -35,12 +35,12 @@ CMD ["radicale"]
 
 ## Easy: Use a smaller base image
 
-I started with a Debian base image, then switch to an Alpine image, then found there are even alpine+python images.
+I started with a Debian base image, then switched to an Alpine image, then found there are even alpine+python images.
 
 The official Python images have an Alpine version: <https://hub.docker.com/_/python/>
 
 I did not set a specific image version (eg. `python:3.5.2-alpine`) in the hope that it could ease upgrades and
-that a rebuild could be automatically fired by Docker hub using a configured dependency. Forget repeatable builds !
+that a rebuild could be automatically fired by Docker hub using a configured dependency. Forget repeatable builds!
 
 Let's go for `python:3-alpine`:
 
@@ -55,7 +55,7 @@ CMD ["radicale"]
 ## Easy: Process management
 
 It seems a good practice to use a process manager to handle PID 1 and reaping subprocesses.
-As I don't know if Radicale handles signals properly, nor if it would create new subprocesses and handle them well,
+As I don't know if Radicale handles signals properly, nor if it creates new subprocesses and handles them well,
 let's use a process manager (this is more cargo-cult than scientific evidence).
 
 I started with [Yelp's Dumb Init](https://github.com/Yelp/dumb-init) but:
@@ -85,7 +85,7 @@ especially publicly opened containers. The Docker Security team does not recomme
 (https://www.youtube.com/watch?v=LmUw2H6JgJo).
 
 That means: use the `USER` instruction or switch user when the container is run.
-Combined with a volume, that's were I started having **permission problems**.
+Combined with a volume, that's where I started having **permission problems**.
 
 What seems to occur is that mounting a host volume (eg. `docker run ... -v /path:/data/radicale`)
 overwrites the permission **in** the container. What was owned by `radicale:radicale` became owned by `root:root` in the container.
@@ -130,12 +130,12 @@ if [ "$1" = 'radicale' -a "$(id -u)" = '0' ]; then
 fi
 ```
 
-I used [Su-exec](https://github.com/ncopa/su-exec), a lightweight alternative to Gosu and more importantly,
+I used [Su-exec](https://github.com/ncopa/su-exec), a lightweight alternative to Gosu, and more importantly,
 su-exec is available in Alpine repositories.
 
 ## S6, the alternative
 
-[S6-Overlay](https://github.com/just-containers/s6-overlay) contains the [S6](http://skarnet.org/software/s6/overview.html) series of scripts. As `overlay` they means a tgz to unpack in the image.
+[S6-Overlay](https://github.com/just-containers/s6-overlay) contains the [S6](http://skarnet.org/software/s6/overview.html) series of scripts. As `overlay` they mean a tgz to unpack in the image.
 
 S6-Overlay is a complete alternative, it provides:
 
@@ -143,14 +143,14 @@ S6-Overlay is a complete alternative, it provides:
 - A script to fix permissions (custom scripts in `/etc/fix-attrs.d`); replace the `chown radicale`
 - Dropping privileges; replace Su-Exec
 
-I did not had the time to play with S6. The thing is quite complex and powerful, maybe more that what I need.
+I did not have the time to play with S6. The thing is quite complex and powerful, maybe more than what I need.
 
 ## Next
 
 There are still many things to do **outside** the image itself. I have yet to:
 
 - [x] Manage/Restart the container with Systemd
-- [ ] Limit the number of automatic restart in Systemd
+- [ ] Limit the number of automatic restarts in Systemd
 - [ ] Monitor the process in the container
 - [ ] Limit the container capabilities
 - [ ] Limit the container networking

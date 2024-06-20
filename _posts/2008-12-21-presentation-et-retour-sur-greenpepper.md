@@ -34,7 +34,7 @@ GreenPepper est en réalité un plugin pour [Confluence](http://www.atlassian.co
 
 C'est LA différence avec [FitNesse](http://fitnesse.org/), un autre outil très populaire de test fonctionnel. FitNesse embarque son propre serveur Web et son propre Wiki. Chez Pyxis, il a été décidé de s'appuyer sur un outil existant, réputé et fiable.
 
-GreenPepper se contente donc de rentre les pages du Wiki Confluence testables en leur ajoutant des macros et le fameux bouton "Execute" vu plus haut.
+GreenPepper se contente donc de rendre les pages du Wiki Confluence testables en leur ajoutant des macros et le fameux bouton "Execute" vu plus haut.
 
 ## Qualités de GreenPepper
 
@@ -50,11 +50,11 @@ Nous avons rencontré plusieurs problèmes avec GreenPepper. Nous étions très 
 
 ### La documentation
 
-Le plus gros point noir du produit est sa documentation. Elle forme un patchwork difficile à ingérer. On trouve des exemples mais pas toujours le code associé. Certaines fixtures sont détaillées, mais je n'ai pas trouvé les exemples simples ni percutants.
+Le plus gros point noir du produit est sa documentation. Elle forme un patchwork difficile à ingérer. On trouve des exemples, mais pas toujours le code associé. Certaines fixtures sont détaillées, mais je n'ai pas trouvé les exemples simples ni percutants.
 
 La courbe d'apprentissage n'est donc pas basse. C'est laborieux. La documentation est difficilement compréhensible à la première lecture, voir à la deuxième. Après quelques jours, je commence enfin à en comprendre certaines sections.
 
-Un exemple vécu lors de l'installation : le "step by step" est simple à suivre mais rien ne fonctionnait à la fin. Nous avons du désinstaller le plugin GreenPepper et le réinstaller différemment de ce qui est précisé dans la documentation. Pour cela, il a fallu chercher dans les forums afin de voir qu'il était conseillé d'installer le plugin directement dans WEB-INF/lib (plutôt que par l'installateur Confluence comme indiqué dans la doc).
+Un exemple vécu lors de l'installation : le "step by step" est simple à suivre, mais rien ne fonctionnait à la fin. Nous avons dû désinstaller le plugin GreenPepper et le réinstaller différemment de ce qui est précisé dans la documentation. Pour cela, il a fallu chercher dans les forums afin de voir qu'il était conseillé d'installer le plugin directement dans WEB-INF/lib (plutôt que par l'installateur Confluence comme indiqué dans la doc).
 
 ### Le plugin Eclipse
 
@@ -64,20 +64,20 @@ Beaucoup d'options sont proposées et on a du mal à savoir quoi mettre. Il faut
 
 Au bout de quelques heures, ça fonctionne à peu près. Entre temps, on a essayé toutes les options dans tous les sens. C'est rigolo 5 minutes.
 
-A titre d'info, voilà la procédure :
+À titre d'info, voilà la procédure :
 
 - Ecrire sa page dans Confluence et la marquer comme "Implemented" ;
 - Rafraichir la vue "Repository" dans Eclipse : la page apparaît ;
 - Executer une première fois la page depuis le menu de cette vue ;
 - Ouvrir avec le WebBrowser d'Eclipse le HTML de la page crée plus haut (répertoire /greenpepper) ;
-- Executer la page une deuxième fois mais depuis le menu Run d'Eclipse ;
-- La page doit enfin montrer les résultats (du jaune si les fixtures n'exisente pas) ;
+- Executer la page une deuxième fois, mais depuis le menu Run d'Eclipse ;
+- La page doit enfin montrer les résultats (du jaune si les fixtures n'existent pas) ;
 
 ### Autres points :
 
 - Le plugin Eclipse n'est pas stable. La vue se freeze de temps en temps ;
 - Il est en version bêta depuis un moment ;
-- Eclipse 3.4 n'est pas supporté mais il s'est installé sans soucis.
+- Eclipse 3.4 n'est pas supporté, mais il s'est installé sans souci.
 
 ### Capture du lancement depuis Eclipse
 
@@ -85,7 +85,7 @@ A titre d'info, voilà la procédure :
 
 ### Le classpath et Maven
 
-Je n'ai pas mis en place cette partie là sur notre projet actuel donc j'ai peu à en dire. Ah si, une chose : beaucoup de sueur.
+Je n'ai pas mis en place cette partie-là sur notre projet actuel donc j'ai peu à en dire. Ah si, une chose : beaucoup de sueur.
 
 Le plugin Maven permet de construire le classpath contenant l'ensemble des dépendances pour permettre à GreenPepper d'appeler les fixtures qui utilisent les classes de votre projet.
 
@@ -107,7 +107,7 @@ Pour accélérer la mise en place de GreenPepper, Eric nous a conseillé de :
 
 ## Conclusion
 
-Pour résumer, GreenPepper est un produit très intéressant, mais qui souffre d'une documentation défaillante. Il offre de nombreux avantages comme l'intégration à Confluence, le plugin Eclipse et le support de Maven. La mise en place est déroutante car elle est laborieuse.
+Pour résumer, GreenPepper est un produit très intéressant, mais qui souffre d'une documentation défaillante. Il offre de nombreux avantages comme l'intégration à Confluence, le plugin Eclipse et le support de Maven. La mise en place est déroutante, car elle est laborieuse.
 
 D'autre part, le produit évolue lentement. Les pages de documentation datent pour une bonne partie de 2007 et la dernière news du site concernant GreenPepper date de janvier 2008.
 
