@@ -45,3 +45,5 @@ plugins:
   - jekyll-sitemap
 exclude:
   - .idea
+  - _bin
+  - _old
