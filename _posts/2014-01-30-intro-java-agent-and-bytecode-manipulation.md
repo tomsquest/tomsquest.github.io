@@ -3,10 +3,9 @@ title: "An introduction to Java Agent and bytecode manipulation"
 lang: en
 ---
 
-A few months ago, I wrote a little shell script to colorize Maven's output
-(see [this post](/blog/2013/09/maven-in-colors/)).
+A few months ago, I wrote a [little shell script to colorize Maven's output](/blog/2013/09/maven-in-colors/).
 This is a good solution, but [Jean-Christophe Gay](https://twitter.com/jchristophegay) has written a pure Java version
-to solve the same problem with interesting bits of Java technologies.
+to solve the same problem with interesting bits of Java technologies: Java Agent and bytecode manipulation using ASM.
 
 In this post, we will see how a Java Agent and some bytecode manipulation can open the inner guts of code we don't own.
 
@@ -20,7 +19,7 @@ The whole code is [on GitHub](https://github.com/tomsquest/java-agent-asm-javass
 ### Agent
 
 First, we need a Java Agent to inject and intercept real code.
-The agent framework is part of the JDK and allow us to operate on classes before (and even after) they are used.
+The agent framework is part of the JDK and allows us to operate on classes before (and even after) they are used.
 
 Here is the code of the Agent. Note the premain static method which is called at start.
 
