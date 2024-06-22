@@ -17,8 +17,8 @@ class: blog
       </a>
     </h2>
     <p class="excerpt">
-      {%- if page.excerpt -%}
-      {{ post.excerpt }}
+      {%- if post.excerpt -%}
+        {{ post.excerpt | strip_html }}
       {%- endif -%}
     </p>
   </li>

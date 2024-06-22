@@ -4,7 +4,7 @@ lang: fr
 image: /assets/images/posts/2008/10/the_mythical_man_month_cover.jpg
 ---
 
-Le livre "The Mythical Man Month" figure dans le TOP 10 des livres à avoir lu. Revue du livre...
+Le livre "The Mythical Man Month" figure dans le TOP 10 des livres à avoir lu. Revue du livre.
 
 ## Pourquoi lire ce livre ?
 

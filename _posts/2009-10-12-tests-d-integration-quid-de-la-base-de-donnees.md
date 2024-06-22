@@ -5,7 +5,6 @@ image: /assets/images/posts/serveur.jpg
 ---
 
 La base de données est un élément important des tests d'intégration. Les deux questions à se poser sont :
-
 - Puis-je utiliser une base de données embarquée ?
 - Puis-je désactiver les contraintes d'intégrité ?
 
@@ -31,7 +30,7 @@ Filip Neven, le créateur d'Unitils et de DbMaintain, pointe le problème sur so
 > Les gens pensent que la désactivation des contraintes produit une sérieuse dévaluation des tests, car le code qui a été validé avec succès par les tests unitaires pourrait ne pas fonctionner avec une base de données normales - [Filip Neven](http://filipneven.blogspot.com/2008/02/disable-constraints-on-your-test.html)
 > La chose à retenir est : "il faut limiter au maximum les données de test".
 
-Autrement dit : le moins de données de test il y a, le plus maintenable sont les tests.
+Autrement dit : le moins de données de test, il y a, le plus maintenable sont les tests.
 
 Filip Neven résume parfaitement la situation :
 
@@ -55,7 +54,7 @@ En effet, si les tests passent sur une base qui sera identique à la production 
 La réponse est double :
 
 - Oui, nous nous écartons du fonctionnement cible (like "Prod") en modifiant le comportement de la base de données ;
-- Non, ce la ne nuit pas à la qualité des tests.
+- Non, cela ne nuit pas à la qualité des tests.
 
 Pourquoi ?
 
