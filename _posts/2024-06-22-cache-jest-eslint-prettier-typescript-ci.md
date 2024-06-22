@@ -15,7 +15,7 @@ Speed up your development workflow by enabling caching for Jest, Prettier, ESLin
 - Enable TypeScript's cache `--incremental`
 - CI: store the `.cache` folder across builds
 
-## A cache folder
+## Cache folder
 
 Store all cache files in a `.cache` folder at your project's root
 This folder will be useful to fasten your workflow locally, keep your project clean, and in the CI by storing .cache across builds.
@@ -102,7 +102,7 @@ Add to your `tsconfig.json`:
 
 In your CI, you will want to store the `.cache` folder across builds.
 
-This can be achieved easily, using [Magnetikonline's ActionNodeModules cache](https://github.com/magnetikonline/action-node-modules-cache):
+This can be achieved easily, using [Magnetikonline's ActionNodeModules cache](https://github.com/magnetikonline/action-node-modules-cache), that will cache `node_modules` and any additional path you specify.
 
 ```yaml
   - name: Setup Node.js with node_modules cache
@@ -119,5 +119,7 @@ This can be achieved easily, using [Magnetikonline's ActionNodeModules cache](ht
 
 ## Conclusion
 
-By enabling cache for Jest, Prettier, ESLint, and TypeScript, you can speed up your development workflown.
+By enabling cache for Jest, Prettier, ESLint, and TypeScript, you can speed up your development workflow.
 And you can also make your CI faster! 🚀
+
+Alternative tools exist, like [Biome](https://biomejs.dev/), providing format and lint in the same tool, ultra-fast thanks to Rust, but quite limited in terms of linting rules for now.
