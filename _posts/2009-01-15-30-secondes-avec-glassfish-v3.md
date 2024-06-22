@@ -45,6 +45,6 @@ Une fois le serveur ajouté, le déploiement sur Glassfish d'un projet Web prend
 
 Glassfish est facilement installable. Sa mise en place dans un projet est rapide au travers d'un IDE. Il démarre en quelques secondes, aussi vite que Jetty.
 
-Pourtant, sur l'aspect configuration et intégration à Maven, [Jetty est encore imbattable]({% post_url 2008-09-09-jetty-demarrage-rapide %}) (plugin Maven au Top et simple fichier de config pour les dataSources).
+Pourtant, sur l'aspect configuration et intégration à Maven, [Jetty est encore imbattable](/blog/2008/09/jetty-demarrage-rapide/) (plugin Maven au Top et simple fichier de config pour les dataSources).
 
 Il m'a manqué du temps pour tester le rechargement à chaud des classes et la persistance des sessions, mais si c'est aussi facile que le reste, je l'adopte pour mes dév.

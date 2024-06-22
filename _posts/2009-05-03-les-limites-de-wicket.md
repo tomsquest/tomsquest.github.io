@@ -14,7 +14,7 @@ Quelles sont les limites de Wicket ? Quelles sont leurs solutions ?
 
 ![logo Zenika](/assets/images/posts/zenika_logo.png)
 
-L'invité de la soirée [Zenika](http://www.zenika.com/) du 29 avril était [Martin Dashorst](http://wicketinaction.com/), un des committers principaux de Wicket et coauteur du livre "Wicket In Action", dont vous trouverez [la critique ici-même]({% post_url 2008-12-09-critique-du-livre-wicket-in-action %}).
+L'invité de la soirée [Zenika](http://www.zenika.com/) du 29 avril était [Martin Dashorst](http://wicketinaction.com/), un des committers principaux de Wicket et coauteur du livre "Wicket In Action", dont vous trouverez [la critique ici-même](/blog/2008/12/critique-du-livre-wicket-in-action/).
 
 Martin a réalisé une introduction d'une heure à Wicket en montrant ses principaux avantages et les façons de faire les choses. La présentation a été convaincante mais j'aurai aimé plus de détails et d'exemples sur le futur de Wicket.
 

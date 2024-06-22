@@ -4,7 +4,7 @@ lang: en
 ---
 
 A few months ago, I wrote a little shell script to colorize Maven's output
-(see [this post]({% post_url 2013-09-30-maven-in-colors %})).
+(see [this post](/blog/2013/09/maven-in-colors/)).
 This is a good solution, but [Jean-Christophe Gay](https://twitter.com/jchristophegay) has written a pure Java version
 to solve the same problem with interesting bits of Java technologies.
 
@@ -13,9 +13,9 @@ In this post, we will see how a Java Agent and some bytecode manipulation can op
 ## Code sample
 
 I wrote a little test project to wire the stuff involved.
-There are two Maven module, one for the Agent and one for representing the external lib (we should not modify it).
+There are two Maven modules, one for the Agent and one for representing the external lib (we should not modify it).
 
-The whole code is [on Github](https://github.com/tomsquest/java-agent-asm-javassist-sample)
+The whole code is [on GitHub](https://github.com/tomsquest/java-agent-asm-javassist-sample)
 
 ### Agent
 
@@ -48,7 +48,7 @@ public class Agent {
 }
 ```
 
-The agent is called because the JVM is launched with the -javaagent:myjar.jar parameter and because the Manifest indicates this class.
+The agent is called because the JVM is launched with the `-javaagent:myjar.jar` parameter and because the Manifest indicates this class.
 
 Command line :
 
@@ -58,7 +58,7 @@ $ java -javaagent:agent/target/agent-0.1-SNAPSHOT.jar -jar other/target/other-0.
 
 ### ASM
 
-In order to manipulate the bytecode, I used the ASM framework.
+To manipulate bytecode, I used the ASM framework.  
 [ASM](http://asm.ow2.org) is a Java bytecode manipulation and analysis framework used in many products.
 
 In the example above, the ClassPrinter prints the signatures of the classes and methods visited.
@@ -102,7 +102,7 @@ I AM DOING SOME STUFF...
 
 ### Javassist
 
-Javassist is another bytecode manipulation framework. I found it simpler due to higher level methods like addLocalVariable, insertBefore, insertAfter...
+Javassist is another bytecode manipulation framework. I found it simpler due to higher level methods like `addLocalVariable`, `insertBefore`, `insertAfter`...
 
 Here is a version of the Agent used to output the elapsed time for executing the `run` method :
 
@@ -160,7 +160,7 @@ You can see his code here : <https://github.com/jcgay/maven-color>
 
 In its code, the author had to :
 
-- start the agent when the target program is run, this was done using the MAVEN_OPTS environment variable
+- start the agent when the target program is run, this was done using the `MAVEN_OPTS` environment variable
 - find where Maven was outputting the relevant logs message (well, this has to be done for Maven and Surefire, which is even
   more susceptible to change.
 

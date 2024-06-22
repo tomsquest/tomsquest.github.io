@@ -31,7 +31,7 @@ Donc oui, c'est possible, certains le font mais ce n'est pas "out of the box".
 
 ## Et la testabilité ?
 
-La question n'a pas été posée au JUG mais j'aurai aimé plus d'infos à ce sujet donc je la pose ici. Didier a évoqué la possibilité de tester son IHM grâce à [Selenium (cf mon article)]({% post_url 2008-09-04-selenium-en-java-demarrage-rapide %}). Je suis un peu surpris, car si GWT produit du javascript à la pelle, il sera sûrement dur à tester. Sur notre projet, on a connu ça avec le composant Auto-complete de Yahoo UI qui nous a donné un peu de mal.
+La question n'a pas été posée au JUG mais j'aurai aimé plus d'infos à ce sujet donc je la pose ici. Didier a évoqué la possibilité de tester son IHM grâce à [Selenium (cf mon article)](/blog/2008/09/selenium-en-java-demarrage-rapide/). Je suis un peu surpris, car si GWT produit du javascript à la pelle, il sera sûrement dur à tester. Sur notre projet, on a connu ça avec le composant Auto-complete de Yahoo UI qui nous a donné un peu de mal.
 
 En recherchant un peu, je vois que je me faisais des idées : oui, une interface GWT est testable sans souci, ça reste du HTML avec une couche JS. J'imagine qu'il faut toujours rendre son code HTML testable (positionner des IDs et structurer son code).
 

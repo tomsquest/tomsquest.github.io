@@ -66,7 +66,7 @@ Cette session visait à échanger autour du statut de SCOP (Société Coopérati
 Mes notes ne seront jamais aussi complètes que la documentation de cette forme d'entreprise. Je vous renvoie à :
 
 - Wikipédia pour la [définition de SCOP](http://fr.wikipedia.org/wiki/Scop)
-- Un de mes compte-rendus traite aussi du sujet : [Ma petite entreprise ne connaît pas la crise]({% post_url 2008-12-06-entreprendre-au-jug2b %})
+- Un de mes compte-rendus traite aussi du sujet : [Ma petite entreprise ne connaît pas la crise](/blog/2008/12/entreprendre-au-jug2b/)
 
 Cédric, un des fondateurs de la Scop [La Green Team](http://www.lagreenteam.fr), était présent et nous a brièvement parlé de sa société. Comme son nom le dit, sa Scop est axée développement durable dans ses statuts. Ses salariés allouent une partie de leur temps (2 jours par mois) à former leur membre, assister aux formations des membres et participer bénévolement à un projet de développement durable. La Scop apporte également une marque et une vision. Elle se rémunère quand elle apporte une affaire.
 
