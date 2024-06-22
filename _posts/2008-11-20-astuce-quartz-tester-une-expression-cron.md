@@ -4,7 +4,7 @@ lang: fr
 image: /assets/images/posts/2008/11/quartz_logo.jpg
 ---
 
-Pour tester rapidement une nouvelle configuration d’un Cron, par exemple `0 \* \* \* \* ?`, il suffit d’utiliser la classe CronExpression fournie par Quartz. Celle-ci fournit entre autre la prochaine date de lancement.
+Pour tester rapidement une nouvelle configuration d’un Cron, par exemple `0 * * * * ?`, il suffit d’utiliser la classe CronExpression fournie par Quartz. Celle-ci fournit entre autre la prochaine date de lancement.
 
 Exemple d'utilisation :
 
