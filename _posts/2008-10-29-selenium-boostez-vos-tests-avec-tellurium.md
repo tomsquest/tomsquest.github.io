@@ -8,7 +8,7 @@ Au commencement, vous écriviez vos tests Selenium en HTML. Mais cela posait des
 
 Puis, vous avez commencé à [écrire vos tests en Java (cf mon article)]({% post_url 2008-09-04-selenium-en-java-demarrage-rapide %}) et la vie fut plus belle. Mais cela devint verbeux et vous développiez de plus en plus de code custom pour améliorer vos tests. Et vous vous demandiez comment faire encore mieux...
 
-Enfin, vous découvrez l'arme ultime, ce projet nommé Tellurium qui ne vous rendra certainement pas plus riche ni plus beau mais qui améliorera vos tests Selenium.
+Enfin, vous découvrez l'arme ultime, ce projet nommé Tellurium qui ne vous rendra certainement pas plus riche ni plus beau, mais qui améliorera vos tests Selenium.
 
 Vous l'avez compris, [Tellurium](http://code.google.com/p/aost) est un projet qui vise à améliorer l'écriture de tests Selenium.
 
