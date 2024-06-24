@@ -160,20 +160,6 @@ footer.footer-container {
   }
 }
 
-ul.post-list {
-  padding-left: 0;
-  list-style: none;
-
-  li {
-    margin-bottom: 3rem;
-
-    h2, h3 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-  }
-}
-
 .about {
   img.profile {
     border-radius: 50%;
@@ -203,7 +189,23 @@ ul.post-list {
   }
 }
 
-article.post {
+.blog {
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 3rem;
+
+      h2, h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.post {
   @include link-with-icon;
 
   header {
