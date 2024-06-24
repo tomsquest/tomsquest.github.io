@@ -177,6 +177,22 @@ footer.footer-container {
   }
 }
 
+.home {
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 3rem;
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
 .blog {
   ul {
     padding-left: 0;
@@ -185,7 +201,7 @@ footer.footer-container {
     li {
       margin-bottom: 3rem;
 
-      h2, h3 {
+      h2 {
         margin-top: 0;
         margin-bottom: 0.5rem;
       }
