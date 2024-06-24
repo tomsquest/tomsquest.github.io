@@ -27,6 +27,10 @@
     --b-line: #3b4252;
     --b-link: #e0aaff;
     @import "monokai";
+
+    .logo-img {
+      filter: invert(1);
+    }
   }
 }
 
