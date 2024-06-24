@@ -161,31 +161,14 @@ footer.footer-container {
 }
 
 .about {
+  @include link-with-icon;
+
   img.profile {
     border-radius: 50%;
     display: block;
     // Use same margin down as Bamboo for <p>
     margin: 0 auto 1.5rem;
     width: 300px;
-  }
-
-  ul.links {
-    padding-left: 0;
-    list-style-type: none;
-
-    li {
-      margin: 10px 0;
-
-      a {
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-      }
-
-      img {
-        margin-right: 10px;
-      }
-    }
   }
 }
 
