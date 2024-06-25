@@ -1,7 +1,6 @@
 ---
 ---
 
-@import "manni";
 @import "bamboo";
 @import "fonts";
 
@@ -18,6 +17,7 @@
   --b-btn-bg: #242933;
   --b-btn-txt: #fff;
   --b-focus: #d8dee9;
+  @import "highlight-manni";
 
   @media (prefers-color-scheme: dark) {
     --b-txt: #eceff4;
@@ -26,7 +26,7 @@
     --b-bg-3: #b948f3; // ajout perso
     --b-line: #3b4252;
     --b-link: #e0aaff;
-    @import "monokai";
+    @import "highlight-monokai";
 
     .logo-img {
       filter: invert(1);
