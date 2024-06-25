@@ -105,16 +105,16 @@ In your CI, you will want to store the `.cache` folder across builds.
 This can be achieved easily, using [Magnetikonline's ActionNodeModules cache](https://github.com/magnetikonline/action-node-modules-cache), that will cache `node_modules` and any additional path you specify.
 
 ```yaml
-  - name: Setup Node.js with node_modules cache
-    id: node-with-cache
-    uses: magnetikonline/action-node-modules-cache@v2
-    with:
-      node-version-file: .nvmrc
-      additional-cache-path: |
-        .cache
-  - name: Install npm packages
-    if: steps.node-with-cache.outputs.cache-hit != 'true'
-    run: npm ci
+- name: Setup Node.js with node_modules cache
+  id: node-with-cache
+  uses: magnetikonline/action-node-modules-cache@v2
+  with:
+    node-version-file: .nvmrc
+    additional-cache-path: |
+      .cache
+- name: Install npm packages
+  if: steps.node-with-cache.outputs.cache-hit != 'true'
+  run: npm ci
 ```
 
 ## Conclusion
