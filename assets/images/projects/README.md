@@ -10,3 +10,5 @@ The banner for Fynodoro **in xcf** is in the fynodoro project.
   - Font is Pacifico from Google Font, size varies, resize layer to fit the position
 - Add shadow to the text: Filters > Light and Shadow > Drop Shadow
   - 0 for X and Y, 5 for blur radius, 1000 for opacity, black color
+
+Backgrounds downloaded from https://unsplash.com/@codioful
