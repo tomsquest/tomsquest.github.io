@@ -5,50 +5,31 @@ title: Projects
 class: projects
 ---
 
-<p><strong>Incomplete</strong> lists of projects I did outside of work, just to keep track.</p>
+<p>Some public projects I did outside of work, just to keep track.</p>
 
-<h2>Fynodoro, the Pomodoro Widget 🍅⌛</h2>
-<p>
-  <img src="/assets/images/projects/fynodoro_banner.png" alt="Fynodoro banner">
-</p>
-<p>
-  <a href="https://github.com/tomsquest/fynodoro">Fynodoro</a> is a Pomodoro timer designed to stay on your screen all the time.
-  It takes up a tiny bit of screen space and can be set to nearly transparent.
-</p>
-<p>
-  I use it to monitor the time dedicated to a specific task ("Let's put a Pomodoro on that part of the code"),
-  or during pair-programming sessions to switch the keyboard every 25 minutes.
-  A notification at the end keeps me on track.
-</p>
-<ul>
-  <li><a href="https://github.com/tomsquest/fynodoro">Fynodoro on GitHub</a></li>
-  <li>Started: <time>2021</time></li>
-  <li>Updated: <time>2024</time></li>
-  <li>Language: Go</li>
-  <li><a href="https://fyne.io/">Fyne</a>: UI toolkit (written in Go, cross-platform, many widgets...)</li>
-  <li><a href="https://goreleaser.com/">GoReleaser</a>: for releasing binaries and debian packages</li>
-</ul>
+{% for project in site.data.projects %}
+  <h2>{{ project.title | default: project.name }}</h2>
 
-<h2>Radicale-Docker, Docker image for Radicale calendar and contact server 📆 + security 🔐 + addons 🚀</h2>
-<p>
-  <img src="/assets/images/projects/docker-radicale_banner.png" alt="Radicale Docker banner">
-</p>
-<p>
-  <a href="https://github.com/tomsquest/docker-radicale/">Radicale-Docker</a> is a Docker image
-  for <a href="https://radicale.org">Radicale</a>, a simple Calendar and Contacts server, with a
-    <strong>non-root user</strong>,
-    <strong>read-only filesystem</strong>,
-    <strong>reduce privileges</strong>,
-    <strong>multi-architecture</strong>,
-    and some convenience after all!
-</p>
-<p>
-  Initially, I was starting to self-host services on a virtual server (running OpenBSD, yay!).<br/>
-  Then I switched to my own hardware, and I wanted to run Radicale in a Docker container, with <strong>security</strong> in mind.
-</p>
-<ul>
-  <li><a href="https://github.com/tomsquest/docker-radicale/">Radicale-Docker on GitHub</a></li>
-  <li>Started: <time>2016</time></li>
-  <li>Updated: <time>2024</time></li>
-  <li>Language: Shell, Python for testing</li>
-</ul>
+  {%- if project.image -%}
+  <p>
+    <img src="{{ project.image }}" alt="{{ project.name }} banner">
+  </p>
+  {%- endif -%}
+
+  <p>
+    {{ project.description | markdownify }}
+  </p>
+
+  <ul>
+    <li>
+      {% if project.private %}
+        🔒 Private project
+      {% else %}
+        <a href="{{ project.url }}">{{ project.name }} on GitHub</a>
+      {% endif %}
+    </li>
+    <li>Started: <time>{{ project.created_at | date: site.date_format }}</time></li>
+    <li>Updated: <time>{{ project.updated_at | date: site.date_format }}</time></li>
+    <li>Language: {{ project.language }}</li>
+  </ul>
+{% endfor %}
