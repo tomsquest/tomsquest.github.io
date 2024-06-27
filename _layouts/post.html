@@ -10,16 +10,14 @@ layout: base
 
     <p>
       📅 Published:
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: date_format }}
+        {{ page.date | date: site.date_format }}
       </time>
 
       {%- if page.modified_date -%}
       ~ Updated:
-      {%- assign modified_date = page.modified_date | date_to_xmlschema -%}
-      <time datetime="{{ modified_date }}">
-        {{ modified_date | date: date_format }}
+      <time datetime="{{ modified_date | date_to_xmlschema }}">
+        {{ modified_date | date: site.date_format }}
       </time>
       {%- endif -%}
       •

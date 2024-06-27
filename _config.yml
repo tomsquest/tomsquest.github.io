@@ -4,6 +4,7 @@ tagline: Dev insights, productivity hacks, and captivating reads
 description: Software development insights, productivity tips, and engaging reads by a passionate engineer
 baseurl: ""
 url: https://www.tomsquest.com
+date_format: "%b %-d, %Y"
 # author is used by jekyll-feeds and SEO
 author:
   name: Thomas Queste
