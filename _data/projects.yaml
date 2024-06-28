@@ -1,17 +1,21 @@
 - name: docker-radicale
-  title: ⭐ Radicale-Docker, Docker image for Radicale calendar and contact server 📆 + security 🔐 + addons 🚀
+  title: ⭐ Radicale-Docker, Docker image for Radicale calendar and contact server + security 🔐 + addons 🚀
   image: /assets/images/projects/docker-radicale_banner.png
   description: >-
     [docker-radicale](https://github.com/tomsquest/docker-radicale/) is a Docker image
-      for [Radicale](https://radicale.org), a simple Calendar and Contacts server, with a
-        **non-root user**,
-        **read-only filesystem**,
-        **reduce privileges**,
-        **multi-architecture**,
-        and some convenience after all!
+    for [Radicale](https://radicale.org), a simple Calendar and Contacts server, featuring:
+    - **a non-root user**,
+    - **a read-only filesystem**,
+    - **reduced privileges**,
+    - **multi-architecture support**,
+    - and some convenience features after all!
     
-    Initially, I was starting to self-host services on a virtual server (running OpenBSD, yay!).  
+      Initially, I started self-hosting services on a virtual server (running OpenBSD, yay!).  
     Then I switched to my own hardware, and I wanted to run Radicale in a Docker container, with **security** in mind.
+    
+      This project taught me a lot about **OpenSource** and "the cost of contribution".  
+    Contributions are welcome, but they also push the project to support features I don't use, which makes me question the maintenance months later. 🤔
+
   url: 'https://github.com/tomsquest/docker-radicale'
   created_at: '2016-10-05T15:05:07Z'
   updated_at: '2024-06-20T10:20:57Z'
@@ -19,21 +23,21 @@
   stargazers_count: 522
   topics:
     - caldav
-    - caldav-server
     - carddav
     - docker
     - docker-image
     - radicale
 - name: fynodoro
-  title: ⭐ Fynodoro, the Pomodoro Widget 🍅⌛
+  title: ⭐ Fynodoro, the Pomodoro Widget 🍅
   image: /assets/images/projects/fynodoro_banner.png
   description: >-
-    [Fynodoro](https://github.com/tomsquest/fynodoro) is a Pomodoro timer designed to stay on your screen all the time.  
-      It takes up a tiny bit of screen space and can be set to nearly transparent.
+    [Fynodoro](https://github.com/tomsquest/fynodoro) is a timer widget designed to stay on your screen all the time.  
+      It takes up a tiny bit of screen space and can be set to nearly transparent.  
+      When you need to focus, you can start a Pomodoro timer with a single click. A notification will remind you when the time is up.
     
-      I use it to monitor the time dedicated to a specific task ("Let's put a Pomodoro on that part of the code"),
-      or during pair-programming sessions to switch the keyboard every 25 minutes.
-      A notification at the end keeps me on track.
+      I use it daily to get in the flow, to monitor dedicated time, and during pair-programming sessions to switch the keyboard.
+    
+      Tips: place it on the side of your screen, nearly transparent, without window decoration, and always on top.
   url: 'https://github.com/tomsquest/fynodoro'
   created_at: '2021-11-15T12:48:37Z'
   updated_at: '2024-06-24T13:15:46Z'
@@ -44,8 +48,13 @@
     - fyneapp
     - golang
     - pomodoro
-- name: ⭐ MediathequeRoubaix.py
-  description: 📚 Python CLI for the library of Roubaix (Médiathèque Roubaix)
+- name: mediathequeroubaix.py
+  title: "⭐ MediathequeRoubaix.py: functional programming with Modern Python"
+  description: >-
+    Applying **functional programming** principles, while sharpening my **Python** skills, I set out to develop a simple yet useful CLI tool.
+
+      However, typing can get tricky when MyPy and functional programming clash! 😅  
+    And it becomes even more fun when everything turns into an IO of Task of Either of Option. 😜
   url: 'https://github.com/tomsquest/mediathequeroubaix.py'
   created_at: '2022-10-04T15:28:17Z'
   updated_at: '2023-01-14T16:33:43Z'
@@ -53,7 +62,8 @@
   stargazers_count: 1
   topics:
     - functional-programming
-- name: ⭐ My dotfiles
+- name: dotfiles
+  title: "⭐ My dotfiles"
   description: '📁 Config files for zsh, vim and many more. Heavily commented'
   url: 'https://github.com/tomsquest/dotfiles'
   created_at: '2011-04-07T12:48:59Z'
@@ -66,7 +76,7 @@
     - vim
     - zsh
 - name: lucene-stemmers
-  description: 🔤 Stem words like Lucene (port of Lucene' stemmers to JavaScript)
+  description: 🔤 Stem words like in Lucene in JavaScript. This is a port of some Lucene stemmers to JavaScript.
   url: 'https://github.com/tomsquest/lucene-stemmers'
   created_at: '2021-05-07T13:40:41Z'
   updated_at: '2023-05-23T16:33:56Z'
