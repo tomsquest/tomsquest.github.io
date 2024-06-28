@@ -1,0 +1,8 @@
+flow(
+    session,
+    _get_personal_space,
+    bind_result(extract_token),
+    bind_result(base64decode),
+    bind_result(parse_loans),
+    bind_result(safe(lambda loans: Loans(username=session.username, items=loans))),
+)

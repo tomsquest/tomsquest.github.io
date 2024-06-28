@@ -1,0 +1,7 @@
+08:10:00 /Dev/MyProject/main.ts:58:15 > bootstrap()
+{
+  status: "starting",
+  port: 8080
+}
+08:10:02 /Dev/MyProject/boostrap.ts:12:15 > myFunction()
+"from myFunction()"

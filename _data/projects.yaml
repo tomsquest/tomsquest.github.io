@@ -50,6 +50,7 @@
     - pomodoro
 - name: mediathequeroubaix.py
   title: "⭐ MediathequeRoubaix.py: functional programming with Modern Python"
+  image: /assets/images/projects/mediathequeroubaix_banner.png
   description: >-
     Applying **functional programming** principles, while sharpening my **Python** skills, I set out to develop a simple yet useful CLI tool.
 
@@ -62,6 +63,20 @@
   stargazers_count: 1
   topics:
     - functional-programming
+- name: q.js
+  title: "⭐ Q.js: Quick-and-dirty debugging for tired JS programmers"
+  image: /assets/images/projects/qjs_banner.png
+  description: >-
+    Ever wanted to replace console.log but not in your already cluttered output?
+    [Q.js](https://github.com/tomsquest/q.js) is there.
+    
+     Throw a bunch of `q(var1, var2)`, and the output can be displayed in a dedicated terminal with `tail -f /tmp/q`.
+  url: 'https://github.com/tomsquest/q.js'
+  created_at: '2018-10-08T04:33:47Z'
+  updated_at: '2023-04-07T04:25:15Z'
+  language: TypeScript
+  stargazers_count: 4
+  topics: [ ]
 - name: dotfiles
   title: "⭐ My dotfiles"
   description: '📁 Config files for zsh, vim and many more. Heavily commented'
@@ -75,6 +90,14 @@
     - shell
     - vim
     - zsh
+- name: q.plugin.zsh
+  description: ZSH plugin for the Q debug tool
+  url: 'https://github.com/tomsquest/q.plugin.zsh'
+  created_at: '2018-09-05T06:24:05Z'
+  updated_at: '2018-10-15T07:55:11Z'
+  language: Shell
+  stargazers_count: 0
+  topics: [ ]
 - name: lucene-stemmers
   description: 🔤 Stem words like in Lucene in JavaScript. This is a port of some Lucene stemmers to JavaScript.
   url: 'https://github.com/tomsquest/lucene-stemmers'
@@ -87,22 +110,6 @@
     - stem
     - stemmer
     - stemming
-- name: q.js
-  description: '⚡ Quick-and-dirty debugging output for tired JS programmers'
-  url: 'https://github.com/tomsquest/q.js'
-  created_at: '2018-10-08T04:33:47Z'
-  updated_at: '2023-04-07T04:25:15Z'
-  language: TypeScript
-  stargazers_count: 4
-  topics: [ ]
-- name: q.plugin.zsh
-  description: ZSH plugin for the Q debug tool
-  url: 'https://github.com/tomsquest/q.plugin.zsh'
-  created_at: '2018-09-05T06:24:05Z'
-  updated_at: '2018-10-15T07:55:11Z'
-  language: Shell
-  stargazers_count: 0
-  topics: [ ]
 - name: auto-configure-typematrix-in-xorg
   description: Configure your Typematrix keyboard automatically in Xorg (simpler that Udev)
   url: 'https://github.com/tomsquest/auto-configure-typematrix-in-xorg'

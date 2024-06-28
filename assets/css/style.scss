@@ -262,4 +262,8 @@ footer.footer-container {
 
 .projects {
   @include link-with-icon;
+
+  .banner img {
+    border-radius: 1em;
+  }
 }

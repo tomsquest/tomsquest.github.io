@@ -11,7 +11,7 @@ class: projects
   <h2>{{ project.title | default: project.name }}</h2>
 
   {%- if project.image -%}
-  <p>
+  <p class="banner">
     <img src="{{ project.image }}" alt="{{ project.name }} banner">
   </p>
   {%- endif -%}
