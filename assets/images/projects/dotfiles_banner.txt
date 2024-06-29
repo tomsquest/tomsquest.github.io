@@ -1,0 +1,7 @@
+07:44:10 /home/tom/.dotfiles master ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+$ l
+drwxrwxr-x    - tom 2023-12-18 17:43 -- bin
+drwxrwxr-x    - tom 2023-10-27 09:18 -- desktop-shortcuts
+drwxrwxr-x    - tom 2020-06-19 15:05 -- sysctl.d
+drwxrwxr-x    - tom 2020-06-19 15:05 -- vim
+drwxrwxr-x    - tom 2024-05-05 06:57 -- zsh

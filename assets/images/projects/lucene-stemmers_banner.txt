@@ -1,0 +1,7 @@
+const { stemFrenchMinimal, stemFrenchLight } = require("lucene-stemmers");
+
+const stemmed2 = stemFrenchLight("pizzas")
+// stemmed2 === "pizza"
+
+const stemmed = stemFrenchMinimal("chevaux");
+// stemmed === "cheval"
