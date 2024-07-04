@@ -12,7 +12,7 @@ Speed up your development workflow by enabling caching for Jest, Prettier, ESLin
 - Keep Jest's cache across restart, `--cacheDirectory .cache/jest/`
 - Enable ESLint's cache `--cache --cache-location .cache/eslint/`
 - Enable Prettier's cache `--cache --cache-location .cache/prettier/`
-- Enable TypeScript's cache `--incremental`
+- Enable TypeScript `incremental` builds
 - CI: store the `.cache` folder across builds
 
 ## Cache folder
