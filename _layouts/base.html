@@ -12,13 +12,40 @@
 </head>
 <body>
 
-{%- include header.html -%}
+<header class="nav">
+  <div class="logo">
+    <a href="/">
+      <img src="/assets/images/logo.svg" class="logo-img" alt="Logo" width="48px" height="48px">
+      <span>{{ site.title | escape }}</span>
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/blog/">blog</a></li>
+      <li><a href="/projects/">projects</a></li>
+      <li><a href="https://ai.tomsquest.com">AI</a></li>
+      <li><a href="/about/">about</a></li>
+    </ul>
+  </nav>
+</header>
 
 <main>
   {{ content }}
 </main>
 
-{%- include footer.html -%}
+<footer class="footer-container">
+  <div class="footer-left">
+    <p>Made with ❤️ by <a href="/about/">Tom</a> 😊</p>
+  </div>
+  <div class="footer-right">
+    <ul>
+      <li><a href="/blog/">blog</a></li>
+      <li><a href="/projects/">projects</a></li>
+      <li><a href="/about/">about</a></li>
+      <li><a href="/atom.xml">rss</a></li>
+    </ul>
+  </div>
+</footer>
 
 </body>
 </html>
