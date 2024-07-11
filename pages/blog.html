@@ -5,9 +5,16 @@ title: Blog
 class: blog
 ---
 
+<p>
+  Filter by language:
+  <a onclick="filterByLang()">All</a>,
+  <a onclick="filterByLang('en')">English</a>,
+  <a onclick="filterByLang('fr')">French</a>
+</p>
+
 <ul>
   {%- for post in site.posts -%}
-  <li>
+  <li data-lang="{{ post.lang }}">
     <time datetime="{{ post.date | date_to_xmlschema }}">
       {{ post.date | date: "%Y-%m-%d" }}
     </time>
@@ -24,3 +31,15 @@ class: blog
   </li>
   {%- endfor -%}
 </ul>
+
+<script>
+  function filterByLang(lang) {
+    document.querySelectorAll('.blog li').forEach(li => {
+      if (lang) {
+        li.style.display = li.getAttribute('data-lang') === lang ? 'block' : 'none';
+      } else {
+        li.style.display = 'block';
+      }
+    });
+  }
+</script>
