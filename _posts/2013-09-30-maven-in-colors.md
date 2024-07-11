@@ -1,7 +1,7 @@
 ---
 title: "Maven in colors"
 lang: en
-modified_date: 2014-01-21
+last_modified_at: 2014-01-21
 image: /assets/images/posts/2013/maven-logo.png
 ---
 

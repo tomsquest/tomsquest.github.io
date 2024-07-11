@@ -14,10 +14,10 @@ layout: base
         {{ page.date | date: site.date_format }}
       </time>
 
-      {%- if page.modified_date -%}
+      {%- if page.last_modified_at -%}
       ~ Updated:
-      <time datetime="{{ modified_date | date_to_xmlschema }}">
-        {{ modified_date | date: site.date_format }}
+      <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">
+        {{ page.last_modified_at | date: site.date_format }}
       </time>
       {%- endif -%}
       •
