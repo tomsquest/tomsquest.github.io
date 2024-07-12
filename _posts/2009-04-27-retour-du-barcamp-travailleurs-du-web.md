@@ -1,7 +1,7 @@
 ---
 title: Retour du Barcamp "Travailleurs Du Web"
 lang: fr
-image: /assets/images/posts/tdw_camp.jpg
+image: /assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/tdw_camp.jpg
 ---
 
 Samedi a eu lieu le premier [Barcamp TDW](http://barcamp.pbwiki.com/TravailleursDuWebCamp) destinés aux personnes travaillant dans le Web ou s'y intéressant : designers, développeurs, webmasters, curieux et même un mec qui fait du Java (vous avez deviné qui).
@@ -96,8 +96,8 @@ Merci à Babozor et à [Fred](http://www.quatuorprod.com/) pour la très bonne o
 
 Voici un échantillon des photos réalisé par Seb. Vous en trouverez d'autres sur [son site](http://tdwcamp.altrasys.fr).
 
-![](/assets/images/posts/imgp9635-150x150.jpg)
-![](/assets/images/posts/imgp9658-150x150.jpg)
-![](/assets/images/posts/imgp9659-150x150.jpg)
-![](/assets/images/posts/imgp9664-150x150.jpg)
-![](/assets/images/posts/imgp9673-150x150.jpg)
+![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9635-150x150.jpg)
+![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9658-150x150.jpg)
+![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9659-150x150.jpg)
+![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9664-150x150.jpg)
+![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9673-150x150.jpg)

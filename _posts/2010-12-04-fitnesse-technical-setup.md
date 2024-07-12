@@ -33,7 +33,7 @@ Basic rules:
 - Pages must be created on the central server, never locally
 - Pages must be modified remotely (using the “Edit Remotely” button); Local pages may be erased at the next sync, so use them carefully
 
-![](/assets/images/posts/fitnesse-schema_resized2.jpg)
+![](/assets/images/posts/2010-12-04-fitnesse-technical-setup/fitnesse-schema_resized2.jpg)
 
 ## Setup
 
@@ -143,7 +143,7 @@ How-to:
 - From the developer’s server, create a new page
 - From the properties, paste the URL to the parent page you wish to import (something like http://fitnesse:8086/MyProject)
 
-![](/assets/images/posts/fitnesse_wiki_import.jpg)
+![](/assets/images/posts/2010-12-04-fitnesse-technical-setup/fitnesse_wiki_import.jpg)
 
 #### Debugging
 
@@ -157,7 +157,7 @@ Under FitNesse, append the following at the end of the page you want to debug:
 
 #### Random problem (Bind, Socket exception)
 
-![](/assets/images/posts/fitnesse_error.jpg)
+![](/assets/images/posts/2010-12-04-fitnesse-technical-setup/fitnesse_error.jpg)
 
 If you experience strange errors with no output, or better Socket and Bind exceptions (like in the screenshot), you should use the SLIM_PORT option (as used in this article). This basically shifts the ports used by Slim to avoid conflicts with, let’s say, Tomcat.
 

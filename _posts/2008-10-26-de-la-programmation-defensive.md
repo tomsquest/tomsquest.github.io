@@ -35,7 +35,7 @@ public List<String> filter(List<Strin> mails) {
 
 En java, au moment de la compilation, la présence d'un flag permet de déclarer si oui ou non le code embarquera les assertions. Alors à quoi beau peaufiner ses assertions si elles ne sont pas actives tout le temps ?
 
-![Couverture Pragmatic Programmer](/assets/images/posts/2008/10/thepragmaticprogrammerfromjourneymantomaster.jpg)
+![Couverture Pragmatic Programmer](/assets/images/posts/2008-10-26-de-la-programmation-defensive/thepragmaticprogrammerfromjourneymantomaster.jpg)
 
 Dans le livre "[The Pragmatic Programmer](http://www.amazon.fr/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/)", les auteurs expliquent que les concepteurs du langage Java ont permis de désactiver les assertions pour deux raisons :
 

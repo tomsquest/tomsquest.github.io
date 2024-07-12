@@ -1,7 +1,7 @@
 ---
 title: "My attempt at building a production grade docker image"
 lang: en
-image: /assets/images/posts/docker.png
+image: /assets/images/posts/2016-10-17-production-docker-image/docker.png
 ---
 
 As I am self-hosting a couple of services, mainly for keeping my data for myself (Sorry Google, Facebook), I tried to build a "production-grade docker image". Here's my attempt and what I learnt along the way.

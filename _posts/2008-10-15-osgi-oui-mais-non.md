@@ -1,7 +1,7 @@
 ---
 title: "OSGI : oui mais non"
 lang: fr
-image: /assets/images/posts/2008/12/parisjug-logo.jpg
+image: /assets/images/posts/2008-10-15-osgi-oui-mais-non/parisjug-logo.jpg
 ---
 
 [Xebia](http://www.xebia.fr/) a présenté hier soir "OSGI" au [Paris JUG](http://parisjug.org/). Ce fut une conférence très intéressante menée par Cyrille Le Clerc et Nicolas Griso. Tout leur discours a consisté à nous présenter honnêtement ce qu’est [OSGI](http://www.osgi.org/) et nous permettre de nous faire notre propre opinion.

@@ -1,7 +1,7 @@
 ---
 title: "Gradle : vos builds aux petits oignons"
 lang: fr
-image: /assets/images/posts/gradle.jpg
+image: /assets/images/posts/2009-06-26-gradle-vos-builds-aux-petits-oignons/gradle.jpg
 ---
 
 [Gradle](http://www.gradle.org/) est un outil permettant d'écrire ses scripts de build en groovy.

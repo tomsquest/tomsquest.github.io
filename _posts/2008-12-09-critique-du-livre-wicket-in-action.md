@@ -1,7 +1,7 @@
 ---
 title: Critique du livre "Wicket In Action"
 lang: fr
-image: /assets/images/posts/2008/12/wicket_in_action.jpg
+image: /assets/images/posts/2008-12-09-critique-du-livre-wicket-in-action/wicket_in_action.jpg
 ---
 
 Je lorgnais depuis un sacré moment sur [Wicket](http://wicket.apache.org/), ce célèbre framework Web orienté composant. Les exemples du site m'avaient fait saliver : découpage propre du HTML et du code Java, gestion des événements côté java (comme un onclick sur un lien), composants réutilisables, support Ajax natif, intégration à Spring et Hibernate... Beaucoup de qualités qui ont suscité ma curiosité.

@@ -1,7 +1,7 @@
 ---
 title: Critique du livre "Passionate Programmer"
 lang: fr
-image: /assets/images/posts/the_passionate_programmer.jpg
+image: /assets/images/posts/2009-07-19-passionate-programmer-critique-du-livre/the_passionate_programmer.jpg
 ---
 
 Dans "[The Passionate Programmer](http://www.pragprog.com/titles/cfcar2/the-passionate-programmer)", apprenez comment gérer votre carrière de geek, comment booster votre vie professionnelle, et avoir du fun et l'argent du fun.
@@ -61,7 +61,7 @@ Ce que je n'ai pas aimé :
 
 ### Will code for food
 
-![Couverture My Job Went To India](/assets/images/posts/my_job_went_to_india.jpg)
+![Couverture My Job Went To India](/assets/images/posts/2009-07-19-passionate-programmer-critique-du-livre/my_job_went_to_india.jpg)
 
 Pour l'anecdote, la première version du livre était intitulée : [My Job went to India](http://www.pragprog.com/titles/mjwti/my-job-went-to-india) (ce qui a bien fait rire mes collègues de Singapour).
 

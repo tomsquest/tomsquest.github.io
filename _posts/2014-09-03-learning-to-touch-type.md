@@ -17,11 +17,11 @@ I chose Colemak because it beats Dvorak slightly at speed, and it only changes s
 
 Here is a visual of the Colemak layout:
 
-![Colemak layout](/assets/images/posts/colemak_layout.png)
+![Colemak layout](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_layout.png)
 
 ## Learning
 
-![Couverture First 20 hours book](/assets/images/posts/colemak_first20thhours_book.jpg)
+![Couverture First 20 hours book](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_first20thhours_book.jpg)
 
 I used the method of the book ["The First 20 Hours"](http://first20hours.com/) by Josh Kaufman, the author behind the Personal MBA. This is an interesting book on how to learn (anything) fast. It contains two chapters on learning and how to do it well and a set of chapters on what the author learned: Yoga, Go, Programming, Ukulele and particularly **Touch typing**. It's basically the 80/20 rules applied to learning.
 
@@ -43,7 +43,7 @@ Yes, completely **blank** ! Like with nothing written on it. I do think this is 
 
 The Typematrix blank keyboard:
 
-![Typematrix Blank](/assets/images/posts/colemak_typematrix_blank.png)
+![Typematrix Blank](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_typematrix_blank.png)
 
 ## Typing trainers
 
@@ -82,7 +82,7 @@ Amphetype gave my speed in WPM and my error rate by session, and the calendar wa
 
 Here is my seinfeld calendar:
 
-![Seinfeld calendar](/assets/images/posts/colemak_seinfeld_calendar.jpg)
+![Seinfeld calendar](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_seinfeld_calendar.jpg)
 
 I was really motivated in October and less in November (also due to a lot of work). But this is generally how things evolve.
 
@@ -102,6 +102,6 @@ I still make typing errors, but a lot less than in Azerty.
 
 Graph of my speed (WPM) from October to November (on Amphetype), French and English (all results merged). The progress is slow, but steady:
 
-![Speed result](/assets/images/posts/colemak_amphetype_progress.png)
+![Speed result](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_amphetype_progress.png)
 
 _This post was written in Colemak on a blank Typematrix keyboard._

@@ -1,7 +1,7 @@
 ---
 title: "MoreUnit : les tests plus vite sous Eclipse"
 lang: fr
-image: /assets/images/posts/classDecoration.png
+image: /assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/classDecoration.png
 ---
 
 J'ai découvert aujourd'hui le plugin [MoreUnit](http://moreunit.sourceforge.net) pour Eclipse. Celui-ci accélère grandement le passage code/test et la création de tests.
@@ -31,13 +31,13 @@ La configuration qui fonctionne pour un projet Maven et Junit est :
 - Test suffixes : Test
 - Enable flexible naming of tests : coché
 
-![](/assets/images/posts/moreUnit_pref_maven.jpg)
+![](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_maven.jpg)
 
 Pour voir le marqueur sur les méthodes (caché par d'autres annotations Eclipse), il est intéressant d'activer le soulignement des méthodes ou :
 
 - Préférences &gt; Editors &gt; Text Editors &gt; Annotations &gt; MoreUnit Marker &gt; Cocher "Test as Suiggly line"
 
-![](/assets/images/posts/moreUnit_pref_annotations.jpg)
+![](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_annotations.jpg)
 
 Il est possible de créer une nouvelle méthode de test en appuyant plusieurs fois sur ctrl+u depuis la méthode de test.
 

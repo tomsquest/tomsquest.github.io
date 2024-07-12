@@ -1,7 +1,7 @@
 ---
 title: "Selenium en java : Démarrage rapide"
 lang: fr
-image: /assets/images/posts/2008/09/selenium_small.jpg
+image: /assets/images/posts/2008-09-04-selenium-en-java-demarrage-rapide/selenium_small.jpg
 ---
 
 L'article est un guide de démarrage rapide pour l'écriture de tests Selenium en Java. Nous allons voir ce qu'il faut configurer dans le pom.xml de Maven et comme lancer l'ensemble des tests.
@@ -83,7 +83,7 @@ Tout d'abord, commençons par éditer le `pom.xml` du module de test.
 
 Les dépendances devraient ressembler à celles-ci sous Eclipse :
 
-![](/assets/images/posts/2008/09/libs1.jpg)
+![](/assets/images/posts/2008-09-04-selenium-en-java-demarrage-rapide/libs1.jpg)
 
 ### 3 - Configuration de la phase de test
 

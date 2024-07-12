@@ -1,7 +1,7 @@
 ---
 title: "Review: Play Framework Cookbook"
 lang: en
-image: /assets/images/posts/play_framework_cookbook.jpg
+image: /assets/images/posts/2011-10-06-review-play-framework-cookbook/play_framework_cookbook.jpg
 ---
 
 Play!, the framework for the bored Java developers! Very interesting and opinated framework.

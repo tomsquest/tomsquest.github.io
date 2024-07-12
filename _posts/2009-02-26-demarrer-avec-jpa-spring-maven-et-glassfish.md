@@ -1,7 +1,7 @@
 ---
 title: "Démarrer avec JPA, Spring, Maven et Glassfish"
 lang: fr
-image: /assets/images/posts/2009/02/screenshot_06.jpeg
+image: /assets/images/posts/2009-02-26-demarrer-avec-jpa-spring-maven-et-glassfish/screenshot_06.jpeg
 ---
 
 Je vous propose un projet qui permettra de démarrer avec [Spring](http://static.springframework.org/spring/docs/2.5.x/reference/), de déployer sous [Glassfish v3](https://glassfish.dev.java.net/) et de lancer les tests d'intégration sans serveur d'application, le tout avec le pom [Maven](http://maven.apache.org/) qui va bien.
@@ -13,11 +13,11 @@ Le projet contient deux configurations de JPA : l'une pour le déploiement, util
 Les PersistentUnits sont configurés par :
 
 - le fichier "persistence.xml" pour Glassfish, l'attribut transaction-type doit valoir "JTA", sinon Glassfish refuse de démarrer ;
-- le fichier "orm.xml" pour les test. L'Attribut transaction-type vaut "RESOURCE_LOCAL"
+- le fichier "orm.xml" pour les tests. L'Attribut transaction-type vaut "RESOURCE_LOCAL"
 
-Spring est lui aussi configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.
+Spring est, lui aussi, configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.
 
-![](/assets/images/posts/2009/02/screenshot_05.jpeg)
+![](/assets/images/posts/2009-02-26-demarrer-avec-jpa-spring-maven-et-glassfish/screenshot_05.jpeg)
 
 Le fichier JPA pour le serveur est le suivant :
 
@@ -84,7 +84,7 @@ Le "petites" choses à faire :
 - Utiliser la même implémentation JPA que le serveur (EclipseLink avec Glassfish) pour les tests d'intégration (Hibernate) pour éviter d'éventuels écarts de comportement ;
 - Configurer les transactions de manières déclaratives en utilisant Spring-AOP plutôt que des @Transactional un peu partout ;
 - Séparer les tests d'intégration des tests unitaires comme conseillé dans Better Builds With Maven ;
-- Utiliser DBUnit pour ré-initialiser la base de données au démarrage des tests, ou passer à Unitils pour faire tout ça et encore plus.
+- Utiliser DBUnit pour réinitialiser la base de données au démarrage des tests, ou passer à Unitils pour faire tout ça et encore plus.
 
 ## Le projet
 

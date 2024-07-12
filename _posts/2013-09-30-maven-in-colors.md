@@ -2,7 +2,7 @@
 title: "Maven in colors"
 lang: en
 last_modified_at: 2014-01-21
-image: /assets/images/posts/2013/maven-logo.png
+image: /assets/images/posts/2013-09-30-maven-in-colors/maven-logo.png
 ---
 
 Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings?
@@ -15,11 +15,11 @@ or Arnaud Heritier's log4j2 approach: [United Colors of Maven](http://aheritier.
 
 Here is a screenshot of a successful build :
 
-![Maven successful build with colors](/assets/images/posts/2013/maven-colors-success.png)
+![Maven successful build with colors](/assets/images/posts/2013-09-30-maven-in-colors/maven-colors-success.png)
 
 Screenshot of a failed build :
 
-![Maven failed build with colors](/assets/images/posts/2013/maven-colors-failure.png)
+![Maven failed build with colors](/assets/images/posts/2013-09-30-maven-in-colors/maven-colors-failure.png)
 
 ## Preferred solution: shell function
 

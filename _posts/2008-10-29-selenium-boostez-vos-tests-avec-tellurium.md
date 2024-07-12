@@ -1,7 +1,7 @@
 ---
 title: "Selenium : Boostez vos tests avec Tellurium"
 lang: fr
-image: /assets/images/posts/2008/10/tellurium.png
+image: /assets/images/posts/2008-10-29-selenium-boostez-vos-tests-avec-tellurium/tellurium.png
 ---
 
 Au commencement, vous écriviez vos tests Selenium en HTML. Mais cela posait des problèmes : aucune factorisation possible, pas de setUp()/tearDown()...

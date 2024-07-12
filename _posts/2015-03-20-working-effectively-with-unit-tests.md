@@ -1,7 +1,7 @@
 ---
 title: "Working Effectively with Unit Tests by Jay Fields"
 lang: en
-image: /assets/images/posts/wewut-cover.jpg
+image: /assets/images/posts/2015-03-20-working-effectively-with-unit-tests/wewut-cover.jpg
 ---
 
 I am very happy to have read Jay Fields' Working effectively with unit tests.

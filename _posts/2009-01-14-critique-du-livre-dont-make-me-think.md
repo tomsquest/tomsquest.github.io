@@ -1,7 +1,7 @@
 ---
 title: Critique du livre "Don't Make Me Think"
 lang: fr
-image: /assets/images/posts/2009/01/dmmt-cover-2nd.jpg
+image: /assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-cover-2nd.jpg
 ---
 
 J'ai eu le plaisir de lire le livre de Steve Krug "[Don't Make Me Think](http://sensible.com/buythebook.html)" dont le sujet est l'usabilité Web. L'usabilité, c'est la conception d'un site afin qu'il fonctionne au mieux. Pourquoi faire un site utilisable ? Steve Krug cite sa femme : "Si quelque chose est difficile à utiliser, alors je l'utilise moins".
@@ -22,7 +22,7 @@ Il propose dans son livre des conseils pour ceux qui n'ont pas les moyens d'emba
 
 ## Le livre
 
-![Couverture Je Ne Veux Pas Chercher](/assets/images/posts/2009/01/dmmt-cover-fr-je-ne-veux-pas-chercher.jpg)
+![Couverture Je Ne Veux Pas Chercher](/assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-cover-fr-je-ne-veux-pas-chercher.jpg)
 
 C'est un bel objet, on prend plaisir à le feuilleter. Il est aéré et son contenu est bien mis en valeur. Il contient beaucoup d'illustrations et de captures d'écran pour montrer par exemple les d'améliorations avant/après (convaincant !).
 
@@ -30,7 +30,7 @@ Le livre a été traduit sous le titre "[Je ne veux pas chercher](http://www.ama
 
 ## Mon avis
 
-![](/assets/images/posts/2009/01/dmmt-usability-glance.png)
+![](/assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-usability-glance.png)
 
 Je recommande chaudement ce livre qui se veut très simple d'accès, intéressant et agréable à lire. Il m'a fait prendre conscience de nombreuses choses, aussi bien sur comment les utilisateurs voient un site, que les tests utilisateurs ou encore l'accessibilité. Le livre m'a étonné plusieurs fois. Et ça, c'est ce que je lui demandais.
 
@@ -40,7 +40,7 @@ Le livre une remise à plat de ce que l'on pense au niveau ergonomie et concepti
 
 ## Test Driven Website
 
-![Web Design Funnies](/assets/images/posts/2009/01/dmmt-webdesignfunnies1.jpg)
+![Web Design Funnies](/assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-webdesignfunnies1.jpg)
 
 Un des chapitres qui m'a le plus marqué dans le livre est celui où Steve Krug affirme que les discussions sur l'usabilité sont une perte de temps.
 
