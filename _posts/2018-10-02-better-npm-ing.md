@@ -8,7 +8,7 @@ I discovered several tips for working with NPM on a daily basis. Here are the to
 
 I presented those tips to my coworkers and [the slides are available online](https://tomsquest.github.io/presentation-better-npm-ing/).
 
-## **TL;DR**: 
+## TL;DR 
 
 - Use `save-exact` for consistent installs
 - Run `npm ci` for fast and consistent installs

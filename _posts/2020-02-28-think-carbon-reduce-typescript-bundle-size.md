@@ -7,7 +7,7 @@ Reducing the size of JS compiled from Typescript is easy.
 
 Here are some numbers and how to do it. It's nearly free if you run on Node (!= browser).
 
-## **TL;DR**
+## TL;DR
 
 - Install `tslib`
 - Configure `importHelpers`
