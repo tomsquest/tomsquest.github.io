@@ -25,11 +25,17 @@ class: projects
       {% if project.private %}
         🔒 Private project
       {% else %}
-        <a href="{{ project.url }}">{{ project.name }} on GitHub</a>
+        Url: <a href="{{ project.url }}">{{ project.name }}</a>
       {% endif %}
     </li>
-    <li>Started: <time>{{ project.created_at | date: site.date_format }}</time></li>
-    <li>Updated: <time>{{ project.updated_at | date: site.date_format }}</time></li>
-    <li>Language: {{ project.language }}</li>
+    {% if project.created_at %}
+      <li>Created: <time>{{ project.created_at | date: site.date_format }}</time></li>
+    {% endif %}
+    {% if project.updated_at %}
+      <li>Updated: <time>{{ project.updated_at | date: site.date_format }}</time></li>
+    {% endif %}
+    {% if project.language %}
+      <li>Language: {{ project.language }}</li>
+    {% endif %}
   </ul>
 {% endfor %}

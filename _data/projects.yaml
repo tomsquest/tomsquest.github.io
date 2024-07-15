@@ -327,3 +327,19 @@
   language: Java
   stargazers_count: 0
   topics: [ ]
+- name: 56k
+  title: 🎮 56K Counter-strike clan
+  image: /assets/images/projects/56k_banner.png
+  description: >-
+    [56K](http://56kclan.free.fr) was our Counter-Strike clan.
+    We were playing on 56K modems, and we were proud of it! Bad pings, dropped packets, and we still managed to win some games.  
+    
+      The website contained a very popular list of hiding places, 
+      ballistics of all weapons and their rank per accuracy/power,
+      but also my keybindings and config for the game.
+    
+      I made the website in **pure HTML** using `<table>` for layout! Yes, I didn't know div existed. 😅
+
+  url: 'http://56kclan.free.fr'
+  created_at: '1999-06-01T00:00:00Z'
+  language: Html
