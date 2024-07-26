@@ -14,7 +14,7 @@ class: blog
 
 <ul>
   {%- for post in site.posts -%}
-  <li data-lang="{{ post.lang }}">
+  <li data-lang="{{ post.lang | default: 'en' }}">
     <time datetime="{{ post.date | date_to_xmlschema }}">
       {{ post.date | date: "%Y-%m-%d" }}
     </time>
