@@ -1,6 +1,6 @@
 ---
 title: "Delightful experience with Anthropic Claude LLM"
-image: /assets/images/posts/2024-07-26-using-claude-api/banner.png
+image: /assets/images/posts/2024-07-27-using-claude-llm/banner.png
 ---
 
 Lately, I wanted to convert my list of books from a text file to `JSON` to give it a better structure. 
@@ -12,7 +12,7 @@ The experience and results were impressive!
 - Claude was learnt to recognize tags, eg. `<book></books>`
 - The workbench handles variables, eg. {% raw %}`{{ BOOKS }}`{% endraw %}
 - You can evaluate your prompt with test cases
-- Flawless, I got exactly the output specified, no hallucination, no weird/wrong JSON
+- Flawless, I got exactly the output specified, no hallucination, no wrong JSON, using `claude-3-5-sonnet-20240620`
 - Exhausted my credit in a few runs, learning that I should not have tried to process all my book list at once
 
 ## Problem: I was not consistent
@@ -29,26 +29,29 @@ My first approach was simple code, parsing regexes and... I quickly failed.
 
 So, why not use a smart LLM to extract structured data from my hazardous-non-strict grammar?
 
-I went to Anthropic Claude, because it got impressive results in some tests I read. 
+I went to [Anthropic Claude](https://console.anthropic.com/workbench), because it got impressive results in some tests I read. 
 The API is not free, but you can start with a free `5$` credit, enough for a start.
 
 ## How it went: The Workbench
 
-The [workbench](https://console.anthropic.com) is a web interface where you can test your prompt, and see the output.
+The [workbench](https://console.anthropic.com) is a web interface where you can test your prompt and see the output.
 
 ### A pitch then a prompt
 
-I started with a simple sentence (basically the idea in my head) and asked Claude to generate a prompt from that "pitch".
+I started with a simple sentence (basically the idea in my head) and asked Claude to generate a prompt from that "pitch."
 
-Prompt: `Extract structured data from this list of books`
+Prompt: `Extract structured data from this list of books in french`
 
-![workbench_prompt_generation.png](/assets/images/posts/2024-07-26-using-claude-api/workbench_prompt_generation.png)
+![workbench_prompt_generation.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_prompt_generation.png)
 
 Claude generated a bigger and hopefully more precise prompt, with an example structure and some instructions for itself.
 
-After some modification to add my own fields (like the rating, date read...), the prompt become this one:
+The temperature was already set to `0`, which makes the model more deterministic and less creative.
+
+After modifying the fields for my own (like rating, date read...), the prompt become this one:
 
 {% raw %}
+
 ```text
 You will be given a list of books in French. Your task is to extract structured information from this list and format it as JSON. Here is the list of books:
 
@@ -78,7 +81,7 @@ Format the extracted information as a JSON array of objects, where each object r
     "rating": 5,
     "comment": "Reader's comment",
     "dateRead": "2023-05-15",
-    "urls": ["http://somewebsite.com/book"]
+    "urls": ["https://somewebsite.com/book"]
   },
   // More books...
 ]
@@ -96,7 +99,7 @@ Here's an example of how to structure a single book entry:
   "rating": 5,
   "comment": "Un classique intemporel, toujours aussi touchant",
   "dateRead": "2023-04-10",
-    "urls": ["http://amazon.com/12345"]
+  "urls": ["https://amazon.com/12345"]
 }
 `` `
 
@@ -112,39 +115,41 @@ If you have sharp eyes, you may have noticed the special {% raw %}`{{ BOOKS_LIST
 
 This is a variable that you can fill in a separate panel in the workbench:
 
-![workbench_variables.png](/assets/images/posts/2024-07-26-using-claude-api/workbench_variables.png)
-
+![workbench_variables.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_variables.png)
 
 ### Evaluation
 
 You can evaluate your prompt directly in the workbench, providing **test cases**:
 
-![workbench_evaluate.png](/assets/images/posts/2024-07-26-using-claude-llm/workbench_evaluate.png)
+![workbench_evaluate.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_evaluate.png)
 
 ### The code
 
 As for Google VertexAI, Claude gives you directly the code to execute in the API:
 
-![workbench_get_code.png](/assets/images/posts/2024-07-26-using-claude-api/workbench_get_code.png)
+![workbench_get_code.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_get_code.png)
 
 ## What failed, lessons learned
 
-**Input can be huge, Output is limited and costly**.
+**Input can be huge, but Output is limited and more expensive**.
 
 I have a big list of books (a few hundreds), and I tried to process them all at once.  
 For that, I copied my full list in the variable, and... only a few books were returned.
 
-Yes, **indeed**, the output is limited to a few thousand tokens, so you **cannot** process a big list at once.
+**Yes, indeed**, the output is limited to a few thousand tokens depending on the model, so you **cannot** process a big list at once.
 
 Solutions:
 - Chunk your list in **multiple smaller lists**
-- Or, process books **one by one**, calling the llm for each, which is actually more simple and can even reduce the prompt size, so the tokens, to the speed and cost
+- Or, change the prompt and process books **one by one**, calling the LLM for each, which is actually more simple and can even reduce the prompt size, so the tokens, so the speed and cost
 
 ## Conclusion
 
-I had a good experience with Anthropic Claude LLM. 👍
+I had a good experience with Anthropic Claude LLM. 👍  
+The newest models are impressive, pretty consistent, and easy to use.  
 
-There are real differences between LLM and their capacity.  
-For instance, I also used [Gemini Flash](https://gemini.google.com) on the same task, and the results were not as good as Claude. Could be my prompt, could be the model...
+But there are real differences between LLM and their capacity.  
+For instance, I also used [Gemini Flash](https://gemini.google.com) on the same task, and the results were not as good as Claude. 
+It failed to output `JSON` and only that (no Markdown wrapper...). Same when I tried to get `JSONL` (one JSON per line).
+Could be my prompt, could be the model...
 
 
