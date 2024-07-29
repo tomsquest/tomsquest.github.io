@@ -203,6 +203,10 @@ footer.footer-container {
 }
 
 .blog {
+  .active {
+    font-weight: bold;
+  }
+
   ul {
     padding-left: 0;
     list-style: none;
