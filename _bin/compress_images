@@ -1,0 +1,50 @@
+#!/bin/bash
+
+API_KEY="${TINIFY_APIKEY}"
+IMAGE_DIR="assets/images"
+
+if [ -z "$API_KEY" ]; then
+    echo "Error: TINIFY_APIKEY environment variable is not set."
+    exit 1
+fi
+
+compress_image() {
+    local image_path=$1
+    local image_name
+    image_name=$(basename "$image_path")
+
+    # Upload image to TinyPNG
+    response=$(curl https://api.tinify.com/shrink --user api:$API_KEY --data-binary @"$image_path" --silent --show-error)
+
+    # Check if the response contains an error
+    if echo "$response" | grep -q "error"; then
+        echo "Error compressing $image_name: $(echo $response | jq -r '.message')"
+        return
+    fi
+
+    # Get the URL of the compressed image
+    compressed_url=$(echo $response | jq -r '.output.url')
+    original_size=$(echo $response | jq -r '.input.size')
+    compressed_size=$(echo $response | jq -r '.output.size')
+    ratio=$(echo $response | jq -r '.output.ratio')
+
+    # test if compressed_url was returned
+    if [ -z "$compressed_url" ]; then
+        echo "Error compressing $image_name"
+        echo "Response:"
+        echo "$response"
+        return
+    fi
+
+    # Replace original with compressed
+    curl -s -o "$image_path" "$compressed_url"
+
+    echo "Compressed $image_name from $original_size to $compressed_size (ratio: $ratio)" | tee -a /tmp/compression.log
+}
+
+
+find "$IMAGE_DIR" -type f -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' | while read image; do
+    echo "Compressing $image"
+    compress_image "$image"
+done
+echo "Done"
