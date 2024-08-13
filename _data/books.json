@@ -2,9 +2,7 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S. A. Corey"],
     "rating": 4,
     "volume": "7/9",
     "comment": "Toujours bien, j'aime suivre l'équipage, et le monde qui évolue dans des directions dingues.",
@@ -14,9 +12,7 @@
   },
   {
     "title": "L'homme qui voulait devenir psychopathe",
-    "authors": [
-      "Laurent Malot"
-    ],
+    "authors": ["Laurent Malot"],
     "rating": 4,
     "comment": "Comment devenir important quand on est sans importance ?",
     "date": "2024-07",
@@ -32,9 +28,7 @@
   },
   {
     "title": "Comment je suis devenu stupide",
-    "authors": [
-      "Martin Page"
-    ],
+    "authors": ["Martin Page"],
     "rating": 3,
     "comment": "Un intello raté se dit qu'il veut etre bete pour etre libre. Pas si faux.",
     "date": "2024-07",
@@ -50,22 +44,18 @@
   },
   {
     "title": "L'os de Lebowsky",
-    "authors": [
-      "Vincent Maillard"
-    ],
+    "authors": ["Vincent Maillard"],
     "rating": 4,
-    "comment": "C'est un policier, c'est gentil, jusqu'à ce qu'en fait on se dit bordel non.\nLa fin est ok !",
+    "comment": "C'est un policier, c'est gentil, jusqu'à ce qu'en fait, on se dit bordel non.\nLa fin est ok !",
     "date": "2024-06",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH352018"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH352018"],
     "fiction": true,
     "titleOrig": "L'os de Lebowsky - Vincent Maillard",
     "textOrig": [
       "L'os de Lebowsky - Vincent Maillard",
       "Lu en juin 2024",
       "4 sur 5",
-      "C'est un policier, c'est gentil, jusqu'à ce qu'en fait on se dit bordel non.",
+      "C'est un policier, c'est gentil, jusqu'à ce qu'en fait, on se dise bordel non!",
       "La fin est ok !",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH352018)"
     ]
@@ -73,9 +63,7 @@
   {
     "title": "The expanse",
     "series": "The Expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S.A. Corey"],
     "rating": 4,
     "volume": "6/9",
     "comment": "Je prends assez de plaisir à lire la suite, l'évolution du monde de The Expanse.\nJe lirai la suite, pas trop rapproché, mais avec plaisir.",
@@ -93,11 +81,9 @@
   },
   {
     "title": "Western Star",
-    "authors": [
-      "Craig Johnson"
-    ],
+    "authors": ["Craig Johnson"],
     "rating": 4,
-    "comment": "J'ai bien aimé. Un poil complexe par moment, car les perso ne sont pas clairs.\nC'est une suite car il y a un \"méchant\" qui revient, et il y aura une suite car sa fille a été enlevée.\nJe lirai bien les autres.",
+    "comment": "J'ai bien aimé. Un poil complexe par moment, car les perso ne sont pas clairs.\nC'est une suite car il y a un \"méchant\" qui revient, et il y aura une suite, car sa fille a été enlevée.\nJe lirais bien les autres.",
     "date": "2024-05",
     "urls": [],
     "fiction": true,
@@ -107,16 +93,14 @@
       "Lu en mai 2024",
       "4 sur 5",
       "J'ai bien aimé. Un poil complexe par moment, car les perso ne sont pas clairs.",
-      "C'est une suite car il y a un \"méchant\" qui revient, et il y aura une suite car sa fille a été enlevée.",
-      "Je lirai bien les autres."
+      "C'est une suite, car il y a un \"méchant\" qui revient, et il y aura une suite, car sa fille a été enlevée.",
+      "Je lirais bien les autres."
     ]
   },
   {
     "title": "La voie des rois",
     "series": "Les archives de Roshar",
-    "authors": [
-      "Brandon Sanderson"
-    ],
+    "authors": ["Brandon Sanderson"],
     "volume": "2/10",
     "comment": "Toujours pas mal. Je le trouve toujours un peu \"doux\". Je préfère quand c'est plus dark.\nIl faut que je lise la suite maintenant... :)",
     "date": "2024-04",
@@ -132,9 +116,7 @@
   },
   {
     "title": "Quality Land",
-    "authors": [
-      "Marc-Uwe Kling"
-    ],
+    "authors": ["Marc-Uwe Kling"],
     "rating": 5,
     "comment": "Vraiment bien, drole, perspicace, et écrit avant GPT ! Conseillé au boulot. Apparemment, satire de notre société.",
     "date": "2024-04",
@@ -156,15 +138,11 @@
   },
   {
     "title": "La tour de babylone",
-    "authors": [
-      "Ted Chiang"
-    ],
+    "authors": ["Ted Chiang"],
     "rating": 4,
     "comment": "Des nouvelles, certaines sont vraiment percutantes.",
     "date": "2024-03",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH332804"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH332804"],
     "fiction": true,
     "titleOrig": "La tour de babylone - Ted Chiang",
     "textOrig": [
@@ -178,16 +156,12 @@
   {
     "title": "La voie des rois",
     "series": "Les archives de Roshar",
-    "authors": [
-      "Brandon Sanderson"
-    ],
+    "authors": ["Brandon Sanderson"],
     "rating": 3,
     "volume": "1/10",
     "comment": "Bien, entrainant. Peut-être un poil pas assez dark pour moi.",
     "date": "2024-03",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH299843"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH299843"],
     "fiction": true,
     "titleOrig": "La voie des rois - Les archives de Roshar - Tome 1/10 - Brandon Sanderson",
     "textOrig": [
@@ -199,11 +173,9 @@
   },
   {
     "title": "Loterie Solaire",
-    "authors": [
-      "Philip K. Dick"
-    ],
+    "authors": ["Philip K. Dick"],
     "rating": 3,
-    "comment": "Plutot pas mal. L'idée de base (la loterie qui décide de tout), mais ca tombe un peu bof à la fin.\nJe m'attendais à mieux, même si je n'ai pas été trop décu.",
+    "comment": "Plutot pas mal. L'idée de base (la loterie qui décide de tout), mais ça tombe un peu bof à la fin.\nJe m'attendais à mieux, même si je n'ai pas été trop décu.",
     "date": "2024-03",
     "urls": [],
     "fiction": true,
@@ -211,42 +183,34 @@
     "textOrig": [
       "Loterie Solaire - Philip K. Dick",
       "Lu en mars 2024",
-      "Plutot pas mal. L'idée de base (la loterie qui décide de tout), mais ca tombe un peu bof à la fin.",
+      "Plutot pas mal. L'idée de base (la loterie qui décide de tout), mais ça tombe un peu moyen à la fin.",
       "Je m'attendais à mieux, même si je n'ai pas été trop décu."
     ]
   },
   {
     "title": "Pays rouge",
-    "authors": [
-      "Joe Abercrombie"
-    ],
+    "authors": ["Joe Abercrombie"],
     "rating": 4,
-    "comment": "Ca se lit bien, les personnages sont bien. Pas 5/5 car j'aurai aimé plus de je ne sais pas quoi.",
+    "comment": "Ça se lit bien, les personnages sont bien. Pas 5/5, car j'aurais aimé plus de quelque chose.",
     "date": "2024-03",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH266870"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH266870"],
     "fiction": true,
     "titleOrig": "Pays rouge - Joe Abercrombie",
     "textOrig": [
       "Pays rouge - Joe Abercrombie",
       "Lu en mars 2024",
       "4 sur 5",
-      "Ca se lit bien, les personnages sont bien. Pas 5/5 car j'aurai aimé plus de je ne sais pas quoi.",
+      "Ça se lit bien, les personnages sont bien. Pas 5/5, car j'aurais aimé plus de, je ne sais pas quoi.",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH266870)"
     ]
   },
   {
     "title": "Le club des policiers yiddish",
-    "authors": [
-      "Michael Chabon"
-    ],
+    "authors": ["Michael Chabon"],
     "rating": 2,
     "comment": "Je n'ai pas accroché à toutes les références juives, c'est confus.\nL'intrigue n'est pas dingue en plus. Je pensais que c'était drole, mais ça ne l'est pas (je ne me souviens même pas avoir souri).\nJe l'ai fini pour dire de le finir, mais rien de plus :/",
     "date": "2024-02",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH204140"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH204140"],
     "fiction": true,
     "titleOrig": "Le club des policiers yiddish - Michael Chabon",
     "textOrig": [
@@ -261,9 +225,7 @@
   },
   {
     "title": "Au Guet",
-    "authors": [
-      "Terry Pratchett"
-    ],
+    "authors": ["Terry Pratchett"],
     "rating": 4,
     "comment": "C'est bon, c'est Terry. J'ai souri/rigolé. C'est bien écrit, c'est bien pensé.",
     "date": "2024-02",
@@ -279,31 +241,25 @@
   },
   {
     "title": "L'enterrement de Serge",
-    "authors": [
-      "Stéphane Carlier"
-    ],
+    "authors": ["Stéphane Carlier"],
     "rating": 4,
-    "comment": "Ca m'a fait penser à la mort. Est-ce que les gens seront là ? Non :/",
+    "comment": "Ça m'a fait penser à la mort. Est-ce que les gens seront là ? Non :/",
     "date": "2024-02",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH341309"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH341309"],
     "fiction": true,
     "titleOrig": "L'enterrement de Serge - Stéphane Carlier",
     "textOrig": [
       "L'enterrement de Serge - Stéphane Carlier",
       "Lu en février 2024",
       "4 sur 5",
-      "Ca m'a fait penser à la mort. Est-ce que les gens seront là ? Non :/",
+      "Ça m'a fait penser à la mort. Est-ce que les gens seront là ? Non :/",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH341309)"
     ]
   },
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S.A. Corey"],
     "volume": "5/9",
     "comment": "Sympa, même si un peu longuet par moment.",
     "date": "2024-01",
@@ -319,44 +275,32 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S.A. Corey"],
     "volume": "4/9",
     "comment": "Lu en décembre 2023",
     "date": "2023-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "The expanse - Tome 4/9 - James S.A. Corey",
-    "textOrig": [
-      "The expanse - Tome 4/9 - James S.A. Corey",
-      "Lu en décembre 2023"
-    ]
+    "textOrig": ["The expanse - Tome 4/9 - James S.A. Corey", "Lu en décembre 2023"]
   },
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S.A. Corey"],
     "volume": "3/9",
     "comment": "Lu en novembre 2023",
     "date": "2023-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "The expanse - Tome 3/9 - James S.A. Corey",
-    "textOrig": [
-      "The expanse - Tome 3/9 - James S.A. Corey",
-      "Lu en novembre 2023"
-    ]
+    "textOrig": ["The expanse - Tome 3/9 - James S.A. Corey", "Lu en novembre 2023"]
   },
   {
     "title": "Tout le monde n'a pas eu la chance de rater ses études",
-    "authors": [
-      "Olivier Roland"
-    ],
+    "authors": ["Olivier Roland"],
     "rating": 3,
-    "comment": "Je l'ai lu, car en l'ouvrant au pif j'ai lu : \"arrete de lire, fait !\" avec une pile de livre dans les mains :/",
+    "comment": "Je l'ai lu, car en l'ouvrant au pif, j'ai lu : \"arrete de lire, fait !\" avec une pile de livre dans les mains :/",
     "date": "2023-10",
     "urls": [],
     "fiction": false,
@@ -365,36 +309,27 @@
       "Tout le monde n'a pas eu la chance de rater ses études - Olivier Roland",
       "Lu en octobre 2023",
       "3 sur 5",
-      "Je l'ai lu, car en l'ouvrant au pif j'ai lu : \"arrete de lire, fait !\" avec une pile de livre dans les mains :/"
+      "Je l'ai lu, car en l'ouvrant au pif, j'ai lu : \"arrete de lire, fait !\" avec une pile de livre dans les mains :/"
     ]
   },
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S.A. Corey"],
     "volume": "2/9",
     "comment": "Lu en octobre 2023",
     "date": "2023-10",
     "urls": [],
     "fiction": true,
     "titleOrig": "The expanse - Tome 2/9 - James S.A. Corey",
-    "textOrig": [
-      "The expanse - Tome 2/9 - James S.A. Corey",
-      "Lu en octobre 2023"
-    ]
+    "textOrig": ["The expanse - Tome 2/9 - James S.A. Corey", "Lu en octobre 2023"]
   },
   {
     "title": "La philo expliquée aux enfants",
-    "authors": [
-      "Tahar Ben Jelloun"
-    ],
+    "authors": ["Tahar Ben Jelloun"],
     "comment": "Pas fini, pas très profond, pas trop envie de le lire en fait.",
     "date": "2023-10",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH336188"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH336188"],
     "fiction": false,
     "titleOrig": "La philo expliquée aux enfants - Tahar Ben Jelloun",
     "textOrig": [
@@ -406,43 +341,28 @@
   },
   {
     "title": "L'antiguide de la bière",
-    "authors": [
-      "Fabrizio Bucella"
-    ],
+    "authors": ["Fabrizio Bucella"],
     "rating": 4,
     "comment": "Bien, intéressant.",
     "date": "2023-10",
     "urls": [],
     "fiction": false,
     "titleOrig": "L'antiguide de la bière - Fabrizio Bucella",
-    "textOrig": [
-      "L'antiguide de la bière - Fabrizio Bucella",
-      "Lu en octobre 2023",
-      "4 sur 5",
-      "Bien, intéressant."
-    ]
+    "textOrig": ["L'antiguide de la bière - Fabrizio Bucella", "Lu en octobre 2023", "4 sur 5", "Bien, intéressant."]
   },
   {
     "title": "La fin du monde a du retard",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 4,
     "date": "2023-09",
     "urls": [],
     "fiction": true,
     "titleOrig": "La fin du monde a du retard - J.M. Erre",
-    "textOrig": [
-      "La fin du monde a du retard - J.M. Erre",
-      "Lu en septembre 2023",
-      "4 sur 5"
-    ]
+    "textOrig": ["La fin du monde a du retard - J.M. Erre", "Lu en septembre 2023", "4 sur 5"]
   },
   {
     "title": "Norilsk",
-    "authors": [
-      "Caryl Férey"
-    ],
+    "authors": ["Caryl Férey"],
     "rating": 4,
     "comment": "Court, un reportage en Sibérie, sur les mines de nickel, les conditions de vie, les gens.\nSympa.",
     "date": "2023-09",
@@ -460,9 +380,7 @@
   {
     "title": "Le Livre des martyrs",
     "series": "Le Livre des martyrs",
-    "authors": [
-      "Steven Erikson"
-    ],
+    "authors": ["Steven Erikson"],
     "rating": 4,
     "volume": "3/8",
     "comment": "Dans le T3, je me suis bien amusé. Il faut \"découvrir\" l'humour.\n1100 pages, je met \"des mois\" pour en lire un !",
@@ -475,15 +393,13 @@
       "Lu en septembre 2023",
       "4 sur 5",
       "Dans le T3, je me suis bien amusé. Il faut \"découvrir\" l'humour.",
-      "1100 pages, je met \"des mois\" pour en lire un !"
+      "1100 pages, je mets \"des mois\" pour en lire un !"
     ]
   },
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": [
-      "James S.A. Corey"
-    ],
+    "authors": ["James S.A. Corey"],
     "rating": 4,
     "volume": "1/9",
     "comment": "C'est vraiment bien !",
@@ -500,14 +416,10 @@
   },
   {
     "title": "La justice expliquée à ma petite-fille",
-    "authors": [
-      "Gilles Perrault"
-    ],
+    "authors": ["Gilles Perrault"],
     "comment": "Bien, un avis sur la justice. Pas pour les enfants, pas assez simple.",
     "date": "2023-09",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH304019"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH304019"],
     "fiction": false,
     "titleOrig": "La justice expliquée à ma petite-fille - Gilles Perrault",
     "textOrig": [
@@ -520,57 +432,38 @@
   {
     "title": "Capitale du Sud",
     "series": "Capitale du Sud",
-    "authors": [
-      "Guillaume Chamanadjian"
-    ],
+    "authors": ["Guillaume Chamanadjian"],
     "volume": "3/3",
     "comment": "Lu en aout 2023",
     "date": "2023-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "Capitale du Sud - Tome 3/3 - Guillaume Chamanadjian",
-    "textOrig": [
-      "Capitale du Sud - Tome 3/3 - Guillaume Chamanadjian",
-      "Lu en aout 2023"
-    ]
+    "textOrig": ["Capitale du Sud - Tome 3/3 - Guillaume Chamanadjian", "Lu en aout 2023"]
   },
   {
     "title": "Qui a tué l'homme-homard",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 4,
     "date": "2023-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "Qui a tué l'homme-homard - J.M. Erre",
-    "textOrig": [
-      "Qui a tué l'homme-homard - J.M. Erre",
-      "Lu en aout 2023",
-      "4 sur 5"
-    ]
+    "textOrig": ["Qui a tué l'homme-homard - J.M. Erre", "Lu en aout 2023", "4 sur 5"]
   },
   {
     "title": "Prenez soin du chien",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 4,
     "date": "2023-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "Prenez soin du chien - J.M. Erre",
-    "textOrig": [
-      "Prenez soin du chien - J.M. Erre",
-      "Lu en aout 2023",
-      "4 sur 5"
-    ]
+    "textOrig": ["Prenez soin du chien - J.M. Erre", "Lu en aout 2023", "4 sur 5"]
   },
   {
     "title": "L'homme qui savait la langue des serpents",
-    "authors": [
-      "Andrus Kivirahk"
-    ],
+    "authors": ["Andrus Kivirahk"],
     "rating": 3,
     "comment": "Une sorte de comte, mais original. J'ai bien aimé, même si, assez chelou.",
     "date": "2023-08",
@@ -587,9 +480,7 @@
   {
     "title": "Harrow la neuvième",
     "series": "Harrow la neuvième",
-    "authors": [
-      "Tamsyn Muir"
-    ],
+    "authors": ["Tamsyn Muir"],
     "rating": 3,
     "volume": "2/3",
     "comment": "Je n'ai pas tout compris dans ce tome, avec des sortes de retours en arrière. Déçu.",
@@ -606,19 +497,15 @@
   },
   {
     "title": "Magellan",
-    "authors": [
-      "Stefan Zweig"
-    ],
+    "authors": ["Stefan Zweig"],
     "comment": "Bien, impressionnant, j'ai appris des trucs : le gagnant écrit l'histoire, et ne pas mourir comme un con.",
     "date": "2023-08",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH355445"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH355445"],
     "fiction": true,
     "titleOrig": "Magellan - Stefan Zweig",
     "textOrig": [
       "Magellan - Stefan Zweig",
-      "Lu en Aout 2023",
+      "Lu en aout 2023",
       "Bien, impressionnant, j'ai appris des trucs : le gagnant écrit l'histoire, et ne pas mourir comme un con.",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH355445)"
     ]
@@ -626,9 +513,7 @@
   {
     "title": "Le Livre des martyrs",
     "series": "Le Livre des martyrs",
-    "authors": [
-      "Steven Erikson"
-    ],
+    "authors": ["Steven Erikson"],
     "rating": 4,
     "volume": "2/8",
     "comment": "C'est long, assez dur à lire, mais la récompense est là.",
@@ -638,94 +523,68 @@
     "titleOrig": "Le Livre des martyrs - Tome 2/8 - Steven Erikson",
     "textOrig": [
       "Le Livre des martyrs - Tome 2/8 - Steven Erikson",
-      "Lu en Aout 2023",
+      "Lu en aout 2023",
       "4 sur 5",
       "C'est long, assez dur à lire, mais la récompense est là."
     ]
   },
   {
     "title": "Le grand n'importe quoi",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 4,
     "date": "2023-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "Le grand n'importe quoi - J.M. Erre",
-    "textOrig": [
-      "Le grand n'importe quoi - J.M. Erre",
-      "Lu en juillet 2023",
-      "4 sur 5"
-    ]
+    "textOrig": ["Le grand n'importe quoi - J.M. Erre", "Lu en juillet 2023", "4 sur 5"]
   },
   {
     "title": "Série Z",
     "series": "Série Z",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 4,
     "date": "2023-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "Série Z - J.M. Erre",
-    "textOrig": [
-      "Série Z - J.M. Erre",
-      "Lu en juillet 2023",
-      "4 sur 5"
-    ]
+    "textOrig": ["Série Z - J.M. Erre", "Lu en juillet 2023", "4 sur 5"]
   },
   {
     "title": "Le bonheur est au fond du couloir à gauche",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 4,
     "date": "2023-06",
     "urls": [],
     "fiction": true,
     "titleOrig": "Le bonheur est au fond du couloir à gauche - J.M. Erre",
-    "textOrig": [
-      "Le bonheur est au fond du couloir à gauche - J.M. Erre",
-      "Lu en juin 2023",
-      "4 sur 5"
-    ]
+    "textOrig": ["Le bonheur est au fond du couloir à gauche - J.M. Erre", "Lu en juin 2023", "4 sur 5"]
   },
   {
     "title": "Gideon la neuvième",
-    "authors": [
-      "Tamsyn Muir"
-    ],
+    "authors": ["Tamsyn Muir"],
     "rating": 4,
     "volume": "1/3",
-    "comment": "Vraiment sympa ! L'univers, le coté un peu perdu. Original !",
+    "comment": "Vraiment sympa ! L'univers, le côté un peu perdu. Original !",
     "date": "2023-05",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH349297"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH349297"],
     "fiction": true,
     "titleOrig": "Gideon la neuvième - Tome 1/3 - Tamsyn Muir",
     "textOrig": [
       "Gideon la neuvième - Tome 1/3 - Tamsyn Muir",
       "4 sur 5",
       "Lu en mai 2023",
-      "Vraiment sympa ! L'univers, le coté un peu perdu. Original !",
+      "Vraiment sympa ! L'univers, le côté un peu perdu. Original !",
       "Recommandation Bifrost",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH349297)"
     ]
   },
   {
     "title": "Le Mystère Sherlock",
-    "authors": [
-      "J.M. Erre"
-    ],
+    "authors": ["J.M. Erre"],
     "rating": 5,
     "comment": "C'est drôle, c'est bien écrit. J'ai beaucoup aimé lire quelques pages par-ci par-là. Ça fait du bien !",
     "date": "2023-03",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH244635"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH244635"],
     "fiction": true,
     "titleOrig": "Le Mystère Sherlock - J.M. Erre",
     "textOrig": [
@@ -739,16 +598,12 @@
   {
     "title": "Le Livre des martyrs",
     "series": "Le Livre des martyrs",
-    "authors": [
-      "Steven Erikson"
-    ],
+    "authors": ["Steven Erikson"],
     "rating": 4,
     "volume": "1/8",
-    "comment": "Gros pavé de fantaisie. Annoncé comme très complexe, et c'est plutôt vrai.\nJ'ai réussi à suivre les nombreux personnages grace à l'index de fin en plusieurs pages.",
+    "comment": "Gros pavé de fantaisie. Annoncé comme très complexe, et c'est plutôt vrai.\nJ'ai réussi à suivre les nombreux personnages grâce à l'index de fin en plusieurs pages.",
     "date": "2023-03",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH308251"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH308251"],
     "fiction": true,
     "titleOrig": "Le Livre des martyrs - Tome 1/8 - Steven Erikson",
     "textOrig": [
@@ -756,32 +611,25 @@
       "4 sur 5",
       "Lu en mars 2023",
       "Gros pavé de fantaisie. Annoncé comme très complexe, et c'est plutôt vrai.",
-      "J'ai réussi à suivre les nombreux personnages grace à l'index de fin en plusieurs pages.",
+      "J'ai réussi à suivre les nombreux personnages grâce à l'index de fin en plusieurs pages.",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH308251)"
     ]
   },
   {
     "title": "Capitale du Sud",
     "series": "Capitale du Sud",
-    "authors": [
-      "Guillaume Chamanadjian"
-    ],
+    "authors": ["Guillaume Chamanadjian"],
     "volume": "2/3",
     "comment": "Lu en mars 2023",
     "date": "2023-03",
     "urls": [],
     "fiction": true,
     "titleOrig": "Capitale du Sud - Tome 2/3 - Guillaume Chamanadjian",
-    "textOrig": [
-      "Capitale du Sud - Tome 2/3 - Guillaume Chamanadjian",
-      "Lu en mars 2023"
-    ]
+    "textOrig": ["Capitale du Sud - Tome 2/3 - Guillaume Chamanadjian", "Lu en mars 2023"]
   },
   {
     "title": "Tortilla Flat",
-    "authors": [
-      "Steinbeck"
-    ],
+    "authors": ["Steinbeck"],
     "rating": 4,
     "comment": "L'histoire de désoeuvrés, qui ne cherche rien, que du vin! Marrant, bien écrit.",
     "date": "2023-03",
@@ -798,9 +646,7 @@
   },
   {
     "title": "Le dixième vaisseau",
-    "authors": [
-      "Pierre Bordage"
-    ],
+    "authors": ["Pierre Bordage"],
     "rating": 2,
     "comment": "Je ne m'en souviens plus, mais les commentaires disent \"ado\", et je crois bien que c'est pour ça que je l'ai arrêté.",
     "date": "2023-03",
@@ -817,16 +663,12 @@
   {
     "title": "Journal d'un AssaSynth",
     "series": "Journal d'un AssaSynth",
-    "authors": [
-      "Martha Wells"
-    ],
+    "authors": ["Martha Wells"],
     "rating": 4,
     "volume": "2",
     "comment": "Lu en février 2023",
     "date": "2023-02",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH350961"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH350961"],
     "fiction": true,
     "titleOrig": "Journal d'un AssaSynth - Tome 2 - Martha Wells",
     "textOrig": [
@@ -838,15 +680,11 @@
   },
   {
     "title": "Récits du Vieux Royaume",
-    "authors": [
-      "Jaworski"
-    ],
+    "authors": ["Jaworski"],
     "rating": 4,
     "comment": "Super, des nouvelles vraiment sympa.",
     "date": "2023-02",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH358769"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH358769"],
     "fiction": true,
     "titleOrig": "Récits du Vieux Royaume - Jaworski",
     "textOrig": [
@@ -859,9 +697,7 @@
   },
   {
     "title": "Désolation",
-    "authors": [
-      "Jaworski"
-    ],
+    "authors": ["Jaworski"],
     "rating": 5,
     "comment": "Court, graphique, et vraiment super. Cette fin!",
     "date": "2023-02",
@@ -877,16 +713,12 @@
   },
   {
     "title": "Capitale du Sud",
-    "authors": [
-      "Guillaume Chamanadjian"
-    ],
+    "authors": ["Guillaume Chamanadjian"],
     "rating": 4,
     "volume": "1/3",
-    "comment": "Bien, bel histoire, se lit bien.",
+    "comment": "Bien, belle histoire, se lit bien.",
     "date": "2023-02",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH337453"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH337453"],
     "fiction": true,
     "titleOrig": "Capitale du Sud - Tome 1/3 - Guillaume Chamanadjian",
     "textOrig": [
@@ -894,21 +726,17 @@
       "Lu en février 2023",
       "4 sur 5",
       "Recommandation Bifrost",
-      "Bien, bel histoire, se lit bien.",
+      "Bien, belle histoire, se lit bien.",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH337453)"
     ]
   },
   {
     "title": "Petit éloge du temps comme il va",
-    "authors": [
-      "Denis Grozdanovitch"
-    ],
+    "authors": ["Denis Grozdanovitch"],
     "rating": 3,
     "comment": "Un peu de philosophie, de la poésie, de la réflexion sur le temps qui passe.\nJe ne l'ai pas fini (100 pages sur 120), je n'ai pas vraiment accroché.",
     "date": "2023-01",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH271982"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH271982"],
     "fiction": false,
     "titleOrig": "Petit éloge du temps comme il va - Denis Grozdanovitch",
     "textOrig": [
@@ -922,36 +750,28 @@
   },
   {
     "title": "Le serpent majuscule",
-    "authors": [
-      "Pierre Lemaitre"
-    ],
+    "authors": ["Pierre Lemaitre"],
     "rating": 4,
-    "comment": "Du Polar. L'auteur dit qu'il a la réputation de maltraité ses personnages, et bien c'est vrai. Je m'attache, et bim, ils meurent !",
+    "comment": "Du Polar. L'auteur dit qu'il a la réputation de maltraité ses personnages, et bien, c'est vrai. Je m'attache, et bim, ils meurent !",
     "date": "2023-01",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH337485"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH337485"],
     "fiction": true,
     "titleOrig": "Le serpent majuscule - Pierre Lemaitre",
     "textOrig": [
       "Le serpent majuscule - Pierre Lemaitre",
       "4 sur 5",
       "Lu en janvier 2023",
-      "Du Polar. L'auteur dit qu'il a la réputation de maltraité ses personnages, et bien c'est vrai. Je m'attache, et bim, ils meurent !",
+      "Du Polar. L'auteur dit qu'il a la réputation de maltraité ses personnages, et bien, c'est vrai. Je m'attache, et bim, ils meurent !",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH337485)"
     ]
   },
   {
     "title": "Et Merde - comment l'histoire montre que l'erreur est humaine",
-    "authors": [
-      "Tom Phillips"
-    ],
+    "authors": ["Tom Phillips"],
     "rating": 4,
     "comment": "Pas mal d'anecdote, sympa à lire.",
     "date": "2023-01",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH316737"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH316737"],
     "fiction": false,
     "titleOrig": "Et Merde - comment l'histoire montre que l'erreur est humaine - Tom Phillips",
     "textOrig": [
@@ -964,15 +784,11 @@
   },
   {
     "title": "Les sept morts d'Evelyn Hardcastle",
-    "authors": [
-      "Stuart Turton"
-    ],
+    "authors": ["Stuart Turton"],
     "rating": 5,
     "comment": "Un jour sans fin mixé avec une enquête policière.\nJ'ai bien aimé le fait de trouver les croisements entre les persos.\nBonne fin aussi, quelques surprises.",
     "date": "2022-12",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH319287"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH319287"],
     "fiction": true,
     "titleOrig": "Les sept morts d'Evelyn Hardcastle - Stuart Turton",
     "textOrig": [
@@ -987,15 +803,11 @@
   },
   {
     "title": "Le monde inverti",
-    "authors": [
-      "Christopher Priest"
-    ],
+    "authors": ["Christopher Priest"],
     "rating": 3,
     "comment": "L'histoire d'une ville qui roule, mais qui en fait est sur la Terre.\nHistoire de confrontation de point de vue. La découverte est intéressante, mais ce n'est pas vraiment bouleversant.",
     "date": "2022-12",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH114493"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH114493"],
     "fiction": true,
     "titleOrig": "Le monde inverti - Christopher Priest",
     "textOrig": [
@@ -1009,9 +821,7 @@
   },
   {
     "title": "L'étrange traversée du Saardam",
-    "authors": [
-      "Stuart Turton"
-    ],
+    "authors": ["Stuart Turton"],
     "rating": 4,
     "comment": "Lu en novembre 2022",
     "date": "2022-11",
@@ -1031,11 +841,9 @@
   },
   {
     "title": "Nomadland",
-    "authors": [
-      "Jessica Bruder"
-    ],
+    "authors": ["Jessica Bruder"],
     "rating": 4,
-    "comment": "Histoire de nomades dans leur Van, qui aspirent à une vie plus simple, mais surtout à qui l'argent manque.\nDes retraités obligés de travailler (chez Amazon entre autres) pour pas grand chose pour pouvoir vivre.",
+    "comment": "Histoire de nomades dans leur Van, qui aspirent à une vie plus simple, mais surtout à qui l'argent manque.\nDes retraités obligés de travailler (chez Amazon entre autres) pour pas grand-chose pour pouvoir vivre.",
     "date": "2022-10",
     "urls": [],
     "fiction": false,
@@ -1045,20 +853,16 @@
       "4 sur 5",
       "Lu en octobre 2022",
       "Histoire de nomades dans leur Van, qui aspirent à une vie plus simple, mais surtout à qui l'argent manque.",
-      "Des retraités obligés de travailler (chez Amazon entre autres) pour pas grand chose pour pouvoir vivre."
+      "Des retraités obligés de travailler (chez Amazon entre autres) pour pas grand-chose pour pouvoir vivre."
     ]
   },
   {
     "title": "Au revoir là-haut",
-    "authors": [
-      "Pierre Lemaitre"
-    ],
+    "authors": ["Pierre Lemaitre"],
     "rating": 4,
     "comment": "Une belle histoire d'une arnaque par deux gars perchés. Sympa, coloré, bien écrit.",
     "date": "2022-10",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH313253"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH313253"],
     "fiction": true,
     "titleOrig": "Au revoir là-haut - Pierre Lemaitre",
     "textOrig": [
@@ -1071,9 +875,7 @@
   },
   {
     "title": "Les héros",
-    "authors": [
-      "Joe Abercrombie"
-    ],
+    "authors": ["Joe Abercrombie"],
     "rating": 4,
     "comment": "Purée, c'est vraiment bien : ambiance, persos fouillés, histoire !",
     "date": "2022-10",
@@ -1090,9 +892,7 @@
   {
     "title": "La 25ème heure",
     "series": "Les Enquêtes de la 25e Heure",
-    "authors": [
-      "Feldrik Rivat"
-    ],
+    "authors": ["Feldrik Rivat"],
     "rating": 5,
     "volume": "1/3",
     "comment": "Super histoire en 188x, du mystère, un poil de steampunk, perso super, style genial.\nJe vais lire la 2ème partie !",
@@ -1110,11 +910,9 @@
   },
   {
     "title": "Projet dernière chance",
-    "authors": [
-      "Andy Weir"
-    ],
+    "authors": ["Andy Weir"],
     "rating": 4,
-    "comment": "Sauver la terre dont le soleil va être manger. Yes, belle aventure. La fin est bien aussi, bonnes péripéties !",
+    "comment": "Sauver la terre dont le soleil va être mangé. Yes, belle aventure. La fin est bien aussi, bonnes péripéties !",
     "date": "2022-09",
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH345155",
@@ -1126,16 +924,14 @@
       "Projet dernière chance - Andy Weir",
       "4 sur 5",
       "Lu en septembre 2022",
-      "Sauver la terre dont le soleil va être manger. Yes, belle aventure. La fin est bien aussi, bonnes péripéties !",
+      "Sauver la terre dont le soleil va être mangé. Yes, belle aventure. La fin est bien aussi, bonnes péripéties !",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH345155)",
       "[Amazon](https://www.amazon.fr/Projet-Derni%C3%A8re-Chance-Andy-Weir/dp/B097X1NLHX)"
     ]
   },
   {
     "title": "La leçon du brin d'herbe",
-    "authors": [
-      "Olivier Bleys"
-    ],
+    "authors": ["Olivier Bleys"],
     "rating": 3,
     "comment": "Court texte sur des rencontres, la nature, des ballades",
     "date": "2022-09",
@@ -1151,9 +947,7 @@
   },
   {
     "title": "Mon année made in france",
-    "authors": [
-      "Benjamin Carle"
-    ],
+    "authors": ["Benjamin Carle"],
     "rating": 4,
     "comment": "Intéressant. De bonnes réflexions sur le monde qui tourne.",
     "date": "2022-08",
@@ -1170,9 +964,7 @@
   },
   {
     "title": "Cobrastart",
-    "authors": [
-      "Thomas Bois"
-    ],
+    "authors": ["Thomas Bois"],
     "rating": 4,
     "comment": "Science Fiction Punk. C'est du Tarantino SF. J'ai beaucoup aimé !",
     "date": "2022-08",
@@ -1188,15 +980,11 @@
   },
   {
     "title": "Où s'imposent les silences",
-    "authors": [
-      "Emmanuel Quentin"
-    ],
+    "authors": ["Emmanuel Quentin"],
     "rating": 5,
     "comment": "J'ai pris une claque avec la fin et les révélations.\nUne histoire de monde multiple, de poursuites. Super ! (peut-être 4 au lieu d'un 5 sur 5?)",
     "date": "2022-08",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH315144"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH315144"],
     "fiction": true,
     "titleOrig": "Où s'imposent les silences - Emmanuel Quentin",
     "textOrig": [
@@ -1210,9 +998,7 @@
   },
   {
     "title": "La diagonale du vide",
-    "authors": [
-      "Mathieu Mouillet"
-    ],
+    "authors": ["Mathieu Mouillet"],
     "rating": 4,
     "comment": "Des rencontres pendant ce voyage. Vivant, humain. Bien !",
     "date": "2022-08",
@@ -1229,16 +1015,12 @@
   {
     "title": "Journal d'un AssaSynth",
     "series": "Journal d'un AssaSynth",
-    "authors": [
-      "Martha Wells"
-    ],
+    "authors": ["Martha Wells"],
     "rating": 4,
     "volume": "1",
     "comment": "Vraiment pas mal. Se lit vite, intéressant !",
     "date": "2022-07",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH345599"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH345599"],
     "fiction": true,
     "titleOrig": "Journal d'un AssaSynth - Tome 1 - Martha Wells",
     "textOrig": [
@@ -1251,9 +1033,7 @@
   },
   {
     "title": "Tordez le cou aux idées reçues",
-    "authors": [
-      "François Lenglet"
-    ],
+    "authors": ["François Lenglet"],
     "rating": 4,
     "comment": "Un chapitre pour démystifier un sujet (inflation, immigration...)",
     "date": "2022-07",
@@ -1269,11 +1049,9 @@
   },
   {
     "title": "Les mathématiques des Simpson",
-    "authors": [
-      "Simon Singh"
-    ],
+    "authors": ["Simon Singh"],
     "rating": 3,
-    "comment": "Les maths sorties des Simpsons. J'ai appris qq petits trucs, mais pas assez poussé.",
+    "comment": "Les maths sorties des Simpsons. J'ai appris quelques petits trucs, mais pas assez poussé.",
     "date": "2022-07",
     "urls": [],
     "fiction": false,
@@ -1282,14 +1060,12 @@
       "Les mathématiques des Simpson - Simon Singh",
       "3 sur 5",
       "Lu en juillet 2022",
-      "Les maths sorties des Simpsons. J'ai appris qq petits trucs, mais pas assez poussé."
+      "Les maths sorties des Simpsons. J'ai appris quelques petits trucs, mais pas assez poussé."
     ]
   },
   {
     "title": "Machine Learning avec Scikit-Learn",
-    "authors": [
-      "Aurélien Géron"
-    ],
+    "authors": ["Aurélien Géron"],
     "rating": 5,
     "comment": "Ohlala bien expliqué, les notebooks aident/complétent. Super ! (mais beaucoup à apprendre)",
     "date": "2022-07",
@@ -1305,11 +1081,9 @@
   },
   {
     "title": "Toujours plus à l'est",
-    "authors": [
-      "Benjamin Pelletier"
-    ],
+    "authors": ["Benjamin Pelletier"],
     "rating": 3,
-    "comment": "L'histoire d'un francais qui va en Corée. Qq anecdotes, mais j'aurai aimé plus croustillant.",
+    "comment": "L'histoire d'un francais qui va en Corée. Quelques anecdotes, mais j'aurais aimé plus croustillant.",
     "date": "2022-07",
     "urls": [],
     "fiction": true,
@@ -1318,20 +1092,16 @@
       "Toujours plus à l'est - Benjamin Pelletier",
       "3 sur 5",
       "Lu en juillet 2022",
-      "L'histoire d'un francais qui va en Corée. Qq anecdotes, mais j'aurai aimé plus croustillant."
+      "L'histoire d'un francais qui va en Corée. Quelques anecdotes, mais j'aurais aimé plus croustillant."
     ]
   },
   {
     "title": "Envoyé un peu spécial",
-    "authors": [
-      "Julien Blanc-Gras"
-    ],
+    "authors": ["Julien Blanc-Gras"],
     "rating": 4,
     "comment": "Des anecdotes d'un journaliste qui voyage. Croustillant, intéressant, ironique : bien !",
     "date": "2022-06",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH339569"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH339569"],
     "fiction": false,
     "titleOrig": "Envoyé un peu spécial - Julien Blanc-Gras",
     "textOrig": [
@@ -1344,15 +1114,11 @@
   },
   {
     "title": "Le fantome de la tour Eiffel",
-    "authors": [
-      "Olivier Bleys"
-    ],
+    "authors": ["Olivier Bleys"],
     "rating": 4,
     "comment": "Des aventures à l'époque de la Tour Eiffel. Bien documenté, dépaysant. Sympa !",
     "date": "2022-06",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH117685"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH117685"],
     "fiction": true,
     "titleOrig": "Le fantome de la tour Eiffel - Olivier Bleys",
     "textOrig": [
@@ -1365,9 +1131,7 @@
   },
   {
     "title": "Comment échapper à l'ennui du dimanche après-midi",
-    "authors": [
-      "Gilles Vervisch"
-    ],
+    "authors": ["Gilles Vervisch"],
     "rating": 3,
     "comment": "Sur l'ennui, les activités. Pas un grand souvenir depuis.",
     "date": "2022-06",
@@ -1383,9 +1147,7 @@
   },
   {
     "title": "3 minutes de philosophie pour redevenir humain",
-    "authors": [
-      "Fabrice Midal"
-    ],
+    "authors": ["Fabrice Midal"],
     "rating": 3,
     "comment": "Pas de souvenir !",
     "date": "2022-06",
@@ -1401,15 +1163,11 @@
   },
   {
     "title": "Georama - Le tour du monde en 80 questions",
-    "authors": [
-      "Julien Blanc-Gras"
-    ],
+    "authors": ["Julien Blanc-Gras"],
     "rating": 3,
     "comment": "Lu en juin 2022\n1 page sur un chiffre par pays (pays qui boit le plus de bière, pays le plus ouvert...)",
     "date": "2022-06",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH270723"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH270723"],
     "fiction": false,
     "titleOrig": "Georama - Le tour du monde en 80 questions - Julien Blanc-Gras",
     "textOrig": [
@@ -1422,15 +1180,11 @@
   },
   {
     "title": "Comme à la guerre",
-    "authors": [
-      "Julien Blanc-Gras"
-    ],
+    "authors": ["Julien Blanc-Gras"],
     "rating": 3,
     "comment": "Des souvenirs suite aux carnets retrouvés des grand-pères qui ont fait la guerre.",
     "date": "2022-06",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH315629"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH315629"],
     "fiction": false,
     "titleOrig": "Comme à la guerre - Julien Blanc-Gras",
     "textOrig": [
@@ -1443,9 +1197,7 @@
   },
   {
     "title": "Introduction au Machine Learning",
-    "authors": [
-      "Chloé-Agathe Azencott"
-    ],
+    "authors": ["Chloé-Agathe Azencott"],
     "rating": 2,
     "comment": "Pas une introduction, ou bien à la rigueur une intro mathématique.",
     "date": "2022-05",
@@ -1461,9 +1213,7 @@
   },
   {
     "title": "Histoire de pédaler",
-    "authors": [
-      "Bruno Sananès"
-    ],
+    "authors": ["Bruno Sananès"],
     "rating": 4,
     "comment": "Le voyage, tour de France, avec un triporteur. Sympa.",
     "date": "2022-05",
@@ -1479,10 +1229,7 @@
   },
   {
     "title": "La maison magique - Earthship, l'habitat autonome",
-    "authors": [
-      "Benjamin Adler",
-      "Pauline Massart"
-    ],
+    "authors": ["Benjamin Adler", "Pauline Massart"],
     "rating": 3,
     "comment": "Une belle aventure, honnête dans les problèmes rencontrés !",
     "date": "2022-05",
@@ -1499,12 +1246,10 @@
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
     "series": "La cinquième saison : les livres de la terre fracturée",
-    "authors": [
-      "N.K. Jemisin"
-    ],
+    "authors": ["N.K. Jemisin"],
     "rating": 4,
     "volume": "3/3",
-    "comment": "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ca se tient et c'était pas mal.",
+    "comment": "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ça se tient et c'était pas mal.",
     "date": "2022-04",
     "urls": [],
     "fiction": true,
@@ -1513,16 +1258,14 @@
       "La cinquième saison : les livres de la terre fracturée. - Tome 3/3 - N.K. Jemisin",
       "4 sur 5",
       "Lu en avril 2022",
-      "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ca se tient et c'était pas mal."
+      "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ça se tient et c'était pas mal."
     ]
   },
   {
     "title": "Programmation Python avancée",
-    "authors": [
-      "Xavier Olive"
-    ],
+    "authors": ["Xavier Olive"],
     "rating": 4,
-    "comment": "Bien pour les concepts avancée",
+    "comment": "Bien pour les concepts avancés",
     "date": "2022-04",
     "urls": [],
     "fiction": false,
@@ -1531,16 +1274,14 @@
       "Programmation Python avancée - Xavier Olive",
       "4 sur 5",
       "Lu en avril 2022",
-      "Bien pour les concepts avancée"
+      "Bien pour les concepts avancés"
     ]
   },
   {
     "title": "L'art de la marche",
-    "authors": [
-      "Olivier Bleys"
-    ],
+    "authors": ["Olivier Bleys"],
     "rating": 4,
-    "comment": "Livre de voyage, oú l'auteur fait les 1éres étapes d'un tour du monde, quelques semaines par an, en reprenant là oú il s'est arrêté.",
+    "comment": "Livre de voyage, oú l'auteur fait les 1éres étapes d'un tour du monde, quelques semaines par an, en reprenant là oú il s'était arrêté.",
     "date": "2022-03",
     "urls": [],
     "fiction": false,
@@ -1554,9 +1295,7 @@
   },
   {
     "title": "Le monde selon Guirec et Monique",
-    "authors": [
-      "Guirec Soudée"
-    ],
+    "authors": ["Guirec Soudée"],
     "rating": 4,
     "comment": "L'histoire d'un tour du monde en bateau de Guirec et sa poule pondeuse.",
     "date": "2022-03",
@@ -1572,9 +1311,7 @@
   },
   {
     "title": "Mamie Luger",
-    "authors": [
-      "Benoit Philippon"
-    ],
+    "authors": ["Benoit Philippon"],
     "rating": 4,
     "comment": "Oh les reparties de l'héroïne, petite dame de 102 ans :)\nBien, court, punchy, trés bien.",
     "date": "2022-03",
@@ -1591,11 +1328,9 @@
   },
   {
     "title": "Les derniers jours de l'émerveillement",
-    "authors": [
-      "Graham Moore"
-    ],
+    "authors": ["Graham Moore"],
     "rating": 4,
-    "comment": "C'est pas mal, l'histoire (la guerre) entre Edison et Westhinghouse pour imposer le courant continu versus alternatif. Des petites chapitres. Peut-etre un peu trop romancé ?",
+    "comment": "C'est pas mal, l'histoire (la guerre) entre Edison et Westhinghouse pour imposer le courant continu versus alternatif. Des petits chapitres. Peut-etre un peu trop romancé ?",
     "date": "2022-02",
     "urls": [],
     "fiction": true,
@@ -1605,16 +1340,14 @@
       "4 sur 5",
       "Lu en février 2022",
       "C'est pas mal, l'histoire (la guerre) entre Edison et Westhinghouse pour imposer le courant continu versus alternatif.",
-      "Des petites chapitres. Peut-etre un peu trop romancé ?"
+      "Des petits chapitres. Peut-etre un peu trop romancé ?"
     ]
   },
   {
     "title": "Un clafoutis aux tomates cerises",
-    "authors": [
-      "Véronique de Bure"
-    ],
+    "authors": ["Véronique de Bure"],
     "rating": 4,
-    "comment": "Mignon, gentil, le journal d'une mamie. Du quotidien touchant. Ca se lit bien, c'est agréable.\nRien d'extraordinaire, et c'est ca qui est bien.",
+    "comment": "Mignon, gentil, le journal d'une mamie. Du quotidien touchant. Ça se lit bien, c'est agréable.\nRien d'extraordinaire, et c'est ça qui est bien.",
     "date": "2022-02",
     "urls": [],
     "fiction": true,
@@ -1623,8 +1356,8 @@
       "Un clafoutis aux tomates cerises - Véronique de Bure",
       "4 sur 5",
       "Lu en février 2022",
-      "Mignon, gentil, le journal d'une mamie. Du quotidien touchant. Ca se lit bien, c'est agréable.",
-      "Rien d'extraordinaire, et c'est ca qui est bien."
+      "Mignon, gentil, le journal d'une mamie. Du quotidien touchant. Ça se lit bien, c'est agréable.",
+      "Rien d'extraordinaire, et c'est ça qui est bien."
     ]
   },
   {
@@ -1643,51 +1376,41 @@
   },
   {
     "title": "L'examen",
-    "authors": [
-      "Sylvain Neuvel"
-    ],
+    "authors": ["Sylvain Neuvel"],
     "rating": 4,
-    "comment": "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat á l'immigration.",
+    "comment": "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat à l'immigration.",
     "date": "2021-12",
-    "urls": [
-      "https://www.conseil-bifrost.fr/l-examen-sylvain-neuvel/"
-    ],
+    "urls": ["https://www.conseil-bifrost.fr/l-examen-sylvain-neuvel/"],
     "fiction": true,
     "titleOrig": "L'examen - Sylvain Neuvel",
     "textOrig": [
       "L'examen - Sylvain Neuvel",
       "Lu en décembre 2021.",
       "4 sur 5",
-      "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat á l'immigration.",
+      "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat à l'immigration.",
       "Court, 128 pages. Conseil Bifrost."
     ]
   },
   {
     "title": "Shakespeare Antibiographie",
-    "authors": [
-      "Bill Bryson"
-    ],
+    "authors": ["Bill Bryson"],
     "rating": 4,
-    "comment": "Du bon Bill Bryson. J'ai appris sur Shakespeare (et surtout qu'on n'a que peu d'infos et sur la vie au 16ème siecle. J'ai bien aimé.",
+    "comment": "Du bon Bill Bryson. J'ai appris sur Shakespeare et surtout qu'on n'a que peu d'infos et sur la vie au 16ème siecle. J'ai bien aimé.",
     "date": "2021-12",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH248161"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH248161"],
     "fiction": false,
     "titleOrig": "Shakespeare Antibiographie - Bill Bryson",
     "textOrig": [
       "Shakespeare Antibiographie - Bill Bryson",
       "4 sur 5",
       "Lu en décembre 2021.",
-      "Du bon Bill Bryson. J'ai appris sur Shakespeare (et surtout qu'on n'a que peu d'infos et sur la vie au 16ème siecle. J'ai bien aimé.",
+      "Du bon Bill Bryson. J'ai appris sur Shakespeare et surtout qu'on n'a que peu d'infos et sur la vie au 16ème siecle. J'ai bien aimé.",
       "[Roubaix](http://www.mediathequederoubaix.fr/ark:/20179/KH248161)"
     ]
   },
   {
     "title": "L'économie est un jeu d'enfant",
-    "authors": [
-      "Tim Harford"
-    ],
+    "authors": ["Tim Harford"],
     "rating": 4,
     "comment": "J'ai moins aimé la 2eme partie, et que la version anglaise de la 1ere... J'ai appris deux/trois trucs, mais l'effort était grand.",
     "date": "2021-12",
@@ -1708,25 +1431,18 @@
   },
   {
     "title": "Guerilla Green - Guide de survie végétale en milieu urbain",
-    "authors": [
-      "Ophélie Damblé"
-    ],
+    "authors": ["Ophélie Damblé"],
     "comment": "Lu en novembre 2021",
     "date": "2021-11",
     "urls": [],
     "fiction": false,
     "titleOrig": "Guerilla Green - Guide de survie végétale en milieu urbain - Ophélie Damblé",
-    "textOrig": [
-      "Guerilla Green - Guide de survie végétale en milieu urbain - Ophélie Damblé",
-      "Lu en novembre 2021"
-    ]
+    "textOrig": ["Guerilla Green - Guide de survie végétale en milieu urbain - Ophélie Damblé", "Lu en novembre 2021"]
   },
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
     "series": "La terre fracturée",
-    "authors": [
-      "N.K. Jemisin"
-    ],
+    "authors": ["N.K. Jemisin"],
     "volume": "2/3",
     "comment": "Lu en novembre 2021",
     "date": "2021-11",
@@ -1741,16 +1457,12 @@
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
     "series": "les livres de la terre fracturée",
-    "authors": [
-      "N.K. Jemisin"
-    ],
+    "authors": ["N.K. Jemisin"],
     "rating": 5,
     "volume": "1/3",
     "comment": "Trés bien",
     "date": "2021-11",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH320154"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH320154"],
     "fiction": true,
     "titleOrig": "La cinquième saison : les livres de la terre fracturée. - Tome 1/3 - N.K. Jemisin",
     "textOrig": [
@@ -1763,15 +1475,11 @@
   {
     "title": "Même pas mort",
     "series": "Rois du monde",
-    "authors": [
-      "Jaworski"
-    ],
+    "authors": ["Jaworski"],
     "volume": "1",
     "comment": "Lu en novembre 2021.",
     "date": "2021-11",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH304804"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH304804"],
     "fiction": true,
     "titleOrig": "Même pas mort - Rois du monde - Tome 1 - Jaworski",
     "textOrig": [
@@ -1782,38 +1490,25 @@
   },
   {
     "title": "Esther",
-    "authors": [
-      "Bruneau"
-    ],
+    "authors": ["Bruneau"],
     "rating": 3,
     "comment": "Lu en novembre 2021.",
     "date": "2021-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Esther - Bruneau",
-    "textOrig": [
-      "Esther - Bruneau",
-      "Lu en novembre 2021.",
-      "3 sur 5"
-    ]
+    "textOrig": ["Esther - Bruneau", "Lu en novembre 2021.", "3 sur 5"]
   },
   {
     "title": "Les oiseaux du temps",
-    "authors": [
-      "El-Mohtar",
-      "Gladstone"
-    ],
+    "authors": ["El-Mohtar", "Gladstone"],
     "rating": 3,
     "comment": "Lu en novembre 2021.",
     "date": "2021-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les oiseaux du temps - El-Mohtar & Gladstone",
-    "textOrig": [
-      "Les oiseaux du temps - El-Mohtar & Gladstone",
-      "Lu en novembre 2021.",
-      "3 sur 5"
-    ]
+    "textOrig": ["Les oiseaux du temps - El-Mohtar & Gladstone", "Lu en novembre 2021.", "3 sur 5"]
   },
   {
     "title": "Des lettres entre deux agents temporels de camps opposés",
@@ -1823,31 +1518,21 @@
     "urls": [],
     "fiction": true,
     "titleOrig": "Des lettres entre deux agents temporels de camps opposés",
-    "textOrig": [
-      "Des lettres entre deux agents temporels de camps opposés",
-      "Lu en novembre 2021."
-    ]
+    "textOrig": ["Des lettres entre deux agents temporels de camps opposés", "Lu en novembre 2021."]
   },
   {
     "title": "L'économie mondiale en 50 inventions",
-    "authors": [
-      "Tim Harford"
-    ],
+    "authors": ["Tim Harford"],
     "comment": "Lu en novembre 2021.",
     "date": "2021-11",
     "urls": [],
     "fiction": false,
     "titleOrig": "L'économie mondiale en 50 inventions - Tim Harford",
-    "textOrig": [
-      "L'économie mondiale en 50 inventions - Tim Harford",
-      "Lu en novembre 2021."
-    ]
+    "textOrig": ["L'économie mondiale en 50 inventions - Tim Harford", "Lu en novembre 2021."]
   },
   {
-    "title": "En age florissant - de la renaissance à la réforme",
-    "authors": [
-      "Pascal Brioist"
-    ],
+    "title": "En âge florissant - de la renaissance à la réforme",
+    "authors": ["Pascal Brioist"],
     "comment": "Lu en novembre 2021.",
     "date": "2021-11",
     "urls": [],
@@ -1862,27 +1547,18 @@
   {
     "title": "Rive gauche",
     "series": "Univers de Metro 2034",
-    "authors": [
-      "Pierre Bordage"
-    ],
+    "authors": ["Pierre Bordage"],
     "rating": 4,
     "comment": "Bien !",
     "date": "2021-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rive gauche - Univers de Metro 2034 - Pierre Bordage",
-    "textOrig": [
-      "Rive gauche - Univers de Metro 2034 - Pierre Bordage",
-      "Lu en novembre 2021.",
-      "4 sur 5",
-      "Bien !"
-    ]
+    "textOrig": ["Rive gauche - Univers de Metro 2034 - Pierre Bordage", "Lu en novembre 2021.", "4 sur 5", "Bien !"]
   },
   {
     "title": "Comment vivre ? Une vie de Montaigne en une question et vingt tentatives de réponse",
-    "authors": [
-      "Sarah Bakewell"
-    ],
+    "authors": ["Sarah Bakewell"],
     "comment": "Lu en octobre 2021",
     "date": "2021-10",
     "urls": [],
@@ -1897,7 +1573,7 @@
     "title": "2 jours pour vivre",
     "authors": [],
     "rating": 4,
-    "comment": "Des rando, pied, velo en 2 jours pour découvrir, accessible...",
+    "comment": "Des randos, pied, velo en 2 jours pour découvrir, accessible...",
     "date": "2021-10",
     "urls": [],
     "fiction": false,
@@ -1911,9 +1587,7 @@
   },
   {
     "title": "Watership Down",
-    "authors": [
-      "Richard Adams"
-    ],
+    "authors": ["Richard Adams"],
     "rating": 4,
     "comment": "L'histoire de lapins qui vont fonder une nouvelle colonie.\nL'imaginaire autour des lapins est assez dingue !",
     "date": "2021-10",
@@ -1930,39 +1604,26 @@
   },
   {
     "title": "La soif de l'essentiel",
-    "authors": [
-      "Moghaddassi"
-    ],
+    "authors": ["Moghaddassi"],
     "date": "2021-10",
     "urls": [],
     "fiction": false,
     "titleOrig": "La soif de l'essentiel - Moghaddassi",
-    "textOrig": [
-      "La soif de l'essentiel - Moghaddassi",
-      "Lu en octobre 2021"
-    ]
+    "textOrig": ["La soif de l'essentiel - Moghaddassi", "Lu en octobre 2021"]
   },
   {
     "title": "La philo des Super Héros",
-    "authors": [
-      "Élodie Denis"
-    ],
+    "authors": ["Élodie Denis"],
     "comment": "Moui",
     "date": "2021-09",
     "urls": [],
     "fiction": true,
     "titleOrig": "La philo des Super Héros - Élodie Denis",
-    "textOrig": [
-      "La philo des Super Héros - Élodie Denis",
-      "Lu en septembre 2021",
-      "Moui"
-    ]
+    "textOrig": ["La philo des Super Héros - Élodie Denis", "Lu en septembre 2021", "Moui"]
   },
   {
     "title": "La nuit je suis Buffy Summers",
-    "authors": [
-      "Chloé Delaume"
-    ],
+    "authors": ["Chloé Delaume"],
     "rating": 2,
     "comment": "Plein de référence, mais que je n'ai pas saisies.",
     "date": "2021-09",
@@ -1979,27 +1640,18 @@
   },
   {
     "title": "La moitié d'un roi",
-    "authors": [
-      "Joe Abercrombie"
-    ],
+    "authors": ["Joe Abercrombie"],
     "rating": 4,
     "comment": "Pas mal !",
     "date": "2021-09",
     "urls": [],
     "fiction": true,
     "titleOrig": "La moitié d'un roi - Joe Abercrombie",
-    "textOrig": [
-      "La moitié d'un roi - Joe Abercrombie",
-      "Lu en septembre 2021",
-      "4 sur 5",
-      "Pas mal !"
-    ]
+    "textOrig": ["La moitié d'un roi - Joe Abercrombie", "Lu en septembre 2021", "4 sur 5", "Pas mal !"]
   },
   {
-    "title": "Au carrefour des étoile",
-    "authors": [
-      "Simak"
-    ],
+    "title": "Au carrefour des étoiles",
+    "authors": ["Simak"],
     "rating": 3,
     "comment": "Bah, c'est bien, un gout de suranné qui a du charme.\nMais l'histoire n'est pas ouf, c'est classique.",
     "date": "2021-09",
@@ -2016,9 +1668,7 @@
   },
   {
     "title": "Grokking Simplicity: Taming complex software with functional thinking",
-    "authors": [
-      "Eric Normand"
-    ],
+    "authors": ["Eric Normand"],
     "rating": 5,
     "comment": "Cf notes",
     "date": "2021-09",
@@ -2034,9 +1684,7 @@
   },
   {
     "title": "Tout va mal, je vais bien, comment vivre heureux dans un monde de merde",
-    "authors": [
-      "Philippe Bloch"
-    ],
+    "authors": ["Philippe Bloch"],
     "comment": "Ca se lit",
     "date": "2021-09",
     "urls": [],
@@ -2051,41 +1699,29 @@
   {
     "title": "La première loi",
     "series": "La première loi",
-    "authors": [
-      "Joe Abercrombie"
-    ],
+    "authors": ["Joe Abercrombie"],
     "volume": "3/3",
     "date": "2021-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "La première loi - Tome 3/3 - Joe Abercrombie",
-    "textOrig": [
-      "La première loi - Tome 3/3 - Joe Abercrombie",
-      "Lu en aout 2021"
-    ]
+    "textOrig": ["La première loi - Tome 3/3 - Joe Abercrombie", "Lu en aout 2021"]
   },
   {
     "title": "La première loi",
     "series": "La première loi",
-    "authors": [
-      "Joe Abercrombie"
-    ],
+    "authors": ["Joe Abercrombie"],
     "volume": "2/3",
     "date": "2021-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "Lu en juillet 2021",
-    "textOrig": [
-      "Lu en juillet 2021",
-      "La première loi - Tome 2/3 - Joe Abercrombie"
-    ]
+    "textOrig": ["Lu en juillet 2021", "La première loi - Tome 2/3 - Joe Abercrombie"]
   },
   {
     "title": "La première loi3",
     "series": "La première loi",
-    "authors": [
-      "Joe Abercrombie"
-    ],
+    "authors": ["Joe Abercrombie"],
     "rating": 5,
     "volume": "1/3",
     "comment": "Enorme. C'est Dark Fantasy. Ca se lit très bien. C'est ❤️",
@@ -2103,9 +1739,7 @@
   {
     "title": "Espace - Les Univers Multiples",
     "series": "Espace - Les Univers Multiples",
-    "authors": [
-      "Stephen Baxter"
-    ],
+    "authors": ["Stephen Baxter"],
     "rating": 3,
     "volume": "2/2",
     "comment": "Moui, j'attendais beaucoup, pourtant ça se lit. Un peu trop abstrait.\nMais il y a une sorte de fin quand-même.\nC'est censé être la suite du Tome 1, mais aucun rapport à part le héros, mais ça pourrait être un livre séparé.",
@@ -2124,9 +1758,7 @@
   },
   {
     "title": "The Practicing Stoic",
-    "authors": [
-      "Ward Farnsworth"
-    ],
+    "authors": ["Ward Farnsworth"],
     "rating": 4,
     "comment": "Lu en avril 2021\nChapitre par sujet (ex: \"colère\") et vu par les philosophes Stoics",
     "date": "2021-04",
@@ -2145,31 +1777,21 @@
   },
   {
     "title": "A la recherche du sens perdu",
-    "authors": [
-      "Frank Martela"
-    ],
+    "authors": ["Frank Martela"],
     "comment": "Cf notes.",
     "date": "2021-04",
     "urls": [],
     "fiction": false,
     "titleOrig": "A la recherche du sens perdu - Frank Martela",
-    "textOrig": [
-      "A la recherche du sens perdu - Frank Martela",
-      "Lu en avril 2021",
-      "Cf notes."
-    ]
+    "textOrig": ["A la recherche du sens perdu - Frank Martela", "Lu en avril 2021", "Cf notes."]
   },
   {
     "title": "Les enchantements d'Ambremer",
-    "authors": [
-      "Pierre Pevel"
-    ],
+    "authors": ["Pierre Pevel"],
     "rating": 4,
     "comment": "Steampunk avec classe. J'ai aimé les explications de l'époque.\nHistoire ok, même si plutôt classique.",
     "date": "2021-02",
-    "urls": [
-      "http://www.mediathequederoubaix.fr/ark:/20179/KH299845"
-    ],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH299845"],
     "fiction": true,
     "titleOrig": "Les enchantements d'Ambremer - Pierre Pevel",
     "textOrig": [
@@ -2183,9 +1805,7 @@
   },
   {
     "title": "Une histoire du corps humain a l'usage de ses occupants",
-    "authors": [
-      "Bill Bryson"
-    ],
+    "authors": ["Bill Bryson"],
     "rating": 4,
     "comment": "C'est vraiment pas mal, tellement d'infos sans être chiant.",
     "date": "2021-01",
@@ -2201,9 +1821,7 @@
   },
   {
     "title": "Où on va papa",
-    "authors": [
-      "Jean-Louis Fournier"
-    ],
+    "authors": ["Jean-Louis Fournier"],
     "rating": 4,
     "comment": "Un père qui a deux enfants handicapés : il s'en moque, mais les aime, c'est drôle/touchant et triste.",
     "date": "2020-12",
@@ -2219,9 +1837,7 @@
   },
   {
     "title": "Les miracles du bazar Namiya",
-    "authors": [
-      "Keigo Higashino"
-    ],
+    "authors": ["Keigo Higashino"],
     "rating": 3,
     "comment": "J'ai bien aimé, mais c'est pas folichon non plus.\nJ'ai compris la boucle temporelle, c'est sympa, mais pas ouf non plus.\nLa traduction n'est pas géniale, les phrases ne sonnent pas biens.",
     "date": "2020-12",
@@ -2243,9 +1859,7 @@
   },
   {
     "title": "Nation",
-    "authors": [
-      "Terry Pratchett"
-    ],
+    "authors": ["Terry Pratchett"],
     "rating": 3,
     "comment": "Moui, c'est sympa, mais pas \"le meilleur Pratchett\". Peut-être que je ne l'ai pas lu \"assez vite\" et que donc il ne m'a pas touché ?!",
     "date": "2020-11",
@@ -2262,9 +1876,7 @@
   },
   {
     "title": "Un homme, un vrai",
-    "authors": [
-      "Tom Wolfe"
-    ],
+    "authors": ["Tom Wolfe"],
     "rating": 3,
     "comment": "C'est long, mais c'est (assez) bon. Littéraire, assez copieux, mais je suis content de l'avoir fini.",
     "date": "2020-11",
@@ -2282,27 +1894,20 @@
   {
     "title": "Spire",
     "series": "Spire",
-    "authors": [
-      "Laurent Genefort"
-    ],
+    "authors": ["Laurent Genefort"],
     "volume": "3/3",
     "comment": "Lu en octobre 2020",
     "date": "2020-10",
     "urls": [],
     "fiction": true,
     "titleOrig": "Spire - Tome 3/3 - Laurent Genefort",
-    "textOrig": [
-      "Spire - Tome 3/3 - Laurent Genefort",
-      "Lu en octobre 2020"
-    ]
+    "textOrig": ["Spire - Tome 3/3 - Laurent Genefort", "Lu en octobre 2020"]
   },
   {
     "title": "Le peuple du tapis",
-    "authors": [
-      "Terry Pratchett"
-    ],
+    "authors": ["Terry Pratchett"],
     "rating": 3,
-    "comment": "Petit livre, censé être pour enfant (comme tous les Pratchett ?). Ca se laisse lire, mais c'est pas renversant non plus.",
+    "comment": "Petit livre, censé être pour enfant (comme tous les Pratchett ?). Ça se laisse lire, mais c'est pas renversant non plus.",
     "date": "2020-09",
     "urls": [],
     "fiction": true,
@@ -2317,25 +1922,18 @@
   },
   {
     "title": "Spire",
-    "authors": [
-      "Laurent Genefort"
-    ],
+    "authors": ["Laurent Genefort"],
     "volume": "2/3",
     "comment": "Lu en septembre 2020",
     "date": "2020-09",
     "urls": [],
     "fiction": true,
     "titleOrig": "Spire - Tome 2/3 - Laurent Genefort",
-    "textOrig": [
-      "Spire - Tome 2/3 - Laurent Genefort",
-      "Lu en septembre 2020"
-    ]
+    "textOrig": ["Spire - Tome 2/3 - Laurent Genefort", "Lu en septembre 2020"]
   },
   {
     "title": "Spire",
-    "authors": [
-      "Laurent Genefort"
-    ],
+    "authors": ["Laurent Genefort"],
     "rating": 4,
     "volume": "1/3",
     "comment": "La création d'une compagnie spatiale.\nSa déchéance dans le T2.\nL'auteur va très vite sur certains passages, assez expéditif.",
@@ -2354,11 +1952,9 @@
   },
   {
     "title": "Terre Errante",
-    "authors": [
-      "Liu Cixin"
-    ],
+    "authors": ["Liu Cixin"],
     "rating": 4,
-    "comment": "Une nouvelle qui se lit bien et rapidement.\nLes humains déplacent la Terre car le soleil va mourir.",
+    "comment": "Une nouvelle qui se lit bien et rapidement.\nLes humains déplacent la Terre, car le soleil va mourir.",
     "date": "2020-08",
     "urls": [],
     "fiction": true,
@@ -2373,9 +1969,7 @@
   },
   {
     "title": "Vortex",
-    "authors": [
-      "Robert Charles Wilson"
-    ],
+    "authors": ["Robert Charles Wilson"],
     "volume": "3/3",
     "date": "2020-07",
     "urls": [],
@@ -2384,9 +1978,7 @@
   {
     "title": "Axis - Spin",
     "series": "Spin",
-    "authors": [
-      "Robert Charles Wilson"
-    ],
+    "authors": ["Robert Charles Wilson"],
     "volume": "2/3",
     "date": "2020-07",
     "urls": [],
@@ -2394,9 +1986,7 @@
   },
   {
     "title": "Diaspora",
-    "authors": [
-      "Greg Egan"
-    ],
+    "authors": ["Greg Egan"],
     "rating": 2,
     "comment": "Dur à lire, trop de Hard Science à mon goût (on part dans les 10 dimensions !). Mais ça avance un peu quand-même. Des Humains (IA) qui sont à la recherche de plus anciens qu'eux après une catastrophe qui a frappé la Terre. Je l'ai repris après l'avoir arrêté.",
     "date": "2020-07",
@@ -2415,9 +2005,7 @@
   },
   {
     "title": "Dans la toile du temps",
-    "authors": [
-      "Adrian Tchaikovsky"
-    ],
+    "authors": ["Adrian Tchaikovsky"],
     "rating": 4,
     "comment": "Un monde avec des araignées et les humains, derniers survivants, qui veulent y aller.\nLa fin est pas mal. Happy end.",
     "date": "2020-07",
@@ -2434,11 +2022,9 @@
   },
   {
     "title": "Au service surnaturel de sa majesté",
-    "authors": [
-      "Daniel O'Malley"
-    ],
+    "authors": ["Daniel O'Malley"],
     "rating": 4,
-    "comment": "Ca se lit bien, aventure/action, mystère, intrigue.\nUne femme a perdu la mèmoire, mais c'est quelqu'un d'autre dans le même corps.\nElle a des pouvoirs et un poste important dans une partie secrête du gouvernement et quelqu'un veut la tuer.",
+    "comment": "Ça se lit bien, aventure/action, mystère, intrigue.\nUne femme a perdu la mèmoire, mais c'est quelqu'un d'autre dans le même corps.\nElle a des pouvoirs et un poste important dans une partie secrête du gouvernement et quelqu'un veut la tuer.",
     "date": "2020-06",
     "urls": [],
     "fiction": true,
@@ -2454,9 +2040,7 @@
   },
   {
     "title": "Spin",
-    "authors": [
-      "Robert Charles Wilson"
-    ],
+    "authors": ["Robert Charles Wilson"],
     "rating": 4,
     "volume": "1/3",
     "comment": "C'est bien, mais les tomes T2 et T3 sont différents du Tome 1 (découverte de la protection autour de la Terre).\nTome 1 : Les robots d'une civilisation ont entouré la Terre pour la forcer à survivre.\nTome 2 : La fuite de certains humains 4ème âge. Les humains ont créé un enfant qui pourrait communiquer avec les robots.\nTome 3 : Aller-retour 10.000 ans avec une sorte de boucle temporelle.",
@@ -2476,9 +2060,7 @@
   },
   {
     "title": "Ombre de l'ombre",
-    "authors": [
-      "Paco Ignacio Taibo II"
-    ],
+    "authors": ["Paco Ignacio Taibo II"],
     "rating": 4,
     "comment": "Des gens qui se réunissent pour faire des dominos, ca sert entre les chapitres.\nIls ont assisté à des événements (assassinats...) et décident d'agir.\nBien, j'ai aimé les personnages, l'atmosphère. Ca tire dans tous les sens aussi des fois, et c'est même drôle par moment.",
     "date": "2020-05",
@@ -2496,9 +2078,7 @@
   },
   {
     "title": "Mortelle est la nuit, précédé de Chante-cloche",
-    "authors": [
-      "Asimov"
-    ],
+    "authors": ["Asimov"],
     "rating": 4,
     "comment": "2 nouvelles d'Asimov.\nToujours des enquêtes futuristes.\nSe lit très vite.",
     "date": "2020-04",
@@ -2516,9 +2096,7 @@
   },
   {
     "title": "Pour patrie l'espace",
-    "authors": [
-      "Francis Carsac"
-    ],
+    "authors": ["Francis Carsac"],
     "rating": 3,
     "comment": "Sympa, suranné, action-SF avec le mec alpha et les femmes à ses pieds.\nCa se laisse lire, mais ça n'apporte pas grand chose.",
     "date": "2020-04",
@@ -2535,9 +2113,7 @@
   },
   {
     "title": "Poulets Grillés",
-    "authors": [
-      "Sophie Hénaff"
-    ],
+    "authors": ["Sophie Hénaff"],
     "rating": 4,
     "comment": "Très bon pour les personnages, l'ambiance. L'enquête est correcte.",
     "date": "2020-04",
@@ -2554,9 +2130,7 @@
   {
     "title": "Rester groupés",
     "series": "Poulets Grillés",
-    "authors": [
-      "Sophie Hénaff"
-    ],
+    "authors": ["Sophie Hénaff"],
     "rating": 4,
     "comment": "Très bon pour les personnages, l'ambiance. L'enquête est correcte.",
     "date": "2020-04",
@@ -2574,9 +2148,7 @@
   {
     "title": "Temps - Les Univers Multiples",
     "series": "Temps - Les Univers Multiples",
-    "authors": [
-      "Stephen Baxter"
-    ],
+    "authors": ["Stephen Baxter"],
     "rating": 3,
     "volume": "1/2",
     "comment": "C'est pas mal, mais un poil tiré par les cheveux sur les principes scientifiques (l'auteur en fait trop).\nJe ne sais pas où ça va. C'est un peu long.",
@@ -2595,9 +2167,7 @@
   {
     "title": "Le problème à trois corps",
     "series": "Trilogie du Problème à trois corps",
-    "authors": [
-      "Liu Cixin"
-    ],
+    "authors": ["Liu Cixin"],
     "rating": 4,
     "volume": "1/3",
     "comment": "Pas mal, un peu long. Ca prèpare bien le tome 2 que j'ai déjà lu.",
@@ -2615,9 +2185,7 @@
   {
     "title": "La justice de l'ancillaire",
     "series": "Les chroniques du Radch",
-    "authors": [
-      "Ann Leckie"
-    ],
+    "authors": ["Ann Leckie"],
     "rating": 2,
     "volume": "1",
     "comment": "Barbant, c'est long, trop flou.\nLes commentaires lus sur Amazon n'aident pas :/",
@@ -2635,9 +2203,7 @@
   },
   {
     "title": "Chroniques du pays des mers",
-    "authors": [
-      "Elisabeth Vonarburg"
-    ],
+    "authors": ["Elisabeth Vonarburg"],
     "rating": 3,
     "comment": "Pas mal, pas sûr d'avoir tout saisi non plus.\nJ'ai été voir les commentaires pour essayer de comprendre sans succès.\nPlutôt feministe et original.",
     "date": "2020-02",
@@ -2656,9 +2222,7 @@
   {
     "title": "Jennifer Morgue",
     "series": "Jennifer Morgue",
-    "authors": [
-      "Charles Stross"
-    ],
+    "authors": ["Charles Stross"],
     "rating": 4,
     "volume": "1",
     "comment": "C'est pas mal, un peu geek, un peu drôle",
@@ -2676,9 +2240,7 @@
   {
     "title": "Traquemort - Le Proscrit",
     "series": "Traquemort",
-    "authors": [
-      "Simon R. Green"
-    ],
+    "authors": ["Simon R. Green"],
     "rating": 3,
     "volume": "1",
     "comment": "De l'aventure, mais c'est vraiment léger et héroïque.\nPour adolescent ?",
@@ -2697,9 +2259,7 @@
   {
     "title": "Tueur De Trolls",
     "series": "Warhammer",
-    "authors": [
-      "William King"
-    ],
+    "authors": ["William King"],
     "rating": 2,
     "volume": "1",
     "comment": "De l'action, ça oui. Le reste est franchement trop léger.",
@@ -2718,12 +2278,10 @@
   {
     "title": "La messagère du ciel",
     "series": "Les Dieux Sauvages",
-    "authors": [
-      "Lionel Davoust"
-    ],
+    "authors": ["Lionel Davoust"],
     "rating": 4,
     "volume": "1",
-    "comment": "Fantasy, pas mal. Chiant avec l'héroine rebelle, mais bien foutu, surtout la fin du Tome 1 !",
+    "comment": "Fantasy, pas mal. Chiant avec l'héroïne rebelle, mais bien foutu, surtout la fin du Tome 1 !",
     "date": "2019-12",
     "urls": [],
     "fiction": true,
@@ -2738,11 +2296,9 @@
   },
   {
     "title": "L'étoffe des Héros",
-    "authors": [
-      "Tom Wolfe"
-    ],
+    "authors": ["Tom Wolfe"],
     "rating": 3,
-    "comment": "Raconte la vie des pilotes qui iront sur la lune.\nJ'attendais plus d'humour et des dialogues.\nJe ne sais pas si les histoires sont vraies.",
+    "comment": "Raconte la vie des pilotes qui iront sur la lune.\nJ'attendais plus d'humour et des dialogues.\nJe ne sais pas si les histoires sont vraies.\nLECTURE ARRETEE p170",
     "date": "2019-11",
     "urls": [],
     "fiction": true,
@@ -2760,9 +2316,7 @@
   {
     "title": "Mensonges au vif-argent",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "rating": 4,
     "volume": "7",
     "comment": "Lu en novembre 2019",
@@ -2770,18 +2324,12 @@
     "urls": [],
     "fiction": true,
     "titleOrig": "Garrett - Mensonges au vif-argent - Tome 7 - Glen Cook",
-    "textOrig": [
-      "Garrett - Mensonges au vif-argent - Tome 7 - Glen Cook",
-      "4 sur 5",
-      "Lu en novembre 2019"
-    ]
+    "textOrig": ["Garrett - Mensonges au vif-argent - Tome 7 - Glen Cook", "4 sur 5", "Lu en novembre 2019"]
   },
   {
     "title": "Nuits au fer rouge",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "rating": 4,
     "volume": "6",
     "comment": "Lu en novembre 2019",
@@ -2789,18 +2337,12 @@
     "urls": [],
     "fiction": true,
     "titleOrig": "Garrett - Nuits au fer rouge - Tome 6 - Glen Cook",
-    "textOrig": [
-      "Garrett - Nuits au fer rouge - Tome 6 - Glen Cook",
-      "4 sur 5",
-      "Lu en novembre 2019"
-    ]
+    "textOrig": ["Garrett - Nuits au fer rouge - Tome 6 - Glen Cook", "4 sur 5", "Lu en novembre 2019"]
   },
   {
     "title": "Feuilles de laiton et reliure d'ombre",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "rating": 4,
     "volume": "5",
     "comment": "Lu en novembre 2019",
@@ -2816,9 +2358,7 @@
   },
   {
     "title": "Le bizarre incident du chien pendant la nuit",
-    "authors": [
-      "Mark Haddon"
-    ],
+    "authors": ["Mark Haddon"],
     "rating": 4,
     "comment": "Le narrateur est un enfant qui a un problème social et d'intelligence (quelle maladie?). L'auteur raconte l'effet sur sa famille et sur l'enfant. J'ai aimé car ça fait comprendre les points de vue de chacun.",
     "date": "2019-10",
@@ -2836,27 +2376,18 @@
   },
   {
     "title": "Les questions dangereuses",
-    "authors": [
-      "Lionel Savoust"
-    ],
+    "authors": ["Lionel Savoust"],
     "rating": 3,
     "comment": "Petit livre, sympa",
     "date": "2019-10",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les questions dangereuses - Lionel Savoust",
-    "textOrig": [
-      "Les questions dangereuses - Lionel Savoust",
-      "3 sur 5",
-      "Lu en octobre 2019",
-      "Petit livre, sympa"
-    ]
+    "textOrig": ["Les questions dangereuses - Lionel Savoust", "3 sur 5", "Lu en octobre 2019", "Petit livre, sympa"]
   },
   {
     "title": "Les tribulations d'Arthur Mineur",
-    "authors": [
-      "Andrew Sean Greer"
-    ],
+    "authors": ["Andrew Sean Greer"],
     "rating": 3,
     "comment": "Bof, j'attendais du hilarant ou au moins drôle. Au mieux c'est un sourire que j'ai eu. C'est de la littérature, bien écrit, assez fin.",
     "date": "2019-09",
@@ -2874,9 +2405,7 @@
   {
     "title": "Le problème à trois corps",
     "series": "Trilogie du Problème à trois corps",
-    "authors": [
-      "Liu Cixin"
-    ],
+    "authors": ["Liu Cixin"],
     "rating": 4,
     "volume": "2/3",
     "comment": "Je me suis rendu compte que j'ai lu le tome 2 avant le tome 1.",
@@ -2893,9 +2422,7 @@
   },
   {
     "title": "L'amour vous connaissez",
-    "authors": [
-      "Isaac Asimov"
-    ],
+    "authors": ["Isaac Asimov"],
     "rating": 4,
     "comment": "Recueil de nouvelles. C'est pas mal !",
     "date": "2019-08",
@@ -2912,9 +2439,7 @@
   {
     "title": "Feuilles de laiton et reliure d'ombre",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "rating": 4,
     "volume": "4",
     "comment": "Du bon Garrett, comme toujours !",
@@ -2931,9 +2456,7 @@
   },
   {
     "title": "Entre Troll et Ogre",
-    "authors": [
-      "Marie-Catherine Daniel"
-    ],
+    "authors": ["Marie-Catherine Daniel"],
     "rating": 4,
     "comment": "Pas mal, ça tourne bien. Anthropomorphisme Troll/Ogre/Humain.",
     "date": "2019-07",
@@ -2950,27 +2473,19 @@
   {
     "title": "Metro 2035",
     "series": "Metro",
-    "authors": [
-      "Dmitry Glukhovsky"
-    ],
+    "authors": ["Dmitry Glukhovsky"],
     "rating": 4,
     "comment": "Lu en mars 2019",
     "date": "2019-03",
     "urls": [],
     "fiction": true,
     "titleOrig": "Metro 2035 - Dmitry Glukhovsky",
-    "textOrig": [
-      "Metro 2035 - Dmitry Glukhovsky",
-      "4 sur 5",
-      "Lu en mars 2019"
-    ]
+    "textOrig": ["Metro 2035 - Dmitry Glukhovsky", "4 sur 5", "Lu en mars 2019"]
   },
   {
     "title": "Pour quelques deniers de cuivre",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "volume": "3",
     "comment": "Du bon Garrett, c'est toujours un peu sombre, un peu difficile de comprendre, mais ça marche pour l'ambiance.",
     "date": "2019-02",
@@ -2986,25 +2501,18 @@
   {
     "title": "Pour quelques deniers de cuivre",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "volume": "2",
     "date": "2019-02",
     "urls": [],
     "fiction": true,
     "titleOrig": "Garrett - Pour quelques deniers de cuivre - Tome 2 - Glen Cook",
-    "textOrig": [
-      "Garrett - Pour quelques deniers de cuivre - Tome 2 - Glen Cook",
-      "Lu en fevrier 2019"
-    ]
+    "textOrig": ["Garrett - Pour quelques deniers de cuivre - Tome 2 - Glen Cook", "Lu en fevrier 2019"]
   },
   {
     "title": "Pour quelques deniers de cuivre",
     "series": "Garrett",
-    "authors": [
-      "Glen Cook"
-    ],
+    "authors": ["Glen Cook"],
     "rating": 4,
     "volume": "1",
     "comment": "Toujours un peu compliqué dans certains passages, mais ça marche pour l'ambiance.",
@@ -3021,21 +2529,14 @@
   },
   {
     "title": "La fille automate",
-    "authors": [
-      "Paolo Bacigalupi"
-    ],
+    "authors": ["Paolo Bacigalupi"],
     "rating": 4,
     "comment": "Bon univers !",
     "date": "2019-02",
     "urls": [],
     "fiction": true,
     "titleOrig": "La fille automate - Paolo Bacigalupi",
-    "textOrig": [
-      "La fille automate - Paolo Bacigalupi",
-      "4 sur 5",
-      "Lu en février 2019",
-      "Bon univers !"
-    ]
+    "textOrig": ["La fille automate - Paolo Bacigalupi", "4 sur 5", "Lu en février 2019", "Bon univers !"]
   },
   {
     "title": "Altium",
@@ -3046,10 +2547,7 @@
     "urls": [],
     "fiction": true,
     "titleOrig": "Altium - Tome 2",
-    "textOrig": [
-      "Altium - Tome 2",
-      "Lu en janvier 2019"
-    ]
+    "textOrig": ["Altium - Tome 2", "Lu en janvier 2019"]
   },
   {
     "title": "Altium",
@@ -3071,19 +2569,14 @@
   {
     "title": "Magie Ex-libris",
     "series": "Magie Ex-libris",
-    "authors": [
-      ""
-    ],
+    "authors": [""],
     "volume": "3",
     "comment": "Lu en décembre 2018",
     "date": "2018-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Magie Ex-libris - Le Bibliomanicien - Tome 3",
-    "textOrig": [
-      "Magie Ex-libris - Le Bibliomanicien - Tome 3",
-      "Lu en décembre 2018"
-    ]
+    "textOrig": ["Magie Ex-libris - Le Bibliomanicien - Tome 3", "Lu en décembre 2018"]
   },
   {
     "title": "Magie Ex-libris",
@@ -3095,10 +2588,7 @@
     "urls": [],
     "fiction": true,
     "titleOrig": "Magie Ex-libris - Le Bibliomanicien - Tome 2",
-    "textOrig": [
-      "Magie Ex-libris - Le Bibliomanicien - Tome 2",
-      "Lu en décembre 2018"
-    ]
+    "textOrig": ["Magie Ex-libris - Le Bibliomanicien - Tome 2", "Lu en décembre 2018"]
   },
   {
     "title": "Magie Ex-libris",
@@ -3121,30 +2611,22 @@
   {
     "title": "Metro 2034",
     "series": "Metro",
-    "authors": [
-      "Dmitry Glukhovsky"
-    ],
+    "authors": ["Dmitry Glukhovsky"],
     "rating": 4,
     "comment": "Lu en novembre 2018",
     "date": "2018-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Metro 2034 - Dmitry Glukhovsky",
-    "textOrig": [
-      "Metro 2034 - Dmitry Glukhovsky",
-      "4 sur 5",
-      "Lu en novembre 2018"
-    ]
+    "textOrig": ["Metro 2034 - Dmitry Glukhovsky", "4 sur 5", "Lu en novembre 2018"]
   },
   {
     "title": "L'appel du mordant - le miroir des rêves",
     "series": "L'appel du mordant - le miroir des rêves",
-    "authors": [
-      "Donaldson"
-    ],
+    "authors": ["Donaldson"],
     "rating": 2,
     "volume": "1",
-    "comment": "Quelle branquignolle cette héroîne ! Du mal à y croire.",
+    "comment": "Quelle branquignole cette héroîne ! Du mal à y croire.",
     "date": "2018-09",
     "urls": [],
     "fiction": true,
@@ -3153,56 +2635,40 @@
       "L'appel du mordant - le miroir des rêves - Tome 1 - Donaldson",
       "2 sur 5",
       "Lu en septembre 2018",
-      "Quelle branquignolle cette héroîne ! Du mal à y croire."
+      "Quelle branquignole cette héroîne ! Du mal à y croire."
     ]
   },
   {
     "title": "Mortimer",
-    "authors": [
-      "Terry Pratchett"
-    ],
+    "authors": ["Terry Pratchett"],
     "rating": 4,
     "comment": "Lu en aoùt 2018",
     "date": "2018-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "Mortimer - Terry Pratchett",
-    "textOrig": [
-      "Mortimer - Terry Pratchett",
-      "4 sur 5",
-      "Lu en aoùt 2018"
-    ]
+    "textOrig": ["Mortimer - Terry Pratchett", "4 sur 5", "Lu en aoùt 2018"]
   },
   {
     "title": "L'Hiverrier",
-    "authors": [
-      "Terry Pratchett"
-    ],
+    "authors": ["Terry Pratchett"],
     "rating": 4,
     "comment": "Lu en aoùt 2018",
     "date": "2018-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "L'Hiverrier - Terry Pratchett",
-    "textOrig": [
-      "L'Hiverrier - Terry Pratchett",
-      "4 sur 5",
-      "Lu en aoùt 2018"
-    ]
+    "textOrig": ["L'Hiverrier - Terry Pratchett", "4 sur 5", "Lu en aoùt 2018"]
   },
   {
     "title": "Carbon modifié",
     "series": "Takeshi Kovacs",
-    "authors": [
-      "Richard Morgan"
-    ],
+    "authors": ["Richard Morgan"],
     "rating": 4,
     "volume": "1",
     "comment": "Lu en juillet 2018",
     "date": "2018-07",
-    "urls": [
-      "Altered Carbon"
-    ],
+    "urls": ["Altered Carbon"],
     "fiction": true,
     "titleOrig": "Carbon modifié - Takeshi Kovacs - Tome 1 - Richard Morgan",
     "textOrig": [
@@ -3215,28 +2681,19 @@
   {
     "title": "Metro 2033",
     "series": "Metro 2033",
-    "authors": [
-      "Dmitry Glukhovsky"
-    ],
+    "authors": ["Dmitry Glukhovsky"],
     "rating": 5,
     "comment": "Ambiance, peur, prenant !",
     "date": "2018-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "Metro 2033 - Dmitry Glukhovsky",
-    "textOrig": [
-      "Metro 2033 - Dmitry Glukhovsky",
-      "5 sur 5",
-      "Lu en juillet 2018",
-      "Ambiance, peur, prenant !"
-    ]
+    "textOrig": ["Metro 2033 - Dmitry Glukhovsky", "5 sur 5", "Lu en juillet 2018", "Ambiance, peur, prenant !"]
   },
   {
     "title": "L'homme des jeux",
     "series": "Le cycle de la culture",
-    "authors": [
-      "Iain Banks"
-    ],
+    "authors": ["Iain Banks"],
     "rating": 4,
     "volume": "2",
     "comment": "Du bon!",
@@ -3253,9 +2710,7 @@
   },
   {
     "title": "Réfléchissez et devenez riche",
-    "authors": [
-      "Napoleon Hill"
-    ],
+    "authors": ["Napoleon Hill"],
     "comment": "En gros, c'est du self-help où il faut affronter ses peurs et bam! t'es riche. Nul.",
     "date": "2018-05",
     "urls": [],
@@ -3271,9 +2726,7 @@
   {
     "title": "Une forme de guerre",
     "series": "Le cycle de la culture",
-    "authors": [
-      "Iain Banks"
-    ],
+    "authors": ["Iain Banks"],
     "rating": 4,
     "volume": "1",
     "comment": "L'histoire d'un métamorphe. Se lit comme un film d'action. Bien !",
@@ -3290,21 +2743,14 @@
   },
   {
     "title": "59 seconds",
-    "authors": [
-      "Richard Wiseman"
-    ],
+    "authors": ["Richard Wiseman"],
     "rating": 5,
     "comment": "Voir les notes.",
     "date": "2018-04",
     "urls": [],
     "fiction": false,
     "titleOrig": "59 seconds - Richard Wiseman",
-    "textOrig": [
-      "59 seconds - Richard Wiseman",
-      "5 sur 5",
-      "Lu en avril 2018",
-      "Voir les notes."
-    ]
+    "textOrig": ["59 seconds - Richard Wiseman", "5 sur 5", "Lu en avril 2018", "Voir les notes."]
   },
   {
     "title": "Le tueur venu du Centaure",
@@ -3325,18 +2771,13 @@
   {
     "title": "Greg Mandel",
     "series": "Greg Mandel",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "3/3",
     "date": "2018-03",
     "urls": [],
     "fiction": true,
     "titleOrig": "Greg Mandel - Tome 3/3 - Peter F. Hamilton",
-    "textOrig": [
-      "Greg Mandel - Tome 3/3 - Peter F. Hamilton",
-      "Lu en mars 2018"
-    ]
+    "textOrig": ["Greg Mandel - Tome 3/3 - Peter F. Hamilton", "Lu en mars 2018"]
   },
   {
     "title": "Royaume magique à vendre",
@@ -3349,34 +2790,23 @@
     "urls": [],
     "fiction": true,
     "titleOrig": "Royaume magique à vendre - Tome 1",
-    "textOrig": [
-      "Royaume magique à vendre - Tome 1",
-      "3 sur 5",
-      "Lu en mars 2018"
-    ]
+    "textOrig": ["Royaume magique à vendre - Tome 1", "3 sur 5", "Lu en mars 2018"]
   },
   {
     "title": "Greg Mandel",
     "series": "Greg Mandel",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "2/3",
     "date": "2018-02",
     "urls": [],
     "fiction": true,
     "titleOrig": "Greg Mandel - Tome 2/3 - Peter F. Hamilton",
-    "textOrig": [
-      "Greg Mandel - Tome 2/3 - Peter F. Hamilton",
-      "Lu en février 2018"
-    ]
+    "textOrig": ["Greg Mandel - Tome 2/3 - Peter F. Hamilton", "Lu en février 2018"]
   },
   {
     "title": "Greg Mandel",
     "series": "Greg Mandel",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "rating": 4,
     "volume": "1/3",
     "comment": "De la bonne SF, bien décrite, avec des pouvoirs Psy de SF.\nLong de lire les 3 tomes à la suite, ~1200 pages.",
@@ -3394,9 +2824,7 @@
   },
   {
     "title": "Designing Data-Intensive Applications",
-    "authors": [
-      "Martin Kleppmann"
-    ],
+    "authors": ["Martin Kleppmann"],
     "rating": 3,
     "comment": "J'ai découvert plein de sujets, et ça me fait peur.\nJe suis inquiet de mes compétences et de mon niveau de compréhension.\nLe distribué est très dur et ça va de l'écriture sur disque, aux clés de partitionnement au protocole de requête.\nPas passionné par le sujet, très verbeux, pas assez concret. Mais ce n'était pas le but du livre.\nC'est davantage un livre sur les idées et concepts, et surtout pas un tutorial.\nJ'y piocherai/relirai des parties en fonction des problèmes que je rencontrerai.",
     "date": "2018-01",
@@ -3417,9 +2845,7 @@
   },
   {
     "title": "Surely you're joking Mr. Feynman!",
-    "authors": [
-      "Richard P. Feynman"
-    ],
+    "authors": ["Richard P. Feynman"],
     "rating": 4,
     "comment": "De bonnes histoires et péripéties. J'en ai parlé à plusieurs (hypnose...)",
     "date": "2017-12",
@@ -3435,9 +2861,7 @@
   },
   {
     "title": "No place to hide",
-    "authors": [
-      "Glenn Greenwald"
-    ],
+    "authors": ["Glenn Greenwald"],
     "rating": 3,
     "comment": "L'histoire autour de Snowden. Impressionnant cet espionnage et le tabassage que le journaliste a eu!\nC'était un peu long.",
     "date": "2017-12",
@@ -3454,9 +2878,7 @@
   },
   {
     "title": "Notes from a small island",
-    "authors": [
-      "Bill Bryson"
-    ],
+    "authors": ["Bill Bryson"],
     "rating": 4,
     "comment": "Agréable, même si le vocabulaire est difficile. J'étais content de retrouver cette fraîcheur.",
     "date": "2017-04",
@@ -3472,9 +2894,7 @@
   },
   {
     "title": "Ta deuxième vie commence quand tu comprends que tu n'en as qu'une",
-    "authors": [
-      "Raphaelle Giordano"
-    ],
+    "authors": ["Raphaelle Giordano"],
     "rating": 4,
     "comment": "Sympa, même si on a du mal à y croire. Comte de fée ?\nCa se lit très facilement, langage plaisant.",
     "date": "2017-04",
@@ -3494,43 +2914,28 @@
   },
   {
     "title": "Pour patrie l'espace",
-    "authors": [
-      "Francis Carsac"
-    ],
+    "authors": ["Francis Carsac"],
     "rating": 3,
     "date": "2017-03",
     "urls": [],
     "fiction": true,
     "titleOrig": "Pour patrie l’espace – Francis Carsac",
-    "textOrig": [
-      "Pour patrie l’espace – Francis Carsac",
-      "Lu en mars 2017",
-      "3 sur 5"
-    ]
+    "textOrig": ["Pour patrie l’espace – Francis Carsac", "Lu en mars 2017", "3 sur 5"]
   },
   {
     "title": "Seul sur Mars",
-    "authors": [
-      "Andy Weir"
-    ],
+    "authors": ["Andy Weir"],
     "rating": 4,
     "comment": "Bien, il a bien galéré sur Mars !",
     "date": "2017-03",
     "urls": [],
     "fiction": true,
     "titleOrig": "Seul sur Mars – Andy Weir",
-    "textOrig": [
-      "Seul sur Mars – Andy Weir",
-      "4 sur 5",
-      "Lu en mars 2017",
-      "Bien, il a bien galéré sur Mars !"
-    ]
+    "textOrig": ["Seul sur Mars – Andy Weir", "4 sur 5", "Lu en mars 2017", "Bien, il a bien galéré sur Mars !"]
   },
   {
     "title": "La pierre et la flute",
-    "authors": [
-      "Hans Bemmann"
-    ],
+    "authors": ["Hans Bemmann"],
     "rating": 2,
     "comment": "Comte, pas très intéressant et surtout la stupidité des protagoniste (mythe et légende/comte)...",
     "date": "2017-02",
@@ -3547,9 +2952,7 @@
   {
     "title": "La véritable histoire",
     "series": "Le cycle des seuils",
-    "authors": [
-      "Stephen Donaldson"
-    ],
+    "authors": ["Stephen Donaldson"],
     "rating": 4,
     "comment": "SF avec une petite histoire et sa « vérité » détaillée ensuite. De la bonne SF.",
     "date": "2017-02",
@@ -3565,9 +2968,7 @@
   },
   {
     "title": "Carnet Secret d'un cambrioleur",
-    "authors": [
-      "Serge Brussolo"
-    ],
+    "authors": ["Serge Brussolo"],
     "rating": 4,
     "volume": "1",
     "comment": "Un trio de cambrioleur qui ne sont pas des stars. L'époque du 20ème anglais est bien rendue.",
@@ -3584,264 +2985,186 @@
   },
   {
     "title": "Captain Suicide",
-    "authors": [
-      "Serge Brussolo"
-    ],
+    "authors": ["Serge Brussolo"],
     "rating": 1,
     "date": "2017-01",
     "urls": [],
     "fiction": true,
     "titleOrig": "Captain Suicide - Serge Brussolo",
-    "textOrig": [
-      "Captain Suicide - Serge Brussolo",
-      "Lu en janvier 2017",
-      "1 sur 5"
-    ]
+    "textOrig": ["Captain Suicide - Serge Brussolo", "Lu en janvier 2017", "1 sur 5"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "15/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 15/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 15/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 15/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "14/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 14/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 14/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 14/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "13/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 13/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 13/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 13/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "12/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 12/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 12/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 12/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "11/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 11/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 11/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 11/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "10/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 10/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 10/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 10/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "9/15",
     "comment": "Lu en décembre 2016",
     "date": "2016-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 9/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 9/15 – Lois McMaster Bujold",
-      "Lu en décembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 9/15 – Lois McMaster Bujold", "Lu en décembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "8/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 8/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 8/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 8/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "7/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 7/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 7/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 7/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "6/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 6/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 6/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 6/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "5/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 5/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 5/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 5/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "4/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 4/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 4/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 4/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "3/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 3/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 3/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 3/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "volume": "2/15",
     "comment": "Lu en novembre 2016",
     "date": "2016-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Miles Vorkosigan – Saga Vorkosigan - Tome 2/15 – Lois McMaster Bujold",
-    "textOrig": [
-      "Miles Vorkosigan – Saga Vorkosigan - Tome 2/15 – Lois McMaster Bujold",
-      "Lu en novembre 2016"
-    ]
+    "textOrig": ["Miles Vorkosigan – Saga Vorkosigan - Tome 2/15 – Lois McMaster Bujold", "Lu en novembre 2016"]
   },
   {
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
-    "authors": [
-      "Lois McMaster Bujold"
-    ],
+    "authors": ["Lois McMaster Bujold"],
     "rating": 5,
     "volume": "1/15",
     "comment": "C'est bon et ça tourne bien.",
@@ -3859,9 +3182,7 @@
   {
     "title": "Basilica",
     "series": "Terre des origines",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "rating": 3,
     "volume": "1",
     "comment": "Mou et mieux à la fin. Je pense lire les suivants.",
@@ -3879,26 +3200,22 @@
   {
     "title": "La stratégie de l'ombre",
     "series": "Saga des ombres",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "rating": 3,
     "volume": "1",
     "date": "2016-10",
     "urls": [],
     "fiction": true,
-    "titleOrig": "La stratégie de l’ombre  – Saga des ombres – tome 1 - Orson Scott Card",
+    "titleOrig": "La stratégie de l’ombre – Saga des ombres – tome 1 - Orson Scott Card",
     "textOrig": [
-      "La stratégie de l’ombre  – Saga des ombres – tome 1 - Orson Scott Card",
+      "La stratégie de l’ombre – Saga des ombres – tome 1 - Orson Scott Card",
       "Lu en octobre 2016",
       "3 sur 5"
     ]
   },
   {
     "title": "Kwest",
-    "authors": [
-      "Andreas Eschbach"
-    ],
+    "authors": ["Andreas Eschbach"],
     "rating": 4,
     "comment": "De la bonne SF, comme toujours avec cet auteur",
     "date": "2016-09",
@@ -3914,9 +3231,7 @@
   },
   {
     "title": "Le projet Mars",
-    "authors": [
-      "Andreas Eschbach"
-    ],
+    "authors": ["Andreas Eschbach"],
     "rating": 3,
     "comment": "Des enfants se rebellent sur Mars",
     "date": "2016-09",
@@ -3933,106 +3248,74 @@
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "volume": "7/10",
     "comment": "Lu en juillet 2016",
     "date": "2016-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "L’agent des ombres – Tome 7/10 – Michel Robert",
-    "textOrig": [
-      "L’agent des ombres – Tome 7/10 – Michel Robert",
-      "Lu en juillet 2016"
-    ]
+    "textOrig": ["L’agent des ombres – Tome 7/10 – Michel Robert", "Lu en juillet 2016"]
   },
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "volume": "6/10",
     "date": "2016-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "L’agent des ombres – Tome 6/10 – Michel Robert",
-    "textOrig": [
-      "L’agent des ombres – Tome 6/10 – Michel Robert",
-      "Lu en juillet 2016"
-    ]
+    "textOrig": ["L’agent des ombres – Tome 6/10 – Michel Robert", "Lu en juillet 2016"]
   },
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "volume": "5/10",
     "date": "2016-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "L’agent des ombres – Tome 5/10 – Michel Robert",
-    "textOrig": [
-      "L’agent des ombres – Tome 5/10 – Michel Robert",
-      "Lu en juillet 2016"
-    ]
+    "textOrig": ["L’agent des ombres – Tome 5/10 – Michel Robert", "Lu en juillet 2016"]
   },
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "volume": "4/10",
     "date": "2016-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "L’agent des ombres – Tome 4/10 – Michel Robert",
-    "textOrig": [
-      "L’agent des ombres – Tome 4/10 – Michel Robert",
-      "Lu en juillet 2016"
-    ]
+    "textOrig": ["L’agent des ombres – Tome 4/10 – Michel Robert", "Lu en juillet 2016"]
   },
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "volume": "3/10",
     "date": "2016-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "L’agent des ombres – Tome 3/10 – Michel Robert",
-    "textOrig": [
-      "L’agent des ombres – Tome 3/10 – Michel Robert",
-      "Lu en juillet 2016"
-    ]
+    "textOrig": ["L’agent des ombres – Tome 3/10 – Michel Robert", "Lu en juillet 2016"]
   },
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "volume": "2/10",
     "date": "2016-07",
     "urls": [],
     "fiction": true,
     "titleOrig": "L’agent des ombres – Tome 2/10 – Michel Robert",
-    "textOrig": [
-      "L’agent des ombres – Tome 2/10 – Michel Robert",
-      "Lu en juillet 2016"
-    ]
+    "textOrig": ["L’agent des ombres – Tome 2/10 – Michel Robert", "Lu en juillet 2016"]
   },
   {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
-    "authors": [
-      "Michel Robert"
-    ],
+    "authors": ["Michel Robert"],
     "rating": 4,
     "volume": "1/10",
     "comment": "Fantasy trépidante\nIl a sorti des tomes après les 7 que j'ai lu.",
@@ -4050,10 +3333,7 @@
   },
   {
     "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
-    "authors": [
-      "James Wallace",
-      "Jim Erickson"
-    ],
+    "authors": ["James Wallace", "Jim Erickson"],
     "rating": 3,
     "comment": "Intéressant, mais j'aurai aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
     "date": "2016-06",
@@ -4069,9 +3349,7 @@
   },
   {
     "title": "How Software works",
-    "authors": [
-      "V. Anton Spraul"
-    ],
+    "authors": ["V. Anton Spraul"],
     "rating": 4,
     "comment": "Assez ardu par moment, bons rappels et bonnes découvertes de sujets et de techniques",
     "date": "2016-05",
@@ -4087,9 +3365,7 @@
   },
   {
     "title": "Au tréfond du ciel",
-    "authors": [
-      "Vernor Vinge"
-    ],
+    "authors": ["Vernor Vinge"],
     "rating": 4,
     "comment": "Bien, un poil long. J'ai confondu deux personnages (Underhill et Underville) ce qui m'a causé une certaine frustration à la fin.",
     "date": "2016-05",
@@ -4105,9 +3381,7 @@
   },
   {
     "title": "A guide to the good life",
-    "authors": [
-      "William B. Irvine"
-    ],
+    "authors": ["William B. Irvine"],
     "rating": 4,
     "comment": "CF notes. C'est du bon !",
     "date": "2016-05",
@@ -4123,9 +3397,7 @@
   },
   {
     "title": "The Personal MBA",
-    "authors": [
-      "Josh Kaufman"
-    ],
+    "authors": ["Josh Kaufman"],
     "rating": 5,
     "comment": "Plein de perles, de schémas de pensée qui simplifie, qui donne un éclairage sur le fonctionnement de choses : finances, cerveau...",
     "date": "2016-02",
@@ -4141,24 +3413,17 @@
   },
   {
     "title": "Blade runner",
-    "authors": [
-      "Philip K. Dick"
-    ],
+    "authors": ["Philip K. Dick"],
     "comment": "Lu en janvier 2016",
     "date": "2016-01",
     "urls": [],
     "fiction": true,
     "titleOrig": "Blade runner - Philip K. Dick",
-    "textOrig": [
-      "Blade runner - Philip K. Dick",
-      "Lu en janvier 2016"
-    ]
+    "textOrig": ["Blade runner - Philip K. Dick", "Lu en janvier 2016"]
   },
   {
     "title": "Le grand livre",
-    "authors": [
-      "Connie Willis"
-    ],
+    "authors": ["Connie Willis"],
     "rating": 4,
     "comment": "Bonne histoire mixée en médiéval et contemporain, pas mal de suspense.",
     "date": "2016-01",
@@ -4174,9 +3439,7 @@
   },
   {
     "title": "1984",
-    "authors": [
-      "George Orwell"
-    ],
+    "authors": ["George Orwell"],
     "rating": 4,
     "comment": "Inquiétant, fort sur les concepts, en avance sur son temps (un temps que je ne veux pas connaître). Bien angoissant par moment.",
     "date": "2015-12",
@@ -4192,25 +3455,17 @@
   },
   {
     "title": "Sans parler du chien",
-    "authors": [
-      "Connie Willis"
-    ],
+    "authors": ["Connie Willis"],
     "comment": "Lu en décembre 2015",
     "date": "2015-12",
     "urls": [],
     "fiction": true,
     "titleOrig": "Sans parler du chien - Connie Willis",
-    "textOrig": [
-      "Sans parler du chien - Connie Willis",
-      "Lu en décembre 2015"
-    ]
+    "textOrig": ["Sans parler du chien - Connie Willis", "Lu en décembre 2015"]
   },
   {
     "title": "The Pragmatic Programmer",
-    "authors": [
-      "Andrew Hunt",
-      "David Thomas"
-    ],
+    "authors": ["Andrew Hunt", "David Thomas"],
     "rating": 3,
     "comment": "Lu trop tard, peu de choses m'ont surprises. Et le tas de conseil (Fait ça, Ne faites pas ci) est vraiment gênant.",
     "date": "2015-11",
@@ -4226,9 +3481,7 @@
   },
   {
     "title": "Permanence",
-    "authors": [
-      "Karl Schroeder"
-    ],
+    "authors": ["Karl Schroeder"],
     "rating": 4,
     "comment": "Space-op où une nana repère un vaisseau ET qui devient sa propriété mais un militaire le veut également, une arme méchante... Ca tourne bien.",
     "date": "2015-09",
@@ -4244,9 +3497,7 @@
   },
   {
     "title": "Redshirts",
-    "authors": [
-      "Jone Scalzi"
-    ],
+    "authors": ["Jone Scalzi"],
     "rating": 5,
     "comment": "Star trek qui n'est pas Star Trek, mais les gens y sont les conséquences. C'est très bon !",
     "date": "2015-09",
@@ -4262,9 +3513,7 @@
   },
   {
     "title": "How to lie with Statistics",
-    "authors": [
-      "Darrell Huff"
-    ],
+    "authors": ["Darrell Huff"],
     "rating": 4,
     "comment": "Certaines points sont assez connus, les autres moins évidents. Intéressant et se lit très vite.",
     "date": "2015-09",
@@ -4281,9 +3530,7 @@
   {
     "title": "Ventus",
     "series": "Ventus",
-    "authors": [
-      "Karl Schroeder"
-    ],
+    "authors": ["Karl Schroeder"],
     "rating": 4,
     "volume": "1/2",
     "comment": "Très bon roman « moyen-age/space-op », c'est bien mené, y a de l'aventure.",
@@ -4301,24 +3548,17 @@
   {
     "title": "Ventus",
     "series": "Ventus",
-    "authors": [
-      "Karl Schroeder"
-    ],
+    "authors": ["Karl Schroeder"],
     "volume": "2/2",
     "date": "2015-08",
     "urls": [],
     "fiction": true,
     "titleOrig": "Ventus – tome 2/2 - Karl Schroeder",
-    "textOrig": [
-      "Ventus – tome 2/2 - Karl Schroeder",
-      "Lu en août 2015"
-    ]
+    "textOrig": ["Ventus – tome 2/2 - Karl Schroeder", "Lu en août 2015"]
   },
   {
     "title": "C'est moi qui décide",
-    "authors": [
-      "Jan Fault"
-    ],
+    "authors": ["Jan Fault"],
     "rating": 4,
     "comment": "Instructif et imaginatif pour régler certains conflits avec les enfants.",
     "date": "2015-07",
@@ -4334,10 +3574,7 @@
   },
   {
     "title": "Team Geek",
-    "authors": [
-      "Brian Fitzpatrick",
-      "Ben Colllins-Sussman"
-    ],
+    "authors": ["Brian Fitzpatrick", "Ben Colllins-Sussman"],
     "rating": 3,
     "comment": "Un peu plan-plan, pas de super nouveauté. Les illustrations parsèment le texte, ça détend.",
     "date": "2015-05",
@@ -4354,9 +3591,7 @@
   {
     "title": "La république des voleurs",
     "series": "La république des voleurs",
-    "authors": [
-      "Scott Lynch"
-    ],
+    "authors": ["Scott Lynch"],
     "rating": 3,
     "volume": "3",
     "comment": "Bof pour les histoires avec sa copine et le sujet en général. Beaucoup moins inventif, longuet...",
@@ -4374,9 +3609,7 @@
   },
   {
     "title": "Tous à Zanzibar",
-    "authors": [
-      "John Brunner"
-    ],
+    "authors": ["John Brunner"],
     "rating": 4,
     "comment": "Inventif, mais je n'ai accroché qu'au bout de 300 pages ! C'est assez délirant, mais pour 1968 c'est assez incroyable !",
     "date": "2015-05",
@@ -4393,9 +3626,7 @@
   },
   {
     "title": "Tromper la mort",
-    "authors": [
-      "Maryse Rivière"
-    ],
+    "authors": ["Maryse Rivière"],
     "rating": 3,
     "comment": "Bien aimé, pas excitant, mais comme il se lit vite. Quelques bons trouvailles (fausses pistes qui ne se réalisent pas pour le lecteur)",
     "date": "2015-03",
@@ -4412,9 +3643,7 @@
   },
   {
     "title": "Le gouffre de la lune",
-    "authors": [
-      "Abraham Merritt"
-    ],
+    "authors": ["Abraham Merritt"],
     "rating": 2,
     "comment": "Fantasy chelou avec un monde souterrain. Les descriptions sont délirantes et incompréhensibles.\nL'histoire est d'un classique.",
     "date": "2015-03",
@@ -4431,9 +3660,7 @@
   },
   {
     "title": "What the CEO wants you to know",
-    "authors": [
-      "Ram Charan"
-    ],
+    "authors": ["Ram Charan"],
     "rating": 3,
     "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
     "date": "2015-03",
@@ -4454,9 +3681,7 @@
     "rating": 3,
     "comment": "De bonnes petites nouvelles. Une est excellente, mais laquelle ?",
     "date": "2015-02",
-    "urls": [
-      "http://www.restosducoeur.org/"
-    ],
+    "urls": [],
     "fiction": true,
     "titleOrig": "13 à table",
     "textOrig": [
@@ -4469,9 +3694,7 @@
   },
   {
     "title": "Révolte sur la lune",
-    "authors": [
-      "Robert Heinlein"
-    ],
+    "authors": ["Robert Heinlein"],
     "rating": 5,
     "comment": "Vieux livres super sympa, malin et intéressant.",
     "date": "2015-02",
@@ -4487,11 +3710,9 @@
   },
   {
     "title": "Vous êtes vendeur, le saviez-vous ?",
-    "authors": [
-      "Daniel Pink"
-    ],
+    "authors": ["Daniel Pink"],
     "rating": 4,
-    "comment": "Intéressant et distrayant. Le point de vue vaut le coût (vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
+    "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
     "date": "2015-01",
     "urls": [],
     "fiction": false,
@@ -4505,9 +3726,7 @@
   },
   {
     "title": "Le guide d'entretien de mon vélo",
-    "authors": [
-      "Peter Drinkell"
-    ],
+    "authors": ["Peter Drinkell"],
     "rating": 3,
     "comment": "Pas mal, manque de détail peut-être.",
     "date": "2015-01",
@@ -4523,9 +3742,7 @@
   },
   {
     "title": "L'analphabète qui savait compter",
-    "authors": [
-      "Jonas Jonasson"
-    ],
+    "authors": ["Jonas Jonasson"],
     "rating": 4,
     "comment": "Bien ! Dans le même humour que Le vieux qui ne voulait pas fêter son anniversaire.",
     "date": "2015-01",
@@ -4541,11 +3758,9 @@
   },
   {
     "title": "Gravé sur chrome",
-    "authors": [
-      "William Gibson"
-    ],
+    "authors": ["William Gibson"],
     "rating": 5,
-    "comment": "Recueil de nouvelles. L'imaginaire est splendide, les histoires un peu complexe des fois, mais quelles mondes ! Génial niveau intelligence.",
+    "comment": "Recueil de nouvelles. L'imaginaire est splendide, les histoires un peu complexes des fois, mais quels mondes ! Génial niveau intelligence.",
     "date": "2014-12",
     "urls": [],
     "fiction": true,
@@ -4560,9 +3775,7 @@
   },
   {
     "title": "Head First Data Analysis",
-    "authors": [
-      "Michael Milton"
-    ],
+    "authors": ["Michael Milton"],
     "rating": 4,
     "comment": "Assez facile à lire, il m'a fait découvrir certains thèmes des statistiques, sans me casser la tête.\nDe bons chapitres, d'autres optionnels (le relationnel), et j'ai sur plusieurs sujets (heuristiques, régression linéaire...).\nHead First Statistics a l'air plus hardcore !",
     "date": "2014-12",
@@ -4580,9 +3793,7 @@
   },
   {
     "title": "Secrets of Office Politics",
-    "authors": [
-      "Marie G. McIntyre"
-    ],
+    "authors": ["Marie G. McIntyre"],
     "rating": 4,
     "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
     "date": "2014-12",
@@ -4601,9 +3812,7 @@
   },
   {
     "title": "Waylander",
-    "authors": [
-      "David Gemmel"
-    ],
+    "authors": ["David Gemmel"],
     "rating": 3,
     "comment": "Un peu ennuyeux au début, mais la fin est pas mal.\nC'est sombre, peu de joie, sale, tout en restant peut-être trop simple.",
     "date": "2014-11",
@@ -4621,9 +3830,7 @@
   {
     "title": "Les veufs noirs",
     "series": "Recueil 1",
-    "authors": [
-      "Asimov"
-    ],
+    "authors": ["Asimov"],
     "rating": 5,
     "volume": "1",
     "comment": "J'aime beaucoup le style, les petites histoires. Content de les retrouver le soir.",
@@ -4641,24 +3848,17 @@
   {
     "title": "Les veufs noirs",
     "series": "Recueil 2",
-    "authors": [
-      "Asimov"
-    ],
+    "authors": ["Asimov"],
     "volume": "2",
     "date": "2014-11",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les veufs noirs – Recueil 2 - Asimov",
-    "textOrig": [
-      "Les veufs noirs – Recueil 2 - Asimov",
-      "Lu en novembre 2014"
-    ]
+    "textOrig": ["Les veufs noirs – Recueil 2 - Asimov", "Lu en novembre 2014"]
   },
   {
     "title": "Un feu sur l'abime",
-    "authors": [
-      "Vernor Vinge"
-    ],
+    "authors": ["Vernor Vinge"],
     "rating": 4,
     "comment": "Excellent le chapitre où on découvre que certains personnages sont des chiens. Le reste est un poil long. Je lirai certainement la suite.",
     "date": "2014-10",
@@ -4676,11 +3876,9 @@
   },
   {
     "title": "Influence et Manipulation",
-    "authors": [
-      "Robert Cialdini"
-    ],
+    "authors": ["Robert Cialdini"],
     "rating": 5,
-    "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ca se lit bien, c'est intéressant et pratique.",
+    "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
     "date": "2014-10",
     "urls": [],
     "fiction": false,
@@ -4694,9 +3892,7 @@
   },
   {
     "title": "Notes to a software team leader",
-    "authors": [
-      "Roy Osherove"
-    ],
+    "authors": ["Roy Osherove"],
     "rating": 3,
     "comment": "Des conseils pour devenir un meilleur manager technique / ou tech lead.\nLa mise en page a des ratées.",
     "date": "2014-10",
@@ -4713,9 +3909,7 @@
   },
   {
     "title": "The secrets of consulting",
-    "authors": [
-      "Gerald M. Weinberg"
-    ],
+    "authors": ["Gerald M. Weinberg"],
     "rating": 3,
     "comment": "Voir le fichier avec les notes",
     "date": "2014-09",
@@ -4731,9 +3925,7 @@
   },
   {
     "title": "La Nef des fous",
-    "authors": [
-      "Richard Paul Russo"
-    ],
+    "authors": ["Richard Paul Russo"],
     "rating": 4,
     "comment": "J'aurai mis 5 sur 5 s'il y avait une suite et plus de réponses, c'était tellement prenant ! C'est un roman de SF-qui-fait-peur. C'est bon, ça se lit très bien. Oui, c'était très bien.",
     "date": "2014-08",
@@ -4750,9 +3942,7 @@
   },
   {
     "title": "La mécanique du centaure",
-    "authors": [
-      "M. John Harrison"
-    ],
+    "authors": ["M. John Harrison"],
     "rating": 3,
     "comment": "SF un peu dure à comprendre de temps en temps. Déçu par la fin, mais pas mal en fin de compte.",
     "date": "2014-08",
@@ -4769,9 +3959,7 @@
   {
     "title": "La lune seule le sait",
     "series": "trilogie",
-    "authors": [
-      "Johan Heliot"
-    ],
+    "authors": ["Johan Heliot"],
     "rating": 4,
     "volume": "1/3",
     "comment": "Jules Verne et des résistants luttent contre Napoléon III. C'est du Steampunk bien fait. Ca se lit bien. L'univers est cohérents, les inventions aussi. Du bon !",
@@ -4789,9 +3977,7 @@
   },
   {
     "title": "Le casse du continuum",
-    "authors": [
-      "Léo Henry"
-    ],
+    "authors": ["Léo Henry"],
     "rating": 4,
     "comment": "Les 7 meilleurs dans leur domaine réunit pour un casse. Ca se tient, c'est de l'aventure. Pas beaucoup de suspense non plus.",
     "date": "2014-06",
@@ -4808,42 +3994,30 @@
   {
     "title": "Forever Free",
     "series": "La Guerre éternelle",
-    "authors": [
-      "Joe Haldeman"
-    ],
+    "authors": ["Joe Haldeman"],
     "volume": "3/3",
     "date": "2014-05",
     "urls": [],
     "fiction": true,
     "titleOrig": "Forever Free - La Guerre éternelle - Tome 3/3 - Joe Haldeman",
-    "textOrig": [
-      "Forever Free - La Guerre éternelle - Tome 3/3 - Joe Haldeman",
-      "Lu en mai 2014"
-    ]
+    "textOrig": ["Forever Free - La Guerre éternelle - Tome 3/3 - Joe Haldeman", "Lu en mai 2014"]
   },
   {
     "title": "A Separate War",
     "series": "La Guerre éternelle",
-    "authors": [
-      "Joe Haldeman"
-    ],
+    "authors": ["Joe Haldeman"],
     "volume": "2/3",
     "comment": "Lu en mai 2014",
     "date": "2014-05",
     "urls": [],
     "fiction": true,
     "titleOrig": "A Separate War - La Guerre éternelle - Tome 2/3 - Joe Haldeman",
-    "textOrig": [
-      "A Separate War - La Guerre éternelle - Tome 2/3 - Joe Haldeman",
-      "Lu en mai 2014"
-    ]
+    "textOrig": ["A Separate War - La Guerre éternelle - Tome 2/3 - Joe Haldeman", "Lu en mai 2014"]
   },
   {
     "title": "La Guerre éternelle",
     "series": "La Guerre éternelle",
-    "authors": [
-      "Joe Haldeman"
-    ],
+    "authors": ["Joe Haldeman"],
     "rating": 3,
     "volume": "1/3",
     "comment": "J'hésitai entre 3 et 4 sur 5, car je suis déçu de la fin de la Guerre éternelle (les dix dernières pages). Je pensais que le retournement final serait mieux ou plus profond. Dommage. La suite est mieux, plus intéressante.",
@@ -4865,9 +4039,7 @@
   },
   {
     "title": "Reactive Design Patterns",
-    "authors": [
-      "Roland Kuhn"
-    ],
+    "authors": ["Roland Kuhn"],
     "rating": 4,
     "comment": "MEAP Manning. Ca démarre bien, car il y a de bonnes choses. Pas trop pompeux.",
     "date": "2014-05",
@@ -4883,9 +4055,7 @@
   },
   {
     "title": "Growth Hacker Marketing",
-    "authors": [
-      "Ryan Holiday"
-    ],
+    "authors": ["Ryan Holiday"],
     "rating": 2,
     "comment": "Trop long pour le contenu. Je ne sais pas ce que j'en retire. Ca me fait penser à du bullshit.",
     "date": "2014-05",
@@ -4901,9 +4071,7 @@
   },
   {
     "title": "Dans le torrent des siècles",
-    "authors": [
-      "Clifford D. Simak"
-    ],
+    "authors": ["Clifford D. Simak"],
     "rating": 4,
     "comment": "Une intrigue autour d'un homme qui revient d'une « planète » après 20 ans disparu. Il est porteur de quelques choses. Ca parle de voyage dans le temps et ça tourne bien.",
     "date": "2014-05",
@@ -4923,9 +4091,7 @@
     "rating": 2,
     "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
     "date": "2014-04",
-    "urls": [
-      "https://www.eyrolles.com/"
-    ],
+    "urls": ["https://www.eyrolles.com/"],
     "fiction": false,
     "titleOrig": "L'isolation par l'extérieur – Eyrolles",
     "textOrig": [
@@ -4938,9 +4104,7 @@
   },
   {
     "title": "L'isolation écologique – Conception, matériaux, mise en oeuvre",
-    "authors": [
-      "Jean-Pierre Oliva"
-    ],
+    "authors": ["Jean-Pierre Oliva"],
     "rating": 4,
     "comment": "De très bonnes explications sur les matériaux et méthodes d'isolation (par fiche).\nCa manque de conseil.\nGrand gagnant : ossature bois et l'isolation en bottes de paille.\nR = 6, épaisseur = 49 (45 paille + (2+2) enduits).",
     "date": "2014-04",
@@ -4959,10 +4123,7 @@
   },
   {
     "title": "Habitat passif et basse consommation : principes fondamentaux",
-    "authors": [
-      "Leguenne",
-      "Rigassi"
-    ],
+    "authors": ["Leguenne", "Rigassi"],
     "rating": 4,
     "comment": "Moitié principes, moitié études de cas.\nDommage qu'il n'y ait pas plus d'autoconstruction car le coût est important quand on ne le fait pas soi-même (prix de 850 à 2200 euros/m²).",
     "date": "2014-04",
@@ -4979,9 +4140,7 @@
   },
   {
     "title": "Comment les Eskimos gardent les bébés au chaud",
-    "authors": [
-      "Mei-Ling Hopgood"
-    ],
+    "authors": ["Mei-Ling Hopgood"],
     "rating": 4,
     "comment": "Différents sujets sur l'éducation des enfants : peut-on/faut-il les coucher tard, les laisser se débrouiller...\nLe livre m'a donné matière à réflexion sur plusieurs points (donc très bien) : beaucoup de lâché-prise, un peu de désengagement, mais une meilleure confiance en l'enfant (qui n'est pas un adulte inachevé, mais juste un enfant), tout en étant ferme et exigeant sur les études.",
     "date": "2014-04",
@@ -4998,9 +4157,7 @@
   },
   {
     "title": "Quand souffle le cent du nord",
-    "authors": [
-      "Daniel Glattauer"
-    ],
+    "authors": ["Daniel Glattauer"],
     "rating": 4,
     "comment": "Roman sur les échanges de mail entre une femme et un homme. Prenant car l'un comme l'autre avance, recule, jusqu'à la fin. Il existe une suite.",
     "date": "2014-04",
@@ -5016,9 +4173,7 @@
   },
   {
     "title": "Masters of Doom",
-    "authors": [
-      "David Kushner"
-    ],
+    "authors": ["David Kushner"],
     "rating": 3,
     "comment": "Un peu trop américain danse le style à mon goût. J'ai appris des choses sur les événements qui se sont passés à cette époque dans le monde du jeu vidéo.\nCarmack et Romero sont de sacrés bonhommes !\nIls travaillent dur, socialement étonnants, beaucoup de problèmes entre les gens, pas forcément technologique...",
     "date": "2014-03",
@@ -5036,9 +4191,7 @@
   },
   {
     "title": "Rénovation basse consommation",
-    "authors": [
-      "Roland Dutrey"
-    ],
+    "authors": ["Roland Dutrey"],
     "rating": 4,
     "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc. Le plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure). A retenir : tout travaux dégage un bénéfice, mais à très long terme.",
     "date": "2014-03",
@@ -5056,9 +4209,7 @@
   },
   {
     "title": "The Undercover Economist",
-    "authors": [
-      "Tim Harford"
-    ],
+    "authors": ["Tim Harford"],
     "rating": 4,
     "comment": "Bon livre d'intro à l'économie : fixation des prix, certaines théories...\nJe n'ai pas pris de notes et il faut que je le relise pour noter les « ahah » que j'ai eu.\nEn revanche, les titres ne sont pas toujours clairs et explicitent par rapport au contenu.",
     "date": "2014-02",
@@ -5076,9 +4227,7 @@
   },
   {
     "title": "Wild",
-    "authors": [
-      "Cheryl Stayed"
-    ],
+    "authors": ["Cheryl Stayed"],
     "rating": 3,
     "comment": "Sympa, mais pas forcément rando, ni aventure, un peu cucul.",
     "date": "2014-01",
@@ -5095,9 +4244,7 @@
   },
   {
     "title": "Promenons-nous dans les bois",
-    "authors": [
-      "Bill Bryson"
-    ],
+    "authors": ["Bill Bryson"],
     "rating": 4,
     "comment": "Pas le meilleur Bryson, mais sympa.",
     "date": "2014-01",
@@ -5113,9 +4260,7 @@
   },
   {
     "title": "Choose Yourself",
-    "authors": [
-      "James Altucher"
-    ],
+    "authors": ["James Altucher"],
     "rating": 3,
     "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
     "date": "2013-12",
@@ -5131,9 +4276,7 @@
   },
   {
     "title": "La mer expliquée aux terriens",
-    "authors": [
-      "Olivier Le Carrer"
-    ],
+    "authors": ["Olivier Le Carrer"],
     "rating": 4,
     "comment": "Explique ce qu'est la mer, comment on s'y comporte, les bateaux...\nInspirant, ça me donne envie d'avoir un bateau (moins de 7 mètre, 8000 euros)",
     "date": "2013-04",
@@ -5150,9 +4293,7 @@
   },
   {
     "title": "L'année où j'ai vécu selon la Bible",
-    "authors": [
-      "A. J. Jacobs"
-    ],
+    "authors": ["A. J. Jacobs"],
     "rating": 4,
     "comment": "Ou l'humble quête d'un homme qui chercha à suivre la Bible aussi littéralement que possible",
     "urls": [
@@ -5168,9 +4309,7 @@
   },
   {
     "title": "La Horde du Contrevent",
-    "authors": [
-      "Alain Damasio"
-    ],
+    "authors": ["Alain Damasio"],
     "urls": [
       "http://www.amazon.fr/Horde-du-Contrevent-Alain-Damasio/dp/2070342263/ref=sr_1_1?ie=UTF8&s=books&qid=1252070870&sr=8-1"
     ],
@@ -5183,9 +4322,7 @@
   },
   {
     "title": "La conjuration des imbéciles",
-    "authors": [
-      "John Kennedy Toole"
-    ],
+    "authors": ["John Kennedy Toole"],
     "comment": "Réticences à se mettre au travail",
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
@@ -5227,25 +4364,18 @@
   {
     "title": "Les Salauds Gentilshommes",
     "series": "Les Salauds Gentilshommes",
-    "authors": [
-      "Scott lynch"
-    ],
+    "authors": ["Scott lynch"],
     "rating": 5,
     "volume": "2",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les Salauds Gentilshommes - Tome 2 - Scott lynch",
-    "textOrig": [
-      "Les Salauds Gentilshommes - Tome 2 - Scott lynch",
-      "5 sur 5"
-    ]
+    "textOrig": ["Les Salauds Gentilshommes - Tome 2 - Scott lynch", "5 sur 5"]
   },
   {
     "title": "Les Salauds Gentilshommes",
     "series": "Les Salauds Gentilshommes",
-    "authors": [
-      "Scott lynch"
-    ],
+    "authors": ["Scott lynch"],
     "rating": 5,
     "volume": "1",
     "urls": [
@@ -5261,9 +4391,7 @@
   },
   {
     "title": "L'alchimiste",
-    "authors": [
-      "Paulo Coelho"
-    ],
+    "authors": ["Paulo Coelho"],
     "urls": [
       "http://www.amazon.fr/Lalchimiste-Paulo-Coelho/dp/2290004448/ref=sr_1_fkmr0_2?ie=UTF8&qid=1271934514&sr=8-2-fkmr0"
     ],
@@ -5276,9 +4404,7 @@
   },
   {
     "title": "Le but",
-    "authors": [
-      "Eliyahu M. Goldratt"
-    ],
+    "authors": ["Eliyahu M. Goldratt"],
     "urls": [
       "http://www.amazon.fr/but-processus-progr%C3%A8s-permanent/dp/2124656414/ref=sr_1_1?s=books&ie=UTF8&qid=1307434153&sr=1-1"
     ],
@@ -5296,9 +4422,7 @@
     "urls": [],
     "fiction": false,
     "titleOrig": "Serons-nous immortels ? : Oméga 3, nanotechnologies, clonage...",
-    "textOrig": [
-      "Serons-nous immortels ? : Oméga 3, nanotechnologies, clonage..."
-    ]
+    "textOrig": ["Serons-nous immortels ? : Oméga 3, nanotechnologies, clonage..."]
   },
   {
     "title": "Dictionnaire révolté d'économie",
@@ -5331,9 +4455,7 @@
   },
   {
     "title": "Une histoire de tout ou presque",
-    "authors": [
-      "Bill Bryson"
-    ],
+    "authors": ["Bill Bryson"],
     "rating": 5,
     "comment": "Long à lire, mais super intéressant. Explique plein de sujets de l'infiniment petit à l'univers.",
     "urls": [],
@@ -5348,124 +4470,87 @@
   {
     "title": "Les chroniques d'Alvin le faiseur",
     "series": "Les chroniques d'Alvin le faiseur",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "volume": "6/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les chroniques d'Alvin le faiseur - Tome 6/6 - Orson Scott Card",
-    "textOrig": [
-      "Les chroniques d'Alvin le faiseur - Tome 6/6 - Orson Scott Card"
-    ]
+    "textOrig": ["Les chroniques d'Alvin le faiseur - Tome 6/6 - Orson Scott Card"]
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
     "series": "Les chroniques d'Alvin le faiseur",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "volume": "5/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les chroniques d'Alvin le faiseur - Tome 5/6 - Orson Scott Card",
-    "textOrig": [
-      "Les chroniques d'Alvin le faiseur - Tome 5/6 - Orson Scott Card"
-    ]
+    "textOrig": ["Les chroniques d'Alvin le faiseur - Tome 5/6 - Orson Scott Card"]
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
     "series": "Les chroniques d'Alvin le faiseur",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "volume": "4/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les chroniques d'Alvin le faiseur - Tome 4/6 - Orson Scott Card",
-    "textOrig": [
-      "Les chroniques d'Alvin le faiseur - Tome 4/6 - Orson Scott Card"
-    ]
+    "textOrig": ["Les chroniques d'Alvin le faiseur - Tome 4/6 - Orson Scott Card"]
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
     "series": "Les chroniques d'Alvin le faiseur",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "volume": "3/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les chroniques d'Alvin le faiseur - Tome 3/6 - Orson Scott Card",
-    "textOrig": [
-      "Les chroniques d'Alvin le faiseur - Tome 3/6 - Orson Scott Card"
-    ]
+    "textOrig": ["Les chroniques d'Alvin le faiseur - Tome 3/6 - Orson Scott Card"]
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
     "series": "Les chroniques d'Alvin le faiseur",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "volume": "2/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les chroniques d'Alvin le faiseur - Tome 2/6 - Orson Scott Card",
-    "textOrig": [
-      "Les chroniques d'Alvin le faiseur - Tome 2/6 - Orson Scott Card"
-    ]
+    "textOrig": ["Les chroniques d'Alvin le faiseur - Tome 2/6 - Orson Scott Card"]
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
     "series": "Les chroniques d'Alvin le faiseur",
-    "authors": [
-      "Orson Scott Card"
-    ],
+    "authors": ["Orson Scott Card"],
     "volume": "1/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les chroniques d'Alvin le faiseur - Tome 1/6 - Orson Scott Card",
-    "textOrig": [
-      "Les chroniques d'Alvin le faiseur - Tome 1/6 - Orson Scott Card"
-    ]
+    "textOrig": ["Les chroniques d'Alvin le faiseur - Tome 1/6 - Orson Scott Card"]
   },
   {
     "title": "Les Portes de la Mort",
     "series": "Les Portes de la Mort",
-    "authors": [
-      "Margaret Weis",
-      "Tracy Hickman"
-    ],
+    "authors": ["Margaret Weis", "Tracy Hickman"],
     "volume": "3/3",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les Portes de la Mort - Tome 3/3 - Margaret Weis & Tracy Hickman",
-    "textOrig": [
-      "Les Portes de la Mort - Tome 3/3 - Margaret Weis & Tracy Hickman"
-    ]
+    "textOrig": ["Les Portes de la Mort - Tome 3/3 - Margaret Weis & Tracy Hickman"]
   },
   {
     "title": "Les Portes de la Mort",
     "series": "Les Portes de la Mort",
-    "authors": [
-      "Margaret Weis",
-      "Tracy Hickman"
-    ],
+    "authors": ["Margaret Weis", "Tracy Hickman"],
     "volume": "2/3",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les Portes de la Mort - Tome 2/3 - Margaret Weis & Tracy Hickman",
-    "textOrig": [
-      "Les Portes de la Mort - Tome 2/3 - Margaret Weis & Tracy Hickman"
-    ]
+    "textOrig": ["Les Portes de la Mort - Tome 2/3 - Margaret Weis & Tracy Hickman"]
   },
   {
     "title": "Les Portes de la Mort",
     "series": "Les Portes de la Mort",
-    "authors": [
-      "Margaret Weis",
-      "Tracy Hickman"
-    ],
+    "authors": ["Margaret Weis", "Tracy Hickman"],
     "volume": "1/3",
     "comment": "Lu car j'avais de vieux et bons souvenirs, mais la relecture n'a pas été dingue.",
     "urls": [],
@@ -5479,111 +4564,78 @@
   {
     "title": "Rama",
     "series": "Rama",
-    "authors": [
-      "Arthur C. Clarke"
-    ],
+    "authors": ["Arthur C. Clarke"],
     "volume": "4/4",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rama - Tome 4/4 - Arthur C. Clarke",
-    "textOrig": [
-      "Rama - Tome 4/4 - Arthur C. Clarke"
-    ]
+    "textOrig": ["Rama - Tome 4/4 - Arthur C. Clarke"]
   },
   {
     "title": "Rama",
     "series": "Rama",
-    "authors": [
-      "Arthur C. Clarke"
-    ],
+    "authors": ["Arthur C. Clarke"],
     "volume": "3/4",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rama - Tome 3/4 - Arthur C. Clarke",
-    "textOrig": [
-      "Rama - Tome 3/4 - Arthur C. Clarke"
-    ]
+    "textOrig": ["Rama - Tome 3/4 - Arthur C. Clarke"]
   },
   {
     "title": "Rama",
     "series": "Rama",
-    "authors": [
-      "Arthur C. Clarke"
-    ],
+    "authors": ["Arthur C. Clarke"],
     "volume": "2/4",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rama - Tome 2/4 - Arthur C. Clarke",
-    "textOrig": [
-      "Rama - Tome 2/4 - Arthur C. Clarke"
-    ]
+    "textOrig": ["Rama - Tome 2/4 - Arthur C. Clarke"]
   },
   {
     "title": "Rama",
     "series": "Rama",
-    "authors": [
-      "Arthur C. Clarke"
-    ],
+    "authors": ["Arthur C. Clarke"],
     "rating": 4,
     "volume": "1/4",
     "comment": "Mon premier roman de SF à l'époque !",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rama - Tome 1/4 - Arthur C. Clarke",
-    "textOrig": [
-      "Rama - Tome 1/4 - Arthur C. Clarke",
-      "4 sur 5",
-      "Mon premier roman de SF à l'époque !"
-    ]
+    "textOrig": ["Rama - Tome 1/4 - Arthur C. Clarke", "4 sur 5", "Mon premier roman de SF à l'époque !"]
   },
   {
     "title": "La justice de lancillaire",
-    "authors": [
-      "Ann Leckie"
-    ],
+    "authors": ["Ann Leckie"],
     "rating": 2,
     "urls": [],
     "fiction": true,
     "titleOrig": "La justice de lancillaire - Ann Leckie",
-    "textOrig": [
-      "La justice de lancillaire - Ann Leckie",
-      "2 sur 5"
-    ]
+    "textOrig": ["La justice de lancillaire - Ann Leckie", "2 sur 5"]
   },
   {
     "title": "Cycle des dieux",
     "series": "Cycle des dieux",
-    "authors": [
-      "David Werber"
-    ],
+    "authors": ["David Werber"],
     "volume": "3/3",
     "urls": [],
     "fiction": true,
     "titleOrig": "Cycle des dieux - Tome 3/3 - David Werber",
-    "textOrig": [
-      "Cycle des dieux - Tome 3/3 - David Werber"
-    ]
+    "textOrig": ["Cycle des dieux - Tome 3/3 - David Werber"]
   },
   {
     "title": "Cycle des dieux",
     "series": "Cycle des dieux",
-    "authors": [
-      "David Werber"
-    ],
+    "authors": ["David Werber"],
     "volume": "2/3",
     "urls": [],
     "fiction": true,
     "titleOrig": "Cycle des dieux - Tome 2/3 - David Werber",
-    "textOrig": [
-      "Cycle des dieux - Tome 2/3 - David Werber"
-    ]
+    "textOrig": ["Cycle des dieux - Tome 2/3 - David Werber"]
   },
   {
     "title": "Cycle des dieux",
     "series": "Cycle des dieux",
-    "authors": [
-      "David Werber"
-    ],
+    "authors": ["David Werber"],
     "rating": 2,
     "volume": "1/3",
     "comment": "Lu la trilogie car on m'avait offert le 1er tome.\nPas accroché du tout au style, aux personnages.",
@@ -5599,62 +4651,42 @@
   },
   {
     "title": "Les enchantements d'Ambremer",
-    "authors": [
-      "Pierre Pevel"
-    ],
+    "authors": ["Pierre Pevel"],
     "urls": [],
     "fiction": true,
     "titleOrig": "Les enchantements d'Ambremer - Pierre Pevel",
-    "textOrig": [
-      "Les enchantements d'Ambremer - Pierre Pevel"
-    ]
+    "textOrig": ["Les enchantements d'Ambremer - Pierre Pevel"]
   },
   {
     "title": "La première Leçon du Sorcier",
     "series": "Epée de Vérité",
-    "authors": [
-      "Terry Goodkind"
-    ],
+    "authors": ["Terry Goodkind"],
     "volume": "2",
     "urls": [],
     "fiction": true,
     "titleOrig": "La première Leçon du Sorcier - Epée de Vérité - Tome 2 - Terry Goodkind",
-    "textOrig": [
-      "La première Leçon du Sorcier - Epée de Vérité - Tome 2 - Terry Goodkind"
-    ]
+    "textOrig": ["La première Leçon du Sorcier - Epée de Vérité - Tome 2 - Terry Goodkind"]
   },
   {
     "title": "La première Leçon du Sorcier",
     "series": "Epée de Vérité",
-    "authors": [
-      "Terry Goodkind"
-    ],
+    "authors": ["Terry Goodkind"],
     "rating": 2,
     "volume": "1",
     "comment": "Trop enfantin",
     "urls": [],
     "fiction": true,
     "titleOrig": "La première Leçon du Sorcier - Epée de Vérité - Tome 1 - Terry Goodkind",
-    "textOrig": [
-      "La première Leçon du Sorcier - Epée de Vérité - Tome 1 - Terry Goodkind",
-      "2 sur 5",
-      "Trop enfantin"
-    ]
+    "textOrig": ["La première Leçon du Sorcier - Epée de Vérité - Tome 1 - Terry Goodkind", "2 sur 5", "Trop enfantin"]
   },
   {
     "title": "La Plus Belle Histoire du monde",
-    "authors": [
-      "Hubert Reeves",
-      "Joël de Rosnay"
-    ],
+    "authors": ["Hubert Reeves", "Joël de Rosnay"],
     "rating": 4,
     "urls": [],
     "fiction": false,
     "titleOrig": "La Plus Belle Histoire du monde - Hubert Reeves, Joël de Rosnay",
-    "textOrig": [
-      "La Plus Belle Histoire du monde - Hubert Reeves, Joël de Rosnay",
-      "4 sur 5"
-    ]
+    "textOrig": ["La Plus Belle Histoire du monde - Hubert Reeves, Joël de Rosnay", "4 sur 5"]
   },
   {
     "title": "Archi Pas Chère - maisons à 100 000 euros",
@@ -5663,16 +4695,11 @@
     "urls": [],
     "fiction": false,
     "titleOrig": "Archi Pas Chère - maisons à 100 000 euros",
-    "textOrig": [
-      "Archi Pas Chère - maisons à 100 000 euros",
-      "4 sur 5"
-    ]
+    "textOrig": ["Archi Pas Chère - maisons à 100 000 euros", "4 sur 5"]
   },
   {
     "title": "Le troisième policier",
-    "authors": [
-      "Flann O'Brien"
-    ],
+    "authors": ["Flann O'Brien"],
     "rating": 3,
     "comment": "Complètement loufoque. M'a décroché quelques sourires, mais pas beaucoup plus.",
     "urls": [],
@@ -5686,9 +4713,7 @@
   },
   {
     "title": "Où on va, papa ?",
-    "authors": [
-      "Jean Louis Fournier"
-    ],
+    "authors": ["Jean Louis Fournier"],
     "rating": 5,
     "comment": "Caustiques, les histoires d'un père autour de ces deux enfants handicapés.",
     "urls": [],
@@ -5702,9 +4727,7 @@
   },
   {
     "title": "Des milliards de tapis de cheveux",
-    "authors": [
-      "Andreas Eschach"
-    ],
+    "authors": ["Andreas Eschach"],
     "rating": 5,
     "comment": "Un scénario bien original qui m'a laissé quelques fois sur le cul!\nExcellent. Histoire novatrice, fin assez balèze. J'en aurai voulu plus à lire.",
     "urls": [],
@@ -5719,9 +4742,7 @@
   },
   {
     "title": "Jesus Video",
-    "authors": [
-      "Andreas Eschach"
-    ],
+    "authors": ["Andreas Eschach"],
     "rating": 4,
     "comment": "On retrouve un manuel d'une caméra vidéo sur un corps vieux de 2000 ans. Des gens se mettent à chercher des réponses. Très bon, un peu d'action, tout ça. Un roman d'aventure.",
     "urls": [],
@@ -5737,9 +4758,7 @@
   },
   {
     "title": "Les orphelins de Brooklyn",
-    "authors": [
-      "Jonathan Lethem"
-    ],
+    "authors": ["Jonathan Lethem"],
     "rating": 4,
     "comment": "Pas transcendantal, mais j'avais envie de le finir pour savoir. Pas mal...",
     "urls": [],
@@ -5755,9 +4774,7 @@
   },
   {
     "title": "American Rigolo",
-    "authors": [
-      "Bill Bryson"
-    ],
+    "authors": ["Bill Bryson"],
     "rating": 5,
     "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'angleterre. Marrant, de belles notes d'esprit, distrayant.",
     "urls": [],
@@ -5772,9 +4789,7 @@
   },
   {
     "title": "Confessions d'un automate mangeur d'Opium",
-    "authors": [
-      "Mathieu Gaborit"
-    ],
+    "authors": ["Mathieu Gaborit"],
     "rating": 4,
     "comment": "Bien aimé le début, un peu moins certains passages. Ca se lit bien.",
     "urls": [],
@@ -5788,9 +4803,7 @@
   },
   {
     "title": "Neverwhere",
-    "authors": [
-      "Neil Gaiman"
-    ],
+    "authors": ["Neil Gaiman"],
     "rating": 3,
     "comment": "Un homme qui bascule dans le Londres d'en bas orienté Fantasy.\nHistoire moyenne, mais ça se lit bien.",
     "urls": [],
@@ -5805,9 +4818,7 @@
   },
   {
     "title": "Ubik",
-    "authors": [
-      "Philip K. Dick"
-    ],
+    "authors": ["Philip K. Dick"],
     "rating": 4,
     "comment": "Une histoire à la Existenz (les personnages ne savent plus s'ils sont vivants ou morts). Sympa, ça se lit vite. De là à dire que c'est un chef d'oeuvre...",
     "urls": [],
@@ -5822,9 +4833,7 @@
   },
   {
     "title": "On peut se dire au revoir plusieurs fois",
-    "authors": [
-      "David Servan-Schreiber"
-    ],
+    "authors": ["David Servan-Schreiber"],
     "rating": 2,
     "comment": "Par l'auteur d'AntiCancer, qui fait une rechute.\nPas grand chose à en retenir",
     "urls": [],
@@ -5839,9 +4848,7 @@
   },
   {
     "title": "Le dernier de son espèce",
-    "authors": [
-      "Andreas Eschbach"
-    ],
+    "authors": ["Andreas Eschbach"],
     "rating": 4,
     "comment": "Histoire du dernier homme-cyborg qui est pourchassé, car justement il est le dernier.\nEncore un bon Andreas Eschach.",
     "urls": [],
@@ -5856,9 +4863,7 @@
   },
   {
     "title": "Horizons Lointains",
-    "authors": [
-      "Robert Silverberg"
-    ],
+    "authors": ["Robert Silverberg"],
     "rating": 3,
     "comment": "Recueils de nouvelles de SF\nPas mal, mais des fois beaucoup de spoilers sur les livres originaux",
     "urls": [],
@@ -5873,9 +4878,7 @@
   },
   {
     "title": "Un peu de sagesse dans un monde de brutes",
-    "authors": [
-      "Barefoot Doctor"
-    ],
+    "authors": ["Barefoot Doctor"],
     "rating": 1,
     "comment": "Pseudo-conseils, plein de « moi je suis génial »",
     "urls": [],
@@ -5890,79 +4893,57 @@
   {
     "title": "Rédemption 3 - Cycle de l'Élévation",
     "series": "Cycle de l'Élévation",
-    "authors": [
-      "David Brin"
-    ],
+    "authors": ["David Brin"],
     "volume": "6/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rédemption 3 - Cycle de l’Élévation - Tome 6/6 - David Brin",
-    "textOrig": [
-      "Rédemption 3 - Cycle de l’Élévation - Tome 6/6 - David Brin"
-    ]
+    "textOrig": ["Rédemption 3 - Cycle de l’Élévation - Tome 6/6 - David Brin"]
   },
   {
     "title": "Rédemption 2 - Cycle de l'Élévation",
     "series": "Cycle de l'Élévation",
-    "authors": [
-      "David Brin"
-    ],
+    "authors": ["David Brin"],
     "volume": "5/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rédemption 2 - Cycle de l’Élévation - Tome 5/6 - David Brin",
-    "textOrig": [
-      "Rédemption 2 - Cycle de l’Élévation - Tome 5/6 - David Brin"
-    ]
+    "textOrig": ["Rédemption 2 - Cycle de l’Élévation - Tome 5/6 - David Brin"]
   },
   {
     "title": "Rédemption 1",
     "series": "Cycle de l'Élévation",
-    "authors": [
-      "David Brin"
-    ],
+    "authors": ["David Brin"],
     "volume": "4/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Rédemption 1 - Cycle de l’Élévation - Tome 4/6 - David Brin",
-    "textOrig": [
-      "Rédemption 1 - Cycle de l’Élévation - Tome 4/6 - David Brin"
-    ]
+    "textOrig": ["Rédemption 1 - Cycle de l’Élévation - Tome 4/6 - David Brin"]
   },
   {
     "title": "Elevation 2 - Cycle de l'Élévation",
     "series": "Cycle de l'Élévation",
-    "authors": [
-      "David Brin"
-    ],
+    "authors": ["David Brin"],
     "volume": "3/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Elevation 2 - Cycle de l’Élévation - Tome 3/6 - David Brin",
-    "textOrig": [
-      "Elevation 2 - Cycle de l’Élévation - Tome 3/6 - David Brin"
-    ]
+    "textOrig": ["Elevation 2 - Cycle de l’Élévation - Tome 3/6 - David Brin"]
   },
   {
     "title": "Elevation 1 - Cycle de l'Élévation",
     "series": "Cycle de l'Élévation",
-    "authors": [
-      "David Brin"
-    ],
+    "authors": ["David Brin"],
     "volume": "2/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "Elevation 1 - Cycle de l’Élévation - Tome 2/6 - David Brin",
-    "textOrig": [
-      "Elevation 1 - Cycle de l’Élévation - Tome 2/6 - David Brin"
-    ]
+    "textOrig": ["Elevation 1 - Cycle de l’Élévation - Tome 2/6 - David Brin"]
   },
   {
     "title": "Marée Stellaire - Cycle de l'Élévation",
     "series": "Cycle de l'Élévation",
-    "authors": [
-      "David Brin"
-    ],
+    "authors": ["David Brin"],
     "rating": 4,
     "volume": "1/6",
     "comment": "Des hommes et des dauphins (et un singe) se crashent sur une planète, poursuivi par des espèces différentes d'extraterrestres belliqueuses. Pas mal, ils se passent des choses.",
@@ -5977,9 +4958,7 @@
   },
   {
     "title": "Le vieux qui ne voulait pas fêter son anniversaire",
-    "authors": [
-      "Jonas Jonasson"
-    ],
+    "authors": ["Jonas Jonasson"],
     "rating": 4,
     "comment": "Début un peu étonnant (mal écrit), puis ça devient drôle et je voulais savoir la suite ! Vite !",
     "urls": [],
@@ -5993,11 +4972,9 @@
   },
   {
     "title": "Les loups des étoiles",
-    "authors": [
-      "Edmond Hamilton"
-    ],
+    "authors": ["Edmond Hamilton"],
     "rating": 3,
-    "comment": "Narre les aventures d'un mercenaire, un poil fort mais humain (ouep ouep). Ca se lit facilement, c'est de l'aventure pure et dure en SF.",
+    "comment": "Narre les aventures d'un mercenaire, un poil fort, mais humain (ouep ouep). Ça se lit facilement, c'est de l'aventure pure et dure en SF.",
     "urls": [],
     "fiction": true,
     "titleOrig": "Les loups des étoiles - Edmond Hamilton",
@@ -6011,25 +4988,18 @@
   {
     "title": "La fraternité du Panca",
     "series": "La fraternité du Panca",
-    "authors": [
-      "Pierre Bordage"
-    ],
+    "authors": ["Pierre Bordage"],
     "rating": 4,
     "volume": "2/5",
     "urls": [],
     "fiction": true,
     "titleOrig": "La fraternité du Panca – tome 2/5 - Pierre Bordage",
-    "textOrig": [
-      "La fraternité du Panca – tome 2/5 - Pierre Bordage",
-      "4 sur 5"
-    ]
+    "textOrig": ["La fraternité du Panca – tome 2/5 - Pierre Bordage", "4 sur 5"]
   },
   {
     "title": "La fraternité du Panca",
     "series": "La fraternité du Panca",
-    "authors": [
-      "Pierre Bordage"
-    ],
+    "authors": ["Pierre Bordage"],
     "rating": 4,
     "volume": "1/5",
     "comment": "On suit un homme de la confrérie par tome, il se passe des choses, intrigues, combats... Distrayant !",
@@ -6045,51 +5015,37 @@
   {
     "title": "Etoile de Pandore",
     "series": "Etoile de Pandore",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "4/4",
     "urls": [],
     "fiction": true,
     "titleOrig": "Etoile de Pandore – Tome 4/4 - Peter F. Hamilton",
-    "textOrig": [
-      "Etoile de Pandore – Tome 4/4 - Peter F. Hamilton"
-    ]
+    "textOrig": ["Etoile de Pandore – Tome 4/4 - Peter F. Hamilton"]
   },
   {
     "title": "Etoile de Pandore",
     "series": "Etoile de Pandore",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "3/4",
     "urls": [],
     "fiction": true,
     "titleOrig": "Etoile de Pandore – Tome 3/4 - Peter F. Hamilton",
-    "textOrig": [
-      "Etoile de Pandore – Tome 3/4 - Peter F. Hamilton"
-    ]
+    "textOrig": ["Etoile de Pandore – Tome 3/4 - Peter F. Hamilton"]
   },
   {
     "title": "Etoile de Pandore",
     "series": "Etoile de Pandore",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "2/4",
     "urls": [],
     "fiction": true,
     "titleOrig": "Etoile de Pandore – Tome 2/4 - Peter F. Hamilton",
-    "textOrig": [
-      "Etoile de Pandore – Tome 2/4 - Peter F. Hamilton"
-    ]
+    "textOrig": ["Etoile de Pandore – Tome 2/4 - Peter F. Hamilton"]
   },
   {
     "title": "Etoile de Pandore",
     "series": "Etoile de Pandore",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "rating": 5,
     "volume": "1/4",
     "comment": "C'est de la bonne SF ça !\nCa tourne bien, c'est riche, l'intrigue est super, les méchants aussi !",
@@ -6106,37 +5062,27 @@
   {
     "title": "Vide en évolution",
     "series": "La trilogie du vide",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "3/3",
     "urls": [],
     "fiction": true,
     "titleOrig": "Vide en évolution - La trilogie du vide – Tome 3/3 Peter F. Hamilton",
-    "textOrig": [
-      "Vide en évolution - La trilogie du vide – Tome 3/3 Peter F. Hamilton"
-    ]
+    "textOrig": ["Vide en évolution - La trilogie du vide – Tome 3/3 Peter F. Hamilton"]
   },
   {
     "title": "Vide temporel",
     "series": "La trilogie du vide",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "volume": "2/3",
     "urls": [],
     "fiction": true,
     "titleOrig": "Vide temporel - La trilogie du vide – Tome 2/3 - Peter F. Hamilton",
-    "textOrig": [
-      "Vide temporel - La trilogie du vide – Tome 2/3 - Peter F. Hamilton"
-    ]
+    "textOrig": ["Vide temporel - La trilogie du vide – Tome 2/3 - Peter F. Hamilton"]
   },
   {
     "title": "Vide qui songe",
     "series": "La trilogie du vide",
-    "authors": [
-      "Peter F. Hamilton"
-    ],
+    "authors": ["Peter F. Hamilton"],
     "rating": 4,
     "volume": "1/3",
     "comment": "Lu juste après Etoile de Pandore, que j'ai trouvé mieux, ça lasse un poil.",
@@ -6152,190 +5098,136 @@
   {
     "title": "La flotte perdue",
     "series": "La flotte perdue",
-    "authors": [
-      "Jack Campbell"
-    ],
+    "authors": ["Jack Campbell"],
     "volume": "6/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "La flotte perdue - Tome 6/6 - Jack Campbell",
-    "textOrig": [
-      "La flotte perdue - Tome 6/6 - Jack Campbell"
-    ]
+    "textOrig": ["La flotte perdue - Tome 6/6 - Jack Campbell"]
   },
   {
     "title": "La flotte perdue",
     "series": "La flotte perdue",
-    "authors": [
-      "Jack Campbell"
-    ],
+    "authors": ["Jack Campbell"],
     "volume": "5/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "La flotte perdue - Tome 5/6 - Jack Campbell",
-    "textOrig": [
-      "La flotte perdue - Tome 5/6 - Jack Campbell"
-    ]
+    "textOrig": ["La flotte perdue - Tome 5/6 - Jack Campbell"]
   },
   {
     "title": "La flotte perdue",
     "series": "La flotte perdue",
-    "authors": [
-      "Jack Campbell"
-    ],
+    "authors": ["Jack Campbell"],
     "volume": "4/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "La flotte perdue - Tome 4/6 - Jack Campbell",
-    "textOrig": [
-      "La flotte perdue - Tome 4/6 - Jack Campbell"
-    ]
+    "textOrig": ["La flotte perdue - Tome 4/6 - Jack Campbell"]
   },
   {
     "title": "La flotte perdue",
     "series": "La flotte perdue",
-    "authors": [
-      "Jack Campbell"
-    ],
+    "authors": ["Jack Campbell"],
     "volume": "3/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "La flotte perdue - Tome 3/6 - Jack Campbell",
-    "textOrig": [
-      "La flotte perdue - Tome 3/6 - Jack Campbell"
-    ]
+    "textOrig": ["La flotte perdue - Tome 3/6 - Jack Campbell"]
   },
   {
     "title": "La flotte perdue",
     "series": "La flotte perdue",
-    "authors": [
-      "Jack Campbell"
-    ],
+    "authors": ["Jack Campbell"],
     "volume": "2/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "La flotte perdue - Tome 2/6 - Jack Campbell",
-    "textOrig": [
-      "La flotte perdue - Tome 2/6 - Jack Campbell"
-    ]
+    "textOrig": ["La flotte perdue - Tome 2/6 - Jack Campbell"]
   },
   {
     "title": "La flotte perdue",
     "series": "La flotte perdue",
-    "authors": [
-      "Jack Campbell"
-    ],
+    "authors": ["Jack Campbell"],
     "volume": "1/6",
     "urls": [],
     "fiction": true,
     "titleOrig": "La flotte perdue - Tome 1/6 - Jack Campbell",
-    "textOrig": [
-      "La flotte perdue - Tome 1/6 - Jack Campbell"
-    ]
+    "textOrig": ["La flotte perdue - Tome 1/6 - Jack Campbell"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "7/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 7/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 7/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 7/7 - Kevin J. Anderson"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "6/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 6/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 6/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 6/7 - Kevin J. Anderson"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "5/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 5/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 5/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 5/7 - Kevin J. Anderson"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "4/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 4/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 4/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 4/7 - Kevin J. Anderson"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "3/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 3/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 3/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 3/7 - Kevin J. Anderson"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "2/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 2/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 2/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 2/7 - Kevin J. Anderson"]
   },
   {
     "title": "La saga des 7 soleils",
     "series": "La saga des 7 soleils",
-    "authors": [
-      "Kevin J. Anderson"
-    ],
+    "authors": ["Kevin J. Anderson"],
     "volume": "1/7",
     "urls": [],
     "fiction": true,
     "titleOrig": "La saga des 7 soleils - Tome 1/7 - Kevin J. Anderson",
-    "textOrig": [
-      "La saga des 7 soleils - Tome 1/7 - Kevin J. Anderson"
-    ]
+    "textOrig": ["La saga des 7 soleils - Tome 1/7 - Kevin J. Anderson"]
   },
   {
     "title": "Silo",
-    "authors": [
-      "Hugh Howey"
-    ],
+    "authors": ["Hugh Howey"],
     "rating": 3,
     "comment": "C'est intriguant, mais pas dingue non plus.",
     "urls": [],
@@ -6343,9 +5235,7 @@
   },
   {
     "title": "Pirates",
-    "authors": [
-      "Michael Crichton"
-    ],
+    "authors": ["Michael Crichton"],
     "rating": 2,
     "comment": "Bof, se lit vite, mais sans plus",
     "urls": [],
