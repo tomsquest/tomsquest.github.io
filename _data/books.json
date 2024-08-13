@@ -63,7 +63,7 @@
   {
     "title": "The expanse",
     "series": "The Expanse",
-    "authors": ["James S.A. Corey"],
+    "authors": ["James S. A. Corey"],
     "rating": 4,
     "volume": "6/9",
     "comment": "Je prends assez de plaisir à lire la suite, l'évolution du monde de The Expanse.\nJe lirai la suite, pas trop rapproché, mais avec plaisir.",
@@ -259,7 +259,7 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": ["James S.A. Corey"],
+    "authors": ["James S. A. Corey"],
     "volume": "5/9",
     "comment": "Sympa, même si un peu longuet par moment.",
     "date": "2024-01",
@@ -275,7 +275,7 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": ["James S.A. Corey"],
+    "authors": ["James S. A. Corey"],
     "volume": "4/9",
     "comment": "Lu en décembre 2023",
     "date": "2023-12",
@@ -287,7 +287,7 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": ["James S.A. Corey"],
+    "authors": ["James S. A. Corey"],
     "volume": "3/9",
     "comment": "Lu en novembre 2023",
     "date": "2023-11",
@@ -315,7 +315,7 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": ["James S.A. Corey"],
+    "authors": ["James S. A. Corey"],
     "volume": "2/9",
     "comment": "Lu en octobre 2023",
     "date": "2023-10",
@@ -399,7 +399,7 @@
   {
     "title": "The expanse",
     "series": "The expanse",
-    "authors": ["James S.A. Corey"],
+    "authors": ["James S. A. Corey"],
     "rating": 4,
     "volume": "1/9",
     "comment": "C'est vraiment bien !",
@@ -2568,7 +2568,7 @@
   {
     "title": "Magie Ex-libris",
     "series": "Magie Ex-libris",
-    "authors": [""],
+    "authors": [],
     "volume": "3",
     "comment": "Lu en décembre 2018",
     "date": "2018-12",
