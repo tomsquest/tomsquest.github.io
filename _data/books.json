@@ -2610,6 +2610,32 @@
     "fiction": false
   },
   {
+    "title": "Journal d'un cobaye: Ma vie est une expérience",
+    "authors": ["A. J. Jacobs"],
+    "date": "2014-01",
+    "rating": 4,
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "L'année où j'ai vécu selon la Bible",
+    "authors": ["A. J. Jacobs"],
+    "rating": 4,
+    "comment": "Ou l'humble quête d'un homme qui chercha à suivre la Bible aussi littéralement que possible",
+    "urls": [
+      "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
+    ],
+    "fiction": false
+  },
+  {
+    "title": "Je creve la forme",
+    "authors": ["A. J. Jacobs"],
+    "rating": 4,
+    "comment": "Distrayant, mais je ne me souviens plus trop si j'ai appris des choses",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH325690"],
+    "fiction": false
+  },
+  {
     "title": "Choose Yourself",
     "authors": ["James Altucher"],
     "rating": 3,
@@ -2625,16 +2651,6 @@
     "comment": "Explique ce qu'est la mer, comment on s'y comporte, les bateaux...\nInspirant, ça me donne envie d'avoir un bateau (moins de 7 mètre, 8000 euros)",
     "date": "2013-04",
     "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "L'année où j'ai vécu selon la Bible",
-    "authors": ["A. J. Jacobs"],
-    "rating": 4,
-    "comment": "Ou l'humble quête d'un homme qui chercha à suivre la Bible aussi littéralement que possible",
-    "urls": [
-      "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
-    ],
     "fiction": false
   },
   {
