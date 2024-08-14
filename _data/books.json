@@ -417,7 +417,7 @@
   },
   {
     "title": "Récits du Vieux Royaume",
-    "authors": ["Jaworski"],
+    "authors": ["Jean-Philippe Jaworski"],
     "rating": 4,
     "comment": "Super, des nouvelles vraiment sympa.",
     "date": "2023-02",
@@ -426,7 +426,7 @@
   },
   {
     "title": "Désolation",
-    "authors": ["Jaworski"],
+    "authors": ["Jean-Philippe Jaworski"],
     "rating": 5,
     "comment": "Court, graphique, et vraiment super. Cette fin!",
     "date": "2023-02",
@@ -858,9 +858,9 @@
   {
     "title": "Même pas mort",
     "series": "Rois du monde",
-    "authors": ["Jaworski"],
+    "authors": ["Jean-Philippe Jaworski"],
     "volume": "1",
-    "comment": "Lu en novembre 2021.",
+    "comment": "Pas accroché, trop \"celtique\" pour moi, mais peut-etre que j'y reviendrai",
     "date": "2021-11",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH304804"],
     "fiction": true
