@@ -968,9 +968,31 @@
     "fiction": true
   },
   {
-    "title": "La moitié d'un roi",
+    "title": "La moitié d'une guerre",
+    "series": "La mer éclatée",
     "authors": ["Joe Abercrombie"],
     "rating": 4,
+    "volume": "3/3",
+    "date": "2021-09",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La moitié d'un monde",
+    "series": "La mer éclatée",
+    "authors": ["Joe Abercrombie"],
+    "rating": 4,
+    "volume": "3/3",
+    "date": "2021-09",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La moitié d'un roi",
+    "series": "La mer éclatée",
+    "authors": ["Joe Abercrombie"],
+    "rating": 4,
+    "volume": "3/3",
     "comment": "Pas mal !",
     "date": "2021-09",
     "urls": [],
@@ -1003,7 +1025,7 @@
     "fiction": true
   },
   {
-    "title": "La première loi",
+    "title": "Dernière querelle",
     "series": "La première loi",
     "authors": ["Joe Abercrombie"],
     "volume": "3/3",
@@ -1012,7 +1034,7 @@
     "fiction": true
   },
   {
-    "title": "La première loi",
+    "title": "Déraison et sentiments",
     "series": "La première loi",
     "authors": ["Joe Abercrombie"],
     "volume": "2/3",
@@ -1021,7 +1043,7 @@
     "fiction": true
   },
   {
-    "title": "La première loi",
+    "title": "Premier sang",
     "series": "La première loi",
     "authors": ["Joe Abercrombie"],
     "rating": 5,
