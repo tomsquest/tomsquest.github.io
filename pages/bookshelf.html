@@ -5,10 +5,25 @@ title: My Bookshelf
 class: bookshelf
 ---
 
-<p>My reading list</p>
+{% assign total_books = site.data.books | size %}
+
+<h2>Reading 📚</h2>
+
+<p>
+  I keep a list of books I read in the previous year. Fiction and Non-Fiction.
+  <br>
+  The list was started in <strong>2014</strong> (I think), and it is not complete (I often forgot to update it).
+  So far, the list contains <strong>{{ total_books}}</strong> books.
+</p>
+<p>
+  If you want to talk about books, you are very welcome! ☺️
+  <br>
+  I like books where people live experience, increase my culture, or just make me live a good adventure.
+</p>
+
+<h2>Books</h2>
 
 {%- for book in site.data.books -%}
-  {% assign total_books = site.data.books | size %}
   <div class="book">
     <h3>
       <span class="index">
