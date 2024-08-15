@@ -49,19 +49,6 @@ class: bookshelf
         <br>
       {%- endunless -%}
 
-      {%- if book.series -%}
-        Series: {{ book.series }}
-      {%- endif -%}
-      {% if book.series and book.volume %}
-        -
-      {% endif %}
-      {%- if book.volume -%}
-        Volume {{ book.volume }}
-      {%- endif -%}
-      {% if book.series or book.volume %}
-      <br>
-      {%- endif -%}
-
       {%- if book.rating -%}
         Rating:
         {% for i in (1..5) %}
