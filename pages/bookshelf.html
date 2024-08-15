@@ -24,16 +24,28 @@ class: bookshelf
 <h2>Books</h2>
 
 {%- for book in site.data.books -%}
+  {% assign title = book.title %}
+  {%- if book.series and book.title != book.series -%}
+    {% capture title %}
+      {{ book.title }} - {{ book.series }}
+    {% endcapture %}
+  {%- endif -%}
+  {%- if book.volume -%}
+    {% capture title %}
+      {{ title }} - Volume {{ book.volume }}
+    {% endcapture %}
+  {%- endif -%}
+
   <div class="book">
     <h3>
       <span class="index">
         [{{ total_books | minus: forloop.index0 }}/{{ total_books }}]
       </span>
-      {{ book.title }}
+      {{ title }}
     </h3>
     <p class="book-data">
       {%- unless book.authors == empty -%}
-        by {{ book.authors | join: ", " }}
+        Authors: {{ book.authors | join: ", " }}
         <br>
       {%- endunless -%}
 
@@ -69,7 +81,7 @@ class: bookshelf
       {%- endif -%}
 
       {%- if book.date -%}
-        Read on: {{ book.date }}
+      Read on: <time datetime="{{ book.date }}">{{ book.date }}</time>
         <br>
       {%- else -%}
         Read on: unknown
