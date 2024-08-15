@@ -10,15 +10,37 @@ class: bookshelf
 <h2>Reading 📚</h2>
 
 <p>
-  I keep a list of books I read in the previous year. Fiction and Non-Fiction.
+  I keep a list of books I read in the previous year, both Fiction and Non-Fiction.
+  Browsing this list brings back good memories.
+</p>
+<p>
+  The list contains <strong>{{ total_books }}</strong> books, and was started in <strong>2014</strong>.
   <br>
-  The list was started in <strong>2014</strong> (I think), and it is not complete (I often forgot to update it).
-  So far, the list contains <strong>{{ total_books}}</strong> books.
+  I often forgot to update it, so it is not complete.
 </p>
 <p>
   If you want to talk about books, you are very welcome! ☺️
-  <br>
-  I like books where people live experience, increase my culture, or just make me live a good adventure.
+</p>
+
+<h3>Law of Reading</h3>
+<ol>
+  <li>There are more books than you can read, choose wisely.</li>
+  <li>Spending quality time is the only goal (living an adventure, adding knowledge...).</li>
+  <li>One can stop reading a book at any time, for any reason.</li>
+</ol>
+
+<h3>Rating System</h3>
+<ul>
+  <li>★★★★★: Outstanding</li>
+  <li>★★★★☆: Really enjoyed</li>
+  <li>★★★☆☆: Good, but not great</li>
+  <li>★★☆☆☆: I think I lost my time</li>
+  <li>★☆☆☆☆: do not touch that book, even with gloves</li>
+</ul>
+
+<h3>Organization</h3>
+<p>
+  The books are organized by the date I read them. Each entry includes the title, authors, rating, type (Fiction or Non-Fiction), and a brief comment.
 </p>
 
 <h2>Books</h2>
@@ -53,9 +75,9 @@ class: bookshelf
         Rating:
         {% for i in (1..5) %}
           {% if i <= book.rating %}
-          <span class="star filled" style="color: #f8ce0b;">★</span>
+          ★
           {% else %}
-          <span class="star empty">☆</span>
+          ☆
           {% endif %}
         {% endfor %}
         <br>
