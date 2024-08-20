@@ -173,15 +173,6 @@
     "fiction": true
   },
   {
-    "title": "Tout le monde n'a pas eu la chance de rater ses études",
-    "authors": ["Olivier Roland"],
-    "rating": 3,
-    "comment": "Je l'ai lu, car en l'ouvrant au pif, j'ai lu : \"arrête de lire, fait !\" avec une pile de livre dans les mains :/",
-    "date": "2023-10",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "The Expanse",
     "series": "The Expanse",
     "authors": ["James S. A. Corey"],
@@ -456,7 +447,8 @@
     "fiction": true
   },
   {
-    "title": "Et Merde - comment l'histoire montre que l'erreur est humaine",
+    "title": "Et Merde",
+    "subtitle": "comment l'histoire montre que l'erreur est humaine",
     "authors": ["Tom Phillips"],
     "rating": 4,
     "comment": "Pas mal d'anecdote, sympa à lire.",
@@ -619,15 +611,6 @@
     "fiction": false
   },
   {
-    "title": "Machine Learning avec Scikit-Learn",
-    "authors": ["Aurélien Géron"],
-    "rating": 5,
-    "comment": "Super bien expliqué, les notebooks aident et complétent. Super ! (mais beaucoup à apprendre)",
-    "date": "2022-07",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "Toujours plus à l'est",
     "authors": ["Benjamin Pelletier"],
     "rating": 3,
@@ -691,15 +674,6 @@
     "fiction": false
   },
   {
-    "title": "Introduction au Machine Learning",
-    "authors": ["Chloé-Agathe Azencott"],
-    "rating": 2,
-    "comment": "Pas une introduction, ou bien à la rigueur une intro mathématique, et assez ardu, et surtout pas amusant à lire.",
-    "date": "2022-05",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "Histoire de pédaler",
     "authors": ["Bruno Sananès"],
     "rating": 4,
@@ -759,7 +733,7 @@
     "title": "Mamie Luger",
     "authors": ["Benoit Philippon"],
     "rating": 4,
-    "comment": "Oh les reparties de l'héroïne, petite dame de 102 ans :)\nBien, court, punchy, trés bien.",
+    "comment": "Oh les reparties de l'héroïne, petite dame de 102 ans :)\nBien, court, punchy, très bien.",
     "date": "2022-03",
     "urls": [],
     "fiction": true
@@ -842,7 +816,7 @@
     "authors": ["N.K. Jemisin"],
     "rating": 5,
     "volume": "1/3",
-    "comment": "Trés bien",
+    "comment": "Très bien",
     "date": "2021-11",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH320154"],
     "fiction": true
@@ -888,7 +862,8 @@
     "fiction": false
   },
   {
-    "title": "En âge florissant - de la renaissance à la réforme",
+    "title": "En âge florissant",
+    "subtitle": "De la renaissance à la réforme",
     "authors": ["Pascal Brioist"],
     "date": "2021-11",
     "urls": [],
@@ -994,15 +969,6 @@
     "fiction": true
   },
   {
-    "title": "Grokking Simplicity: Taming complex software with functional thinking",
-    "authors": ["Eric Normand"],
-    "rating": 5,
-    "comment": "Cf notes",
-    "date": "2021-09",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "Tout va mal, je vais bien, comment vivre heureux dans un monde de merde",
     "authors": ["Philippe Bloch"],
     "comment": "Ca se lit",
@@ -1059,14 +1025,6 @@
     "urls": [
       "https://www.amazon.fr/Practicing-Stoic-Ward-Farnsworth/dp/1567926118/ref=sr_1_1?ie=UTF8&qid=1531715888&sr=8-1&keywords=practicing+stoic"
     ],
-    "fiction": false
-  },
-  {
-    "title": "À la recherche du sens perdu",
-    "authors": ["Frank Martela"],
-    "comment": "Cf notes.",
-    "date": "2021-04",
-    "urls": [],
     "fiction": false
   },
   {
@@ -1647,15 +1605,6 @@
     "fiction": true
   },
   {
-    "title": "59 seconds",
-    "authors": ["Richard Wiseman"],
-    "rating": 5,
-    "comment": "Voir les notes.",
-    "date": "2018-04",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "Le tueur venu du Centaure",
     "authors": [],
     "rating": 3,
@@ -2067,19 +2016,10 @@
     "title": "Au tréfond du ciel",
     "authors": ["Vernor Vinge"],
     "rating": 4,
-    "comment": "Bien, un poil long. J'ai confondu deux personnages (Underhill et Underville) ce qui m'a causé une certaine frustration à la fin.",
+    "comment": "Bien, un peu long. J'ai confondu deux personnages (Underhill et Underville) ce qui m'a causé une certaine frustration à la fin.",
     "date": "2016-05",
     "urls": [],
     "fiction": true
-  },
-  {
-    "title": "A guide to the good life",
-    "authors": ["William B. Irvine"],
-    "rating": 4,
-    "comment": "CF notes. C'est du bon !",
-    "date": "2016-05",
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "The Personal MBA",
@@ -2235,15 +2175,6 @@
     "fiction": true
   },
   {
-    "title": "What the CEO wants you to know",
-    "authors": ["Ram Charan"],
-    "rating": 3,
-    "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
-    "date": "2015-03",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "13 à table",
     "authors": [],
     "rating": 3,
@@ -2260,15 +2191,6 @@
     "date": "2015-02",
     "urls": [],
     "fiction": true
-  },
-  {
-    "title": "Vous êtes vendeur, le saviez-vous ?",
-    "authors": ["Daniel Pink"],
-    "rating": 4,
-    "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
-    "date": "2015-01",
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "Le guide d'entretien de mon vélo",
@@ -2307,15 +2229,6 @@
     "fiction": false
   },
   {
-    "title": "Secrets of Office Politics",
-    "authors": ["Marie G. McIntyre"],
-    "rating": 4,
-    "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
-    "date": "2014-12",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "Waylander",
     "authors": ["David Gemmel"],
     "rating": 3,
@@ -2348,37 +2261,10 @@
     "title": "Un feu sur l'abime",
     "authors": ["Vernor Vinge"],
     "rating": 4,
-    "comment": "Excellent le chapitre où on découvre que certains personnages sont des chiens. Le reste est un poil long. Je lirai certainement la suite.",
+    "comment": "Excellent le chapitre où l'on découvre que certains personnages sont des chiens. Le reste est un peu long. Je lirai certainement la suite.",
     "date": "2014-10",
     "urls": [],
     "fiction": true
-  },
-  {
-    "title": "Influence et Manipulation",
-    "authors": ["Robert Cialdini"],
-    "rating": 5,
-    "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
-    "date": "2014-10",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Notes to a software team leader",
-    "authors": ["Roy Osherove"],
-    "rating": 3,
-    "comment": "Des conseils pour devenir un meilleur manager technique / ou tech lead.\nLa mise en page a des ratées.",
-    "date": "2014-10",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "The secrets of consulting",
-    "authors": ["Gerald M. Weinberg"],
-    "rating": 3,
-    "comment": "Voir le fichier avec les notes",
-    "date": "2014-09",
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "La Nef des fous",
@@ -2531,15 +2417,6 @@
     "fiction": false
   },
   {
-    "title": "Rénovation basse consommation",
-    "authors": ["Roland Dutrey"],
-    "rating": 4,
-    "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc. Le plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure). À retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
-    "date": "2014-03",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "The Undercover Economist",
     "authors": ["Tim Harford"],
     "rating": 4,
@@ -2670,21 +2547,6 @@
       "https://www.amazon.fr/Lalchimiste-Paulo-Coelho/dp/2290004448/ref=sr_1_fkmr0_2?ie=UTF8&qid=1271934514&sr=8-2-fkmr0"
     ],
     "fiction": true
-  },
-  {
-    "title": "Le but",
-    "authors": ["Eliyahu M. Goldratt"],
-    "urls": [
-      "https://www.amazon.fr/but-processus-progr%C3%A8s-permanent/dp/2124656414/ref=sr_1_1?s=books&ie=UTF8&qid=1307434153&sr=1-1"
-    ],
-    "fiction": false
-  },
-  {
-    "title": "Serons-nous immortels ?",
-    "authors": [],
-    "comment": "Oméga 3, nanotechnologies, clonage...",
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "Dictionnaire révolté d'économie",
@@ -2873,20 +2735,6 @@
     "comment": "Trop enfantin",
     "urls": [],
     "fiction": true
-  },
-  {
-    "title": "La Plus Belle Histoire du monde",
-    "authors": ["Hubert Reeves", "Joël de Rosnay"],
-    "rating": 4,
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Archi Pas Chère - maisons à 100 000 euros",
-    "authors": [],
-    "rating": 4,
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "Le troisième policier",
@@ -3256,5 +3104,504 @@
     "comment": "Bof, se lit vite, mais sans plus",
     "urls": [],
     "fiction": true
+  },
+  {
+    "title": "30 lessons for living",
+    "authors": ["Karl A. Pillemer"],
+    "rating": 4,
+    "date": "2020-12",
+    "fiction": false
+  },
+  {
+    "title": "59 seconds",
+    "subtitle": "Think a little, change a lot",
+    "authors": ["Richard Wiseman"],
+    "rating": 5,
+    "date": "2018-03",
+    "fiction": false
+  },
+  {
+    "title": "A la recherche du Sens Perdu",
+    "subtitle": "Petit précis des grands dilemmes philosophiques",
+    "authors": ["Franm Martela"],
+    "rating": 4,
+    "date": "2021-04",
+    "fiction": false
+  },
+  {
+    "title": "Apprendre à vivre",
+    "subtitle": "Traité de philosophie à l'usage des jeunes générations",
+    "authors": ["Luc Ferry"],
+    "rating": 3,
+    "date": "2021-05",
+    "fiction": false
+  },
+  {
+    "title": "Brain Rules For Babies",
+    "subtitle": "Comment fonctionne le cerveau de bébé",
+    "authors": ["John Medina"],
+    "rating": 4,
+    "date": "2012-04",
+    "fiction": false
+  },
+  {
+    "title": "Ce qu'il faut savoir avant de mourir",
+    "subtitle": "Découvrez ce qui compte vraiment avant l'heure de votre mort",
+    "authors": ["John Izzo"],
+    "rating": 4,
+    "date": "2013-04",
+    "fiction": false
+  },
+  {
+    "title": "Cessez d'etre gentil soyez vrai",
+    "subtitle": "Etre avec les autres en restant soi-même",
+    "authors": ["Thomas D’Ansembourg"],
+    "rating": 4,
+    "date": "2010-01",
+    "fiction": false
+  },
+  {
+    "title": "Choose Yourself",
+    "authors": ["James Altucher"],
+    "rating": 3,
+    "date": "2014-01",
+    "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
+    "fiction": false
+  },
+  {
+    "title": "Comment je suis devenue rentière en 4 ans",
+    "authors": ["Elise Franck"],
+    "rating": 3,
+    "date": "2018-03",
+    "fiction": false
+  },
+  {
+    "title": "Crucial Conversations",
+    "subtitle": "Tools for talking when stakes are High",
+    "authors": [
+      "Kerry Pattersonm",
+      "Joseph Grenny",
+      "Ron Mc Millan",
+      "Al Switzler"
+    ],
+    "rating": 4,
+    "date": "2011-09",
+    "fiction": false
+  },
+  {
+    "title": "Deep Learning For Search",
+    "authors": ["Tommaso Teofili"],
+    "rating": 4,
+    "date": "2019-10",
+    "comment": "Des techniques avancées (réseau de neurones...) au service du Search. Pas tout lu, mais possible d'appliquer ça dans des projets.",
+    "fiction": false
+  },
+  {
+    "title": "Don't make me think",
+    "subtitle": "A common sense approach to web usability",
+    "authors": ["Steve Krug"],
+    "rating": 5,
+    "date": "2009-01",
+    "comment": "Génial, simple, évident ! Le rapport à l'accessibilité est incroyable, humain. Top !",
+    "fiction": false
+  },
+  {
+    "title": "Eloges de l'optimisme",
+    "authors": ["Philippe Gabilliet"],
+    "rating": 4,
+    "date": "2011-09",
+    "fiction": false
+  },
+  {
+    "title": "Fail Safe Investing",
+    "subtitle": "Lifelong Financial Security in 30 minutes",
+    "authors": ["Harry Browne"],
+    "rating": 4,
+    "date": "2011-01",
+    "comment": "Conseils financiers que je continue de suivre",
+    "fiction": false
+  },
+  {
+    "title": "Grokking Functional Programming",
+    "authors": ["Michal Plachta"],
+    "rating": 4,
+    "date": "2023-08",
+    "comment": "Programmation fonctionnelle sans jargon",
+    "fiction": false
+  },
+  {
+    "title": "Grokking Simplicity",
+    "subtitle": "Taming complex software with functional thinking",
+    "authors": ["Eric Normand"],
+    "rating": 5,
+    "date": "2021-01",
+    "comment": "J'ai changé de façon d'écrire du code après avoir lu ce livre. Excellent !",
+    "fiction": false
+  },
+  {
+    "title": "Guérir le stress, l'anxiété et la dépression sans médicaments ni psychanalyse",
+    "authors": ["David Servan-Schreiber"],
+    "rating": 3,
+    "date": "2011-09",
+    "comment": "Pas mal de descriptions et des histoires assez intéressantes, mais les sujets de fond auraient pu tenir en 10 pages.",
+    "fiction": false
+  },
+  {
+    "title": "Influence et manipulation",
+    "subtitle": "Comprendre et maîtriser les mécanismes et les techniques de persuasion",
+    "authors": ["Robert Cialdini"],
+    "rating": 5,
+    "date": "2014-10",
+    "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
+    "fiction": false
+  },
+  {
+    "title": "Introduction au Machine Learning",
+    "authors": ["Chloé-Agathe Azencott"],
+    "rating": 2,
+    "date": "2022-04",
+    "comment": "Trop matheux, c'est surtout une introduction aux mathématiques pour le Machine Learning.",
+    "fiction": false
+  },
+  {
+    "title": "Joel On Software",
+    "authors": ["Joel Spolsky"],
+    "rating": 4,
+    "date": "Plein de recommandations que j'applique aujourd'hui, et qui fonctionne bien",
+    "fiction": false
+  },
+  {
+    "title": "L'autorité expliquée aux parents",
+    "authors": ["Claude Halmos"],
+    "rating": 4,
+    "date": "2011-06",
+    "fiction": false
+  },
+  {
+    "title": "L'Autoroute du Millionaire",
+    "subtitle": "La voie express vers la richesse",
+    "authors": ["MJ DeMarco"],
+    "rating": 4,
+    "date": "2024-03",
+    "comment": "La métaphore automobile fonctionne bien (il vaut mieux ne pas être piéton...). Le livre incite à l'action.",
+    "fiction": false
+  },
+  {
+    "title": "La plus belle histoire du monde",
+    "subtitle": "Les secrets de nos origines",
+    "authors": [
+      "Hubert Reeves",
+      "Joel de Rosnay",
+      "Yves Coppens",
+      "Dominique Simonnet"
+    ],
+    "rating": 4,
+    "date": "2011-04",
+    "comment": "Un bon livre. Se lit assez facilement. Intéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
+    "fiction": false
+  },
+  {
+    "title": "La semaine de 4 heures",
+    "authors": ["Timothy Ferriss"],
+    "rating": 4,
+    "date": "2009-02",
+    "comment": "Méthode/raccourci pour travailler moins, donc être plus malin ?",
+    "fiction": false
+  },
+  {
+    "title": "Le but (The Goal)",
+    "subtitle": "Un processus de progrès permanent",
+    "authors": ["Eliyahu M. Goldratt", "J. Cox"],
+    "rating": 4,
+    "date": "2011-07",
+    "fiction": false
+  },
+  {
+    "title": "Les hommes viennent de Mars les femmes viennent de Vénus",
+    "authors": ["John Gray"],
+    "rating": 3,
+    "date": "2009-05",
+    "fiction": false
+  },
+  {
+    "title": "Machine Learning avec Scikit-Learn",
+    "authors": ["Aurélien Géron"],
+    "rating": 5,
+    "date": "2022-07",
+    "comment": "Un Must ! Rien que le chapitre avec lequel il déroule un projet complet de ML, avec ses remarques propres et ses avis. Top !",
+    "fiction": false
+  },
+  {
+    "title": "Machine Learning for absolute beginners",
+    "authors": ["Oliver Theobald"],
+    "rating": 4,
+    "date": "2022-01",
+    "comment": "L'intro facile au ML, et c'est ce que je cherchais",
+    "fiction": false
+  },
+  {
+    "title": "Archi Pas Chère - Maison à 100 000 euros",
+    "authors": ["Olivier Darmon"],
+    "rating": 4,
+    "date": "2011-02",
+    "fiction": false
+  },
+  {
+    "title": "N'oublie pas d'être heureux",
+    "authors": ["Christophe André"],
+    "rating": 4,
+    "date": "2021-06",
+    "fiction": false
+  },
+  {
+    "title": "Never Eat Alone",
+    "subtitle": "And other secrets to Success, One Relationship at a time",
+    "authors": ["Keith Ferrazzi", "Tahl Raz"],
+    "rating": 4,
+    "date": "2011-09",
+    "comment": "Le pitch est : nous avons besoin des autres pour réussir. Comment devenir un membre du club",
+    "fiction": false
+  },
+  {
+    "title": "Never split the difference",
+    "subtitle": "Negotiating as if your life depended on it",
+    "authors": ["Chriss Voss"],
+    "rating": 4,
+    "date": "2020-06",
+    "comment": "Beaucoup de techniques. Comme tout, si je veux être bon, il faut que je m'entraine, et c'est dur !",
+    "fiction": false
+  },
+  {
+    "title": "Notes to a Software Team Leader",
+    "subtitle": "Growing self organizing team",
+    "authors": ["Roy Osherove"],
+    "rating": 2,
+    "date": "2014-10",
+    "comment": "Intéressant sur certains points, mais pas assez structuré, analysé.",
+    "fiction": false
+  },
+  {
+    "title": "People skills",
+    "subtitle": "How to assert yourself, listen to others and resolve conflicts",
+    "authors": ["Robert Bolton"],
+    "rating": 4,
+    "date": "2015-06",
+    "comment": "Long à lire, et intéressant sur plusieurs aspects",
+    "fiction": false
+  },
+  {
+    "title": "Philocomix",
+    "subtitle": "10 philosophes, 10 approches du bonheur",
+    "authors": ["Jean-Philippe Thivet", "Jérôme Vermer", "Anne-Lise Combeaud"],
+    "rating": 4,
+    "date": "2019-07",
+    "comment": "Des principes philosophiques en BD. Bien fait, ça donne envie de creuser",
+    "fiction": false
+  },
+  {
+    "title": "PMBA",
+    "subtitle": "Master the Art of Business",
+    "authors": ["Josh Kaufman"],
+    "rating": 4,
+    "date": "2016-04",
+    "comment": "Plein de pépites, presque trop court par moment, quelques « ahah »",
+    "fiction": false
+  },
+  {
+    "title": "Pre-Suasion",
+    "subtitle": "A Revolutionary Way to Influence and Persuade",
+    "authors": ["Robert Cialdini"],
+    "rating": 4,
+    "date": "2021-06",
+    "fiction": false
+  },
+  {
+    "title": "Qui a piqué mon fromage",
+    "authors": ["Spencer Johnson"],
+    "rating": 3,
+    "date": "2013-04",
+    "fiction": false
+  },
+  {
+    "title": "Relevant Search",
+    "subtitle": "With applications for Solr and Elasticsearch",
+    "authors": ["Doug Turnbull", "John Berryman"],
+    "rating": 5,
+    "date": "2019-06",
+    "comment": "Une mine d’information et de techniques sur le Search. Génial",
+    "fiction": false
+  },
+  {
+    "title": "Rénovation basse consommation",
+    "authors": ["Roland Dutrey"],
+    "rating": 4,
+    "date": "2014-03",
+    "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc. Le plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure). À retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
+    "fiction": false
+  },
+  {
+    "title": "Rework",
+    "authors": ["Jason Fried", "David Heinemeir Hansson"],
+    "rating": 4,
+    "date": "2011-09",
+    "comment": "Les points de vue et recettes de 37signals. Inspirant",
+    "fiction": false
+  },
+  {
+    "title": "Secrets to Winning at Office Politics",
+    "subtitle": "How to achieve your goals and increase your influence at work",
+    "authors": ["Marie G. McIntyre"],
+    "rating": 4,
+    "date": "2014-11",
+    "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
+    "fiction": false
+  },
+  {
+    "title": "Serons-nous immortels",
+    "subtitle": "Oméga 3, nanotechnologies, clonage...",
+    "authors": ["Ray Kurweil", "Terry Grossman"],
+    "rating": 4,
+    "date": "2011-07",
+    "comment": "Les auteurs sont des extrémistes de la santé, mais le plus intéressant est le dernier chapitre sur comment vivre une bonne vie",
+    "fiction": false
+  },
+  {
+    "title": "StrengthsFinder 2.0",
+    "authors": ["Tom Rath"],
+    "rating": 4,
+    "date": "2011-09",
+    "comment": "Je suis un \"Catalyste\" entre idées, systèmes et personnes",
+    "fiction": false
+  },
+  {
+    "title": "Super Freakonomics",
+    "authors": ["Steven D. Levitt", "Stephen J. Dubner"],
+    "rating": 4,
+    "date": "2014-09",
+    "comment": "Divertissant, mais sans pour autant apprendre",
+    "fiction": false
+  },
+  {
+    "title": "The First 20th Hours",
+    "subtitle": "How to learn anything... fast",
+    "authors": ["Josh Kaufman"],
+    "rating": 4,
+    "date": "2013-10",
+    "comment": "C'est grâce à ce livre que j'ai appris à taper en Colemak, et que j'appendrai d'autres choses... en 20 heures !",
+    "fiction": false
+  },
+  {
+    "title": "The Five Dysfunctions of a Team",
+    "subtitle": "A leadership fable",
+    "authors": ["Patrick Lencioni"],
+    "rating": 3,
+    "date": "2021-01",
+    "comment": "Le livre donne un framework pour créer une super équipe, dans le sens créer les liens, se faire confiance, etc. Mais le chemin est difficile et long.",
+    "fiction": false
+  },
+  {
+    "title": "The Four Steps to the Epiphany",
+    "subtitle": "Successful Strategies for Products that Win",
+    "authors": ["Steven Gary Blank"],
+    "rating": 3,
+    "date": "2011-08",
+    "comment": "Bible de la création et du lancement d'une entreprise. Complexe et compliqué, difficile à lire",
+    "fiction": false
+  },
+  {
+    "title": "The Millionaire Next Door",
+    "subtitle": "The surprising secret of America's wealthy",
+    "authors": ["Thomas J. Stanley", "William D. Danko"],
+    "rating": 5,
+    "date": "2008-09",
+    "comment": "Le livre est une étude des statistiques et sociologique sur les riches, qui ne sont pas ceux que l'on croit.",
+    "fiction": false
+  },
+  {
+    "title": "The Mythical Man Month",
+    "subtitle": "Essays on Software engineering",
+    "authors": ["Frederick P. Brooks"],
+    "rating": 4,
+    "date": "2008-10",
+    "comment": "Je m'y réfère toujours, notamment pour les coûts de la doc et de rendre un logiciel plus générique",
+    "fiction": false
+  },
+  {
+    "title": "The Partnership Charter",
+    "subtitle": "How to start right with your new business partnership, or fix the one you're in",
+    "authors": ["David Gage"],
+    "rating": 4,
+    "date": "2011-06",
+    "comment": "Le guide pour bien démarrer une entreprise à plusieurs. Ça n'empêche pas les égos, mais au moins, on parle des sujets difficiles avant de se lancer",
+    "fiction": false
+  },
+  {
+    "title": "The Passionate Programmer",
+    "subtitle": "Creating a Remarkable career in software development",
+    "authors": ["Chad Fowler"],
+    "rating": 4,
+    "date": "2011-08",
+    "comment": "L'idée globale du livre est de nous faire comprendre que notre carrière est comme un produit qu'il faut rendre intéressant, donc vendable, qu'il faut vendre et maintenir intéressant.",
+    "fiction": false
+  },
+  {
+    "title": "The Pledge",
+    "subtitle": "Your Master Plan for an abundant life",
+    "authors": ["Michael Masterson"],
+    "rating": 3,
+    "date": "2011-06",
+    "comment": "L'idée principale du livre est l'ACTION. On passe trop de temps à réfléchir, à planifier, à collecter l'info, et pas assez de temps à agir, essayer, échouer (et donc apprendre).",
+    "fiction": false
+  },
+  {
+    "title": "The Secrets of Consulting",
+    "subtitle": "A guide to giving & getting advice successfully",
+    "authors": ["Gerald M. Weinberg"],
+    "rating": 3,
+    "date": "2014-09",
+    "comment": "J'ai aimé les anecdotes, et certaines techniques, mais le contenu est assez peu actionnable.",
+    "fiction": false
+  },
+  {
+    "title": "Tout le monde n'a pas eu la chance de rater ses études",
+    "authors": ["Olivier Roland"],
+    "rating": 3,
+    "date": "2023-07",
+    "comment": "Assez classiques, mais repose certaines bases",
+    "fiction": false
+  },
+  {
+    "title": "Vers un monde sans pauvreté + Vers un nouveau capitalisme",
+    "authors": ["Mohammad Yunus"],
+    "rating": 4,
+    "date": "2011-06",
+    "comment": "Découverte pour moi de la microfinance, et de l'entrepreneuriat social",
+    "fiction": false
+  },
+  {
+    "title": "Vous êtes vendeur, le saviez-vous ?",
+    "subtitle": "L'étonnante vérité sur notre capacité d'influence",
+    "authors": ["Daniel Pink"],
+    "rating": 4,
+    "date": "2015-01",
+    "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
+    "fiction": false
+  },
+  {
+    "title": "What the CEO wants you to know",
+    "subtitle": "Using Business Acumen to understand how your company really works",
+    "authors": ["Ram Charan"],
+    "rating": 3,
+    "date": "2015-03",
+    "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
+    "fiction": false
+  },
+  {
+    "title": "Working effectively with unit tests",
+    "authors": ["Jay Fields"],
+    "rating": 5,
+    "date": "2015-03",
+    "comment": "Bon livre. J'ai été convaincu par certaines pratiques, les arguments ont fait mouches.\nC'est pragmatique, et ça m'a appris des choses sur l'écriture des tests et aussi un peu sur le code.\nLe ton est bon, avec l'impression d'avoir une conversation avec un professionnel qui me donne \nson avis et ses opinions sur du code que j'aurai pu écrire.",
+    "fiction": false
   }
 ]

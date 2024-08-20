@@ -7,6 +7,7 @@ Structure with all fields in correct order:
 ```json
   {
     "title": "",
+    "subtitle": "",
     "series": "",
     "authors": [],
     "rating": 4,
