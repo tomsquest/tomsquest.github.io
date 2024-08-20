@@ -56,7 +56,7 @@
     "title": "Quality Land",
     "authors": ["Marc-Uwe Kling"],
     "rating": 5,
-    "comment": "Vraiment bien, drôle, perspicace, et écrit avant GPT ! Conseillé au boulot. Apparemment, satire de notre société.",
+    "comment": "Vraiment bien, drôle, perspicace, et écrit avant GPT !",
     "date": "2024-04",
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH339866",
@@ -95,7 +95,7 @@
     "title": "Loterie Solaire",
     "authors": ["Philip K. Dick"],
     "rating": 3,
-    "comment": "Plutôt pas mal. L'idée de base (la loterie qui décide de tout), mais ça tombe un peu bof à la fin.\nJe m'attendais à mieux, même si je n'ai pas été trop décu.",
+    "comment": "Plutôt pas mal. L'idée de base (la loterie qui décide de tout), mais ça tombe un peu bof à la fin.\nJe m'attendais à mieux, même si je n'ai pas été trop déçu.",
     "date": "2024-03",
     "fiction": true
   },
@@ -140,7 +140,7 @@
     "title": "Le club des policiers yiddish",
     "authors": ["Michael Chabon"],
     "rating": 2,
-    "comment": "Je n'ai pas accroché à toutes les références juives, c'est confus.\nL'intrigue n'est pas dingue en plus. Je pensais que c'était drôle, mais ça ne l'est pas (je ne me souviens même pas avoir souri).\nJe l'ai fini pour dire de le finir, mais rien de plus :/",
+    "comment": "Je n'ai pas accroché à toutes les références juives, c'est confus.\nL'intrigue n'est pas dingue en plus. \nJe pensais que c'était drôle, mais ça ne l'est pas (je ne me souviens même pas avoir souri).\nJe l'ai fini pour dire de le finir, mais rien de plus :/",
     "date": "2024-02",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH204140"],
     "fiction": true
@@ -780,7 +780,7 @@
     "title": "L'examen",
     "authors": ["Sylvain Neuvel"],
     "rating": 4,
-    "comment": "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat à l'immigration.",
+    "comment": "C'est assez choquant : ils font ume simulation pour savoir si le héros (un dentiste) est un bon candidat à l'immigration.",
     "date": "2021-12",
     "urls": ["https://www.conseil-bifrost.fr/l-examen-sylvain-neuvel/"],
     "fiction": true
@@ -882,7 +882,7 @@
     "title": "2 jours pour vivre",
     "authors": [],
     "rating": 4,
-    "comment": "Des randos, à pied, à velo en 2 jours pour découvrir, accessible...",
+    "comment": "Des randos, à pied, à vélo en deux jours pour découvrir, accessible...",
     "date": "2021-10",
     "fiction": false
   },
@@ -1178,7 +1178,7 @@
     "title": "Diaspora",
     "authors": ["Greg Egan"],
     "rating": 2,
-    "comment": "Dur à lire, trop de Hard Science à mon goût (on part dans les 10 dimensions !). Mais ça avance un peu quand-même. Des Humains (IA) qui sont à la recherche de plus anciens qu'eux après une catastrophe qui a frappé la Terre. Je l'ai repris après l'avoir arrêté.",
+    "comment": "Dur à lire, trop de Hard Science à mon goût (on part dans les 10 dimensions !). Mais ça avance un peu quand-même.\nDes Humains (IA) qui sont à la recherche de plus anciens qu'eux après une catastrophe qui a frappé la Terre. Je l'ai repris après l'avoir arrêté.",
     "date": "2020-07",
     "fiction": true
   },
@@ -1283,7 +1283,7 @@
     "title": "Chroniques du pays des mers",
     "authors": ["Elisabeth Vonarburg"],
     "rating": 3,
-    "comment": "Pas mal, pas sûr d'avoir tout saisi non plus.\nJ'ai été voir les commentaires pour essayer de comprendre sans succès.\nPlutôt feministe et original.",
+    "comment": "Pas mal, pas sûr d'avoir tout saisi non plus.\nJ'ai été voir les commentaires pour essayer de comprendre sans succès.\nPlutôt féministe et original.",
     "date": "2020-02",
     "fiction": true
   },
@@ -1384,7 +1384,7 @@
     "title": "Le bizarre incident du chien pendant la nuit",
     "authors": ["Mark Haddon"],
     "rating": 4,
-    "comment": "Le narrateur est un enfant qui a un problème social et d'intelligence (quelle maladie?). L'auteur raconte l'effet sur sa famille et sur l'enfant. J'ai aimé, car ça fait comprendre les points de vue de chacun.",
+    "comment": "Le narrateur est un enfant qui a un problème social et d'intelligence (quelle maladie?).\nL'auteur raconte l'effet sur sa famille et sur l'enfant.\nJ'ai aimé, car ça fait comprendre les points de vue de chacun.",
     "date": "2019-10",
     "fiction": true
   },
@@ -1400,7 +1400,7 @@
     "title": "Les tribulations d'Arthur Mineur",
     "authors": ["Andrew Sean Greer"],
     "rating": 3,
-    "comment": "Bof, j'attendais du hilarant ou au moins drôle. Au mieux c'est un sourire que j'ai eu. C'est de la littérature, bien écrit, assez fin.",
+    "comment": "Bof, j'attendais de l'hilarant ou au moins drôle. Au mieux c'est un sourire que j'ai eu. C'est de la littérature, bien écrit, assez fin.",
     "date": "2019-09",
     "fiction": true
   },
@@ -1719,7 +1719,7 @@
     "comment": "Sympa, même si on a du mal à y croire. Comte de fée ?\nCa se lit très facilement, langage plaisant.",
     "date": "2017-04",
     "urls": [
-      "https://www.amazon.fr/Deuxieme-Commence-Quand-Comprends-Quune/dp/2212561164/ref=sr_1_fkmr0_1?ie=UTF8&qid=1478103934&sr=8-1-fkmr0&keywords=Ta+deuxi%C3%A8me+vie+commence+quand+tu+comprends+que+tu+n%27en+as+qu%27une+%C2%BB%3B+chez+Eyrolles.+De+Rapha%C3%ABlle+Giordano"
+      "https://www.amazon.fr/Deuxieme-Commence-Quand-Comprends-Quune/dp/2212561164/"
     ],
     "fiction": true
   },
@@ -2399,7 +2399,7 @@
     "comment": "J'hésitai entre 3 et 4 sur 5, car je suis déçu de la fin de la Guerre éternelle (les dix dernières pages). Je pensais que le retournement final serait mieux ou plus profond. Dommage. La suite est mieux, plus intéressante.",
     "date": "2014-05",
     "urls": [
-      "https://www.amazon.fr/Guerre-%C3%A9ternelle-Joe-Haldeman/dp/2290308250/ref=wl_it_dp_o_npd?ie=UTF8&coliid=I3DWKY4K8D8J4Y&colid=3Z5LATPXQ5R7"
+      "https://www.amazon.fr/Guerre-%C3%A9ternelle-Joe-Haldeman/dp/2290308250/"
     ],
     "fiction": true
   },
@@ -2457,7 +2457,7 @@
     "authors": ["Roland Dutrey"],
     "rating": 4,
     "date": "2014-03",
-    "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc. Le plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure). À retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
+    "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc.\nLe plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure).\nÀ retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
     "fiction": false
   },
   {
@@ -2679,7 +2679,7 @@
     ],
     "rating": 4,
     "date": "2011-04",
-    "comment": "Un bon livre. Se lit assez facilement. Intéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
+    "comment": "Un bon livre. Se lit assez facilement.\nIntéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
     "fiction": false
   },
   {
@@ -2760,7 +2760,7 @@
     "title": "American Rigolo",
     "authors": ["Bill Bryson"],
     "rating": 5,
-    "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'angleterre. Marrant, de belles notes d'esprit, distrayant.",
+    "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'Angleterre. Marrant, de belles notes d'esprit, distrayant.",
     "fiction": false
   },
   {
@@ -2803,7 +2803,7 @@
     "title": "Jesus Video",
     "authors": ["Andreas Eschach"],
     "rating": 4,
-    "comment": "On retrouve un manuel d'une caméra vidéo sur un corps vieux de 2000 ans. Des gens se mettent à chercher des réponses. Très bon, un peu d'action, tout ça. Un roman d'aventure.",
+    "comment": "On retrouve un manuel d'une caméra vidéo sur un corps vieux de 2000 ans. Des gens se mettent à chercher des réponses.\nTrès bon, un peu d'action, tout ça. Un roman d'aventure.",
     "fiction": true
   },
   {
@@ -2884,7 +2884,7 @@
     "title": "Les loups des étoiles",
     "authors": ["Edmond Hamilton"],
     "rating": 3,
-    "comment": "Narre les aventures d'un mercenaire, un poil fort, mais humain (ouep ouep). Ça se lit facilement, c'est de l'aventure pure et dure en SF.",
+    "comment": "Narre les aventures d'un mercenaire, un poil fort, mais humain (ouep ouep).\nÇa se lit facilement, c'est de l'aventure pure et dure en SF.",
     "fiction": true
   },
   {
@@ -2933,7 +2933,7 @@
     "title": "Ubik",
     "authors": ["Philip K. Dick"],
     "rating": 4,
-    "comment": "Une histoire à la Existenz (les personnages ne savent plus s'ils sont vivants ou morts). Sympa, ça se lit vite. De là à dire que c'est un chef d'oeuvre...",
+    "comment": "Une histoire à la Existenz (les personnages ne savent plus s'ils sont vivants ou morts).\nSympa, ça se lit vite. De là à dire que c'est un chef d'oeuvre...",
     "fiction": true
   },
   {
