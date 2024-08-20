@@ -434,6 +434,16 @@
     "fiction": false
   },
   {
+    "title": "Ai-powered Search",
+    "subtitle": "Build search engines powered by the latest machine learning techniques and large language models",
+    "authors": ["Trey Grainger", "Doug Turnbull", "Max Irwin"],
+    "rating": 5,
+    "comment": "Génial : donne des idées avec le code pour mettre en place des fonctionnalités avancées pour les moteurs de recherche.\nLivre en MEAP Manning, donc toujours en évolution.\nOn s'y réfère très souvent dans l'équipe Search",
+    "date": "2023-01",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH316737"],
+    "fiction": false
+  },
+  {
     "title": "Le serpent majuscule",
     "authors": ["Pierre Lemaitre"],
     "rating": 4,
