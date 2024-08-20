@@ -11,19 +11,19 @@
     "fiction": true
   },
   {
-    "title": "L'homme qui voulait devenir psychopathe",
-    "authors": ["Laurent Malot"],
-    "rating": 4,
-    "comment": "Comment devenir important quand on est sans importance ?",
+    "title": "Comment je suis devenu stupide",
+    "authors": ["Martin Page"],
+    "rating": 3,
+    "comment": "Un intello raté se dit qu'il veut être bête pour être libre. Pas si faux.",
     "date": "2024-07",
     "urls": [],
     "fiction": true
   },
   {
-    "title": "Comment je suis devenu stupide",
-    "authors": ["Martin Page"],
-    "rating": 3,
-    "comment": "Un intello raté se dit qu'il veut être bête pour être libre. Pas si faux.",
+    "title": "L'homme qui voulait devenir psychopathe",
+    "authors": ["Laurent Malot"],
+    "rating": 4,
+    "comment": "Comment devenir important quand on est sans importance ?",
     "date": "2024-07",
     "urls": [],
     "fiction": true
@@ -58,16 +58,6 @@
     "fiction": true
   },
   {
-    "title": "La voie des rois",
-    "series": "Les archives de Roshar",
-    "authors": ["Brandon Sanderson"],
-    "volume": "2/10",
-    "comment": "Toujours pas mal. Je le trouve toujours un peu \"doux\". Je préfère quand c'est plus dark.\nIl faut que je lise la suite maintenant... :)",
-    "date": "2024-04",
-    "urls": [],
-    "fiction": true
-  },
-  {
     "title": "Quality Land",
     "authors": ["Marc-Uwe Kling"],
     "rating": 5,
@@ -80,23 +70,31 @@
     "fiction": true
   },
   {
+    "title": "La voie des rois",
+    "series": "Les archives de Roshar",
+    "authors": ["Brandon Sanderson"],
+    "volume": "2/10",
+    "comment": "Toujours pas mal. Je le trouve toujours un peu \"doux\". Je préfère quand c'est plus dark.\nIl faut que je lise la suite maintenant... :)",
+    "date": "2024-04",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "L'Autoroute du Millionaire",
+    "subtitle": "La voie express vers la richesse",
+    "authors": ["MJ DeMarco"],
+    "rating": 4,
+    "date": "2024-03",
+    "comment": "La métaphore automobile fonctionne bien (il vaut mieux ne pas être piéton...). Le livre incite à l'action.",
+    "fiction": false
+  },
+  {
     "title": "La tour de babylone",
     "authors": ["Ted Chiang"],
     "rating": 4,
     "comment": "Des nouvelles, certaines sont vraiment percutantes.",
     "date": "2024-03",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH332804"],
-    "fiction": true
-  },
-  {
-    "title": "La voie des rois",
-    "series": "Les archives de Roshar",
-    "authors": ["Brandon Sanderson"],
-    "rating": 3,
-    "volume": "1/10",
-    "comment": "Bien, entrainant. Peut-être un poil pas assez dark pour moi.",
-    "date": "2024-03",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH299843"],
     "fiction": true
   },
   {
@@ -118,12 +116,14 @@
     "fiction": true
   },
   {
-    "title": "Le club des policiers yiddish",
-    "authors": ["Michael Chabon"],
-    "rating": 2,
-    "comment": "Je n'ai pas accroché à toutes les références juives, c'est confus.\nL'intrigue n'est pas dingue en plus. Je pensais que c'était drôle, mais ça ne l'est pas (je ne me souviens même pas avoir souri).\nJe l'ai fini pour dire de le finir, mais rien de plus :/",
-    "date": "2024-02",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH204140"],
+    "title": "La voie des rois",
+    "series": "Les archives de Roshar",
+    "authors": ["Brandon Sanderson"],
+    "rating": 3,
+    "volume": "1/10",
+    "comment": "Bien, entrainant. Peut-être un poil pas assez dark pour moi.",
+    "date": "2024-03",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH299843"],
     "fiction": true
   },
   {
@@ -142,6 +142,15 @@
     "comment": "Ça m'a fait penser à la mort. Est-ce que les gens seront là à mon enterrement comme ils l'ont été pour Serge ?",
     "date": "2024-02",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH341309"],
+    "fiction": true
+  },
+  {
+    "title": "Le club des policiers yiddish",
+    "authors": ["Michael Chabon"],
+    "rating": 2,
+    "comment": "Je n'ai pas accroché à toutes les références juives, c'est confus.\nL'intrigue n'est pas dingue en plus. Je pensais que c'était drôle, mais ça ne l'est pas (je ne me souviens même pas avoir souri).\nJe l'ai fini pour dire de le finir, mais rien de plus :/",
+    "date": "2024-02",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH204140"],
     "fiction": true
   },
   {
@@ -173,13 +182,13 @@
     "fiction": true
   },
   {
-    "title": "The Expanse",
-    "series": "The Expanse",
-    "authors": ["James S. A. Corey"],
-    "volume": "2/9",
+    "title": "L'antiguide de la bière",
+    "authors": ["Fabrizio Bucella"],
+    "rating": 4,
+    "comment": "Bien, intéressant.",
     "date": "2023-10",
     "urls": [],
-    "fiction": true
+    "fiction": false
   },
   {
     "title": "La philo expliquée aux enfants",
@@ -190,13 +199,13 @@
     "fiction": false
   },
   {
-    "title": "L'antiguide de la bière",
-    "authors": ["Fabrizio Bucella"],
-    "rating": 4,
-    "comment": "Bien, intéressant.",
+    "title": "The Expanse",
+    "series": "The Expanse",
+    "authors": ["James S. A. Corey"],
+    "volume": "2/9",
     "date": "2023-10",
     "urls": [],
-    "fiction": false
+    "fiction": true
   },
   {
     "title": "La fin du monde a du retard",
@@ -205,6 +214,14 @@
     "date": "2023-09",
     "urls": [],
     "fiction": true
+  },
+  {
+    "title": "La justice expliquée à ma petite-fille",
+    "authors": ["Gilles Perrault"],
+    "comment": "Bien, un avis sur la justice. Pas pour les enfants, pas assez simple.",
+    "date": "2023-09",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH304019"],
+    "fiction": false
   },
   {
     "title": "Norilsk",
@@ -238,18 +255,34 @@
     "fiction": true
   },
   {
-    "title": "La justice expliquée à ma petite-fille",
-    "authors": ["Gilles Perrault"],
-    "comment": "Bien, un avis sur la justice. Pas pour les enfants, pas assez simple.",
-    "date": "2023-09",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH304019"],
+    "title": "Grokking Functional Programming",
+    "authors": ["Michal Plachta"],
+    "rating": 4,
+    "date": "2023-08",
+    "comment": "Programmation fonctionnelle sans jargon",
     "fiction": false
   },
   {
-    "title": "Capitale du Sud",
-    "series": "Capitale du Sud",
-    "authors": ["Guillaume Chamanadjian"],
-    "volume": "3/3",
+    "title": "L'homme qui savait la langue des serpents",
+    "authors": ["Andrus Kivirahk"],
+    "rating": 3,
+    "comment": "Une sorte de comte, mais original. J'ai bien aimé, même si, assez chelou.",
+    "date": "2023-08",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Magellan",
+    "authors": ["Stefan Zweig"],
+    "comment": "Bien, impressionnant, j'ai appris des trucs : le gagnant écrit l'histoire, et ne pas mourir comme un con.",
+    "date": "2023-08",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH355445"],
+    "fiction": true
+  },
+  {
+    "title": "Prenez soin du chien",
+    "authors": ["J.M. Erre"],
+    "rating": 4,
     "date": "2023-08",
     "urls": [],
     "fiction": true
@@ -263,18 +296,10 @@
     "fiction": true
   },
   {
-    "title": "Prenez soin du chien",
-    "authors": ["J.M. Erre"],
-    "rating": 4,
-    "date": "2023-08",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "L'homme qui savait la langue des serpents",
-    "authors": ["Andrus Kivirahk"],
-    "rating": 3,
-    "comment": "Une sorte de comte, mais original. J'ai bien aimé, même si, assez chelou.",
+    "title": "Capitale du Sud",
+    "series": "Capitale du Sud",
+    "authors": ["Guillaume Chamanadjian"],
+    "volume": "3/3",
     "date": "2023-08",
     "urls": [],
     "fiction": true
@@ -288,14 +313,6 @@
     "comment": "Je n'ai pas tout compris dans ce tome, avec des sortes de retours en arrière. Déçu.",
     "date": "2023-08",
     "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Magellan",
-    "authors": ["Stefan Zweig"],
-    "comment": "Bien, impressionnant, j'ai appris des trucs : le gagnant écrit l'histoire, et ne pas mourir comme un con.",
-    "date": "2023-08",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH355445"],
     "fiction": true
   },
   {
@@ -326,6 +343,14 @@
     "fiction": true
   },
   {
+    "title": "Tout le monde n'a pas eu la chance de rater ses études",
+    "authors": ["Olivier Roland"],
+    "rating": 3,
+    "date": "2023-07",
+    "comment": "Assez classiques, mais repose certaines bases",
+    "fiction": false
+  },
+  {
     "title": "Le bonheur est au fond du couloir à gauche",
     "authors": ["J.M. Erre"],
     "rating": 4,
@@ -344,12 +369,39 @@
     "fiction": true
   },
   {
+    "title": "Le dixième vaisseau",
+    "authors": ["Pierre Bordage"],
+    "rating": 2,
+    "comment": "Je ne m'en souviens plus, mais les commentaires disent \"ado\", et je crois bien que c'est pour ça que je l'ai arrêté.",
+    "date": "2023-03",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "Le Mystère Sherlock",
     "authors": ["J.M. Erre"],
     "rating": 5,
     "comment": "C'est drôle, c'est bien écrit. J'ai beaucoup aimé lire quelques pages par-ci par-là. Ça fait du bien !",
     "date": "2023-03",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH244635"],
+    "fiction": true
+  },
+  {
+    "title": "Tortilla Flat",
+    "authors": ["Steinbeck"],
+    "rating": 4,
+    "comment": "L'histoire de désoeuvrés, qui ne cherche rien, à part boire ! Marrant, bien écrit.",
+    "date": "2023-03",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Capitale du Sud",
+    "series": "Capitale du Sud",
+    "authors": ["Guillaume Chamanadjian"],
+    "volume": "2/3",
+    "date": "2023-03",
+    "urls": [],
     "fiction": true
   },
   {
@@ -365,29 +417,30 @@
   },
   {
     "title": "Capitale du Sud",
-    "series": "Capitale du Sud",
     "authors": ["Guillaume Chamanadjian"],
-    "volume": "2/3",
-    "date": "2023-03",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Tortilla Flat",
-    "authors": ["Steinbeck"],
     "rating": 4,
-    "comment": "L'histoire de désoeuvrés, qui ne cherche rien, à part boire ! Marrant, bien écrit.",
-    "date": "2023-03",
+    "volume": "1/3",
+    "comment": "Bien, belle histoire, se lit bien.",
+    "date": "2023-02",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH337453"],
+    "fiction": true
+  },
+  {
+    "title": "Désolation",
+    "authors": ["Jean-Philippe Jaworski"],
+    "rating": 5,
+    "comment": "Court, graphique, et vraiment super. Cette fin !",
+    "date": "2023-02",
     "urls": [],
     "fiction": true
   },
   {
-    "title": "Le dixième vaisseau",
-    "authors": ["Pierre Bordage"],
-    "rating": 2,
-    "comment": "Je ne m'en souviens plus, mais les commentaires disent \"ado\", et je crois bien que c'est pour ça que je l'ai arrêté.",
-    "date": "2023-03",
-    "urls": [],
+    "title": "Récits du Vieux Royaume",
+    "authors": ["Jean-Philippe Jaworski"],
+    "rating": 4,
+    "comment": "Super, des nouvelles vraiment sympa.",
+    "date": "2023-02",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH358769"],
     "fiction": true
   },
   {
@@ -401,40 +454,13 @@
     "fiction": true
   },
   {
-    "title": "Récits du Vieux Royaume",
-    "authors": ["Jean-Philippe Jaworski"],
+    "title": "Et Merde",
+    "subtitle": "comment l'histoire montre que l'erreur est humaine",
+    "authors": ["Tom Phillips"],
     "rating": 4,
-    "comment": "Super, des nouvelles vraiment sympa.",
-    "date": "2023-02",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH358769"],
-    "fiction": true
-  },
-  {
-    "title": "Désolation",
-    "authors": ["Jean-Philippe Jaworski"],
-    "rating": 5,
-    "comment": "Court, graphique, et vraiment super. Cette fin !",
-    "date": "2023-02",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Capitale du Sud",
-    "authors": ["Guillaume Chamanadjian"],
-    "rating": 4,
-    "volume": "1/3",
-    "comment": "Bien, belle histoire, se lit bien.",
-    "date": "2023-02",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH337453"],
-    "fiction": true
-  },
-  {
-    "title": "Petit éloge du temps comme il va",
-    "authors": ["Denis Grozdanovitch"],
-    "rating": 3,
-    "comment": "Un peu de philosophie, de la poésie, de la réflexion sur le temps qui passe.\nJe ne l'ai pas fini (100 pages sur 120), je n'ai pas vraiment accroché.",
+    "comment": "Pas mal d'anecdote, sympa à lire.",
     "date": "2023-01",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH271982"],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH316737"],
     "fiction": false
   },
   {
@@ -447,23 +473,13 @@
     "fiction": true
   },
   {
-    "title": "Et Merde",
-    "subtitle": "comment l'histoire montre que l'erreur est humaine",
-    "authors": ["Tom Phillips"],
-    "rating": 4,
-    "comment": "Pas mal d'anecdote, sympa à lire.",
+    "title": "Petit éloge du temps comme il va",
+    "authors": ["Denis Grozdanovitch"],
+    "rating": 3,
+    "comment": "Un peu de philosophie, de la poésie, de la réflexion sur le temps qui passe.\nJe ne l'ai pas fini (100 pages sur 120), je n'ai pas vraiment accroché.",
     "date": "2023-01",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH316737"],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH271982"],
     "fiction": false
-  },
-  {
-    "title": "Les sept morts d'Evelyn Hardcastle",
-    "authors": ["Stuart Turton"],
-    "rating": 5,
-    "comment": "Un jour sans fin mixé avec une enquête policière.\nJ'ai bien aimé le fait de trouver les croisements entre les persos.\nBonne fin aussi, quelques surprises.",
-    "date": "2022-12",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH319287"],
-    "fiction": true
   },
   {
     "title": "Le monde inverti",
@@ -472,6 +488,15 @@
     "comment": "L'histoire d'une ville qui roule, mais qui en fait est sur la Terre.\nHistoire de confrontation de point de vue. La découverte est intéressante, mais ce n'est pas vraiment bouleversant.",
     "date": "2022-12",
     "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH114493"],
+    "fiction": true
+  },
+  {
+    "title": "Les sept morts d'Evelyn Hardcastle",
+    "authors": ["Stuart Turton"],
+    "rating": 5,
+    "comment": "Un jour sans fin mixé avec une enquête policière.\nJ'ai bien aimé le fait de trouver les croisements entre les persos.\nBonne fin aussi, quelques surprises.",
+    "date": "2022-12",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH319287"],
     "fiction": true
   },
   {
@@ -485,15 +510,6 @@
       "https://www.amazon.fr/L%C3%89trange-Travers%C3%A9e-Saardam-Stuart-Turton/dp/2355848750/ref=sr_1_1?keywords=L%27%C3%A9trange+travers%C3%A9e+du+Saardam#customerReviews"
     ],
     "fiction": true
-  },
-  {
-    "title": "Nomadland",
-    "authors": ["Jessica Bruder"],
-    "rating": 4,
-    "comment": "Histoire de nomades dans leur Van, qui aspirent à une vie plus simple, mais surtout à qui l'argent manque.\nDes retraités obligés de travailler (chez Amazon entre autres) pour pas grand-chose pour pouvoir vivre.",
-    "date": "2022-10",
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "Au revoir là-haut",
@@ -514,12 +530,19 @@
     "fiction": true
   },
   {
-    "title": "La 25ème heure",
-    "series": "Les Enquêtes de la 25e Heure",
-    "authors": ["Feldrik Rivat"],
-    "rating": 5,
-    "volume": "1/3",
-    "comment": "Super histoire en 188x, du mystère, un poil de steampunk, perso super, style genial.\nJe vais lire la 2ème partie !",
+    "title": "Nomadland",
+    "authors": ["Jessica Bruder"],
+    "rating": 4,
+    "comment": "Histoire de nomades dans leur Van, qui aspirent à une vie plus simple, mais surtout à qui l'argent manque.\nDes retraités obligés de travailler (chez Amazon entre autres) pour pas grand-chose pour pouvoir vivre.",
+    "date": "2022-10",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "La leçon du brin d'herbe",
+    "authors": ["Olivier Bleys"],
+    "rating": 3,
+    "comment": "Court texte sur des rencontres, la nature, des ballades",
     "date": "2022-09",
     "urls": [],
     "fiction": true
@@ -537,11 +560,31 @@
     "fiction": true
   },
   {
-    "title": "La leçon du brin d'herbe",
-    "authors": ["Olivier Bleys"],
-    "rating": 3,
-    "comment": "Court texte sur des rencontres, la nature, des ballades",
+    "title": "La 25ème heure",
+    "series": "Les Enquêtes de la 25e Heure",
+    "authors": ["Feldrik Rivat"],
+    "rating": 5,
+    "volume": "1/3",
+    "comment": "Super histoire en 188x, du mystère, un poil de steampunk, perso super, style genial.\nJe vais lire la 2ème partie !",
     "date": "2022-09",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Cobrastart",
+    "authors": ["Thomas Bois"],
+    "rating": 4,
+    "comment": "Science Fiction Punk. C'est du Tarantino SF. J'ai aimé !",
+    "date": "2022-08",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La diagonale du vide",
+    "authors": ["Mathieu Mouillet"],
+    "rating": 4,
+    "comment": "Des rencontres pendant ce voyage. Vivant, humain. Bien !",
+    "date": "2022-08",
     "urls": [],
     "fiction": true
   },
@@ -555,15 +598,6 @@
     "fiction": false
   },
   {
-    "title": "Cobrastart",
-    "authors": ["Thomas Bois"],
-    "rating": 4,
-    "comment": "Science Fiction Punk. C'est du Tarantino SF. J'ai aimé !",
-    "date": "2022-08",
-    "urls": [],
-    "fiction": true
-  },
-  {
     "title": "Où s'imposent les silences",
     "authors": ["Emmanuel Quentin"],
     "rating": 5,
@@ -573,11 +607,37 @@
     "fiction": true
   },
   {
-    "title": "La diagonale du vide",
-    "authors": ["Mathieu Mouillet"],
+    "title": "Les mathématiques des Simpson",
+    "authors": ["Simon Singh"],
+    "rating": 3,
+    "comment": "Les maths sorties des Simpsons. J'ai appris quelques petits trucs, mais pas assez poussé.",
+    "date": "2022-07",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Machine Learning avec Scikit-Learn",
+    "authors": ["Aurélien Géron"],
+    "rating": 5,
+    "date": "2022-07",
+    "comment": "Un Must ! Rien que le chapitre avec lequel il déroule un projet complet de ML, avec ses remarques propres et ses avis. Top !",
+    "fiction": false
+  },
+  {
+    "title": "Tordez le cou aux idées reçues",
+    "authors": ["François Lenglet"],
     "rating": 4,
-    "comment": "Des rencontres pendant ce voyage. Vivant, humain. Bien !",
-    "date": "2022-08",
+    "comment": "Un chapitre pour démystifier un sujet (inflation, immigration...)",
+    "date": "2022-07",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Toujours plus à l'est",
+    "authors": ["Benjamin Pelletier"],
+    "rating": 3,
+    "comment": "L'histoire d'un francais qui va en Corée. Quelques anecdotes, mais j'aurais aimé plus croustillant.",
+    "date": "2022-07",
     "urls": [],
     "fiction": true
   },
@@ -593,49 +653,22 @@
     "fiction": true
   },
   {
-    "title": "Tordez le cou aux idées reçues",
-    "authors": ["François Lenglet"],
-    "rating": 4,
-    "comment": "Un chapitre pour démystifier un sujet (inflation, immigration...)",
-    "date": "2022-07",
+    "title": "3 minutes de philosophie pour redevenir humain",
+    "authors": ["Fabrice Midal"],
+    "rating": 3,
+    "comment": "Pas de souvenir !",
+    "date": "2022-06",
     "urls": [],
     "fiction": false
   },
   {
-    "title": "Les mathématiques des Simpson",
-    "authors": ["Simon Singh"],
-    "rating": 3,
-    "comment": "Les maths sorties des Simpsons. J'ai appris quelques petits trucs, mais pas assez poussé.",
-    "date": "2022-07",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Toujours plus à l'est",
-    "authors": ["Benjamin Pelletier"],
-    "rating": 3,
-    "comment": "L'histoire d'un francais qui va en Corée. Quelques anecdotes, mais j'aurais aimé plus croustillant.",
-    "date": "2022-07",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Envoyé un peu spécial",
+    "title": "Comme à la guerre",
     "authors": ["Julien Blanc-Gras"],
-    "rating": 4,
-    "comment": "Des anecdotes d'un journaliste qui voyage. Croustillant, intéressant, ironique : bien !",
+    "rating": 3,
+    "comment": "Des souvenirs suite aux carnets retrouvés des grand-pères qui ont fait la guerre.",
     "date": "2022-06",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH339569"],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH315629"],
     "fiction": false
-  },
-  {
-    "title": "Le fantôme de la tour Eiffel",
-    "authors": ["Olivier Bleys"],
-    "rating": 4,
-    "comment": "Des aventures à l'époque de la Tour Eiffel. Bien documenté, dépaysant. Sympa !",
-    "date": "2022-06",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH117685"],
-    "fiction": true
   },
   {
     "title": "Comment échapper à l'ennui du dimanche après-midi",
@@ -647,12 +680,12 @@
     "fiction": false
   },
   {
-    "title": "3 minutes de philosophie pour redevenir humain",
-    "authors": ["Fabrice Midal"],
-    "rating": 3,
-    "comment": "Pas de souvenir !",
+    "title": "Envoyé un peu spécial",
+    "authors": ["Julien Blanc-Gras"],
+    "rating": 4,
+    "comment": "Des anecdotes d'un journaliste qui voyage. Croustillant, intéressant, ironique : bien !",
     "date": "2022-06",
-    "urls": [],
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH339569"],
     "fiction": false
   },
   {
@@ -665,13 +698,13 @@
     "fiction": false
   },
   {
-    "title": "Comme à la guerre",
-    "authors": ["Julien Blanc-Gras"],
-    "rating": 3,
-    "comment": "Des souvenirs suite aux carnets retrouvés des grand-pères qui ont fait la guerre.",
+    "title": "Le fantôme de la tour Eiffel",
+    "authors": ["Olivier Bleys"],
+    "rating": 4,
+    "comment": "Des aventures à l'époque de la Tour Eiffel. Bien documenté, dépaysant. Sympa !",
     "date": "2022-06",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH315629"],
-    "fiction": false
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH117685"],
+    "fiction": true
   },
   {
     "title": "Histoire de pédaler",
@@ -692,15 +725,12 @@
     "fiction": false
   },
   {
-    "title": "La cinquième saison : les livres de la terre fracturée",
-    "series": "La cinquième saison : les livres de la terre fracturée",
-    "authors": ["N.K. Jemisin"],
-    "rating": 4,
-    "volume": "3/3",
-    "comment": "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ça se tient et c'était pas mal.",
+    "title": "Introduction au Machine Learning",
+    "authors": ["Chloé-Agathe Azencott"],
+    "rating": 2,
     "date": "2022-04",
-    "urls": [],
-    "fiction": true
+    "comment": "Trop matheux, c'est surtout une introduction aux mathématiques pour le Machine Learning.",
+    "fiction": false
   },
   {
     "title": "Programmation Python avancée",
@@ -710,6 +740,17 @@
     "date": "2022-04",
     "urls": [],
     "fiction": false
+  },
+  {
+    "title": "La cinquième saison : les livres de la terre fracturée",
+    "series": "La cinquième saison : les livres de la terre fracturée",
+    "authors": ["N.K. Jemisin"],
+    "rating": 4,
+    "volume": "3/3",
+    "comment": "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ça se tient et c'était pas mal.",
+    "date": "2022-04",
+    "urls": [],
+    "fiction": true
   },
   {
     "title": "L'art de la marche",
@@ -757,29 +798,11 @@
     "fiction": true
   },
   {
-    "title": "Le livre des énigmes de Science-Fiction",
-    "authors": [],
-    "comment": "Bien, dur, mais sympa. Pas tout fait.",
-    "date": "2021-12",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "L'examen",
-    "authors": ["Sylvain Neuvel"],
+    "title": "Machine Learning for absolute beginners",
+    "authors": ["Oliver Theobald"],
     "rating": 4,
-    "comment": "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat à l'immigration.",
-    "date": "2021-12",
-    "urls": ["https://www.conseil-bifrost.fr/l-examen-sylvain-neuvel/"],
-    "fiction": true
-  },
-  {
-    "title": "Shakespeare Antibiographie",
-    "authors": ["Bill Bryson"],
-    "rating": 4,
-    "comment": "Du bon Bill Bryson. J'ai appris sur Shakespeare et surtout qu'on n'a que peu d'infos et sur la vie au 16ème siecle. J'ai bien aimé.",
-    "date": "2021-12",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH248161"],
+    "date": "2022-01",
+    "comment": "L'intro facile au ML, et c'est ce que je cherchais",
     "fiction": false
   },
   {
@@ -795,11 +818,75 @@
     "fiction": false
   },
   {
+    "title": "L'examen",
+    "authors": ["Sylvain Neuvel"],
+    "rating": 4,
+    "comment": "C'est assez choquant : ils font ume simulation pour savoir si le heros (un dentiste) est un bon candidat à l'immigration.",
+    "date": "2021-12",
+    "urls": ["https://www.conseil-bifrost.fr/l-examen-sylvain-neuvel/"],
+    "fiction": true
+  },
+  {
+    "title": "Le livre des énigmes de Science-Fiction",
+    "authors": [],
+    "comment": "Bien, dur, mais sympa. Pas tout fait.",
+    "date": "2021-12",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Shakespeare Antibiographie",
+    "authors": ["Bill Bryson"],
+    "rating": 4,
+    "comment": "Du bon Bill Bryson. J'ai appris sur Shakespeare et surtout qu'on n'a que peu d'infos et sur la vie au 16ème siecle. J'ai bien aimé.",
+    "date": "2021-12",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH248161"],
+    "fiction": false
+  },
+  {
+    "title": "Des lettres entre deux agents temporels de camps opposés",
+    "authors": [],
+    "date": "2021-11",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "En âge florissant",
+    "subtitle": "De la renaissance à la réforme",
+    "authors": ["Pascal Brioist"],
+    "date": "2021-11",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Esther",
+    "authors": ["Bruneau"],
+    "rating": 3,
+    "date": "2021-11",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "Guerilla Green - Guide de survie végétale en milieu urbain",
     "authors": ["Ophélie Damblé"],
     "date": "2021-11",
     "urls": [],
     "fiction": false
+  },
+  {
+    "title": "L'économie mondiale en 50 inventions",
+    "authors": ["Tim Harford"],
+    "date": "2021-11",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Les oiseaux du temps",
+    "authors": ["El-Mohtar", "Gladstone"],
+    "rating": 3,
+    "date": "2021-11",
+    "urls": [],
+    "fiction": true
   },
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
@@ -832,44 +919,6 @@
     "fiction": true
   },
   {
-    "title": "Esther",
-    "authors": ["Bruneau"],
-    "rating": 3,
-    "date": "2021-11",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Les oiseaux du temps",
-    "authors": ["El-Mohtar", "Gladstone"],
-    "rating": 3,
-    "date": "2021-11",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Des lettres entre deux agents temporels de camps opposés",
-    "authors": [],
-    "date": "2021-11",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "L'économie mondiale en 50 inventions",
-    "authors": ["Tim Harford"],
-    "date": "2021-11",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "En âge florissant",
-    "subtitle": "De la renaissance à la réforme",
-    "authors": ["Pascal Brioist"],
-    "date": "2021-11",
-    "urls": [],
-    "fiction": false
-  },
-  {
     "title": "Rive gauche",
     "series": "Univers de Metro 2034",
     "authors": ["Pierre Bordage"],
@@ -880,6 +929,15 @@
     "fiction": true
   },
   {
+    "title": "2 jours pour vivre",
+    "authors": [],
+    "rating": 4,
+    "comment": "Des randos, à pied, à velo en 2 jours pour découvrir, accessible...",
+    "date": "2021-10",
+    "urls": [],
+    "fiction": false
+  },
+  {
     "title": "Comment vivre ? Une vie de Montaigne en une question et vingt tentatives de réponse",
     "authors": ["Sarah Bakewell"],
     "date": "2021-10",
@@ -887,10 +945,8 @@
     "fiction": false
   },
   {
-    "title": "2 jours pour vivre",
-    "authors": [],
-    "rating": 4,
-    "comment": "Des randos, à pied, à velo en 2 jours pour découvrir, accessible...",
+    "title": "La soif de l'essentiel",
+    "authors": ["Moghaddassi"],
     "date": "2021-10",
     "urls": [],
     "fiction": false
@@ -905,16 +961,10 @@
     "fiction": true
   },
   {
-    "title": "La soif de l'essentiel",
-    "authors": ["Moghaddassi"],
-    "date": "2021-10",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "La philo des Super Héros",
-    "authors": ["Élodie Denis"],
-    "comment": "Moui",
+    "title": "Au carrefour des étoiles",
+    "authors": ["Simak"],
+    "rating": 3,
+    "comment": "Bah, c'est bien, un gout de suranné qui a du charme.\nMais l'histoire n'est pas ouf, c'est classique.",
     "date": "2021-09",
     "urls": [],
     "fiction": true
@@ -929,11 +979,17 @@
     "fiction": true
   },
   {
-    "title": "La moitié d'une guerre",
-    "series": "La mer éclatée",
-    "authors": ["Joe Abercrombie"],
-    "rating": 4,
-    "volume": "3/3",
+    "title": "La philo des Super Héros",
+    "authors": ["Élodie Denis"],
+    "comment": "Moui",
+    "date": "2021-09",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Tout va mal, je vais bien, comment vivre heureux dans un monde de merde",
+    "authors": ["Philippe Bloch"],
+    "comment": "Ca se lit",
     "date": "2021-09",
     "urls": [],
     "fiction": true
@@ -960,18 +1016,11 @@
     "fiction": true
   },
   {
-    "title": "Au carrefour des étoiles",
-    "authors": ["Simak"],
-    "rating": 3,
-    "comment": "Bah, c'est bien, un gout de suranné qui a du charme.\nMais l'histoire n'est pas ouf, c'est classique.",
-    "date": "2021-09",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Tout va mal, je vais bien, comment vivre heureux dans un monde de merde",
-    "authors": ["Philippe Bloch"],
-    "comment": "Ca se lit",
+    "title": "La moitié d'une guerre",
+    "series": "La mer éclatée",
+    "authors": ["Joe Abercrombie"],
+    "rating": 4,
+    "volume": "3/3",
     "date": "2021-09",
     "urls": [],
     "fiction": true
@@ -995,6 +1044,21 @@
     "fiction": true
   },
   {
+    "title": "N'oublie pas d'être heureux",
+    "authors": ["Christophe André"],
+    "rating": 4,
+    "date": "2021-06",
+    "fiction": false
+  },
+  {
+    "title": "Pre-Suasion",
+    "subtitle": "A Revolutionary Way to Influence and Persuade",
+    "authors": ["Robert Cialdini"],
+    "rating": 4,
+    "date": "2021-06",
+    "fiction": false
+  },
+  {
     "title": "Premier sang",
     "series": "La première loi",
     "authors": ["Joe Abercrombie"],
@@ -1006,6 +1070,14 @@
     "fiction": true
   },
   {
+    "title": "Apprendre à vivre",
+    "subtitle": "Traité de philosophie à l'usage des jeunes générations",
+    "authors": ["Luc Ferry"],
+    "rating": 3,
+    "date": "2021-05",
+    "fiction": false
+  },
+  {
     "title": "Espace",
     "series": "Les Univers Multiples",
     "authors": ["Stephen Baxter"],
@@ -1015,6 +1087,14 @@
     "date": "2021-05",
     "urls": [],
     "fiction": true
+  },
+  {
+    "title": "A la recherche du Sens Perdu",
+    "subtitle": "Petit précis des grands dilemmes philosophiques",
+    "authors": ["Franm Martela"],
+    "rating": 4,
+    "date": "2021-04",
+    "fiction": false
   },
   {
     "title": "The Practicing Stoic",
@@ -1037,6 +1117,24 @@
     "fiction": true
   },
   {
+    "title": "Grokking Simplicity",
+    "subtitle": "Taming complex software with functional thinking",
+    "authors": ["Eric Normand"],
+    "rating": 5,
+    "date": "2021-01",
+    "comment": "J'ai changé de façon d'écrire du code après avoir lu ce livre. Excellent !",
+    "fiction": false
+  },
+  {
+    "title": "The Five Dysfunctions of a Team",
+    "subtitle": "A leadership fable",
+    "authors": ["Patrick Lencioni"],
+    "rating": 3,
+    "date": "2021-01",
+    "comment": "Le livre donne un framework pour créer une super équipe, dans le sens créer les liens, se faire confiance, etc. Mais le chemin est difficile et long.",
+    "fiction": false
+  },
+  {
     "title": "Une histoire du corps humain a l'usage de ses occupants",
     "authors": ["Bill Bryson"],
     "rating": 4,
@@ -1046,13 +1144,11 @@
     "fiction": false
   },
   {
-    "title": "Où on va papa",
-    "authors": ["Jean-Louis Fournier"],
+    "title": "30 lessons for living",
+    "authors": ["Karl A. Pillemer"],
     "rating": 4,
-    "comment": "Un père qui a deux enfants handicapés : il s'en moque, mais les aime, c'est drôle/touchant et triste.",
     "date": "2020-12",
-    "urls": [],
-    "fiction": true
+    "fiction": false
   },
   {
     "title": "Les miracles du bazar Namiya",
@@ -1063,6 +1159,15 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/osiros/result/resultat.php?type_rech=rs&index%5B%5D=fulltext&bool%5B%5D=&type_source=&value%5B%5D=namiya"
     ],
+    "fiction": true
+  },
+  {
+    "title": "Où on va papa",
+    "authors": ["Jean-Louis Fournier"],
+    "rating": 4,
+    "comment": "Un père qui a deux enfants handicapés : il s'en moque, mais les aime, c'est drôle/touchant et triste.",
+    "date": "2020-12",
+    "urls": [],
     "fiction": true
   },
   {
@@ -1093,15 +1198,6 @@
     "fiction": true
   },
   {
-    "title": "Le peuple du tapis",
-    "authors": ["Terry Pratchett"],
-    "rating": 3,
-    "comment": "Petit livre, censé être pour enfant (comme tous les Pratchett ?). Ça se laisse lire, mais ce n'est pas renversant non plus.",
-    "date": "2020-09",
-    "urls": [],
-    "fiction": true
-  },
-  {
     "title": "Spire",
     "authors": ["Laurent Genefort"],
     "volume": "2/3",
@@ -1115,6 +1211,15 @@
     "rating": 4,
     "volume": "1/3",
     "comment": "La création d'une compagnie spatiale.\nSa déchéance dans le T2.\nL'auteur va très vite sur certains passages, assez expéditif.",
+    "date": "2020-09",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Le peuple du tapis",
+    "authors": ["Terry Pratchett"],
+    "rating": 3,
+    "comment": "Petit livre, censé être pour enfant (comme tous les Pratchett ?). Ça se laisse lire, mais ce n'est pas renversant non plus.",
     "date": "2020-09",
     "urls": [],
     "fiction": true
@@ -1137,10 +1242,10 @@
     "fiction": true
   },
   {
-    "title": "Axis - Spin",
-    "series": "Spin",
-    "authors": ["Robert Charles Wilson"],
-    "volume": "2/3",
+    "title": "Dans la toile du temps",
+    "authors": ["Adrian Tchaikovsky"],
+    "rating": 4,
+    "comment": "Un monde avec des araignées et les humains, derniers survivants, qui veulent y aller.\nLa fin est pas mal. Happy end.",
     "date": "2020-07",
     "urls": [],
     "fiction": true
@@ -1155,11 +1260,21 @@
     "fiction": true
   },
   {
-    "title": "Dans la toile du temps",
-    "authors": ["Adrian Tchaikovsky"],
-    "rating": 4,
-    "comment": "Un monde avec des araignées et les humains, derniers survivants, qui veulent y aller.\nLa fin est pas mal. Happy end.",
+    "title": "Axis - Spin",
+    "series": "Spin",
+    "authors": ["Robert Charles Wilson"],
+    "volume": "2/3",
     "date": "2020-07",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Spin",
+    "authors": ["Robert Charles Wilson"],
+    "rating": 4,
+    "volume": "1/3",
+    "comment": "C'est bien, mais les tomes T2 et T3 sont différents du Tome 1 (découverte de la protection autour de la Terre).\nTome 1 : Les robots d'une civilisation ont entouré la Terre pour la forcer à survivre.\nTome 2 : La fuite de certains humains 4ème âge. Les humains ont créé un enfant qui pourrait communiquer avec les robots.\nTome 3 : Aller-retour 10.000 ans avec une sorte de boucle temporelle.",
+    "date": "2020-06",
     "urls": [],
     "fiction": true
   },
@@ -1173,14 +1288,13 @@
     "fiction": true
   },
   {
-    "title": "Spin",
-    "authors": ["Robert Charles Wilson"],
+    "title": "Never split the difference",
+    "subtitle": "Negotiating as if your life depended on it",
+    "authors": ["Chriss Voss"],
     "rating": 4,
-    "volume": "1/3",
-    "comment": "C'est bien, mais les tomes T2 et T3 sont différents du Tome 1 (découverte de la protection autour de la Terre).\nTome 1 : Les robots d'une civilisation ont entouré la Terre pour la forcer à survivre.\nTome 2 : La fuite de certains humains 4ème âge. Les humains ont créé un enfant qui pourrait communiquer avec les robots.\nTome 3 : Aller-retour 10.000 ans avec une sorte de boucle temporelle.",
     "date": "2020-06",
-    "urls": [],
-    "fiction": true
+    "comment": "Beaucoup de techniques. Comme tout, si je veux être bon, il faut que je m'entraine, et c'est dur !",
+    "fiction": false
   },
   {
     "title": "Ombre de l'ombre",
@@ -1253,21 +1367,21 @@
     "fiction": true
   },
   {
+    "title": "Chroniques du pays des mers",
+    "authors": ["Elisabeth Vonarburg"],
+    "rating": 3,
+    "comment": "Pas mal, pas sûr d'avoir tout saisi non plus.\nJ'ai été voir les commentaires pour essayer de comprendre sans succès.\nPlutôt feministe et original.",
+    "date": "2020-02",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "La justice de l'ancillaire",
     "series": "Les chroniques du Radch",
     "authors": ["Ann Leckie"],
     "rating": 2,
     "volume": "1",
     "comment": "Barbant, c'est long, trop flou.\nLes commentaires lus sur Amazon n'aident pas :/",
-    "date": "2020-02",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Chroniques du pays des mers",
-    "authors": ["Elisabeth Vonarburg"],
-    "rating": 3,
-    "comment": "Pas mal, pas sûr d'avoir tout saisi non plus.\nJ'ai été voir les commentaires pour essayer de comprendre sans succès.\nPlutôt feministe et original.",
     "date": "2020-02",
     "urls": [],
     "fiction": true
@@ -1280,6 +1394,17 @@
     "volume": "1",
     "comment": "C'est pas mal, un peu geek, un peu drôle",
     "date": "2020-01",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La messagère du ciel",
+    "series": "Les Dieux Sauvages",
+    "authors": ["Lionel Davoust"],
+    "rating": 4,
+    "volume": "1",
+    "comment": "Fantasy, pas mal. Chiant avec l'héroïne rebelle, mais bien foutu, surtout la fin du Tome 1 !",
+    "date": "2019-12",
     "urls": [],
     "fiction": true
   },
@@ -1301,17 +1426,6 @@
     "rating": 2,
     "volume": "1",
     "comment": "De l'action, ça oui. Le reste est franchement trop léger.",
-    "date": "2019-12",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La messagère du ciel",
-    "series": "Les Dieux Sauvages",
-    "authors": ["Lionel Davoust"],
-    "rating": 4,
-    "volume": "1",
-    "comment": "Fantasy, pas mal. Chiant avec l'héroïne rebelle, mais bien foutu, surtout la fin du Tome 1 !",
     "date": "2019-12",
     "urls": [],
     "fiction": true
@@ -1354,6 +1468,14 @@
     "date": "2019-11",
     "urls": [],
     "fiction": true
+  },
+  {
+    "title": "Deep Learning For Search",
+    "authors": ["Tommaso Teofili"],
+    "rating": 4,
+    "date": "2019-10",
+    "comment": "Des techniques avancées (réseau de neurones...) au service du Search. Pas tout lu, mais possible d'appliquer ça dans des projets.",
+    "fiction": false
   },
   {
     "title": "Le bizarre incident du chien pendant la nuit",
@@ -1423,11 +1545,38 @@
     "fiction": true
   },
   {
+    "title": "Philocomix",
+    "subtitle": "10 philosophes, 10 approches du bonheur",
+    "authors": ["Jean-Philippe Thivet", "Jérôme Vermer", "Anne-Lise Combeaud"],
+    "rating": 4,
+    "date": "2019-07",
+    "comment": "Des principes philosophiques en BD. Bien fait, ça donne envie de creuser",
+    "fiction": false
+  },
+  {
+    "title": "Relevant Search",
+    "subtitle": "With applications for Solr and Elasticsearch",
+    "authors": ["Doug Turnbull", "John Berryman"],
+    "rating": 5,
+    "date": "2019-06",
+    "comment": "Une mine d’information et de techniques sur le Search. Génial",
+    "fiction": false
+  },
+  {
     "title": "Metro 2035",
     "series": "Univers de Metro 2034",
     "authors": ["Dmitry Glukhovsky"],
     "rating": 4,
     "date": "2019-03",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La fille automate",
+    "authors": ["Paolo Bacigalupi"],
+    "rating": 4,
+    "comment": "Bon univers !",
+    "date": "2019-02",
     "urls": [],
     "fiction": true
   },
@@ -1462,11 +1611,12 @@
     "fiction": true
   },
   {
-    "title": "La fille automate",
-    "authors": ["Paolo Bacigalupi"],
-    "rating": 4,
-    "comment": "Bon univers !",
-    "date": "2019-02",
+    "title": "Altium",
+    "authors": [],
+    "rating": 3,
+    "volume": "1",
+    "comment": "C'est bon, c'est intello, mais c'est assez ampoulé et la conspiration est complexe.",
+    "date": "2019-01",
     "urls": [],
     "fiction": true
   },
@@ -1475,16 +1625,6 @@
     "series": "Altium",
     "authors": [],
     "volume": "2",
-    "date": "2019-01",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Altium",
-    "authors": [],
-    "rating": 3,
-    "volume": "1",
-    "comment": "C'est bon, c'est intello, mais c'est assez ampoulé et la conspiration est complexe.",
     "date": "2019-01",
     "urls": [],
     "fiction": true
@@ -1539,6 +1679,14 @@
     "fiction": true
   },
   {
+    "title": "L'Hiverrier",
+    "authors": ["Terry Pratchett"],
+    "rating": 4,
+    "date": "2018-08",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "Mortimer",
     "authors": ["Terry Pratchett"],
     "rating": 4,
@@ -1547,10 +1695,12 @@
     "fiction": true
   },
   {
-    "title": "L'Hiverrier",
-    "authors": ["Terry Pratchett"],
-    "rating": 4,
-    "date": "2018-08",
+    "title": "Metro 2033",
+    "series": "Metro 2033",
+    "authors": ["Dmitry Glukhovsky"],
+    "rating": 5,
+    "comment": "Ambiance, peur, prenant !",
+    "date": "2018-07",
     "urls": [],
     "fiction": true
   },
@@ -1562,16 +1712,6 @@
     "volume": "1",
     "date": "2018-07",
     "urls": ["Altered Carbon"],
-    "fiction": true
-  },
-  {
-    "title": "Metro 2033",
-    "series": "Metro 2033",
-    "authors": ["Dmitry Glukhovsky"],
-    "rating": 5,
-    "comment": "Ambiance, peur, prenant !",
-    "date": "2018-07",
-    "urls": [],
     "fiction": true
   },
   {
@@ -1594,6 +1734,15 @@
     "fiction": false
   },
   {
+    "title": "Le tueur venu du Centaure",
+    "authors": [],
+    "rating": 3,
+    "comment": "Barré, pas très compréhensible, mais intriguant",
+    "date": "2018-04",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "Une forme de guerre",
     "series": "Le cycle de la culture",
     "authors": ["Iain Banks"],
@@ -1605,13 +1754,19 @@
     "fiction": true
   },
   {
-    "title": "Le tueur venu du Centaure",
-    "authors": [],
+    "title": "59 seconds",
+    "subtitle": "Think a little, change a lot",
+    "authors": ["Richard Wiseman"],
+    "rating": 5,
+    "date": "2018-03",
+    "fiction": false
+  },
+  {
+    "title": "Comment je suis devenue rentière en 4 ans",
+    "authors": ["Elise Franck"],
     "rating": 3,
-    "comment": "Barré, pas très compréhensible, mais intriguant",
-    "date": "2018-04",
-    "urls": [],
-    "fiction": true
+    "date": "2018-03",
+    "fiction": false
   },
   {
     "title": "Greg Mandel",
@@ -1642,6 +1797,15 @@
     "fiction": true
   },
   {
+    "title": "Designing Data-Intensive Applications",
+    "authors": ["Martin Kleppmann"],
+    "rating": 3,
+    "comment": "J'ai découvert plein de sujets, et ça me fait peur.\nJe suis inquiet de mes compétences et de mon niveau de compréhension.\nLe distribué est très dur et ça va de l'écriture sur disque, aux clés de partitionnement au protocole de requête.\nPas passionné par le sujet, très verbeux, pas assez concret. Mais ce n'était pas le but du livre.\nC'est davantage un livre sur les idées et concepts, et surtout pas un tutorial.\nJ'y piocherai/relirai des parties en fonction des problèmes que je rencontrerai.",
+    "date": "2018-01",
+    "urls": [],
+    "fiction": false
+  },
+  {
     "title": "Greg Mandel",
     "series": "Greg Mandel",
     "authors": ["Peter F. Hamilton"],
@@ -1653,11 +1817,11 @@
     "fiction": true
   },
   {
-    "title": "Designing Data-Intensive Applications",
-    "authors": ["Martin Kleppmann"],
+    "title": "No place to hide",
+    "authors": ["Glenn Greenwald"],
     "rating": 3,
-    "comment": "J'ai découvert plein de sujets, et ça me fait peur.\nJe suis inquiet de mes compétences et de mon niveau de compréhension.\nLe distribué est très dur et ça va de l'écriture sur disque, aux clés de partitionnement au protocole de requête.\nPas passionné par le sujet, très verbeux, pas assez concret. Mais ce n'était pas le but du livre.\nC'est davantage un livre sur les idées et concepts, et surtout pas un tutorial.\nJ'y piocherai/relirai des parties en fonction des problèmes que je rencontrerai.",
-    "date": "2018-01",
+    "comment": "L'histoire autour de Snowden. Impressionnant cet espionnage et le tabassage que le journaliste a eu!\nC'était un peu long.",
+    "date": "2017-12",
     "urls": [],
     "fiction": false
   },
@@ -1666,15 +1830,6 @@
     "authors": ["Richard P. Feynman"],
     "rating": 4,
     "comment": "De bonnes histoires et péripéties. J'en ai parlé à plusieurs (hypnose...)",
-    "date": "2017-12",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "No place to hide",
-    "authors": ["Glenn Greenwald"],
-    "rating": 3,
-    "comment": "L'histoire autour de Snowden. Impressionnant cet espionnage et le tabassage que le journaliste a eu!\nC'était un peu long.",
     "date": "2017-12",
     "urls": [],
     "fiction": false
@@ -1757,6 +1912,15 @@
     "title": "Miles Vorkosigan",
     "series": "Saga Vorkosigan",
     "authors": ["Lois McMaster Bujold"],
+    "volume": "9/15",
+    "date": "2016-12",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Miles Vorkosigan",
+    "series": "Saga Vorkosigan",
+    "authors": ["Lois McMaster Bujold"],
     "volume": "15/15",
     "date": "2016-12",
     "urls": [],
@@ -1803,15 +1967,6 @@
     "series": "Saga Vorkosigan",
     "authors": ["Lois McMaster Bujold"],
     "volume": "10/15",
-    "date": "2016-12",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Miles Vorkosigan",
-    "series": "Saga Vorkosigan",
-    "authors": ["Lois McMaster Bujold"],
-    "volume": "9/15",
     "date": "2016-12",
     "urls": [],
     "fiction": true
@@ -1891,22 +2046,22 @@
     "fiction": true
   },
   {
+    "title": "La stratégie de l'ombre",
+    "series": "Saga des ombres",
+    "authors": ["Orson Scott Card"],
+    "rating": 3,
+    "volume": "1",
+    "date": "2016-10",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "Basilica",
     "series": "Terre des origines",
     "authors": ["Orson Scott Card"],
     "rating": 3,
     "volume": "1",
     "comment": "Mou et mieux à la fin. Je pense lire les suivants.",
-    "date": "2016-10",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La stratégie de l'ombre",
-    "series": "Saga des ombres",
-    "authors": ["Orson Scott Card"],
-    "rating": 3,
-    "volume": "1",
     "date": "2016-10",
     "urls": [],
     "fiction": true
@@ -1984,6 +2139,15 @@
     "fiction": true
   },
   {
+    "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
+    "authors": ["James Wallace", "Jim Erickson"],
+    "rating": 3,
+    "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
+    "date": "2016-06",
+    "urls": [],
+    "fiction": false
+  },
+  {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
     "authors": ["Michel Robert"],
@@ -1995,13 +2159,13 @@
     "fiction": true
   },
   {
-    "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
-    "authors": ["James Wallace", "Jim Erickson"],
-    "rating": 3,
-    "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
-    "date": "2016-06",
+    "title": "Au tréfond du ciel",
+    "authors": ["Vernor Vinge"],
+    "rating": 4,
+    "comment": "Bien, un peu long. J'ai confondu deux personnages (Underhill et Underville) ce qui m'a causé une certaine frustration à la fin.",
+    "date": "2016-05",
     "urls": [],
-    "fiction": false
+    "fiction": true
   },
   {
     "title": "How Software works",
@@ -2013,13 +2177,13 @@
     "fiction": false
   },
   {
-    "title": "Au tréfond du ciel",
-    "authors": ["Vernor Vinge"],
+    "title": "PMBA",
+    "subtitle": "Master the Art of Business",
+    "authors": ["Josh Kaufman"],
     "rating": 4,
-    "comment": "Bien, un peu long. J'ai confondu deux personnages (Underhill et Underville) ce qui m'a causé une certaine frustration à la fin.",
-    "date": "2016-05",
-    "urls": [],
-    "fiction": true
+    "date": "2016-04",
+    "comment": "Plein de pépites, presque trop court par moment, quelques « ahah »",
+    "fiction": false
   },
   {
     "title": "The Personal MBA",
@@ -2072,6 +2236,15 @@
     "fiction": false
   },
   {
+    "title": "How to lie with Statistics",
+    "authors": ["Darrell Huff"],
+    "rating": 4,
+    "comment": "Certains points sont assez connus, les autres moins évidents. Intéressant et se lit très vite.",
+    "date": "2015-09",
+    "urls": [],
+    "fiction": false
+  },
+  {
     "title": "Permanence",
     "authors": ["Karl Schroeder"],
     "rating": 4,
@@ -2088,15 +2261,6 @@
     "date": "2015-09",
     "urls": [],
     "fiction": true
-  },
-  {
-    "title": "How to lie with Statistics",
-    "authors": ["Darrell Huff"],
-    "rating": 4,
-    "comment": "Certains points sont assez connus, les autres moins évidents. Intéressant et se lit très vite.",
-    "date": "2015-09",
-    "urls": [],
-    "fiction": false
   },
   {
     "title": "Ventus",
@@ -2128,6 +2292,15 @@
     "fiction": true
   },
   {
+    "title": "People skills",
+    "subtitle": "How to assert yourself, listen to others and resolve conflicts",
+    "authors": ["Robert Bolton"],
+    "rating": 4,
+    "date": "2015-06",
+    "comment": "Long à lire, et intéressant sur plusieurs aspects",
+    "fiction": false
+  },
+  {
     "title": "Team Geek",
     "authors": ["Brian Fitzpatrick", "Ben Colllins-Sussman"],
     "rating": 3,
@@ -2137,8 +2310,17 @@
     "fiction": false
   },
   {
+    "title": "Tous à Zanzibar",
+    "authors": ["John Brunner"],
+    "rating": 4,
+    "comment": "Inventif, mais je n'ai accroché qu'au bout de 300 pages ! C'est assez délirant, mais pour 1968, c'est assez incroyable !",
+    "date": "2015-05",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "La république des voleurs",
-    "series": "La république des voleurs",
+    "series": "Les Salauds Gentilshommes",
     "authors": ["Scott Lynch"],
     "rating": 3,
     "volume": "3",
@@ -2148,11 +2330,11 @@
     "fiction": true
   },
   {
-    "title": "Tous à Zanzibar",
-    "authors": ["John Brunner"],
-    "rating": 4,
-    "comment": "Inventif, mais je n'ai accroché qu'au bout de 300 pages ! C'est assez délirant, mais pour 1968, c'est assez incroyable !",
-    "date": "2015-05",
+    "title": "Le gouffre de la lune",
+    "authors": ["Abraham Merritt"],
+    "rating": 2,
+    "comment": "Fantasy chelou avec un monde souterrain. Les descriptions sont délirantes et incompréhensibles.\nL'histoire est d'un classique.",
+    "date": "2015-03",
     "urls": [],
     "fiction": true
   },
@@ -2166,13 +2348,21 @@
     "fiction": true
   },
   {
-    "title": "Le gouffre de la lune",
-    "authors": ["Abraham Merritt"],
-    "rating": 2,
-    "comment": "Fantasy chelou avec un monde souterrain. Les descriptions sont délirantes et incompréhensibles.\nL'histoire est d'un classique.",
+    "title": "What the CEO wants you to know",
+    "subtitle": "Using Business Acumen to understand how your company really works",
+    "authors": ["Ram Charan"],
+    "rating": 3,
     "date": "2015-03",
-    "urls": [],
-    "fiction": true
+    "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
+    "fiction": false
+  },
+  {
+    "title": "Working effectively with unit tests",
+    "authors": ["Jay Fields"],
+    "rating": 5,
+    "date": "2015-03",
+    "comment": "Bon livre. J'ai été convaincu par certaines pratiques, les arguments ont fait mouches.\nC'est pragmatique, et ça m'a appris des choses sur l'écriture des tests et aussi un peu sur le code.\nLe ton est bon, avec l'impression d'avoir une conversation avec un professionnel qui me donne \nson avis et ses opinions sur du code que j'aurai pu écrire.",
+    "fiction": false
   },
   {
     "title": "13 à table",
@@ -2193,6 +2383,15 @@
     "fiction": true
   },
   {
+    "title": "L'analphabète qui savait compter",
+    "authors": ["Jonas Jonasson"],
+    "rating": 4,
+    "comment": "Bien ! Dans le même humour que Le vieux qui ne voulait pas fêter son anniversaire.",
+    "date": "2015-01",
+    "urls": [],
+    "fiction": true
+  },
+  {
     "title": "Le guide d'entretien de mon vélo",
     "authors": ["Peter Drinkell"],
     "rating": 3,
@@ -2202,13 +2401,13 @@
     "fiction": false
   },
   {
-    "title": "L'analphabète qui savait compter",
-    "authors": ["Jonas Jonasson"],
+    "title": "Vous êtes vendeur, le saviez-vous ?",
+    "subtitle": "L'étonnante vérité sur notre capacité d'influence",
+    "authors": ["Daniel Pink"],
     "rating": 4,
-    "comment": "Bien ! Dans le même humour que Le vieux qui ne voulait pas fêter son anniversaire.",
     "date": "2015-01",
-    "urls": [],
-    "fiction": true
+    "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
+    "fiction": false
   },
   {
     "title": "Gravé sur chrome",
@@ -2226,6 +2425,15 @@
     "comment": "Assez facile à lire, il m'a fait découvrir certains thèmes des statistiques, sans me casser la tête.\nDe bons chapitres, d'autres optionnels (le relationnel), et j'ai sur plusieurs sujets (heuristiques, régression linéaire...).\nHead First Statistics a l'air plus hardcore !",
     "date": "2014-12",
     "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Secrets to Winning at Office Politics",
+    "subtitle": "How to achieve your goals and increase your influence at work",
+    "authors": ["Marie G. McIntyre"],
+    "rating": 4,
+    "date": "2014-11",
+    "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
     "fiction": false
   },
   {
@@ -2258,6 +2466,24 @@
     "fiction": true
   },
   {
+    "title": "Influence et manipulation",
+    "subtitle": "Comprendre et maîtriser les mécanismes et les techniques de persuasion",
+    "authors": ["Robert Cialdini"],
+    "rating": 5,
+    "date": "2014-10",
+    "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
+    "fiction": false
+  },
+  {
+    "title": "Notes to a Software Team Leader",
+    "subtitle": "Growing self organizing team",
+    "authors": ["Roy Osherove"],
+    "rating": 2,
+    "date": "2014-10",
+    "comment": "Intéressant sur certains points, mais pas assez structuré, analysé.",
+    "fiction": false
+  },
+  {
     "title": "Un feu sur l'abime",
     "authors": ["Vernor Vinge"],
     "rating": 4,
@@ -2267,19 +2493,36 @@
     "fiction": true
   },
   {
-    "title": "La Nef des fous",
-    "authors": ["Richard Paul Russo"],
+    "title": "Super Freakonomics",
+    "authors": ["Steven D. Levitt", "Stephen J. Dubner"],
     "rating": 4,
-    "comment": "J'aurais mis 5 sur 5 s'il y avait une suite et plus de réponses, c'était tellement prenant ! C'est un roman de SF-qui-fait-peur. C'est bon, ça se lit très bien. Oui, c'était très bien.",
-    "date": "2014-08",
-    "urls": [],
-    "fiction": true
+    "date": "2014-09",
+    "comment": "Divertissant, mais sans pour autant apprendre",
+    "fiction": false
+  },
+  {
+    "title": "The Secrets of Consulting",
+    "subtitle": "A guide to giving & getting advice successfully",
+    "authors": ["Gerald M. Weinberg"],
+    "rating": 3,
+    "date": "2014-09",
+    "comment": "J'ai aimé les anecdotes, et certaines techniques, mais le contenu est assez peu actionnable.",
+    "fiction": false
   },
   {
     "title": "La mécanique du centaure",
     "authors": ["M. John Harrison"],
     "rating": 3,
     "comment": "SF un peu dure à comprendre de temps en temps. Déçu par la fin, mais pas mal en fin de compte.",
+    "date": "2014-08",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La Nef des fous",
+    "authors": ["Richard Paul Russo"],
+    "rating": 4,
+    "comment": "J'aurais mis 5 sur 5 s'il y avait une suite et plus de réponses, c'était tellement prenant ! C'est un roman de SF-qui-fait-peur. C'est bon, ça se lit très bien. Oui, c'était très bien.",
     "date": "2014-08",
     "urls": [],
     "fiction": true
@@ -2303,6 +2546,33 @@
     "date": "2014-06",
     "urls": [],
     "fiction": true
+  },
+  {
+    "title": "Dans le torrent des siècles",
+    "authors": ["Clifford D. Simak"],
+    "rating": 4,
+    "comment": "Une intrigue autour d'un homme qui revient d'une « planète » après 20 ans disparu. Il est porteur de quelques choses. Ça parle de voyage dans le temps et ça tourne bien.",
+    "date": "2014-05",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Growth Hacker Marketing",
+    "authors": ["Ryan Holiday"],
+    "rating": 2,
+    "comment": "Trop long pour le contenu. Je ne sais pas ce que j'en retire. Ça me fait penser à du bullshit.",
+    "date": "2014-05",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Reactive Design Patterns",
+    "authors": ["Roland Kuhn"],
+    "rating": 4,
+    "comment": "MEAP Manning. Ça démarre bien, car il y a de bonnes choses. Pas trop pompeux.",
+    "date": "2014-05",
+    "urls": [],
+    "fiction": false
   },
   {
     "title": "Forever Free",
@@ -2336,46 +2606,10 @@
     "fiction": true
   },
   {
-    "title": "Reactive Design Patterns",
-    "authors": ["Roland Kuhn"],
+    "title": "Comment les Eskimos gardent les bébés au chaud",
+    "authors": ["Mei-Ling Hopgood"],
     "rating": 4,
-    "comment": "MEAP Manning. Ça démarre bien, car il y a de bonnes choses. Pas trop pompeux.",
-    "date": "2014-05",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Growth Hacker Marketing",
-    "authors": ["Ryan Holiday"],
-    "rating": 2,
-    "comment": "Trop long pour le contenu. Je ne sais pas ce que j'en retire. Ça me fait penser à du bullshit.",
-    "date": "2014-05",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Dans le torrent des siècles",
-    "authors": ["Clifford D. Simak"],
-    "rating": 4,
-    "comment": "Une intrigue autour d'un homme qui revient d'une « planète » après 20 ans disparu. Il est porteur de quelques choses. Ça parle de voyage dans le temps et ça tourne bien.",
-    "date": "2014-05",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "L'isolation par l'extérieur",
-    "authors": [],
-    "rating": 2,
-    "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
-    "date": "2014-04",
-    "urls": ["https://www.eyrolles.com/"],
-    "fiction": false
-  },
-  {
-    "title": "L'isolation écologique – Conception, matériaux, mise en oeuvre",
-    "authors": ["Jean-Pierre Oliva"],
-    "rating": 4,
-    "comment": "De très bonnes explications sur les matériaux et méthodes d'isolation (par fiche).\nCa manque de conseil.\nGrand gagnant : ossature bois et l'isolation en bottes de paille.\nR = 6, épaisseur = 49 (45 paille + (2+2) enduits).",
+    "comment": "Différents sujets sur l'éducation des enfants : peut-on/faut-il les coucher tard, les laisser se débrouiller...\nLe livre m'a donné matière à réflexion sur plusieurs points (donc très bien) : beaucoup de lâché-prise, un peu de désengagement, mais une meilleure confiance en l'enfant (qui n'est pas un adulte inachevé, mais juste un enfant), tout en étant ferme et exigeant sur les études.",
     "date": "2014-04",
     "urls": [],
     "fiction": false
@@ -2390,12 +2624,21 @@
     "fiction": false
   },
   {
-    "title": "Comment les Eskimos gardent les bébés au chaud",
-    "authors": ["Mei-Ling Hopgood"],
+    "title": "L'isolation écologique – Conception, matériaux, mise en oeuvre",
+    "authors": ["Jean-Pierre Oliva"],
     "rating": 4,
-    "comment": "Différents sujets sur l'éducation des enfants : peut-on/faut-il les coucher tard, les laisser se débrouiller...\nLe livre m'a donné matière à réflexion sur plusieurs points (donc très bien) : beaucoup de lâché-prise, un peu de désengagement, mais une meilleure confiance en l'enfant (qui n'est pas un adulte inachevé, mais juste un enfant), tout en étant ferme et exigeant sur les études.",
+    "comment": "De très bonnes explications sur les matériaux et méthodes d'isolation (par fiche).\nCa manque de conseil.\nGrand gagnant : ossature bois et l'isolation en bottes de paille.\nR = 6, épaisseur = 49 (45 paille + (2+2) enduits).",
     "date": "2014-04",
     "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "L'isolation par l'extérieur",
+    "authors": [],
+    "rating": 2,
+    "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
+    "date": "2014-04",
+    "urls": ["https://www.eyrolles.com/"],
     "fiction": false
   },
   {
@@ -2417,11 +2660,44 @@
     "fiction": false
   },
   {
+    "title": "Rénovation basse consommation",
+    "authors": ["Roland Dutrey"],
+    "rating": 4,
+    "date": "2014-03",
+    "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc. Le plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure). À retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
+    "fiction": false
+  },
+  {
     "title": "The Undercover Economist",
     "authors": ["Tim Harford"],
     "rating": 4,
     "comment": "Bon livre d'intro à l'économie : fixation des prix, certaines théories...\nJe n'ai pas pris de notes et il faut que je le relise pour noter les « ahah » que j'ai eu.\nEn revanche, les titres ne sont pas toujours clairs et explicitent par rapport au contenu.",
     "date": "2014-02",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Choose Yourself",
+    "authors": ["James Altucher"],
+    "rating": 3,
+    "date": "2014-01",
+    "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
+    "fiction": false
+  },
+  {
+    "title": "Journal d'un cobaye: Ma vie est une expérience",
+    "authors": ["A. J. Jacobs"],
+    "date": "2014-01",
+    "rating": 4,
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Promenons-nous dans les bois",
+    "authors": ["Bill Bryson"],
+    "rating": 4,
+    "comment": "Pas le meilleur Bryson, mais sympa.",
+    "date": "2014-01",
     "urls": [],
     "fiction": false
   },
@@ -2435,47 +2711,29 @@
     "fiction": true
   },
   {
-    "title": "Promenons-nous dans les bois",
-    "authors": ["Bill Bryson"],
-    "rating": 4,
-    "comment": "Pas le meilleur Bryson, mais sympa.",
-    "date": "2014-01",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Journal d'un cobaye: Ma vie est une expérience",
-    "authors": ["A. J. Jacobs"],
-    "date": "2014-01",
-    "rating": 4,
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "L'année où j'ai vécu selon la Bible",
-    "authors": ["A. J. Jacobs"],
-    "rating": 4,
-    "comment": "Ou l'humble quête d'un homme qui chercha à suivre la Bible aussi littéralement que possible",
-    "urls": [
-      "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
-    ],
-    "fiction": false
-  },
-  {
-    "title": "Je creve la forme",
-    "authors": ["A. J. Jacobs"],
-    "rating": 4,
-    "comment": "Distrayant, mais je ne me souviens plus trop si j'ai appris des choses",
-    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH325690"],
-    "fiction": false
-  },
-  {
     "title": "Choose Yourself",
     "authors": ["James Altucher"],
     "rating": 3,
     "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
     "date": "2013-12",
     "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "The First 20th Hours",
+    "subtitle": "How to learn anything... fast",
+    "authors": ["Josh Kaufman"],
+    "rating": 4,
+    "date": "2013-10",
+    "comment": "C'est grâce à ce livre que j'ai appris à taper en Colemak, et que j'appendrai d'autres choses... en 20 heures !",
+    "fiction": false
+  },
+  {
+    "title": "Ce qu'il faut savoir avant de mourir",
+    "subtitle": "Découvrez ce qui compte vraiment avant l'heure de votre mort",
+    "authors": ["John Izzo"],
+    "rating": 4,
+    "date": "2013-04",
     "fiction": false
   },
   {
@@ -2488,6 +2746,313 @@
     "fiction": false
   },
   {
+    "title": "Qui a piqué mon fromage",
+    "authors": ["Spencer Johnson"],
+    "rating": 3,
+    "date": "2013-04",
+    "fiction": false
+  },
+  {
+    "title": "Brain Rules For Babies",
+    "subtitle": "Comment fonctionne le cerveau de bébé",
+    "authors": ["John Medina"],
+    "rating": 4,
+    "date": "2012-04",
+    "fiction": false
+  },
+  {
+    "title": "Crucial Conversations",
+    "subtitle": "Tools for talking when stakes are High",
+    "authors": [
+      "Kerry Pattersonm",
+      "Joseph Grenny",
+      "Ron Mc Millan",
+      "Al Switzler"
+    ],
+    "rating": 4,
+    "date": "2011-09",
+    "fiction": false
+  },
+  {
+    "title": "Eloges de l'optimisme",
+    "authors": ["Philippe Gabilliet"],
+    "rating": 4,
+    "date": "2011-09",
+    "fiction": false
+  },
+  {
+    "title": "Guérir le stress, l'anxiété et la dépression sans médicaments ni psychanalyse",
+    "authors": ["David Servan-Schreiber"],
+    "rating": 3,
+    "date": "2011-09",
+    "comment": "Pas mal de descriptions et des histoires assez intéressantes, mais les sujets de fond auraient pu tenir en 10 pages.",
+    "fiction": false
+  },
+  {
+    "title": "Never Eat Alone",
+    "subtitle": "And other secrets to Success, One Relationship at a time",
+    "authors": ["Keith Ferrazzi", "Tahl Raz"],
+    "rating": 4,
+    "date": "2011-09",
+    "comment": "Le pitch est : nous avons besoin des autres pour réussir. Comment devenir un membre du club",
+    "fiction": false
+  },
+  {
+    "title": "Rework",
+    "authors": ["Jason Fried", "David Heinemeir Hansson"],
+    "rating": 4,
+    "date": "2011-09",
+    "comment": "Les points de vue et recettes de 37signals. Inspirant",
+    "fiction": false
+  },
+  {
+    "title": "StrengthsFinder 2.0",
+    "authors": ["Tom Rath"],
+    "rating": 4,
+    "date": "2011-09",
+    "comment": "Je suis un \"Catalyste\" entre idées, systèmes et personnes",
+    "fiction": false
+  },
+  {
+    "title": "The Four Steps to the Epiphany",
+    "subtitle": "Successful Strategies for Products that Win",
+    "authors": ["Steven Gary Blank"],
+    "rating": 3,
+    "date": "2011-08",
+    "comment": "Bible de la création et du lancement d'une entreprise. Complexe et compliqué, difficile à lire",
+    "fiction": false
+  },
+  {
+    "title": "The Passionate Programmer",
+    "subtitle": "Creating a Remarkable career in software development",
+    "authors": ["Chad Fowler"],
+    "rating": 4,
+    "date": "2011-08",
+    "comment": "L'idée globale du livre est de nous faire comprendre que notre carrière est comme un produit qu'il faut rendre intéressant, donc vendable, qu'il faut vendre et maintenir intéressant.",
+    "fiction": false
+  },
+  {
+    "title": "Le but (The Goal)",
+    "subtitle": "Un processus de progrès permanent",
+    "authors": ["Eliyahu M. Goldratt", "J. Cox"],
+    "rating": 4,
+    "date": "2011-07",
+    "fiction": false
+  },
+  {
+    "title": "Serons-nous immortels",
+    "subtitle": "Oméga 3, nanotechnologies, clonage...",
+    "authors": ["Ray Kurweil", "Terry Grossman"],
+    "rating": 4,
+    "date": "2011-07",
+    "comment": "Les auteurs sont des extrémistes de la santé, mais le plus intéressant est le dernier chapitre sur comment vivre une bonne vie",
+    "fiction": false
+  },
+  {
+    "title": "L'autorité expliquée aux parents",
+    "authors": ["Claude Halmos"],
+    "rating": 4,
+    "date": "2011-06",
+    "fiction": false
+  },
+  {
+    "title": "The Partnership Charter",
+    "subtitle": "How to start right with your new business partnership, or fix the one you're in",
+    "authors": ["David Gage"],
+    "rating": 4,
+    "date": "2011-06",
+    "comment": "Le guide pour bien démarrer une entreprise à plusieurs. Ça n'empêche pas les égos, mais au moins, on parle des sujets difficiles avant de se lancer",
+    "fiction": false
+  },
+  {
+    "title": "The Pledge",
+    "subtitle": "Your Master Plan for an abundant life",
+    "authors": ["Michael Masterson"],
+    "rating": 3,
+    "date": "2011-06",
+    "comment": "L'idée principale du livre est l'ACTION. On passe trop de temps à réfléchir, à planifier, à collecter l'info, et pas assez de temps à agir, essayer, échouer (et donc apprendre).",
+    "fiction": false
+  },
+  {
+    "title": "Vers un monde sans pauvreté + Vers un nouveau capitalisme",
+    "authors": ["Mohammad Yunus"],
+    "rating": 4,
+    "date": "2011-06",
+    "comment": "Découverte pour moi de la microfinance, et de l'entrepreneuriat social",
+    "fiction": false
+  },
+  {
+    "title": "La plus belle histoire du monde",
+    "subtitle": "Les secrets de nos origines",
+    "authors": [
+      "Hubert Reeves",
+      "Joel de Rosnay",
+      "Yves Coppens",
+      "Dominique Simonnet"
+    ],
+    "rating": 4,
+    "date": "2011-04",
+    "comment": "Un bon livre. Se lit assez facilement. Intéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
+    "fiction": false
+  },
+  {
+    "title": "Archi Pas Chère - Maison à 100 000 euros",
+    "authors": ["Olivier Darmon"],
+    "rating": 4,
+    "date": "2011-02",
+    "fiction": false
+  },
+  {
+    "title": "Fail Safe Investing",
+    "subtitle": "Lifelong Financial Security in 30 minutes",
+    "authors": ["Harry Browne"],
+    "rating": 4,
+    "date": "2011-01",
+    "comment": "Conseils financiers que je continue de suivre",
+    "fiction": false
+  },
+  {
+    "title": "Cessez d'etre gentil soyez vrai",
+    "subtitle": "Etre avec les autres en restant soi-même",
+    "authors": ["Thomas D’Ansembourg"],
+    "rating": 4,
+    "date": "2010-01",
+    "fiction": false
+  },
+  {
+    "title": "Les hommes viennent de Mars les femmes viennent de Vénus",
+    "authors": ["John Gray"],
+    "rating": 3,
+    "date": "2009-05",
+    "fiction": false
+  },
+  {
+    "title": "La semaine de 4 heures",
+    "authors": ["Timothy Ferriss"],
+    "rating": 4,
+    "date": "2009-02",
+    "comment": "Méthode/raccourci pour travailler moins, donc être plus malin ?",
+    "fiction": false
+  },
+  {
+    "title": "Don't make me think",
+    "subtitle": "A common sense approach to web usability",
+    "authors": ["Steve Krug"],
+    "rating": 5,
+    "date": "2009-01",
+    "comment": "Génial, simple, évident ! Le rapport à l'accessibilité est incroyable, humain. Top !",
+    "fiction": false
+  },
+  {
+    "title": "The Mythical Man Month",
+    "subtitle": "Essays on Software engineering",
+    "authors": ["Frederick P. Brooks"],
+    "rating": 4,
+    "date": "2008-10",
+    "comment": "Je m'y réfère toujours, notamment pour les coûts de la doc et de rendre un logiciel plus générique",
+    "fiction": false
+  },
+  {
+    "title": "Joel On Software",
+    "authors": ["Joel Spolsky"],
+    "rating": 4,
+    "date": "2008-09",
+    "comment": "Plein de recommandations que j'applique aujourd'hui, et qui fonctionne bien",
+    "fiction": false
+  },
+  {
+    "title": "The Millionaire Next Door",
+    "subtitle": "The surprising secret of America's wealthy",
+    "authors": ["Thomas J. Stanley", "William D. Danko"],
+    "rating": 5,
+    "date": "2008-09",
+    "comment": "Le livre est une étude des statistiques et sociologique sur les riches, qui ne sont pas ceux que l'on croit.",
+    "fiction": false
+  },
+  {
+    "title": "American Rigolo",
+    "authors": ["Bill Bryson"],
+    "rating": 5,
+    "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'angleterre. Marrant, de belles notes d'esprit, distrayant.",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Confessions d'un automate mangeur d'Opium",
+    "authors": ["Mathieu Gaborit"],
+    "rating": 4,
+    "comment": "Bien aimé le début, un peu moins certains passages. Ça se lit bien.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Des milliards de tapis de cheveux",
+    "authors": ["Andreas Eschach"],
+    "rating": 5,
+    "comment": "Un scénario bien original qui m'a laissé quelques fois sur le cul!\nExcellent. Histoire novatrice, fin assez balèze. J'en aurais voulu plus à lire.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Dictionnaire révolté d'économie",
+    "authors": [],
+    "rating": 3,
+    "comment": "Intéressant, mais un peu chiant à force (la forme, les critiques...)",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Horizons Lointains",
+    "authors": ["Robert Silverberg"],
+    "rating": 3,
+    "comment": "Recueils de nouvelles de SF\nPas mal, mais des fois beaucoup de spoilers sur les livres originaux",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Je creve la forme",
+    "authors": ["A. J. Jacobs"],
+    "rating": 4,
+    "comment": "Distrayant, mais je ne me souviens plus trop si j'ai appris des choses",
+    "urls": ["http://www.mediathequederoubaix.fr/ark:/20179/KH325690"],
+    "fiction": false
+  },
+  {
+    "title": "Jesus Video",
+    "authors": ["Andreas Eschach"],
+    "rating": 4,
+    "comment": "On retrouve un manuel d'une caméra vidéo sur un corps vieux de 2000 ans. Des gens se mettent à chercher des réponses. Très bon, un peu d'action, tout ça. Un roman d'aventure.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "L'alchimiste",
+    "authors": ["Paulo Coelho"],
+    "urls": [
+      "https://www.amazon.fr/Lalchimiste-Paulo-Coelho/dp/2290004448/ref=sr_1_fkmr0_2?ie=UTF8&qid=1271934514&sr=8-2-fkmr0"
+    ],
+    "fiction": true
+  },
+  {
+    "title": "L'année où j'ai vécu selon la Bible",
+    "authors": ["A. J. Jacobs"],
+    "rating": 4,
+    "comment": "Ou l'humble quête d'un homme qui chercha à suivre la Bible aussi littéralement que possible",
+    "urls": [
+      "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
+    ],
+    "fiction": false
+  },
+  {
+    "title": "La conjuration des imbéciles",
+    "authors": ["John Kennedy Toole"],
+    "comment": "Réticences à se mettre au travail",
+    "urls": [
+      "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
+    ],
+    "fiction": true
+  },
+  {
     "title": "La Horde du Contrevent",
     "authors": ["Alain Damasio"],
     "urls": [
@@ -2496,11 +3061,135 @@
     "fiction": true
   },
   {
-    "title": "La conjuration des imbéciles",
-    "authors": ["John Kennedy Toole"],
-    "comment": "Réticences à se mettre au travail",
+    "title": "La justice de lancillaire",
+    "authors": ["Ann Leckie"],
+    "rating": 2,
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La sobriété heureuse",
+    "authors": [],
+    "rating": 2,
+    "comment": "L'idée qu'il faut \"décroisser\", redevenir sobre pour que le monde tourne correctement à nouveau",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Le dernier de son espèce",
+    "authors": ["Andreas Eschbach"],
+    "rating": 4,
+    "comment": "Histoire du dernier homme-cyborg qui est pourchassé, car justement il est le dernier.\nEncore un bon Andreas Eschach.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Le troisième policier",
+    "authors": ["Flann O'Brien"],
+    "rating": 3,
+    "comment": "Complètement loufoque. M'a décroché quelques sourires, mais pas beaucoup plus.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Le vieux qui ne voulait pas fêter son anniversaire",
+    "authors": ["Jonas Jonasson"],
+    "rating": 4,
+    "comment": "Début un peu étonnant (mal écrit), puis ça devient drôle et je voulais savoir la suite ! Vite !",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Les enchantements d'Ambremer",
+    "authors": ["Pierre Pevel"],
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Les loups des étoiles",
+    "authors": ["Edmond Hamilton"],
+    "rating": 3,
+    "comment": "Narre les aventures d'un mercenaire, un poil fort, mais humain (ouep ouep). Ça se lit facilement, c'est de l'aventure pure et dure en SF.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Les orphelins de Brooklyn",
+    "authors": ["Jonathan Lethem"],
+    "rating": 4,
+    "comment": "Pas transcendantal, mais j'avais envie de le finir pour savoir. Pas mal...",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Neverwhere",
+    "authors": ["Neil Gaiman"],
+    "rating": 3,
+    "comment": "Un homme qui bascule dans le Londres d'en bas orienté Fantasy.\nHistoire moyenne, mais ça se lit bien.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "On peut se dire au revoir plusieurs fois",
+    "authors": ["David Servan-Schreiber"],
+    "rating": 2,
+    "comment": "Par l'auteur d'AntiCancer, qui fait une rechute.\nPas grand chose à en retenir",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Où on va, papa ?",
+    "authors": ["Jean Louis Fournier"],
+    "rating": 5,
+    "comment": "Caustiques, les histoires d'un père autour de ces deux enfants handicapés.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Pirates",
+    "authors": ["Michael Crichton"],
+    "rating": 2,
+    "comment": "Bof, se lit vite, mais sans plus",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Silo",
+    "authors": ["Hugh Howey"],
+    "rating": 3,
+    "comment": "C'est intriguant, mais pas dingue non plus.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Ubik",
+    "authors": ["Philip K. Dick"],
+    "rating": 4,
+    "comment": "Une histoire à la Existenz (les personnages ne savent plus s'ils sont vivants ou morts). Sympa, ça se lit vite. De là à dire que c'est un chef d'oeuvre...",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Un peu de sagesse dans un monde de brutes",
+    "authors": ["Barefoot Doctor"],
+    "rating": 1,
+    "comment": "Pseudo-conseils, plein de « moi, je suis génial »",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Une histoire de tout ou presque",
+    "authors": ["Bill Bryson"],
+    "rating": 5,
+    "comment": "Long à lire, mais super intéressant. Explique plein de sujets de l'infiniment petit à l'univers.",
+    "urls": [],
+    "fiction": false
+  },
+  {
+    "title": "Walden ou la vie dans les bois",
+    "authors": [],
     "urls": [
-      "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
+      "https://www.amazon.fr/Walden-ou-vie-dans-bois/dp/2070715213/ref=sr_1_2?ie=UTF8&s=books&qid=1270903702&sr=1-2"
     ],
     "fiction": true
   },
@@ -2513,64 +3202,281 @@
     "fiction": true
   },
   {
-    "title": "Walden ou la vie dans les bois",
-    "authors": [],
-    "urls": [
-      "https://www.amazon.fr/Walden-ou-vie-dans-bois/dp/2070715213/ref=sr_1_2?ie=UTF8&s=books&qid=1270903702&sr=1-2"
-    ],
+    "title": "Rédemption 3 - Cycle de l'Élévation",
+    "series": "Cycle de l'Élévation",
+    "authors": ["David Brin"],
+    "volume": "6/6",
+    "urls": [],
     "fiction": true
   },
   {
-    "title": "Les Salauds Gentilshommes",
-    "series": "Les Salauds Gentilshommes",
-    "authors": ["Scott lynch"],
-    "rating": 5,
+    "title": "Rédemption 2 - Cycle de l'Élévation",
+    "series": "Cycle de l'Élévation",
+    "authors": ["David Brin"],
+    "volume": "5/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Rédemption 1",
+    "series": "Cycle de l'Élévation",
+    "authors": ["David Brin"],
+    "volume": "4/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Elevation 2 - Cycle de l'Élévation",
+    "series": "Cycle de l'Élévation",
+    "authors": ["David Brin"],
+    "volume": "3/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Elevation 1 - Cycle de l'Élévation",
+    "series": "Cycle de l'Élévation",
+    "authors": ["David Brin"],
+    "volume": "2/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Marée Stellaire - Cycle de l'Élévation",
+    "series": "Cycle de l'Élévation",
+    "authors": ["David Brin"],
+    "rating": 4,
+    "volume": "1/6",
+    "comment": "Des hommes et des dauphins (et un singe) se crashent sur une planète, poursuivi par des espèces différentes d'extraterrestres belliqueuses. Pas mal, ils se passent des choses.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Cycle des dieux",
+    "series": "Cycle des dieux",
+    "authors": ["David Werber"],
+    "volume": "3/3",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Cycle des dieux",
+    "series": "Cycle des dieux",
+    "authors": ["David Werber"],
+    "volume": "2/3",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Cycle des dieux",
+    "series": "Cycle des dieux",
+    "authors": ["David Werber"],
+    "rating": 2,
+    "volume": "1/3",
+    "comment": "Lu la trilogie, car on m'avait offert le 1er tome.\nPas accroché du tout au style, aux personnages.",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La première Leçon du Sorcier",
+    "series": "Epée de Vérité",
+    "authors": ["Terry Goodkind"],
     "volume": "2",
     "urls": [],
     "fiction": true
   },
   {
-    "title": "Les Salauds Gentilshommes",
-    "series": "Les Salauds Gentilshommes",
-    "authors": ["Scott lynch"],
-    "rating": 5,
-    "volume": "1",
-    "urls": [
-      "https://www.amazon.fr/Salauds-Gentilshommes-Mensonges-Locke-Lamora/dp/2352940273/ref=sr_1_6?ie=UTF8&s=books&qid=1273082365&sr=1-6"
-    ],
-    "fiction": true
-  },
-  {
-    "title": "L'alchimiste",
-    "authors": ["Paulo Coelho"],
-    "urls": [
-      "https://www.amazon.fr/Lalchimiste-Paulo-Coelho/dp/2290004448/ref=sr_1_fkmr0_2?ie=UTF8&qid=1271934514&sr=8-2-fkmr0"
-    ],
-    "fiction": true
-  },
-  {
-    "title": "Dictionnaire révolté d'économie",
-    "authors": [],
-    "rating": 3,
-    "comment": "Intéressant, mais un peu chiant à force (la forme, les critiques...)",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "La sobriété heureuse",
-    "authors": [],
+    "title": "La première Leçon du Sorcier",
+    "series": "Epée de Vérité",
+    "authors": ["Terry Goodkind"],
     "rating": 2,
-    "comment": "L'idée qu'il faut \"décroisser\", redevenir sobre pour que le monde tourne correctement à nouveau",
+    "volume": "1",
+    "comment": "Trop enfantin",
     "urls": [],
-    "fiction": false
+    "fiction": true
   },
   {
-    "title": "Une histoire de tout ou presque",
-    "authors": ["Bill Bryson"],
-    "rating": 5,
-    "comment": "Long à lire, mais super intéressant. Explique plein de sujets de l'infiniment petit à l'univers.",
+    "title": "Etoile de Pandore",
+    "series": "Etoile de Pandore",
+    "authors": ["Peter F. Hamilton"],
+    "volume": "4/4",
     "urls": [],
-    "fiction": false
+    "fiction": true
+  },
+  {
+    "title": "Etoile de Pandore",
+    "series": "Etoile de Pandore",
+    "authors": ["Peter F. Hamilton"],
+    "volume": "3/4",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Etoile de Pandore",
+    "series": "Etoile de Pandore",
+    "authors": ["Peter F. Hamilton"],
+    "volume": "2/4",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Etoile de Pandore",
+    "series": "Etoile de Pandore",
+    "authors": ["Peter F. Hamilton"],
+    "rating": 5,
+    "volume": "1/4",
+    "comment": "C'est de la bonne SF ça !\nCa tourne bien, c'est riche, l'intrigue est super, les méchants aussi !",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La flotte perdue",
+    "series": "La flotte perdue",
+    "authors": ["Jack Campbell"],
+    "volume": "6/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La flotte perdue",
+    "series": "La flotte perdue",
+    "authors": ["Jack Campbell"],
+    "volume": "5/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La flotte perdue",
+    "series": "La flotte perdue",
+    "authors": ["Jack Campbell"],
+    "volume": "4/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La flotte perdue",
+    "series": "La flotte perdue",
+    "authors": ["Jack Campbell"],
+    "volume": "3/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La flotte perdue",
+    "series": "La flotte perdue",
+    "authors": ["Jack Campbell"],
+    "volume": "2/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La flotte perdue",
+    "series": "La flotte perdue",
+    "authors": ["Jack Campbell"],
+    "volume": "1/6",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La fraternité du Panca",
+    "series": "La fraternité du Panca",
+    "authors": ["Pierre Bordage"],
+    "rating": 4,
+    "volume": "2/5",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La fraternité du Panca",
+    "series": "La fraternité du Panca",
+    "authors": ["Pierre Bordage"],
+    "rating": 4,
+    "volume": "1/5",
+    "comment": "On suit un homme de la confrérie par tome, il se passe des choses, intrigues, combats... Distrayant !",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "7/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "6/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "5/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "4/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "3/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "2/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "La saga des 7 soleils",
+    "series": "La saga des 7 soleils",
+    "authors": ["Kevin J. Anderson"],
+    "volume": "1/7",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Vide en évolution",
+    "series": "La trilogie du vide",
+    "authors": ["Peter F. Hamilton"],
+    "volume": "3/3",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Vide temporel",
+    "series": "La trilogie du vide",
+    "authors": ["Peter F. Hamilton"],
+    "volume": "2/3",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Vide qui songe",
+    "series": "La trilogie du vide",
+    "authors": ["Peter F. Hamilton"],
+    "rating": 4,
+    "volume": "1/3",
+    "comment": "Lu juste après Etoile de Pandore, que j'ai trouvé mieux, ça lasse un poil.",
+    "urls": [],
+    "fiction": true
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -2646,6 +3552,26 @@
     "fiction": true
   },
   {
+    "title": "Les Salauds Gentilshommes",
+    "series": "Les Salauds Gentilshommes",
+    "authors": ["Scott lynch"],
+    "rating": 5,
+    "volume": "2",
+    "urls": [],
+    "fiction": true
+  },
+  {
+    "title": "Les Salauds Gentilshommes",
+    "series": "Les Salauds Gentilshommes",
+    "authors": ["Scott lynch"],
+    "rating": 5,
+    "volume": "1",
+    "urls": [
+      "https://www.amazon.fr/Salauds-Gentilshommes-Mensonges-Locke-Lamora/dp/2352940273/ref=sr_1_6?ie=UTF8&s=books&qid=1273082365&sr=1-6"
+    ],
+    "fiction": true
+  },
+  {
     "title": "Rama",
     "series": "Rama",
     "authors": ["Arthur C. Clarke"],
@@ -2678,930 +3604,5 @@
     "comment": "Mon premier roman de SF à l'époque !",
     "urls": [],
     "fiction": true
-  },
-  {
-    "title": "La justice de lancillaire",
-    "authors": ["Ann Leckie"],
-    "rating": 2,
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Cycle des dieux",
-    "series": "Cycle des dieux",
-    "authors": ["David Werber"],
-    "volume": "3/3",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Cycle des dieux",
-    "series": "Cycle des dieux",
-    "authors": ["David Werber"],
-    "volume": "2/3",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Cycle des dieux",
-    "series": "Cycle des dieux",
-    "authors": ["David Werber"],
-    "rating": 2,
-    "volume": "1/3",
-    "comment": "Lu la trilogie, car on m'avait offert le 1er tome.\nPas accroché du tout au style, aux personnages.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Les enchantements d'Ambremer",
-    "authors": ["Pierre Pevel"],
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La première Leçon du Sorcier",
-    "series": "Epée de Vérité",
-    "authors": ["Terry Goodkind"],
-    "volume": "2",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La première Leçon du Sorcier",
-    "series": "Epée de Vérité",
-    "authors": ["Terry Goodkind"],
-    "rating": 2,
-    "volume": "1",
-    "comment": "Trop enfantin",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Le troisième policier",
-    "authors": ["Flann O'Brien"],
-    "rating": 3,
-    "comment": "Complètement loufoque. M'a décroché quelques sourires, mais pas beaucoup plus.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Où on va, papa ?",
-    "authors": ["Jean Louis Fournier"],
-    "rating": 5,
-    "comment": "Caustiques, les histoires d'un père autour de ces deux enfants handicapés.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Des milliards de tapis de cheveux",
-    "authors": ["Andreas Eschach"],
-    "rating": 5,
-    "comment": "Un scénario bien original qui m'a laissé quelques fois sur le cul!\nExcellent. Histoire novatrice, fin assez balèze. J'en aurais voulu plus à lire.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Jesus Video",
-    "authors": ["Andreas Eschach"],
-    "rating": 4,
-    "comment": "On retrouve un manuel d'une caméra vidéo sur un corps vieux de 2000 ans. Des gens se mettent à chercher des réponses. Très bon, un peu d'action, tout ça. Un roman d'aventure.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Les orphelins de Brooklyn",
-    "authors": ["Jonathan Lethem"],
-    "rating": 4,
-    "comment": "Pas transcendantal, mais j'avais envie de le finir pour savoir. Pas mal...",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "American Rigolo",
-    "authors": ["Bill Bryson"],
-    "rating": 5,
-    "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'angleterre. Marrant, de belles notes d'esprit, distrayant.",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Confessions d'un automate mangeur d'Opium",
-    "authors": ["Mathieu Gaborit"],
-    "rating": 4,
-    "comment": "Bien aimé le début, un peu moins certains passages. Ça se lit bien.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Neverwhere",
-    "authors": ["Neil Gaiman"],
-    "rating": 3,
-    "comment": "Un homme qui bascule dans le Londres d'en bas orienté Fantasy.\nHistoire moyenne, mais ça se lit bien.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Ubik",
-    "authors": ["Philip K. Dick"],
-    "rating": 4,
-    "comment": "Une histoire à la Existenz (les personnages ne savent plus s'ils sont vivants ou morts). Sympa, ça se lit vite. De là à dire que c'est un chef d'oeuvre...",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "On peut se dire au revoir plusieurs fois",
-    "authors": ["David Servan-Schreiber"],
-    "rating": 2,
-    "comment": "Par l'auteur d'AntiCancer, qui fait une rechute.\nPas grand chose à en retenir",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Le dernier de son espèce",
-    "authors": ["Andreas Eschbach"],
-    "rating": 4,
-    "comment": "Histoire du dernier homme-cyborg qui est pourchassé, car justement il est le dernier.\nEncore un bon Andreas Eschach.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Horizons Lointains",
-    "authors": ["Robert Silverberg"],
-    "rating": 3,
-    "comment": "Recueils de nouvelles de SF\nPas mal, mais des fois beaucoup de spoilers sur les livres originaux",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Un peu de sagesse dans un monde de brutes",
-    "authors": ["Barefoot Doctor"],
-    "rating": 1,
-    "comment": "Pseudo-conseils, plein de « moi, je suis génial »",
-    "urls": [],
-    "fiction": false
-  },
-  {
-    "title": "Rédemption 3 - Cycle de l'Élévation",
-    "series": "Cycle de l'Élévation",
-    "authors": ["David Brin"],
-    "volume": "6/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Rédemption 2 - Cycle de l'Élévation",
-    "series": "Cycle de l'Élévation",
-    "authors": ["David Brin"],
-    "volume": "5/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Rédemption 1",
-    "series": "Cycle de l'Élévation",
-    "authors": ["David Brin"],
-    "volume": "4/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Elevation 2 - Cycle de l'Élévation",
-    "series": "Cycle de l'Élévation",
-    "authors": ["David Brin"],
-    "volume": "3/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Elevation 1 - Cycle de l'Élévation",
-    "series": "Cycle de l'Élévation",
-    "authors": ["David Brin"],
-    "volume": "2/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Marée Stellaire - Cycle de l'Élévation",
-    "series": "Cycle de l'Élévation",
-    "authors": ["David Brin"],
-    "rating": 4,
-    "volume": "1/6",
-    "comment": "Des hommes et des dauphins (et un singe) se crashent sur une planète, poursuivi par des espèces différentes d'extraterrestres belliqueuses. Pas mal, ils se passent des choses.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Le vieux qui ne voulait pas fêter son anniversaire",
-    "authors": ["Jonas Jonasson"],
-    "rating": 4,
-    "comment": "Début un peu étonnant (mal écrit), puis ça devient drôle et je voulais savoir la suite ! Vite !",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Les loups des étoiles",
-    "authors": ["Edmond Hamilton"],
-    "rating": 3,
-    "comment": "Narre les aventures d'un mercenaire, un poil fort, mais humain (ouep ouep). Ça se lit facilement, c'est de l'aventure pure et dure en SF.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La fraternité du Panca",
-    "series": "La fraternité du Panca",
-    "authors": ["Pierre Bordage"],
-    "rating": 4,
-    "volume": "2/5",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La fraternité du Panca",
-    "series": "La fraternité du Panca",
-    "authors": ["Pierre Bordage"],
-    "rating": 4,
-    "volume": "1/5",
-    "comment": "On suit un homme de la confrérie par tome, il se passe des choses, intrigues, combats... Distrayant !",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Etoile de Pandore",
-    "series": "Etoile de Pandore",
-    "authors": ["Peter F. Hamilton"],
-    "volume": "4/4",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Etoile de Pandore",
-    "series": "Etoile de Pandore",
-    "authors": ["Peter F. Hamilton"],
-    "volume": "3/4",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Etoile de Pandore",
-    "series": "Etoile de Pandore",
-    "authors": ["Peter F. Hamilton"],
-    "volume": "2/4",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Etoile de Pandore",
-    "series": "Etoile de Pandore",
-    "authors": ["Peter F. Hamilton"],
-    "rating": 5,
-    "volume": "1/4",
-    "comment": "C'est de la bonne SF ça !\nCa tourne bien, c'est riche, l'intrigue est super, les méchants aussi !",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Vide en évolution",
-    "series": "La trilogie du vide",
-    "authors": ["Peter F. Hamilton"],
-    "volume": "3/3",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Vide temporel",
-    "series": "La trilogie du vide",
-    "authors": ["Peter F. Hamilton"],
-    "volume": "2/3",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Vide qui songe",
-    "series": "La trilogie du vide",
-    "authors": ["Peter F. Hamilton"],
-    "rating": 4,
-    "volume": "1/3",
-    "comment": "Lu juste après Etoile de Pandore, que j'ai trouvé mieux, ça lasse un poil.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La flotte perdue",
-    "series": "La flotte perdue",
-    "authors": ["Jack Campbell"],
-    "volume": "6/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La flotte perdue",
-    "series": "La flotte perdue",
-    "authors": ["Jack Campbell"],
-    "volume": "5/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La flotte perdue",
-    "series": "La flotte perdue",
-    "authors": ["Jack Campbell"],
-    "volume": "4/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La flotte perdue",
-    "series": "La flotte perdue",
-    "authors": ["Jack Campbell"],
-    "volume": "3/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La flotte perdue",
-    "series": "La flotte perdue",
-    "authors": ["Jack Campbell"],
-    "volume": "2/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La flotte perdue",
-    "series": "La flotte perdue",
-    "authors": ["Jack Campbell"],
-    "volume": "1/6",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "7/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "6/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "5/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "4/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "3/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "2/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "La saga des 7 soleils",
-    "series": "La saga des 7 soleils",
-    "authors": ["Kevin J. Anderson"],
-    "volume": "1/7",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Silo",
-    "authors": ["Hugh Howey"],
-    "rating": 3,
-    "comment": "C'est intriguant, mais pas dingue non plus.",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "Pirates",
-    "authors": ["Michael Crichton"],
-    "rating": 2,
-    "comment": "Bof, se lit vite, mais sans plus",
-    "urls": [],
-    "fiction": true
-  },
-  {
-    "title": "30 lessons for living",
-    "authors": ["Karl A. Pillemer"],
-    "rating": 4,
-    "date": "2020-12",
-    "fiction": false
-  },
-  {
-    "title": "59 seconds",
-    "subtitle": "Think a little, change a lot",
-    "authors": ["Richard Wiseman"],
-    "rating": 5,
-    "date": "2018-03",
-    "fiction": false
-  },
-  {
-    "title": "A la recherche du Sens Perdu",
-    "subtitle": "Petit précis des grands dilemmes philosophiques",
-    "authors": ["Franm Martela"],
-    "rating": 4,
-    "date": "2021-04",
-    "fiction": false
-  },
-  {
-    "title": "Apprendre à vivre",
-    "subtitle": "Traité de philosophie à l'usage des jeunes générations",
-    "authors": ["Luc Ferry"],
-    "rating": 3,
-    "date": "2021-05",
-    "fiction": false
-  },
-  {
-    "title": "Brain Rules For Babies",
-    "subtitle": "Comment fonctionne le cerveau de bébé",
-    "authors": ["John Medina"],
-    "rating": 4,
-    "date": "2012-04",
-    "fiction": false
-  },
-  {
-    "title": "Ce qu'il faut savoir avant de mourir",
-    "subtitle": "Découvrez ce qui compte vraiment avant l'heure de votre mort",
-    "authors": ["John Izzo"],
-    "rating": 4,
-    "date": "2013-04",
-    "fiction": false
-  },
-  {
-    "title": "Cessez d'etre gentil soyez vrai",
-    "subtitle": "Etre avec les autres en restant soi-même",
-    "authors": ["Thomas D’Ansembourg"],
-    "rating": 4,
-    "date": "2010-01",
-    "fiction": false
-  },
-  {
-    "title": "Choose Yourself",
-    "authors": ["James Altucher"],
-    "rating": 3,
-    "date": "2014-01",
-    "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
-    "fiction": false
-  },
-  {
-    "title": "Comment je suis devenue rentière en 4 ans",
-    "authors": ["Elise Franck"],
-    "rating": 3,
-    "date": "2018-03",
-    "fiction": false
-  },
-  {
-    "title": "Crucial Conversations",
-    "subtitle": "Tools for talking when stakes are High",
-    "authors": [
-      "Kerry Pattersonm",
-      "Joseph Grenny",
-      "Ron Mc Millan",
-      "Al Switzler"
-    ],
-    "rating": 4,
-    "date": "2011-09",
-    "fiction": false
-  },
-  {
-    "title": "Deep Learning For Search",
-    "authors": ["Tommaso Teofili"],
-    "rating": 4,
-    "date": "2019-10",
-    "comment": "Des techniques avancées (réseau de neurones...) au service du Search. Pas tout lu, mais possible d'appliquer ça dans des projets.",
-    "fiction": false
-  },
-  {
-    "title": "Don't make me think",
-    "subtitle": "A common sense approach to web usability",
-    "authors": ["Steve Krug"],
-    "rating": 5,
-    "date": "2009-01",
-    "comment": "Génial, simple, évident ! Le rapport à l'accessibilité est incroyable, humain. Top !",
-    "fiction": false
-  },
-  {
-    "title": "Eloges de l'optimisme",
-    "authors": ["Philippe Gabilliet"],
-    "rating": 4,
-    "date": "2011-09",
-    "fiction": false
-  },
-  {
-    "title": "Fail Safe Investing",
-    "subtitle": "Lifelong Financial Security in 30 minutes",
-    "authors": ["Harry Browne"],
-    "rating": 4,
-    "date": "2011-01",
-    "comment": "Conseils financiers que je continue de suivre",
-    "fiction": false
-  },
-  {
-    "title": "Grokking Functional Programming",
-    "authors": ["Michal Plachta"],
-    "rating": 4,
-    "date": "2023-08",
-    "comment": "Programmation fonctionnelle sans jargon",
-    "fiction": false
-  },
-  {
-    "title": "Grokking Simplicity",
-    "subtitle": "Taming complex software with functional thinking",
-    "authors": ["Eric Normand"],
-    "rating": 5,
-    "date": "2021-01",
-    "comment": "J'ai changé de façon d'écrire du code après avoir lu ce livre. Excellent !",
-    "fiction": false
-  },
-  {
-    "title": "Guérir le stress, l'anxiété et la dépression sans médicaments ni psychanalyse",
-    "authors": ["David Servan-Schreiber"],
-    "rating": 3,
-    "date": "2011-09",
-    "comment": "Pas mal de descriptions et des histoires assez intéressantes, mais les sujets de fond auraient pu tenir en 10 pages.",
-    "fiction": false
-  },
-  {
-    "title": "Influence et manipulation",
-    "subtitle": "Comprendre et maîtriser les mécanismes et les techniques de persuasion",
-    "authors": ["Robert Cialdini"],
-    "rating": 5,
-    "date": "2014-10",
-    "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
-    "fiction": false
-  },
-  {
-    "title": "Introduction au Machine Learning",
-    "authors": ["Chloé-Agathe Azencott"],
-    "rating": 2,
-    "date": "2022-04",
-    "comment": "Trop matheux, c'est surtout une introduction aux mathématiques pour le Machine Learning.",
-    "fiction": false
-  },
-  {
-    "title": "Joel On Software",
-    "authors": ["Joel Spolsky"],
-    "rating": 4,
-    "date": "Plein de recommandations que j'applique aujourd'hui, et qui fonctionne bien",
-    "fiction": false
-  },
-  {
-    "title": "L'autorité expliquée aux parents",
-    "authors": ["Claude Halmos"],
-    "rating": 4,
-    "date": "2011-06",
-    "fiction": false
-  },
-  {
-    "title": "L'Autoroute du Millionaire",
-    "subtitle": "La voie express vers la richesse",
-    "authors": ["MJ DeMarco"],
-    "rating": 4,
-    "date": "2024-03",
-    "comment": "La métaphore automobile fonctionne bien (il vaut mieux ne pas être piéton...). Le livre incite à l'action.",
-    "fiction": false
-  },
-  {
-    "title": "La plus belle histoire du monde",
-    "subtitle": "Les secrets de nos origines",
-    "authors": [
-      "Hubert Reeves",
-      "Joel de Rosnay",
-      "Yves Coppens",
-      "Dominique Simonnet"
-    ],
-    "rating": 4,
-    "date": "2011-04",
-    "comment": "Un bon livre. Se lit assez facilement. Intéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
-    "fiction": false
-  },
-  {
-    "title": "La semaine de 4 heures",
-    "authors": ["Timothy Ferriss"],
-    "rating": 4,
-    "date": "2009-02",
-    "comment": "Méthode/raccourci pour travailler moins, donc être plus malin ?",
-    "fiction": false
-  },
-  {
-    "title": "Le but (The Goal)",
-    "subtitle": "Un processus de progrès permanent",
-    "authors": ["Eliyahu M. Goldratt", "J. Cox"],
-    "rating": 4,
-    "date": "2011-07",
-    "fiction": false
-  },
-  {
-    "title": "Les hommes viennent de Mars les femmes viennent de Vénus",
-    "authors": ["John Gray"],
-    "rating": 3,
-    "date": "2009-05",
-    "fiction": false
-  },
-  {
-    "title": "Machine Learning avec Scikit-Learn",
-    "authors": ["Aurélien Géron"],
-    "rating": 5,
-    "date": "2022-07",
-    "comment": "Un Must ! Rien que le chapitre avec lequel il déroule un projet complet de ML, avec ses remarques propres et ses avis. Top !",
-    "fiction": false
-  },
-  {
-    "title": "Machine Learning for absolute beginners",
-    "authors": ["Oliver Theobald"],
-    "rating": 4,
-    "date": "2022-01",
-    "comment": "L'intro facile au ML, et c'est ce que je cherchais",
-    "fiction": false
-  },
-  {
-    "title": "Archi Pas Chère - Maison à 100 000 euros",
-    "authors": ["Olivier Darmon"],
-    "rating": 4,
-    "date": "2011-02",
-    "fiction": false
-  },
-  {
-    "title": "N'oublie pas d'être heureux",
-    "authors": ["Christophe André"],
-    "rating": 4,
-    "date": "2021-06",
-    "fiction": false
-  },
-  {
-    "title": "Never Eat Alone",
-    "subtitle": "And other secrets to Success, One Relationship at a time",
-    "authors": ["Keith Ferrazzi", "Tahl Raz"],
-    "rating": 4,
-    "date": "2011-09",
-    "comment": "Le pitch est : nous avons besoin des autres pour réussir. Comment devenir un membre du club",
-    "fiction": false
-  },
-  {
-    "title": "Never split the difference",
-    "subtitle": "Negotiating as if your life depended on it",
-    "authors": ["Chriss Voss"],
-    "rating": 4,
-    "date": "2020-06",
-    "comment": "Beaucoup de techniques. Comme tout, si je veux être bon, il faut que je m'entraine, et c'est dur !",
-    "fiction": false
-  },
-  {
-    "title": "Notes to a Software Team Leader",
-    "subtitle": "Growing self organizing team",
-    "authors": ["Roy Osherove"],
-    "rating": 2,
-    "date": "2014-10",
-    "comment": "Intéressant sur certains points, mais pas assez structuré, analysé.",
-    "fiction": false
-  },
-  {
-    "title": "People skills",
-    "subtitle": "How to assert yourself, listen to others and resolve conflicts",
-    "authors": ["Robert Bolton"],
-    "rating": 4,
-    "date": "2015-06",
-    "comment": "Long à lire, et intéressant sur plusieurs aspects",
-    "fiction": false
-  },
-  {
-    "title": "Philocomix",
-    "subtitle": "10 philosophes, 10 approches du bonheur",
-    "authors": ["Jean-Philippe Thivet", "Jérôme Vermer", "Anne-Lise Combeaud"],
-    "rating": 4,
-    "date": "2019-07",
-    "comment": "Des principes philosophiques en BD. Bien fait, ça donne envie de creuser",
-    "fiction": false
-  },
-  {
-    "title": "PMBA",
-    "subtitle": "Master the Art of Business",
-    "authors": ["Josh Kaufman"],
-    "rating": 4,
-    "date": "2016-04",
-    "comment": "Plein de pépites, presque trop court par moment, quelques « ahah »",
-    "fiction": false
-  },
-  {
-    "title": "Pre-Suasion",
-    "subtitle": "A Revolutionary Way to Influence and Persuade",
-    "authors": ["Robert Cialdini"],
-    "rating": 4,
-    "date": "2021-06",
-    "fiction": false
-  },
-  {
-    "title": "Qui a piqué mon fromage",
-    "authors": ["Spencer Johnson"],
-    "rating": 3,
-    "date": "2013-04",
-    "fiction": false
-  },
-  {
-    "title": "Relevant Search",
-    "subtitle": "With applications for Solr and Elasticsearch",
-    "authors": ["Doug Turnbull", "John Berryman"],
-    "rating": 5,
-    "date": "2019-06",
-    "comment": "Une mine d’information et de techniques sur le Search. Génial",
-    "fiction": false
-  },
-  {
-    "title": "Rénovation basse consommation",
-    "authors": ["Roland Dutrey"],
-    "rating": 4,
-    "date": "2014-03",
-    "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc. Le plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure). À retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
-    "fiction": false
-  },
-  {
-    "title": "Rework",
-    "authors": ["Jason Fried", "David Heinemeir Hansson"],
-    "rating": 4,
-    "date": "2011-09",
-    "comment": "Les points de vue et recettes de 37signals. Inspirant",
-    "fiction": false
-  },
-  {
-    "title": "Secrets to Winning at Office Politics",
-    "subtitle": "How to achieve your goals and increase your influence at work",
-    "authors": ["Marie G. McIntyre"],
-    "rating": 4,
-    "date": "2014-11",
-    "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
-    "fiction": false
-  },
-  {
-    "title": "Serons-nous immortels",
-    "subtitle": "Oméga 3, nanotechnologies, clonage...",
-    "authors": ["Ray Kurweil", "Terry Grossman"],
-    "rating": 4,
-    "date": "2011-07",
-    "comment": "Les auteurs sont des extrémistes de la santé, mais le plus intéressant est le dernier chapitre sur comment vivre une bonne vie",
-    "fiction": false
-  },
-  {
-    "title": "StrengthsFinder 2.0",
-    "authors": ["Tom Rath"],
-    "rating": 4,
-    "date": "2011-09",
-    "comment": "Je suis un \"Catalyste\" entre idées, systèmes et personnes",
-    "fiction": false
-  },
-  {
-    "title": "Super Freakonomics",
-    "authors": ["Steven D. Levitt", "Stephen J. Dubner"],
-    "rating": 4,
-    "date": "2014-09",
-    "comment": "Divertissant, mais sans pour autant apprendre",
-    "fiction": false
-  },
-  {
-    "title": "The First 20th Hours",
-    "subtitle": "How to learn anything... fast",
-    "authors": ["Josh Kaufman"],
-    "rating": 4,
-    "date": "2013-10",
-    "comment": "C'est grâce à ce livre que j'ai appris à taper en Colemak, et que j'appendrai d'autres choses... en 20 heures !",
-    "fiction": false
-  },
-  {
-    "title": "The Five Dysfunctions of a Team",
-    "subtitle": "A leadership fable",
-    "authors": ["Patrick Lencioni"],
-    "rating": 3,
-    "date": "2021-01",
-    "comment": "Le livre donne un framework pour créer une super équipe, dans le sens créer les liens, se faire confiance, etc. Mais le chemin est difficile et long.",
-    "fiction": false
-  },
-  {
-    "title": "The Four Steps to the Epiphany",
-    "subtitle": "Successful Strategies for Products that Win",
-    "authors": ["Steven Gary Blank"],
-    "rating": 3,
-    "date": "2011-08",
-    "comment": "Bible de la création et du lancement d'une entreprise. Complexe et compliqué, difficile à lire",
-    "fiction": false
-  },
-  {
-    "title": "The Millionaire Next Door",
-    "subtitle": "The surprising secret of America's wealthy",
-    "authors": ["Thomas J. Stanley", "William D. Danko"],
-    "rating": 5,
-    "date": "2008-09",
-    "comment": "Le livre est une étude des statistiques et sociologique sur les riches, qui ne sont pas ceux que l'on croit.",
-    "fiction": false
-  },
-  {
-    "title": "The Mythical Man Month",
-    "subtitle": "Essays on Software engineering",
-    "authors": ["Frederick P. Brooks"],
-    "rating": 4,
-    "date": "2008-10",
-    "comment": "Je m'y réfère toujours, notamment pour les coûts de la doc et de rendre un logiciel plus générique",
-    "fiction": false
-  },
-  {
-    "title": "The Partnership Charter",
-    "subtitle": "How to start right with your new business partnership, or fix the one you're in",
-    "authors": ["David Gage"],
-    "rating": 4,
-    "date": "2011-06",
-    "comment": "Le guide pour bien démarrer une entreprise à plusieurs. Ça n'empêche pas les égos, mais au moins, on parle des sujets difficiles avant de se lancer",
-    "fiction": false
-  },
-  {
-    "title": "The Passionate Programmer",
-    "subtitle": "Creating a Remarkable career in software development",
-    "authors": ["Chad Fowler"],
-    "rating": 4,
-    "date": "2011-08",
-    "comment": "L'idée globale du livre est de nous faire comprendre que notre carrière est comme un produit qu'il faut rendre intéressant, donc vendable, qu'il faut vendre et maintenir intéressant.",
-    "fiction": false
-  },
-  {
-    "title": "The Pledge",
-    "subtitle": "Your Master Plan for an abundant life",
-    "authors": ["Michael Masterson"],
-    "rating": 3,
-    "date": "2011-06",
-    "comment": "L'idée principale du livre est l'ACTION. On passe trop de temps à réfléchir, à planifier, à collecter l'info, et pas assez de temps à agir, essayer, échouer (et donc apprendre).",
-    "fiction": false
-  },
-  {
-    "title": "The Secrets of Consulting",
-    "subtitle": "A guide to giving & getting advice successfully",
-    "authors": ["Gerald M. Weinberg"],
-    "rating": 3,
-    "date": "2014-09",
-    "comment": "J'ai aimé les anecdotes, et certaines techniques, mais le contenu est assez peu actionnable.",
-    "fiction": false
-  },
-  {
-    "title": "Tout le monde n'a pas eu la chance de rater ses études",
-    "authors": ["Olivier Roland"],
-    "rating": 3,
-    "date": "2023-07",
-    "comment": "Assez classiques, mais repose certaines bases",
-    "fiction": false
-  },
-  {
-    "title": "Vers un monde sans pauvreté + Vers un nouveau capitalisme",
-    "authors": ["Mohammad Yunus"],
-    "rating": 4,
-    "date": "2011-06",
-    "comment": "Découverte pour moi de la microfinance, et de l'entrepreneuriat social",
-    "fiction": false
-  },
-  {
-    "title": "Vous êtes vendeur, le saviez-vous ?",
-    "subtitle": "L'étonnante vérité sur notre capacité d'influence",
-    "authors": ["Daniel Pink"],
-    "rating": 4,
-    "date": "2015-01",
-    "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
-    "fiction": false
-  },
-  {
-    "title": "What the CEO wants you to know",
-    "subtitle": "Using Business Acumen to understand how your company really works",
-    "authors": ["Ram Charan"],
-    "rating": 3,
-    "date": "2015-03",
-    "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
-    "fiction": false
-  },
-  {
-    "title": "Working effectively with unit tests",
-    "authors": ["Jay Fields"],
-    "rating": 5,
-    "date": "2015-03",
-    "comment": "Bon livre. J'ai été convaincu par certaines pratiques, les arguments ont fait mouches.\nC'est pragmatique, et ça m'a appris des choses sur l'écriture des tests et aussi un peu sur le code.\nLe ton est bon, avec l'impression d'avoir une conversation avec un professionnel qui me donne \nson avis et ses opinions sur du code que j'aurai pu écrire.",
-    "fiction": false
   }
 ]
