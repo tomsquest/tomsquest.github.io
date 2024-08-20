@@ -50,6 +50,11 @@ class: bookshelf
 
 {%- for book in site.data.books -%}
   {% assign title = book.title %}
+  {%- if book.subtitle -%}
+    {% capture title %}
+      {{ title }} - {{ book.subtitle }}
+    {% endcapture %}
+  {%- endif -%}
   {%- if book.series and book.title != book.series -%}
     {% capture title %}
       {{ book.title }} - {{ book.series }}
