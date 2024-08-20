@@ -74,10 +74,12 @@ class: bookshelf
       {{ title }}
     </h3>
     <p class="book-data">
-      {%- unless book.authors == empty -%}
-        Authors: {{ book.authors | join: ", " }}
-        <br>
-      {%- endunless -%}
+      {%- if book.authors -%}
+        {%- unless book.authors == empty -%}
+          Authors: {{ book.authors | join: ", " }}
+          <br>
+        {%- endunless -%}
+      {%- endif -%}
 
       {%- if book.rating -%}
         Rating:
@@ -98,21 +100,21 @@ class: bookshelf
       {%- endif -%}
 
       {%- if book.date -%}
-      Read on: <time datetime="{{ book.date }}">{{ book.date }}</time>
+        Read on: <time datetime="{{ book.date }}">{{ book.date }}</time>
         <br>
-      {%- else -%}
-        Read on: unknown
       {%- endif -%}
 
-      {%- unless book.urls == empty -%}
-        Links:
-        {%- for url in book.urls -%}
-          {% assign domain = url | split: '//' | last | split: '/' | first | remove: "www." %}
-          <a href="{{ url }}" target="_blank">{{ domain }}</a>
-          {% unless forloop.last -%}, {%- endunless %}
-        {%- endfor -%}
-        <br>
-      {%- endunless -%}
+      {%- if book.urls -%}
+        {%- unless book.urls == empty -%}
+          Links:
+          {%- for url in book.urls -%}
+            {% assign domain = url | split: '//' | last | split: '/' | first | remove: "www." %}
+            <a href="{{ url }}" target="_blank">{{ domain }}</a>
+            {% unless forloop.last -%}, {%- endunless %}
+          {%- endfor -%}
+          <br>
+        {%- endunless -%}
+      {%- endif -%}
     </p>
 
     {%- if book.comment -%}
