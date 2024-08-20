@@ -110,16 +110,19 @@ header.nav {
       span {
         font-size: 2rem;
         font-weight: bold;
+        word-break: keep-all;
       }
     }
   }
 
   nav {
     ul {
+      display: flex;
+      justify-content: space-between;
       padding-left: 0;
       list-style: none;
-      display: flex;
-      gap: 3em;
+      gap: 1em;
+      word-break: keep-all;
 
       li {
         a {
