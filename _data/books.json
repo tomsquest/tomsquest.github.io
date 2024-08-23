@@ -358,7 +358,7 @@
   },
   {
     "title": "Harrow la neuvième",
-    "series": "Harrow la neuvième",
+    "series": "Le Tombeau scellé",
     "authors": [
       "Tamsyn Muir"
     ],
@@ -469,6 +469,7 @@
   },
   {
     "title": "Gideon la neuvième",
+    "series": "Le Tombeau scellé",
     "authors": [
       "Tamsyn Muir"
     ],
@@ -547,6 +548,7 @@
   },
   {
     "title": "Capitale du Sud",
+    "series": "Capitale du Sud",
     "authors": [
       "Guillaume Chamanadjian"
     ],
@@ -1609,6 +1611,7 @@
   },
   {
     "title": "Spire",
+    "series": "Spire",
     "authors": [
       "Laurent Genefort"
     ],
@@ -1619,6 +1622,7 @@
   },
   {
     "title": "Spire",
+    "series": "Spire",
     "authors": [
       "Laurent Genefort"
     ],
@@ -1663,7 +1667,18 @@
     "cover": "/assets/books/diaspora.jpg"
   },
   {
-    "title": "Axis - Spin",
+    "title": "Vortex",
+    "series": "Spin",
+    "authors": [
+      "Robert Charles Wilson"
+    ],
+    "volume": "3/3",
+    "date": "2020-07",
+    "fiction": true,
+    "cover": "/assets/books/vortex-3.jpg"
+  },
+  {
+    "title": "Axis",
     "series": "Spin",
     "authors": [
       "Robert Charles Wilson"
@@ -1672,16 +1687,6 @@
     "date": "2020-07",
     "fiction": true,
     "cover": "/assets/books/axis-spin-2.jpg"
-  },
-  {
-    "title": "Vortex",
-    "authors": [
-      "Robert Charles Wilson"
-    ],
-    "volume": "3/3",
-    "date": "2020-07",
-    "fiction": true,
-    "cover": "/assets/books/vortex-3.jpg"
   },
   {
     "title": "Au service surnaturel de sa majesté",
@@ -1708,6 +1713,7 @@
   },
   {
     "title": "Spin",
+    "series": "Spin",
     "authors": [
       "Robert Charles Wilson"
     ],
@@ -2436,12 +2442,11 @@
     "cover": "/assets/books/captain-suicide.jpg"
   },
   {
-    "title": "Carnet Secret d'un cambrioleur",
+    "title": "Conan Lord, carnets secrets d'un cambrioleur",
     "authors": [
       "Serge Brussolo"
     ],
     "rating": 4,
-    "volume": "1",
     "comment": "Un trio de cambrioleur qui ne sont pas des stars. L'époque du 20ème anglais est bien rendue.",
     "date": "2017-01",
     "fiction": true,
