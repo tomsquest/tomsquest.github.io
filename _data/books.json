@@ -138,7 +138,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH299843"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-voie-des-rois-1.jpg"
   },
   {
     "title": "Loterie Solaire",
@@ -148,7 +149,8 @@
     "rating": 3,
     "comment": "Plutôt pas mal. L'idée de base (la loterie qui décide de tout), mais ça tombe un peu bof à la fin.\nJe m'attendais à mieux, même si je n'ai pas été trop déçu.",
     "date": "2024-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/loterie-solaire.jpg"
   },
   {
     "title": "Pays rouge",
@@ -161,7 +163,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH266870"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pays-rouge.jpg"
   },
   {
     "title": "Au Guet",
@@ -171,7 +174,8 @@
     "rating": 4,
     "comment": "C'est bon, c'est Terry. J'ai souri et rigolé. C'est bien écrit, c'est bien pensé.",
     "date": "2024-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/au-guet.jpg"
   },
   {
     "title": "L'enterrement de Serge",
@@ -184,7 +188,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH341309"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lenterrement-de-serge.jpg"
   },
   {
     "title": "Le club des policiers yiddish",
@@ -197,7 +202,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH204140"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-club-des-policiers-yiddish.jpg"
   },
   {
     "title": "The Expanse",
@@ -208,7 +214,8 @@
     "volume": "5/9",
     "comment": "Sympa, même si un peu longuet par moment.",
     "date": "2024-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-5.jpg"
   },
   {
     "title": "The Expanse",
@@ -218,7 +225,8 @@
     ],
     "volume": "4/9",
     "date": "2023-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-4.jpg"
   },
   {
     "title": "The Expanse",
@@ -228,7 +236,8 @@
     ],
     "volume": "3/9",
     "date": "2023-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-3.jpg"
   },
   {
     "title": "L'antiguide de la bière",
@@ -238,7 +247,8 @@
     "rating": 4,
     "comment": "Bien, intéressant.",
     "date": "2023-10",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lantiguide-de-la-biere.jpg"
   },
   {
     "title": "La philo expliquée aux enfants",
@@ -250,7 +260,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH336188"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-philo-expliquee-aux-enfants.jpg"
   },
   {
     "title": "The Expanse",
@@ -260,7 +271,8 @@
     ],
     "volume": "2/9",
     "date": "2023-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-2.jpg"
   },
   {
     "title": "La fin du monde a du retard",
@@ -269,7 +281,8 @@
     ],
     "rating": 4,
     "date": "2023-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-fin-du-monde-a-du-retard.jpg"
   },
   {
     "title": "La justice expliquée à ma petite-fille",
@@ -281,7 +294,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH304019"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-justice-expliquee-a-ma-petite-fille.jpg"
   },
   {
     "title": "Le Livre des martyrs",
@@ -293,7 +307,8 @@
     "volume": "3/8",
     "comment": "Dans le T3, je me suis bien amusé. Il faut \"découvrir\" l'humour.\n1100 pages, je mets \"des mois\" pour en lire un !",
     "date": "2023-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-livre-des-martyrs-3.jpg"
   },
   {
     "title": "Norilsk",
@@ -303,7 +318,8 @@
     "rating": 4,
     "comment": "Court, un reportage en Sibérie, sur les mines de nickel, les conditions de vie, les gens.\nSympa.",
     "date": "2023-09",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/norilsk.jpg"
   },
   {
     "title": "The Expanse",
@@ -315,7 +331,8 @@
     "volume": "1/9",
     "comment": "C'est vraiment bien !",
     "date": "2023-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-1.jpg"
   },
   {
     "title": "Capitale du Sud",
@@ -325,7 +342,8 @@
     ],
     "volume": "3/3",
     "date": "2023-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/capitale-du-sud-3.jpg"
   },
   {
     "title": "Grokking Functional Programming",
@@ -335,7 +353,8 @@
     "rating": 4,
     "date": "2023-08",
     "comment": "Programmation fonctionnelle sans jargon",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/grokking-functional-programming.jpg"
   },
   {
     "title": "Harrow la neuvième",
@@ -347,7 +366,8 @@
     "volume": "2/3",
     "comment": "Je n'ai pas tout compris dans ce tome, avec des sortes de retours en arrière. Déçu.",
     "date": "2023-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/harrow-la-neuvieme-2.jpg"
   },
   {
     "title": "L'homme qui savait la langue des serpents",
@@ -357,7 +377,8 @@
     "rating": 3,
     "comment": "Une sorte de conte, mais original. J'ai bien aimé, même si, assez chelou.",
     "date": "2023-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lhomme-qui-savait-la-langue-des-serpents.jpg"
   },
   {
     "title": "Le Livre des martyrs",
@@ -369,7 +390,8 @@
     "volume": "2/8",
     "comment": "C'est long, assez dur à lire, mais la récompense est là.",
     "date": "2023-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-livre-des-martyrs-2.jpg"
   },
   {
     "title": "Magellan",
@@ -381,7 +403,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH355445"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/magellan.jpg"
   },
   {
     "title": "Prenez soin du chien",
@@ -390,7 +413,8 @@
     ],
     "rating": 4,
     "date": "2023-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/prenez-soin-du-chien.jpg"
   },
   {
     "title": "Qui a tué l'homme-homard",
@@ -399,7 +423,8 @@
     ],
     "rating": 4,
     "date": "2023-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/qui-a-tue-lhomme-homard.jpg"
   },
   {
     "title": "Le grand n'importe quoi",
@@ -408,7 +433,8 @@
     ],
     "rating": 4,
     "date": "2023-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-grand-nimporte-quoi.jpg"
   },
   {
     "title": "Série Z",
@@ -417,7 +443,8 @@
     ],
     "rating": 4,
     "date": "2023-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/serie-z.jpg"
   },
   {
     "title": "Tout le monde n'a pas eu la chance de rater ses études",
@@ -427,7 +454,8 @@
     "rating": 3,
     "date": "2023-07",
     "comment": "Assez classiques, mais repose certaines bases",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/tout-le-monde-na-pas-eu-la-chance-de-rater-ses-etudes.jpg"
   },
   {
     "title": "Le bonheur est au fond du couloir à gauche",
@@ -436,7 +464,8 @@
     ],
     "rating": 4,
     "date": "2023-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-bonheur-est-au-fond-du-couloir-a-gauche.jpg"
   },
   {
     "title": "Gideon la neuvième",
@@ -450,7 +479,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH349297"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/gideon-la-neuvieme-1.jpg"
   },
   {
     "title": "Capitale du Sud",
@@ -460,7 +490,8 @@
     ],
     "volume": "2/3",
     "date": "2023-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/capitale-du-sud-2.jpg"
   },
   {
     "title": "Le Livre des martyrs",
@@ -475,7 +506,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH308251"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-livre-des-martyrs-1.jpg"
   },
   {
     "title": "Le Mystère Sherlock",
@@ -488,7 +520,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH244635"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-mystere-sherlock.jpg"
   },
   {
     "title": "Le dixième vaisseau",
@@ -498,7 +531,8 @@
     "rating": 2,
     "comment": "Je ne m'en souviens plus, mais les commentaires disent \"ado\", et je crois bien que c'est pour ça que je l'ai arrêté.",
     "date": "2023-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-dixieme-vaisseau.jpg"
   },
   {
     "title": "Tortilla Flat",
@@ -508,7 +542,8 @@
     "rating": 4,
     "comment": "L'histoire de désoeuvrés, qui ne cherche rien, à part boire ! Marrant, bien écrit.",
     "date": "2023-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/tortilla-flat.jpg"
   },
   {
     "title": "Capitale du Sud",
@@ -522,7 +557,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH337453"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/capitale-du-sud-1.jpg"
   },
   {
     "title": "Désolation",
@@ -532,7 +568,8 @@
     "rating": 5,
     "comment": "Court, graphique, et vraiment super. Cette fin !",
     "date": "2023-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/desolation.jpg"
   },
   {
     "title": "Journal d'un AssaSynth",
@@ -546,7 +583,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH350961"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/journal-dun-assasynth-2.jpg"
   },
   {
     "title": "Récits du Vieux Royaume",
@@ -559,7 +597,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH358769"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/recits-du-vieux-royaume.jpg"
   },
   {
     "title": "Ai-powered Search",
@@ -575,7 +614,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH316737"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/ai-powered-search.jpg"
   },
   {
     "title": "Et Merde",
@@ -589,7 +629,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH316737"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/et-merde.jpg"
   },
   {
     "title": "Le serpent majuscule",
@@ -602,7 +643,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH337485"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-serpent-majuscule.jpg"
   },
   {
     "title": "Petit éloge du temps comme il va",
@@ -615,7 +657,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH271982"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/petit-eloge-du-temps-comme-il-va.jpg"
   },
   {
     "title": "Le monde inverti",
@@ -628,7 +671,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH114493"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-monde-inverti.jpg"
   },
   {
     "title": "Les sept morts d'Evelyn Hardcastle",
@@ -641,7 +685,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH319287"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-sept-morts-develyn-hardcastle.jpg"
   },
   {
     "title": "L'étrange traversée du Saardam",
@@ -655,7 +700,8 @@
       "http://www.mediathequederoubaix.fr/ark:/20179/KH345614",
       "https://www.amazon.fr/L%C3%89trange-Travers%C3%A9e-Saardam-Stuart-Turton/dp/2355848750/ref=sr_1_1?keywords=L%27%C3%A9trange+travers%C3%A9e+du+Saardam#customerReviews"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/letrange-traversee-du-saardam.jpg"
   },
   {
     "title": "Au revoir là-haut",
@@ -668,7 +714,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH313253"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/au-revoir-la-haut.jpg"
   },
   {
     "title": "Les héros",
@@ -678,7 +725,8 @@
     "rating": 4,
     "comment": "Purée, c'est vraiment bien : ambiance, persos fouillés, histoire !",
     "date": "2022-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-heros.jpg"
   },
   {
     "title": "Nomadland",
@@ -688,7 +736,8 @@
     "rating": 4,
     "comment": "Histoire de nomades dans leur Van, qui aspirent à une vie plus simple, mais surtout à qui l'argent manque.\nDes retraités obligés de travailler (chez Amazon entre autres) pour pas grand-chose pour pouvoir vivre.",
     "date": "2022-10",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/nomadland.jpg"
   },
   {
     "title": "La leçon du brin d'herbe",
@@ -698,7 +747,8 @@
     "rating": 3,
     "comment": "Court texte sur des rencontres, la nature, des ballades",
     "date": "2022-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-lecon-du-brin-dherbe.jpg"
   },
   {
     "title": "La 25ème heure",
@@ -710,7 +760,8 @@
     "volume": "1/3",
     "comment": "Super histoire en 188x, du mystère, un poil de steampunk, perso super, style genial.\nJe vais lire la 2ème partie !",
     "date": "2022-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-25eme-heure-1.jpg"
   },
   {
     "title": "Projet dernière chance",
@@ -724,7 +775,8 @@
       "http://www.mediathequederoubaix.fr/ark:/20179/KH345155",
       "https://www.amazon.fr/Projet-Derni%C3%A8re-Chance-Andy-Weir/dp/B097X1NLHX"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/projet-derniere-chance.jpg"
   },
   {
     "title": "Cobrastart",
@@ -734,7 +786,8 @@
     "rating": 4,
     "comment": "Science Fiction Punk. C'est du Tarantino SF. J'ai aimé !",
     "date": "2022-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/cobrastart.jpg"
   },
   {
     "title": "La diagonale du vide",
@@ -744,7 +797,8 @@
     "rating": 4,
     "comment": "Des rencontres pendant ce voyage. Vivant, humain. Bien !",
     "date": "2022-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-diagonale-du-vide.jpg"
   },
   {
     "title": "Mon année made in france",
@@ -754,7 +808,8 @@
     "rating": 4,
     "comment": "Intéressant. De bonnes réflexions sur le monde qui tourne.",
     "date": "2022-08",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/mon-annee-made-in-france.jpg"
   },
   {
     "title": "Où s'imposent les silences",
@@ -767,7 +822,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH315144"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ou-simposent-les-silences.jpg"
   },
   {
     "title": "Journal d'un AssaSynth",
@@ -782,7 +838,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH345599"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/journal-dun-assasynth-1.jpg"
   },
   {
     "title": "Les mathématiques des Simpson",
@@ -792,7 +849,8 @@
     "rating": 3,
     "comment": "Les maths sorties des Simpsons. J'ai appris quelques petits trucs, mais pas assez poussé.",
     "date": "2022-07",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/les-mathematiques-des-simpson.jpg"
   },
   {
     "title": "Machine Learning avec Scikit-Learn",
@@ -802,7 +860,8 @@
     "rating": 5,
     "date": "2022-07",
     "comment": "Un Must ! Rien que le chapitre avec lequel il déroule un projet complet de ML, avec ses remarques propres et ses avis. Top !",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/machine-learning-avec-scikit-learn.jpg"
   },
   {
     "title": "Tordez le cou aux idées reçues",
@@ -812,7 +871,8 @@
     "rating": 4,
     "comment": "Un chapitre pour démystifier un sujet (inflation, immigration...)",
     "date": "2022-07",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/tordez-le-cou-aux-idees-recues.jpg"
   },
   {
     "title": "Toujours plus à l'est",
@@ -822,7 +882,8 @@
     "rating": 3,
     "comment": "L'histoire d'un francais qui va en Corée. Quelques anecdotes, mais j'aurais aimé plus croustillant.",
     "date": "2022-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/toujours-plus-a-lest.jpg"
   },
   {
     "title": "3 minutes de philosophie pour redevenir humain",
@@ -832,7 +893,8 @@
     "rating": 3,
     "comment": "Pas de souvenir !",
     "date": "2022-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/3-minutes-de-philosophie-pour-redevenir-humain.jpg"
   },
   {
     "title": "Comme à la guerre",
@@ -845,7 +907,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH315629"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/comme-a-la-guerre.jpg"
   },
   {
     "title": "Comment échapper à l'ennui du dimanche après-midi",
@@ -855,7 +918,8 @@
     "rating": 3,
     "comment": "Sur l'ennui, les activités. Pas un grand souvenir depuis.",
     "date": "2022-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/comment-echapper-a-lennui-du-dimanche-apres-midi.jpg"
   },
   {
     "title": "Envoyé un peu spécial",
@@ -868,7 +932,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH339569"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/envoye-un-peu-special.jpg"
   },
   {
     "title": "Georama - Le tour du monde en 80 questions",
@@ -881,7 +946,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH270723"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/georama-le-tour-du-monde-en-80-questions.jpg"
   },
   {
     "title": "Le fantôme de la tour Eiffel",
@@ -894,7 +960,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH117685"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-fantome-de-la-tour-eiffel.jpg"
   },
   {
     "title": "Histoire de pédaler",
@@ -904,7 +971,8 @@
     "rating": 4,
     "comment": "Le voyage, tour de France, avec un triporteur. Sympa.",
     "date": "2022-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/histoire-de-pedaler.jpg"
   },
   {
     "title": "La maison magique - Earthship, l'habitat autonome",
@@ -915,7 +983,8 @@
     "rating": 3,
     "comment": "Une belle aventure, honnête dans les problèmes rencontrés !",
     "date": "2022-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-maison-magique-earthship-lhabitat-autonome.jpg"
   },
   {
     "title": "Introduction au Machine Learning",
@@ -925,7 +994,8 @@
     "rating": 2,
     "date": "2022-04",
     "comment": "Trop matheux, c'est surtout une introduction aux mathématiques pour le Machine Learning.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/introduction-au-machine-learning.jpg"
   },
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
@@ -937,7 +1007,8 @@
     "volume": "3/3",
     "comment": "Clos la trilogie, avec des explications. Je n'ai pas tout compris, mais ça se tient et c'était pas mal.",
     "date": "2022-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-cinquieme-saison-les-livres-de-la-terre-fracturee-3.jpg"
   },
   {
     "title": "Programmation Python avancée",
@@ -947,7 +1018,8 @@
     "rating": 4,
     "comment": "Bien pour les concepts avancés",
     "date": "2022-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/programmation-python-avancee.jpg"
   },
   {
     "title": "L'art de la marche",
@@ -957,7 +1029,8 @@
     "rating": 4,
     "comment": "Livre de voyage, oú l'auteur fait les premières étapes d'un tour du monde, quelques semaines par an, en reprenant là oú il s'était arrêté.",
     "date": "2022-03",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lart-de-la-marche.jpg"
   },
   {
     "title": "Le monde selon Guirec et Monique",
@@ -967,7 +1040,8 @@
     "rating": 4,
     "comment": "L'histoire d'un tour du monde en bateau de Guirec et sa poule pondeuse.",
     "date": "2022-03",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/le-monde-selon-guirec-et-monique.jpg"
   },
   {
     "title": "Mamie Luger",
@@ -977,7 +1051,8 @@
     "rating": 4,
     "comment": "Oh les reparties de l'héroïne, petite dame de 102 ans :)\nBien, court, punchy, très bien.",
     "date": "2022-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/mamie-luger.jpg"
   },
   {
     "title": "Les derniers jours de l'émerveillement",
@@ -987,7 +1062,8 @@
     "rating": 4,
     "comment": "C'est pas mal, l'histoire (la guerre) entre Edison et Westhinghouse pour imposer le courant continu versus alternatif. Des petits chapitres. Peut-être un peu trop romancé ?",
     "date": "2022-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-derniers-jours-de-lemerveillement.jpg"
   },
   {
     "title": "Un clafoutis aux tomates cerises",
@@ -997,7 +1073,8 @@
     "rating": 4,
     "comment": "Mignon, gentil, le journal d'une mamie. Du quotidien touchant. Ça se lit bien, c'est agréable.\nRien d'extraordinaire, et c'est ça qui est bien.",
     "date": "2022-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/un-clafoutis-aux-tomates-cerises.jpg"
   },
   {
     "title": "Machine Learning for absolute beginners",
@@ -1007,7 +1084,8 @@
     "rating": 4,
     "date": "2022-01",
     "comment": "L'intro facile au ML, et c'est ce que je cherchais",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/machine-learning-for-absolute-beginners.jpg"
   },
   {
     "title": "L'examen",
@@ -1020,7 +1098,8 @@
     "urls": [
       "https://www.conseil-bifrost.fr/l-examen-sylvain-neuvel/"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lexamen.jpg"
   },
   {
     "title": "L'économie est un jeu d'enfant",
@@ -1034,14 +1113,16 @@
       "https://www.amazon.fr/L%C3%A9conomie-est-jeu-denfant/dp/2290349089",
       "https://www.goodreads.com/book/show/18144.The_Undercover_Economist"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/leconomie-est-un-jeu-denfant.jpg"
   },
   {
     "title": "Le livre des énigmes de Science-Fiction",
     "authors": [],
     "comment": "Bien, dur, mais sympa. Pas tout fait.",
     "date": "2021-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-livre-des-enigmes-de-science-fiction.jpg"
   },
   {
     "title": "Shakespeare Antibiographie",
@@ -1054,13 +1135,15 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH248161"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/shakespeare-antibiographie.jpg"
   },
   {
     "title": "Des lettres entre deux agents temporels de camps opposés",
     "authors": [],
     "date": "2021-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/des-lettres-entre-deux-agents-temporels-de-camps-opposes.jpg"
   },
   {
     "title": "En âge florissant",
@@ -1069,7 +1152,8 @@
       "Pascal Brioist"
     ],
     "date": "2021-11",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/en-age-florissant.jpg"
   },
   {
     "title": "Esther",
@@ -1078,7 +1162,8 @@
     ],
     "rating": 3,
     "date": "2021-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/esther.jpg"
   },
   {
     "title": "Guerilla Green - Guide de survie végétale en milieu urbain",
@@ -1086,7 +1171,8 @@
       "Ophélie Damblé"
     ],
     "date": "2021-11",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/guerilla-green-guide-de-survie-vegetale-en-milieu-urbain.jpg"
   },
   {
     "title": "L'économie mondiale en 50 inventions",
@@ -1094,7 +1180,8 @@
       "Tim Harford"
     ],
     "date": "2021-11",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/leconomie-mondiale-en-50-inventions.png"
   },
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
@@ -1104,7 +1191,8 @@
     ],
     "volume": "2/3",
     "date": "2021-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-cinquieme-saison-les-livres-de-la-terre-fracturee-2.jpg"
   },
   {
     "title": "La cinquième saison : les livres de la terre fracturée",
@@ -1119,7 +1207,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH320154"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-cinquieme-saison-les-livres-de-la-terre-fracturee-1.jpg"
   },
   {
     "title": "Les oiseaux du temps",
@@ -1129,7 +1218,8 @@
     ],
     "rating": 3,
     "date": "2021-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-oiseaux-du-temps.jpg"
   },
   {
     "title": "Même pas mort",
@@ -1143,7 +1233,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH304804"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/meme-pas-mort-1.jpg"
   },
   {
     "title": "Rive gauche",
@@ -1154,7 +1245,8 @@
     "rating": 4,
     "comment": "Bien !",
     "date": "2021-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/rive-gauche.jpg"
   },
   {
     "title": "2 jours pour vivre",
@@ -1162,7 +1254,8 @@
     "rating": 4,
     "comment": "Des randos, à pied, à vélo en deux jours pour découvrir, accessible...",
     "date": "2021-10",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/2-jours-pour-vivre.jpg"
   },
   {
     "title": "Comment vivre ? Une vie de Montaigne en une question et vingt tentatives de réponse",
@@ -1170,7 +1263,8 @@
       "Sarah Bakewell"
     ],
     "date": "2021-10",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/comment-vivre-une-vie-de-montaigne-en-une-question-et-vingt-tentatives-de-reponse.jpg"
   },
   {
     "title": "La soif de l'essentiel",
@@ -1178,7 +1272,8 @@
       "Moghaddassi"
     ],
     "date": "2021-10",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-soif-de-lessentiel.jpg"
   },
   {
     "title": "Watership Down",
@@ -1188,7 +1283,8 @@
     "rating": 4,
     "comment": "L'histoire de lapins qui vont fonder une nouvelle colonie.\nL'imaginaire autour des lapins est assez dingue !",
     "date": "2021-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/watership-down.jpg"
   },
   {
     "title": "Au carrefour des étoiles",
@@ -1198,7 +1294,8 @@
     "rating": 3,
     "comment": "Bah, c'est bien, un gout de suranné qui a du charme.\nMais l'histoire n'est pas ouf, c'est classique.",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/au-carrefour-des-etoiles.jpg"
   },
   {
     "title": "La moitié d'un monde",
@@ -1209,7 +1306,8 @@
     "rating": 4,
     "volume": "3/3",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-moitie-dun-monde-3.jpg"
   },
   {
     "title": "La moitié d'un roi",
@@ -1221,7 +1319,8 @@
     "volume": "3/3",
     "comment": "Pas mal !",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-moitie-dun-roi-3.jpg"
   },
   {
     "title": "La moitié d'une guerre",
@@ -1232,7 +1331,8 @@
     "rating": 4,
     "volume": "3/3",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-moitie-dune-guerre-3.jpg"
   },
   {
     "title": "La nuit je suis Buffy Summers",
@@ -1242,7 +1342,8 @@
     "rating": 2,
     "comment": "Plein de référence, mais que je n'ai pas saisies.",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-nuit-je-suis-buffy-summers.jpg"
   },
   {
     "title": "La philo des Super Héros",
@@ -1251,7 +1352,8 @@
     ],
     "comment": "Moui",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-philo-des-super-heros.png"
   },
   {
     "title": "Tout va mal, je vais bien, comment vivre heureux dans un monde de merde",
@@ -1260,7 +1362,8 @@
     ],
     "comment": "Ca se lit",
     "date": "2021-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/tout-va-mal-je-vais-bien-comment-vivre-heureux-dans-un-monde-de-merde.jpg"
   },
   {
     "title": "Dernière querelle",
@@ -1270,7 +1373,8 @@
     ],
     "volume": "3/3",
     "date": "2021-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/derniere-querelle-3.jpg"
   },
   {
     "title": "Déraison et sentiments",
@@ -1280,7 +1384,8 @@
     ],
     "volume": "2/3",
     "date": "2021-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/deraison-et-sentiments-2.jpg"
   },
   {
     "title": "Premier sang",
@@ -1292,7 +1397,8 @@
     "volume": "1/3",
     "comment": "Énorme. C'est Dark Fantasy. Ça se lit très bien. C'est ❤️",
     "date": "2021-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/premier-sang-1.jpg"
   },
   {
     "title": "N'oublie pas d'être heureux",
@@ -1301,7 +1407,8 @@
     ],
     "rating": 4,
     "date": "2021-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/noublie-pas-detre-heureux.jpg"
   },
   {
     "title": "Pre-Suasion",
@@ -1311,7 +1418,8 @@
     ],
     "rating": 4,
     "date": "2021-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/pre-suasion.jpg"
   },
   {
     "title": "Apprendre à vivre",
@@ -1321,7 +1429,8 @@
     ],
     "rating": 3,
     "date": "2021-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/apprendre-a-vivre.jpg"
   },
   {
     "title": "Espace",
@@ -1333,7 +1442,8 @@
     "volume": "2/2",
     "comment": "Moui, j'attendais beaucoup, pourtant ça se lit. Un peu trop abstrait.\nMais il y a une sorte de fin quand-même.\nC'est censé être la suite du Tome 1, mais aucun rapport à part le héros, mais ça pourrait être un livre séparé.",
     "date": "2021-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/espace-2.jpg"
   },
   {
     "title": "A la recherche du Sens Perdu",
@@ -1343,7 +1453,8 @@
     ],
     "rating": 4,
     "date": "2021-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/a-la-recherche-du-sens-perdu.jpg"
   },
   {
     "title": "The Practicing Stoic",
@@ -1356,7 +1467,8 @@
     "urls": [
       "https://www.amazon.fr/Practicing-Stoic-Ward-Farnsworth/dp/1567926118/ref=sr_1_1?ie=UTF8&qid=1531715888&sr=8-1&keywords=practicing+stoic"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-practicing-stoic.jpg"
   },
   {
     "title": "Les enchantements d'Ambremer",
@@ -1369,7 +1481,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH299845"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-enchantements-dambremer.jpg"
   },
   {
     "title": "Grokking Simplicity",
@@ -1380,7 +1493,8 @@
     "rating": 5,
     "date": "2021-01",
     "comment": "J'ai changé de façon d'écrire du code après avoir lu ce livre. Excellent !",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/grokking-simplicity.jpg"
   },
   {
     "title": "The Five Dysfunctions of a Team",
@@ -1391,7 +1505,8 @@
     "rating": 3,
     "date": "2021-01",
     "comment": "Le livre donne un framework pour créer une super équipe, dans le sens créer les liens, se faire confiance, etc. Mais le chemin est difficile et long.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-five-dysfunctions-of-a-team.jpg"
   },
   {
     "title": "Une histoire du corps humain a l'usage de ses occupants",
@@ -1401,7 +1516,8 @@
     "rating": 4,
     "comment": "C'est vraiment pas mal, tellement d'infos sans être chiant.",
     "date": "2021-01",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/une-histoire-du-corps-humain-a-lusage-de-ses-occupants.jpg"
   },
   {
     "title": "30 lessons for living",
@@ -1410,7 +1526,8 @@
     ],
     "rating": 4,
     "date": "2020-12",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/30-lessons-for-living.jpg"
   },
   {
     "title": "Les miracles du bazar Namiya",
@@ -1423,7 +1540,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/osiros/result/resultat.php?type_rech=rs&index%5B%5D=fulltext&bool%5B%5D=&type_source=&value%5B%5D=namiya"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-miracles-du-bazar-namiya.jpg"
   },
   {
     "title": "Où on va papa",
@@ -1433,7 +1551,8 @@
     "rating": 4,
     "comment": "Un père qui a deux enfants handicapés : il s'en moque, mais les aime, c'est drôle/touchant et triste.",
     "date": "2020-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ou-on-va-papa.jpg"
   },
   {
     "title": "Nation",
@@ -1443,7 +1562,8 @@
     "rating": 3,
     "comment": "Moui, c'est sympa, mais pas \"le meilleur Pratchett\". Peut-être que je ne l'ai pas lu \"assez vite\" et que donc il ne m'a pas touché ?!",
     "date": "2020-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/nation.jpg"
   },
   {
     "title": "Un homme, un vrai",
@@ -1453,7 +1573,8 @@
     "rating": 3,
     "comment": "C'est long, mais c'est (assez) bon. Littéraire, assez copieux, mais je suis content de l'avoir fini.",
     "date": "2020-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/un-homme-un-vrai.jpg"
   },
   {
     "title": "Spire",
@@ -1463,7 +1584,8 @@
     ],
     "volume": "3/3",
     "date": "2020-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/spire-3.jpg"
   },
   {
     "title": "Le peuple du tapis",
@@ -1473,7 +1595,8 @@
     "rating": 3,
     "comment": "Petit livre, censé être pour enfant (comme tous les Pratchett ?). Ça se laisse lire, mais ce n'est pas renversant non plus.",
     "date": "2020-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-peuple-du-tapis.jpg"
   },
   {
     "title": "Spire",
@@ -1482,7 +1605,8 @@
     ],
     "volume": "2/3",
     "date": "2020-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/spire-2.jpg"
   },
   {
     "title": "Spire",
@@ -1493,7 +1617,8 @@
     "volume": "1/3",
     "comment": "La création d'une compagnie spatiale.\nSa déchéance dans le T2.\nL'auteur va très vite sur certains passages, assez expéditif.",
     "date": "2020-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/spire-1.jpg"
   },
   {
     "title": "Terre Errante",
@@ -1503,7 +1628,8 @@
     "rating": 4,
     "comment": "Une nouvelle qui se lit bien et rapidement.\nLes humains déplacent la Terre, car le soleil va mourir.",
     "date": "2020-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/terre-errante.jpg"
   },
   {
     "title": "Dans la toile du temps",
@@ -1513,7 +1639,8 @@
     "rating": 4,
     "comment": "Un monde avec des araignées et les humains, derniers survivants, qui veulent y aller.\nLa fin est pas mal. Happy end.",
     "date": "2020-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/dans-la-toile-du-temps.jpg"
   },
   {
     "title": "Diaspora",
@@ -1523,7 +1650,8 @@
     "rating": 2,
     "comment": "Dur à lire, trop de Hard Science à mon goût (on part dans les 10 dimensions !). Mais ça avance un peu quand-même.\nDes Humains (IA) qui sont à la recherche de plus anciens qu'eux après une catastrophe qui a frappé la Terre. Je l'ai repris après l'avoir arrêté.",
     "date": "2020-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/diaspora.jpg"
   },
   {
     "title": "Axis - Spin",
@@ -1533,7 +1661,8 @@
     ],
     "volume": "2/3",
     "date": "2020-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/axis-spin-2.jpg"
   },
   {
     "title": "Vortex",
@@ -1542,7 +1671,8 @@
     ],
     "volume": "3/3",
     "date": "2020-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/vortex-3.jpg"
   },
   {
     "title": "Au service surnaturel de sa majesté",
@@ -1552,7 +1682,8 @@
     "rating": 4,
     "comment": "Ça se lit bien, aventure/action, mystère, intrigue.\nUne femme a perdu la mèmoire, mais c'est quelqu'un d'autre dans le même corps.\nElle a des pouvoirs et un poste important dans une partie secrête du gouvernement et quelqu'un veut la tuer.",
     "date": "2020-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/au-service-surnaturel-de-sa-majeste.jpg"
   },
   {
     "title": "Never split the difference",
@@ -1563,7 +1694,8 @@
     "rating": 4,
     "date": "2020-06",
     "comment": "Beaucoup de techniques. Comme tout, si je veux être bon, il faut que je m'entraine, et c'est dur !",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/never-split-the-difference.jpg"
   },
   {
     "title": "Spin",
@@ -1574,7 +1706,8 @@
     "volume": "1/3",
     "comment": "C'est bien, mais les tomes T2 et T3 sont différents du Tome 1 (découverte de la protection autour de la Terre).\nTome 1 : Les robots d'une civilisation ont entouré la Terre pour la forcer à survivre.\nTome 2 : La fuite de certains humains 4ème âge. Les humains ont créé un enfant qui pourrait communiquer avec les robots.\nTome 3 : Aller-retour 10.000 ans avec une sorte de boucle temporelle.",
     "date": "2020-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/spin-1.jpg"
   },
   {
     "title": "Ombre de l'ombre",
@@ -1584,7 +1717,8 @@
     "rating": 4,
     "comment": "Des gens qui se réunissent pour faire des dominos, ça sert entre les chapitres.\nIls ont assisté à des événements (assassinats...) et décident d'agir.\nBien, j'ai aimé les personnages, l'atmosphère. Ça tire dans tous les sens aussi des fois, et c'est même drôle par moment.",
     "date": "2020-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ombre-de-lombre.jpg"
   },
   {
     "title": "Rester groupés",
@@ -1595,7 +1729,8 @@
     "rating": 4,
     "volume": "2",
     "date": "2020-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/rester-groupes-2.jpg"
   },
   {
     "title": "Poulets grillés",
@@ -1607,7 +1742,8 @@
     "volume": "1",
     "comment": "Très bon pour les personnages, l'ambiance. L'enquête est correcte.",
     "date": "2020-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/poulets-grilles-1.jpg"
   },
   {
     "title": "Temps",
@@ -1619,7 +1755,8 @@
     "volume": "1/2",
     "comment": "C'est pas mal, mais un poil tiré par les cheveux sur les principes scientifiques (l'auteur en fait trop).\nJe ne sais pas où ça va. C'est un peu long.",
     "date": "2020-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/temps-1.jpg"
   },
   {
     "title": "Mortelle est la nuit, précédé de Chante-cloche",
@@ -1629,7 +1766,8 @@
     "rating": 4,
     "comment": "2 nouvelles d'Asimov.\nToujours des enquêtes futuristes.\nSe lit très vite.",
     "date": "2020-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/mortelle-est-la-nuit-precede-de-chante-cloche.jpg"
   },
   {
     "title": "Pour patrie l'espace",
@@ -1639,7 +1777,8 @@
     "rating": 3,
     "comment": "Sympa, suranné, action-SF avec le mec alpha et les femmes à ses pieds.\nCa se laisse lire, mais ça n'apporte pas grand-chose.",
     "date": "2020-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pour-patrie-lespace.jpg"
   },
   {
     "title": "Le problème à trois corps",
@@ -1651,7 +1790,8 @@
     "volume": "1/3",
     "comment": "Pas mal, un peu long. Ça prèpare bien le tome 2 que j'ai déjà lu.",
     "date": "2020-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-probleme-a-trois-corps-1.jpg"
   },
   {
     "title": "Chroniques du pays des mers",
@@ -1661,7 +1801,8 @@
     "rating": 3,
     "comment": "Pas mal, pas sûr d'avoir tout saisi non plus.\nJ'ai été voir les commentaires pour essayer de comprendre sans succès.\nPlutôt féministe et original.",
     "date": "2020-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/chroniques-du-pays-des-mers.jpg"
   },
   {
     "title": "La justice de l'ancillaire",
@@ -1673,7 +1814,8 @@
     "volume": "1",
     "comment": "Barbant, c'est long, trop flou.\nLes commentaires lus sur Amazon n'aident pas :/",
     "date": "2020-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-justice-de-lancillaire-1.jpg"
   },
   {
     "title": "Jennifer Morgue",
@@ -1685,7 +1827,8 @@
     "volume": "1",
     "comment": "C'est pas mal, un peu geek, un peu drôle",
     "date": "2020-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/jennifer-morgue-1.jpg"
   },
   {
     "title": "La messagère du ciel",
@@ -1697,7 +1840,8 @@
     "volume": "1",
     "comment": "Fantasy, pas mal. Chiant avec l'héroïne rebelle, mais bien foutu, surtout la fin du Tome 1 !",
     "date": "2019-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-messagere-du-ciel-1.jpg"
   },
   {
     "title": "Traquemort - Le Proscrit",
@@ -1709,7 +1853,8 @@
     "volume": "1",
     "comment": "De l'aventure, mais c'est vraiment léger et héroïque.\nPour adolescent ?",
     "date": "2019-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/traquemort-le-proscrit-1.jpg"
   },
   {
     "title": "Tueur De Trolls",
@@ -1721,7 +1866,8 @@
     "volume": "1",
     "comment": "De l'action, ça oui. Le reste est franchement trop léger.",
     "date": "2019-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/tueur-de-trolls-1.jpg"
   },
   {
     "title": "Mensonges au vif-argent",
@@ -1732,7 +1878,8 @@
     "rating": 4,
     "volume": "7",
     "date": "2019-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/mensonges-au-vif-argent-7.jpg"
   },
   {
     "title": "Nuits au fer rouge",
@@ -1743,7 +1890,8 @@
     "rating": 4,
     "volume": "6",
     "date": "2019-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/nuits-au-fer-rouge-6.jpg"
   },
   {
     "title": "Feuilles de laiton et reliure d'ombre",
@@ -1754,7 +1902,8 @@
     "rating": 4,
     "volume": "5",
     "date": "2019-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/feuilles-de-laiton-et-reliure-dombre-5.jpg"
   },
   {
     "title": "L'étoffe des Héros",
@@ -1764,7 +1913,8 @@
     "rating": 3,
     "comment": "Raconte la vie des pilotes qui iront sur la lune.\nJ'attendais plus d'humour et des dialogues.\nJe ne sais pas si les histoires sont vraies.\nLecture arrêtée p170",
     "date": "2019-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/letoffe-des-heros.jpg"
   },
   {
     "title": "Deep Learning For Search",
@@ -1774,7 +1924,8 @@
     "rating": 4,
     "date": "2019-10",
     "comment": "Des techniques avancées (réseau de neurones...) au service du Search. Pas tout lu, mais possible d'appliquer ça dans des projets.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/deep-learning-for-search.jpg"
   },
   {
     "title": "Le bizarre incident du chien pendant la nuit",
@@ -1784,7 +1935,8 @@
     "rating": 4,
     "comment": "Le narrateur est un enfant qui a un problème social et d'intelligence (quelle maladie?).\nL'auteur raconte l'effet sur sa famille et sur l'enfant.\nJ'ai aimé, car ça fait comprendre les points de vue de chacun.",
     "date": "2019-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-bizarre-incident-du-chien-pendant-la-nuit.jpg"
   },
   {
     "title": "Les questions dangereuses",
@@ -1794,7 +1946,8 @@
     "rating": 3,
     "comment": "Petit livre, sympa",
     "date": "2019-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-questions-dangereuses.jpg"
   },
   {
     "title": "Les tribulations d'Arthur Mineur",
@@ -1804,7 +1957,8 @@
     "rating": 3,
     "comment": "Bof, j'attendais de l'hilarant ou au moins drôle. Au mieux c'est un sourire que j'ai eu. C'est de la littérature, bien écrit, assez fin.",
     "date": "2019-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-tribulations-darthur-mineur.jpg"
   },
   {
     "title": "Le problème à trois corps",
@@ -1816,7 +1970,8 @@
     "volume": "2/3",
     "comment": "Je me suis rendu compte que j'ai lu le tome 2 avant le tome 1.",
     "date": "2019-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-probleme-a-trois-corps-2.jpg"
   },
   {
     "title": "Feuilles de laiton et reliure d'ombre",
@@ -1828,7 +1983,8 @@
     "volume": "4",
     "comment": "Du bon Garrett, comme toujours !",
     "date": "2019-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/feuilles-de-laiton-et-reliure-dombre-4.jpg"
   },
   {
     "title": "L'amour vous connaissez",
@@ -1838,7 +1994,8 @@
     "rating": 4,
     "comment": "Recueil de nouvelles. C'est pas mal !",
     "date": "2019-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lamour-vous-connaissez.jpg"
   },
   {
     "title": "Entre Troll et Ogre",
@@ -1848,7 +2005,8 @@
     "rating": 4,
     "comment": "Pas mal, ça tourne bien. Anthropomorphisme Troll/Ogre/Humain.",
     "date": "2019-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/entre-troll-et-ogre.jpg"
   },
   {
     "title": "Philocomix",
@@ -1861,7 +2019,8 @@
     "rating": 4,
     "date": "2019-07",
     "comment": "Des principes philosophiques en BD. Bien fait, ça donne envie de creuser",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/philocomix.jpg"
   },
   {
     "title": "Relevant Search",
@@ -1873,7 +2032,8 @@
     "rating": 5,
     "date": "2019-06",
     "comment": "Une mine d’information et de techniques sur le Search. Génial",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/relevant-search.jpg"
   },
   {
     "title": "Metro 2035",
@@ -1883,7 +2043,8 @@
     ],
     "rating": 4,
     "date": "2019-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/metro-2035.jpg"
   },
   {
     "title": "Pour quelques deniers de cuivre",
@@ -1894,7 +2055,8 @@
     "volume": "3",
     "comment": "Du bon Garrett, c'est toujours un peu sombre, un peu difficile de comprendre, mais ça marche pour l'ambiance.",
     "date": "2019-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pour-quelques-deniers-de-cuivre-3.jpg"
   },
   {
     "title": "Pour quelques deniers de cuivre",
@@ -1904,7 +2066,8 @@
     ],
     "volume": "2",
     "date": "2019-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pour-quelques-deniers-de-cuivre-2.jpg"
   },
   {
     "title": "Pour quelques deniers de cuivre",
@@ -1916,7 +2079,8 @@
     "volume": "1",
     "comment": "Toujours un peu compliqué dans certains passages, mais ça marche pour l'ambiance.",
     "date": "2019-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pour-quelques-deniers-de-cuivre-1.jpg"
   },
   {
     "title": "La fille automate",
@@ -1926,7 +2090,8 @@
     "rating": 4,
     "comment": "Bon univers !",
     "date": "2019-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-fille-automate.jpg"
   },
   {
     "title": "Altium",
@@ -1934,7 +2099,8 @@
     "authors": [],
     "volume": "2",
     "date": "2019-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/altium-2.jpg"
   },
   {
     "title": "Altium",
@@ -1943,7 +2109,8 @@
     "volume": "1",
     "comment": "C'est bon, c'est intello, mais c'est assez ampoulé et la conspiration est complexe.",
     "date": "2019-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/altium-1.jpg"
   },
   {
     "title": "Magie Ex-libris",
@@ -1951,7 +2118,8 @@
     "authors": [],
     "volume": "3",
     "date": "2018-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/magie-ex-libris-3.jpg"
   },
   {
     "title": "Magie Ex-libris",
@@ -1959,7 +2127,8 @@
     "authors": [],
     "volume": "2",
     "date": "2018-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/magie-ex-libris-2.jpg"
   },
   {
     "title": "Magie Ex-libris",
@@ -1969,7 +2138,8 @@
     "volume": "1",
     "comment": "Agréable, ça tient debout, prenant !",
     "date": "2018-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/magie-ex-libris-1.jpg"
   },
   {
     "title": "Metro 2034",
@@ -1979,7 +2149,8 @@
     ],
     "rating": 4,
     "date": "2018-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/metro-2034.jpg"
   },
   {
     "title": "L'appel du mordant - le miroir des rêves",
@@ -1991,7 +2162,8 @@
     "volume": "1",
     "comment": "Quelle branquignole cette héroîne ! Du mal à y croire.",
     "date": "2018-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lappel-du-mordant-le-miroir-des-reves-1.jpg"
   },
   {
     "title": "L'Hiverrier",
@@ -2000,7 +2172,8 @@
     ],
     "rating": 4,
     "date": "2018-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lhiverrier.jpg"
   },
   {
     "title": "Mortimer",
@@ -2009,7 +2182,8 @@
     ],
     "rating": 4,
     "date": "2018-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/mortimer.jpg"
   },
   {
     "title": "Metro 2033",
@@ -2020,7 +2194,8 @@
     "rating": 5,
     "comment": "Ambiance, peur, prenant !",
     "date": "2018-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/metro-2033.jpg"
   },
   {
     "title": "Carbon modifié",
@@ -2034,7 +2209,8 @@
     "urls": [
       "Altered Carbon"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/carbon-modifie-1.jpg"
   },
   {
     "title": "L'homme des jeux",
@@ -2046,7 +2222,8 @@
     "volume": "2",
     "comment": "Du bon!",
     "date": "2018-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lhomme-des-jeux-2.jpg"
   },
   {
     "title": "Réfléchissez et devenez riche",
@@ -2055,7 +2232,8 @@
     ],
     "comment": "En gros, c'est du self help où il faut affronter ses peurs et bam! tu es riche. Nul.",
     "date": "2018-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/reflechissez-et-devenez-riche.jpg"
   },
   {
     "title": "Une forme de guerre",
@@ -2067,7 +2245,8 @@
     "volume": "1",
     "comment": "L'histoire d'un métamorphe. Se lit comme un film d'action. Bien !",
     "date": "2018-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/une-forme-de-guerre-1.jpg"
   },
   {
     "title": "Le tueur venu du Centaure",
@@ -2075,7 +2254,8 @@
     "rating": 3,
     "comment": "Barré, pas très compréhensible, mais intriguant",
     "date": "2018-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-tueur-venu-du-centaure.jpg"
   },
   {
     "title": "59 seconds",
@@ -2085,7 +2265,8 @@
     ],
     "rating": 5,
     "date": "2018-03",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/59-seconds.jpg"
   },
   {
     "title": "Comment je suis devenue rentière en 4 ans",
@@ -2094,7 +2275,8 @@
     ],
     "rating": 3,
     "date": "2018-03",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/comment-je-suis-devenue-rentiere-en-4-ans.jpg"
   },
   {
     "title": "Greg Mandel",
@@ -2104,7 +2286,8 @@
     ],
     "volume": "3/3",
     "date": "2018-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/greg-mandel-3.jpg"
   },
   {
     "title": "Royaume magique à vendre",
@@ -2113,7 +2296,8 @@
     "rating": 3,
     "volume": "1",
     "date": "2018-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/royaume-magique-a-vendre-1.jpg"
   },
   {
     "title": "Greg Mandel",
@@ -2123,7 +2307,8 @@
     ],
     "volume": "2/3",
     "date": "2018-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/greg-mandel-2.jpg"
   },
   {
     "title": "Designing Data-Intensive Applications",
@@ -2133,7 +2318,8 @@
     "rating": 3,
     "comment": "J'ai découvert plein de sujets, et ça me fait peur.\nJe suis inquiet de mes compétences et de mon niveau de compréhension.\nLe distribué est très dur et ça va de l'écriture sur disque, aux clés de partitionnement au protocole de requête.\nPas passionné par le sujet, très verbeux, pas assez concret. Mais ce n'était pas le but du livre.\nC'est davantage un livre sur les idées et concepts, et surtout pas un tutorial.\nJ'y piocherai/relirai des parties en fonction des problèmes que je rencontrerai.",
     "date": "2018-01",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/designing-data-intensive-applications.jpg"
   },
   {
     "title": "Greg Mandel",
@@ -2145,7 +2331,8 @@
     "volume": "1/3",
     "comment": "De la bonne SF, bien décrite, avec des pouvoirs Psy de SF.\nLong de lire les 3 tomes à la suite, ~1200 pages.",
     "date": "2018-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/greg-mandel-1.jpg"
   },
   {
     "title": "No place to hide",
@@ -2155,7 +2342,8 @@
     "rating": 3,
     "comment": "L'histoire autour de Snowden. Impressionnant cet espionnage et le tabassage que le journaliste a eu!\nC'était un peu long.",
     "date": "2017-12",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/no-place-to-hide.jpg"
   },
   {
     "title": "Surely you're joking Mr. Feynman!",
@@ -2165,7 +2353,8 @@
     "rating": 4,
     "comment": "De bonnes histoires et péripéties. J'en ai parlé à plusieurs (hypnose...)",
     "date": "2017-12",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/surely-youre-joking-mr-feynman.jpg"
   },
   {
     "title": "Notes from a small island",
@@ -2175,7 +2364,8 @@
     "rating": 4,
     "comment": "Agréable, même si le vocabulaire est difficile. J'étais content de retrouver cette fraîcheur.",
     "date": "2017-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/notes-from-a-small-island.jpg"
   },
   {
     "title": "Ta deuxième vie commence quand tu comprends que tu n'en as qu'une",
@@ -2188,7 +2378,8 @@
     "urls": [
       "https://www.amazon.fr/Deuxieme-Commence-Quand-Comprends-Quune/dp/2212561164/"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ta-deuxieme-vie-commence-quand-tu-comprends-que-tu-nen-as-quune.jpg"
   },
   {
     "title": "Pour patrie l'espace",
@@ -2197,7 +2388,8 @@
     ],
     "rating": 3,
     "date": "2017-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pour-patrie-lespace.jpg"
   },
   {
     "title": "Seul sur Mars",
@@ -2207,7 +2399,8 @@
     "rating": 4,
     "comment": "Bien, il a bien galéré sur Mars !",
     "date": "2017-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/seul-sur-mars.jpg"
   },
   {
     "title": "La pierre et la flute",
@@ -2217,7 +2410,8 @@
     "rating": 2,
     "comment": "Conte, pas très intéressant et surtout la stupidité des protagonistes (mythe et légende/conte)...",
     "date": "2017-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-pierre-et-la-flute.jpg"
   },
   {
     "title": "La véritable histoire",
@@ -2228,7 +2422,8 @@
     "rating": 4,
     "comment": "SF avec une petite histoire et sa « vérité » détaillée ensuite. De la bonne SF.",
     "date": "2017-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-veritable-histoire.jpg"
   },
   {
     "title": "Captain Suicide",
@@ -2237,7 +2432,8 @@
     ],
     "rating": 1,
     "date": "2017-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/captain-suicide.jpg"
   },
   {
     "title": "Carnet Secret d'un cambrioleur",
@@ -2248,7 +2444,8 @@
     "volume": "1",
     "comment": "Un trio de cambrioleur qui ne sont pas des stars. L'époque du 20ème anglais est bien rendue.",
     "date": "2017-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/carnet-secret-dun-cambrioleur-1.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2258,7 +2455,8 @@
     ],
     "volume": "15/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-15.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2268,7 +2466,8 @@
     ],
     "volume": "14/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-14.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2278,7 +2477,8 @@
     ],
     "volume": "13/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-13.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2288,7 +2488,8 @@
     ],
     "volume": "12/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-12.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2298,7 +2499,8 @@
     ],
     "volume": "11/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-11.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2308,7 +2510,8 @@
     ],
     "volume": "10/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-10.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2318,7 +2521,8 @@
     ],
     "volume": "9/15",
     "date": "2016-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-9.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2328,7 +2532,8 @@
     ],
     "volume": "8/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-8.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2338,7 +2543,8 @@
     ],
     "volume": "7/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-7.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2348,7 +2554,8 @@
     ],
     "volume": "6/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-6.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2358,7 +2565,8 @@
     ],
     "volume": "5/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-5.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2368,7 +2576,8 @@
     ],
     "volume": "4/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-4.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2378,7 +2587,8 @@
     ],
     "volume": "3/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-3.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2388,7 +2598,8 @@
     ],
     "volume": "2/15",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-2.jpg"
   },
   {
     "title": "Miles Vorkosigan",
@@ -2400,7 +2611,8 @@
     "volume": "1/15",
     "comment": "C'est bon et ça tourne bien.",
     "date": "2016-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/miles-vorkosigan-1.jpg"
   },
   {
     "title": "La stratégie de l'ombre",
@@ -2411,7 +2623,8 @@
     "rating": 3,
     "volume": "1",
     "date": "2016-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-strategie-de-lombre-1.jpg"
   },
   {
     "title": "Basilica",
@@ -2423,7 +2636,8 @@
     "volume": "1",
     "comment": "Mou et mieux à la fin. Je pense lire les suivants.",
     "date": "2016-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/basilica-1.jpg"
   },
   {
     "title": "Kwest",
@@ -2433,7 +2647,8 @@
     "rating": 4,
     "comment": "De la bonne SF, comme toujours avec cet auteur",
     "date": "2016-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/kwest.jpg"
   },
   {
     "title": "Le projet Mars",
@@ -2443,7 +2658,8 @@
     "rating": 3,
     "comment": "Des enfants se rebellent sur Mars",
     "date": "2016-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-projet-mars.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2453,7 +2669,8 @@
     ],
     "volume": "7/10",
     "date": "2016-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-7.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2463,7 +2680,8 @@
     ],
     "volume": "6/10",
     "date": "2016-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-6.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2473,7 +2691,8 @@
     ],
     "volume": "5/10",
     "date": "2016-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-5.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2483,7 +2702,8 @@
     ],
     "volume": "4/10",
     "date": "2016-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-4.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2493,7 +2713,8 @@
     ],
     "volume": "3/10",
     "date": "2016-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-3.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2503,7 +2724,8 @@
     ],
     "volume": "2/10",
     "date": "2016-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-2.jpg"
   },
   {
     "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
@@ -2514,7 +2736,8 @@
     "rating": 3,
     "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
     "date": "2016-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/hard-drive-bill-gates-and-the-making-of-the-microsoft-empire.jpg"
   },
   {
     "title": "L'agent des ombres",
@@ -2526,7 +2749,8 @@
     "volume": "1/10",
     "comment": "Fantasy trépidante\nIl a sorti des tomes après les 7 que j'ai lu.",
     "date": "2016-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lagent-des-ombres-1.jpg"
   },
   {
     "title": "Au tréfond du ciel",
@@ -2536,7 +2760,8 @@
     "rating": 4,
     "comment": "Bien, un peu long. J'ai confondu deux personnages (Underhill et Underville) ce qui m'a causé une certaine frustration à la fin.",
     "date": "2016-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/au-trefond-du-ciel.jpg"
   },
   {
     "title": "How Software works",
@@ -2546,7 +2771,8 @@
     "rating": 4,
     "comment": "Assez ardu par moment, bons rappels et bonnes découvertes de sujets et de techniques",
     "date": "2016-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/how-software-works.jpg"
   },
   {
     "title": "PMBA",
@@ -2557,7 +2783,8 @@
     "rating": 4,
     "date": "2016-04",
     "comment": "Plein de pépites, presque trop court par moment, quelques « ahah »",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/pmba.jpg"
   },
   {
     "title": "The Personal MBA",
@@ -2567,7 +2794,8 @@
     "rating": 5,
     "comment": "Plein de perles, de schémas de pensée qui simplifie, qui donne un éclairage sur le fonctionnement de choses : finances, cerveau...",
     "date": "2016-02",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-personal-mba.jpg"
   },
   {
     "title": "Blade runner",
@@ -2575,7 +2803,8 @@
       "Philip K. Dick"
     ],
     "date": "2016-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/blade-runner.jpg"
   },
   {
     "title": "Le grand livre",
@@ -2585,7 +2814,8 @@
     "rating": 4,
     "comment": "Bonne histoire mixée en médiéval et contemporain, pas mal de suspense.",
     "date": "2016-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-grand-livre.jpg"
   },
   {
     "title": "1984",
@@ -2595,7 +2825,8 @@
     "rating": 4,
     "comment": "Inquiétant, fort sur les concepts, en avance sur son temps (un temps que je ne veux pas connaître). Bien angoissant par moment.",
     "date": "2015-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/1984.jpg"
   },
   {
     "title": "Sans parler du chien",
@@ -2603,7 +2834,8 @@
       "Connie Willis"
     ],
     "date": "2015-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/sans-parler-du-chien.jpg"
   },
   {
     "title": "The Pragmatic Programmer",
@@ -2614,7 +2846,8 @@
     "rating": 3,
     "comment": "Lu trop tard, peu de choses m'ont surpris. Et le tas de conseil (fait si, ne fait pas ça) est vraiment gênant.",
     "date": "2015-11",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-pragmatic-programmer.jpg"
   },
   {
     "title": "How to lie with Statistics",
@@ -2624,7 +2857,8 @@
     "rating": 4,
     "comment": "Certains points sont assez connus, les autres moins évidents. Intéressant et se lit très vite.",
     "date": "2015-09",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/how-to-lie-with-statistics.jpg"
   },
   {
     "title": "Permanence",
@@ -2634,7 +2868,8 @@
     "rating": 4,
     "comment": "Space-op où une nana repère un vaisseau ET qui devient sa propriété, mais un militaire le veut également, une arme méchante... Ça tourne bien.",
     "date": "2015-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/permanence.jpg"
   },
   {
     "title": "Redshirts",
@@ -2644,7 +2879,8 @@
     "rating": 5,
     "comment": "Star trek qui n'est pas Star Trek, mais les gens y sont les conséquences. C'est très bon !",
     "date": "2015-09",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/redshirts.jpg"
   },
   {
     "title": "Ventus",
@@ -2654,7 +2890,8 @@
     ],
     "volume": "2/2",
     "date": "2015-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ventus-2.jpg"
   },
   {
     "title": "Ventus",
@@ -2666,7 +2903,8 @@
     "volume": "1/2",
     "comment": "Très bon roman « moyen-age/space-op », c'est bien mené, y a de l'aventure.",
     "date": "2015-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ventus-1.jpg"
   },
   {
     "title": "C'est moi qui décide",
@@ -2676,7 +2914,8 @@
     "rating": 4,
     "comment": "Instructif et imaginatif pour régler certains conflits avec les enfants.",
     "date": "2015-07",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/cest-moi-qui-decide.jpg"
   },
   {
     "title": "People skills",
@@ -2687,7 +2926,8 @@
     "rating": 4,
     "date": "2015-06",
     "comment": "Long à lire, et intéressant sur plusieurs aspects",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/people-skills.jpg"
   },
   {
     "title": "La république des voleurs",
@@ -2699,7 +2939,8 @@
     "volume": "3",
     "comment": "Bof pour les histoires avec sa copine et le sujet en général. Beaucoup moins inventif, longuet...",
     "date": "2015-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-republique-des-voleurs-3.jpg"
   },
   {
     "title": "Team Geek",
@@ -2710,7 +2951,8 @@
     "rating": 3,
     "comment": "Un peu plan-plan, pas de super nouveauté. Les illustrations parsèment le texte, ça détend.",
     "date": "2015-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/team-geek.jpg"
   },
   {
     "title": "Tous à Zanzibar",
@@ -2720,7 +2962,8 @@
     "rating": 4,
     "comment": "Inventif, mais je n'ai accroché qu'au bout de 300 pages ! C'est assez délirant, mais pour 1968, c'est assez incroyable !",
     "date": "2015-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/tous-a-zanzibar.jpg"
   },
   {
     "title": "Le gouffre de la lune",
@@ -2730,7 +2973,8 @@
     "rating": 2,
     "comment": "Fantasy chelou avec un monde souterrain. Les descriptions sont délirantes et incompréhensibles.\nL'histoire est d'un classique.",
     "date": "2015-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-gouffre-de-la-lune.jpg"
   },
   {
     "title": "Tromper la mort",
@@ -2740,7 +2984,8 @@
     "rating": 3,
     "comment": "Bien aimé, pas excitant, mais comme il se lit vite. Quelques bons trouvailles (fausses pistes qui ne se réalisent pas pour le lecteur)",
     "date": "2015-03",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/tromper-la-mort.jpg"
   },
   {
     "title": "What the CEO wants you to know",
@@ -2751,7 +2996,8 @@
     "rating": 3,
     "date": "2015-03",
     "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/what-the-ceo-wants-you-to-know.jpg"
   },
   {
     "title": "Working effectively with unit tests",
@@ -2761,7 +3007,8 @@
     "rating": 5,
     "date": "2015-03",
     "comment": "Bon livre. J'ai été convaincu par certaines pratiques, les arguments ont fait mouches.\nC'est pragmatique, et ça m'a appris des choses sur l'écriture des tests et aussi un peu sur le code.\nLe ton est bon, avec l'impression d'avoir une conversation avec un professionnel qui me donne \nson avis et ses opinions sur du code que j'aurai pu écrire.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/working-effectively-with-unit-tests.jpg"
   },
   {
     "title": "13 à table",
@@ -2769,7 +3016,8 @@
     "rating": 3,
     "comment": "De bonnes petites nouvelles. Une est excellente, mais laquelle ?",
     "date": "2015-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/13-a-table.jpg"
   },
   {
     "title": "Révolte sur la lune",
@@ -2779,7 +3027,8 @@
     "rating": 5,
     "comment": "Vieux livre super sympa, malin et intéressant.",
     "date": "2015-02",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/revolte-sur-la-lune.jpg"
   },
   {
     "title": "L'analphabète qui savait compter",
@@ -2789,7 +3038,8 @@
     "rating": 4,
     "comment": "Bien ! Dans le même humour que Le vieux qui ne voulait pas fêter son anniversaire.",
     "date": "2015-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lanalphabete-qui-savait-compter.jpg"
   },
   {
     "title": "Le guide d'entretien de mon vélo",
@@ -2799,7 +3049,8 @@
     "rating": 3,
     "comment": "Pas mal, manque de détail peut-être.",
     "date": "2015-01",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/le-guide-dentretien-de-mon-velo.jpg"
   },
   {
     "title": "Vous êtes vendeur, le saviez-vous ?",
@@ -2810,7 +3061,8 @@
     "rating": 4,
     "date": "2015-01",
     "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/vous-etes-vendeur-le-saviez-vous.jpg"
   },
   {
     "title": "Gravé sur chrome",
@@ -2820,7 +3072,8 @@
     "rating": 5,
     "comment": "Recueil de nouvelles. L'imaginaire est splendide, les histoires un peu complexes des fois, mais quels mondes ! Génial niveau intelligence.",
     "date": "2014-12",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/grave-sur-chrome.jpg"
   },
   {
     "title": "Head First Data Analysis",
@@ -2830,7 +3083,8 @@
     "rating": 4,
     "comment": "Assez facile à lire, il m'a fait découvrir certains thèmes des statistiques, sans me casser la tête.\nDe bons chapitres, d'autres optionnels (le relationnel), et j'ai sur plusieurs sujets (heuristiques, régression linéaire...).\nHead First Statistics a l'air plus hardcore !",
     "date": "2014-12",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/head-first-data-analysis.jpg"
   },
   {
     "title": "Les veufs noirs",
@@ -2842,7 +3096,8 @@
     "volume": "2",
     "comment": "J'aime beaucoup le style, les petites histoires. Content de les retrouver le soir.",
     "date": "2014-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-veufs-noirs-2.jpg"
   },
   {
     "title": "Les veufs noirs",
@@ -2852,7 +3107,8 @@
     ],
     "volume": "1",
     "date": "2014-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-veufs-noirs-1.jpg"
   },
   {
     "title": "Secrets to Winning at Office Politics",
@@ -2863,7 +3119,8 @@
     "rating": 4,
     "date": "2014-11",
     "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/secrets-to-winning-at-office-politics.jpg"
   },
   {
     "title": "Waylander",
@@ -2873,7 +3130,8 @@
     "rating": 3,
     "comment": "Un peu ennuyeux au début, mais la fin est pas mal.\nC'est sombre, peu de joie, sale, tout en restant peut-être trop simple.",
     "date": "2014-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/waylander.jpg"
   },
   {
     "title": "Influence et manipulation",
@@ -2884,7 +3142,8 @@
     "rating": 5,
     "date": "2014-10",
     "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/influence-et-manipulation.jpg"
   },
   {
     "title": "Notes to a Software Team Leader",
@@ -2895,7 +3154,8 @@
     "rating": 2,
     "date": "2014-10",
     "comment": "Intéressant sur certains points, mais pas assez structuré, analysé.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/notes-to-a-software-team-leader.jpg"
   },
   {
     "title": "Un feu sur l'abime",
@@ -2905,7 +3165,8 @@
     "rating": 4,
     "comment": "Excellent le chapitre où l'on découvre que certains personnages sont des chiens. Le reste est un peu long. Je lirai certainement la suite.",
     "date": "2014-10",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/un-feu-sur-labime.jpg"
   },
   {
     "title": "Super Freakonomics",
@@ -2916,7 +3177,8 @@
     "rating": 4,
     "date": "2014-09",
     "comment": "Divertissant, mais sans pour autant apprendre",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/super-freakonomics.jpg"
   },
   {
     "title": "The Secrets of Consulting",
@@ -2927,7 +3189,8 @@
     "rating": 3,
     "date": "2014-09",
     "comment": "J'ai aimé les anecdotes, et certaines techniques, mais le contenu est assez peu actionnable.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-secrets-of-consulting.jpg"
   },
   {
     "title": "La Nef des fous",
@@ -2937,7 +3200,8 @@
     "rating": 4,
     "comment": "J'aurais mis 5 sur 5 s'il y avait une suite et plus de réponses, c'était tellement prenant ! C'est un roman de SF-qui-fait-peur. C'est bon, ça se lit très bien. Oui, c'était très bien.",
     "date": "2014-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-nef-des-fous.jpg"
   },
   {
     "title": "La lune seule le sait",
@@ -2949,7 +3213,8 @@
     "volume": "1/3",
     "comment": "Jules Verne et des résistants luttent contre Napoléon III. C'est du Steampunk bien fait. Ça se lit bien. L'univers est cohérents, les inventions aussi. Du bon !",
     "date": "2014-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-lune-seule-le-sait-1.jpg"
   },
   {
     "title": "La mécanique du centaure",
@@ -2959,7 +3224,8 @@
     "rating": 3,
     "comment": "SF un peu dure à comprendre de temps en temps. Déçu par la fin, mais pas mal en fin de compte.",
     "date": "2014-08",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-mecanique-du-centaure.jpg"
   },
   {
     "title": "Le casse du continuum",
@@ -2969,7 +3235,8 @@
     "rating": 4,
     "comment": "Les 7 meilleurs dans leur domaine réunis pour un casse. Ça se tient, c'est de l'aventure. Pas beaucoup de suspense non plus.",
     "date": "2014-06",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-casse-du-continuum.jpg"
   },
   {
     "title": "Dans le torrent des siècles",
@@ -2979,7 +3246,8 @@
     "rating": 4,
     "comment": "Une intrigue autour d'un homme qui revient d'une « planète » après 20 ans disparu. Il est porteur de quelques choses. Ça parle de voyage dans le temps et ça tourne bien.",
     "date": "2014-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/dans-le-torrent-des-siecles.jpg"
   },
   {
     "title": "Growth Hacker Marketing",
@@ -2989,7 +3257,8 @@
     "rating": 2,
     "comment": "Trop long pour le contenu. Je ne sais pas ce que j'en retire. Ça me fait penser à du bullshit.",
     "date": "2014-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/growth-hacker-marketing.jpg"
   },
   {
     "title": "Forever Free",
@@ -2999,7 +3268,8 @@
     ],
     "volume": "3/3",
     "date": "2014-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/forever-free-3.jpg"
   },
   {
     "title": "A Separate War",
@@ -3009,7 +3279,8 @@
     ],
     "volume": "2/3",
     "date": "2014-05",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/a-separate-war-2.jpg"
   },
   {
     "title": "La Guerre éternelle",
@@ -3024,7 +3295,8 @@
     "urls": [
       "https://www.amazon.fr/Guerre-%C3%A9ternelle-Joe-Haldeman/dp/2290308250/"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-guerre-eternelle-1.jpg"
   },
   {
     "title": "Reactive Design Patterns",
@@ -3034,7 +3306,8 @@
     "rating": 4,
     "comment": "MEAP Manning. Ça démarre bien, car il y a de bonnes choses. Pas trop pompeux.",
     "date": "2014-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/reactive-design-patterns.jpg"
   },
   {
     "title": "Comment les Eskimos gardent les bébés au chaud",
@@ -3044,7 +3317,8 @@
     "rating": 4,
     "comment": "Différents sujets sur l'éducation des enfants : peut-on/faut-il les coucher tard, les laisser se débrouiller...\nLe livre m'a donné matière à réflexion sur plusieurs points (donc très bien) : beaucoup de lâché-prise, un peu de désengagement, mais une meilleure confiance en l'enfant (qui n'est pas un adulte inachevé, mais juste un enfant), tout en étant ferme et exigeant sur les études.",
     "date": "2014-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/comment-les-eskimos-gardent-les-bebes-au-chaud.jpg"
   },
   {
     "title": "Habitat passif et basse consommation : principes fondamentaux",
@@ -3055,7 +3329,8 @@
     "rating": 4,
     "comment": "Moitié principes, moitié études de cas.\nDommage qu'il n'y ait pas plus d'autoconstruction, car le coût est important quand on ne le fait pas soi-même (prix de 850 à 2200 euros/m²).",
     "date": "2014-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/habitat-passif-et-basse-consommation-principes-fondamentaux.jpg"
   },
   {
     "title": "L'isolation par l'extérieur",
@@ -3066,7 +3341,8 @@
     "urls": [
       "https://www.eyrolles.com/"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lisolation-par-lexterieur.jpg"
   },
   {
     "title": "L'isolation écologique – Conception, matériaux, mise en oeuvre",
@@ -3076,7 +3352,8 @@
     "rating": 4,
     "comment": "De très bonnes explications sur les matériaux et méthodes d'isolation (par fiche).\nCa manque de conseil.\nGrand gagnant : ossature bois et l'isolation en bottes de paille.\nR = 6, épaisseur = 49 (45 paille + (2+2) enduits).",
     "date": "2014-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lisolation-ecologique-conception-materiaux-mise-en-oeuvre.jpg"
   },
   {
     "title": "Quand souffle le cent du nord",
@@ -3086,7 +3363,8 @@
     "rating": 4,
     "comment": "Roman sur les échanges de mail entre une femme et un homme. Prenant, car l'un comme l'autre avance, recule, jusqu'à la fin. Il existe une suite.",
     "date": "2014-04",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/quand-souffle-le-cent-du-nord.jpg"
   },
   {
     "title": "Masters of Doom",
@@ -3096,7 +3374,8 @@
     "rating": 3,
     "comment": "Un peu trop américain danse le style à mon goût. J'ai appris des choses sur les événements qui se sont passés à cette époque dans le monde du jeu vidéo.\nCarmack et Romero sont de sacrés bonhommes !\nIls travaillent dur, socialement étonnants, beaucoup de problèmes entre les gens, pas forcément technologique...",
     "date": "2014-03",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/masters-of-doom.jpg"
   },
   {
     "title": "Rénovation basse consommation",
@@ -3106,7 +3385,8 @@
     "rating": 4,
     "date": "2014-03",
     "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc.\nLe plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure).\nÀ retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/renovation-basse-consommation.jpg"
   },
   {
     "title": "The Undercover Economist",
@@ -3116,7 +3396,8 @@
     "rating": 4,
     "comment": "Bon livre d'intro à l'économie : fixation des prix, certaines théories...\nJe n'ai pas pris de notes et il faut que je le relise pour noter les « ahah » que j'ai eu.\nEn revanche, les titres ne sont pas toujours clairs et explicitent par rapport au contenu.",
     "date": "2014-02",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-undercover-economist.jpg"
   },
   {
     "title": "Choose Yourself",
@@ -3126,7 +3407,8 @@
     "rating": 3,
     "date": "2014-01",
     "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/choose-yourself.jpg"
   },
   {
     "title": "Journal d'un cobaye: Ma vie est une expérience",
@@ -3135,7 +3417,8 @@
     ],
     "date": "2014-01",
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/journal-dun-cobaye-ma-vie-est-une-experience.png"
   },
   {
     "title": "Promenons-nous dans les bois",
@@ -3145,7 +3428,8 @@
     "rating": 4,
     "comment": "Pas le meilleur Bryson, mais sympa.",
     "date": "2014-01",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/promenons-nous-dans-les-bois.jpg"
   },
   {
     "title": "Wild",
@@ -3155,7 +3439,8 @@
     "rating": 3,
     "comment": "Sympa, mais pas forcément rando, ni aventure, un peu cucul.",
     "date": "2014-01",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/wild.jpg"
   },
   {
     "title": "Choose Yourself",
@@ -3165,7 +3450,8 @@
     "rating": 3,
     "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
     "date": "2013-12",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/choose-yourself.jpg"
   },
   {
     "title": "The First 20th Hours",
@@ -3176,7 +3462,8 @@
     "rating": 4,
     "date": "2013-10",
     "comment": "C'est grâce à ce livre que j'ai appris à taper en Colemak, et que j'appendrai d'autres choses... en 20 heures !",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-first-20th-hours.jpg"
   },
   {
     "title": "Ce qu'il faut savoir avant de mourir",
@@ -3186,7 +3473,8 @@
     ],
     "rating": 4,
     "date": "2013-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/ce-quil-faut-savoir-avant-de-mourir.jpg"
   },
   {
     "title": "La mer expliquée aux terriens",
@@ -3196,7 +3484,8 @@
     "rating": 4,
     "comment": "Explique ce qu'est la mer, comment on s'y comporte, les bateaux...\nInspirant, ça me donne envie d'avoir un bateau (moins de 7 mètre, 8000 euros)",
     "date": "2013-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-mer-expliquee-aux-terriens.jpg"
   },
   {
     "title": "Qui a piqué mon fromage",
@@ -3205,7 +3494,8 @@
     ],
     "rating": 3,
     "date": "2013-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/qui-a-pique-mon-fromage.jpg"
   },
   {
     "title": "Brain Rules For Babies",
@@ -3215,7 +3505,8 @@
     ],
     "rating": 4,
     "date": "2012-04",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/brain-rules-for-babies.jpg"
   },
   {
     "title": "Crucial Conversations",
@@ -3228,7 +3519,8 @@
     ],
     "rating": 4,
     "date": "2011-09",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/crucial-conversations.jpg"
   },
   {
     "title": "Eloges de l'optimisme",
@@ -3237,7 +3529,8 @@
     ],
     "rating": 4,
     "date": "2011-09",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/eloges-de-loptimisme.jpg"
   },
   {
     "title": "Guérir le stress, l'anxiété et la dépression sans médicaments ni psychanalyse",
@@ -3247,7 +3540,8 @@
     "rating": 3,
     "date": "2011-09",
     "comment": "Pas mal de descriptions et des histoires assez intéressantes, mais les sujets de fond auraient pu tenir en 10 pages.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/guerir-le-stress-lanxiete-et-la-depression-sans-medicaments-ni-psychanalyse.jpg"
   },
   {
     "title": "Never Eat Alone",
@@ -3259,7 +3553,8 @@
     "rating": 4,
     "date": "2011-09",
     "comment": "Le pitch est : nous avons besoin des autres pour réussir. Comment devenir un membre du club",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/never-eat-alone.jpg"
   },
   {
     "title": "Rework",
@@ -3270,7 +3565,8 @@
     "rating": 4,
     "date": "2011-09",
     "comment": "Les points de vue et recettes de 37signals. Inspirant",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/rework.jpg"
   },
   {
     "title": "StrengthsFinder 2.0",
@@ -3280,7 +3576,8 @@
     "rating": 4,
     "date": "2011-09",
     "comment": "Je suis un \"Catalyste\" entre idées, systèmes et personnes",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/strengthsfinder-20.jpg"
   },
   {
     "title": "The Four Steps to the Epiphany",
@@ -3291,7 +3588,8 @@
     "rating": 3,
     "date": "2011-08",
     "comment": "Bible de la création et du lancement d'une entreprise. Complexe et compliqué, difficile à lire",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-four-steps-to-the-epiphany.jpg"
   },
   {
     "title": "The Passionate Programmer",
@@ -3302,7 +3600,8 @@
     "rating": 4,
     "date": "2011-08",
     "comment": "L'idée globale du livre est de nous faire comprendre que notre carrière est comme un produit qu'il faut rendre intéressant, donc vendable, qu'il faut vendre et maintenir intéressant.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-passionate-programmer.jpg"
   },
   {
     "title": "Le but (The Goal)",
@@ -3313,7 +3612,8 @@
     ],
     "rating": 4,
     "date": "2011-07",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/le-but-the-goal.jpg"
   },
   {
     "title": "Serons-nous immortels",
@@ -3325,7 +3625,8 @@
     "rating": 4,
     "date": "2011-07",
     "comment": "Les auteurs sont des extrémistes de la santé, mais le plus intéressant est le dernier chapitre sur comment vivre une bonne vie",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/serons-nous-immortels.jpg"
   },
   {
     "title": "L'autorité expliquée aux parents",
@@ -3334,7 +3635,8 @@
     ],
     "rating": 4,
     "date": "2011-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lautorite-expliquee-aux-parents.jpg"
   },
   {
     "title": "The Partnership Charter",
@@ -3345,7 +3647,8 @@
     "rating": 4,
     "date": "2011-06",
     "comment": "Le guide pour bien démarrer une entreprise à plusieurs. Ça n'empêche pas les égos, mais au moins, on parle des sujets difficiles avant de se lancer",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-partnership-charter.jpg"
   },
   {
     "title": "The Pledge",
@@ -3356,7 +3659,8 @@
     "rating": 3,
     "date": "2011-06",
     "comment": "L'idée principale du livre est l'ACTION. On passe trop de temps à réfléchir, à planifier, à collecter l'info, et pas assez de temps à agir, essayer, échouer (et donc apprendre).",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-pledge.jpg"
   },
   {
     "title": "Vers un monde sans pauvreté + Vers un nouveau capitalisme",
@@ -3366,7 +3670,8 @@
     "rating": 4,
     "date": "2011-06",
     "comment": "Découverte pour moi de la microfinance, et de l'entrepreneuriat social",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/vers-un-monde-sans-pauvrete-vers-un-nouveau-capitalisme.jpg"
   },
   {
     "title": "La plus belle histoire du monde",
@@ -3380,7 +3685,8 @@
     "rating": 4,
     "date": "2011-04",
     "comment": "Un bon livre. Se lit assez facilement.\nIntéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-plus-belle-histoire-du-monde.jpg"
   },
   {
     "title": "Archi Pas Chère - Maison à 100 000 euros",
@@ -3389,7 +3695,8 @@
     ],
     "rating": 4,
     "date": "2011-02",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/archi-pas-chere-maison-a-100-000-euros.jpg"
   },
   {
     "title": "Fail Safe Investing",
@@ -3400,7 +3707,8 @@
     "rating": 4,
     "date": "2011-01",
     "comment": "Conseils financiers que je continue de suivre",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/fail-safe-investing.jpg"
   },
   {
     "title": "Cessez d'etre gentil soyez vrai",
@@ -3410,7 +3718,8 @@
     ],
     "rating": 4,
     "date": "2010-01",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/cessez-detre-gentil-soyez-vrai.jpg"
   },
   {
     "title": "Les hommes viennent de Mars les femmes viennent de Vénus",
@@ -3419,7 +3728,8 @@
     ],
     "rating": 3,
     "date": "2009-05",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/les-hommes-viennent-de-mars-les-femmes-viennent-de-venus.jpg"
   },
   {
     "title": "La semaine de 4 heures",
@@ -3429,7 +3739,8 @@
     "rating": 4,
     "date": "2009-02",
     "comment": "Méthode/raccourci pour travailler moins, donc être plus malin ?",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-semaine-de-4-heures.jpg"
   },
   {
     "title": "Don't make me think",
@@ -3440,7 +3751,8 @@
     "rating": 5,
     "date": "2009-01",
     "comment": "Génial, simple, évident ! Le rapport à l'accessibilité est incroyable, humain. Top !",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/dont-make-me-think.jpg"
   },
   {
     "title": "The Mythical Man Month",
@@ -3451,7 +3763,8 @@
     "rating": 4,
     "date": "2008-10",
     "comment": "Je m'y réfère toujours, notamment pour les coûts de la doc et de rendre un logiciel plus générique",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-mythical-man-month.jpg"
   },
   {
     "title": "Joel On Software",
@@ -3461,7 +3774,8 @@
     "rating": 4,
     "date": "2008-09",
     "comment": "Plein de recommandations que j'applique aujourd'hui, et qui fonctionne bien",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/joel-on-software.jpg"
   },
   {
     "title": "The Millionaire Next Door",
@@ -3473,7 +3787,8 @@
     "rating": 5,
     "date": "2008-09",
     "comment": "Le livre est une étude des statistiques et sociologique sur les riches, qui ne sont pas ceux que l'on croit.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-millionaire-next-door.jpg"
   },
   {
     "title": "American Rigolo",
@@ -3482,7 +3797,8 @@
     ],
     "rating": 5,
     "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'Angleterre. Marrant, de belles notes d'esprit, distrayant.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/american-rigolo.jpg"
   },
   {
     "title": "Confessions d'un automate mangeur d'Opium",
@@ -3491,7 +3807,8 @@
     ],
     "rating": 4,
     "comment": "Bien aimé le début, un peu moins certains passages. Ça se lit bien.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/confessions-dun-automate-mangeur-dopium.png"
   },
   {
     "title": "Rédemption 3 - Cycle de l'Élévation",
@@ -3500,7 +3817,8 @@
       "David Brin"
     ],
     "volume": "6/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/redemption-3-cycle-de-lelevation-6.jpg"
   },
   {
     "title": "Rédemption 2 - Cycle de l'Élévation",
@@ -3509,7 +3827,8 @@
       "David Brin"
     ],
     "volume": "5/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/redemption-2-cycle-de-lelevation-5.jpg"
   },
   {
     "title": "Rédemption 1",
@@ -3518,7 +3837,8 @@
       "David Brin"
     ],
     "volume": "4/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/redemption-1-4.jpg"
   },
   {
     "title": "Elevation 2 - Cycle de l'Élévation",
@@ -3527,7 +3847,8 @@
       "David Brin"
     ],
     "volume": "3/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/elevation-2-cycle-de-lelevation-3.jpg"
   },
   {
     "title": "Elevation 1 - Cycle de l'Élévation",
@@ -3536,7 +3857,8 @@
       "David Brin"
     ],
     "volume": "2/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/elevation-1-cycle-de-lelevation-2.jpg"
   },
   {
     "title": "Marée Stellaire - Cycle de l'Élévation",
@@ -3547,7 +3869,8 @@
     "rating": 4,
     "volume": "1/6",
     "comment": "Des hommes et des dauphins (et un singe) se crashent sur une planète, poursuivi par des espèces différentes d'extraterrestres belliqueuses. Pas mal, ils se passent des choses.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/maree-stellaire-cycle-de-lelevation-1.jpg"
   },
   {
     "title": "Cycle des dieux",
@@ -3556,7 +3879,8 @@
       "David Werber"
     ],
     "volume": "3/3",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/cycle-des-dieux-3.jpg"
   },
   {
     "title": "Cycle des dieux",
@@ -3565,7 +3889,8 @@
       "David Werber"
     ],
     "volume": "2/3",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/cycle-des-dieux-2.jpg"
   },
   {
     "title": "Cycle des dieux",
@@ -3576,7 +3901,8 @@
     "rating": 2,
     "volume": "1/3",
     "comment": "Lu la trilogie, car on m'avait offert le 1er tome.\nPas accroché du tout au style, aux personnages.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/cycle-des-dieux-1.jpg"
   },
   {
     "title": "Des milliards de tapis de cheveux",
@@ -3585,14 +3911,16 @@
     ],
     "rating": 5,
     "comment": "Un scénario bien original qui m'a laissé quelques fois sur le cul!\nExcellent. Histoire novatrice, fin assez balèze. J'en aurais voulu plus à lire.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/des-milliards-de-tapis-de-cheveux.jpg"
   },
   {
     "title": "Dictionnaire révolté d'économie",
     "authors": [],
     "rating": 3,
     "comment": "Intéressant, mais un peu chiant à force (la forme, les critiques...)",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/dictionnaire-revolte-deconomie.jpg"
   },
   {
     "title": "La première Leçon du Sorcier",
@@ -3601,7 +3929,8 @@
       "Terry Goodkind"
     ],
     "volume": "2",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-premiere-lecon-du-sorcier-2.jpg"
   },
   {
     "title": "La première Leçon du Sorcier",
@@ -3612,7 +3941,8 @@
     "rating": 2,
     "volume": "1",
     "comment": "Trop enfantin",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-premiere-lecon-du-sorcier-1.jpg"
   },
   {
     "title": "Etoile de Pandore",
@@ -3621,7 +3951,8 @@
       "Peter F. Hamilton"
     ],
     "volume": "4/4",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/etoile-de-pandore-4.jpg"
   },
   {
     "title": "Etoile de Pandore",
@@ -3630,7 +3961,8 @@
       "Peter F. Hamilton"
     ],
     "volume": "3/4",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/etoile-de-pandore-3.jpg"
   },
   {
     "title": "Etoile de Pandore",
@@ -3639,7 +3971,8 @@
       "Peter F. Hamilton"
     ],
     "volume": "2/4",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/etoile-de-pandore-2.jpg"
   },
   {
     "title": "Etoile de Pandore",
@@ -3650,7 +3983,8 @@
     "rating": 5,
     "volume": "1/4",
     "comment": "C'est de la bonne SF ça !\nCa tourne bien, c'est riche, l'intrigue est super, les méchants aussi !",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/etoile-de-pandore-1.jpg"
   },
   {
     "title": "Horizons Lointains",
@@ -3659,7 +3993,8 @@
     ],
     "rating": 3,
     "comment": "Recueils de nouvelles de SF\nPas mal, mais des fois beaucoup de spoilers sur les livres originaux",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/horizons-lointains.jpg"
   },
   {
     "title": "Je creve la forme",
@@ -3671,7 +4006,8 @@
     "urls": [
       "http://www.mediathequederoubaix.fr/ark:/20179/KH325690"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/je-creve-la-forme.jpg"
   },
   {
     "title": "Jesus Video",
@@ -3680,7 +4016,8 @@
     ],
     "rating": 4,
     "comment": "On retrouve un manuel d'une caméra vidéo sur un corps vieux de 2000 ans. Des gens se mettent à chercher des réponses.\nTrès bon, un peu d'action, tout ça. Un roman d'aventure.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/jesus-video.jpg"
   },
   {
     "title": "L'alchimiste",
@@ -3690,7 +4027,8 @@
     "urls": [
       "https://www.amazon.fr/Lalchimiste-Paulo-Coelho/dp/2290004448/ref=sr_1_fkmr0_2?ie=UTF8&qid=1271934514&sr=8-2-fkmr0"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/lalchimiste.jpg"
   },
   {
     "title": "L'année où j'ai vécu selon la Bible",
@@ -3702,7 +4040,8 @@
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
     ],
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lannee-ou-jai-vecu-selon-la-bible.jpg"
   },
   {
     "title": "La Horde du Contrevent",
@@ -3712,7 +4051,8 @@
     "urls": [
       "https://www.amazon.fr/Horde-du-Contrevent-Alain-Damasio/dp/2070342263/ref=sr_1_1?ie=UTF8&s=books&qid=1252070870&sr=8-1"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-horde-du-contrevent.jpg"
   },
   {
     "title": "La conjuration des imbéciles",
@@ -3723,7 +4063,8 @@
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-conjuration-des-imbeciles.jpg"
   },
   {
     "title": "La flotte perdue",
@@ -3732,7 +4073,8 @@
       "Jack Campbell"
     ],
     "volume": "6/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-flotte-perdue-6.jpg"
   },
   {
     "title": "La flotte perdue",
@@ -3741,7 +4083,8 @@
       "Jack Campbell"
     ],
     "volume": "5/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-flotte-perdue-5.jpg"
   },
   {
     "title": "La flotte perdue",
@@ -3750,7 +4093,8 @@
       "Jack Campbell"
     ],
     "volume": "4/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-flotte-perdue-4.jpg"
   },
   {
     "title": "La flotte perdue",
@@ -3759,7 +4103,8 @@
       "Jack Campbell"
     ],
     "volume": "3/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-flotte-perdue-3.jpg"
   },
   {
     "title": "La flotte perdue",
@@ -3768,7 +4113,8 @@
       "Jack Campbell"
     ],
     "volume": "2/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-flotte-perdue-2.jpg"
   },
   {
     "title": "La flotte perdue",
@@ -3777,7 +4123,8 @@
       "Jack Campbell"
     ],
     "volume": "1/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-flotte-perdue-1.jpg"
   },
   {
     "title": "La fraternité du Panca",
@@ -3787,7 +4134,8 @@
     ],
     "rating": 4,
     "volume": "2/5",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-fraternite-du-panca-2.jpg"
   },
   {
     "title": "La fraternité du Panca",
@@ -3798,7 +4146,8 @@
     "rating": 4,
     "volume": "1/5",
     "comment": "On suit un homme de la confrérie par tome, il se passe des choses, intrigues, combats... Distrayant !",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-fraternite-du-panca-1.jpg"
   },
   {
     "title": "La justice de lancillaire",
@@ -3806,7 +4155,8 @@
       "Ann Leckie"
     ],
     "rating": 2,
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-justice-de-lancillaire.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3815,7 +4165,8 @@
       "Kevin J. Anderson"
     ],
     "volume": "7/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-7.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3824,7 +4175,8 @@
       "Kevin J. Anderson"
     ],
     "volume": "6/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-6.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3833,7 +4185,8 @@
       "Kevin J. Anderson"
     ],
     "volume": "5/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-5.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3842,7 +4195,8 @@
       "Kevin J. Anderson"
     ],
     "volume": "4/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-4.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3851,7 +4205,8 @@
       "Kevin J. Anderson"
     ],
     "volume": "3/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-3.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3860,7 +4215,8 @@
       "Kevin J. Anderson"
     ],
     "volume": "2/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-2.jpg"
   },
   {
     "title": "La saga des 7 soleils",
@@ -3869,14 +4225,16 @@
       "Kevin J. Anderson"
     ],
     "volume": "1/7",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/la-saga-des-7-soleils-1.jpg"
   },
   {
     "title": "La sobriété heureuse",
     "authors": [],
     "rating": 2,
     "comment": "L'idée qu'il faut \"décroisser\", redevenir sobre pour que le monde tourne correctement à nouveau",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/la-sobriete-heureuse.jpg"
   },
   {
     "title": "Vide en évolution",
@@ -3885,7 +4243,8 @@
       "Peter F. Hamilton"
     ],
     "volume": "3/3",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/vide-en-evolution-3.jpg"
   },
   {
     "title": "Vide temporel",
@@ -3894,7 +4253,8 @@
       "Peter F. Hamilton"
     ],
     "volume": "2/3",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/vide-temporel-2.jpg"
   },
   {
     "title": "Vide qui songe",
@@ -3905,7 +4265,8 @@
     "rating": 4,
     "volume": "1/3",
     "comment": "Lu juste après Etoile de Pandore, que j'ai trouvé mieux, ça lasse un poil.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/vide-qui-songe-1.jpg"
   },
   {
     "title": "Le dernier de son espèce",
@@ -3914,7 +4275,8 @@
     ],
     "rating": 4,
     "comment": "Histoire du dernier homme-cyborg qui est pourchassé, car justement il est le dernier.\nEncore un bon Andreas Eschach.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-dernier-de-son-espece.jpg"
   },
   {
     "title": "Le troisième policier",
@@ -3923,7 +4285,8 @@
     ],
     "rating": 3,
     "comment": "Complètement loufoque. M'a décroché quelques sourires, mais pas beaucoup plus.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-troisieme-policier.jpg"
   },
   {
     "title": "Le vieux qui ne voulait pas fêter son anniversaire",
@@ -3932,7 +4295,8 @@
     ],
     "rating": 4,
     "comment": "Début un peu étonnant (mal écrit), puis ça devient drôle et je voulais savoir la suite ! Vite !",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/le-vieux-qui-ne-voulait-pas-feter-son-anniversaire.jpg"
   },
   {
     "title": "Les Portes de la Mort",
@@ -3942,7 +4306,8 @@
       "Tracy Hickman"
     ],
     "volume": "3/3",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-portes-de-la-mort-3.jpg"
   },
   {
     "title": "Les Portes de la Mort",
@@ -3952,7 +4317,8 @@
       "Tracy Hickman"
     ],
     "volume": "2/3",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-portes-de-la-mort-2.jpg"
   },
   {
     "title": "Les Portes de la Mort",
@@ -3963,7 +4329,8 @@
     ],
     "volume": "1/3",
     "comment": "Lu, car j'avais de vieux et bons souvenirs, mais la relecture n'a pas été dingue.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-portes-de-la-mort-1.jpg"
   },
   {
     "title": "Les Salauds Gentilshommes",
@@ -3973,7 +4340,8 @@
     ],
     "rating": 5,
     "volume": "2",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-salauds-gentilshommes-2.jpg"
   },
   {
     "title": "Les Salauds Gentilshommes",
@@ -3986,7 +4354,8 @@
     "urls": [
       "https://www.amazon.fr/Salauds-Gentilshommes-Mensonges-Locke-Lamora/dp/2352940273/ref=sr_1_6?ie=UTF8&s=books&qid=1273082365&sr=1-6"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-salauds-gentilshommes-1.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -3995,7 +4364,8 @@
       "Orson Scott Card"
     ],
     "volume": "6/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-6.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4004,7 +4374,8 @@
       "Orson Scott Card"
     ],
     "volume": "5/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-5.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4013,7 +4384,8 @@
       "Orson Scott Card"
     ],
     "volume": "4/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-4.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4022,7 +4394,8 @@
       "Orson Scott Card"
     ],
     "volume": "3/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-3.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4031,7 +4404,8 @@
       "Orson Scott Card"
     ],
     "volume": "2/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-2.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4040,14 +4414,16 @@
       "Orson Scott Card"
     ],
     "volume": "1/6",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-1.jpg"
   },
   {
     "title": "Les enchantements d'Ambremer",
     "authors": [
       "Pierre Pevel"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-enchantements-dambremer.jpg"
   },
   {
     "title": "Les loups des étoiles",
@@ -4056,7 +4432,8 @@
     ],
     "rating": 3,
     "comment": "Narre les aventures d'un mercenaire, un poil fort, mais humain (ouep ouep).\nÇa se lit facilement, c'est de l'aventure pure et dure en SF.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-loups-des-etoiles.jpg"
   },
   {
     "title": "Les orphelins de Brooklyn",
@@ -4065,7 +4442,8 @@
     ],
     "rating": 4,
     "comment": "Pas transcendantal, mais j'avais envie de le finir pour savoir. Pas mal...",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-orphelins-de-brooklyn.jpg"
   },
   {
     "title": "Neverwhere",
@@ -4074,7 +4452,8 @@
     ],
     "rating": 3,
     "comment": "Un homme qui bascule dans le Londres d'en bas orienté Fantasy.\nHistoire moyenne, mais ça se lit bien.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/neverwhere.jpg"
   },
   {
     "title": "On peut se dire au revoir plusieurs fois",
@@ -4083,7 +4462,8 @@
     ],
     "rating": 2,
     "comment": "Par l'auteur d'AntiCancer, qui fait une rechute.\nPas grand chose à en retenir",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/on-peut-se-dire-au-revoir-plusieurs-fois.jpg"
   },
   {
     "title": "Où on va, papa ?",
@@ -4092,7 +4472,8 @@
     ],
     "rating": 5,
     "comment": "Caustiques, les histoires d'un père autour de ces deux enfants handicapés.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ou-on-va-papa.jpg"
   },
   {
     "title": "Pirates",
@@ -4101,7 +4482,8 @@
     ],
     "rating": 2,
     "comment": "Bof, se lit vite, mais sans plus",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/pirates.jpg"
   },
   {
     "title": "Rama",
@@ -4110,7 +4492,8 @@
       "Arthur C. Clarke"
     ],
     "volume": "4/4",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/rama-4.jpg"
   },
   {
     "title": "Rama",
@@ -4119,7 +4502,8 @@
       "Arthur C. Clarke"
     ],
     "volume": "3/4",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/rama-3.jpg"
   },
   {
     "title": "Rama",
@@ -4128,7 +4512,8 @@
       "Arthur C. Clarke"
     ],
     "volume": "2/4",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/rama-2.jpg"
   },
   {
     "title": "Rama",
@@ -4139,7 +4524,8 @@
     "rating": 4,
     "volume": "1/4",
     "comment": "Mon premier roman de SF à l'époque !",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/rama-1.jpg"
   },
   {
     "title": "Silo",
@@ -4148,7 +4534,8 @@
     ],
     "rating": 3,
     "comment": "C'est intriguant, mais pas dingue non plus.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/silo.jpg"
   },
   {
     "title": "Ubik",
@@ -4157,7 +4544,8 @@
     ],
     "rating": 4,
     "comment": "Une histoire à la Existenz (les personnages ne savent plus s'ils sont vivants ou morts).\nSympa, ça se lit vite. De là à dire que c'est un chef d'oeuvre...",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/ubik.jpg"
   },
   {
     "title": "Un peu de sagesse dans un monde de brutes",
@@ -4166,7 +4554,8 @@
     ],
     "rating": 1,
     "comment": "Pseudo-conseils, plein de « moi, je suis génial »",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/un-peu-de-sagesse-dans-un-monde-de-brutes.jpg"
   },
   {
     "title": "Une histoire de tout ou presque",
@@ -4175,7 +4564,8 @@
     ],
     "rating": 5,
     "comment": "Long à lire, mais super intéressant. Explique plein de sujets de l'infiniment petit à l'univers.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/une-histoire-de-tout-ou-presque.jpg"
   },
   {
     "title": "Walden ou la vie dans les bois",
@@ -4183,7 +4573,8 @@
     "urls": [
       "https://www.amazon.fr/Walden-ou-vie-dans-bois/dp/2070715213/ref=sr_1_2?ie=UTF8&s=books&qid=1270903702&sr=1-2"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/walden-ou-la-vie-dans-les-bois.jpg"
   },
   {
     "title": "World War Z",
@@ -4191,6 +4582,7 @@
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
     ],
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/world-war-z.jpg"
   }
 ]
