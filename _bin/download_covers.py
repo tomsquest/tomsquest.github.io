@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from typing import Generator, Any, Union, final
 
 import requests
@@ -26,13 +27,17 @@ def search_images(term: str, max_images=1) -> list[str]:
 
 def get_first_valid_image(urls: list[str]) -> Union[ImageFile, None]:
     for url in urls:
-        response = requests.get(url)
+        try:
+            response = requests.get(url)
+        except requests.exceptions.RequestException:
+            continue
+
         if response.status_code == 200:
             try:
                 img = Image.open(BytesIO(response.content))
                 return img
             except UnidentifiedImageError:
-                pass
+                continue
     return None
 
 
@@ -58,7 +63,7 @@ def make_search_query(book) -> str:
     if volume:
         volume = f"tome {volume}"
 
-    if authors:
+    if len(authors) > 0:
         authors = " ".join(authors)
 
     return f"couverture livre -audiobook {title} {volume} {authors}".strip()
@@ -77,45 +82,59 @@ if __name__ == "__main__":
     assets_folder = Path("assets/books")
     assets_folder.mkdir(exist_ok=True)
 
-    with open(books_file, "r") as f:
-        books = json.load(f)
+    def do_it(how_many_books = 5) -> bool:
+        with open(books_file, "r") as f:
+            books = json.load(f)
 
-    count = 0
-    for book in books:
-        # Skip the book if it already has a cover
-        if book.get("cover"):
-            continue
+        # check if all books have a cover
+        all_have_cover = all(book.get("cover") for book in books)
+        if all_have_cover:
+            print("All books have a cover. Exiting")
+            return False
 
-        search_query = make_search_query(book)
-        print(f"Searching for '{search_query}")
+        count = 0
+        for book in books:
+            # Skip the book if it already has a cover
+            if book.get("cover"):
+                continue
 
-        urls = search_images(search_query, max_images=10)
-        image = get_first_valid_image(urls)
-        if not image:
-            print(f"No valid image for book '{book['title']}'. Continuing")
-            continue
+            search_query = make_search_query(book)
+            print(f"Searching for '{search_query}")
 
-        # Store the image
-        filename = slug.slug(f"{book['title']} {get_volume(book)}")
-        dest_file = save_image(image, assets_folder, filename)
-        if not dest_file:
-            print(f"Could not save image for book '{book['title']}'. Continuing")
-            continue
-        print(f"Saved cover to: {dest_file}")
+            urls = search_images(search_query, max_images=10)
+            image = get_first_valid_image(urls)
+            if not image:
+                print(f"No valid image for book '{book['title']}'. Continuing")
+                continue
 
-        # Add the cover path to the book
-        book["cover"] = f"/{dest_file}"
+            # Store the image
+            filename = slug.slug(f"{book['title']} {get_volume(book)}")
+            dest_file = save_image(image, assets_folder, filename)
+            if not dest_file:
+                print(f"Could not save image for book '{book['title']}'. Continuing")
+                continue
+            print(f"Saved cover to: {dest_file}")
 
-        # Wait time between searches to avoid rate limiting
-        if count != len(books) - 1:
-            print("Waiting a little bit before the next search...")
-            time.sleep(1 + 2 * random.random())
+            # Add the cover path to the book
+            book["cover"] = f"/{dest_file}"
 
-        # Early stopping
-        count += 1
-        if count > 5:
-            break
+            # Wait time between searches to avoid rate limiting
+            if count != len(books) - 1:
+                print("Waiting a little bit before the next search...")
+                time.sleep(1 + 2 * random.random())
+
+            count += 1
+            if count >= how_many_books:
+                break
 
         # Persist the updated books
         with open(books_file, "w") as f:
             json.dump(books, f, indent=2, sort_keys=False, ensure_ascii=False)
+
+        return True
+
+    should_continue = True
+    while should_continue:
+        should_continue = do_it()
+        if should_continue:
+            print("Continuing with the next batch of books...")
