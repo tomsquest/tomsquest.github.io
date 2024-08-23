@@ -76,7 +76,7 @@ class: bookshelf
     <div class="book-row">
       {%- if book.cover -%}
         <div class="book-cover">
-            <img src="{{ book.cover }}" alt="Cover of {{ book.title }}">
+          <img  src="{{ book.cover }}" alt="Cover of {{ book.title }}" loading="lazy">
         </div>
       {%- endif -%}
       <div class="book-info">
