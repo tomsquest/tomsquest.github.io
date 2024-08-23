@@ -11,14 +11,10 @@ author:
   url: https://www.tomsquest.com/about/
   picture: /assets/images/about/me.jpg
   twitter: ThomasQueste
-# seo
+# seo:begin
 webmaster_verifications:
   google: nfl83aFbhw23MLLNf_GMkcp0SzoevfBy_lYvEDvwfso
   bing: 5711A2425B0124B3BBED08C611D28345
-#  alexa: 1234
-#  yandex: 1234
-#  baidu: 1234
-#  facebook: 1234
 logo: /assets/images/logo_512.png
 twitter:
   username: ThomasQueste
