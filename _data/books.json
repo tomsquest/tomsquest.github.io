@@ -1118,7 +1118,9 @@
   },
   {
     "title": "Le livre des énigmes de Science-Fiction",
-    "authors": ["Philippe Touboul"],
+    "authors": [
+      "Philippe Touboul"
+    ],
     "comment": "Bien, dur, mais sympa. Pas tout fait.",
     "date": "2021-12",
     "fiction": true,
@@ -1140,11 +1142,15 @@
   },
   {
     "title": "Les oiseaux du temps",
-    "authors": ["Amal El-Mohtar", "Max Gladstone"],
+    "authors": [
+      "Amal El-Mohtar",
+      "Max Gladstone"
+    ],
     "rating": 4,
     "comment": "Des lettres entre deux agents temporels de camps opposés",
     "date": "2021-11",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/les-oiseaux-du-temps.jpg"
   },
   {
     "title": "En âge florissant",
@@ -1251,7 +1257,9 @@
   },
   {
     "title": "2 jours pour vivre",
-    "authors": ["Amélie Deloffre"],
+    "authors": [
+      "Amélie Deloffre"
+    ],
     "rating": 4,
     "comment": "Des randos, à pied, à vélo en deux jours pour découvrir, accessible...",
     "date": "2021-10",
@@ -2116,7 +2124,9 @@
   {
     "title": "Magie Ex-libris",
     "series": "Magie Ex-libris",
-    "authors": ["Jim-C Hines"],
+    "authors": [
+      "Jim-C Hines"
+    ],
     "volume": "3",
     "date": "2018-12",
     "fiction": true,
@@ -2125,7 +2135,9 @@
   {
     "title": "Magie Ex-libris",
     "series": "Magie Ex-libris",
-    "authors": ["Jim-C Hines"],
+    "authors": [
+      "Jim-C Hines"
+    ],
     "volume": "2",
     "date": "2018-12",
     "fiction": true,
@@ -2134,7 +2146,9 @@
   {
     "title": "Magie Ex-libris",
     "series": "Magie Ex-libris",
-    "authors": ["Jim-C Hines"],
+    "authors": [
+      "Jim-C Hines"
+    ],
     "rating": 4,
     "volume": "1",
     "comment": "Agréable, ça tient debout, prenant !",
@@ -2251,7 +2265,9 @@
   },
   {
     "title": "Le tueur venu du Centaure",
-    "authors": ["Jacques Barbéri"],
+    "authors": [
+      "Jacques Barbéri"
+    ],
     "rating": 3,
     "comment": "Barré, pas très compréhensible, mais intriguant",
     "date": "2018-04",
@@ -2293,7 +2309,9 @@
   {
     "title": "Royaume magique à vendre",
     "series": "Royaume magique à vendre",
-    "authors": ["Terry Brooks"],
+    "authors": [
+      "Terry Brooks"
+    ],
     "rating": 3,
     "volume": "1",
     "date": "2018-03",
@@ -3013,7 +3031,9 @@
   },
   {
     "title": "13 à table",
-    "authors": ["Collectif"],
+    "authors": [
+      "Collectif"
+    ],
     "rating": 3,
     "comment": "De bonnes petites nouvelles. Une est excellente, mais laquelle ?",
     "date": "2015-02",
@@ -3917,7 +3937,9 @@
   },
   {
     "title": "Dictionnaire révolté d'économie",
-    "authors": ["Raphaël Didier"],
+    "authors": [
+      "Raphaël Didier"
+    ],
     "rating": 3,
     "comment": "Intéressant, mais un peu chiant à force (la forme, les critiques...)",
     "fiction": false,
@@ -4231,7 +4253,9 @@
   },
   {
     "title": "La sobriété heureuse",
-    "authors": ["Pierre Rabhi"],
+    "authors": [
+      "Pierre Rabhi"
+    ],
     "rating": 2,
     "comment": "L'idée qu'il faut \"décroisser\", redevenir sobre pour que le monde tourne correctement à nouveau",
     "fiction": false,
@@ -4570,7 +4594,9 @@
   },
   {
     "title": "Walden ou la vie dans les bois",
-    "authors": ["Henry David Thoreau"],
+    "authors": [
+      "Henry David Thoreau"
+    ],
     "urls": [
       "https://www.amazon.fr/Walden-ou-vie-dans-bois/dp/2070715213/ref=sr_1_2?ie=UTF8&s=books&qid=1270903702&sr=1-2"
     ],
@@ -4579,7 +4605,9 @@
   },
   {
     "title": "World War Z",
-    "authors": ["Max Brooks"],
+    "authors": [
+      "Max Brooks"
+    ],
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
     ],
