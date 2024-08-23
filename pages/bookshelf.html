@@ -90,11 +90,11 @@ class: bookshelf
           {%- if book.rating -%}
             Rating:
             {% for i in (1..5) %}
-            {% if i <= book.rating %}
-            ★
-            {% else %}
-            ☆
-            {% endif %}
+              {% if i <= book.rating %}
+              ★
+              {% else %}
+              ☆
+              {% endif %}
             {% endfor %}
             <br>
           {%- endif -%}
