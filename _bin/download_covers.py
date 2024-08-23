@@ -82,7 +82,7 @@ if __name__ == "__main__":
     assets_folder = Path("assets/books")
     assets_folder.mkdir(exist_ok=True)
 
-    def do_it(how_many_books = 5) -> bool:
+    def do_it(how_many_books=5) -> bool:
         with open(books_file, "r") as f:
             books = json.load(f)
 
