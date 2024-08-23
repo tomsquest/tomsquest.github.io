@@ -99,7 +99,7 @@ class: bookshelf
             <br>
           {%- endif -%}
 
-          {%- if book.fiction -%}
+          {%- if book.fiction != nil -%}
             Type:
             {% if book.fiction %} Fiction {% else %} Non-Fiction {% endif %}
             <br>
