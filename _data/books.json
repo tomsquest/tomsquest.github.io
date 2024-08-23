@@ -779,7 +779,7 @@
     "cover": "/assets/books/projet-derniere-chance.jpg"
   },
   {
-    "title": "Cobrastart",
+    "title": "Cobrastar",
     "authors": [
       "Thomas Bois"
     ],
@@ -787,7 +787,7 @@
     "comment": "Science Fiction Punk. C'est du Tarantino SF. J'ai aimé !",
     "date": "2022-08",
     "fiction": true,
-    "cover": "/assets/books/cobrastart.jpg"
+    "cover": "/assets/books/cobrastar.jpg"
   },
   {
     "title": "La diagonale du vide",
@@ -2068,7 +2068,7 @@
     "cover": "/assets/books/pour-quelques-deniers-de-cuivre-3.jpg"
   },
   {
-    "title": "Pour quelques deniers de cuivre",
+    "title": "Coeur d'or à l'amer",
     "series": "Garrett",
     "authors": [
       "Glen Cook"
@@ -2076,10 +2076,10 @@
     "volume": "2",
     "date": "2019-02",
     "fiction": true,
-    "cover": "/assets/books/pour-quelques-deniers-de-cuivre-2.jpg"
+    "cover": "/assets/books/coeur-dor-a-lamer-2.jpg"
   },
   {
-    "title": "Pour quelques deniers de cuivre",
+    "title": "La Belle aux bleus d'argent",
     "series": "Garrett",
     "authors": [
       "Glen Cook"
@@ -2089,7 +2089,7 @@
     "comment": "Toujours un peu compliqué dans certains passages, mais ça marche pour l'ambiance.",
     "date": "2019-02",
     "fiction": true,
-    "cover": "/assets/books/pour-quelques-deniers-de-cuivre-1.jpg"
+    "cover": "/assets/books/la-belle-aux-bleus-dargent-1.jpg"
   },
   {
     "title": "La fille automate",
@@ -2101,25 +2101,6 @@
     "date": "2019-02",
     "fiction": true,
     "cover": "/assets/books/la-fille-automate.jpg"
-  },
-  {
-    "title": "Altium",
-    "series": "Altium",
-    "authors": [],
-    "volume": "2",
-    "date": "2019-01",
-    "fiction": true,
-    "cover": "/assets/books/altium-2.jpg"
-  },
-  {
-    "title": "Altium",
-    "authors": [],
-    "rating": 3,
-    "volume": "1",
-    "comment": "C'est bon, c'est intello, mais c'est assez ampoulé et la conspiration est complexe.",
-    "date": "2019-01",
-    "fiction": true,
-    "cover": "/assets/books/altium-1.jpg"
   },
   {
     "title": "Magie Ex-libris",
@@ -2792,18 +2773,6 @@
     "date": "2016-05",
     "fiction": false,
     "cover": "/assets/books/how-software-works.jpg"
-  },
-  {
-    "title": "PMBA",
-    "subtitle": "Master the Art of Business",
-    "authors": [
-      "Josh Kaufman"
-    ],
-    "rating": 4,
-    "date": "2016-04",
-    "comment": "Plein de pépites, presque trop court par moment, quelques « ahah »",
-    "fiction": false,
-    "cover": "/assets/books/pmba.jpg"
   },
   {
     "title": "The Personal MBA",
@@ -3519,7 +3488,7 @@
     "cover": "/assets/books/qui-a-pique-mon-fromage.jpg"
   },
   {
-    "title": "Brain Rules For Babies",
+    "title": "Brain Rules For Baby",
     "subtitle": "Comment fonctionne le cerveau de bébé",
     "authors": [
       "John Medina"
@@ -3527,7 +3496,7 @@
     "rating": 4,
     "date": "2012-04",
     "fiction": false,
-    "cover": "/assets/books/brain-rules-for-babies.jpg"
+    "cover": "/assets/books/brain-rules-for-baby.jpg"
   },
   {
     "title": "Crucial Conversations",
@@ -4171,15 +4140,6 @@
     "comment": "On suit un homme de la confrérie par tome, il se passe des choses, intrigues, combats... Distrayant !",
     "fiction": true,
     "cover": "/assets/books/la-fraternite-du-panca-1.jpg"
-  },
-  {
-    "title": "La justice de lancillaire",
-    "authors": [
-      "Ann Leckie"
-    ],
-    "rating": 2,
-    "fiction": true,
-    "cover": "/assets/books/la-justice-de-lancillaire.jpg"
   },
   {
     "title": "La saga des 7 soleils",
