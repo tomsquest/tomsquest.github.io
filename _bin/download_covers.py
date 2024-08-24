@@ -86,6 +86,12 @@ def get_volume(book) -> str:
     return ""
 
 
+def make_slug(book) -> str:
+    name = book.get("series", book.get("title"))
+    volume = get_volume(book)
+    return slug.slug(f"{name} {volume}")
+
+
 if __name__ == "__main__":
     books_file = "_data/books.json"
 
@@ -118,7 +124,7 @@ if __name__ == "__main__":
                 continue
 
             # Store the image
-            filename = slug.slug(f"{book['title']} {get_volume(book)}")
+            filename = make_slug(book)
             dest_file = save_image(image, assets_folder, filename)
             if not dest_file:
                 print(f"Could not save image for book '{book['title']}'. Continuing")
