@@ -45,14 +45,24 @@ def save_image(image: ImageFile, save_directory: Path, name: str) -> Union[Path,
     dest_file = save_directory / f"{name}.jpg"
     try:
         image.save(dest_file)
+        resize_image(dest_file)
     except OSError:
         dest_file = save_directory / f"{name}.png"
         try:
             image.save(dest_file)
+            resize_image(dest_file)
         except OSError:
             print(f"Could not save image '{name}'")
             return None
     return dest_file
+
+
+def resize_image(image_path, max_width=300):
+    with Image.open(image_path) as img:
+        width_percent = (max_width / float(img.size[0]))
+        height_size = int((float(img.size[1]) * float(width_percent)))
+        img = img.resize((max_width, height_size), Image.ANTIALIAS)
+        img.save(image_path)
 
 
 def make_search_query(book) -> str:
