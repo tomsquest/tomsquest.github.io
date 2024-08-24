@@ -4,11 +4,11 @@
   description: >-
     [docker-radicale](https://github.com/tomsquest/docker-radicale/) is a Docker image
     for [Radicale](https://radicale.org), a simple Calendar and Contacts server, featuring:
-    - **a non-root user**,
-    - **a read-only filesystem**,
-    - **reduced privileges**,
-    - **multi-architecture support**,
-    - and some convenience features after all!
+    **a non-root user**,
+    **a read-only filesystem**,
+    **reduced privileges**,
+    **multi-architecture support**,
+    and some convenience features after all!
     
       Initially, I started self-hosting services on a virtual server (running OpenBSD, yay!).  
     Then I switched to my own hardware, and I wanted to run Radicale in a Docker container, with **security** in mind.
