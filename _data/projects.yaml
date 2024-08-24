@@ -19,13 +19,6 @@
   created_at: '2016-10-05T15:05:07Z'
   updated_at: '2024-06-20T10:20:57Z'
   language: Python
-  stargazers_count: 522
-  topics:
-    - caldav
-    - carddav
-    - docker
-    - docker-image
-    - radicale
 - name: fynodoro
   title: 🍅 Fynodoro, the Pomodoro Widget
   image: /assets/images/projects/fynodoro_banner.png
@@ -41,12 +34,6 @@
   created_at: '2021-11-15T12:48:37Z'
   updated_at: '2024-06-24T13:15:46Z'
   language: Go
-  stargazers_count: 18
-  topics:
-    - fyne
-    - fyneapp
-    - golang
-    - pomodoro
 - name: mediathequeroubaix.py
   title: "📚 MediathequeRoubaix.py: functional programming with Modern Python"
   image: /assets/images/projects/mediathequeroubaix_banner.png
@@ -59,9 +46,6 @@
   created_at: '2022-10-04T15:28:17Z'
   updated_at: '2023-01-14T16:33:43Z'
   language: Python
-  stargazers_count: 1
-  topics:
-    - functional-programming
 - name: q.js
   title: "⚡ Q.js: Quick-and-dirty debugging for tired JS programmers"
   image: /assets/images/projects/qjs_banner.png
@@ -74,8 +58,6 @@
   created_at: '2018-10-08T04:33:47Z'
   updated_at: '2023-04-07T04:25:15Z'
   language: TypeScript
-  stargazers_count: 4
-  topics: [ ]
 - name: dotfiles
   title: "⌨️ My dotfiles"
   image: /assets/images/projects/dotfiles_banner.png
@@ -89,12 +71,6 @@
   created_at: '2011-04-07T12:48:59Z'
   updated_at: '2024-05-14T10:30:40Z'
   language: Shell
-  stargazers_count: 63
-  topics:
-    - dotfiles
-    - shell
-    - vim
-    - zsh
 - name: lucene-stemmers
   title: 🔤 Lucene stemmers in Javascript
   image: /assets/images/projects/lucene-stemmers_banner.png
@@ -107,226 +83,144 @@
   created_at: '2021-05-07T13:40:41Z'
   updated_at: '2023-05-23T16:33:56Z'
   language: TypeScript
-  stargazers_count: 1
-  topics:
-    - lucene
-    - stem
-    - stemmer
-    - stemming
 - name: q.plugin.zsh
   description: ZSH plugin for the Q debug tool
   url: 'https://github.com/tomsquest/q.plugin.zsh'
   created_at: '2018-09-05T06:24:05Z'
   updated_at: '2018-10-15T07:55:11Z'
   language: Shell
-  stargazers_count: 0
-  topics: [ ]
 - name: auto-configure-typematrix-in-xorg
   description: Configure your Typematrix keyboard automatically in Xorg (simpler that Udev)
   url: 'https://github.com/tomsquest/auto-configure-typematrix-in-xorg'
   created_at: '2018-05-14T11:00:06Z'
   updated_at: '2018-05-14T11:28:49Z'
   language: Shell
-  stargazers_count: 0
-  topics: [ ]
 - name: better-autocompletes-with-fuzzy-matching
   description: 'Code sample for the article: Better autocompletes with Fuzzy Matching'
   url: 'https://github.com/tomsquest/better-autocompletes-with-fuzzy-matching'
   created_at: '2011-05-13T14:44:06Z'
   updated_at: '2011-05-13T15:39:30Z'
   language: JavaScript
-  stargazers_count: 10
-  topics:
-    - fuzzy-search
-    - javascript
 - name: bouyguessms
   description: Go binary + library for the unofficial Bouygues Telecom SMS Api (5 SMS/day)
   url: 'https://github.com/tomsquest/bouyguessms'
   created_at: '2017-10-10T04:59:46Z'
   updated_at: '2019-11-23T10:03:01Z'
   language: Go
-  stargazers_count: 4
-  topics:
-    - bouygues
-    - golang
-    - sms
 - name: datability
   description: Drop primary keys, foreign keys, not nulls to let you test insert only the data that matters.
   url: 'https://github.com/tomsquest/datability'
   created_at: '2015-08-06T07:20:07Z'
   updated_at: '2016-12-01T09:01:22Z'
   language: Java
-  stargazers_count: 0
-  topics:
-    - database
-    - java
-    - test
 - name: doc
   description: Doc is a typed, recursive structure. It is a disguised, convenient Map of <String, List<Doc>>.
   url: 'https://github.com/tomsquest/doc'
   created_at: '2015-04-23T13:07:00Z'
   updated_at: '2019-01-05T11:30:41Z'
   language: Java
-  stargazers_count: 0
-  topics:
-    - java
-    - json
-    - tree-structure
 - name: go-reddit
   description: "📧 Receive an email of the Top posts of configured Reddit''s subs"
   url: 'https://github.com/tomsquest/go-reddit'
   created_at: '2019-04-28T09:31:51Z'
   updated_at: '2019-04-28T09:32:08Z'
   language: Go
-  stargazers_count: 0
-  topics: [ ]
 - name: go-playlist-creator
   description: '🎶 Create a playlist in each folder containing music'
   url: 'https://github.com/tomsquest/goplaylistcreator'
   created_at: '2019-04-28T09:11:37Z'
   updated_at: '2019-04-28T09:12:03Z'
   language: Go
-  stargazers_count: 0
-  topics: [ ]
 - name: gotify
   description: 📱 JavaScript client for Gotify, a simple server for sending and receiving messages
   url: 'https://github.com/tomsquest/gotify'
   created_at: '2021-06-03T06:41:57Z'
   updated_at: '2022-01-21T11:20:55Z'
   language: TypeScript
-  stargazers_count: 3
-  topics: [ ]
 - name: intellij-master-presentation
   description: "🏆 Championship on Jetbrains Intellij editor: keyboard shortcuts, editor, settings..."
   url: 'https://github.com/tomsquest/intellij-master-presentation'
   created_at: '2017-07-13T16:30:39Z'
   updated_at: '2023-04-09T08:56:44Z'
   language: HTML
-  stargazers_count: 5
-  topics:
-    - championship
-    - intellij
-    - jetbrains-intellij
-    - keyboard-shortcuts
 - name: logback-servlet
   description: Servlet for Logback to configure log levels at runtime
   url: 'https://github.com/tomsquest/logback-servlet'
   created_at: '2015-04-17T15:25:09Z'
   updated_at: '2015-10-12T07:37:43Z'
   language: Java
-  stargazers_count: 2
-  topics:
-    - java
-    - logback
-    - logback-servlet
 - name: marklogic-docker
   description: Simplest possible Dockerfile for Marklogic
   url: 'https://github.com/tomsquest/marklogic-docker'
   created_at: '2015-12-11T08:33:36Z'
   updated_at: '2015-12-16T09:40:26Z'
   language: Shell
-  stargazers_count: 0
-  topics: [ ]
 - name: marklogic-fluent-client
   description: Fluent Java client for Marklogic
   url: 'https://github.com/tomsquest/marklogic-fluent-client'
   created_at: '2016-02-15T09:56:47Z'
   updated_at: '2016-03-10T08:22:59Z'
   language: Java
-  stargazers_count: 0
-  topics: [ ]
 - name: myyoutube
   description: 💻 Extract information about viewed YouTube videos and channels
   url: 'https://github.com/tomsquest/myyoutube'
   created_at: '2023-12-18T17:07:44Z'
   updated_at: '2023-12-20T07:51:24Z'
   language: TypeScript
-  stargazers_count: 0
-  topics: [ ]
 - name: notabene
   description: '📔 Your note-taking tool'
   url: 'https://github.com/tomsquest/notabene'
   created_at: '2019-04-28T17:21:08Z'
   updated_at: '2019-06-06T11:23:29Z'
   language: TypeScript
-  stargazers_count: 0
-  topics: [ ]
 - name: nvm-auto-use.zsh
   description: ZSH plugin to call `nvm use` automatically whenever you enter a directory that contains an `.nvmrc` file with a string telling nvm which node to use
   url: 'https://github.com/tomsquest/nvm-auto-use.zsh'
   created_at: '2016-04-30T14:47:32Z'
   updated_at: '2023-07-11T11:52:44Z'
   language: Shell
-  stargazers_count: 18
-  topics:
-    - nvm
-    - zsh
-    - zsh-plugins
 - name: nvm-init.zsh
   description: Zsh plugin which initiates NVM
   url: 'https://github.com/tomsquest/nvm-init.zsh'
   created_at: '2015-04-29T13:14:30Z'
   updated_at: '2015-04-29T13:45:31Z'
   language: Shell
-  stargazers_count: 0
-  topics:
-    - nvm
-    - zsh
-    - zsh-plugin
 - name: presentation-lombok
   description: Quick intro to Lombok, its usages and its shortcomings.
   url: 'https://github.com/tomsquest/presentation-lombok'
   created_at: '2017-10-17T15:17:46Z'
   updated_at: '2023-04-07T04:26:45Z'
   language: HTML
-  stargazers_count: 0
-  topics:
-    - java
-    - lombok
-    - presentation
 - name: raise-or-spawn
   description: raise-or-spawn brings the specified window on front, or start a new instance of the program
   url: 'https://github.com/tomsquest/raise-or-spawn'
   created_at: '2019-07-23T05:02:06Z'
   updated_at: '2019-07-23T05:05:55Z'
   language: Go
-  stargazers_count: 0
-  topics: [ ]
 - name: remarkable
   description: ⚡ Deploy fast to Marklogic
   url: 'https://github.com/tomsquest/remarkable'
   created_at: '2015-12-10T08:09:31Z'
   updated_at: '2015-12-11T08:59:03Z'
   language: Java
-  stargazers_count: 0
-  topics: [ ]
 - name: sinatra-html5boilerplate
   description: Simple Sinatra application using Html5-boilerplate
   url: 'https://github.com/tomsquest/sinatra-html5boilerplate'
   created_at: '2011-04-22T17:49:12Z'
   updated_at: '2011-04-28T05:22:16Z'
   language: JavaScript
-  stargazers_count: 4
-  topics:
-    - html5-boilerplate
-    - ruby
-    - sinatra
 - name: spring-boot-notifier
   description: 🔊 Notification of builds for Spring Boot
   url: 'https://github.com/tomsquest/spring-boot-notifier'
   created_at: '2019-04-28T17:07:47Z'
   updated_at: '2019-04-28T17:09:53Z'
   language: Java
-  stargazers_count: 0
-  topics: [ ]
 - name: workflower
   description: 🌻 A simple Workflow system (pre-prototype)
   url: 'https://github.com/tomsquest/workflower'
   created_at: '2013-10-11T15:04:29Z'
   updated_at: '2013-10-11T15:10:25Z'
   language: Java
-  stargazers_count: 0
-  topics: [ ]
 - name: 56k
   title: 🎮 56K Counter-strike clan
   image: /assets/images/projects/56k_banner.png
@@ -339,7 +233,6 @@
       but also my keybindings and config for the game.
     
       I made the website in **pure HTML** using `<table>` for layout! Yes, I didn't know div existed. 😅
-
   url: 'http://56kclan.free.fr'
   created_at: '1999-06-01T00:00:00Z'
   language: Html
