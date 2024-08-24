@@ -2267,6 +2267,7 @@
     "authors": [
       "Napoleon Hill"
     ],
+    "rating": 2,
     "comment": "En gros, c'est du self help où il faut affronter ses peurs et bam! tu es riche. Nul.",
     "date": "2018-05",
     "fiction": false,
@@ -2768,18 +2769,6 @@
     "cover": "/assets/books/lagent-des-ombres-2.jpg"
   },
   {
-    "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
-    "authors": [
-      "James Wallace",
-      "Jim Erickson"
-    ],
-    "rating": 3,
-    "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
-    "date": "2016-06",
-    "fiction": false,
-    "cover": "/assets/books/hard-drive-bill-gates-and-the-making-of-the-microsoft-empire.jpg"
-  },
-  {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
     "authors": [
@@ -2791,6 +2780,18 @@
     "date": "2016-06",
     "fiction": true,
     "cover": "/assets/books/lagent-des-ombres-1.jpg"
+  },
+  {
+    "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
+    "authors": [
+      "James Wallace",
+      "Jim Erickson"
+    ],
+    "rating": 3,
+    "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
+    "date": "2016-06",
+    "fiction": false,
+    "cover": "/assets/books/hard-drive-bill-gates-and-the-making-of-the-microsoft-empire.jpg"
   },
   {
     "title": "Au tréfond du ciel",
