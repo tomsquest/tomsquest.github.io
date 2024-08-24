@@ -43,6 +43,6 @@ plugins:
 exclude:
   - .idea
   - .ruff_cache
-  - .venv
   - _bin
   - _old
+  - venv
