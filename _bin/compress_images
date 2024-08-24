@@ -1,12 +1,18 @@
 #!/bin/bash
 
 API_KEY="${TINIFY_APIKEY}"
-IMAGE_DIR="assets/images"
 
 if [ -z "$API_KEY" ]; then
     echo "Error: TINIFY_APIKEY environment variable is not set."
     exit 1
 fi
+
+if [ -z "$1" ]; then
+    echo "Error: IMAGE_DIR argument is not provided."
+    exit 1
+fi
+
+IMAGE_DIR="$1"
 
 compress_image() {
     local image_path=$1
@@ -14,21 +20,28 @@ compress_image() {
     image_name=$(basename "$image_path")
 
     # Upload image to TinyPNG
-    response=$(curl https://api.tinify.com/shrink --user api:$API_KEY --data-binary @"$image_path" --silent --show-error)
+    response=$(curl https://api.tinify.com/shrink --user api:$API_KEY --data-binary @"$image_path" --silent --show-error --include)
 
-    # Check if the response contains an error
-    if echo "$response" | grep -q "error"; then
-        echo "Error compressing $image_name: $(echo $response | jq -r '.message')"
+    # Extract headers and body
+    headers=$(echo "$response" | sed -n '/^\r$/q;p')
+    body=$(echo "$response" | sed -n '/^\r$/,$p' | tail -n +2)
+
+    # Extract Compression-Count header
+    compression_count=$(echo "$headers" | grep -i "Compression-Count" | awk '{print $2}' | tr -d '\r')
+
+    # Check if the body contains an error
+    if echo "$body" | jq -e '.error' > /dev/null; then
+        echo "Error compressing $image_name: $(echo $body | jq -r '.message')"
         return
     fi
 
     # Get the URL of the compressed image
-    compressed_url=$(echo $response | jq -r '.output.url')
-    original_size=$(echo $response | jq -r '.input.size')
-    compressed_size=$(echo $response | jq -r '.output.size')
-    ratio=$(echo $response | jq -r '.output.ratio')
+    compressed_url=$(echo $body | jq -r '.output.url')
+    original_size=$(echo $body | jq -r '.input.size')
+    compressed_size=$(echo $body | jq -r '.output.size')
+    ratio=$(echo $body | jq -r '.output.ratio')
 
-    # test if compressed_url was returned
+    # Test if compressed_url was returned
     if [ -z "$compressed_url" ]; then
         echo "Error compressing $image_name"
         echo "Response:"
@@ -40,11 +53,12 @@ compress_image() {
     curl -s -o "$image_path" "$compressed_url"
 
     echo "Compressed $image_name from $original_size to $compressed_size (ratio: $ratio)" | tee -a /tmp/compression.log
+    echo "Compression-Count: $compression_count"
 }
 
-
-find "$IMAGE_DIR" -type f -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' | while read image; do
+find "$IMAGE_DIR" -type f -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' | sort | while read image; do
     echo "Compressing $image"
     compress_image "$image"
 done
+
 echo "Done"
