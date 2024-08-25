@@ -48,6 +48,21 @@ class: bookshelf
 
 <h2>Books</h2>
 
+<h3>Filters</h3>
+<p class="filters">
+  Type:
+  <a class="filter-by-type" data-filter="type" data-type="fiction">Fiction</a>
+  <a class="filter-by-type" data-filter="type" data-type="non-fiction">Non-Fiction</a>
+</p>
+<p class="filters">
+  Rating:
+  <a class="filter-by-rating" data-filter="rating" data-rating="5">★★★★★</a>
+  <a class="filter-by-rating" data-filter="rating" data-rating="4">★★★★☆</a>
+  <a class="filter-by-rating" data-filter="rating" data-rating="3">★★★☆☆</a>
+  <a class="filter-by-rating" data-filter="rating" data-rating="2">★★☆☆☆</a>
+  <a class="filter-by-rating" data-filter="rating" data-rating="1">★☆☆☆☆</a>
+</p>
+
 {%- for book in site.data.books -%}
   {% assign title = book.title %}
   {%- if book.subtitle -%}
@@ -66,11 +81,11 @@ class: bookshelf
     {% endcapture %}
   {%- endif -%}
 
-  <div class="book">
+<div class="book"
+     data-type="{% if book.fiction %}fiction{% else %}non-fiction{% endif %}"
+     data-rating="{{ book.rating }}">
     <h3>
-      <span class="index">
-        [{{ total_books | minus: forloop.index0 }}/{{ total_books }}]
-      </span>
+      [{{ total_books | minus: forloop.index0 }}/{{ total_books }}]
       {{ title }}
     </h3>
     <div class="book-row">
@@ -131,3 +146,42 @@ class: bookshelf
     </div>
   </div>
 {%- endfor -%}
+
+
+
+<script>
+let activeFilters = {
+  type: null,
+  rating: null
+};
+
+function filterBooks() {
+  document.querySelectorAll('.book').forEach(book => {
+    const matches = Object.keys(activeFilters).every(filter => {
+      return !activeFilters[filter] || book.getAttribute(`data-${filter}`) === activeFilters[filter];
+    });
+    book.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function filterBy(link) {
+  const filterType = link.getAttribute('data-filter');
+  const filterValue = link.getAttribute(`data-${filterType}`);
+
+  if (link.classList.contains('active')) {
+    link.classList.remove('active');
+    activeFilters[filterType] = null;
+  } else {
+    document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(a => a.classList.remove('active'));
+    link.classList.add('active');
+    activeFilters[filterType] = filterValue;
+  }
+  filterBooks();
+}
+
+document.querySelectorAll('[data-filter]').forEach(link => {
+  link.addEventListener('click', function() {
+    filterBy(this);
+  });
+});
+</script>

@@ -286,22 +286,41 @@ footer.footer-container {
 }
 
 .bookshelf {
-  .book-row {
-    display: flex;
-  }
+  .filters {
+    a {
+      text-decoration: none;
+      padding: 0.25em 0.75em;
+      border-radius: 1em;
+      border: 1px solid var(--b-bg-3);
+    }
 
-  .book-cover {
-    margin-right: 1em;
+    a.active {
+      background-color: var(--b-bg-3);
+    }
 
-    img {
-      max-width: 150px;
-      height: auto;
+    a:hover {
+      background-color: var(--b-bg-3);
     }
   }
 
-  .book-info {
-    blockquote {
-      margin-top: .5em;
+  .book {
+    .book-row {
+      display: flex;
+
+      .book-cover {
+        margin-right: 1em;
+
+        img {
+          max-width: 150px;
+          height: auto;
+        }
+      }
+
+      .book-info {
+        blockquote {
+          margin-top: .5em;
+        }
+      }
     }
   }
 }
