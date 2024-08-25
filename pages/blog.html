@@ -60,8 +60,14 @@ function filterBy(link) {
 }
 
 document.querySelectorAll('[data-filter]').forEach(link => {
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
     filterBy(this);
+  });
+
+  // Needed to remove focus on touch devices when the class is .active
+  link.addEventListener('touchend', function() {
+    this.blur();
   });
 });
 </script>
