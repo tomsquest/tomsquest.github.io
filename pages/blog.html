@@ -5,11 +5,10 @@ title: Blog
 class: blog
 ---
 
-<p class="language-filters">
+<p class="filters">
   Filter by language:
-  <a onclick="filterByLang(this)" class="active">All</a>,
-  <a onclick="filterByLang(this,'en')">English</a>,
-  <a onclick="filterByLang(this,'fr')">French</a>
+  <a data-filter="lang" data-lang="en">English</a>
+  <a data-filter="lang" data-lang="fr">French</a>
 </p>
 
 <ul>
@@ -33,20 +32,36 @@ class: blog
 </ul>
 
 <script>
-  function filterByLang(link, lang) {
-    // Remove active class from all links
-    document
-      .querySelectorAll('.blog .language-filters a')
-      .forEach(a => a.classList.remove('active'));
-    link.classList.add('active');
+const itemsSelector = '.blog li';
+let activeFilters = {};
 
-    // Show/hide posts based on language
-    document.querySelectorAll('.blog li').forEach(li => {
-      if (lang) {
-        li.style.display = li.getAttribute('data-lang') === lang ? 'block' : 'none';
-      } else {
-        li.style.display = 'block';
-      }
+function filterItems() {
+  document.querySelectorAll(itemsSelector).forEach(item => {
+    const matches = Object.keys(activeFilters).every(filter => {
+      return !activeFilters[filter] || item.getAttribute(`data-${filter}`) === activeFilters[filter];
     });
+    item.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function filterBy(link) {
+  const filterType = link.getAttribute('data-filter');
+  const filterValue = link.getAttribute(`data-${filterType}`);
+
+  if (link.classList.contains('active')) {
+    link.classList.remove('active');
+    activeFilters[filterType] = null;
+  } else {
+    document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(a => a.classList.remove('active'));
+    link.classList.add('active');
+    activeFilters[filterType] = filterValue;
   }
+  filterItems();
+}
+
+document.querySelectorAll('[data-filter]').forEach(link => {
+  link.addEventListener('click', function() {
+    filterBy(this);
+  });
+});
 </script>

@@ -51,16 +51,16 @@ class: bookshelf
 <h3>Filters</h3>
 <p class="filters">
   Type:
-  <a class="filter-by-type" data-filter="type" data-type="fiction">Fiction</a>
-  <a class="filter-by-type" data-filter="type" data-type="non-fiction">Non-Fiction</a>
+  <a data-filter="type" data-type="fiction">Fiction</a>
+  <a data-filter="type" data-type="non-fiction">Non-Fiction</a>
 </p>
 <p class="filters">
   Rating:
-  <a class="filter-by-rating" data-filter="rating" data-rating="5">★★★★★</a>
-  <a class="filter-by-rating" data-filter="rating" data-rating="4">★★★★☆</a>
-  <a class="filter-by-rating" data-filter="rating" data-rating="3">★★★☆☆</a>
-  <a class="filter-by-rating" data-filter="rating" data-rating="2">★★☆☆☆</a>
-  <a class="filter-by-rating" data-filter="rating" data-rating="1">★☆☆☆☆</a>
+  <a data-filter="rating" data-rating="5">★★★★★</a>
+  <a data-filter="rating" data-rating="4">★★★★☆</a>
+  <a data-filter="rating" data-rating="3">★★★☆☆</a>
+  <a data-filter="rating" data-rating="2">★★☆☆☆</a>
+  <a data-filter="rating" data-rating="1">★☆☆☆☆</a>
 </p>
 
 {%- for book in site.data.books -%}
@@ -147,20 +147,16 @@ class: bookshelf
   </div>
 {%- endfor -%}
 
-
-
 <script>
-let activeFilters = {
-  type: null,
-  rating: null
-};
+const itemsSelector = '.book';
+let activeFilters = {};
 
-function filterBooks() {
-  document.querySelectorAll('.book').forEach(book => {
+function filterItems() {
+  document.querySelectorAll(itemsSelector).forEach(item => {
     const matches = Object.keys(activeFilters).every(filter => {
-      return !activeFilters[filter] || book.getAttribute(`data-${filter}`) === activeFilters[filter];
+      return !activeFilters[filter] || item.getAttribute(`data-${filter}`) === activeFilters[filter];
     });
-    book.style.display = matches ? 'block' : 'none';
+    item.style.display = matches ? 'block' : 'none';
   });
 }
 
@@ -176,7 +172,7 @@ function filterBy(link) {
     link.classList.add('active');
     activeFilters[filterType] = filterValue;
   }
-  filterBooks();
+  filterItems();
 }
 
 document.querySelectorAll('[data-filter]').forEach(link => {

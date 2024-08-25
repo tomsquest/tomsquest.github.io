@@ -173,6 +173,41 @@ footer.footer-container {
   }
 }
 
+// Class for filters (by language, rating, etc.)
+.filters {
+  a {
+    text-decoration: none;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    border: 1px solid var(--b-bg-3);
+  }
+
+  a.active {
+    background-color: var(--b-bg-3);
+  }
+
+  a:hover {
+    background-color: var(--b-bg-3);
+  }
+}
+
+.filters {
+  a {
+    text-decoration: none;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    border: 1px solid var(--b-bg-3);
+  }
+
+  a.active {
+    background-color: var(--b-bg-3);
+  }
+
+  a:hover {
+    background-color: var(--b-bg-3);
+  }
+}
+
 .about {
   @include link-with-icon;
 
@@ -206,9 +241,6 @@ footer.footer-container {
 }
 
 .blog {
-  .active {
-    font-weight: bold;
-  }
 
   ul {
     padding-left: 0;
@@ -286,22 +318,6 @@ footer.footer-container {
 }
 
 .bookshelf {
-  .filters {
-    a {
-      text-decoration: none;
-      padding: 0.25em 0.75em;
-      border-radius: 1em;
-      border: 1px solid var(--b-bg-3);
-    }
-
-    a.active {
-      background-color: var(--b-bg-3);
-    }
-
-    a:hover {
-      background-color: var(--b-bg-3);
-    }
-  }
 
   .book {
     .book-row {
