@@ -175,23 +175,12 @@ footer.footer-container {
 
 // Class for filters (by language, rating, etc.)
 .filters {
-  a {
-    text-decoration: none;
-    padding: 0.25em 0.75em;
-    border-radius: 1em;
-    border: 1px solid var(--b-bg-3);
-  }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.2em; // Add gap to prevent border collision
+  margin-bottom: 0.5em; // Reduce space between filter sets
 
-  a.active {
-    background-color: var(--b-bg-3);
-  }
-
-  a:hover {
-    background-color: var(--b-bg-3);
-  }
-}
-
-.filters {
   a {
     text-decoration: none;
     padding: 0.25em 0.75em;
@@ -318,7 +307,6 @@ footer.footer-container {
 }
 
 .bookshelf {
-
   .book {
     .book-row {
       display: flex;
