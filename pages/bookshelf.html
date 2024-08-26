@@ -180,10 +180,5 @@ document.querySelectorAll('[data-filter]').forEach(link => {
     e.preventDefault();
     filterBy(this);
   });
-
-  // Needed to remove focus on touch devices when the class is .active
-  link.addEventListener('touchend', function() {
-    this.blur();
-  });
 });
 </script>
