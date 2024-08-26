@@ -147,38 +147,8 @@ class: bookshelf
   </div>
 {%- endfor -%}
 
-<script>
-const itemsSelector = '.book';
-let activeFilters = {};
+<script type="module">
+  import { initializeFilters } from '/assets/js/filter.js'
 
-function filterItems() {
-  document.querySelectorAll(itemsSelector).forEach(item => {
-    const matches = Object.keys(activeFilters).every(filter => {
-      return !activeFilters[filter] || item.getAttribute(`data-${filter}`) === activeFilters[filter];
-    });
-    item.style.display = matches ? 'block' : 'none';
-  });
-}
-
-function filterBy(link) {
-  const filterType = link.getAttribute('data-filter');
-  const filterValue = link.getAttribute(`data-${filterType}`);
-
-  if (link.classList.contains('active')) {
-    link.classList.remove('active');
-    activeFilters[filterType] = null;
-  } else {
-    document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(a => a.classList.remove('active'));
-    link.classList.add('active');
-    activeFilters[filterType] = filterValue;
-  }
-  filterItems();
-}
-
-document.querySelectorAll('[data-filter]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    filterBy(this);
-  });
-});
+  initializeFilters('.book')
 </script>
