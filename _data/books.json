@@ -1,14 +1,14 @@
 [
   {
-    "title": "Paresse pour tous",
+    "title": "La pierre et le sabre",
     "authors": [
-      "Hadrien Klent"
+      "Eiji Yoshikawa"
     ],
     "rating": 4,
-    "comment": "Ah si c'était vrai ! Trois heures par jour.\nEnfin de compte, déçu de me réveiller de ce beau rêve",
+    "comment": "Dépaysant, mais assez suranné. J'avais hate de continuer l'aventure.\nJ'aurais aimé plus de contexte/explication sur le monde à l'époque des samouraïs.\nLirai-je la suite ?",
     "date": "2024-09",
     "fiction": true,
-    "cover": "/assets/books/paresse-pour-tous.jpg"
+    "cover": "/assets/books/la-pierre-et-le-sabre.jpg"
   },
   {
     "title": "Nudge",
@@ -24,15 +24,15 @@
     "cover": "/assets/books/nudge.jpg"
   },
   {
-    "title": "La pierre et le sabre",
+    "title": "Paresse pour tous",
     "authors": [
-      "Eiji Yoshikawa"
+      "Hadrien Klent"
     ],
     "rating": 4,
-    "comment": "Dépaysant, mais assez suranné. J'avais hate de continuer l'aventure.\nJ'aurais aimé plus de contexte/explication sur le monde à l'époque des samouraïs.\nLirai-je la suite ?",
+    "comment": "Ah si c'était vrai ! Trois heures par jour.\nEnfin de compte, déçu de me réveiller de ce beau rêve",
     "date": "2024-09",
     "fiction": true,
-    "cover": "/assets/books/la-pierre-et-le-sabre.jpg"
+    "cover": "/assets/books/paresse-pour-tous.jpg"
   },
   {
     "title": "The Expanse",
@@ -392,19 +392,6 @@
     "cover": "/assets/books/grokking-functional-programming.jpg"
   },
   {
-    "title": "Harrow la neuvième",
-    "series": "Le Tombeau scellé",
-    "authors": [
-      "Tamsyn Muir"
-    ],
-    "rating": 3,
-    "volume": "2/3",
-    "comment": "Je n'ai pas tout compris dans ce tome, avec des sortes de retours en arrière. Déçu.",
-    "date": "2023-08",
-    "fiction": true,
-    "cover": "/assets/books/harrow-la-neuvieme-2.jpg"
-  },
-  {
     "title": "L'homme qui savait la langue des serpents",
     "authors": [
       "Andrus Kivirahk"
@@ -427,6 +414,19 @@
     "date": "2023-08",
     "fiction": true,
     "cover": "/assets/books/le-livre-des-martyrs-2.jpg"
+  },
+  {
+    "title": "Harrow la neuvième",
+    "series": "Le Tombeau scellé",
+    "authors": [
+      "Tamsyn Muir"
+    ],
+    "rating": 3,
+    "volume": "2/3",
+    "comment": "Je n'ai pas tout compris dans ce tome, avec des sortes de retours en arrière. Déçu.",
+    "date": "2023-08",
+    "fiction": true,
+    "cover": "/assets/books/harrow-la-neuvieme-2.jpg"
   },
   {
     "title": "Magellan",
@@ -528,6 +528,16 @@
     "date": "2023-03",
     "fiction": true,
     "cover": "/assets/books/capitale-du-sud-2.jpg"
+  },
+  {
+    "title": "Head First Statistics",
+    "authors": [
+      "Dawn Griffiths"
+    ],
+    "rating": 4,
+    "comment": "80 heures pour le lire !\nUne belle épreuve.\nJ'ai appris plein de choses, et d'une façon ludique.\nJe pense que je perdrai une bonne part des connaissances au fil du temps, mais ça fait partie du jeu.",
+    "date": "2023-03",
+    "fiction": false
   },
   {
     "title": "Le Livre des martyrs",
@@ -1178,18 +1188,6 @@
     "cover": "/assets/books/shakespeare-antibiographie.jpg"
   },
   {
-    "title": "Les oiseaux du temps",
-    "authors": [
-      "Amal El-Mohtar",
-      "Max Gladstone"
-    ],
-    "rating": 4,
-    "comment": "Des lettres entre deux agents temporels de camps opposés",
-    "date": "2021-11",
-    "fiction": true,
-    "cover": "/assets/books/les-oiseaux-du-temps.jpg"
-  },
-  {
     "title": "En âge florissant",
     "subtitle": "De la renaissance à la réforme",
     "authors": [
@@ -1253,6 +1251,18 @@
     ],
     "fiction": true,
     "cover": "/assets/books/la-cinquieme-saison-les-livres-de-la-terre-fracturee-1.jpg"
+  },
+  {
+    "title": "Les oiseaux du temps",
+    "authors": [
+      "Amal El-Mohtar",
+      "Max Gladstone"
+    ],
+    "rating": 4,
+    "comment": "Des lettres entre deux agents temporels de camps opposés",
+    "date": "2021-11",
+    "fiction": true,
+    "cover": "/assets/books/les-oiseaux-du-temps.jpg"
   },
   {
     "title": "Les oiseaux du temps",
@@ -2769,6 +2779,18 @@
     "cover": "/assets/books/lagent-des-ombres-2.jpg"
   },
   {
+    "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
+    "authors": [
+      "James Wallace",
+      "Jim Erickson"
+    ],
+    "rating": 3,
+    "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
+    "date": "2016-06",
+    "fiction": false,
+    "cover": "/assets/books/hard-drive-bill-gates-and-the-making-of-the-microsoft-empire.jpg"
+  },
+  {
     "title": "L'agent des ombres",
     "series": "L'agent des ombres",
     "authors": [
@@ -2780,18 +2802,6 @@
     "date": "2016-06",
     "fiction": true,
     "cover": "/assets/books/lagent-des-ombres-1.jpg"
-  },
-  {
-    "title": "Hard drive, Bill Gates and the Making of the Microsoft Empire",
-    "authors": [
-      "James Wallace",
-      "Jim Erickson"
-    ],
-    "rating": 3,
-    "comment": "Intéressant, mais j'aurais aimé plus de détail sur comment l'association fonctionnait en interne, les parts, les salaires...",
-    "date": "2016-06",
-    "fiction": false,
-    "cover": "/assets/books/hard-drive-bill-gates-and-the-making-of-the-microsoft-empire.jpg"
   },
   {
     "title": "Au tréfond du ciel",
@@ -3820,6 +3830,41 @@
     "comment": "Le livre est une étude des statistiques et sociologique sur les riches, qui ne sont pas ceux que l'on croit.",
     "fiction": false,
     "cover": "/assets/books/the-millionaire-next-door.jpg"
+  },
+  {
+    "title": "Head First C#",
+    "authors": [
+      "Andrew Stellman",
+      "Jennifer Greene"
+    ],
+    "date": "2008-02",
+    "rating": 4,
+    "fiction": false
+  },
+  {
+    "title": "Head First Design Patterns",
+    "authors": [
+      "Elisabeth Freeman",
+      "Eric Freeman",
+      "Bert Bates",
+      "Kathy Sierra"
+    ],
+    "rating": 5,
+    "comment": "Une claque coté apprentissage !\n. C'est quand je me posais des questions sur un Pattern, et que l'explication est donnée sur la page d'après, que j'ai compris que ce type de livre est vraiment bien fait.\nTop !",
+    "date": "2005-09",
+    "fiction": false
+  },
+  {
+    "title": "Head First EJB",
+    "subtitle": "Passing the Sun Certified Business Component Developer Exam",
+    "authors": [
+      "Kathy Sierra",
+      "Bert Bates"
+    ],
+    "rating": 4,
+    "comment": "Ce livre m'a aidé pour passer la certification EJB, et ça a marché !",
+    "date": "2005-06",
+    "fiction": false
   },
   {
     "title": "American Rigolo",
