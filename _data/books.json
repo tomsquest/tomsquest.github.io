@@ -537,7 +537,8 @@
     "rating": 4,
     "comment": "80 heures pour le lire !\nUne belle épreuve.\nJ'ai appris plein de choses, et d'une façon ludique.\nJe pense que je perdrai une bonne part des connaissances au fil du temps, mais ça fait partie du jeu.",
     "date": "2023-03",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/head-first-statistics.jpg"
   },
   {
     "title": "Le Livre des martyrs",
@@ -3839,7 +3840,8 @@
     ],
     "date": "2008-02",
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/head-first-c.jpg"
   },
   {
     "title": "Head First Design Patterns",
@@ -3852,7 +3854,8 @@
     "rating": 5,
     "comment": "Une claque coté apprentissage !\n. C'est quand je me posais des questions sur un Pattern, et que l'explication est donnée sur la page d'après, que j'ai compris que ce type de livre est vraiment bien fait.\nTop !",
     "date": "2005-09",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/head-first-design-patterns.jpg"
   },
   {
     "title": "Head First EJB",
@@ -3864,7 +3867,8 @@
     "rating": 4,
     "comment": "Ce livre m'a aidé pour passer la certification EJB, et ça a marché !",
     "date": "2005-06",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/head-first-ejb.jpg"
   },
   {
     "title": "American Rigolo",
