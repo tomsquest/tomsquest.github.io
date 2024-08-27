@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import subprocess
 from typing import Generator, Any, Union, final
 
 import requests
@@ -45,12 +46,10 @@ def save_image(image: ImageFile, save_directory: Path, name: str) -> Union[Path,
     dest_file = save_directory / f"{name}.jpg"
     try:
         image.save(dest_file)
-        resize_image(dest_file)
     except OSError:
         dest_file = save_directory / f"{name}.png"
         try:
             image.save(dest_file)
-            resize_image(dest_file)
         except OSError:
             print(f"Could not save image '{name}'")
             return None
@@ -58,11 +57,7 @@ def save_image(image: ImageFile, save_directory: Path, name: str) -> Union[Path,
 
 
 def resize_image(image_path, max_width=300):
-    with Image.open(image_path) as img:
-        width_percent = (max_width / float(img.size[0]))
-        height_size = int((float(img.size[1]) * float(width_percent)))
-        img = img.resize((max_width, height_size), Image.ANTIALIAS)
-        img.save(image_path)
+    subprocess.run(["mogrify", "-resize", f"{max_width}x", str(image_path)], check=True)
 
 
 def make_search_query(book) -> str:
@@ -129,6 +124,7 @@ if __name__ == "__main__":
             if not dest_file:
                 print(f"Could not save image for book '{book['title']}'. Continuing")
                 continue
+            resize_image(dest_file)
             print(f"Saved cover to: {dest_file}")
 
             # Add the cover path to the book
