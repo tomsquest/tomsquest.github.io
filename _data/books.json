@@ -530,17 +530,6 @@
     "cover": "/assets/books/capitale-du-sud-2.jpg"
   },
   {
-    "title": "Head First Statistics",
-    "authors": [
-      "Dawn Griffiths"
-    ],
-    "rating": 4,
-    "comment": "80 heures pour le lire !\nUne belle épreuve.\nJ'ai appris plein de choses, et d'une façon ludique.\nJe pense que je perdrai une bonne part des connaissances au fil du temps, mais ça fait partie du jeu.",
-    "date": "2023-03",
-    "fiction": false,
-    "cover": "/assets/books/head-first-statistics.jpg"
-  },
-  {
     "title": "Le Livre des martyrs",
     "series": "Le Livre des martyrs",
     "authors": [
@@ -1353,6 +1342,17 @@
     "date": "2021-09",
     "fiction": true,
     "cover": "/assets/books/au-carrefour-des-etoiles.jpg"
+  },
+  {
+    "title": "Head First Statistics",
+    "authors": [
+      "Dawn Griffiths"
+    ],
+    "rating": 4,
+    "comment": "80 heures pour le lire !\nUne belle épreuve.\nJ'ai appris plein de choses, et d'une façon ludique.\nJe pense que je perdrai une bonne part des connaissances au fil du temps, mais ça fait partie du jeu.",
+    "date": "2021-09",
+    "fiction": false,
+    "cover": "/assets/books/head-first-statistics.jpg"
   },
   {
     "title": "La moitié d'un monde",
@@ -3376,7 +3376,9 @@
   },
   {
     "title": "L'isolation par l'extérieur",
-    "authors": [],
+    "authors": [
+
+    ],
     "rating": 2,
     "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
     "date": "2014-04",
