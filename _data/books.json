@@ -1,5 +1,16 @@
 [
   {
+    "title": "Double tranchant",
+    "authors": [
+      "Joe Abercrombie"
+    ],
+    "rating": 5,
+    "comment": "Chapitres par personnages, que l'on retrouve des fois plusieurs fois.\nTop en retrouvant des héros d'autres livres de l'auteur.",
+    "date": "2024-09",
+    "fiction": true,
+    "cover": "/assets/books/double-tranchant.jpg"
+  },
+  {
     "title": "La pierre et le sabre",
     "authors": [
       "Eiji Yoshikawa"
@@ -3377,7 +3388,6 @@
   {
     "title": "L'isolation par l'extérieur",
     "authors": [
-
     ],
     "rating": 2,
     "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
