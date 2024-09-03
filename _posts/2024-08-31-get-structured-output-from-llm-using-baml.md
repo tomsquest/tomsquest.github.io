@@ -1,15 +1,20 @@
 ---
 title: "Get structured output from a Language Model using BAML"
+lang: en
+last_modified_at: 2024-09-02
 ---
 
 What if your LLM produces invalid JSON, and worse, JSON that does not respect your schema? 
 Let us dig into [BAML](https://github.com/BoundaryML/baml), a tool to solve that, and more!
+
+Update(2024-09-02): Add the [repository of the project](https://github.com/tomsquest/llm_extract_books)
 
 ## TL;DR
 
 - LLMs are not consistent at producing JSON, but getting better at this
 - Multiple solutions: function calling, GPT4o strict mode, JSON repair & JSON schema, or everything at once: BAML
 - [BAML](https://github.com/BoundaryML/baml) solves the problem and more: retries, cascading between LLM, compatible with multiple LLM, multiple languages, a prompt workbench...
+- Show me the code: [tomsquest/llm_extract_books](https://github.com/tomsquest/llm_extract_books)
 
 ## The problem
 
@@ -257,7 +262,9 @@ client<llm> ClaudeHaiku {
 
 A really good experience with BAML!  
 
-**Quest** for a structured output from a LLM: achieved ✅    
-**Quest** for converting my books to JSON: achieved ✅  
+**Quest** for a structured output from a LLM: **achieved** ✅    
+**Quest** for converting my books to JSON: **achieved** ✅  
 
 You can have a look at my [Bookshelf](/bookshelf/) page for the result.
+
+Head to the [tomsquest/llm_extract_books](https://github.com/tomsquest/llm_extract_books) repository to see the code.
