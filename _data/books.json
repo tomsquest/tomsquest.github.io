@@ -3388,6 +3388,7 @@
   {
     "title": "L'isolation par l'extérieur",
     "authors": [
+
     ],
     "rating": 2,
     "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
@@ -3883,6 +3884,24 @@
     "cover": "/assets/books/head-first-ejb.jpg"
   },
   {
+    "title": "A Guide to the Good Life",
+    "authors": [
+      "William B. Irvine"
+    ],
+    "rating": 5,
+    "comment": "Le stoïcisme expliqué. A relire",
+    "fiction": false
+  },
+  {
+    "title": "Absolute OpenBSD",
+    "authors": [
+      "Michael W. Lucas"
+    ],
+    "rating": 4,
+    "comment": "J'ai commencé le self-hosting sur OpenBSD avec ce livre.\nOpenBSD est tellement bien.\nDommage qu'il ne soit pas plus mainstream à l'époque (pour Docker)",
+    "fiction": false
+  },
+  {
     "title": "American Rigolo",
     "authors": [
       "Bill Bryson"
@@ -3891,6 +3910,24 @@
     "comment": "Des chroniques écrites par Bryson qui revient en Amériques depuis l'Angleterre. Marrant, de belles notes d'esprit, distrayant.",
     "fiction": false,
     "cover": "/assets/books/american-rigolo.jpg"
+  },
+  {
+    "title": "Ce qu'il faut savoir avant de mourir",
+    "authors": [
+      "John Izzo"
+    ],
+    "rating": 4,
+    "comment": "Ne pas avoir de regret, c'est çà le principal",
+    "fiction": false
+  },
+  {
+    "title": "Code Complete",
+    "authors": [
+      "Steve McConnell"
+    ],
+    "rating": 3,
+    "comment": "Bien pour débuter",
+    "fiction": false
   },
   {
     "title": "Confessions d'un automate mangeur d'Opium",
@@ -3997,6 +4034,15 @@
     "cover": "/assets/books/cycle-des-dieux-1.jpg"
   },
   {
+    "title": "Demian",
+    "authors": [
+      "Hermann Hesse"
+    ],
+    "rating": 3,
+    "comment": "Apparemment un chef d'oeuvre, mais je pense que je l'ai pas bien lu, ou que j'ai loupé quelque chose.",
+    "fiction": true
+  },
+  {
     "title": "Des milliards de tapis de cheveux",
     "authors": [
       "Andreas Eschach"
@@ -4015,6 +4061,17 @@
     "comment": "Intéressant, mais un peu chiant à force (la forme, les critiques...)",
     "fiction": false,
     "cover": "/assets/books/dictionnaire-revolte-deconomie.jpg"
+  },
+  {
+    "title": "Elasticsearch in Action",
+    "authors": [
+      "Radu Gheorghe",
+      "Matthew Lee Hinman",
+      "Roy Russo"
+    ],
+    "rating": 4,
+    "comment": "Tout sur Elastic. Vraiment bien. Faudrait que je le relise",
+    "fiction": false
   },
   {
     "title": "La première Leçon du Sorcier",
@@ -4081,6 +4138,23 @@
     "cover": "/assets/books/etoile-de-pandore-1.jpg"
   },
   {
+    "title": "Gettings things done - The art of stress-free productivity",
+    "authors": [
+      "David Allen"
+    ],
+    "rating": 3,
+    "fiction": false
+  },
+  {
+    "title": "Growing Object-Oriented Software, Guided by Tests",
+    "authors": [
+      "Steve Freeman",
+      "Nat Pryce"
+    ],
+    "rating": 3,
+    "fiction": false
+  },
+  {
     "title": "Horizons Lointains",
     "authors": [
       "Robert Silverberg"
@@ -4089,6 +4163,23 @@
     "comment": "Recueils de nouvelles de SF\nPas mal, mais des fois beaucoup de spoilers sur les livres originaux",
     "fiction": true,
     "cover": "/assets/books/horizons-lointains.jpg"
+  },
+  {
+    "title": "Influence et Manipulation",
+    "authors": [
+      "Robert Cialdini"
+    ],
+    "rating": 4,
+    "fiction": false
+  },
+  {
+    "title": "J'attends une maison",
+    "authors": [
+      "François Desombre"
+    ],
+    "rating": 4,
+    "comment": "Découvrir plein d'aspect de la construction d'une maison, et des astuces et techniques que je ne connaissais pas",
+    "fiction": false
   },
   {
     "title": "Je creve la forme",
@@ -4114,6 +4205,14 @@
     "cover": "/assets/books/jesus-video.jpg"
   },
   {
+    "title": "Joel on Software",
+    "authors": [
+      "Joel Spolsky"
+    ],
+    "rating": 4,
+    "fiction": false
+  },
+  {
     "title": "L'alchimiste",
     "authors": [
       "Paulo Coelho"
@@ -4136,6 +4235,14 @@
     ],
     "fiction": false,
     "cover": "/assets/books/lannee-ou-jai-vecu-selon-la-bible.jpg"
+  },
+  {
+    "title": "L'art d'aller à l'essentiel",
+    "authors": [
+      "Leo Babauta"
+    ],
+    "rating": 4,
+    "fiction": false
   },
   {
     "title": "La Horde du Contrevent",
@@ -4356,6 +4463,15 @@
     "cover": "/assets/books/vide-qui-songe-1.jpg"
   },
   {
+    "title": "Le Dernier Discours",
+    "authors": [
+      "Randy Pausch"
+    ],
+    "rating": 4,
+    "comment": "Beau et bouleversant.",
+    "fiction": false
+  },
+  {
     "title": "Le dernier de son espèce",
     "authors": [
       "Andreas Eschbach"
@@ -4384,6 +4500,15 @@
     "comment": "Début un peu étonnant (mal écrit), puis ça devient drôle et je voulais savoir la suite ! Vite !",
     "fiction": true,
     "cover": "/assets/books/le-vieux-qui-ne-voulait-pas-feter-son-anniversaire.jpg"
+  },
+  {
+    "title": "Les 7 habitudes de ceux qui réalisent tout ce qu'ils entreprennent",
+    "authors": [
+      "Stephen R. Covey"
+    ],
+    "rating": 4,
+    "comment": "Mon premier livre de self-help",
+    "fiction": false
   },
   {
     "title": "Les Portes de la Mort",
@@ -4443,6 +4568,15 @@
     ],
     "fiction": true,
     "cover": "/assets/books/les-salauds-gentilshommes-1.jpg"
+  },
+  {
+    "title": "Les aventures de Johnny Bunko",
+    "authors": [
+      "Daniel Pink"
+    ],
+    "rating": 3,
+    "comment": "Le management en histoire",
+    "fiction": false
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4533,6 +4667,26 @@
     "cover": "/assets/books/les-orphelins-de-brooklyn.jpg"
   },
   {
+    "title": "Les plus belles formules mathématiques",
+    "authors": [
+      "Lionel Salem",
+      "Frédéric Testard",
+      "Coralie Salem"
+    ],
+    "rating": 4,
+    "comment": "Une page par formule, expliquée simplement.\nCa m'a servi !",
+    "fiction": false
+  },
+  {
+    "title": "Mining The Social Web",
+    "authors": [
+      "Matthew A. Russell"
+    ],
+    "rating": 3,
+    "comment": "Des projets à faire. Intéressant, mais pas incroyable",
+    "fiction": false
+  },
+  {
     "title": "Neverwhere",
     "authors": [
       "Neil Gaiman"
@@ -4563,6 +4717,16 @@
     "cover": "/assets/books/ou-on-va-papa.jpg"
   },
   {
+    "title": "Petit traité de manipulation à l'usage des honnêtes gens",
+    "authors": [
+      "Robert-Vincent Joule",
+      "Jean-Léon Beauvois"
+    ],
+    "rating": 5,
+    "comment": "Savoir, c'est pourvoir se défendre",
+    "fiction": false
+  },
+  {
     "title": "Pirates",
     "authors": [
       "Michael Crichton"
@@ -4571,6 +4735,26 @@
     "comment": "Bof, se lit vite, mais sans plus",
     "fiction": true,
     "cover": "/assets/books/pirates.jpg"
+  },
+  {
+    "title": "Power",
+    "authors": [
+      "Robert Greeene"
+    ],
+    "rating": 3,
+    "comment": "Intriguant, hérissant.\nBeau livre, la mise en page est superbe.",
+    "fiction": false
+  },
+  {
+    "title": "Programming in Scala",
+    "authors": [
+      "Odersky",
+      "Spoon",
+      "Venners"
+    ],
+    "rating": 3,
+    "comment": "Lu, mais pas/peu pratiqué. Dommage pour moi",
+    "fiction": false
   },
   {
     "title": "Rama",
@@ -4615,6 +4799,24 @@
     "cover": "/assets/books/rama-1.jpg"
   },
   {
+    "title": "SQL",
+    "authors": [
+      "Frédéric Brouard"
+    ],
+    "rating": 4,
+    "comment": "Génial pour bien comprendre SQL",
+    "fiction": false
+  },
+  {
+    "title": "Seul au monde",
+    "authors": [
+      "Sébastien Destremau"
+    ],
+    "rating": 3,
+    "comment": "Ce mec a eu une vie, et pris des décisions hyper-égoistes, mais ce sont ses choix",
+    "fiction": false
+  },
+  {
     "title": "Silo",
     "authors": [
       "Hugh Howey"
@@ -4623,6 +4825,70 @@
     "comment": "C'est intriguant, mais pas dingue non plus.",
     "fiction": true,
     "cover": "/assets/books/silo.jpg"
+  },
+  {
+    "title": "Smart People",
+    "authors": [
+      "Steve Pavlina"
+    ],
+    "rating": 4,
+    "comment": "Bon, mais il ne m'en reste plus grand chose",
+    "fiction": false
+  },
+  {
+    "title": "The Daily Stoic",
+    "authors": [
+      "Ryan Holiday"
+    ],
+    "rating": 4,
+    "comment": "De petits moments quotidiens de sagesse stoïcienne.\nBien pour penser stoicisme réguliérement.\nPar contre, le titre et l'analyze qu'en fait l'auteur sont des fois assez éloignés",
+    "fiction": false
+  },
+  {
+    "title": "The Passionate Programmer",
+    "authors": [
+      "Chad Fowler"
+    ],
+    "rating": 4,
+    "fiction": false
+  },
+  {
+    "title": "The Permanent Portfolio",
+    "authors": [
+      "Harry Browne"
+    ],
+    "rating": 3,
+    "comment": "Je regrette que ca soit assez vieux et pas mieux adapté à la France",
+    "fiction": false
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "authors": [
+      "Andrew Hunt",
+      "David Thomas"
+    ],
+    "rating": 4,
+    "fiction": false
+  },
+  {
+    "title": "Tirer profit des rétrospectives agiles",
+    "authors": [
+      "Luis Goncalves",
+      "Ben Linders"
+    ],
+    "rating": 4,
+    "comment": "Utilisé pour organiser des rétros",
+    "fiction": false
+  },
+  {
+    "title": "Toute l'histoire du monde",
+    "authors": [
+      "JC. Barreau",
+      "G. Bigot"
+    ],
+    "rating": 3,
+    "comment": "Bien, mais ne vaut pas la version de Bill Bryson pour la façon de raconter",
+    "fiction": false
   },
   {
     "title": "Ubik",
