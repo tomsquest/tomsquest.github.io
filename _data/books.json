@@ -3387,9 +3387,7 @@
   },
   {
     "title": "L'isolation par l'extérieur",
-    "authors": [
-
-    ],
+    "authors": [],
     "rating": 2,
     "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
     "date": "2014-04",
@@ -3890,7 +3888,8 @@
     ],
     "rating": 5,
     "comment": "Le stoïcisme expliqué. A relire",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/a-guide-to-the-good-life.jpg"
   },
   {
     "title": "Absolute OpenBSD",
@@ -3899,7 +3898,8 @@
     ],
     "rating": 4,
     "comment": "J'ai commencé le self-hosting sur OpenBSD avec ce livre.\nOpenBSD est tellement bien.\nDommage qu'il ne soit pas plus mainstream à l'époque (pour Docker)",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/absolute-openbsd.jpg"
   },
   {
     "title": "American Rigolo",
@@ -3918,7 +3918,8 @@
     ],
     "rating": 4,
     "comment": "Ne pas avoir de regret, c'est çà le principal",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/ce-quil-faut-savoir-avant-de-mourir.jpg"
   },
   {
     "title": "Code Complete",
@@ -3927,7 +3928,8 @@
     ],
     "rating": 3,
     "comment": "Bien pour débuter",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/code-complete.jpg"
   },
   {
     "title": "Confessions d'un automate mangeur d'Opium",
@@ -4040,7 +4042,8 @@
     ],
     "rating": 3,
     "comment": "Apparemment un chef d'oeuvre, mais je pense que je l'ai pas bien lu, ou que j'ai loupé quelque chose.",
-    "fiction": true
+    "fiction": true,
+    "cover": "/assets/books/demian.jpg"
   },
   {
     "title": "Des milliards de tapis de cheveux",
@@ -4071,7 +4074,8 @@
     ],
     "rating": 4,
     "comment": "Tout sur Elastic. Vraiment bien. Faudrait que je le relise",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/elasticsearch-in-action.jpg"
   },
   {
     "title": "La première Leçon du Sorcier",
@@ -4143,7 +4147,8 @@
       "David Allen"
     ],
     "rating": 3,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/gettings-things-done-the-art-of-stress-free-productivity.jpg"
   },
   {
     "title": "Growing Object-Oriented Software, Guided by Tests",
@@ -4152,7 +4157,8 @@
       "Nat Pryce"
     ],
     "rating": 3,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/growing-object-oriented-software-guided-by-tests.jpg"
   },
   {
     "title": "Horizons Lointains",
@@ -4170,7 +4176,8 @@
       "Robert Cialdini"
     ],
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/influence-et-manipulation.jpg"
   },
   {
     "title": "J'attends une maison",
@@ -4179,7 +4186,8 @@
     ],
     "rating": 4,
     "comment": "Découvrir plein d'aspect de la construction d'une maison, et des astuces et techniques que je ne connaissais pas",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/jattends-une-maison.jpg"
   },
   {
     "title": "Je creve la forme",
@@ -4210,7 +4218,8 @@
       "Joel Spolsky"
     ],
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/joel-on-software.jpg"
   },
   {
     "title": "L'alchimiste",
@@ -4242,7 +4251,8 @@
       "Leo Babauta"
     ],
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/lart-daller-a-lessentiel.jpg"
   },
   {
     "title": "La Horde du Contrevent",
@@ -4469,7 +4479,8 @@
     ],
     "rating": 4,
     "comment": "Beau et bouleversant.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/le-dernier-discours.jpg"
   },
   {
     "title": "Le dernier de son espèce",
@@ -4508,7 +4519,8 @@
     ],
     "rating": 4,
     "comment": "Mon premier livre de self-help",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/les-7-habitudes-de-ceux-qui-realisent-tout-ce-quils-entreprennent.jpg"
   },
   {
     "title": "Les Portes de la Mort",
@@ -4576,7 +4588,8 @@
     ],
     "rating": 3,
     "comment": "Le management en histoire",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/les-aventures-de-johnny-bunko.jpg"
   },
   {
     "title": "Les chroniques d'Alvin le faiseur",
@@ -4675,7 +4688,8 @@
     ],
     "rating": 4,
     "comment": "Une page par formule, expliquée simplement.\nCa m'a servi !",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/les-plus-belles-formules-mathematiques.jpg"
   },
   {
     "title": "Mining The Social Web",
@@ -4684,7 +4698,8 @@
     ],
     "rating": 3,
     "comment": "Des projets à faire. Intéressant, mais pas incroyable",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/mining-the-social-web.jpg"
   },
   {
     "title": "Neverwhere",
@@ -4724,7 +4739,8 @@
     ],
     "rating": 5,
     "comment": "Savoir, c'est pourvoir se défendre",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/petit-traite-de-manipulation-a-lusage-des-honnetes-gens.jpg"
   },
   {
     "title": "Pirates",
@@ -4743,7 +4759,8 @@
     ],
     "rating": 3,
     "comment": "Intriguant, hérissant.\nBeau livre, la mise en page est superbe.",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/power.jpg"
   },
   {
     "title": "Programming in Scala",
@@ -4754,7 +4771,8 @@
     ],
     "rating": 3,
     "comment": "Lu, mais pas/peu pratiqué. Dommage pour moi",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/programming-in-scala.jpg"
   },
   {
     "title": "Rama",
@@ -4804,8 +4822,9 @@
       "Frédéric Brouard"
     ],
     "rating": 4,
-    "comment": "Génial pour bien comprendre SQL",
-    "fiction": false
+    "comment": "Génial pour bien comprendre le SQL",
+    "fiction": false,
+    "cover": "/assets/books/sql.jpg"
   },
   {
     "title": "Seul au monde",
@@ -4813,8 +4832,9 @@
       "Sébastien Destremau"
     ],
     "rating": 3,
-    "comment": "Ce mec a eu une vie, et pris des décisions hyper-égoistes, mais ce sont ses choix",
-    "fiction": false
+    "comment": "Ce mec a eu une vie bordeline par moment, et pris des décisions hyper-égoistes, mais ce sont ses choix",
+    "fiction": false,
+    "cover": "/assets/books/seul-au-monde.jpg"
   },
   {
     "title": "Silo",
@@ -4833,7 +4853,8 @@
     ],
     "rating": 4,
     "comment": "Bon, mais il ne m'en reste plus grand chose",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/smart-people.jpg"
   },
   {
     "title": "The Daily Stoic",
@@ -4841,8 +4862,9 @@
       "Ryan Holiday"
     ],
     "rating": 4,
-    "comment": "De petits moments quotidiens de sagesse stoïcienne.\nBien pour penser stoicisme réguliérement.\nPar contre, le titre et l'analyze qu'en fait l'auteur sont des fois assez éloignés",
-    "fiction": false
+    "comment": "De petits moments quotidiens de sagesse stoïcienne.\nBien pour penser stoicisme réguliérement.\nPar contre, le titre et l'analyse qu'en fait l'auteur sont des fois assez éloignés",
+    "fiction": false,
+    "cover": "/assets/books/the-daily-stoic.jpg"
   },
   {
     "title": "The Passionate Programmer",
@@ -4850,7 +4872,8 @@
       "Chad Fowler"
     ],
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-passionate-programmer.jpg"
   },
   {
     "title": "The Permanent Portfolio",
@@ -4858,8 +4881,9 @@
       "Harry Browne"
     ],
     "rating": 3,
-    "comment": "Je regrette que ca soit assez vieux et pas mieux adapté à la France",
-    "fiction": false
+    "comment": "Je regrette que ça soit assez vieux et pas mieux adapté à la France",
+    "fiction": false,
+    "cover": "/assets/books/the-permanent-portfolio.jpg"
   },
   {
     "title": "The Pragmatic Programmer",
@@ -4868,7 +4892,8 @@
       "David Thomas"
     ],
     "rating": 4,
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/the-pragmatic-programmer.jpg"
   },
   {
     "title": "Tirer profit des rétrospectives agiles",
@@ -4878,7 +4903,8 @@
     ],
     "rating": 4,
     "comment": "Utilisé pour organiser des rétros",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/tirer-profit-des-retrospectives-agiles.jpg"
   },
   {
     "title": "Toute l'histoire du monde",
@@ -4888,7 +4914,8 @@
     ],
     "rating": 3,
     "comment": "Bien, mais ne vaut pas la version de Bill Bryson pour la façon de raconter",
-    "fiction": false
+    "fiction": false,
+    "cover": "/assets/books/toute-lhistoire-du-monde.jpg"
   },
   {
     "title": "Ubik",
