@@ -4780,17 +4780,7 @@
     "authors": [
       "Arthur C. Clarke"
     ],
-    "volume": "4/4",
-    "fiction": true,
-    "cover": "/assets/books/rama-4.jpg"
-  },
-  {
-    "title": "Rama",
-    "series": "Rama",
-    "authors": [
-      "Arthur C. Clarke"
-    ],
-    "volume": "3/4",
+    "volume": "3/3",
     "fiction": true,
     "cover": "/assets/books/rama-3.jpg"
   },
@@ -4800,7 +4790,7 @@
     "authors": [
       "Arthur C. Clarke"
     ],
-    "volume": "2/4",
+    "volume": "2/3",
     "fiction": true,
     "cover": "/assets/books/rama-2.jpg"
   },
@@ -4811,7 +4801,7 @@
       "Arthur C. Clarke"
     ],
     "rating": 4,
-    "volume": "1/4",
+    "volume": "1/3",
     "comment": "Mon premier roman de SF à l'époque !",
     "fiction": true,
     "cover": "/assets/books/rama-1.jpg"
