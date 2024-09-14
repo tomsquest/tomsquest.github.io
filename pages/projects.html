@@ -21,13 +21,12 @@ class: projects
   </p>
 
   <ul>
-    <li>
-      {% if project.private %}
-        🔒 Private project
-      {% else %}
-        Url: <a href="{{ project.url }}">{{ project.name }}</a>
-      {% endif %}
-    </li>
+    {% if project.github %}
+      <li>Github: <a href="{{ project.github }}">{{ project.github }}</a></li>
+    {% endif %}
+    {% if project.website %}
+      <li>Web site: <a href="{{ project.website }}">{{ project.website }}</a></li>
+    {% endif %}
     {% if project.created_at %}
       <li>Created: <time>{{ project.created_at | date: site.date_format }}</time></li>
     {% endif %}
