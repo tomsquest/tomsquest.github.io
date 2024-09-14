@@ -19,6 +19,21 @@
   created_at: '2016-10-05T15:05:07Z'
   updated_at: '2024-06-20T10:20:57Z'
   language: Python
+- name: deep-learning-recognize-tools
+  title: 👓 Recognize tools with Deep Learning
+  image: /assets/images/projects/deep-learning-recognize-tools_banner.png
+  description: >-
+    The goal of this project is to **recognize tools** in images using **Deep Learning**.  
+      The dataset contains images of tools like hammers, screwdrivers, and pliers.  
+      The model is trained using a **Convolutional Neural Network** (CNN) with **FastAI**.
+    
+      The project was created for the [Fast.AI "Practical Deep Learning For Coders" course](https://course.fast.ai/).
+    
+      See the **demo** in action at [AI.tomsquest.com](https://ai.tomsquest.com/projects/recognize-tools).
+  url: 'https://github.com/tomsquest/deep-learning-recognize-tools'
+  created_at: '2023-11-25T00:00:00Z'
+  updated_at: '2023-11-25T00:00:00Z'
+  language: Python
 - name: fynodoro
   title: 🍅 Fynodoro, the Pomodoro Widget
   image: /assets/images/projects/fynodoro_banner.png
