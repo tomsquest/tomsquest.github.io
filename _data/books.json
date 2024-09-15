@@ -1,5 +1,16 @@
 [
   {
+    "title": "Les naufragés du Wager",
+    "authors": [
+      "David Grann"
+    ],
+    "rating": 4,
+    "comment": "Histoire vraie, immense travail pour recroiser les sources et roman historique.\nPas la verve d'un Bryson, mais quelles épreuves ces gens ont vécues !\nBien vus également les clins d'oeil à notre soumission à l'autorité.",
+    "date": "2024-09",
+    "fiction": true,
+    "cover": "/assets/books/les-naufrages-du-wager.jpg"
+  },
+  {
     "title": "Double tranchant",
     "authors": [
       "Joe Abercrombie"
