@@ -51,7 +51,7 @@ My keybindings are:
 - One row for Music: previous, play/pause, next
 - The rotary encoder controls sound volume and toggles mute on push
 
-The mapping I’m currently using is:
+The mapping I'm currently using is:
 
 ```yaml
 orientation: normal
@@ -67,6 +67,14 @@ layers:
         press: 'mute'
         cw: 'volumeup'
 ```
+
+## About LEDs
+
+The device features some RGB lightnings. But those are pretty useless.
+
+For instance, you can't toggle it per key, and the colors aren't configurable. Only some effects are available.
+
+So I don't use them.
 
 ## Photos
 
