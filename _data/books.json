@@ -1,5 +1,16 @@
 [
   {
+    "title": "Les robots, mon emploi et moi",
+    "authors": [
+      "Erwann Tison"
+    ],
+    "rating": 3,
+    "comment": "La fin du travail, ou sa transformation.\nQui est le plus menacé, col blanc ou col bleu ?\nUne bonne analyse, avec des hypothéses fausses (voiture autonome), mais écrite avant l'IA générative, donc peut-être trop tôt ?",
+    "date": "2024-10",
+    "fiction": false,
+    "cover": "/assets/books/les-robots-mon-emploi-et-moi.jpg"
+  },
+  {
     "title": "Les naufragés du Wager",
     "authors": [
       "David Grann"
