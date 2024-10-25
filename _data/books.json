@@ -1,5 +1,18 @@
 [
   {
+    "title": "Le tournoi des preux",
+    "series": "Le chevalier aux épines",
+    "volume": "1/3",
+    "authors": [
+      "Jean-Philippe Jaworski"
+    ],
+    "rating": 4,
+    "comment": "Histoire de chevaliers, de tournois et de complots. La magie est juste soupçonnée.\nC'est donc très chevaleresque, et on est du coté des chevaliers, et certainement pas des gueux.\nLe vocabulaire est très riche, et j'ai presque découvert un mot par page (je pensais que les mots étaient inventés pour l'occasion, et bien même pas !).",
+    "date": "2024-10",
+    "fiction": true,
+    "cover": "/assets/books/le-chevalier-aux-epines-1.jpg"
+  },
+  {
     "title": "Les robots, mon emploi et moi",
     "authors": [
       "Erwann Tison"
