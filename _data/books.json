@@ -159,6 +159,7 @@
     "authors": [
       "Brandon Sanderson"
     ],
+    "rating": 3,
     "volume": "2/10",
     "comment": "Toujours pas mal. Je le trouve toujours un peu \"doux\". Je préfère quand c'est plus dark.\nIl faut que je lise la suite maintenant... :)",
     "date": "2024-04",
@@ -292,6 +293,7 @@
     "authors": [
       "James S. A. Corey"
     ],
+    "rating": 3,
     "volume": "5/9",
     "comment": "Sympa, même si un peu longuet par moment.",
     "date": "2024-01",
@@ -304,6 +306,7 @@
     "authors": [
       "James S. A. Corey"
     ],
+    "rating": 4,
     "volume": "4/9",
     "date": "2023-12",
     "fiction": true,
@@ -315,6 +318,7 @@
     "authors": [
       "James S. A. Corey"
     ],
+    "rating": 4,
     "volume": "3/9",
     "date": "2023-11",
     "fiction": true,
@@ -336,6 +340,7 @@
     "authors": [
       "Tahar Ben Jelloun"
     ],
+    "rating": 2,
     "comment": "Pas fini, pas très profond, pas trop envie de le lire en fait.",
     "date": "2023-10",
     "urls": [
@@ -350,6 +355,7 @@
     "authors": [
       "James S. A. Corey"
     ],
+    "rating": 4,
     "volume": "2/9",
     "date": "2023-10",
     "fiction": true,
@@ -370,6 +376,7 @@
     "authors": [
       "Gilles Perrault"
     ],
+    "rating": 3,
     "comment": "Bien, un avis sur la justice. Pas pour les enfants, pas assez simple.",
     "date": "2023-09",
     "urls": [
@@ -421,6 +428,7 @@
     "authors": [
       "Guillaume Chamanadjian"
     ],
+    "rating": 4,
     "volume": "3/3",
     "date": "2023-08",
     "fiction": true,
@@ -479,6 +487,7 @@
     "authors": [
       "Stefan Zweig"
     ],
+    "rating": 4,
     "comment": "Bien, impressionnant, j'ai appris des trucs : le gagnant écrit l'histoire, et ne pas mourir comme un con.",
     "date": "2023-08",
     "urls": [
@@ -570,6 +579,7 @@
     "authors": [
       "Guillaume Chamanadjian"
     ],
+    "rating": 4,
     "volume": "2/3",
     "date": "2023-03",
     "fiction": true,
@@ -1204,6 +1214,7 @@
     "authors": [
       "Philippe Touboul"
     ],
+    "rating": 3,
     "comment": "Bien, dur, mais sympa. Pas tout fait.",
     "date": "2021-12",
     "fiction": true,
@@ -1229,6 +1240,7 @@
     "authors": [
       "Pascal Brioist"
     ],
+    "rating": 3,
     "date": "2021-11",
     "fiction": false,
     "cover": "/assets/books/en-age-florissant.jpg"
@@ -1248,6 +1260,7 @@
     "authors": [
       "Ophélie Damblé"
     ],
+    "rating": 3,
     "date": "2021-11",
     "fiction": false,
     "cover": "/assets/books/guerilla-green-guide-de-survie-vegetale-en-milieu-urbain.jpg"
@@ -1257,6 +1270,7 @@
     "authors": [
       "Tim Harford"
     ],
+    "rating": 3,
     "date": "2021-11",
     "fiction": false,
     "cover": "/assets/books/leconomie-mondiale-en-50-inventions.jpg"
@@ -1267,6 +1281,7 @@
     "authors": [
       "N.K. Jemisin"
     ],
+    "rating": 4,
     "volume": "2/3",
     "date": "2021-11",
     "fiction": true,
@@ -1317,6 +1332,7 @@
     "authors": [
       "Jean-Philippe Jaworski"
     ],
+    "rating": 3,
     "volume": "1",
     "comment": "Pas accroché, trop \"celtique\" pour moi, mais peut-être que j'y reviendrai",
     "date": "2021-11",
@@ -1354,6 +1370,7 @@
     "authors": [
       "Sarah Bakewell"
     ],
+    "rating": 2,
     "date": "2021-10",
     "fiction": false,
     "cover": "/assets/books/comment-vivre-une-vie-de-montaigne-en-une-question-et-vingt-tentatives-de-reponse.jpg"
@@ -1363,6 +1380,7 @@
     "authors": [
       "Moghaddassi"
     ],
+    "rating": 3,
     "date": "2021-10",
     "fiction": false,
     "cover": "/assets/books/la-soif-de-lessentiel.jpg"
@@ -1453,6 +1471,7 @@
     "authors": [
       "Élodie Denis"
     ],
+    "rating": 3,
     "comment": "Moui",
     "date": "2021-09",
     "fiction": true,
@@ -1463,6 +1482,7 @@
     "authors": [
       "Philippe Bloch"
     ],
+    "rating": 3,
     "comment": "Ca se lit",
     "date": "2021-09",
     "fiction": true,
@@ -1474,6 +1494,7 @@
     "authors": [
       "Joe Abercrombie"
     ],
+    "rating": 5,
     "volume": "3/3",
     "date": "2021-08",
     "fiction": true,
@@ -1485,6 +1506,7 @@
     "authors": [
       "Joe Abercrombie"
     ],
+    "rating": 5,
     "volume": "2/3",
     "date": "2021-07",
     "fiction": true,
@@ -1685,6 +1707,7 @@
     "authors": [
       "Laurent Genefort"
     ],
+    "rating": 4,
     "volume": "3/3",
     "date": "2020-10",
     "fiction": true,
@@ -1707,6 +1730,7 @@
     "authors": [
       "Laurent Genefort"
     ],
+    "rating": 4,
     "volume": "2/3",
     "date": "2020-09",
     "fiction": true,
@@ -1764,6 +1788,7 @@
     "authors": [
       "Robert Charles Wilson"
     ],
+    "rating": 4,
     "volume": "3/3",
     "date": "2020-07",
     "fiction": true,
@@ -1775,6 +1800,7 @@
     "authors": [
       "Robert Charles Wilson"
     ],
+    "rating": 4,
     "volume": "2/3",
     "date": "2020-07",
     "fiction": true,
@@ -2159,6 +2185,7 @@
     "authors": [
       "Glen Cook"
     ],
+    "rating": 4,
     "volume": "3",
     "comment": "Du bon Garrett, c'est toujours un peu sombre, un peu difficile de comprendre, mais ça marche pour l'ambiance.",
     "date": "2019-02",
@@ -2171,6 +2198,7 @@
     "authors": [
       "Glen Cook"
     ],
+    "rating": 4,
     "volume": "2",
     "date": "2019-02",
     "fiction": true,
@@ -2206,6 +2234,7 @@
     "authors": [
       "Jim-C Hines"
     ],
+    "rating": 4,
     "volume": "3",
     "date": "2018-12",
     "fiction": true,
@@ -2217,6 +2246,7 @@
     "authors": [
       "Jim-C Hines"
     ],
+    "rating": 4,
     "volume": "2",
     "date": "2018-12",
     "fiction": true,
@@ -2381,6 +2411,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "3/3",
     "date": "2018-03",
     "fiction": true,
@@ -2404,6 +2435,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "2/3",
     "date": "2018-02",
     "fiction": true,
@@ -2551,6 +2583,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "15/15",
     "date": "2016-12",
     "fiction": true,
@@ -2562,6 +2595,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "14/15",
     "date": "2016-12",
     "fiction": true,
@@ -2573,6 +2607,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "13/15",
     "date": "2016-12",
     "fiction": true,
@@ -2584,6 +2619,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "12/15",
     "date": "2016-12",
     "fiction": true,
@@ -2595,6 +2631,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "11/15",
     "date": "2016-12",
     "fiction": true,
@@ -2606,6 +2643,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "10/15",
     "date": "2016-12",
     "fiction": true,
@@ -2617,6 +2655,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "9/15",
     "date": "2016-12",
     "fiction": true,
@@ -2628,6 +2667,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "8/15",
     "date": "2016-11",
     "fiction": true,
@@ -2639,6 +2679,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "7/15",
     "date": "2016-11",
     "fiction": true,
@@ -2650,6 +2691,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "6/15",
     "date": "2016-11",
     "fiction": true,
@@ -2661,6 +2703,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "5/15",
     "date": "2016-11",
     "fiction": true,
@@ -2672,6 +2715,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "4/15",
     "date": "2016-11",
     "fiction": true,
@@ -2683,6 +2727,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "3/15",
     "date": "2016-11",
     "fiction": true,
@@ -2694,6 +2739,7 @@
     "authors": [
       "Lois McMaster Bujold"
     ],
+    "rating": 4,
     "volume": "2/15",
     "date": "2016-11",
     "fiction": true,
@@ -2765,6 +2811,7 @@
     "authors": [
       "Michel Robert"
     ],
+    "rating": 4,
     "volume": "7/10",
     "date": "2016-07",
     "fiction": true,
@@ -2776,6 +2823,7 @@
     "authors": [
       "Michel Robert"
     ],
+    "rating": 4,
     "volume": "6/10",
     "date": "2016-07",
     "fiction": true,
@@ -2787,6 +2835,7 @@
     "authors": [
       "Michel Robert"
     ],
+    "rating": 4,
     "volume": "5/10",
     "date": "2016-07",
     "fiction": true,
@@ -2798,6 +2847,7 @@
     "authors": [
       "Michel Robert"
     ],
+    "rating": 4,
     "volume": "4/10",
     "date": "2016-07",
     "fiction": true,
@@ -2809,6 +2859,7 @@
     "authors": [
       "Michel Robert"
     ],
+    "rating": 4,
     "volume": "3/10",
     "date": "2016-07",
     "fiction": true,
@@ -2820,6 +2871,7 @@
     "authors": [
       "Michel Robert"
     ],
+    "rating": 4,
     "volume": "2/10",
     "date": "2016-07",
     "fiction": true,
@@ -2888,6 +2940,7 @@
     "authors": [
       "Philip K. Dick"
     ],
+    "rating": 4,
     "date": "2016-01",
     "fiction": true,
     "cover": "/assets/books/blade-runner.jpg"
@@ -2919,6 +2972,7 @@
     "authors": [
       "Connie Willis"
     ],
+    "rating": 4,
     "date": "2015-12",
     "fiction": true,
     "cover": "/assets/books/sans-parler-du-chien.jpg"
@@ -2974,6 +3028,7 @@
     "authors": [
       "Karl Schroeder"
     ],
+    "rating": 4,
     "volume": "2/2",
     "date": "2015-08",
     "fiction": true,
@@ -3193,6 +3248,7 @@
     "authors": [
       "Asimov"
     ],
+    "rating": 4,
     "volume": "1",
     "date": "2014-11",
     "fiction": true,
@@ -3354,6 +3410,7 @@
     "authors": [
       "Joe Haldeman"
     ],
+    "rating": 4,
     "volume": "3/3",
     "date": "2014-05",
     "fiction": true,
@@ -3365,6 +3422,7 @@
     "authors": [
       "Joe Haldeman"
     ],
+    "rating": 4,
     "volume": "2/3",
     "date": "2014-05",
     "fiction": true,
@@ -3982,6 +4040,7 @@
     "authors": [
       "David Brin"
     ],
+    "rating": 4,
     "volume": "6/6",
     "fiction": true,
     "cover": "/assets/books/redemption-3-cycle-de-lelevation-6.jpg"
@@ -3992,6 +4051,7 @@
     "authors": [
       "David Brin"
     ],
+    "rating": 4,
     "volume": "5/6",
     "fiction": true,
     "cover": "/assets/books/redemption-2-cycle-de-lelevation-5.jpg"
@@ -4002,6 +4062,7 @@
     "authors": [
       "David Brin"
     ],
+    "rating": 4,
     "volume": "4/6",
     "fiction": true,
     "cover": "/assets/books/redemption-1-4.jpg"
@@ -4012,6 +4073,7 @@
     "authors": [
       "David Brin"
     ],
+    "rating": 4,
     "volume": "3/6",
     "fiction": true,
     "cover": "/assets/books/elevation-2-cycle-de-lelevation-3.jpg"
@@ -4022,6 +4084,7 @@
     "authors": [
       "David Brin"
     ],
+    "rating": 4,
     "volume": "2/6",
     "fiction": true,
     "cover": "/assets/books/elevation-1-cycle-de-lelevation-2.jpg"
@@ -4044,6 +4107,7 @@
     "authors": [
       "David Werber"
     ],
+    "rating": 2,
     "volume": "3/3",
     "fiction": true,
     "cover": "/assets/books/cycle-des-dieux-3.jpg"
@@ -4054,6 +4118,7 @@
     "authors": [
       "David Werber"
     ],
+    "rating": 2,
     "volume": "2/3",
     "fiction": true,
     "cover": "/assets/books/cycle-des-dieux-2.jpg"
@@ -4118,6 +4183,7 @@
     "authors": [
       "Terry Goodkind"
     ],
+    "rating": 2,
     "volume": "2",
     "fiction": true,
     "cover": "/assets/books/la-premiere-lecon-du-sorcier-2.jpg"
@@ -4140,6 +4206,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "4/4",
     "fiction": true,
     "cover": "/assets/books/etoile-de-pandore-4.jpg"
@@ -4150,6 +4217,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "3/4",
     "fiction": true,
     "cover": "/assets/books/etoile-de-pandore-3.jpg"
@@ -4160,6 +4228,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "2/4",
     "fiction": true,
     "cover": "/assets/books/etoile-de-pandore-2.jpg"
@@ -4261,6 +4330,7 @@
     "authors": [
       "Paulo Coelho"
     ],
+    "rating": 2,
     "urls": [
       "https://www.amazon.fr/Lalchimiste-Paulo-Coelho/dp/2290004448/ref=sr_1_fkmr0_2?ie=UTF8&qid=1271934514&sr=8-2-fkmr0"
     ],
@@ -4294,6 +4364,7 @@
     "authors": [
       "Alain Damasio"
     ],
+    "rating": 5,
     "urls": [
       "https://www.amazon.fr/Horde-du-Contrevent-Alain-Damasio/dp/2070342263/ref=sr_1_1?ie=UTF8&s=books&qid=1252070870&sr=8-1"
     ],
@@ -4305,6 +4376,7 @@
     "authors": [
       "John Kennedy Toole"
     ],
+    "rating": 4,
     "comment": "Réticences à se mettre au travail",
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
@@ -4318,6 +4390,7 @@
     "authors": [
       "Jack Campbell"
     ],
+    "rating": 4,
     "volume": "6/6",
     "fiction": true,
     "cover": "/assets/books/la-flotte-perdue-6.jpg"
@@ -4328,6 +4401,7 @@
     "authors": [
       "Jack Campbell"
     ],
+    "rating": 4,
     "volume": "5/6",
     "fiction": true,
     "cover": "/assets/books/la-flotte-perdue-5.jpg"
@@ -4338,6 +4412,7 @@
     "authors": [
       "Jack Campbell"
     ],
+    "rating": 4,
     "volume": "4/6",
     "fiction": true,
     "cover": "/assets/books/la-flotte-perdue-4.jpg"
@@ -4348,6 +4423,7 @@
     "authors": [
       "Jack Campbell"
     ],
+    "rating": 4,
     "volume": "3/6",
     "fiction": true,
     "cover": "/assets/books/la-flotte-perdue-3.jpg"
@@ -4358,6 +4434,7 @@
     "authors": [
       "Jack Campbell"
     ],
+    "rating": 4,
     "volume": "2/6",
     "fiction": true,
     "cover": "/assets/books/la-flotte-perdue-2.jpg"
@@ -4368,6 +4445,7 @@
     "authors": [
       "Jack Campbell"
     ],
+    "rating": 4,
     "volume": "1/6",
     "fiction": true,
     "cover": "/assets/books/la-flotte-perdue-1.jpg"
@@ -4401,6 +4479,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "7/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-7.jpg"
@@ -4411,6 +4490,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "6/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-6.jpg"
@@ -4421,6 +4501,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "5/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-5.jpg"
@@ -4431,6 +4512,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "4/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-4.jpg"
@@ -4441,6 +4523,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "3/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-3.jpg"
@@ -4451,6 +4534,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "2/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-2.jpg"
@@ -4461,6 +4545,7 @@
     "authors": [
       "Kevin J. Anderson"
     ],
+    "rating": 4,
     "volume": "1/7",
     "fiction": true,
     "cover": "/assets/books/la-saga-des-7-soleils-1.jpg"
@@ -4481,6 +4566,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "3/3",
     "fiction": true,
     "cover": "/assets/books/vide-en-evolution-3.jpg"
@@ -4491,6 +4577,7 @@
     "authors": [
       "Peter F. Hamilton"
     ],
+    "rating": 4,
     "volume": "2/3",
     "fiction": true,
     "cover": "/assets/books/vide-temporel-2.jpg"
@@ -4564,6 +4651,7 @@
       "Margaret Weis",
       "Tracy Hickman"
     ],
+    "rating": 4,
     "volume": "3/3",
     "fiction": true,
     "cover": "/assets/books/les-portes-de-la-mort-3.jpg"
@@ -4575,6 +4663,7 @@
       "Margaret Weis",
       "Tracy Hickman"
     ],
+    "rating": 4,
     "volume": "2/3",
     "fiction": true,
     "cover": "/assets/books/les-portes-de-la-mort-2.jpg"
@@ -4586,6 +4675,7 @@
       "Margaret Weis",
       "Tracy Hickman"
     ],
+    "rating": 4,
     "volume": "1/3",
     "comment": "Lu, car j'avais de vieux et bons souvenirs, mais la relecture n'a pas été dingue.",
     "fiction": true,
@@ -4632,6 +4722,7 @@
     "authors": [
       "Orson Scott Card"
     ],
+    "rating": 4,
     "volume": "6/6",
     "fiction": true,
     "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-6.jpg"
@@ -4642,6 +4733,7 @@
     "authors": [
       "Orson Scott Card"
     ],
+    "rating": 4,
     "volume": "5/6",
     "fiction": true,
     "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-5.jpg"
@@ -4652,6 +4744,7 @@
     "authors": [
       "Orson Scott Card"
     ],
+    "rating": 4,
     "volume": "4/6",
     "fiction": true,
     "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-4.jpg"
@@ -4662,6 +4755,7 @@
     "authors": [
       "Orson Scott Card"
     ],
+    "rating": 4,
     "volume": "3/6",
     "fiction": true,
     "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-3.jpg"
@@ -4672,6 +4766,7 @@
     "authors": [
       "Orson Scott Card"
     ],
+    "rating": 4,
     "volume": "2/6",
     "fiction": true,
     "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-2.jpg"
@@ -4682,6 +4777,7 @@
     "authors": [
       "Orson Scott Card"
     ],
+    "rating": 4,
     "volume": "1/6",
     "fiction": true,
     "cover": "/assets/books/les-chroniques-dalvin-le-faiseur-1.jpg"
@@ -4691,6 +4787,7 @@
     "authors": [
       "Pierre Pevel"
     ],
+    "rating": 4,
     "fiction": true,
     "cover": "/assets/books/les-enchantements-dambremer.jpg"
   },
@@ -4815,6 +4912,7 @@
     "authors": [
       "Arthur C. Clarke"
     ],
+    "rating": 4,
     "volume": "3/3",
     "fiction": true,
     "cover": "/assets/books/rama-3.jpg"
@@ -4825,6 +4923,7 @@
     "authors": [
       "Arthur C. Clarke"
     ],
+    "rating": 4,
     "volume": "2/3",
     "fiction": true,
     "cover": "/assets/books/rama-2.jpg"
@@ -4977,6 +5076,7 @@
     "authors": [
       "Henry David Thoreau"
     ],
+    "rating": 4,
     "urls": [
       "https://www.amazon.fr/Walden-ou-vie-dans-bois/dp/2070715213/ref=sr_1_2?ie=UTF8&s=books&qid=1270903702&sr=1-2"
     ],
@@ -4988,6 +5088,7 @@
     "authors": [
       "Max Brooks"
     ],
+    "rating": 4,
     "urls": [
       "https://www.amazon.fr/Lann%C3%A9e-jai-v%C3%A9cu-selon-Bible/dp/2742789928/ref=sr_1_3?keywords=jacobs+bible"
     ],
