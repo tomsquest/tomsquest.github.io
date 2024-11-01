@@ -1,5 +1,27 @@
 [
   {
+    "title": "L'art subtil de s'en foutre",
+    "authors": [
+      "Mark Manson"
+    ],
+    "rating": 4,
+    "comment": "Du bon sens, s'en foutre, mais pas de n'importe quoi. Quelques bases philosophiques dans un ton terre-à-terre.",
+    "date": "2024-10",
+    "fiction": false,
+    "cover": "/assets/books/l-art-subtil-de-s-en-foutre.jpg"
+  },
+  {
+    "title": "Dark Matter",
+    "authors": [
+      "Blake Crouch"
+    ],
+    "rating": 4,
+    "comment": "Thriller sur une base de SF. Je ne m'attendais pas au dernier rebondissement dans les 50 dernières pages. Se lit bien.",
+    "date": "2024-10",
+    "fiction": true,
+    "cover": "/assets/books/dark-matter.jpg"
+  },
+  {
     "title": "Le tournoi des preux",
     "series": "Le chevalier aux épines",
     "volume": "1/3",
@@ -7,7 +29,7 @@
       "Jean-Philippe Jaworski"
     ],
     "rating": 4,
-    "comment": "Histoire de chevaliers, de tournois et de complots. La magie est juste soupçonnée.\nC'est donc très chevaleresque, et on est du coté des chevaliers, et certainement pas des gueux.\nLe vocabulaire est très riche, et j'ai presque découvert un mot par page (je pensais que les mots étaient inventés pour l'occasion, et bien même pas !).",
+    "comment": "Histoire de chevaliers, de tournois et de complots. La magie est juste soupçonnée.\nC'est donc très chevaleresque, et on est du côté des chevaliers, et pas des gueux.\nLe vocabulaire est très riche, et j'ai presque découvert un mot par page (je pensais que les mots étaient inventés pour l'occasion, et bien même pas !).",
     "date": "2024-10",
     "fiction": true,
     "cover": "/assets/books/le-chevalier-aux-epines-1.jpg"
