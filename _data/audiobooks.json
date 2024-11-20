@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Eloge du carburateur",
+    "subtitle": "Essai sur le sens et la valeur du travail",
+    "authors": [
+      "Matthew B. Crawford"
+    ],
+    "rating": 4,
+    "date": "2024-11",
+    "fiction": false,
+    "cover": "/assets/audiobooks/eloge-du-carburateur.jpg"
+  },
+  {
+    "title": "Ma vie sans gravité",
+    "authors": [
+      "Thomas Pesquet"
+    ],
+    "rating": 4,
+    "date": "2024-10",
+    "fiction": false,
+    "cover": "/assets/audiobooks/ma-vie-sans-gravite.jpg"
+  },
+  {
+    "title": "Pensées pour moi-même",
+    "authors": [
+      "Marc Aurèle"
+    ],
+    "rating": 5,
+    "date": "2024-09",
+    "fiction": false,
+    "cover": "/assets/audiobooks/pensees-pour-moi-meme.jpg"
+  },
+  {
+    "title": "Le choix du courage",
+    "subtitle": "60 enseignements pour cultiver cette vertu qui est en vous",
+    "authors": [
+      "Ryan Holiday"
+    ],
+    "rating": 3,
+    "date": "2024-09",
+    "fiction": false,
+    "cover": "/assets/audiobooks/le-choix-du-courage.jpg"
+  },
+  {
+    "title": "L'art subtil de s'en foutre",
+    "authors": [
+      "Mark Manson"
+    ],
+    "rating": 4,
+    "date": "2024-05",
+    "fiction": false,
+    "cover": "/assets/audiobooks/l-art-subtil-de-s-en-foutre.jpg"
+  },
+  {
+    "title": "Tant que le café est encore chaud",
+    "authors": [
+      "Toshikazu Kawaguchi"
+    ],
+    "rating": 4,
+    "date": "2024-08",
+    "fiction": true,
+    "cover": "/assets/audiobooks/tant-que-le-cafe-est-encore-chaud.jpg"
+  },
+  {
+    "title": "La vie quotidienne au Moyen Âge",
+    "authors": [
+      "Jean Verdon"
+    ],
+    "rating": 4,
+    "date": "2024-08",
+    "fiction": false,
+    "cover": "/assets/audiobooks/la-vie-quotidienne-au-moyen-age.jpg"
+  },
+  {
+    "title": "Sapiens, une brêve histoire de l’humanité",
+    "authors": [
+      "Yuval Noah Harari"
+    ],
+    "rating": 4,
+    "date": "2020-08",
+    "fiction": false,
+    "cover": "/assets/audiobooks/sapiens.jpg"
+  }
+]
