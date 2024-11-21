@@ -12,12 +12,12 @@ class: bookshelf
 <p>
   I keep a list of books I read in the previous years, both Fiction and Non-Fiction.
   <br>
-  Browsing this list brings back good memories.
+  Browsing this list brings back good memories!
 </p>
 <p>
-  The list currently contains <strong>{{ total_books }}</strong> books, and the fiction part was started around <strong>2014</strong>.
-  <br>
-  I often forgot to update it, so it is far from being complete.
+  The list currently contains <strong>{{ total_books }}</strong> books,
+  and the fiction part was started around <strong>2014</strong>.
+  I often forgot to update it in the past, so it is far from being complete.
 </p>
 <p>
   If you want to talk about books 📖, you are very welcome! ☺️
@@ -81,7 +81,7 @@ class: bookshelf
     {% endcapture %}
   {%- endif -%}
 
-<div class="book"
+  <div class="book"
      data-type="{% if book.fiction %}fiction{% else %}non-fiction{% endif %}"
      data-rating="{{ book.rating }}">
     <h3>
@@ -117,6 +117,11 @@ class: bookshelf
           {%- if book.fiction != nil -%}
             Type:
             {% if book.fiction %} Fiction {% else %} Non-Fiction {% endif %}
+            <br>
+          {%- endif -%}
+
+          {%- if book.format != nil -%}
+            Format: {{ book.format }}
             <br>
           {%- endif -%}
 
