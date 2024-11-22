@@ -50,6 +50,11 @@ class: bookshelf
 
 <h3>Filters</h3>
 <p class="filters">
+  Format:
+  <a data-filter="format" data-format="book">Book</a>
+  <a data-filter="format" data-format="audiobook">Audiobook</a>
+</p>
+<p class="filters">
   Type:
   <a data-filter="type" data-type="fiction">Fiction</a>
   <a data-filter="type" data-type="non-fiction">Non-Fiction</a>
@@ -82,8 +87,10 @@ class: bookshelf
   {%- endif -%}
 
   <div class="book"
+     data-format="{{ book.format }}"
      data-type="{% if book.fiction %}fiction{% else %}non-fiction{% endif %}"
-     data-rating="{{ book.rating }}">
+     data-rating="{{ book.rating }}"
+  >
     <h3>
       [{{ total_books | minus: forloop.index0 }}/{{ total_books }}]
       {{ title }}
