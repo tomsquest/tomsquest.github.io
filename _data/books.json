@@ -1,5 +1,18 @@
 [
   {
+    "title": "Le 2e à 1 euro",
+    "subtitle": "Comment le marketing nous manipule",
+    "authors": [
+      "Sibylle Vicendon"
+    ],
+    "rating": 4,
+    "comment": "Plein de techniques marketing, de ce qu'on nous fait croire, des histoires qu'on nous raconte, et qu'on SE raconte.",
+    "date": "2024-10",
+    "fiction": false,
+    "cover": "/assets/books/le-2eme-a-1-euro.jpg",
+    "format": "book"
+  },
+  {
     "title": "Eloge du carburateur",
     "subtitle": "Essai sur le sens et la valeur du travail",
     "authors": [
