@@ -13,12 +13,13 @@
     "format": "book"
   },
   {
-    "title": "Eloge du carburateur",
+    "title": "Éloge du carburateur",
     "subtitle": "Essai sur le sens et la valeur du travail",
     "authors": [
       "Matthew B. Crawford"
     ],
     "rating": 4,
+    "comment": "Le travail manuel comme le futur du travail ? Intéressant. Et je veux réparer des motos maintenant !",
     "date": "2024-11",
     "fiction": false,
     "cover": "/assets/books/eloge-du-carburateur.jpg",
