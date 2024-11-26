@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Expanse",
+    "series": "The Expanse",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "rating": 4,
+    "volume": "8/9",
+    "comment": "L'aventure continue. Pas mal de suspense. J'espère que le dernier tome sera à la hauteur.",
+    "date": "2024-11",
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-8.jpg",
+    "format": "book"
+  },
+  {
     "title": "Le 2e à 1 euro",
     "subtitle": "Comment le marketing nous manipule",
     "authors": [
@@ -7,7 +21,7 @@
     ],
     "rating": 4,
     "comment": "Plein de techniques marketing, de ce qu'on nous fait croire, des histoires qu'on nous raconte, et qu'on SE raconte.",
-    "date": "2024-10",
+    "date": "2024-11",
     "fiction": false,
     "cover": "/assets/books/le-2eme-a-1-euro.jpg",
     "format": "book"
@@ -31,7 +45,7 @@
       "Mark Manson"
     ],
     "rating": 4,
-    "comment": "Du bon sens, s'en foutre, mais pas de n'importe quoi. Quelques bases philosophiques dans un ton terre-à-terre.",
+    "comment": "Du bon sens, s'en foutre, mais pas de n'importe quoi. Quelques bases philosophiques sur un ton terre-à-terre.",
     "date": "2024-10",
     "fiction": false,
     "cover": "/assets/books/l-art-subtil-de-s-en-foutre.jpg",
