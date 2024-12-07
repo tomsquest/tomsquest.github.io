@@ -6,6 +6,8 @@ class: bookshelf
 ---
 
 {% assign total_books = site.data.books | size %}
+{% assign total_printbooks = site.data.books | where: "format", "print" | size %}
+{% assign total_audiobooks = site.data.books | where: "format", "audiobook" | size %}
 
 <h2>Reading 📚</h2>
 
@@ -15,9 +17,9 @@ class: bookshelf
   Browsing this list brings back good memories!
 </p>
 <p>
-  The list currently contains <strong>{{ total_books }}</strong> books,
-  and the fiction part was started around <strong>2014</strong>.
-  I often forgot to update it in the past, so it is far from being complete.
+  The list currently contains <strong>{{ total_books }} books</strong> ({{ total_printbooks }} print, {{ total_audiobooks }} audio).
+  <br>
+  The fiction part was started around 2014, and I did not take notes before that, so it is not complete.
 </p>
 <p>
   If you want to talk about books 📖, you are very welcome! ☺️
@@ -51,7 +53,7 @@ class: bookshelf
 <h3>Filters</h3>
 <p class="filters">
   Format:
-  <a data-filter="format" data-format="book">Book</a>
+  <a data-filter="format" data-format="print">Book</a>
   <a data-filter="format" data-format="audiobook">Audiobook</a>
 </p>
 <p class="filters">
