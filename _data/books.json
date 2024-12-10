@@ -1,5 +1,17 @@
 [
   {
+    "title": "Quality Land 2.0",
+    "authors": [
+      "Marc-Uwe Kling"
+    ],
+    "rating": 4,
+    "comment": "La suite, et c'est plutôt sympa.\nCe n'est quand-même pas la surprise de l'IA avant l'IA du 1er.\nMais c'est toujours foutraque et fun.",
+    "date": "2024-12",
+    "fiction": true,
+    "cover": "/assets/books/quality-land-2.jpg",
+    "format": "print"
+  },
+  {
     "title": "The Expanse",
     "series": "The Expanse",
     "authors": [
