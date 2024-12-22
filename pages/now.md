@@ -10,6 +10,7 @@ class: now
 ### December 2024
 
 - <span class="tag">[selfhost]</span> Tweaked Crowdsec to not ban my mobile phone. I think it may be related to Firefox doing making queries for favicon (favicon-16, favicon-32 and so on) that all get blocked by http-auth, then Crowdsec bans the IP
+- <span class="tag">[selfhost]</span> Manage to find the correct bucket permission for Kopia to be able to extend the object-locks. Need to wait a couple of days to see if the Lifecycle policy does not drop everything eventually.
 - <span class="tag">[selfhost]</span> Switched from FreshRss to [Miniflux](https://miniflux.net/) because the responsive part of FreshRss never worked well
 - <span class="tag">[code]</span> Played with [KuzuDB](https://kuzudb.com/), an embedded graph database. Tons of applications at work.
 - <span class="tag">[selfhost]</span> Tried [Kopia](https://github.com/kopia/kopia/) to backup with Ransomware protection (ie. object-lock, retention policy, permission-less apikey). An article is coming.
