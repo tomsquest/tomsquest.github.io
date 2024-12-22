@@ -9,8 +9,9 @@ class: now
 
 ### December 2024
 
-- <span class="tag">[code]</span> Played with [KuzuDB](https://kuzudb.com/), an embedded graph database. Tons of applications at work.
+- <span class="tag">[selfhost]</span> Tweaked Crowdsec to not ban my mobile phone. I think it may be related to Firefox doing making queries for favicon (favicon-16, favicon-32 and so on) that all get blocked by http-auth, then Crowdsec bans the IP
 - <span class="tag">[selfhost]</span> Switched from FreshRss to [Miniflux](https://miniflux.net/) because the responsive part of FreshRss never worked well
+- <span class="tag">[code]</span> Played with [KuzuDB](https://kuzudb.com/), an embedded graph database. Tons of applications at work.
 - <span class="tag">[selfhost]</span> Tried [Kopia](https://github.com/kopia/kopia/) to backup with Ransomware protection (ie. object-lock, retention policy, permission-less apikey). An article is coming.
 
 ### Novembre 2024
