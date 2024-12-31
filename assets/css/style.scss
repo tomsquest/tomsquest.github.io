@@ -299,6 +299,37 @@ footer.footer-container {
     font-size: small;
     margin-top: 3rem;
   }
+
+  // Inspired from the article by Guy Pursey:
+  // https://guypursey.com/blog/202104171135-next-previous-nav-links-jekyll-blog
+  .post-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-bottom: 1em;
+
+    div {
+      flex: 1 1 0;
+    }
+
+    .post-nav-prev {
+      padding-right: 1em;
+
+      a:after {
+        content: none;
+      }
+    }
+
+    .post-nav-next {
+      padding-left: 1em;
+      text-align: right;
+
+      a:after {
+        content: none;
+      }
+    }
+  }
 }
 
 .projects {
