@@ -9,6 +9,7 @@ class: now
 
 ### December 2024
 
+- <span class="tag">[blog]</span> Publish my full restic setup
 - <span class="tag">[blog]</span> Publish my syncthing + restic backup setup
 - <span class="tag">[selfhost]</span> Tweaked Crowdsec to not ban my mobile phone. I think it may be related to Firefox doing making queries for favicon (favicon-16, favicon-32 and so on) that all get blocked by http-auth, then Crowdsec bans the IP
 - <span class="tag">[selfhost]</span> Manage to find the correct bucket permission for Kopia to be able to extend the object-locks. Need to wait a couple of days to see if the Lifecycle policy does not drop everything eventually.
