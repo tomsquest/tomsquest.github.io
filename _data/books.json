@@ -1,5 +1,56 @@
 [
   {
+    "title": "Le Chrysanthème noir",
+    "series": "Les Enquêtes de la 25e Heure",
+    "authors": [
+      "Feldrik Rivat"
+    ],
+    "rating": 4,
+    "volume": "2/2",
+    "comment": "La suite et la fin. J'ai enfin compris ce qui était abscond dans le 1er tome. Un peu confus par moment, mais bon style.",
+    "date": "2024-12",
+    "fiction": true,
+    "cover": "/assets/books/la-25eme-heure-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Tout sur l'économie, ou presque",
+    "subtitle": "Pour comprendre vraiment ce qui cloche dans le système",
+    "authors": [
+      "Gilles Mitteau"
+    ],
+    "rating": 4,
+    "comment": "Une bonne façon de comprendre l'économie, avec exemples et explications.\nUn peu d'humour, un peu d'avis.\nPas toujours évident en Audiobook. Ecouté en plusieurs mois.\nLong, et bon !",
+    "date": "2024-12",
+    "fiction": false,
+    "cover": "/assets/books/tout-sur-l-economie-ou-presque.jpg",
+    "format": "audiobook"
+  },
+  {
+    "title": "Propaganda",
+    "subtitle": "L’art de manipuler les esprits",
+    "authors": [
+      "Edward L. Bernays"
+    ],
+    "rating": 2,
+    "date": "2024-12",
+    "fiction": false,
+    "cover": "/assets/books/propaganda.jpg",
+    "format": "audiobook"
+  },
+  {
+    "title": "La manipulation par la communication",
+    "subtitle": "L'art de l'éloquence",
+    "authors": [
+      "Justus Kronfeld"
+    ],
+    "rating": 2,
+    "date": "2024-12",
+    "fiction": false,
+    "cover": "/assets/books/la-manipulation-par-la-communication.jpg",
+    "format": "audiobook"
+  },
+  {
     "title": "Quality Land 2.0",
     "authors": [
       "Marc-Uwe Kling"
@@ -1049,7 +1100,7 @@
       "Feldrik Rivat"
     ],
     "rating": 5,
-    "volume": "1/3",
+    "volume": "1/2",
     "comment": "Super histoire en 188x, du mystère, un poil de steampunk, perso super, style genial.\nJe vais lire la 2ème partie !",
     "date": "2022-09",
     "fiction": true,
