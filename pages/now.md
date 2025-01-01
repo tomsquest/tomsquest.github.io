@@ -11,6 +11,9 @@ class: now
 
 - <span class="tag">[blog]</span> Publish my full restic setup
 - <span class="tag">[blog]</span> Publish my syncthing + restic backup setup
+- <span class="tag">[selfhost]</span> Full Kopia setup in place on my server with object-lock, retention policy, permission-less apikey
+- <span class="tag">[book]</span> Read the second book of the "Les Enquêtes de la 25e Heure". Enjoyed it (answers!).
+- <span class="tag">[audiobooks]</span> Finished 3 audiobooks. 2 bad, 1 good. Running and biking help a lot. But no notes means less memory.
 - <span class="tag">[selfhost]</span> Tweaked Crowdsec to not ban my mobile phone. I think it may be related to Firefox doing making queries for favicon (favicon-16, favicon-32 and so on) that all get blocked by http-auth, then Crowdsec bans the IP
 - <span class="tag">[selfhost]</span> Manage to find the correct bucket permission for Kopia to be able to extend the object-locks. Need to wait a couple of days to see if the Lifecycle policy does not drop everything eventually.
 - <span class="tag">[selfhost]</span> Switched from FreshRss to [Miniflux](https://miniflux.net/) because the responsive part of FreshRss never worked well
