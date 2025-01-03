@@ -435,8 +435,6 @@ function main {
 
 ## 4. Secure the Bucket
 
-**Goal**: restrict what the API Key can do and the permissions to the bucket.
-
 ### 4.1 Restrict the API Key (IAM Policy)
 
 **Goal**: restrict the API Key to only what is needed.
