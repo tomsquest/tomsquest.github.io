@@ -5,10 +5,18 @@ title: Now
 class: now
 ---
 
+## 2025
+
+## January 2025
+
+- <span class="tag">[blog]</span> Publish a guide/post on Kopia + Scaleway + Object-lock for ransomware protection
+
 ## 2024
 
 ### December 2024
 
+- <span class="tag">[book]</span> Started reading "Code" by Charles Petzold. Mind-blowing so far! I am making links between electricity, and computers, and why the things are the way they are.
+- <span class="tag">[book]</span> Started reading Yann Le Cun "When the Machine learns". Interesting to see the history, the discoveries made.
 - <span class="tag">[blog]</span> Publish my full restic setup
 - <span class="tag">[blog]</span> Publish my syncthing + restic backup setup
 - <span class="tag">[selfhost]</span> Full Kopia setup in place on my server with object-lock, retention policy, permission-less apikey
