@@ -62,9 +62,11 @@ pre.highlight {
   white-space: nowrap;
 }
 
-// Separate more subsections from content
 h2, h3, h4, h5, h6 {
+  // Separate more subsections from content
   margin-top: 3rem;
+  // More room when clicking on anchor link
+  scroll-margin-top: 2rem;
 }
 
 blockquote {
