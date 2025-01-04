@@ -244,7 +244,7 @@ kopia policy set --global \
     --keep-hourly=48 \
     --keep-daily=30 \
     --keep-weekly=16 \
-    --keep-monthly=24 \
+    --keep-monthly=12 \
     --keep-annual=2 \
     --add-ignore "**/.cache" \
     --add-ignore "**/.local" \
