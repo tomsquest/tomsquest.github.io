@@ -4,11 +4,12 @@ lang: en
 ---
 
 With backups, the ultimate goal is to protect against **ransomware** attacks and for someone, even you, to prevent any deletion.  
-This guide demonstrates how to set up secure backups with Object Lock. We will use [Kopia](https://kopia.io) as the backup tool and [Scaleway](https://www.scaleway.com) as the cloud provider. 
+This guide demonstrates how to set up secure backups with Object Lock. We will use [Kopia](https://kopia.io) as the backup tool and [Scaleway](https://www.scaleway.com) as the cloud provider.
 
 ## What we will achieve
 
 At the end of this guide, you will have:
+
 - A [Scaleway](https://www.scaleway.com) bucket whose content cannot be deleted until a set period
 - [Kopia](https://kopia.io) configured to use this bucket and leverage Object Lock
 
@@ -43,7 +44,7 @@ From [Amazon S3 documentation](https://docs.aws.amazon.com/AmazonS3/latest/userg
 
 ✅ We will protect against malicious or clumsy deletions.
 
-❌ We will not protect against someone accessing the Scaleway account directly and either removing the policies to destroy files or resources or deleting the account.  
+❌ We will not protect against someone accessing the Scaleway account directly and either removing the policies to destroy files or resources or deleting the account.
 
 ❌ Also, we cannot protect against silent encryption of your files, day after day.
 
@@ -54,6 +55,7 @@ As always, make scenarios and test your backups.
 [Kopia](https://kopia.io) is a modern backup tool that supports Object Lock, making it an ideal choice for creating secure, ransomware-resistant backup.
 
 Kopia also provides:
+
 - a UI if you prefer, and can be a good way to test it out
 - a server if you want to offer backup as a service to your users
 - notifications (e.g. summary email of snapshots, push...)
@@ -66,6 +68,7 @@ In the past, I have been using [Restic](https://restic.net/), but it lacks suppo
 ## Why Scaleway?
 
 [Scaleway](https://www.scaleway.com) checks all the boxes for me:
+
 - Object Lock support
 - Cheap
 - Billing in euros
@@ -75,12 +78,12 @@ In the past, I have been using [Restic](https://restic.net/), but it lacks suppo
 ## Prerequisites
 
 - A Scaleway account
-  - Scaleway will be used for Object Storage, storing the blobs of the backup
-  - You can test Scaleway Object Storage with the 750 go offered for free
+    - Scaleway will be used for Object Storage, storing the blobs of the backup
+    - You can test Scaleway Object Storage with the 750 go offered for free
 - AWS CLI installed (`brew install awscli`)
-  - Needed to enable object lock on the bucket, as Scaleway does not (yet) provide a way to do it directly in the UI
+    - Needed to enable object lock on the bucket, as Scaleway does not (yet) provide a way to do it directly in the UI
 - Kopia backup software
-  - Kopia, compared to Restic, supports object lock
+    - Kopia, compared to Restic, supports object lock
 
 ## Retention period
 
@@ -91,9 +94,9 @@ So you will see alot of `730d` in the commands (= 2 years).
 ## Global overview
 
 1. Initial Setup on Scaleway
-   1. Get an API Key
-   2. Create a Bucket with Object Lock
-   3. Configure Object Lock Retention
+    1. Get an API Key
+    2. Create a Bucket with Object Lock
+    3. Configure Object Lock Retention
 2. Kopia Setup
 3. Make Backups with Kopia
 4. Secure Scaleway side
@@ -110,14 +113,14 @@ So you will see alot of `730d` in the commands (= 2 years).
 I initially did screenshots of all steps, but by following the steps, you should be able to do it without them, and it makes the steps clearer.
 
 1. Create a new Project from the top menu
-   - A `Project` is basically a way to group resources together. Nothing special here.
+    - A `Project` is basically a way to group resources together. Nothing special here.
 2. Create a new Application
-   - An `Application` is a technical way to access the project
-   - Go to `IAM > Applications` and create a new one 
+    - An `Application` is a technical way to access the project
+    - Go to `IAM > Applications` and create a new one
 3. Generate an API key for the application
-   - The `API key` is used to authenticate the application
-   - Set the `prefered project` to the project you created. This is mandatory as the Aws CLI has no notion of "projects," so we need a default one.
-   - Keep the `SCW_ACCESS_KEY` and `SCW_SECRET_KEY` for later
+    - The `API key` is used to authenticate the application
+    - Set the `prefered project` to the project you created. This is mandatory as the Aws CLI has no notion of "projects," so we need a default one.
+    - Keep the `SCW_ACCESS_KEY` and `SCW_SECRET_KEY` for later
 4. Create an IAM Policy with `AllProductsFullAccess` permission initially attached to this application (the "Principal")
     - This broader access is **temporarily** needed to create and configure the bucket. We'll restrict the permissions after setup is complete
 
@@ -132,6 +135,7 @@ So far, we have an API Key allowed to do anything in the project.
 Follow the [documentation to configure the AWS CLI](https://www.scaleway.com/en/docs/storage/object/api-cli/object-storage-aws-cli/).
 
 Create `~/.aws/config` (note: I am using the Paris datacenter):
+
 ```ini
 [default]
 region = fr-par
@@ -148,6 +152,7 @@ s3 =
 ```
 
 Create `~/.aws/credentials` and replace with the API key credentials:
+
 ```ini
 [default]
 aws_access_key_id = YOUR_ACCESS_KEY
@@ -157,6 +162,7 @@ aws_secret_access_key = YOUR_SECRET_KEY
 ### 1.3 Create Object Lock-Enabled Bucket
 
 Create the bucket with Object Lock enabled:
+
 ```bash
 aws s3api create-bucket \
     --object-lock-enabled-for-bucket \
@@ -164,6 +170,7 @@ aws s3api create-bucket \
 ```
 
 Verify the configuration:
+
 ```bash
 aws s3api get-object-lock-configuration --bucket YOUR-BUCKET-NAME
 ```
@@ -210,6 +217,7 @@ kopia repository create s3 \
 ```
 
 Validate the repository configuration:
+
 ```bash
 kopia repository validate-provider
 ```
@@ -217,11 +225,13 @@ kopia repository validate-provider
 ### 2.2 Configure Repository Settings
 
 Enable object lock extension during maintenance:
+
 ```bash
 kopia maintenance set --extend-object-locks true
 ```
 
 Set maintenance ownership (required if the repository was created on a different host):
+
 ```bash
 kopia maintenance set --owner=me
 ```
@@ -238,6 +248,7 @@ kopia policy import --global --from-file policy.json
 ```
 
 Else, the policy can be changed using the command line:
+
 ```bash
 kopia policy set --global \
     --keep-latest=28 \
@@ -252,11 +263,13 @@ kopia policy set --global \
 ```
 
 Optional: Enable compression if desired:
+
 ```bash
 kopia policy set --global --compression=zstd
 ```
 
 Display the policy configuration:
+
 ```bash
 kopia policy show --global
 ```
@@ -265,7 +278,7 @@ kopia policy show --global
 
 Kopia needs to extend the object lock retention period. This is done with the `maintenance` command.
 
-By default, Kopia will run the full maintenance every day, which is fine for me. 
+By default, Kopia will run the full maintenance every day, which is fine for me.
 
 You can adjust the schedule with the `kopia maintenance set` command if you wish.
 
@@ -282,6 +295,7 @@ We follow [Restic's documentation for non-root backups](https://restic.readthedo
 ### 3.1 Create Dedicated User
 
 Create a system user for Kopia:
+
 ```bash
 useradd --system --create-home --shell /sbin/nologin kopia
 ```
@@ -291,6 +305,7 @@ useradd --system --create-home --shell /sbin/nologin kopia
 **Note**: the version of Kopia, adapt to the latest version.
 
 Download and set up the Kopia binary with appropriate permissions:
+
 ```bash
 wget -O kopia.tgz https://github.com/kopia/kopia/releases/download/v0.18.2/kopia-0.18.2-linux-x64.tar.gz
 tar xf kopia.tgz
@@ -301,9 +316,11 @@ chmod 750 kopia
 ```
 
 Grant read access to all files without root privileges:
+
 ```bash
 setcap cap_dac_read_search=+ep kopia
 ```
+
 ### 3.3 Systemd service and timer
 
 **Note**: The snippets below are not the one I used. Mine are more complex and are adapted from my article [Backup with Restic](https://www.tomsquest.com/blog/2024/12/backup-restic-setup/#backup)
@@ -312,33 +329,34 @@ In `/etc/systemd/system/kopia-backup.service`:
 
 ```ini
 [Unit]
-Description=Kopia Backup Service
-After=network.target
+Description = Kopia Backup Service
+After = network.target
 
 [Service]
-Type=oneshot
-User=kopia
-ExecStart=/home/kopia/kopia snapshot create /path/to/backup
+Type = oneshot
+User = kopia
+ExecStart = /home/kopia/kopia snapshot create /path/to/backup
 ```
 
 In `/etc/systemd/system/kopia-backup.timer`:
 
 ```ini
 [Unit]
-Description=Run Kopia Backup
+Description = Run Kopia Backup
 
 [Timer]
 # Run daily at 2 AM
-OnCalendar=*-*-* 02:00:00
+OnCalendar = *-*-* 02:00:00
 
 # If the system was off when the backup should have run, run it when the system starts
-Persistent=true
+Persistent = true
 
 [Install]
-WantedBy=timers.target
+WantedBy = timers.target
 ```
 
 Enable the timer:
+
 ```bash
 systemctl daemon-reload
 systemctl enable kopia-backup.timer
@@ -446,6 +464,7 @@ We will change the IAM Policy we created earlier on Scaleway.
 Go back to Scaleway and change the IAM policy to restrict the permissions.
 
 The permissions needed are:
+
 - `ObjectStorageReadOnly`
 - `ObjectStorageBucketsRead`
 - `ObjectStorageObjectsRead`
@@ -481,7 +500,7 @@ Here is the policy in JSON (adapt the ID and bucket):
       "Sid": "1",
       "Effect": "Allow",
       "Principal": {
-        "SCW": "application_id:YOUR_APP_ID"
+        "SCW": "application_id:66005860-13aa-4215-80f8-d1ab22898213"
       },
       "Action": [
         "s3:AbortMultipartUpload",
@@ -489,7 +508,6 @@ Here is the policy in JSON (adapt the ID and bucket):
         "s3:DeleteObjectTagging",
         "s3:GetBucketTagging",
         "s3:GetBucketVersioning",
-        "s3:GetBucketWebsite",
         "s3:GetLifecycleConfiguration",
         "s3:GetObject",
         "s3:GetObjectTagging",
@@ -505,8 +523,20 @@ Here is the policy in JSON (adapt the ID and bucket):
         "s3:PutObjectVersionTagging"
       ],
       "Resource": [
-        "YOUR-BUCKET-NAME",
-        "YOUR-BUCKET-NAME/*"
+        "tomsquest-kopia",
+        "tomsquest-kopia/*"
+      ]
+    },
+    {
+      "Sid": "Scaleway secure statement",
+      "Effect": "Allow",
+      "Principal": {
+        "SCW": "user_id:bf6b9cf0-fb35-41a8-a810-822e3a62f567"
+      },
+      "Action": "*",
+      "Resource": [
+        "tomsquest-kopia",
+        "tomsquest-kopia/*"
       ]
     }
   ]
@@ -552,7 +582,7 @@ kopia snapshot restore --snapshot-time="latest" /my-backup-dir /destination
 
 ### 5.2 Restore specific Point in Time
 
-In this scenario, something has deleted snapshots or ransomware, and we want to get back in time before the deletion. 
+In this scenario, something has deleted snapshots or ransomware, and we want to get back in time before the deletion.
 
 We need to connect to the repository at a specific point in time using the `--point-in-time` option.
 
@@ -565,9 +595,10 @@ kopia repository connect s3 \
 
 ## Conclusion
 
-Through this guide, we have set up a robust, ransomware-resistant backup system using Kopia and Scaleway's Object Lock feature. 
+Through this guide, we have set up a robust, ransomware-resistant backup system using Kopia and Scaleway's Object Lock feature.
 
 The combination provides several key security benefits:
+
 - Object Lock with Compliance mode ensures backups cannot be deleted or modified, even by administrators, for a set period.
 - Multiple layers of security through restricted IAM policies and bucket permissions
 
