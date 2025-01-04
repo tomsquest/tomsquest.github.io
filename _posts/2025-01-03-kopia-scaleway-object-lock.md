@@ -1,10 +1,13 @@
 ---
 title: Ransomware-Resistant Backups with Kopia and Scaleway Object Lock
 lang: en
+last_modified_at: 2025-01-04
 ---
 
 With backups, the ultimate goal is to protect against **ransomware** attacks and for someone, even you, to prevent any deletion.  
 This guide demonstrates how to set up secure backups with Object Lock. We will use [Kopia](https://kopia.io) as the backup tool and [Scaleway](https://www.scaleway.com) as the cloud provider.
+
+**Updated**: add precision about Scaleway IAM and Bucket policies
 
 ## What we will achieve
 
@@ -74,6 +77,16 @@ In the past, I have been using [Restic](https://restic.net/), but it lacks suppo
 - Billing in euros
 
 [Backblaze](https://www.backblaze.com/) B2 is also a good choice, but billing is in dollar.
+
+## Scaleway IAM policy and Bucket policy
+
+On Scaleway, you have two levels of security:
+- IAM Policy: restricts what a "Principal" can do
+- Bucket Policy: restricts what can be done inside the bucket (which fine-grained permissions are allowed: `s3:PutObject`, `s3:GetObject`...)
+
+I am pretty sure that if the IAM Policy described below is enough because we do not allow any write or delete operations on buckets themselves, but only on their content. Still, I included both policies.
+
+**Note**: Scaleway use the IAM Policy first. Then, if the policy grants the permission, the Bucket Policy will be checked if it exists. That means that the Bucket Policy is optional.
 
 ## Prerequisites
 
