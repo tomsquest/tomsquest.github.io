@@ -7,7 +7,7 @@ class: now
 
 ## 2025
 
-## January 2025
+### January 2025
 
 - <span class="tag">[blog]</span> Publish a guide/post on Kopia + Scaleway + Object-lock for ransomware protection
 
