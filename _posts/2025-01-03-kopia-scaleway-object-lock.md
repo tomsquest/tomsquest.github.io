@@ -233,8 +233,8 @@ kopia maintenance set --owner=me
 **Note**: Maybe more convenient, the global policy can be exported, modified and re-imported:
 
 ```bash
-kopia policy import --from-file policy.json
-kopia policy export --to-file policy.json
+kopia policy export --global --to-file policy.json
+kopia policy import --global --from-file policy.json
 ```
 
 Else, the policy can be changed using the command line:
