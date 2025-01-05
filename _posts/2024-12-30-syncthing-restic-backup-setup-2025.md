@@ -70,9 +70,9 @@ As per the provider, I went from [Backblaze](http://backblaze.com/) (aka "b2") t
 
 ## Next Up: Ransomware-Proof backups
 
-My next article will be on how to enable [Kopia Ransomware protection](https://kopia.io/docs/advanced/ransomware-protection/) on Scaleway.
+I wrote the following article: [Ransomware-Resistant Backups with Kopia and Scaleway Object Lock ](https://www.tomsquest.com/blog/2025/01/kopia-scaleway-object-lock/)
 
-The goal here is to protect against someone accessing, deleting, or altering the backup.  
+The goal here is to protect against someone deleting, or altering the backups.  
 To achieve this level of protection, [Kopia](https://kopia.io/) is needed  
 Kopia is an alternative to Restic and also offers great features and has a User Interface.  
 For this article, I focused on Restic, because Restic is stable, maybe "less modern", but for backups, the reliable aspect is key.
