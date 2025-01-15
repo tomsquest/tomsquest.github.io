@@ -1,5 +1,17 @@
 [
   {
+    "title": "Comment voyager dans les Terres oubliées",
+    "authors": [
+      "Sarah Brooks"
+    ],
+    "rating": 3,
+    "comment": "Un voyage en train dans un univers Lovecraftien.\nIl faut bien suspendre son incrédulité.\nHistorie moyennement intrigante. Fin pas dingue",
+    "date": "2025-01",
+    "fiction": true,
+    "cover": "/assets/books/comment-voyager-dans-les-terres-oubliees.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le Chrysanthème noir",
     "series": "Les Enquêtes de la 25e Heure",
     "authors": [
