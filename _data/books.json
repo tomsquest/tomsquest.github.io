@@ -1,5 +1,18 @@
 [
   {
+    "title": "Quand la machine apprend",
+    "subtitle": "La révolution des neurones artificiels et de l'apprentissage profond",
+    "authors": [
+      "Yann Le Cun"
+    ],
+    "rating": 4,
+    "comment": "L'histoire de l'IA et du deep learning, vu par celui qui en fait partie.\nTechnique sans être un livre pour apprendre à faire.\nJ'ai bien aimé la vision de l'auteur sur l'IA et le/notre futur.",
+    "date": "2025-01",
+    "fiction": false,
+    "cover": "/assets/books/quand-la-machine-apprend.jpg",
+    "format": "print"
+  },
+  {
     "title": "Wilt 1",
     "series": "Comment se sortir d'une poupée gonflable et de beaucoup d'autres ennuis",
     "authors": [
