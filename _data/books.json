@@ -1,5 +1,19 @@
 [
   {
+    "title": "Wilt 1",
+    "series": "Comment se sortir d'une poupée gonflable et de beaucoup d'autres ennuis",
+    "authors": [
+      "Tom Sharpe"
+    ],
+    "rating": 4,
+    "volume": "1/4",
+    "comment": "Ça commençait mal, trop gras, puis les situations sont devenus bien rigolotes, et je me suis bien amusé !",
+    "date": "2025-01",
+    "fiction": true,
+    "cover": "/assets/books/wilt-1.jpg",
+    "format": "print"
+  },
+  {
     "title": "Comment voyager dans les Terres oubliées",
     "authors": [
       "Sarah Brooks"
