@@ -9,6 +9,7 @@ class: now
 
 ### January 2025
 
+- <span class="tag">[book]</span> Finished Yann Le Cun "When the Machine learns". IA is so old and so new! The future will bring changes!
 - <span class="tag">[blog]</span> Publish a guide/post on Kopia + Scaleway + Object-lock for ransomware protection
 
 ## 2024
