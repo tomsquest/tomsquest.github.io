@@ -7,8 +7,18 @@ class: now
 
 ## 2025
 
+### February 2025
+
+- <span class="tag">[code]</span> [Wrote a plugin for AlbertLauncher](https://github.com/tomsquest/albert_plugin_firefox_bookmarks) to search my bookmarks and history, with favicons!
+- <span class="tag">[life]</span> A week of holidays! Resplenishing, but so fast back to work!
+- <span class="tag">[book]</span> Still reading "Code" by Charles Petzold when I have some time and energy. I learn a lot about complexity, tiny pieces making a whole.
+- <span class="tag">[book]</span> Read volume 1 and 2 of "La Belgariade" by David Eddings. A coworker told me it's better than "The Lord of the Ring." Somehow. And I forgot that I already read those 2 books a couple of years ago!
+
 ### January 2025
 
+- <span class="tag">[book]</span> Read "Druss la Légende" by David Gemmell. Very simple, as an Action/Fantasy book. I was expected more.
+- <span class="tag">[book]</span> Did not finish "Wilt 2" because I had to return it to the library.
+- <span class="tag">[book]</span> Stopped reading "Le Réseau Corneille" by Ken Follett. I was expecting history bits, but it's an action book, and the torture scenes were too much for me.
 - <span class="tag">[book]</span> Finished Yann Le Cun "When the Machine learns". IA is so old and so new! The future will bring changes!
 - <span class="tag">[blog]</span> Publish a guide/post on Kopia + Scaleway + Object-lock for ransomware protection
 
