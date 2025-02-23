@@ -1,5 +1,45 @@
 [
   {
+    "title": "La Reine des sortilèges",
+    "series": "La Belgariade",
+    "authors": [
+      "David Eddings"
+    ],
+    "rating": 3,
+    "volume": "2/5",
+    "comment": "Déjà lu aussi",
+    "date": "2025-02",
+    "fiction": true,
+    "cover": "/assets/books/belgariade-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le Pion blanc des présages",
+    "series": "La Belgariade",
+    "authors": [
+      "David Eddings"
+    ],
+    "rating": 3,
+    "volume": "1/5",
+    "comment": "Déjà lu. C'est quand tu arrives à prédire la scène suivante que tu te souviens avoir déjà lu le livre. 3/5 car peu de surprise de ce fait.",
+    "date": "2025-02",
+    "fiction": true,
+    "cover": "/assets/books/belgariade-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Druss la légende",
+    "authors": [
+      "David Gemmell"
+    ],
+    "rating": 3,
+    "comment": "Simple, c'est de l'Action Fantasy. J'attendais des trahisons, des double-jeux, mais c'est très linéaire",
+    "date": "2025-01",
+    "fiction": true,
+    "cover": "/assets/books/druss-la-legende.jpg",
+    "format": "print"
+  },
+  {
     "title": "Quand la machine apprend",
     "subtitle": "La révolution des neurones artificiels et de l'apprentissage profond",
     "authors": [
