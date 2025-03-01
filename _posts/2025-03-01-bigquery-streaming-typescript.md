@@ -4,13 +4,15 @@ lang: en
 ---
 
 How to read from BigQuery in the fastest possible way?
-Let's explore three different ways, from normal to the fastest one I know. 
+Let's explore three different ways, from normal to the fastest one I know.
 
 **TL;DR**
 - Fastest: stream using BigQuery Storage and **Avro**
 - Faster: stream using BigQuery Storage and **Arrow**
 - Normal: plain BigQuery stream
 - BigQuery Storage has some important limits ([see below](#limits))
+
+Code examples are written in TypeScript, fully typed.
 
 ## Start: no streaming at all
 
