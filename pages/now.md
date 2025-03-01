@@ -10,10 +10,11 @@ class: now
 ### March 2025
  
 - <span class="tag">[blog]</span> Publish [Streaming data from BigQuery with TypeScript, Fast!](https://www.tomsquest.com/blog/2025/03/bigquery-streaming-typescript/)
+- <span class="tag">[code]</span> [Wrote a plugin for AlbertLauncher to use WordReference](https://github.com/tomsquest/albert_plugin_wordreference)
 
 ### February 2025
 
-- <span class="tag">[code]</span> [Wrote a plugin for AlbertLauncher](https://github.com/tomsquest/albert_plugin_firefox_bookmarks) to search my bookmarks and history, with favicons!
+- <span class="tag">[code]</span> [Wrote a plugin for AlbertLauncher to launch Firefox bookmarks and history](https://github.com/tomsquest/albert_plugin_firefox_bookmarks) and added with favicons!
 - <span class="tag">[life]</span> A week of holidays! Replenishing, but so fast back to work!
 - <span class="tag">[book]</span> Still reading "Code" by Charles Petzold when I have some time and energy. I learn a lot about complexity, tiny pieces making a whole.
 - <span class="tag">[book]</span> Read volume 1 and 2 of "La Belgariade" by David Eddings. A coworker told me it's better than "The Lord of the Ring." Somehow. And I forgot that I already read those 2 books a couple of years ago!
