@@ -7,6 +7,10 @@ class: now
 
 ## 2025
 
+### March 2025
+ 
+- <span class="tag">[blog]</span> Publish [Streaming data from BigQuery with TypeScript, Fast!](https://www.tomsquest.com/blog/2025/03/bigquery-streaming-typescript/)
+
 ### February 2025
 
 - <span class="tag">[code]</span> [Wrote a plugin for AlbertLauncher](https://github.com/tomsquest/albert_plugin_firefox_bookmarks) to search my bookmarks and history, with favicons!
