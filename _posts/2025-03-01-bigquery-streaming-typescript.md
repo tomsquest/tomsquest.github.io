@@ -1,5 +1,5 @@
 ---
-title: Streaming data to BigQuery with TypeScript, Fast!
+title: Streaming data from BigQuery with TypeScript, Fast!
 lang: en
 last_modified_at: 2025-03-01
 ---
