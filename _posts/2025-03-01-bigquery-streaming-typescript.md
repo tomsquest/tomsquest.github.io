@@ -12,7 +12,11 @@ Let's explore three different ways, from normal to the fastest one I know.
 - Normal: plain BigQuery stream
 - BigQuery Storage has some important limits ([see below](#limits))
 
-Code examples are written in TypeScript, fully typed.
+## Code samples
+
+I provide here some functions, written in TypeScript.
+
+It should not be hard to convert to Python or other, given Google provides the Client in that language.
 
 ## Start: no streaming at all
 
