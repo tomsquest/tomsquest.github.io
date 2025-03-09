@@ -1,5 +1,19 @@
 [
   {
+    "title": "Le livre sans nom",
+    "series": "Bourbon Kid",
+    "authors": [
+      "Anonyme"
+    ],
+    "rating": 4,
+    "volume": "1/10",
+    "comment": "Tarantino fantastique. Ca flingue, ça étripe !\nCe commentaire Amazon résume bien: \"bars miteux, tueurs à gages, moines Shaolin et vampires\"",
+    "date": "2025-03",
+    "fiction": true,
+    "cover": "/assets/books/bourbon-kid-1.jpg",
+    "format": "print"
+  },
+  {
     "title": "La Reine des sortilèges",
     "series": "La Belgariade",
     "authors": [
