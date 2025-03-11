@@ -1,6 +1,7 @@
 ---
 title: Streaming data from BigQuery with TypeScript, Fast!
 lang: en
+last_modified_at: 2025-03-11
 ---
 
 How to read from BigQuery in the fastest possible way?
@@ -107,13 +108,19 @@ Still, two things can restrict the data:
 - `selectedFields` list the columns to read, eg. `selectedFields: ["name", "age"]`
 - `rowRestriction` is a kind of `WHERE` clause, eg. `rowRestriction: "name IS NOT NULL and age >= 18"`
 
-#### 2. Session time
+#### 2. No ordering
+
+You cannot order the data. You get the data as it is stored in BigQuery.
+
+So, there is no guarantee of the order of the rows. Maybe streaming will start with the last inserted rows, who knows? 🤷‍♂
+
+#### 3. Session time
 
 To read, you open a "read session." This session is opened for **6 hours**, and will be closed eventually by BigQuery.
 
 This can be short in certain circumstances. And it seems there is no way to extend the duration.
 
-#### 3. Errors
+#### 4. Errors
 
 We got some random errors, like `RST_stream`, or unable to create a read session.  
 So remember to retry in case of errors.
