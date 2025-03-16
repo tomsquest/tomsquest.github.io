@@ -1,5 +1,19 @@
 [
   {
+    "title": "Journal d'un AssaSynth",
+    "series": "Journal d'un AssaSynth",
+    "authors": [
+      "Martha Wells"
+    ],
+    "rating": 4,
+    "volume": "3",
+    "comment": "L'histoire du robot de sécurité \"émancipé\" continue.\nNouvel épisode avec le fil rouge qui continue.\nUn petit bonbon SF !",
+    "date": "2025-03",
+    "fiction": true,
+    "cover": "/assets/books/journal-dun-assasynth-3.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le livre sans nom",
     "series": "Bourbon Kid",
     "authors": [

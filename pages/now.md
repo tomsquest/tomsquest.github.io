@@ -9,6 +9,7 @@ class: now
 
 ### March 2025
 
+- <span class="tag">[book]</span> Read "Assasynth" third volume. Short and sweet ! I want to read all the others.
 - <span class="tag">[book]</span> Read "Bourbon Kid" first volume. Like a Tarantino movie. The twist with vampyre was ok-ish, but had some fun!
 - <span class="tag">[blog]</span> Publish [Streaming data from BigQuery with TypeScript, Fast!](https://www.tomsquest.com/blog/2025/03/bigquery-streaming-typescript/)
 - <span class="tag">[code]</span> [Wrote a plugin for AlbertLauncher to use WordReference](https://github.com/tomsquest/albert_plugin_wordreference)
