@@ -1,5 +1,17 @@
 [
   {
+    "title": "Les Data Sciences en 100 questions/réponses",
+    "authors": [
+      "Younes Benzaki"
+    ],
+    "rating": 3,
+    "comment": "Un bon récap, ou checklist sur le Machine Learning de manière générale.\nPas pointu, peu didactique. Un peu comme un quizz léger.\nBien aimé pour l'étendue des questions.\nJ'aurai aimé des astuces ou des pièges, mais ce n'était pas le but du livre.",
+    "date": "2025-03",
+    "fiction": false,
+    "cover": "/assets/books/data-sciences-100-questions-reponses.jpg",
+    "format": "print"
+  },
+  {
     "title": "Journal d'un AssaSynth",
     "series": "Journal d'un AssaSynth",
     "authors": [

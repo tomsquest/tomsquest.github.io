@@ -9,6 +9,7 @@ class: now
 
 ### March 2025
 
+- <span class="tag">[book]</span> Read "Les Data Sciences en 100 questions/réponses". I liked the overview, but it is not a learning book, more a checklist to summarize knowledge. I would have greatly appreciated some tips and tricks to make the answers more appealing.
 - <span class="tag">[book]</span> Read "Assasynth" third volume. Short and sweet ! I want to read all the others.
 - <span class="tag">[book]</span> Read "Bourbon Kid" first volume. Like a Tarantino movie. The twist with vampyre was ok-ish, but had some fun!
 - <span class="tag">[blog]</span> Publish [Streaming data from BigQuery with TypeScript, Fast!](https://www.tomsquest.com/blog/2025/03/bigquery-streaming-typescript/)
