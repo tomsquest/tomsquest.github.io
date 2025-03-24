@@ -34,6 +34,8 @@ const client = new Client({
 });
 ```
 
+The [Basic Configuration page](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/basic-config.html) of Elastic.js lists all available options.
+
 ## Conclusion
 
 A quick-win for some performance gain. Always enable compression when working with Elasticsearch in Node.js. 
