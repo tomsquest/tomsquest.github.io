@@ -476,3 +476,7 @@ If you need speed and have a single source table, go for BigQuery Storage using 
 Go for the Arrow format if you need a columnar way of getting the data (think an array of array).
 
 Enjoy streaming as fast as you (or BigQuery) can! 🚀
+
+## Thanks
+
+Thanks to my colleague, [Jessé Peixoto](https://www.linkedin.com/in/jessepeixoto/) for help on this topic.
