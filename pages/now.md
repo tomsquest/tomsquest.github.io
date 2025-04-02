@@ -9,6 +9,7 @@ class: now
 
 ### March 2025
 
+- <span class="tag">[audiobook]</span> Read "Home Deus" by Yuval Noah Harari. Very intriguing on our future. And written in 2019, before major AI advancement. Wow!
 - <span class="tag">[blog]</span> Publish [Enable Elastic Compression]({% post_url 2025-03-23-elasticsearch-enable-compression %})
 - <span class="tag">[book]</span> Read "Les Data Sciences en 100 questions/réponses." I liked the overview, but it is not a learning book, more a checklist to summarize knowledge. I would have greatly appreciated some tips and tricks to make the answers more appealing.
 - <span class="tag">[book]</span> Read "Assasynth" third volume. Short and sweet ! I want to read all the others.
@@ -42,7 +43,7 @@ class: now
 - <span class="tag">[blog]</span> Publish my [syncthing + restic backup setup]({% post_url 2024-12-30-syncthing-restic-backup-setup-2025 %})
 - <span class="tag">[selfhost]</span> Full Kopia setup in place on my server with object-lock, retention policy, permission-less apikey
 - <span class="tag">[book]</span> Read the second book of the "Les Enquêtes de la 25e Heure". Enjoyed it (answers!).
-- <span class="tag">[audiobooks]</span> Finished 3 audiobooks. 2 bad, 1 good. Running and biking help a lot. But no note means less memory.
+- <span class="tag">[audiobook]</span> Finished 3 audiobooks. 2 bad, 1 good. Running and biking help a lot. But no note means less memory.
 - <span class="tag">[selfhost]</span> Tweaked Crowdsec to not ban my mobile phone. I think it may be related to Firefox doing making queries for favicon (favicon-16, favicon-32 and so on) that all get blocked by http-auth, then Crowdsec bans the IP
 - <span class="tag">[selfhost]</span> Manage to find the correct bucket permission for Kopia to be able to extend the object-locks. I need to wait a couple of days to see if the Lifecycle policy does not drop everything eventually.
 - <span class="tag">[selfhost]</span> Switched from FreshRss to [Miniflux](https://miniflux.net/) because the responsive part of FreshRss never worked well

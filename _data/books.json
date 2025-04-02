@@ -1,5 +1,18 @@
 [
   {
+    "title": "Homo deus",
+    "subtitle": "Une brève histoire du futur",
+    "authors": [
+      "Yuval Noah Harari"
+    ],
+    "rating": 4,
+    "comment": "Ce livre m'a ouvert à d'autres réflexions sur la place de l'homme. D'autant plus vrai avec l'IA, et ses répercussions. Vraiment bon !",
+    "date": "2025-03",
+    "fiction": false,
+    "cover": "/assets/books/homo-deus.jpg",
+    "format": "audiobook"
+  },
+  {
     "title": "Les Data Sciences en 100 questions/réponses",
     "authors": [
       "Younes Benzaki"
