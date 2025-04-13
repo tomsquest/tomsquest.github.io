@@ -1,5 +1,33 @@
 [
   {
+    "title": "L'oeil de la lune",
+    "series": "Bourbon Kid",
+    "authors": [
+      "Anonyme"
+    ],
+    "rating": 4,
+    "volume": "2/10",
+    "comment": "Encore plus que le 1er. Là, on est direct dans le bain. La fin bien fun. Mais je ne vois pas ce qu'il y aura dans les suivants.",
+    "date": "2025-04",
+    "fiction": true,
+    "cover": "/assets/books/bourbon-kid-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Wilt 3",
+    "series": "Wilt",
+    "authors": [
+      "Tom Sharpe"
+    ],
+    "rating": 4,
+    "volume": "3/5",
+    "comment": "Je me fais à l'humour. C'est plutôt n'importe quoi, mais c'est ce qui est drôle !",
+    "date": "2025-04",
+    "fiction": true,
+    "cover": "/assets/books/wilt-3.jpg",
+    "format": "print"
+  },
+  {
     "title": "Homo deus",
     "subtitle": "Une brève histoire du futur",
     "authors": [
@@ -81,6 +109,20 @@
     "format": "print"
   },
   {
+    "title": "Wilt 2",
+    "series": "Wilt",
+    "authors": [
+      "Tom Sharpe"
+    ],
+    "rating": 4,
+    "volume": "2/5",
+    "comment": "Toujours un peu cinglé, cru. Mais ça marche !",
+    "date": "2025-02",
+    "fiction": true,
+    "cover": "/assets/books/wilt-2.jpg",
+    "format": "print"
+  },
+  {
     "title": "Druss la légende",
     "authors": [
       "David Gemmell"
@@ -107,12 +149,12 @@
   },
   {
     "title": "Wilt 1",
-    "series": "Comment se sortir d'une poupée gonflable et de beaucoup d'autres ennuis",
+    "series": "Wilt",
     "authors": [
       "Tom Sharpe"
     ],
     "rating": 4,
-    "volume": "1/4",
+    "volume": "1/5",
     "comment": "Ça commençait mal, trop gras, puis les situations sont devenus bien rigolotes, et je me suis bien amusé !",
     "date": "2025-01",
     "fiction": true,

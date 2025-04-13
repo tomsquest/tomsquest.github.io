@@ -7,11 +7,17 @@ class: now
 
 ## 2025
 
+### April 2025
+
+- <span class="tag">[book]</span> Read "Bourbon Kid" 2. Still good. Blood, vampyres, Tarantino style.
+- <span class="tag">[book]</span> Read "Wilt 3". Fun!
+
 ### March 2025
 
 - <span class="tag">[audiobook]</span> Read "Home Deus" by Yuval Noah Harari. Very intriguing on our future. And written in 2019, before major AI advancement. Wow!
 - <span class="tag">[blog]</span> Publish [Enable Elastic Compression]({% post_url 2025-03-23-elasticsearch-enable-compression %})
 - <span class="tag">[book]</span> Read "Les Data Sciences en 100 questions/réponses." I liked the overview, but it is not a learning book, more a checklist to summarize knowledge. I would have greatly appreciated some tips and tricks to make the answers more appealing.
+- <span class="tag">[book]</span> Finished "Wilt 2"
 - <span class="tag">[book]</span> Read "Assasynth" third volume. Short and sweet ! I want to read all the others.
 - <span class="tag">[book]</span> Read "Bourbon Kid" first volume. Like a Tarantino movie. The twist with vampyre was ok-ish, but had some fun!
 - <span class="tag">[blog]</span> Publish [Streaming data from BigQuery with TypeScript, Fast!]({% post_url 2025-03-01-bigquery-streaming-typescript %})
