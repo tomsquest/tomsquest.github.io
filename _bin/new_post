@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'fileutils'
+
+puts "Jekyll Post Generator"
+puts "---------------------"
+
+# Get title
+print "Enter post title: "
+title = gets.chomp
+
+# Generate slug from title
+slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+
+# Generate date
+date = Date.today
+date_prefix = date.strftime('%Y-%m-%d')
+
+# Vars
+file_name = "#{date_prefix}-#{slug}"
+file_path = "_posts/#{file_name}.md"
+image_dir = "assets/images/posts/#{file_name}"
+
+# Create
+front_matter = "---\n"
+front_matter += "title: \"#{title}\"\n"
+front_matter += "lang: en\n"
+front_matter += "image: /assets/images/posts/#{file_name}/cover.png\n"
+front_matter += "---\n\n"
+File.open(file_path, "w") do |file|
+  file.puts front_matter
+end
+FileUtils.mkdir_p(image_dir)
+
+puts "\n"
+puts "Post created successfully!"
+puts "Post file: #{file_path}"
+puts "Image dir: #{image_dir}"
+puts "📝 Happy writing!"
