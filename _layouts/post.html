@@ -3,6 +3,13 @@ layout: base
 ---
 
 <article class="post">
+
+  {%- if page.image -%}
+  <div class="post-image">
+    <img src="{{ page.image }}" alt="{{ page.title | escape }}">
+  </div>
+  {%- endif -%}
+
   <header>
     <h1>
       {{ page.title | escape }}
@@ -24,12 +31,6 @@ layout: base
       <span>{{ site.author.name }}</span>
     </p>
   </header>
-
-  {%- if page.image -%}
-  <div class="post-image">
-    <img src="{{ page.image }}" alt="{{ page.title | escape }}">
-  </div>
-  {%- endif -%}
 
   <div>
     {{ content }}
