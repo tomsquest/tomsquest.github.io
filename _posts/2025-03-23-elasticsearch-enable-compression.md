@@ -4,8 +4,6 @@ lang: en
 image: /assets/images/posts/2025-03-23-elasticsearch-enable-compression/compression.png
 ---
 
-# Improving Elasticsearch Performance with Compression in Node.js
-
 When using Elasticsearch in Node.js apps, there's a simple performance optimization many developers miss: **compression is not enabled by default**.
 
 ## TL;DR
