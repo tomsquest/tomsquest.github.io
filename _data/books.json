@@ -1,5 +1,17 @@
 [
   {
+    "title": "Système 1, système 2: Les deux vitesses de la pensée",
+    "authors": [
+      "Daniel Kahneman"
+    ],
+    "rating": 4,
+    "comment": "Traduction française de \"Thinking, Fast and Slow\".\nSuper intéressant sur les modes de pensée, et les biais cognitifs.\nBeaucoup d'infos en audio, il faut que je lise la version papier",
+    "date": "2025-04",
+    "fiction": false,
+    "cover": "/assets/books/thinking-fast-and-slow.jpg",
+    "format": "audiobook"
+  },
+  {
     "title": "L'oeil de la lune",
     "series": "Bourbon Kid",
     "authors": [
