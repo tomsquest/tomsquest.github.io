@@ -9,7 +9,8 @@ class: now
 
 ### April 2025
 
-- <span class="tag">[blog]</span> Publishes "Kibana most useful keyboard shortcuts" article
+- <span class="tag">[blog]</span> Published "Kibana _cat apis tips" article
+- <span class="tag">[blog]</span> Published "Kibana most useful keyboard shortcuts" article
 - <span class="tag">[blog]</span> Published all of my LinkedIn posts around Elastic here, with a bit more details
 - <span class="tag">[audiobook]</span> Listened to "Thinking fast and slow" (french version). Tons of knowledge! Should read the paper version.
 - <span class="tag">[book]</span> Read "Bourbon Kid" 2. Still good. Blood, vampyres, Tarantino style.
