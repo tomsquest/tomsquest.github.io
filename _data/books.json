@@ -4,12 +4,24 @@
     "authors": [
       "Becky Chambers"
     ],
-    "rating": 4,
+    "rating": 5,
     "comment": "Vraiment pas mal. Court et intriguant.\nLa rencontre avec un robot, et du héros qui a tout, mais est insatisfait.\nJ'aimerais lire ce que l'auteure a écrit d'autres.",
     "date": "2025-04",
     "fiction": true,
     "cover": "/assets/books/un-psaume-pour-les-recycles-sauvages.jpg",
     "format": "print"
+  },
+  {
+    "title": "24 Heures dans l'ancienne Athènes",
+    "authors": [
+      "Philip Matyszak"
+    ],
+    "rating": 5,
+    "comment": "Heure par heure, 24 personnages, une tonne d'info.\nDistrayant, et instructif.\nTop !",
+    "date": "2025-04",
+    "fiction": false,
+    "cover": "/assets/books/24-heures-dans-l-ancienne-athenes.jpg",
+    "format": "audiobook"
   },
   {
     "title": "Traité de changement de vie: L'aventure d'une famille en quête d'autonomie à la campagne",
