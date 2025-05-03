@@ -12,6 +12,19 @@
     "format": "print"
   },
   {
+    "title": "Traité de changement de vie: L'aventure d'une famille en quête d'autonomie à la campagne",
+    "authors": [
+      "Myriam Gantier",
+      "Renaud Ghesquière"
+    ],
+    "rating": 4,
+    "comment": "Intéressant pour les parties techniques.\nCouvre un large panel sur l'autonomie.\nBeaucoup d'effort !\nJ'aurai aimé plus de retour d'expérience.",
+    "date": "2025-04",
+    "fiction": false,
+    "cover": "/assets/books/traite-de-changement-de-vie.jpg",
+    "format": "print"
+  },
+  {
     "title": "Système 1, système 2: Les deux vitesses de la pensée",
     "authors": [
       "Daniel Kahneman"
