@@ -27,6 +27,10 @@ green  open   my-app-2025.04.15    ZYe2TuLnTGOJrWnlwK3w2A   1   1      14576    
 green  open   my-app-2025.04.16    39cQj19gTa28hkYNMr9syQ   1   1      28347            0     15.1mb          7.5mb        7.5mb
 ```
 
+Even more, as [Rolf de Vries](https://www.linkedin.com/in/rolfdevries1984/) pointed out:
+
+> For those who want to save keystrokes: you can do `s=i` as well to sort on the index name
+
 ## More: custom columns, sort descending
 
 Use `h=field1,field2` to specify which columns to display.
