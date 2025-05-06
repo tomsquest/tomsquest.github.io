@@ -8,7 +8,7 @@ class: now
 ## 2025
 
 ### April 2025
-- 
+
 - <span class="tag">[code]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code.
 - <span class="tag">[blog]</span> Published "Kibana _cat apis tips" article
 - <span class="tag">[blog]</span> Published "Kibana most useful keyboard shortcuts" article
