@@ -1,5 +1,17 @@
 [
   {
+    "title": "Mon frère ce zéro",
+    "authors": [
+      "Colin Thibert"
+    ],
+    "rating": 4,
+    "comment": "Ça commençait bien, drôle, puis c'est devenu un peu sordide.\nUn bon moment, mais j'aurais aimé rigoler plus.",
+    "date": "2025-05",
+    "fiction": true,
+    "cover": "/assets/books/mon-frere-ce-zero.jpg",
+    "format": "print"
+  },
+  {
     "title": "Un psaume pour les recyclés sauvages",
     "authors": [
       "Becky Chambers"
