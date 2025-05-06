@@ -7,6 +7,10 @@ class: now
 
 ## 2025
 
+### May 2025
+
+- <span class="tag">[book]</span> Started reading "Thinking fast and slow". Biases, we are full of quirks!
+
 ### April 2025
 
 - <span class="tag">[code]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code.
