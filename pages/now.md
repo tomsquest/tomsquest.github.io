@@ -9,14 +9,15 @@ class: now
 
 ### May 2025
 
-- [book] Read the last volume of “The Expanse” (vol. 9). A good sci-fi series.
+- <span class="tag">[book]</span> Read the last volume of “The Expanse” (vol. 9). A good sci-fi series.
+- <span class="tag">[blog]</span> Published [Best books on Search]({% post_url 2025-05-08-best-books-on-search %})
 - <span class="tag">[book]</span> Started reading "Thinking fast and slow". Biases, we are full of quirks!
 
 ### April 2025
 
 - <span class="tag">[code]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code.
-- <span class="tag">[blog]</span> Published "Kibana _cat apis tips" article
-- <span class="tag">[blog]</span> Published "Kibana most useful keyboard shortcuts" article
+- <span class="tag">[blog]</span> Published [Kibana _cat apis tips]({% post_url 2025-04-25-kibana-_cat-api-tips-for-elasticsearch %})
+- <span class="tag">[blog]</span> Published [Kibana most useful keyboard shortcuts]({% post_url 2025-04-21-kibana-most-useful-keyboard-shortcuts %})
 - <span class="tag">[blog]</span> Published all of my LinkedIn posts around Elastic here, with a bit more details
 - <span class="tag">[audiobook]</span> Listened to "Thinking fast and slow" (french version). Tons of knowledge! Should read the paper version.
 - <span class="tag">[book]</span> Read "Bourbon Kid" 2. Still good. Blood, vampyres, Tarantino style.
