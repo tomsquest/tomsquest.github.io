@@ -9,13 +9,18 @@ class: now
 
 ### May 2025
 
-- <span class="tag">[book]</span> Read the last volume of “The Expanse” (vol. 9). A good sci-fi series.
+- <span class="tag">[code]</span> Lots of Python for some GenerativeAI projects (and some pressure!)
 - <span class="tag">[blog]</span> Published [Best books on Search]({% post_url 2025-05-08-best-books-on-search %})
+- <span class="tag">[book]</span> Read the last volume of “The Expanse” (vol. 9). A good sci-fi series
+- <span class="tag">[book]</span> Read "Mon frère et moi". Good start, low end
+- <span class="tag">[book]</span> Read "Un psaume pour les recyclés sauvages". I really liked that one! 
+- <span class="tag">[audiobook]</span> Listened to "24 heures dans l'Egypte ancienne". Great, same as the story of the other book about antique Rome
 - <span class="tag">[book]</span> Started reading "Thinking fast and slow". Biases, we are full of quirks!
 
 ### April 2025
 
-- <span class="tag">[code]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code.
+- <span class="tag">[code]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code
+- <span class="tag">[audiobook]</span> Listened to "24 Heures dans l'ancienne Athènes". Fascinating. The stories of 24 persons, one hour each. Top!
 - <span class="tag">[blog]</span> Published [Kibana _cat apis tips]({% post_url 2025-04-25-kibana-_cat-api-tips-for-elasticsearch %})
 - <span class="tag">[blog]</span> Published [Kibana most useful keyboard shortcuts]({% post_url 2025-04-21-kibana-most-useful-keyboard-shortcuts %})
 - <span class="tag">[blog]</span> Published all of my LinkedIn posts around Elastic here, with a bit more details
