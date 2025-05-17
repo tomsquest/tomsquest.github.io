@@ -9,6 +9,7 @@ class: now
 
 ### May 2025
 
+- [book] Read the last volume of “The Expanse” (vol. 9). A good sci-fi series.
 - <span class="tag">[book]</span> Started reading "Thinking fast and slow". Biases, we are full of quirks!
 
 ### April 2025

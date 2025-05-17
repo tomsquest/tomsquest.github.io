@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Expanse",
+    "series": "The Expanse",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "rating": 4,
+    "volume": "9/9",
+    "comment": "La conclusion, la fin de l'histoire.\nPas une grosse surprise, un peu abscons.\nNeuf tomes, sacré histoire.",
+    "date": "2024-11",
+    "fiction": true,
+    "cover": "/assets/books/the-expanse-8.jpg",
+    "format": "print"
+  },
+  {
     "title": "Mon frère ce zéro",
     "authors": [
       "Colin Thibert"
