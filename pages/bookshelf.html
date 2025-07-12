@@ -151,7 +151,7 @@ class: bookshelf
             {%- endunless -%}
           {%- endif -%}
 
-        {%- if book.comment -%}
+        {%- if book.comment and book.comment != "" -%}
           <blockquote>
             {{ book.comment | newline_to_br }}
           </blockquote>
