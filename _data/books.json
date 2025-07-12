@@ -1,5 +1,75 @@
 [
   {
+    "title": "Le Conte de l'assassin",
+    "series": "Le chevalier aux épines",
+    "volume": "2/3",
+    "authors": [
+      "Jean-Philippe Jaworski"
+    ],
+    "rating": 5,
+    "comment": "Oh que c'est bon ! On retrouve Don Benvenuto, le tueur sarcastique. Super bien écrit, comme toujours. Génial !",
+    "date": "2025-07",
+    "fiction": true,
+    "cover": "/assets/books/le-chevalier-aux-epines-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "The Gate of the Feral Gods",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "4/7",
+    "comment": "",
+    "date": "2025-07",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-4.jpg",
+    "format": "print"
+  },
+  {
+    "title": "The Dungeon Anarchist Cookbook",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "3/7",
+    "comment": "",
+    "date": "2025-06",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-3.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Carl's Doomsday scenario",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "2/7",
+    "comment": "Toujours bien",
+    "date": "2025-06",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Dungeon Crawler Carl",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "1/7",
+    "comment": "De la LitRPG: on suit un héros qui level-up comme dans un jeu de rôle, avec des PNJ, des quêtes, et des monstres. Très sympa, car on voit les PJ découvrir le monde.",
+    "date": "2025-06",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-1.jpg",
+    "format": "print"
+  },
+  {
     "title": "The Expanse",
     "series": "The Expanse",
     "authors": [
