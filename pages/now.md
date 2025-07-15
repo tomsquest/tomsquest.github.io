@@ -9,13 +9,14 @@ class: now
 
 ### July 2025
 
-- <span class="tag">[book]</span> Read "Dungeon Crawler Carl" vol 4(LitRPG genre). Entertaining!
+- <span class="tag">[book]</span> Read "This is Marketing" by Seth Godin. Embarrassing book: it seems intelligent, but some part are way too abstract to make a point, unless you are exactly in the appropriate condition to "get it". 
+- <span class="tag">[book]</span> Read "Dungeon Crawler Carl" vol 4 (LitRPG genre). Entertaining!
 - <span class="tag">[book]</span> Read "Le chevalier aux épines", vol 2. We are back with Benvenuto (the killer, no remorse), and that was excellent!
 - <span class="tag">[code]</span> GenAI and Multi-modal models to improve Search engine relevance! Very promising!
 
 ### June 2025
 
-- <span class="tag">[book]</span> Started reading a LitRPG series, a genre I did not know existed. Quite entertaining!
+- <span class="tag">[book]</span> Started reading a LitRPG series (Dungeon Crawler Carl), a genre I did not know existed. Quite entertaining! Read volume 1, 2, 3 already.
 - <span class="tag">[code]</span> Did the [Hugging Face Agents course](https://huggingface.co/agents-course). Nicely done. Agents are all the rage!
 - <span class="tag">[code]</span> So much GenAI lately: generate configuration, guide users, classify queries...
 

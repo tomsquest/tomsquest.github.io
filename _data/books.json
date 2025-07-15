@@ -1,5 +1,18 @@
 [
   {
+    "title": "C'est ça le Marketing",
+    "subtitle": "On ne vous verra pas tant que vous n'aurez pas appris à voir",
+    "authors": [
+      "Seth Godin"
+    ],
+    "rating": 3,
+    "comment": "Je suis partagé : je pense qu'il y a des idées profondes, mais qu'elles me sont passées au dessus pour la plupart.\nCertains passages intéressants, les autres trop abstraits.",
+    "date": "2025-07",
+    "fiction": false,
+    "cover": "/assets/books/c-est-ca-le-marketing.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le Conte de l'assassin",
     "series": "Le chevalier aux épines",
     "volume": "2/3",
