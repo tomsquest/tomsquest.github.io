@@ -1,5 +1,95 @@
 [
   {
+    "title": "Le Grand Monde",
+    "authors": [
+      "Pierre Lemaitre"
+    ],
+    "rating": 4,
+    "comment": "Ah, c'est bien écrit, c'est prenant. Les personnages superbes (Geneviève !). Long, mais bon.",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/le-grand-monde.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Vers les Ètoiles",
+    "series": "Skyward",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 4,
+    "volume": "1/4",
+    "comment": "Le mystère global est intéressant. Le reste n'est pas hyper complexe. Young-adult SF ?",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/skyward-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le Système de la Tortue",
+    "series": "La Trilogie Baryonique",
+    "authors": [
+      "Pierre Raufast"
+    ],
+    "rating": 4,
+    "volume": "2/3",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/la-trilogie-baryonique-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La Tragédie de l'Orque",
+    "series": "La Trilogie Baryonique",
+    "authors": [
+      "Pierre Raufast"
+    ],
+    "rating": 4,
+    "volume": "1/3",
+    "comment": "Léger, mais ça m'a emmené.\nJe dirai de la 'young-adult' SF, car pas bien compliqué, pas très profond.",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/la-trilogie-baryonique-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "3 kifs par jour",
+    "subtitle": "Et autres rituels recommandés par la science pour cultiver le bonheur",
+    "authors": [
+      "Florence Servan-Schreiber"
+    ],
+    "rating": 3,
+    "comment": "L'exploration et leçons de l'autrice sur l'appentissage du bonheur.\nSe lit bien, quelques idées.\nPas un guide.",
+    "date": "2025-08",
+    "fiction": false,
+    "cover": "/assets/books/3-kifs-par-jour.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Une prière pour les cimes timides",
+    "authors": [
+      "Becky Chambers"
+    ],
+    "rating": 4,
+    "comment": "Toujours bien, Becky Chambers. C'est doux, c'est bon. Un petit voyage",
+    "date": "2025-07",
+    "fiction": true,
+    "cover": "/assets/books/une-priere-pour-les-cimes-timides.jpg",
+    "format": "print"
+  },
+  {
+    "title": "L'Homme Illustré",
+    "authors": [
+      "Ray Bradbury"
+    ],
+    "rating": 2,
+    "comment": "Lu, car un commentaire disait 'le meilleur livre que j'ai jamais lu', je suis tombé dans le panneau.\nC'est une série de nouvelles, pas folles, pas inintéressantes, mais ça a vieilli.",
+    "date": "2025-07",
+    "fiction": true,
+    "cover": "/assets/books/l-homme-illustre.jpg",
+    "format": "print"
+  },
+  {
     "title": "C'est ça le Marketing",
     "subtitle": "On ne vous verra pas tant que vous n'aurez pas appris à voir",
     "authors": [
@@ -34,7 +124,6 @@
     ],
     "rating": 4,
     "volume": "4/7",
-    "comment": "",
     "date": "2025-07",
     "fiction": true,
     "cover": "/assets/books/dungeon-crawler-carl-4.jpg",
@@ -48,7 +137,6 @@
     ],
     "rating": 4,
     "volume": "3/7",
-    "comment": "",
     "date": "2025-06",
     "fiction": true,
     "cover": "/assets/books/dungeon-crawler-carl-3.jpg",
