@@ -1,5 +1,155 @@
 [
   {
+    "title": "Mortel",
+    "subtitle": "Petit guide de survie à la mort",
+    "authors": [
+      "Taous Merakchi"
+    ],
+    "rating": 3,
+    "comment": "La mort sous différents angles, pratique comme intellectuel (léger).",
+    "date": "2025-09",
+    "fiction": false,
+    "cover": "/assets/books/mortel.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le Hobbit",
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "rating": 5,
+    "comment": "Un classique. Et la voix du narrateur, géniale. Ca commence sympathiquement jusqu'à être inquiétant.",
+    "date": "2025-09",
+    "fiction": true,
+    "cover": "/assets/books/le-hobbit.jpg",
+    "format": "audio"
+  },
+  {
+    "title": "Les nuits que l'on choisit",
+    "authors": [
+      "Elise Costa"
+    ],
+    "rating": 3,
+    "comment": "Les affaires juridiques, assez dures, vues coté journaliste. Avec ses opinions, son vécu. Pas mal.",
+    "date": "2025-09",
+    "fiction": false,
+    "cover": "/assets/books/les-nuits-que-l-on-choisit.jpg",
+    "format": "audio"
+  },
+  {
+    "title": "Libration",
+    "authors": [
+      "Becky Chambers"
+    ],
+    "rating": 5,
+    "comment": "La suite, cette fois avec l'IA qui vient posséder un corps. Top dans les interrogations, les personages, les relations.",
+    "date": "2025-09",
+    "fiction": true,
+    "cover": "/assets/books/libration.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le management selon Kaamelott",
+    "authors": [
+      "Gwendal Fossois",
+      "Olivier Chauvel"
+    ],
+    "rating": 3,
+    "comment": "Le mix Kaamelott et management marche plutôt bien",
+    "date": "2025-09",
+    "fiction": false,
+    "cover": "/assets/books/le-management-selon-kaamelott.jpg",
+    "format": "audio"
+  },
+  {
+    "title": "The Happiness Project",
+    "subtitle": "Or, Why I Spent a Year Trying to Sing in the Morning, Clean My Closets, Fight Right, Read Aristotle, and Generally Have More Fun",
+    "authors": [
+      "Gretchen Rubin"
+    ],
+    "rating": 3,
+    "comment": "J'ai aimé l'idée : un mois, un thême, N changements pour tester. Moins aimer les expériences. Peu convaincu.",
+    "date": "2025-09",
+    "fiction": false,
+    "cover": "/assets/books/the-happiness-project.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Et que désirez-vous ce soir",
+    "authors": [
+      "Premee Mohamed"
+    ],
+    "rating": 3,
+    "comment": "Ca fait partie de ses livres qui sautent des explications pour se donner un style. Manque d'explications pour le 'mystère' (et surtout pour ne pas devoir le faire).",
+    "date": "2025-09",
+    "fiction": true,
+    "cover": "/assets/books/et-que-desirez-vous-ce-soir.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Prise de tête",
+    "authors": [
+      "John Scalzi"
+    ],
+    "rating": 3,
+    "comment": "Une enquête. Pas tiré pas les cheveux. Policier SF. Pas mémorable non plus",
+    "date": "2025-09",
+    "fiction": true,
+    "cover": "/assets/books/prise-de-tete.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Cabossé",
+    "authors": [
+      "Benoit Philippon"
+    ],
+    "rating": 3,
+    "comment": "Sympa, mais moins que Mamie Luger",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/cabosse.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le Système de la Tortue",
+    "series": "La Trilogie Baryonique",
+    "authors": [
+      "Pierre Raufast"
+    ],
+    "rating": 3,
+    "comment": "En fin de compte, je trouve ça très léger, presque gamin par moment. Pas de révélation dingue",
+    "volume": "2/3",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/la-trilogie-baryonique-3.jpg",
+    "format": "print"
+  },
+  {
+    "title": "L'espace d'un an",
+    "authors": [
+      "Becky Chambers"
+    ],
+    "rating": 5,
+    "comment": "Oh que c'est bien. Le monde, les interactions, l'empathie dans les situations. J'ai adoré.",
+    "date": "2025-08",
+    "fiction": true,
+    "cover": "/assets/books/espace-d-un-an.jpg",
+    "format": "print"
+  },
+  {
+    "title": "A la découverte de la fermentation",
+    "authors": [
+      "Irèna Banas",
+      "Jean-Baptiste Liscic"
+    ],
+    "rating": 2,
+    "comment": "Je voulais tenter de faire des boissons moi-même. Receuil de recette, quelques conseils partiels, peu détaillé.",
+    "date": "2025-08",
+    "fiction": false,
+    "cover": "/assets/books/a-la-decouverte-de-la-fermentation.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le Grand Monde",
     "authors": [
       "Pierre Lemaitre"
@@ -31,7 +181,7 @@
     "authors": [
       "Pierre Raufast"
     ],
-    "rating": 4,
+    "rating": 3,
     "volume": "2/3",
     "date": "2025-08",
     "fiction": true,
