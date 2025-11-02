@@ -7,6 +7,14 @@ class: now
 
 ## 2025
 
+### October 2025
+
+- <span class="tag">[work]</span> Month spent on Search-by-Image (provide a photo, find products matching it). I managed to deliver it in production, fast! That was intense!
+
+### September 2025
+
+- <span class="tag">[work]</span> Agentic Chatbots for work. This is so promising! Good results, useful. Getting something outside of text (structured data) is more complex, but doable.
+
 ### August 2025
 
 - <span class="tag">[code]</span> Continue working my own version of [SPO - Self-Supervised Prompt Optimization](https://arxiv.org/pdf/2502.06855)
@@ -16,18 +24,18 @@ class: now
 - <span class="tag">[book]</span> Read "This is Marketing" by Seth Godin. Embarrassing book: it seems intelligent, but some part are way too abstract to make a point, unless you are exactly in the appropriate condition to "get it". 
 - <span class="tag">[book]</span> Read "Dungeon Crawler Carl" vol 4 (LitRPG genre). Entertaining!
 - <span class="tag">[book]</span> Read "Le chevalier aux épines", vol 2. We are back with Benvenuto (the killer, no remorse), and that was excellent!
-- <span class="tag">[code]</span> GenAI and Multi-modal models to improve Search engine relevance! Very promising!
-- <span class="tag">[code]</span> Worked on [SPO - Self-Supervised Prompt Optimization](https://arxiv.org/pdf/2502.06855) because asserting that a prompt is good is so lame (and the LLM can be better than me)!
+- <span class="tag">[work]</span> GenAI and Multi-modal models to improve Search engine relevance! Very promising!
+- <span class="tag">[code]</span> Worked on [SPO - Self-Supervised Prompt Optimization](https://arxiv.org/pdf/2502.06855) because asserting that a prompt is good is so boring (and the LLM can be better than me)!
 
 ### June 2025
 
 - <span class="tag">[book]</span> Started reading a LitRPG series (Dungeon Crawler Carl), a genre I did not know existed. Quite entertaining! Read volume 1, 2, 3 already.
 - <span class="tag">[code]</span> Did the [Hugging Face Agents course](https://huggingface.co/agents-course). Nicely done. Agents are all the rage!
-- <span class="tag">[code]</span> So much GenAI lately: generate configuration, guide users, classify queries...
+- <span class="tag">[work]</span> So much GenAI lately: generate configuration, guide users, classify queries...
 
 ### May 2025
 
-- <span class="tag">[code]</span> Lots of Python for some GenerativeAI projects (and some pressure!)
+- <span class="tag">[work]</span> Lots of Python for some GenerativeAI projects (and some pressure!)
 - <span class="tag">[blog]</span> Published [Best books on Search]({% post_url 2025-05-08-best-books-on-search %})
 - <span class="tag">[book]</span> Read the last volume of “The Expanse” (vol. 9). A good sci-fi series
 - <span class="tag">[book]</span> Read "Mon frère et moi". Good start, low end
@@ -37,7 +45,7 @@ class: now
 
 ### April 2025
 
-- <span class="tag">[code]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code
+- <span class="tag">[work]</span> Did some Agent stuff (LangChain, LangGraph, SmolAgents). Smart what you can do with "just prompts" and a bit of code
 - <span class="tag">[audiobook]</span> Listened to "24 Heures dans l'ancienne Athènes". Fascinating. The stories of 24 persons, one hour each. Top!
 - <span class="tag">[blog]</span> Published [Kibana _cat apis tips]({% post_url 2025-04-25-kibana-_cat-api-tips-for-elasticsearch %})
 - <span class="tag">[blog]</span> Published [Kibana most useful keyboard shortcuts]({% post_url 2025-04-21-kibana-most-useful-keyboard-shortcuts %})
@@ -87,11 +95,11 @@ class: now
 - <span class="tag">[selfhost]</span> Tweaked Crowdsec to not ban my mobile phone. I think it may be related to Firefox doing making queries for favicon (favicon-16, favicon-32 and so on) that all get blocked by http-auth, then Crowdsec bans the IP
 - <span class="tag">[selfhost]</span> Manage to find the correct bucket permission for Kopia to be able to extend the object-locks. I need to wait a couple of days to see if the Lifecycle policy does not drop everything eventually.
 - <span class="tag">[selfhost]</span> Switched from FreshRss to [Miniflux](https://miniflux.net/) because the responsive part of FreshRss never worked well
-- <span class="tag">[code]</span> Played with [KuzuDB](https://kuzudb.com/), an embedded graph database. Tons of applications at work.
+- <span class="tag">[work]</span> Played with [KuzuDB](https://kuzudb.com/), an embedded graph database. Tons of applications at work.
 - <span class="tag">[selfhost]</span> Tried [Kopia](https://github.com/kopia/kopia/) to backup with Ransomware protection (ie. object-lock, retention policy, permission-less apikey). An article is coming.
 
 ### Novembre 2024
 
-- <span class="tag">[code]</span> Discovered [DataChain](https://datachain.ai/) that could handle our ML datasets (products, image...)
+- <span class="tag">[work]</span> Discovered [DataChain](https://datachain.ai/) that could handle our ML datasets (products, image...)
 - <span class="tag">[code]</span> Restarted [MediathequeRoubaix.ts](https://github.com/tomsquest/mediathequeroubaix.ts) and switched to [composable-functions](https://github.com/seasonedcc/composable-functions) (a kind of functional-programming library), using Bun, Biome and LeftHook
 - <span class="tag">[selfhost]</span> Moved Restic backup from BackBlaze to Scaleway to be billed in euros.<br>Very smooth using `restic copy`
