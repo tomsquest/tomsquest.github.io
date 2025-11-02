@@ -32,7 +32,8 @@
       "J.R.R. Tolkien"
     ],
     "rating": 5,
-    "comment": "Un classique. Et la voix du narrateur, géniale. Ca commence sympathiquement jusqu'à être inquiétant.",
+    "comment": "Un classique. Et la voix du narrateur, géniale. Ça commence sympathiquement jusqu'à être inquiétant.",
+
     "date": "2025-09",
     "fiction": true,
     "cover": "/assets/books/le-hobbit.jpg",
@@ -94,7 +95,7 @@
       "Premee Mohamed"
     ],
     "rating": 3,
-    "comment": "Ca fait partie de ses livres qui sautent des explications pour se donner un style. Manque d'explications pour le 'mystère' (et surtout pour ne pas devoir le faire).",
+    "comment": "Ça fait partie de ses livres qui sautent des explications pour se donner un style. Manque d'explications pour le 'mystère' (et surtout pour ne pas devoir le faire).",
     "date": "2025-09",
     "fiction": true,
     "cover": "/assets/books/et-que-desirez-vous-ce-soir.jpg",
@@ -151,7 +152,7 @@
     "format": "print"
   },
   {
-    "title": "A la découverte de la fermentation",
+    "title": "À la découverte de la fermentation",
     "authors": [
       "Irèna Banas",
       "Jean-Baptiste Liscic"
@@ -328,7 +329,7 @@
     ],
     "rating": 4,
     "volume": "1/7",
-    "comment": "De la LitRPG: on suit un héros qui level-up comme dans un jeu de rôle, avec des PNJ, des quêtes, et des monstres. Très sympa, car on voit les PJ découvrir le monde.",
+    "comment": "De la LitRPG: on suit un héros qui level up comme dans un jeu de rôle, avec des PNJ, des quêtes, et des monstres. Très sympa, car on voit les PJ découvrir le monde.",
     "date": "2025-06",
     "fiction": true,
     "cover": "/assets/books/dungeon-crawler-carl-1.jpg",
@@ -366,7 +367,7 @@
       "Donald P. Ryan"
     ],
     "rating": 5,
-    "comment": "(même commentaire que pour \"24h dans la rome antique\": Heure par heure, 24 personnages, une tonne d'info.\nDistrayant, et instructif.\nTop !",
+    "comment": "Même commentaire que pour \"24h dans la rome antique\": Heure par heure, 24 personnages, une tonne d'info.\nDistrayant, et instructif.\nTop !",
     "date": "2025-05",
     "fiction": false,
     "cover": "/assets/books/24-heures-dans-l-egypte-ancienne.jpg",
@@ -496,7 +497,7 @@
     ],
     "rating": 4,
     "volume": "1/10",
-    "comment": "Tarantino fantastique. Ca flingue, ça étripe !\nCe commentaire Amazon résume bien: \"bars miteux, tueurs à gages, moines Shaolin et vampires\"",
+    "comment": "Tarantino fantastique. Ça flingue, ça étripe !\nCe commentaire Amazon résume bien: \"bars miteux, tueurs à gages, moines Shaolin et vampires\"",
     "date": "2025-03",
     "fiction": true,
     "cover": "/assets/books/bourbon-kid-1.jpg",
@@ -524,7 +525,7 @@
     ],
     "rating": 3,
     "volume": "1/5",
-    "comment": "Déjà lu. C'est quand tu arrives à prédire la scène suivante que tu te souviens avoir déjà lu le livre. 3/5 car peu de surprise de ce fait.",
+    "comment": "Déjà lu. C'est quand tu arrives à prédire la scène suivante que tu te souviens avoir déjà lu le livre. 3/5, car peu de surprise de ce fait.",
     "date": "2025-02",
     "fiction": true,
     "cover": "/assets/books/belgariade-1.jpg",
