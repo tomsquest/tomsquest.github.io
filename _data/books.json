@@ -13,6 +13,20 @@
     "format": "print"
   },
   {
+    "title": "Le débat des dames",
+    "series": "Le chevalier aux épines",
+    "volume": "3/3",
+    "authors": [
+      "Jean-Philippe Jaworski"
+    ],
+    "rating": 4,
+    "comment": "La presque fin. C'est long, c'est confus par moment. Mais avec style et vieux français !",
+    "date": "2025-09",
+    "fiction": true,
+    "cover": "/assets/books/le-chevalier-aux-epines-3.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le Hobbit",
     "authors": [
       "J.R.R. Tolkien"
@@ -22,7 +36,7 @@
     "date": "2025-09",
     "fiction": true,
     "cover": "/assets/books/le-hobbit.jpg",
-    "format": "audio"
+    "format": "audiobook"
   },
   {
     "title": "Les nuits que l'on choisit",
@@ -34,7 +48,7 @@
     "date": "2025-09",
     "fiction": false,
     "cover": "/assets/books/les-nuits-que-l-on-choisit.jpg",
-    "format": "audio"
+    "format": "audiobook"
   },
   {
     "title": "Libration",
@@ -59,7 +73,7 @@
     "date": "2025-09",
     "fiction": false,
     "cover": "/assets/books/le-management-selon-kaamelott.jpg",
-    "format": "audio"
+    "format": "audiobook"
   },
   {
     "title": "The Happiness Project",
