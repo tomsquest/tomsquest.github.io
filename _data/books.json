@@ -1,5 +1,30 @@
 [
   {
+    "title": "Le festin",
+    "authors": [
+      "Margaret Kennedy"
+    ],
+    "rating": 4,
+    "comment": "Pas SF, pas Fantasy, pas policier. Juste la vie de gens.\nLa 4ème de couv est hyper accrocheuse",
+    "date": "2025-11",
+    "fiction": true,
+    "cover": "/assets/books/le-festin.jpg",
+    "format": "print"
+  },
+  {
+    "title": "L'équation de la chauve-souris",
+    "subtitle": "De la poussée d'Archimède à la physique quantique",
+    "authors": [
+      "Mickaël Launay"
+    ],
+    "rating": 4,
+    "comment": "J'ai appris des choses, mais il faut le lire, pas l'écouter pour mieux en profiter (schéma, temps pour comprendre)",
+    "date": "2025-11",
+    "fiction": false,
+    "cover": "/assets/books/equation-de-la-chauve-souris.jpg",
+    "format": "audiobook"
+  },
+  {
     "title": "Mortel",
     "subtitle": "Petit guide de survie à la mort",
     "authors": [
@@ -7,9 +32,47 @@
     ],
     "rating": 3,
     "comment": "La mort sous différents angles, pratique comme intellectuel (léger).",
-    "date": "2025-09",
+    "date": "2025-10",
     "fiction": false,
     "cover": "/assets/books/mortel.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Libration",
+    "authors": [
+      "Becky Chambers"
+    ],
+    "rating": 5,
+    "comment": "La suite, cette fois avec l'IA qui vient posséder un corps. Top dans les interrogations, les personages, les relations.",
+    "date": "2025-10",
+    "fiction": true,
+    "cover": "/assets/books/libration.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le management selon Kaamelott",
+    "authors": [
+      "Gwendal Fossois",
+      "Olivier Chauvel"
+    ],
+    "rating": 3,
+    "comment": "Le mix Kaamelott et management marche plutôt bien",
+    "date": "2025-10",
+    "fiction": false,
+    "cover": "/assets/books/le-management-selon-kaamelott.jpg",
+    "format": "audiobook"
+  },
+  {
+    "title": "The Happiness Project",
+    "subtitle": "Or, Why I Spent a Year Trying to Sing in the Morning, Clean My Closets, Fight Right, Read Aristotle, and Generally Have More Fun",
+    "authors": [
+      "Gretchen Rubin"
+    ],
+    "rating": 3,
+    "comment": "J'ai aimé l'idée : un mois, un thême, N changements pour tester. Moins aimer les expériences. Peu convaincu.",
+    "date": "2025-10",
+    "fiction": false,
+    "cover": "/assets/books/the-happiness-project.jpg",
     "format": "print"
   },
   {
@@ -50,44 +113,6 @@
     "fiction": false,
     "cover": "/assets/books/les-nuits-que-l-on-choisit.jpg",
     "format": "audiobook"
-  },
-  {
-    "title": "Libration",
-    "authors": [
-      "Becky Chambers"
-    ],
-    "rating": 5,
-    "comment": "La suite, cette fois avec l'IA qui vient posséder un corps. Top dans les interrogations, les personages, les relations.",
-    "date": "2025-09",
-    "fiction": true,
-    "cover": "/assets/books/libration.jpg",
-    "format": "print"
-  },
-  {
-    "title": "Le management selon Kaamelott",
-    "authors": [
-      "Gwendal Fossois",
-      "Olivier Chauvel"
-    ],
-    "rating": 3,
-    "comment": "Le mix Kaamelott et management marche plutôt bien",
-    "date": "2025-09",
-    "fiction": false,
-    "cover": "/assets/books/le-management-selon-kaamelott.jpg",
-    "format": "audiobook"
-  },
-  {
-    "title": "The Happiness Project",
-    "subtitle": "Or, Why I Spent a Year Trying to Sing in the Morning, Clean My Closets, Fight Right, Read Aristotle, and Generally Have More Fun",
-    "authors": [
-      "Gretchen Rubin"
-    ],
-    "rating": 3,
-    "comment": "J'ai aimé l'idée : un mois, un thême, N changements pour tester. Moins aimer les expériences. Peu convaincu.",
-    "date": "2025-09",
-    "fiction": false,
-    "cover": "/assets/books/the-happiness-project.jpg",
-    "format": "print"
   },
   {
     "title": "Et que désirez-vous ce soir",
