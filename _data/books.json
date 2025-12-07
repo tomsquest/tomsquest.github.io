@@ -1,5 +1,43 @@
 [
   {
+    "title": "Seule sur Terre",
+    "authors": [
+      "Charles Yu"
+    ],
+    "rating": 3,
+    "comment": "Trois nouvelles de SF, écrite en police 16. Le pitch est dingue, mais bon bof, surtout après 'La vie secrète des robots' de Suzanne Palmer.",
+    "date": "2025-12",
+    "fiction": true,
+    "cover": "/assets/books/seule-sur-terre.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La vie secrète des robots",
+    "authors": [
+      "Suzanne Palmer"
+    ],
+    "rating": 5,
+    "comment": "Alors génial ! Des nouvelles, toutes excellentes. Beaucoup d'humour, et vraiment bien pensées, réalistes. Génial !",
+    "date": "2025-11",
+    "fiction": true,
+    "cover": "/assets/books/la-vie-secrete-des-robots.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le nom du Vent",
+    "series": "Chronique du tueur de roi",
+    "volume": "1/3",
+    "authors": [
+      "Patrick Rothfuss"
+    ],
+    "rating": 4,
+    "comment": "C'est intriguant. L'histoire d'un ancien héros qui ne le semble plus. Prenant, malgré le côté enfant parfait, petit génie.",
+    "date": "2025-11",
+    "fiction": true,
+    "cover": "/assets/books/chronique-du-tueur-de-roi-1.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le festin",
     "authors": [
       "Margaret Kennedy"
