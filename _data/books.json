@@ -24,6 +24,20 @@
     "format": "print"
   },
   {
+    "title": "Ils étaient sept",
+    "subtitle": "Le club des amateurs de romans policiers",
+    "volume": "1/6",
+    "authors": [
+      "Christina Larmer"
+    ],
+    "rating": 4,
+    "comment": "Cozy mystery sympa",
+    "date": "2025-11",
+    "fiction": true,
+    "cover": "/assets/books/le-club-des-amateurs-de-romans-policiers-1.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le nom du Vent",
     "series": "Chronique du tueur de roi",
     "volume": "1/3",
