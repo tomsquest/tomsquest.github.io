@@ -1,5 +1,17 @@
 [
   {
+    "title": "24 heures dans la Chine ancienne",
+    "authors": [
+      "Yijie Zhuang"
+    ],
+    "rating": 4,
+    "comment": "Toujours aussi bien ces \"tranches de vies\" historiques.",
+    "date": "2025-12",
+    "fiction": false,
+    "cover": "/assets/books/24-heures-dans-la-chine-ancienne.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le mage du Kremlin",
     "authors": [
       "Giuliano da Empoli"
@@ -19,7 +31,7 @@
       "Andrzej Sapkowski"
     ],
     "rating": 4,
-    "comment": "Je me suis un peu perdu, mais ça accompagne bien les sorties longues de running",
+    "comment": "Je me suis un peu perdu, mais ça accompagne bien les sorties longues de running.",
     "date": "2026-01",
     "fiction": true,
     "cover": "/assets/books/the-witcher-1.jpg",
