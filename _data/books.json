@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Butcher's masquerade",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "comment": "C'est toujours aussi gore, des traits d'humour. Je ne me souvenais plus de qui était qui. Mais l'aventure continue. Next level !",
+    "volume": "5/7",
+    "date": "2026-01",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-5.jpg",
+    "format": "print"
+  },
+  {
     "title": "L'Agent",
     "authors": [
       "Pascale Dietrich"
