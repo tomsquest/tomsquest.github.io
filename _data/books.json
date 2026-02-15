@@ -1,5 +1,17 @@
 [
   {
+    "title": "L'Agent",
+    "authors": [
+      "Pascale Dietrich"
+    ],
+    "rating": 3,
+    "comment": "Facile, pas réaliste, et ça se lit vite.",
+    "date": "2026-01",
+    "fiction": true,
+    "cover": "/assets/books/lagent.jpg",
+    "format": "print"
+  },
+  {
     "title": "24 heures dans la Chine ancienne",
     "authors": [
       "Yijie Zhuang"
