@@ -5,7 +5,7 @@ group :jekyll_plugins do
     #
     # To upgrade, run: bundle update github-pages
     # Check versions here: https://pages.github.com/versions/
-    gem "github-pages", "~> 231"
+    gem "github-pages", "~> 232"
 end
 
 gem "webrick", "~> 1.8"
