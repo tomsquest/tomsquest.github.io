@@ -1,5 +1,59 @@
 [
   {
+    "title": "Le nom du Vent",
+    "series": "Chronique du tueur de roi",
+    "volume": "3/3",
+    "authors": [
+      "Patrick Rothfuss"
+    ],
+    "rating": 4,
+    "comment": "Je me doutais que ça n'allait pas finir là. Hélas, on dirait que l'auteur ne veut pas continuer/finir l'aventure ! Trop de pistes ouvertes.",
+    "date": "2026-01",
+    "fiction": true,
+    "cover": "/assets/books/chronique-du-tueur-de-roi-3.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Journal d'un AssaSynth",
+    "series": "Journal d'un AssaSynth",
+    "authors": [
+      "Martha Wells"
+    ],
+    "rating": 4,
+    "volume": "5",
+    "comment": "Plus gros tome, toujours sympa !",
+    "date": "2025-12",
+    "fiction": true,
+    "cover": "/assets/books/journal-dun-assasynth-5.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le nom du Vent",
+    "series": "Chronique du tueur de roi",
+    "volume": "2/3",
+    "authors": [
+      "Patrick Rothfuss"
+    ],
+    "rating": 4,
+    "date": "2025-12",
+    "fiction": true,
+    "cover": "/assets/books/chronique-du-tueur-de-roi-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Journal d'un AssaSynth",
+    "series": "Journal d'un AssaSynth",
+    "authors": [
+      "Martha Wells"
+    ],
+    "rating": 4,
+    "volume": "4",
+    "date": "2025-12",
+    "fiction": true,
+    "cover": "/assets/books/journal-dun-assasynth-4.jpg",
+    "format": "print"
+  },
+  {
     "title": "Seule sur Terre",
     "authors": [
       "Charles Yu"
