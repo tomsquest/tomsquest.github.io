@@ -1,5 +1,17 @@
 [
   {
+    "title": "L'Agent",
+    "authors": [
+      "Pascale Dietrich"
+    ],
+    "rating": 3,
+    "comment": "Facile, pas réaliste, et ça se lit vite.",
+    "date": "2026-02",
+    "fiction": true,
+    "cover": "/assets/books/lagent.jpg",
+    "format": "print"
+  },
+  {
     "title": "The Butcher's masquerade",
     "series": "Dungeon Crawler Carl",
     "authors": [
@@ -8,45 +20,9 @@
     "rating": 4,
     "comment": "C'est toujours aussi gore, des traits d'humour. Je ne me souvenais plus de qui était qui. Mais l'aventure continue. Next level !",
     "volume": "5/7",
-    "date": "2026-01",
+    "date": "2026-02",
     "fiction": true,
     "cover": "/assets/books/dungeon-crawler-carl-5.jpg",
-    "format": "print"
-  },
-  {
-    "title": "L'Agent",
-    "authors": [
-      "Pascale Dietrich"
-    ],
-    "rating": 3,
-    "comment": "Facile, pas réaliste, et ça se lit vite.",
-    "date": "2026-01",
-    "fiction": true,
-    "cover": "/assets/books/lagent.jpg",
-    "format": "print"
-  },
-  {
-    "title": "24 heures dans la Chine ancienne",
-    "authors": [
-      "Yijie Zhuang"
-    ],
-    "rating": 4,
-    "comment": "Toujours aussi bien ces \"tranches de vies\" historiques.",
-    "date": "2025-12",
-    "fiction": false,
-    "cover": "/assets/books/24-heures-dans-la-chine-ancienne.jpg",
-    "format": "print"
-  },
-  {
-    "title": "Le mage du Kremlin",
-    "authors": [
-      "Giuliano da Empoli"
-    ],
-    "rating": 3,
-    "comment": "Ca se perd un peu, mais il fait découvrir une certaine idée du Pouvoir. Effrayant, mais réaliste ?",
-    "date": "2025-12",
-    "fiction": false,
-    "cover": "/assets/books/le-mage-du-kremlin.jpg",
     "format": "print"
   },
   {
@@ -78,6 +54,30 @@
     "format": "print"
   },
   {
+    "title": "Le mage du Kremlin",
+    "authors": [
+      "Giuliano da Empoli"
+    ],
+    "rating": 3,
+    "comment": "Ca se perd un peu, mais il fait découvrir une certaine idée du Pouvoir. Effrayant, mais réaliste ?",
+    "date": "2025-12",
+    "fiction": false,
+    "cover": "/assets/books/le-mage-du-kremlin.jpg",
+    "format": "print"
+  },
+  {
+    "title": "24 heures dans la Chine ancienne",
+    "authors": [
+      "Yijie Zhuang"
+    ],
+    "rating": 4,
+    "comment": "Toujours aussi bien ces \"tranches de vies\" historiques.",
+    "date": "2025-12",
+    "fiction": false,
+    "cover": "/assets/books/24-heures-dans-la-chine-ancienne.jpg",
+    "format": "print"
+  },
+  {
     "title": "Journal d'un AssaSynth",
     "series": "Journal d'un AssaSynth",
     "authors": [
@@ -92,7 +92,7 @@
     "format": "print"
   },
   {
-    "title": "La peur du sage, 1ère journée",
+    "title": "La peur du sage, 1ᵉ journée",
     "series": "Chronique du tueur de roi",
     "volume": "2/3",
     "authors": [
