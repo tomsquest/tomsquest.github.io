@@ -1,6 +1,20 @@
 [
   {
-    "title": "Le nom du Vent",
+    "title": "Le Dernier voeu",
+    "series": "The Witcher",
+    "volume": "1/8",
+    "authors": [
+      "Andrzej Sapkowski"
+    ],
+    "rating": 4,
+    "comment": "Je me suis un peu perdu, mais ça accompagne bien les sorties longues de running",
+    "date": "2026-01",
+    "fiction": true,
+    "cover": "/assets/books/the-witcher-1.jpg",
+    "format": "audiobook"
+  },
+  {
+    "title": "La peur du sage, 2e journée",
     "series": "Chronique du tueur de roi",
     "volume": "3/3",
     "authors": [
@@ -28,7 +42,7 @@
     "format": "print"
   },
   {
-    "title": "Le nom du Vent",
+    "title": "La peur du sage, 1ère journée",
     "series": "Chronique du tueur de roi",
     "volume": "2/3",
     "authors": [
@@ -128,6 +142,20 @@
     "date": "2025-11",
     "fiction": false,
     "cover": "/assets/books/equation-de-la-chauve-souris.jpg",
+    "format": "audiobook"
+  },
+  {
+    "title": "La Saison des orages",
+    "series": "The Witcher",
+    "volume": "0/8",
+    "authors": [
+      "Andrzej Sapkowski"
+    ],
+    "rating": 4,
+    "comment": "Découvertes de The Witcher. Une sorte de Dexter guerrier-mage",
+    "date": "2025-10",
+    "fiction": true,
+    "cover": "/assets/books/the-witcher-0.jpg",
     "format": "audiobook"
   },
   {
