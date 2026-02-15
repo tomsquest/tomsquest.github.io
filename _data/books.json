@@ -1,5 +1,17 @@
 [
   {
+    "title": "Le mage du Kremlin",
+    "authors": [
+      "Giuliano da Empoli"
+    ],
+    "rating": 3,
+    "comment": "Ca se perd un peu, mais il fait découvrir une certaine idée du Pouvoir. Effrayant, mais réaliste ?",
+    "date": "2025-12",
+    "fiction": false,
+    "cover": "/assets/books/le-mage-du-kremlin.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le Dernier voeu",
     "series": "The Witcher",
     "volume": "1/8",
