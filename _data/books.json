@@ -1,5 +1,143 @@
 [
   {
+    "title": "Mars Express - Tem",
+    "authors": [
+      "Cédric Degottex"
+    ],
+    "rating": 4,
+    "comment": "Bon cyberpunk, préquel du bon film \"Mars Express\". Je n'aime pas trop les héros torturé alcoolique (trop vus ?), mais l'univers est bon",
+    "date": "2026-05",
+    "fiction": true,
+    "cover": "/assets/books/mars-express-tem.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Sur le chemin des cathédrales",
+    "authors": [
+      "Henri D'Anselme"
+    ],
+    "rating": 3,
+    "comment": "Mi-randonnée, mi-découverte des cathédrales. Aurait pu être beaucoup didactique. Trop autour de l'auteur ? En tout cas, j'ai appris de petites choses",
+    "date": "2026-05",
+    "fiction": false,
+    "cover": "/assets/books/sur-le-chemin-des-cathedrales.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La cité perdue du dieu singe",
+    "authors": [
+      "Douglas Preston"
+    ],
+    "rating": 4,
+    "comment": "Documentaire sur la découverte d'anciennes cités au Honduras. Ce n'est pas Bill Bryson, mais ça se lit bien. Ils ont ramené des découvertes, et des maladies !",
+    "date": "2026-05",
+    "fiction": false,
+    "cover": "/assets/books/la-cite-perdue-du-dieu-singe.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Les aventures du pilote Pirx",
+    "authors": [
+      "Stanislas Lem"
+    ],
+    "rating": 3,
+    "comment": "On suit la carrière plus ou moins réussi. J'aurais aimé plus drôle, ca partait bien. Surrané, mais ça passe.",
+    "date": "2026-04",
+    "fiction": true,
+    "cover": "/assets/books/les-aventures-du-pilote-pirx.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le sentiment du fer",
+    "subtitle": "Récits du Vieux Royaume",
+    "authors": [
+      "Jean-Philippe Jaworski"
+    ],
+    "rating": 4,
+    "comment": "Une dizaine de nouvelles. Le style ! Bien écrit. L'occasion de relire \"Désolation\", très bonne nouvelle",
+    "date": "2026-04",
+    "fiction": true,
+    "cover": "/assets/books/le-sentiment-du-fer.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Les Diables",
+    "authors": [
+      "Joe Abercrombie"
+    ],
+    "rating": 4,
+    "comment": "Ah, j'adore ces histoires ave des héros intéressants et salauds",
+    "date": "2026-04",
+    "fiction": true,
+    "cover": "/assets/books/les-diables.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Turing à la plage",
+    "subtitle": "L'intelligence artificielle dans un transat",
+    "authors": [
+      "Rachid Guerraoui",
+      "Lè Nguyen Hoang"
+    ],
+    "rating": 4,
+    "comment": "Bonne intro à Turing, un peu de science. Turing était impressionnant !",
+    "date": "2026-04",
+    "fiction": false,
+    "cover": "/assets/books/turing-a-la-plage.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Benjamin Franklin",
+    "subtitle": "Une vie américaine",
+    "authors": [
+      "Walter Isaacson"
+    ],
+    "rating": 3,
+    "comment": "Deux mois pour le lire, beaucoup d'effort. Biographie complète. Je connais maintenant le menu du petit déjeuner de Franklin. Intéressant, mais long et détaillé. J'ai appris des choses, mais j'ai également dû faire des recherches ailleurs sur les États-Unis de l'époque",
+    "date": "2026-03",
+    "fiction": false,
+    "cover": "/assets/books/benjamin-franklin-une-vie-americaine.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Épicure à la plage",
+    "subtitle": "Le plaisir dans un Transat",
+    "authors": [
+      "Hélène Soumet"
+    ],
+    "rating": 3,
+    "comment": "La vie d'épicure, mais je m'attendais à davantage de ses principes philosophiques.",
+    "date": "2026-03",
+    "fiction": false,
+    "cover": "/assets/books/epicure-a-la-plage.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Darwin vu par un Ado",
+    "authors": [
+      "Natacha Quentin",
+      "Margaux Manchon"
+    ],
+    "rating": 4,
+    "comment": "Pour ado, et juste le bon niveau d'info pour être divertissant et intéressant",
+    "date": "2026-03",
+    "fiction": false,
+    "cover": "/assets/books/darwin-vu-par-un-ado.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Archives de l'exode",
+    "authors": [
+      "Becky Chambers"
+    ],
+    "rating": 4,
+    "comment": "Toujours aussi bien cette auteure",
+    "date": "2026-03",
+    "fiction": true,
+    "cover": "/assets/books/archives-de-lexode.jpg",
+    "format": "print"
+  },
+  {
     "title": "L'Agent",
     "authors": [
       "Pascale Dietrich"
@@ -59,7 +197,7 @@
       "Giuliano da Empoli"
     ],
     "rating": 3,
-    "comment": "Ca se perd un peu, mais il fait découvrir une certaine idée du Pouvoir. Effrayant, mais réaliste ?",
+    "comment": "Ça se perd un peu, mais il fait découvrir une certaine idée du Pouvoir. Effrayant, mais réaliste ?",
     "date": "2025-12",
     "fiction": false,
     "cover": "/assets/books/le-mage-du-kremlin.jpg",
