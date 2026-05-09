@@ -1,5 +1,17 @@
 [
   {
+    "title": "La tragique histoire de la grande guerre",
+    "authors": [
+      "Jean-Yves Le Naour"
+    ],
+    "rating": 4,
+    "comment": "La première guerre mondiale, son déroulement, ses atrocités. Bien, sans se noyer dans les détails. Quel gachis. Et ces jeux entre alliés.",
+    "date": "2026-05",
+    "fiction": false,
+    "cover": "/assets/books/la-tragique-histoire-de-la-grande-guerre.jpg",
+    "format": "audiobook"
+  },
+  {
     "title": "Mars Express - Tem",
     "authors": [
       "Cédric Degottex"
