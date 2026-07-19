@@ -1,5 +1,157 @@
 [
   {
+    "title": "Ne tirez pas sur l'oiseur moqueur",
+    "authors": [
+      "Harper Lee"
+    ],
+    "rating": 4,
+    "comment": "Il faut avoir un peu de contexte pour le lire et mieux l'apprécier, mais c'est un bon roman.",
+    "date": "2026-07",
+    "fiction": true,
+    "cover": "/assets/books/ne-tirez-pas-sur-loiseur-moqueur.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Penser avec clarté",
+    "subtitle": "L'art et la science de la bonne prise de décision",
+    "authors": [
+      "Shane Parrish"
+    ],
+    "rating": 3,
+    "comment": "De bonnes pages, mais pas un guide/mémo. Où sont les vraies pépites ?",
+    "date": "2026-07",
+    "fiction": false,
+    "cover": "/assets/books/penser-avec-clarte.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le livre de recettes de l'anarchiste",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "3/7",
+    "comment": "Relecture, mais en français",
+    "date": "2026-07",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-3.jpg",
+    "format": "print"
+  },
+  {
+    "title": "L'ogive du jugement dernier",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "2/7",
+    "comment": "Relecture, mais en français",
+    "date": "2026-07",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Les tambours du dieu noir",
+    "authors": [
+      "P. Djèlí Clark"
+    ],
+    "rating": 4,
+    "comment": "Très bien, bien écrit",
+    "date": "2026-06",
+    "fiction": true,
+    "cover": "/assets/books/les-tambours-du-dieu-noir.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Une très bonne hérétique",
+    "authors": [
+      "Becky Chambers"
+    ],
+    "rating": 4,
+    "comment": "Des nouvelles, dont une dans le cycle des voyageurs. Toujours très bon",
+    "date": "2026-06",
+    "fiction": true,
+    "cover": "/assets/books/une-tres-bonne-heretique.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Lonesome Dove",
+    "authors": [
+      "Larry McMurtry"
+    ],
+    "volume": "1/2",
+    "rating": 5,
+    "comment": "Ces personnages, l'humour, l'ambiance. Tout est bon !",
+    "date": "2026-06",
+    "fiction": true,
+    "cover": "/assets/books/lonesome-dove-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Primal Hunter",
+    "authors": [
+      "Zogarth"
+    ],
+    "volume": "1/?",
+    "rating": 2,
+    "comment": "LitRPG, mais creux. Je mets 2 sur 5 pour la progression. C'est un sous Dungeon Crawler Carl. Je ne lirai pas la suite. C'est mou, mal décrit, pas inventif, mal raconté",
+    "date": "2026-06",
+    "fiction": true,
+    "cover": "/assets/books/primal-hunter-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La loi de la tartine beurrée",
+    "authors": [
+      "J.M. Erre"
+    ],
+    "rating": 3,
+    "comment": "Sympatoche, moins original que les autres",
+    "date": "2026-05",
+    "fiction": true,
+    "cover": "/assets/books/la-loi-de-la-tartine-beurree.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Faut-il encore décider",
+    "authors": [
+      "Eric Hazan",
+      "Olivier Sibony"
+    ],
+    "rating": 4,
+    "comment": "Bons arguments, bonne exploration sur les décisions à l'ère de l'IA.",
+    "date": "2026-05",
+    "fiction": false,
+    "cover": "/assets/books/faut-il-encore-decider.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Mais c'est un complot",
+    "authors": [
+      "Benjamin Brillaud",
+      "François Hatt"
+    ],
+    "rating": 4,
+    "date": "2026-05",
+    "fiction": false,
+    "cover": "/assets/books/mais-c-est-un-complot.jpg",
+    "format": "audiobook"
+  },
+  {
+    "title": "Vision aveugle",
+    "authors": [
+      "Peter Watts"
+    ],
+    "rating": 3,
+    "comment": "Plutot pas mal, un peu confus, mais c'est fais exprès. Hard-science.",
+    "date": "2026-05",
+    "fiction": true,
+    "cover": "/assets/books/vision-aveugle.jpg",
+    "format": "print"
+  },
+  {
     "title": "La tragique histoire de la grande guerre",
     "authors": [
       "Jean-Yves Le Naour"
@@ -53,7 +205,7 @@
       "Stanislas Lem"
     ],
     "rating": 3,
-    "comment": "On suit la carrière plus ou moins réussi. J'aurais aimé plus drôle, ca partait bien. Surrané, mais ça passe.",
+    "comment": "On suit la carrière plus ou moins réussi. J'aurais aimé plus drôle, ça partait bien. Surrané, mais ça passe.",
     "date": "2026-04",
     "fiction": true,
     "cover": "/assets/books/les-aventures-du-pilote-pirx.jpg",
