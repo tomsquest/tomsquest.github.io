@@ -26,3 +26,14 @@ How to generate a list of my projects on GitHub:
 ```shell
 gh api "users/tomsquest/repos?per_page=100" --jq '[.[] | select(.owner.type == "User" and .owner.login == "tomsquest" and .fork == false) | {name, description, html_url, stargazers_count, language, private, pushed_at, topics}]'
 ```
+### Adding a book
+
+```shell
+_bin/add_book --title "La Traque" --series "Le Puits des Mémoires" --volume 1/3 \
+  --author "Gabriel Katz" --rating 4 --date 2026-08 --comment "De l'aventure !" --tinify
+```
+
+Finds the cover (Decitre by ISBN, then image search), resizes it to 300px, and inserts the
+entry at the top of `books.json`. `--photo file.jpg` takes the reading month from the photo's
+EXIF date. See `_bin/add_book --help`. With Claude Code: drop the photos in `_inbox/` (ignored
+by git) and run `/add-books`.

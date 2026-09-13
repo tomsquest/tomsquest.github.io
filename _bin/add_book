@@ -1,0 +1,259 @@
+#!/usr/bin/env -S uv run --script --quiet
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["ddgs", "requests", "pillow"]
+# ///
+"""
+Add a book to _data/books.json with its cover.
+
+Examples:
+  _bin/add_book --title "La Traque" --series "Le Puits des Mémoires" --volume 1/3 \
+      --author "Gabriel Katz" --rating 4 --date 2026-08 --comment "De l'aventure !"
+
+  _bin/add_book --title "Travail" --author "Marie-Anne Dujarier" --non-fiction \
+      --rating 3 --photo _inbox/PXL_20260910_181200.jpg   # date taken from EXIF
+
+  _bin/add_book ... --isbn 9782404080208        # deterministic cover (Decitre)
+  _bin/add_book ... --cover-url https://...jpg  # explicit cover
+  _bin/add_book ... --cover-file photo.jpg      # use a local file as cover
+
+Cover lookup order: --cover-file > --cover-url > --isbn > ISBN found on decitre.fr
+via text search > DuckDuckGo image search. The chosen source is printed so it
+can be reviewed; re-run with --cover-url to override.
+
+The entry is inserted at the top of books.json (newest first). Run
+_bin/sort_books afterwards if you want strict ordering.
+"""
+import argparse
+import json
+import os
+import re
+import sys
+import time
+from io import BytesIO
+from pathlib import Path
+
+import requests
+from PIL import Image, UnidentifiedImageError
+from PIL.ExifTags import Base as ExifTag
+
+ROOT = Path(__file__).resolve().parent.parent
+BOOKS_FILE = ROOT / "_data" / "books.json"
+COVERS_DIR = ROOT / "assets" / "books"
+COVER_WIDTH = 300
+JPEG_QUALITY = 80
+UA = {"User-Agent": "Mozilla/5.0"}
+
+
+# ---------- helpers ----------
+
+def slugify(text: str) -> str:
+    import unicodedata
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    text = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
+    return text
+
+
+def volume_number(volume: str | None) -> str:
+    return volume.split("/")[0] if volume else ""
+
+
+def cover_slug(title: str, series: str | None, volume: str | None) -> str:
+    # Same convention as download_covers.py: series + volume, else title
+    name = series or title
+    return slugify(f"{name} {volume_number(volume)}")
+
+
+def exif_month(photo: Path) -> str:
+    exif = Image.open(photo).getexif()
+    raw = exif.get(ExifTag.DateTimeOriginal) or exif.get(ExifTag.DateTime)
+    if not raw:
+        sys.exit(f"No EXIF date in {photo}")
+    return f"{raw[0:4]}-{raw[5:7]}"
+
+
+def fetch_image(url: str) -> Image.Image | None:
+    try:
+        r = requests.get(url, headers=UA, timeout=20)
+        if r.status_code != 200:
+            return None
+        return Image.open(BytesIO(r.content)).convert("RGB")
+    except (requests.RequestException, UnidentifiedImageError, OSError):
+        return None
+
+
+def looks_like_cover(img: Image.Image) -> bool:
+    return img.width >= COVER_WIDTH and img.height / img.width >= 1.2
+
+
+# ---------- cover sources ----------
+
+def decitre_cover(isbn: str) -> tuple[Image.Image, str] | None:
+    url = f"https://products-images.di-static.com/image/x/{isbn}-475x500-1.jpg"
+    img = fetch_image(url)
+    return (img, url) if img and img.width >= 200 else None
+
+
+def find_isbn(query: str) -> str | None:
+    from ddgs import DDGS
+    try:
+        results = DDGS().text(f"decitre {query}", region="fr-fr", max_results=8)
+    except Exception as e:  # rate limit, network...
+        print(f"  text search failed: {e}")
+        return None
+    for r in results:
+        m = re.search(r"decitre\.fr/livres/.*-(97[89]\d{10})\.html", r.get("href", ""))
+        if m:
+            print(f"  found on decitre: {r['href']}")
+            return m.group(1)
+    return None
+
+
+def image_search_cover(query: str) -> tuple[Image.Image, str] | None:
+    from ddgs import DDGS
+    try:
+        results = DDGS().images(f"couverture livre {query}", region="fr-fr", max_results=10)
+    except Exception as e:
+        print(f"  image search failed: {e}")
+        return None
+    for item in results:
+        url = item.get("image", "")
+        img = fetch_image(url)
+        if img and looks_like_cover(img):
+            return img, url
+    return None
+
+
+def find_cover(args, query: str) -> tuple[Image.Image, str] | None:
+    if args.cover_file:
+        return Image.open(args.cover_file).convert("RGB"), args.cover_file
+    if args.cover_url:
+        img = fetch_image(args.cover_url)
+        return (img, args.cover_url) if img else None
+    if args.isbn:
+        return decitre_cover(args.isbn)
+    print("Looking for ISBN...")
+    isbn = find_isbn(query)
+    if isbn:
+        found = decitre_cover(isbn)
+        if found:
+            return found
+    print("Falling back to image search...")
+    time.sleep(2)
+    return image_search_cover(query)
+
+
+# ---------- image processing ----------
+
+def trim_padding(img: Image.Image) -> Image.Image:
+    """Shops often pad covers into a square with white. Trim it, but only when
+    the image is not already portrait-shaped (a white cover must stay intact)."""
+    if img.height / img.width >= 1.2:
+        return img
+    from PIL import ImageChops
+    bg = Image.new("RGB", img.size, img.getpixel((0, 0)))
+    diff = ImageChops.difference(img, bg).convert("L").point(lambda p: 255 if p > 12 else 0)
+    bbox = diff.getbbox()
+    return img.crop(bbox) if bbox else img
+
+
+def save_cover(img: Image.Image, dest: Path) -> None:
+    img = trim_padding(img)
+    ratio = COVER_WIDTH / img.width
+    img = img.resize((COVER_WIDTH, round(img.height * ratio)), Image.LANCZOS)
+    img.save(dest, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
+
+
+def tinify(dest: Path) -> None:
+    key = os.environ.get("TINIFY_APIKEY")
+    if not key:
+        print("  TINIFY_APIKEY not set, skipping tinify")
+        return
+    r = requests.post("https://api.tinify.com/shrink", auth=("api", key), data=dest.read_bytes(), timeout=60)
+    if r.status_code != 201:
+        print(f"  tinify failed: {r.text[:200]}")
+        return
+    out = requests.get(r.json()["output"]["url"], timeout=60)
+    before = dest.stat().st_size
+    dest.write_bytes(out.content)
+    print(f"  tinify: {before} -> {dest.stat().st_size} bytes")
+
+
+# ---------- main ----------
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--title", required=True)
+    p.add_argument("--subtitle")
+    p.add_argument("--series")
+    p.add_argument("--volume", help='e.g. "2/3" or "1/?"')
+    p.add_argument("--author", action="append", default=[], help="repeatable")
+    p.add_argument("--rating", type=int, choices=range(1, 6))
+    p.add_argument("--comment", default="")
+    p.add_argument("--date", help="YYYY-MM (reading month)")
+    p.add_argument("--photo", type=Path, help="photo of the book: reading month is read from its EXIF date")
+    p.add_argument("--non-fiction", action="store_true")
+    p.add_argument("--format", default="print", choices=["print", "audiobook", "ebook"])
+    p.add_argument("--url", action="append", default=[], help="repeatable")
+    p.add_argument("--isbn")
+    p.add_argument("--cover-url")
+    p.add_argument("--cover-file")
+    p.add_argument("--no-cover", action="store_true", help="skip cover lookup entirely")
+    p.add_argument("--tinify", action="store_true", help="also compress the cover with TinyPNG (needs TINIFY_APIKEY)")
+    p.add_argument("--dry-run", action="store_true", help="print the entry, do not write anything")
+    args = p.parse_args()
+
+    if not args.date and not args.photo:
+        p.error("--date or --photo is required")
+    date = args.date or exif_month(args.photo)
+
+    book: dict = {"title": args.title}
+    if args.subtitle:
+        book["subtitle"] = args.subtitle
+    if args.series:
+        book["series"] = args.series
+    book["authors"] = args.author
+    if args.rating:
+        book["rating"] = args.rating
+    if args.volume:
+        book["volume"] = args.volume
+    if args.comment:
+        book["comment"] = args.comment
+    book["date"] = date
+    if args.url:
+        book["urls"] = args.url
+    book["fiction"] = not args.non_fiction
+
+    if not args.no_cover:
+        vol = f"tome {volume_number(args.volume)}" if args.volume else ""
+        query = " ".join(x for x in [args.series or "", vol, args.title, *args.author] if x)
+        found = find_cover(args, query)
+        if found:
+            img, source = found
+            print(f"Cover source: {source}  ({img.width}x{img.height})")
+            dest = COVERS_DIR / f"{cover_slug(args.title, args.series, args.volume)}.jpg"
+            if dest.exists():
+                print(f"  {dest.relative_to(ROOT)} already exists, keeping it")
+            elif not args.dry_run:
+                save_cover(img, dest)
+                if args.tinify:
+                    tinify(dest)
+                print(f"  saved {dest.relative_to(ROOT)}")
+            book["cover"] = f"/{dest.relative_to(ROOT)}"
+        else:
+            print("No cover found. Add one later with --cover-url / --cover-file.")
+
+    book["format"] = args.format
+
+    print(json.dumps(book, indent=2, ensure_ascii=False))
+    if args.dry_run:
+        return
+
+    books = json.loads(BOOKS_FILE.read_text())
+    books.insert(0, book)
+    BOOKS_FILE.write_text(json.dumps(books, indent=2, ensure_ascii=False) + "\n")
+    print(f"Added at the top of {BOOKS_FILE.relative_to(ROOT)} ({len(books)} books)")
+
+
+if __name__ == "__main__":
+    main()

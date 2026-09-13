@@ -8,3 +8,4 @@ vendor
 Gemfile.lock
 .env
 .envrc
+_inbox
