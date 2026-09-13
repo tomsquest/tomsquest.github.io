@@ -785,13 +785,13 @@
     "format": "print"
   },
   {
-    "title": "Le Système de la Tortue",
+    "title": "Le Dôme de la Méduse",
     "series": "La Trilogie Baryonique",
     "authors": [
       "Pierre Raufast"
     ],
     "rating": 3,
-    "volume": "2/3",
+    "volume": "3/3",
     "comment": "En fin de compte, je trouve ça très léger, presque gamin par moment. Pas de révélation dingue",
     "date": "2025-08",
     "fiction": true,
@@ -1009,7 +1009,7 @@
     "comment": "La conclusion, la fin de l'histoire.\nPas une grosse surprise, un peu abscons.\nNeuf tomes, sacré histoire.",
     "date": "2025-05",
     "fiction": true,
-    "cover": "/assets/books/the-expanse-8.jpg",
+    "cover": "/assets/books/the-expanse-9.jpg",
     "format": "print"
   },
   {
@@ -2867,18 +2867,6 @@
     "format": "print"
   },
   {
-    "title": "Les oiseaux du temps",
-    "authors": [
-      "El-Mohtar",
-      "Gladstone"
-    ],
-    "rating": 3,
-    "date": "2021-11",
-    "fiction": true,
-    "cover": "/assets/books/les-oiseaux-du-temps.jpg",
-    "format": "print"
-  },
-  {
     "title": "Même pas mort",
     "series": "Rois du monde",
     "authors": [
@@ -3966,9 +3954,6 @@
     "rating": 4,
     "volume": "1",
     "date": "2018-07",
-    "urls": [
-      "Altered Carbon"
-    ],
     "fiction": true,
     "cover": "/assets/books/carbon-modifie-1.jpg",
     "format": "print"
@@ -5226,7 +5211,10 @@
   },
   {
     "title": "L'isolation par l'extérieur",
-    "authors": [],
+    "authors": [
+      "Thierry Gallauziaux",
+      "David Fedullo"
+    ],
     "rating": 2,
     "comment": "Un manuel sur comment réaliser son isolation extérieure. Aucun conseil, juste des consignes et règles.\nLes schémas sont très bien par contre.",
     "date": "2014-04",
@@ -5295,18 +5283,6 @@
     "date": "2014-02",
     "fiction": false,
     "cover": "/assets/books/the-undercover-economist.jpg",
-    "format": "print"
-  },
-  {
-    "title": "Choose Yourself",
-    "authors": [
-      "James Altucher"
-    ],
-    "rating": 3,
-    "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
-    "date": "2014-01",
-    "fiction": false,
-    "cover": "/assets/books/choose-yourself.jpg",
     "format": "print"
   },
   {
