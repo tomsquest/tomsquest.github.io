@@ -1,5 +1,150 @@
 [
   {
+    "title": "Ultra-intelligence",
+    "subtitle": "Jusqu'où iront les IA ?",
+    "authors": [
+      "Aymeric Roucher"
+    ],
+    "date": "2026-09",
+    "rating": 3,
+    "comment": "1ère partie avec une bonne intro aux LLM, puis des questions \"sociétales\" sans être très profondes. J'ai préféré \"IA - Faut-il décider\"",
+    "fiction": false,
+    "cover": "/assets/books/ultra-intelligence.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Rose de sang",
+    "series": "Wyld",
+    "authors": [
+      "Nicholas Eames"
+    ],
+    "volume": "2/2",
+    "rating": 2,
+    "comment": "Vraiment pas de surprise, presqu'un peu bête, creux. J'ai vraiment eu du mal à le finir",
+    "date": "2026-09",
+    "fiction": true,
+    "cover": "/assets/books/wyld-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Travail",
+    "authors": [
+      "Marie-Anne Dujarier"
+    ],
+    "rating": 3,
+    "comment": "Court. Pas pris de note, mais des quelques points intéressants.",
+    "date": "2026-09",
+    "fiction": false,
+    "cover": "/assets/books/travail.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La Mort ou la Gloire",
+    "series": "Wyld",
+    "authors": [
+      "Nicholas Eames"
+    ],
+    "volume": "1/2",
+    "rating": 3,
+    "comment": "On me l'avait bien vendu, mais les personnages, d'anciens héros, bof, mais ça marche quand-même",
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/wyld-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Destruction",
+    "series": "Wayward Pines",
+    "authors": [
+      "Blake Crouch"
+    ],
+    "volume": "3/3",
+    "rating": 4,
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/wayward-pines-3.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Rébellion",
+    "series": "Wayward Pines",
+    "authors": [
+      "Blake Crouch"
+    ],
+    "volume": "2/3",
+    "rating": 4,
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/wayward-pines-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Révélation",
+    "series": "Wayward Pines",
+    "authors": [
+      "Blake Crouch"
+    ],
+    "volume": "1/3",
+    "rating": 4,
+    "comment": "Je ne voyais pas comment l'auteur allait écrire un tome 2 et 3, mais tout se tient. Haletant (surtout ce 1er tome)",
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/wayward-pines-1.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La Ville des voleurs",
+    "authors": [
+      "David Benioff"
+    ],
+    "rating": 4,
+    "comment": "La faim, les péripéties, la Russie... Super ! Et cette chute finale !",
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/la-ville-des-voleurs.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Les Terres de Cristal",
+    "series": "Le Puits des Mémoires",
+    "authors": [
+      "Gabriel Katz"
+    ],
+    "rating": 4,
+    "volume": "3/3",
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/le-puits-des-memoires-3.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Le Fils de la Lune",
+    "series": "Le Puits des Mémoires",
+    "authors": [
+      "Gabriel Katz"
+    ],
+    "rating": 4,
+    "volume": "2/3",
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/le-puits-des-memoires-2.jpg",
+    "format": "print"
+  },
+  {
+    "title": "La Traque",
+    "series": "Le Puits des Mémoires",
+    "authors": [
+      "Gabriel Katz"
+    ],
+    "rating": 4,
+    "volume": "1/3",
+    "comment": "De l'aventure ! Ok, la perte de mémoire est facile, mais justifiée après. Vraiment pas mal.",
+    "date": "2026-08",
+    "fiction": true,
+    "cover": "/assets/books/le-puits-des-memoires-1.jpg",
+    "format": "print"
+  },
+  {
     "title": "Ne tirez pas sur l'oiseur moqueur",
     "authors": [
       "Harper Lee"
@@ -586,7 +731,6 @@
     ],
     "rating": 5,
     "comment": "Un classique. Et la voix du narrateur, géniale. Ça commence sympathiquement jusqu'à être inquiétant.",
-
     "date": "2025-09",
     "fiction": true,
     "cover": "/assets/books/le-hobbit.jpg",
