@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://tomsquest.com/schemas/books.schema.json",
+  "title": "Bookshelf",
+  "description": "Books listed on the /bookshelf/ page. Newest first.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["title", "authors", "rating", "fiction", "cover", "format"],
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Book title. For a series, the title of this volume."
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1
+      },
+      "series": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Series name, shown after the title when different from it."
+      },
+      "authors": {
+        "type": "array",
+        "items": { "type": "string", "minLength": 1 },
+        "uniqueItems": true,
+        "description": "Authors. Empty only when unknown."
+      },
+      "rating": {
+        "type": "integer",
+        "enum": [1, 2, 3, 4, 5],
+        "description": "5 outstanding · 4 really enjoyed · 3 good, not great · 2 lost my time · 1 avoid"
+      },
+      "volume": {
+        "type": "string",
+        "pattern": "^[0-9]+(/([0-9]+|\\?))?$",
+        "description": "Volume number: \"2/3\" (2 of 3), \"1/?\" (open series) or \"2\" (total unknown)."
+      },
+      "comment": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Short personal review. Omit the field rather than leaving it empty."
+      },
+      "date": {
+        "type": "string",
+        "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$",
+        "description": "Reading month, YYYY-MM. Missing only on old entries."
+      },
+      "urls": {
+        "type": "array",
+        "items": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "fiction": {
+        "type": "boolean"
+      },
+      "cover": {
+        "type": "string",
+        "pattern": "^/assets/books/[a-z0-9-]+\\.(jpg|png)$",
+        "description": "Cover image, 300px wide, under assets/books/."
+      },
+      "format": {
+        "type": "string",
+        "enum": ["print", "audiobook"]
+      }
+    }
+  }
+}

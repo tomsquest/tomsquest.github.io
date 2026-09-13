@@ -1,0 +1,156 @@
+#!/usr/bin/env -S uv run --script --quiet
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["jsonschema", "pillow"]
+# ///
+"""
+Lint _data/books.json.
+
+- validates every entry against _data/books.schema.json
+- checks what a schema cannot: cover files exist and are 300px wide, orphan covers,
+  duplicates, dates sorted newest first, key order, recent entries without a date.
+
+Exit code 1 on errors, 0 otherwise (warnings only). Use --strict to fail on warnings too.
+--fix rewrites books.json with keys in canonical order (no other change).
+"""
+import argparse
+import json
+import os
+import sys
+from collections import Counter
+from pathlib import Path
+
+from jsonschema import Draft7Validator
+from PIL import Image
+
+ROOT = Path(__file__).resolve().parent.parent
+BOOKS_FILE = ROOT / "_data" / "books.json"
+SCHEMA_FILE = ROOT / "_data" / "books.schema.json"
+COVERS_DIR = ROOT / "assets" / "books"
+COVER_WIDTH = 300
+KEY_ORDER = ["title", "subtitle", "series", "authors", "rating", "volume", "comment", "date", "urls", "fiction", "cover", "format"]
+RECENT = 50  # entries at the top expected to have a date
+
+errors: list[str] = []
+warnings: list[str] = []
+
+
+def label(i: int, book: dict) -> str:
+    title = book.get("title", "?") if isinstance(book, dict) else "?"
+    return f"#{i + 1} {title!r}"
+
+
+def error(i: int, book: dict, msg: str) -> None:
+    errors.append(f"{label(i, book)}: {msg}")
+
+
+def warn(i: int, book: dict, msg: str) -> None:
+    warnings.append(f"{label(i, book)}: {msg}")
+
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--strict", action="store_true", help="exit 1 on warnings too")
+    p.add_argument("--fix", action="store_true", help="rewrite books.json with keys in canonical order")
+    args = p.parse_args()
+
+    try:
+        books = json.loads(BOOKS_FILE.read_text())
+    except json.JSONDecodeError as e:
+        sys.exit(f"{BOOKS_FILE.relative_to(ROOT)}: invalid JSON: {e}")
+    schema = json.loads(SCHEMA_FILE.read_text())
+    Draft7Validator.check_schema(schema)
+    validator = Draft7Validator(schema)
+
+    # 1. Schema
+    for err in validator.iter_errors(books):
+        if err.path:
+            i = err.path[0]
+            field = "/".join(str(x) for x in list(err.path)[1:]) or "entry"
+            error(i, books[i], f"{field}: {err.message}")
+        else:
+            errors.append(f"root: {err.message}")
+
+    # 2. Per-entry checks
+    seen: Counter = Counter()
+    fixed = 0
+    for i, book in enumerate(books):
+        if not isinstance(book, dict):
+            continue
+
+        keys = list(book)
+        expected = [k for k in KEY_ORDER if k in keys]
+        if keys != expected and set(keys) <= set(KEY_ORDER):
+            if args.fix:
+                books[i] = {k: book[k] for k in expected}
+                fixed += 1
+            else:
+                warn(i, book, f"key order is {keys}, expected {expected}")
+
+        if book.get("authors") == []:
+            warn(i, book, "no authors")
+
+        if i < RECENT and "date" not in book:
+            warn(i, book, "recent entry without date")
+
+        volume = book.get("volume", "")
+        if "/" in volume:
+            num, total = volume.split("/", 1)
+            if total != "?" and int(num) > int(total):
+                error(i, book, f"volume {volume}: number greater than total")
+        if "series" in book and book["series"] == book.get("title") and "volume" not in book:
+            warn(i, book, "series equals title but no volume")
+
+        cover = book.get("cover")
+        if isinstance(cover, str) and cover.startswith("/assets/books/"):
+            path = ROOT / cover.lstrip("/")
+            if not path.is_file():
+                error(i, book, f"cover not found: {cover}")
+            else:
+                try:
+                    with Image.open(path) as img:
+                        if img.width != COVER_WIDTH:
+                            warn(i, book, f"cover is {img.width}px wide, expected {COVER_WIDTH}: {cover}")
+                except OSError:
+                    error(i, book, f"cover is not a readable image: {cover}")
+
+        # Re-reads are legitimate (different months); the same month is a duplicate
+        key = (book.get("title"), book.get("series"), book.get("volume"), book.get("format"), book.get("date"))
+        seen[key] += 1
+        if seen[key] == 2:
+            error(i, book, "duplicate entry (same title, series, volume, format and date)")
+
+    # 3. Ordering: dates must be newest first (undated entries are the old tail)
+    dated = [(i, b["date"]) for i, b in enumerate(books) if isinstance(b, dict) and "date" in b]
+    for (i, d), (j, d2) in zip(dated, dated[1:]):
+        if d < d2:
+            warn(j, books[j], f"date {d2} is after previous entry's {d}: not sorted newest first")
+    first_undated = next((i for i, b in enumerate(books) if isinstance(b, dict) and "date" not in b), None)
+    if first_undated is not None:
+        for i in range(first_undated, len(books)):
+            if isinstance(books[i], dict) and "date" in books[i]:
+                warn(i, books[i], "dated entry after undated ones")
+                break
+
+    # 4. Orphan covers
+    used = {os.path.basename(b["cover"]) for b in books if isinstance(b, dict) and isinstance(b.get("cover"), str)}
+    for f in sorted(COVERS_DIR.iterdir()):
+        if f.is_file() and f.name not in used:
+            warnings.append(f"orphan cover: assets/books/{f.name}")
+
+    if args.fix and fixed:
+        BOOKS_FILE.write_text(json.dumps(books, indent=2, ensure_ascii=False) + "\n")
+        print(f"fixed key order of {fixed} entries")
+
+    # Report
+    for msg in errors:
+        print(f"error: {msg}")
+    for msg in warnings:
+        print(f"warning: {msg}")
+    print(f"{len(books)} books, {len(errors)} errors, {len(warnings)} warnings")
+    if errors or (args.strict and warnings):
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

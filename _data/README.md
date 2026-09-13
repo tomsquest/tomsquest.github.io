@@ -19,6 +19,16 @@ Structure with all fields in correct order:
   },
 ```
 
+### Linting
+
+`books.schema.json` is the JSON Schema of `books.json` (IntelliJ: Settings → Languages &
+Frameworks → Schemas and DTDs → JSON Schema Mappings, map `_data/books.json` to it).
+
+```shell
+_bin/lint_books          # schema + covers + duplicates + ordering; exit 1 on errors
+_bin/lint_books --fix    # also rewrite entries with keys in canonical order
+```
+
 ## projects.json
 
 How to generate a list of my projects on GitHub:

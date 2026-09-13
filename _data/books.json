@@ -5,9 +5,9 @@
     "authors": [
       "Aymeric Roucher"
     ],
-    "date": "2026-09",
     "rating": 3,
     "comment": "1ère partie avec une bonne intro aux LLM, puis des questions \"sociétales\" sans être très profondes. J'ai préféré \"IA - Faut-il décider\"",
+    "date": "2026-09",
     "fiction": false,
     "cover": "/assets/books/ultra-intelligence.jpg",
     "format": "print"
@@ -18,8 +18,8 @@
     "authors": [
       "Nicholas Eames"
     ],
-    "volume": "2/2",
     "rating": 2,
+    "volume": "2/2",
     "comment": "Vraiment pas de surprise, presqu'un peu bête, creux. J'ai vraiment eu du mal à le finir",
     "date": "2026-09",
     "fiction": true,
@@ -44,8 +44,8 @@
     "authors": [
       "Nicholas Eames"
     ],
-    "volume": "1/2",
     "rating": 3,
+    "volume": "1/2",
     "comment": "On me l'avait bien vendu, mais les personnages, d'anciens héros, bof, mais ça marche quand-même",
     "date": "2026-08",
     "fiction": true,
@@ -58,8 +58,8 @@
     "authors": [
       "Blake Crouch"
     ],
-    "volume": "3/3",
     "rating": 4,
+    "volume": "3/3",
     "date": "2026-08",
     "fiction": true,
     "cover": "/assets/books/wayward-pines-3.jpg",
@@ -71,8 +71,8 @@
     "authors": [
       "Blake Crouch"
     ],
-    "volume": "2/3",
     "rating": 4,
+    "volume": "2/3",
     "date": "2026-08",
     "fiction": true,
     "cover": "/assets/books/wayward-pines-2.jpg",
@@ -84,8 +84,8 @@
     "authors": [
       "Blake Crouch"
     ],
-    "volume": "1/3",
     "rating": 4,
+    "volume": "1/3",
     "comment": "Je ne voyais pas comment l'auteur allait écrire un tome 2 et 3, mais tout se tient. Haletant (surtout ce 1er tome)",
     "date": "2026-08",
     "fiction": true,
@@ -226,8 +226,8 @@
     "authors": [
       "Larry McMurtry"
     ],
-    "volume": "1/2",
     "rating": 5,
+    "volume": "1/2",
     "comment": "Ces personnages, l'humour, l'ambiance. Tout est bon !",
     "date": "2026-06",
     "fiction": true,
@@ -239,8 +239,8 @@
     "authors": [
       "Zogarth"
     ],
-    "volume": "1/?",
     "rating": 2,
+    "volume": "1/?",
     "comment": "LitRPG, mais creux. Je mets 2 sur 5 pour la progression. C'est un sous Dungeon Crawler Carl. Je ne lirai pas la suite. C'est mou, mal décrit, pas inventif, mal raconté",
     "date": "2026-06",
     "fiction": true,
@@ -437,11 +437,11 @@
   {
     "title": "Archives de l'exode",
     "series": "Les voyageurs",
-    "volume": "3/4",
     "authors": [
       "Becky Chambers"
     ],
     "rating": 4,
+    "volume": "3/4",
     "comment": "Toujours aussi bien cette auteure",
     "date": "2026-03",
     "fiction": true,
@@ -467,8 +467,8 @@
       "Matt Dinniman"
     ],
     "rating": 4,
-    "comment": "C'est toujours aussi gore, des traits d'humour. Je ne me souvenais plus de qui était qui. Mais l'aventure continue. Next level !",
     "volume": "5/7",
+    "comment": "C'est toujours aussi gore, des traits d'humour. Je ne me souvenais plus de qui était qui. Mais l'aventure continue. Next level !",
     "date": "2026-02",
     "fiction": true,
     "cover": "/assets/books/dungeon-crawler-carl-5.jpg",
@@ -477,11 +477,11 @@
   {
     "title": "Le Dernier voeu",
     "series": "The Witcher",
-    "volume": "1/8",
     "authors": [
       "Andrzej Sapkowski"
     ],
     "rating": 4,
+    "volume": "1/8",
     "comment": "Je me suis un peu perdu, mais ça accompagne bien les sorties longues de running.",
     "date": "2026-01",
     "fiction": true,
@@ -491,11 +491,11 @@
   {
     "title": "La peur du sage, 2e journée",
     "series": "Chronique du tueur de roi",
-    "volume": "3/3",
     "authors": [
       "Patrick Rothfuss"
     ],
     "rating": 4,
+    "volume": "3/3",
     "comment": "Je me doutais que ça n'allait pas finir là. Hélas, on dirait que l'auteur ne veut pas continuer/finir l'aventure ! Trop de pistes ouvertes.",
     "date": "2026-01",
     "fiction": true,
@@ -543,11 +543,11 @@
   {
     "title": "La peur du sage, 1ᵉ journée",
     "series": "Chronique du tueur de roi",
-    "volume": "2/3",
     "authors": [
       "Patrick Rothfuss"
     ],
     "rating": 4,
+    "volume": "2/3",
     "date": "2025-12",
     "fiction": true,
     "cover": "/assets/books/chronique-du-tueur-de-roi-2.jpg",
@@ -593,11 +593,11 @@
   {
     "title": "Ils étaient sept",
     "subtitle": "Le club des amateurs de romans policiers",
-    "volume": "1/6",
     "authors": [
       "Christina Larmer"
     ],
     "rating": 4,
+    "volume": "1/6",
     "comment": "Cozy mystery sympa",
     "date": "2025-11",
     "fiction": true,
@@ -607,11 +607,11 @@
   {
     "title": "Le nom du Vent",
     "series": "Chronique du tueur de roi",
-    "volume": "1/3",
     "authors": [
       "Patrick Rothfuss"
     ],
     "rating": 4,
+    "volume": "1/3",
     "comment": "C'est intriguant. L'histoire d'un ancien héros qui ne le semble plus. Prenant, malgré le côté enfant parfait, petit génie.",
     "date": "2025-11",
     "fiction": true,
@@ -646,11 +646,11 @@
   {
     "title": "La Saison des orages",
     "series": "The Witcher",
-    "volume": "0/8",
     "authors": [
       "Andrzej Sapkowski"
     ],
     "rating": 4,
+    "volume": "0/8",
     "comment": "Découvertes de The Witcher. Une sorte de Dexter guerrier-mage",
     "date": "2025-10",
     "fiction": true,
@@ -673,11 +673,11 @@
   {
     "title": "Libration",
     "series": "Les voyageurs",
-    "volume": "2/4",
     "authors": [
       "Becky Chambers"
     ],
     "rating": 5,
+    "volume": "2/4",
     "comment": "La suite, cette fois avec l'IA qui vient posséder un corps. Top dans les interrogations, les personages, les relations.",
     "date": "2025-10",
     "fiction": true,
@@ -713,11 +713,11 @@
   {
     "title": "Le débat des dames",
     "series": "Le chevalier aux épines",
-    "volume": "3/3",
     "authors": [
       "Jean-Philippe Jaworski"
     ],
     "rating": 4,
+    "volume": "3/3",
     "comment": "La presque fin. C'est long, c'est confus par moment. Mais avec style et vieux français !",
     "date": "2025-09",
     "fiction": true,
@@ -791,8 +791,8 @@
       "Pierre Raufast"
     ],
     "rating": 3,
-    "comment": "En fin de compte, je trouve ça très léger, presque gamin par moment. Pas de révélation dingue",
     "volume": "2/3",
+    "comment": "En fin de compte, je trouve ça très léger, presque gamin par moment. Pas de révélation dingue",
     "date": "2025-08",
     "fiction": true,
     "cover": "/assets/books/la-trilogie-baryonique-3.jpg",
@@ -801,11 +801,11 @@
   {
     "title": "L'espace d'un an",
     "series": "Les voyageurs",
-    "volume": "1/4",
     "authors": [
       "Becky Chambers"
     ],
     "rating": 5,
+    "volume": "1/4",
     "comment": "Oh que c'est bien. Le monde, les interactions, l'empathie dans les situations. J'ai adoré.",
     "date": "2025-08",
     "fiction": true,
@@ -894,11 +894,11 @@
   {
     "title": "Une prière pour les cimes timides",
     "series": "Histoires de moine et de robot",
-    "volume": "2/2",
     "authors": [
       "Becky Chambers"
     ],
     "rating": 4,
+    "volume": "2/2",
     "comment": "Toujours bien, Becky Chambers. C'est doux, c'est bon. Un petit voyage",
     "date": "2025-07",
     "fiction": true,
@@ -933,11 +933,11 @@
   {
     "title": "Le Conte de l'assassin",
     "series": "Le chevalier aux épines",
-    "volume": "2/3",
     "authors": [
       "Jean-Philippe Jaworski"
     ],
     "rating": 5,
+    "volume": "2/3",
     "comment": "Oh que c'est bon ! On retrouve Don Benvenuto, le tueur sarcastique. Super bien écrit, comme toujours. Génial !",
     "date": "2025-07",
     "fiction": true,
@@ -1039,11 +1039,11 @@
   {
     "title": "Un psaume pour les recyclés sauvages",
     "series": "Histoires de moine et de robot",
-    "volume": "1/2",
     "authors": [
       "Becky Chambers"
     ],
     "rating": 5,
+    "volume": "1/2",
     "comment": "Vraiment pas mal. Court et intriguant.\nLa rencontre avec un robot, et du héros qui a tout, mais est insatisfait.\nJ'aimerais lire ce que l'auteure a écrit d'autres.",
     "date": "2025-04",
     "fiction": true,
@@ -1391,11 +1391,11 @@
   {
     "title": "Le tournoi des preux",
     "series": "Le chevalier aux épines",
-    "volume": "1/3",
     "authors": [
       "Jean-Philippe Jaworski"
     ],
     "rating": 4,
+    "volume": "1/3",
     "comment": "Histoire de chevaliers, de tournois et de complots. La magie est juste soupçonnée.\nC'est donc très chevaleresque, et on est du côté des chevaliers, et pas des gueux.\nLe vocabulaire est très riche, et j'ai presque découvert un mot par page (je pensais que les mots étaient inventés pour l'occasion, et bien même pas !).",
     "date": "2024-10",
     "fiction": true,
@@ -1648,8 +1648,8 @@
       "MJ DeMarco"
     ],
     "rating": 4,
-    "date": "2024-03",
     "comment": "La métaphore automobile fonctionne bien (il vaut mieux ne pas être piéton...). Le livre incite à l'action.",
+    "date": "2024-03",
     "fiction": false,
     "cover": "/assets/books/lautoroute-du-millionaire.jpg",
     "format": "print"
@@ -1920,8 +1920,8 @@
       "Michal Plachta"
     ],
     "rating": 4,
-    "date": "2023-08",
     "comment": "Programmation fonctionnelle sans jargon",
+    "date": "2023-08",
     "fiction": false,
     "cover": "/assets/books/grokking-functional-programming.jpg",
     "format": "print"
@@ -2031,8 +2031,8 @@
       "Olivier Roland"
     ],
     "rating": 3,
-    "date": "2023-07",
     "comment": "Assez classiques, mais repose certaines bases",
+    "date": "2023-07",
     "fiction": false,
     "cover": "/assets/books/tout-le-monde-na-pas-eu-la-chance-de-rater-ses-etudes.jpg",
     "format": "print"
@@ -2471,8 +2471,8 @@
       "Aurélien Géron"
     ],
     "rating": 5,
-    "date": "2022-07",
     "comment": "Un Must ! Rien que le chapitre avec lequel il déroule un projet complet de ML, avec ses remarques propres et ses avis. Top !",
+    "date": "2022-07",
     "fiction": false,
     "cover": "/assets/books/machine-learning-avec-scikit-learn.jpg",
     "format": "print"
@@ -2616,8 +2616,8 @@
       "Chloé-Agathe Azencott"
     ],
     "rating": 2,
-    "date": "2022-04",
     "comment": "Trop matheux, c'est surtout une introduction aux mathématiques pour le Machine Learning.",
+    "date": "2022-04",
     "fiction": false,
     "cover": "/assets/books/introduction-au-machine-learning.jpg",
     "format": "print"
@@ -2714,8 +2714,8 @@
       "Oliver Theobald"
     ],
     "rating": 4,
-    "date": "2022-01",
     "comment": "L'intro facile au ML, et c'est ce que je cherchais",
+    "date": "2022-01",
     "fiction": false,
     "cover": "/assets/books/machine-learning-for-absolute-beginners.jpg",
     "format": "print"
@@ -3192,8 +3192,8 @@
       "Eric Normand"
     ],
     "rating": 5,
-    "date": "2021-01",
     "comment": "J'ai changé de façon d'écrire du code après avoir lu ce livre. Excellent !",
+    "date": "2021-01",
     "fiction": false,
     "cover": "/assets/books/grokking-simplicity.jpg",
     "format": "print"
@@ -3205,8 +3205,8 @@
       "Patrick Lencioni"
     ],
     "rating": 3,
-    "date": "2021-01",
     "comment": "Le livre donne un framework pour créer une super équipe, dans le sens créer les liens, se faire confiance, etc. Mais le chemin est difficile et long.",
+    "date": "2021-01",
     "fiction": false,
     "cover": "/assets/books/the-five-dysfunctions-of-a-team.jpg",
     "format": "print"
@@ -3418,8 +3418,8 @@
       "Chriss Voss"
     ],
     "rating": 4,
-    "date": "2020-06",
     "comment": "Beaucoup de techniques. Comme tout, si je veux être bon, il faut que je m'entraine, et c'est dur !",
+    "date": "2020-06",
     "fiction": false,
     "cover": "/assets/books/never-split-the-difference.jpg",
     "format": "print"
@@ -3668,8 +3668,8 @@
       "Tommaso Teofili"
     ],
     "rating": 4,
-    "date": "2019-10",
     "comment": "Des techniques avancées (réseau de neurones...) au service du Search. Pas tout lu, mais possible d'appliquer ça dans des projets.",
+    "date": "2019-10",
     "fiction": false,
     "cover": "/assets/books/deep-learning-for-search.jpg",
     "format": "print"
@@ -3771,8 +3771,8 @@
       "Anne-Lise Combeaud"
     ],
     "rating": 4,
-    "date": "2019-07",
     "comment": "Des principes philosophiques en BD. Bien fait, ça donne envie de creuser",
+    "date": "2019-07",
     "fiction": false,
     "cover": "/assets/books/philocomix.jpg",
     "format": "print"
@@ -3785,8 +3785,8 @@
       "John Berryman"
     ],
     "rating": 5,
-    "date": "2019-06",
     "comment": "Une mine d’information et de techniques sur le Search. Génial",
+    "date": "2019-06",
     "fiction": false,
     "cover": "/assets/books/relevant-search.jpg",
     "format": "print"
@@ -4775,8 +4775,8 @@
       "Robert Bolton"
     ],
     "rating": 4,
-    "date": "2015-06",
     "comment": "Long à lire, et intéressant sur plusieurs aspects",
+    "date": "2015-06",
     "fiction": false,
     "cover": "/assets/books/people-skills.jpg",
     "format": "print"
@@ -4851,8 +4851,8 @@
       "Ram Charan"
     ],
     "rating": 3,
-    "date": "2015-03",
     "comment": "Retour sur les fondements d'un business. J'ai bien aimé les parallèles avec l'enfance pauvre de l'auteur.\nDifficile d'actionner.",
+    "date": "2015-03",
     "fiction": false,
     "cover": "/assets/books/what-the-ceo-wants-you-to-know.jpg",
     "format": "print"
@@ -4863,8 +4863,8 @@
       "Jay Fields"
     ],
     "rating": 5,
-    "date": "2015-03",
     "comment": "Bon livre. J'ai été convaincu par certaines pratiques, les arguments ont fait mouches.\nC'est pragmatique, et ça m'a appris des choses sur l'écriture des tests et aussi un peu sur le code.\nLe ton est bon, avec l'impression d'avoir une conversation avec un professionnel qui me donne \nson avis et ses opinions sur du code que j'aurai pu écrire.",
+    "date": "2015-03",
     "fiction": false,
     "cover": "/assets/books/working-effectively-with-unit-tests.jpg",
     "format": "print"
@@ -4924,8 +4924,8 @@
       "Daniel Pink"
     ],
     "rating": 4,
-    "date": "2015-01",
     "comment": "Intéressant et distrayant. Le point de vue vaut le coût. Vendre a changé depuis que les acheteurs ont les mêmes informations que les vendeurs. Qu'est-ce qui change, comment s'adapter...",
+    "date": "2015-01",
     "fiction": false,
     "cover": "/assets/books/vous-etes-vendeur-le-saviez-vous.jpg",
     "format": "print"
@@ -4988,8 +4988,8 @@
       "Marie G. McIntyre"
     ],
     "rating": 4,
-    "date": "2014-11",
     "comment": "La/les vérités sur le monde pro. Comment être un winner, comment ne pas être un martyr.\nComment le monde de l'entreprise fonctionne dans les relations avec les hommes.\nVraiment éclairant, rationnel, parfois dur.\nJ'aurai aimé pouvoir être aidé pour fixer des objectifs, seul moyen pour l'auteure de ne pas se retrouver ailleurs que ce que j'aurai voulu.",
+    "date": "2014-11",
     "fiction": false,
     "cover": "/assets/books/secrets-to-winning-at-office-politics.jpg",
     "format": "print"
@@ -5013,8 +5013,8 @@
       "Robert Cialdini"
     ],
     "rating": 5,
-    "date": "2014-10",
     "comment": "L'influence et la manipulation, vraiment excellent. Un must. Ça se lit bien, c'est intéressant et pratique.",
+    "date": "2014-10",
     "fiction": false,
     "cover": "/assets/books/influence-et-manipulation.jpg",
     "format": "print"
@@ -5026,8 +5026,8 @@
       "Roy Osherove"
     ],
     "rating": 2,
-    "date": "2014-10",
     "comment": "Intéressant sur certains points, mais pas assez structuré, analysé.",
+    "date": "2014-10",
     "fiction": false,
     "cover": "/assets/books/notes-to-a-software-team-leader.jpg",
     "format": "print"
@@ -5051,8 +5051,8 @@
       "Stephen J. Dubner"
     ],
     "rating": 4,
-    "date": "2014-09",
     "comment": "Divertissant, mais sans pour autant apprendre",
+    "date": "2014-09",
     "fiction": false,
     "cover": "/assets/books/super-freakonomics.jpg",
     "format": "print"
@@ -5064,8 +5064,8 @@
       "Gerald M. Weinberg"
     ],
     "rating": 3,
-    "date": "2014-09",
     "comment": "J'ai aimé les anecdotes, et certaines techniques, mais le contenu est assez peu actionnable.",
+    "date": "2014-09",
     "fiction": false,
     "cover": "/assets/books/the-secrets-of-consulting.jpg",
     "format": "print"
@@ -5279,8 +5279,8 @@
       "Roland Dutrey"
     ],
     "rating": 4,
-    "date": "2014-03",
     "comment": "L'auteur a rénové sa maison de 1991 pour en faire une quasi-bbc.\nLe plus intéressant est le tableau d'amortissement (genre 8 ans pour l'isolation extérieure).\nÀ retenir : tous travaux dégagent un bénéfice, mais à très long terme.",
+    "date": "2014-03",
     "fiction": false,
     "cover": "/assets/books/renovation-basse-consommation.jpg",
     "format": "print"
@@ -5303,8 +5303,8 @@
       "James Altucher"
     ],
     "rating": 3,
-    "date": "2014-01",
     "comment": "Motivant, quelques bonnes choses, mais pas très construit finalement.",
+    "date": "2014-01",
     "fiction": false,
     "cover": "/assets/books/choose-yourself.jpg",
     "format": "print"
@@ -5314,8 +5314,8 @@
     "authors": [
       "A. J. Jacobs"
     ],
-    "date": "2014-01",
     "rating": 4,
+    "date": "2014-01",
     "fiction": false,
     "cover": "/assets/books/journal-dun-cobaye-ma-vie-est-une-experience.jpg",
     "format": "print"
@@ -5363,8 +5363,8 @@
       "Josh Kaufman"
     ],
     "rating": 4,
-    "date": "2013-10",
     "comment": "C'est grâce à ce livre que j'ai appris à taper en Colemak, et que j'appendrai d'autres choses... en 20 heures !",
+    "date": "2013-10",
     "fiction": false,
     "cover": "/assets/books/the-first-20th-hours.jpg",
     "format": "print"
@@ -5448,8 +5448,8 @@
       "David Servan-Schreiber"
     ],
     "rating": 3,
-    "date": "2011-09",
     "comment": "Pas mal de descriptions et des histoires assez intéressantes, mais les sujets de fond auraient pu tenir en 10 pages.",
+    "date": "2011-09",
     "fiction": false,
     "cover": "/assets/books/guerir-le-stress-lanxiete-et-la-depression-sans-medicaments-ni-psychanalyse.jpg",
     "format": "print"
@@ -5462,8 +5462,8 @@
       "Tahl Raz"
     ],
     "rating": 4,
-    "date": "2011-09",
     "comment": "Le pitch est : nous avons besoin des autres pour réussir. Comment devenir un membre du club",
+    "date": "2011-09",
     "fiction": false,
     "cover": "/assets/books/never-eat-alone.jpg",
     "format": "print"
@@ -5475,8 +5475,8 @@
       "David Heinemeir Hansson"
     ],
     "rating": 4,
-    "date": "2011-09",
     "comment": "Les points de vue et recettes de 37signals. Inspirant",
+    "date": "2011-09",
     "fiction": false,
     "cover": "/assets/books/rework.jpg",
     "format": "print"
@@ -5487,8 +5487,8 @@
       "Tom Rath"
     ],
     "rating": 4,
-    "date": "2011-09",
     "comment": "Je suis un \"Catalyste\" entre idées, systèmes et personnes",
+    "date": "2011-09",
     "fiction": false,
     "cover": "/assets/books/strengthsfinder-20.jpg",
     "format": "print"
@@ -5500,8 +5500,8 @@
       "Steven Gary Blank"
     ],
     "rating": 3,
-    "date": "2011-08",
     "comment": "Bible de la création et du lancement d'une entreprise. Complexe et compliqué, difficile à lire",
+    "date": "2011-08",
     "fiction": false,
     "cover": "/assets/books/the-four-steps-to-the-epiphany.jpg",
     "format": "print"
@@ -5513,8 +5513,8 @@
       "Chad Fowler"
     ],
     "rating": 4,
-    "date": "2011-08",
     "comment": "L'idée globale du livre est de nous faire comprendre que notre carrière est comme un produit qu'il faut rendre intéressant, donc vendable, qu'il faut vendre et maintenir intéressant.",
+    "date": "2011-08",
     "fiction": false,
     "cover": "/assets/books/the-passionate-programmer.jpg",
     "format": "print"
@@ -5540,8 +5540,8 @@
       "Terry Grossman"
     ],
     "rating": 4,
-    "date": "2011-07",
     "comment": "Les auteurs sont des extrémistes de la santé, mais le plus intéressant est le dernier chapitre sur comment vivre une bonne vie",
+    "date": "2011-07",
     "fiction": false,
     "cover": "/assets/books/serons-nous-immortels.jpg",
     "format": "print"
@@ -5564,8 +5564,8 @@
       "David Gage"
     ],
     "rating": 4,
-    "date": "2011-06",
     "comment": "Le guide pour bien démarrer une entreprise à plusieurs. Ça n'empêche pas les égos, mais au moins, on parle des sujets difficiles avant de se lancer",
+    "date": "2011-06",
     "fiction": false,
     "cover": "/assets/books/the-partnership-charter.jpg",
     "format": "print"
@@ -5577,8 +5577,8 @@
       "Michael Masterson"
     ],
     "rating": 3,
-    "date": "2011-06",
     "comment": "L'idée principale du livre est l'ACTION. On passe trop de temps à réfléchir, à planifier, à collecter l'info, et pas assez de temps à agir, essayer, échouer (et donc apprendre).",
+    "date": "2011-06",
     "fiction": false,
     "cover": "/assets/books/the-pledge.jpg",
     "format": "print"
@@ -5589,8 +5589,8 @@
       "Mohammad Yunus"
     ],
     "rating": 4,
-    "date": "2011-06",
     "comment": "Découverte pour moi de la microfinance, et de l'entrepreneuriat social",
+    "date": "2011-06",
     "fiction": false,
     "cover": "/assets/books/vers-un-monde-sans-pauvrete-vers-un-nouveau-capitalisme.jpg",
     "format": "print"
@@ -5605,8 +5605,8 @@
       "Dominique Simonnet"
     ],
     "rating": 4,
-    "date": "2011-04",
     "comment": "Un bon livre. Se lit assez facilement.\nIntéressant pour savoir ce qu'il y avait avant le bigbang, d'où viennent la vie et les avis des auteurs là-dessus.",
+    "date": "2011-04",
     "fiction": false,
     "cover": "/assets/books/la-plus-belle-histoire-du-monde.jpg",
     "format": "print"
@@ -5629,8 +5629,8 @@
       "Harry Browne"
     ],
     "rating": 4,
-    "date": "2011-01",
     "comment": "Conseils financiers que je continue de suivre",
+    "date": "2011-01",
     "fiction": false,
     "cover": "/assets/books/fail-safe-investing.jpg",
     "format": "print"
@@ -5664,8 +5664,8 @@
       "Timothy Ferriss"
     ],
     "rating": 4,
-    "date": "2009-02",
     "comment": "Méthode/raccourci pour travailler moins, donc être plus malin ?",
+    "date": "2009-02",
     "fiction": false,
     "cover": "/assets/books/la-semaine-de-4-heures.jpg",
     "format": "print"
@@ -5677,8 +5677,8 @@
       "Steve Krug"
     ],
     "rating": 5,
-    "date": "2009-01",
     "comment": "Génial, simple, évident ! Le rapport à l'accessibilité est incroyable, humain. Top !",
+    "date": "2009-01",
     "fiction": false,
     "cover": "/assets/books/dont-make-me-think.jpg",
     "format": "print"
@@ -5690,8 +5690,8 @@
       "Frederick P. Brooks"
     ],
     "rating": 4,
-    "date": "2008-10",
     "comment": "Je m'y réfère toujours, notamment pour les coûts de la doc et de rendre un logiciel plus générique",
+    "date": "2008-10",
     "fiction": false,
     "cover": "/assets/books/the-mythical-man-month.jpg",
     "format": "print"
@@ -5702,8 +5702,8 @@
       "Joel Spolsky"
     ],
     "rating": 4,
-    "date": "2008-09",
     "comment": "Plein de recommandations que j'applique aujourd'hui, et qui fonctionne bien",
+    "date": "2008-09",
     "fiction": false,
     "cover": "/assets/books/joel-on-software.jpg",
     "format": "print"
@@ -5716,8 +5716,8 @@
       "William D. Danko"
     ],
     "rating": 5,
-    "date": "2008-09",
     "comment": "Le livre est une étude des statistiques et sociologique sur les riches, qui ne sont pas ceux que l'on croit.",
+    "date": "2008-09",
     "fiction": false,
     "cover": "/assets/books/the-millionaire-next-door.jpg",
     "format": "print"
@@ -5728,8 +5728,8 @@
       "Andrew Stellman",
       "Jennifer Greene"
     ],
-    "date": "2008-02",
     "rating": 4,
+    "date": "2008-02",
     "fiction": false,
     "cover": "/assets/books/head-first-c.jpg",
     "format": "print"

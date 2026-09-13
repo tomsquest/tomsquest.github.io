@@ -42,8 +42,9 @@ Turn each photo into an entry in `_data/books.json` with a cover, using `_bin/ad
      `--isbn`. Cover lookup order is ISBN via decitre.fr, then DuckDuckGo images.
    - No cover found anywhere → `--cover-file <photo>` with the user's photo, cropped.
 
-4. **Check** the result: `python3 -c 'import json; json.load(open("_data/books.json"))'`,
-   every new entry has `cover`, the file exists, and covers are 300 px wide.
+4. **Lint**: run `_bin/lint_books` (schema validation, cover files exist and are 300 px
+   wide, duplicates, date order, key order). It must report 0 errors before committing;
+   `--fix` reorders keys when needed. Read the warnings and mention the relevant ones.
 
 5. **Do not run `_bin/sort_books`** unless asked: it re-orders alphabetically within a
    month, and the user prefers reading order (newest first).
