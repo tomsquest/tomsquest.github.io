@@ -1,3 +1,17 @@
+- name: barred
+  title: "BARRED: describe a task, get an annotated dataset"
+  image: /assets/images/projects/barred_banner.png
+  description: >-
+    [BARRED](https://github.com/tomsquest/barred) is an unofficial **Python** implementation of the [BARRED paper](https://arxiv.org/abs/2604.25203) (Mazza & Levi, Plurai.ai): generate a **synthetic, labeled dataset** from just a task description and a few unlabeled examples.
+
+      What I learned:
+      - **LLM Tribunal** rather than LLM Judge: answers are debated until consensus, which makes them far more reliable than a single LLM's verdict (useful for evaluating anything and **exactly** what I am doing at work right now!)
+      - Not all papers share their code: to reproduce the work, I had to make many assumptions
+      - A lot about **library design**: exposing events to consumers, documentation, publishing, "public" api
+  github: 'https://github.com/tomsquest/barred'
+  created_at: '2026-09-01T00:00:00Z'
+  language: Python
+
 - name: docker-radicale
   title: 🔑 Radicale-Docker, Docker image for Radicale calendar and contact server + security 🔐 + addons 🚀
   image: /assets/images/projects/docker-radicale_banner.png
@@ -17,20 +31,6 @@
     Contributions are welcome, but they also push the project to support features I don't use, which makes me question the maintenance months later. 🤔
   github: 'https://github.com/tomsquest/docker-radicale'
   created_at: '2016-10-05T15:05:07Z'
-  language: Python
-
-- name: barred
-  title: "BARRED: describe a task, get an annotated dataset"
-  image: /assets/images/projects/barred_banner.png
-  description: >-
-    [BARRED](https://github.com/tomsquest/barred) is an unofficial **Python** implementation of the [BARRED paper](https://arxiv.org/abs/2604.25203) (Mazza & Levi, Plurai.ai): generate a **synthetic, labeled dataset** from just a task description and a few unlabeled examples.
-
-      What I learned:
-      - **LLM Tribunal** rather than LLM Judge: answers are debated until consensus, which makes them far more reliable than a single LLM's verdict (useful for evaluating anything and **exactly** what I am doing at work right now!)
-      - Not all papers share their code: to reproduce the work, I had to make many assumptions
-      - A lot about **library design**: exposing events to consumers, documentation, publishing, "public" api
-  github: 'https://github.com/tomsquest/barred'
-  created_at: '2026-09-01T00:00:00Z'
   language: Python
 
 - name: deep-learning-recognize-tools
