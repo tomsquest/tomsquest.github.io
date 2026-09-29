@@ -29,7 +29,7 @@ class: projects
       <li>Web site: <a href="{{ project.website }}">{{ project.website }}</a></li>
     {% endif %}
     {% if project.created_at %}
-      <li>Created: <time>{{ project.created_at | date: site.date_format }}</time></li>
+      <li>Created: <time>{{ project.created_at | date: "%Y" }}</time></li>
     {% endif %}
     {% if project.language %}
       <li>Language: {{ project.language }}</li>
