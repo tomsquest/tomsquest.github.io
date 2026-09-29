@@ -20,6 +20,7 @@ class: projects
     {{ project.description | markdownify }}
   </p>
 
+  <p>Infos:</p>
   <ul>
     {% if project.github %}
       <li>Github: <a href="{{ project.github }}">{{ project.github }}</a></li>
