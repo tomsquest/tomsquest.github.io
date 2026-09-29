@@ -28,8 +28,6 @@
       The model is trained using a **Convolutional Neural Network** (CNN) with **FastAI**.
     
       The project was created for the [Fast.AI "Practical Deep Learning For Coders" course](https://course.fast.ai/).
-    
-      See the **demo** in action at [AI.tomsquest.com](https://ai.tomsquest.com/projects/recognize-tools).
   github: 'https://github.com/tomsquest/deep-learning-recognize-tools'
   website: 'https://ai.tomsquest.com/projects/recognize-tools'
   created_at: '2023-11-25T00:00:00Z'
