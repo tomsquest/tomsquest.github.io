@@ -1,5 +1,31 @@
 [
   {
+    "title": "Le Portail des dieux infernaux",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "4/7",
+    "comment": "Relecture, mais en français",
+    "date": "2026-09",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-4.jpg",
+    "format": "print"
+  },
+  {
+    "title": "Des fleurs pour Algernon",
+    "authors": [
+      "Daniel Keyes"
+    ],
+    "rating": 3,
+    "comment": "Suranné, long, triste, et j'ai presque préféré la genèse du roman raconté par l'auteur que le roman en édition augmentée",
+    "date": "2026-09",
+    "fiction": true,
+    "cover": "/assets/books/des-fleurs-pour-algernon.jpg",
+    "format": "print"
+  },
+  {
     "title": "Ultra-intelligence",
     "subtitle": "Jusqu'où iront les IA ?",
     "authors": [
