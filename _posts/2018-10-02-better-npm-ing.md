@@ -2,6 +2,8 @@
 title: Better NPM'ing, Tips and Tricks using NPM
 lang: en
 image: /assets/images/posts/2018-10-02-better-npm-ing/npm_logo.png
+twitter:
+  card: summary
 ---
 
 I discovered several tips for working with NPM on a daily basis. Here are the top ones.

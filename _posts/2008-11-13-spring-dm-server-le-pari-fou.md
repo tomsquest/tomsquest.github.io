@@ -2,6 +2,8 @@
 title: Spring DM Server, le pari fou ?
 lang: fr
 image: /assets/images/posts/2008-11-13-spring-dm-server-le-pari-fou/springsource_logo.png
+twitter:
+  card: summary
 ---
 
 Après les Rencontres Spring qui ont eu lieu aujourd'hui, nous avons eu le droit à quelques éléments de réponses à la question suivante :

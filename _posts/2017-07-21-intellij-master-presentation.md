@@ -2,6 +2,8 @@
 title: "Intellij Championship"
 lang: en
 image: /assets/images/posts/2017-07-21-intellij-master-presentation/intellij.png
+twitter:
+  card: summary
 ---
 
 Last week I ran an **"Intellij Master Championship"** class/presentation. There were prizes to win, like Jetbrains Yoyos, Intellij Stickers.

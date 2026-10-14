@@ -2,6 +2,8 @@
 title: "MoreUnit : les tests plus vite sous Eclipse"
 lang: fr
 image: /assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/classDecoration.png
+twitter:
+  card: summary
 ---
 
 J'ai découvert aujourd'hui le plugin [MoreUnit](http://moreunit.sourceforge.net) pour Eclipse. Celui-ci accélère grandement le passage code/test et la création de tests.

@@ -2,6 +2,8 @@
 title: "A la découverte des Components Hibernate"
 lang: fr
 image: /assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/hibernate_logo.gif
+twitter:
+  card: summary
 ---
 
 Plusieurs années avec Hibernate et j'apprends une de ses fonctionnalités de base : les [Components](http://www.hibernate.org/hib_docs/v3/reference/en/html_single/#mapping-declaration-component). Ceux-ci permettent de mapper plusieurs objets dans une même table.

@@ -2,6 +2,8 @@
 title: GWT et les questions des Juggers
 lang: fr
 image: /assets/images/posts/2008-11-05-gwt-et-les-questions-des-juggers/gwt.jpg
+twitter:
+  card: summary
 ---
 
 Hier, le JUG parisien s'est retrouvé pour une présentation de [GWT](http://code.google.com/webtoolkit/) et de [REST-GWT](http://code.google.com/p/gwt-rest/).

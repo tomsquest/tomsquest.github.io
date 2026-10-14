@@ -2,6 +2,8 @@
 title: "Astuce Quartz : tester une expression Cron"
 lang: fr
 image: /assets/images/posts/2008-11-20-astuce-quartz-tester-une-expression-cron/quartz_logo.jpg
+twitter:
+  card: summary
 ---
 
 Pour tester rapidement une nouvelle configuration d’un Cron, par exemple `0 * * * * ?`, il suffit d’utiliser la classe CronExpression fournie par Quartz. Celle-ci fournit entre autre la prochaine date de lancement.

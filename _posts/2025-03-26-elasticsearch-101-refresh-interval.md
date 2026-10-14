@@ -2,6 +2,8 @@
 title: "Elasticsearch 101: refresh interval"
 lang: en
 image: /assets/images/posts/2025-03-26-elasticsearch-101-refresh-interval/refresh_interval.png
+twitter:
+  card: summary
 ---
 
 Quick Guide on Elasticsearch `refresh_interval` setting.

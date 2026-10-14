@@ -2,6 +2,8 @@
 title: "Kibana _cat API tips for Elasticsearch"
 lang: en
 image: /assets/images/posts/2025-04-25-kibana-_cat-api-tips-for-elasticsearch/kibana_cat_apis.png
+twitter:
+  card: summary
 ---
 
 Simple **_cat API** tips that will make working with Elasticsearch in Kibana easier.

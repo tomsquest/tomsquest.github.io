@@ -2,6 +2,8 @@
 title: "Working Effectively with Unit Tests by Jay Fields"
 lang: en
 image: /assets/images/posts/2015-03-20-working-effectively-with-unit-tests/wewut-cover.jpg
+twitter:
+  card: summary
 ---
 
 I am very happy to have read Jay Fields' Working effectively with unit tests.
