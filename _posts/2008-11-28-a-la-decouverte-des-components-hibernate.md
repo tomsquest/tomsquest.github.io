@@ -1,5 +1,5 @@
 ---
-title: "A la découverte des Components Hibernate"
+title: "À la découverte des Components Hibernate"
 lang: fr
 image: /assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/hibernate_logo.gif
 twitter:
@@ -46,4 +46,4 @@ Le mapping Hibernate devient :
 - Un component peut contenir des données plus complexes comme des collections ou des références à d'autres objets ;
 - Il n'est pas possible pour plusieurs objets de pointer vers un même Component. Dans notre cas, ce serait plusieurs personnes pointant vers une même adresse.
 
-Si vous voulez aller plus loin, il existe les Dynamic Component. Hibernate offre la possibilité de mapper des colonnes dans une Map. C'est à voir sur [cette page](http://www.hibernate.org/hib_docs/v3/reference/en/html_single/#components-dynamic).
+Si vous voulez aller plus loin, il existe les Dynamic Components. Hibernate offre la possibilité de mapper des colonnes dans une Map. C'est à voir sur [cette page](http://www.hibernate.org/hib_docs/v3/reference/en/html_single/#components-dynamic).

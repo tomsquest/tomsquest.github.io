@@ -6,7 +6,7 @@ twitter:
   card: summary
 ---
 
-Quick Guide on Elasticsearch `refresh_interval` setting.
+A quick guide to the Elasticsearch `refresh_interval` setting.
 
 ## What is the refresh interval? 
 
@@ -20,10 +20,10 @@ Quick Guide on Elasticsearch `refresh_interval` setting.
 
 - Default: 1 second (`1s`)
 - Set to `-1` to disable automatic refreshes
-- Set to `null` to restore to default settings from the index settings, or the global default of `-1`
-- Custom value (e.g. `30s`) for specific workload
+- Set to `null` to restore to default settings from the index settings, or the global default of `1s`
+- Custom value (e.g. `30s`) for specific workloads
 
 ## Typical usage
 
 1. Disable automatic refreshes during heavy indexing by setting it to `-1`
-2. Call the `_refresh` manually API when needed (the end of your operation...)
+2. Call the `_refresh` API manually when needed (the end of your operation...)

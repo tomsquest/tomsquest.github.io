@@ -16,24 +16,24 @@ Pour revenir sur cette session, les juggers ont posé plusieurs questions intér
 
 ## Comment GWT s'intègre à une mise en page existante ?
 
-L'outil de Google est dédié à la présentation. D'après Didier, il permet de coder 5 fois plus vite la couche graphique Web de son application. GWT repose sur un modèle en composant. Par exemple, il dispose d'objets Champ texte, Tableau... Chacun de ces composants supporte les CSS et est donc potentiellement skinnable.
+L'outil de Google est dédié à la présentation. D'après Didier, il permet de coder 5 fois plus vite la couche graphique Web de son application. GWT repose sur un modèle à composants. Par exemple, il dispose d'objets Champ texte, Tableau... Chacun de ces composants supporte les CSS et est donc potentiellement skinnable.
 
-Donc côté intégration à un modèle de page fourni par un WebDesigner, il n'y aurait aucun souci. Il suffit de partir du HTML et d'appliquer les styles au composant GWT.
+Donc côté intégration à un modèle de page fourni par un WebDesigner, il n'y aurait aucun souci. Il suffit de partir du HTML et d'appliquer les styles aux composants GWT.
 
 ## Et l'intégration avec Maven 2 ?
 
 Didier est direct : "Ça marche, mais ce n'est pas simple". Les ingénieurs de Sfeir le font sur plusieurs de leurs projets, notamment pour lancer les tests fonctionnels dans leur processus d'intégration continue.
 
-Petite recherche sur Google avec "GWT maven" donne :
+Une petite recherche sur Google avec "GWT maven" donne :
 
-- En premier, un lien vers le projet GWT-Maven" qui permet d'intègre les deux projets (génération du War, lancement...)
+- En premier, un lien vers le projet "GWT-Maven" qui permet d'intégrer les deux projets (génération du War, lancement...)
 - En second, un article nommé : [GWT and Maven2, Oh the pain !](http://rbtech.blogspot.com/2007/06/gwt-and-maven-2-oh-pain.html).
 
 Donc oui, c'est possible, certains le font mais ce n'est pas "out of the box".
 
 ## Et la testabilité ?
 
-La question n'a pas été posée au JUG mais j'aurai aimé plus d'infos à ce sujet donc je la pose ici. Didier a évoqué la possibilité de tester son IHM grâce à [Selenium (cf mon article)](/blog/2008/09/selenium-en-java-demarrage-rapide/). Je suis un peu surpris, car si GWT produit du javascript à la pelle, il sera sûrement dur à tester. Sur notre projet, on a connu ça avec le composant Auto-complete de Yahoo UI qui nous a donné un peu de mal.
+La question n'a pas été posée au JUG mais j'aurais aimé plus d'infos à ce sujet donc je la pose ici. Didier a évoqué la possibilité de tester son IHM grâce à [Selenium (cf mon article)](/blog/2008/09/selenium-en-java-demarrage-rapide/). Je suis un peu surpris, car si GWT produit du JavaScript à la pelle, il sera sûrement dur à tester. Sur notre projet, on a connu ça avec le composant Auto-complete de Yahoo UI qui nous a donné un peu de mal.
 
 En recherchant un peu, je vois que je me faisais des idées : oui, une interface GWT est testable sans souci, ça reste du HTML avec une couche JS. J'imagine qu'il faut toujours rendre son code HTML testable (positionner des IDs et structurer son code).
 

@@ -18,13 +18,13 @@ Ils le disent eux-mêmes :
 
 > Tellurium is more robust, flexible, modularized, easier to maintain and refactor
 
-Qu'est-ce qu'il y a dans la boite ?
+Qu'est-ce qu'il y a dans la boîte ?
 
 ## La possibilité de structurer ses tests
 
 Tellurium offre la possibilité de décrire la structure des éléments d'une page. C'est ce qui est appelé OLM pour "Object To Locator Mapping".
 
-Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d'une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d'UI. Je pense qu'il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre "tout au même endroit.".
+Sans rentrer trop dans les détails, vous décrivez votre page en associant des identifiants et vous les utilisez ensuite dans vos tests. La séparation de la structure d'une page de ses tests permet de mieux faire évoluer ces derniers en cas de changement d'UI. Je pense qu'il est plus aisé de maintenir des tests écrits de cette façon que de la façon classique qui revient à mettre "tout au même endroit".
 
 Exemple de description de la page d'accueil de google.fr :
 
@@ -70,11 +70,11 @@ waitForPageToLoad 30000
 Les avantages sont :
 
 - Une lecture et maintenance plus aisée ;
-- Une écriture facilitée, y compris par une personne qui ne connait pas Java. On pourrait un jour imaginer la MOA nous fournir des cas de tests dans ce format. Mais je rêve, non ?
+- Une écriture facilitée, y compris par une personne qui ne connaît pas Java. On pourrait un jour imaginer la MOA nous fournir des cas de tests dans ce format. Mais je rêve, non ?
 
 ## Support des données de tests
 
-Tellurium propose d'associer des données aux tests. C'est ce que les auteurs nomment "Data Driven Test". Le moteur se charge de lire les données et les injectent dans les tests. C'est en quelque sorte ce que l'on fait dans les tableaux [FitNesse](http://fitnesse.org/) mais directement intégré au TestCase.
+Tellurium propose d'associer des données aux tests. C'est ce que les auteurs nomment "Data Driven Test". Le moteur se charge de lire les données et les injecte dans les tests. C'est en quelque sorte ce que l'on fait dans les tableaux [FitNesse](http://fitnesse.org/) mais directement intégré au TestCase.
 
 Un jeu de données de test ressemble à ça :
 
@@ -86,7 +86,7 @@ checkBookList|SciFi|3
 
 ## Par où commencer ?
 
-Tellurium posséde un projet de référence pour Eclipse (mais aussi pour IntelliJ Idea et Netbeans) : [http://code.google.com/p/aost/wiki/TelluriumReferenceProjectEclipseSetup](http://code.google.com/p/aost/wiki/TelluriumReferenceProjectEclipseSetup)
+Tellurium possède un projet de référence pour Eclipse (mais aussi pour IntelliJ Idea et Netbeans) : [http://code.google.com/p/aost/wiki/TelluriumReferenceProjectEclipseSetup](http://code.google.com/p/aost/wiki/TelluriumReferenceProjectEclipseSetup)
 
 Le projet est également mavenisé : [http://code.google.com/p/aost/wiki/MavenHowTo](http://code.google.com/p/aost/wiki/MavenHowTo)
 
@@ -94,4 +94,4 @@ Le plugin Groovy pour Eclipse peut être utile. Il est trouvable ici : [http://d
 
 ## Conclusion
 
-Les quelques tests que j'ai effectués ont parfaitement fonctionné. Je suis parti d'un projet Eclipse vide et en 20 minutes, j'ai pu ajouter les dépendances, déclarer ma première structure de page (en [groovy](http://groovy.codehaus.org/)) et écrire mon premier TestCase. Donc mission accomplie pour moi. Je suis convaincu des avantages de ce projet (DSL, Data Driven, Groovy). Mais il reste un doute sur sa maturité. Donc à tester à petite échelle en premier.
+Les quelques tests que j'ai effectués ont parfaitement fonctionné. Je suis parti d'un projet Eclipse vide et en 20 minutes, j'ai pu ajouter les dépendances, déclarer ma première structure de page (en [Groovy](http://groovy.codehaus.org/)) et écrire mon premier TestCase. Donc mission accomplie pour moi. Je suis convaincu des avantages de ce projet (DSL, Data Driven, Groovy). Mais il reste un doute sur sa maturité. Donc à tester à petite échelle en premier.

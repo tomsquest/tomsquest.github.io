@@ -7,13 +7,13 @@ last_modified_at: 2024-09-02
 What if your LLM produces invalid JSON, and worse, JSON that does not respect your schema? 
 Let us dig into [BAML](https://github.com/BoundaryML/baml), a tool to solve that, and more!
 
-Update(2024-09-02): Add the [repository of the project](https://github.com/tomsquest/llm_extract_books)
+Update (2024-09-02): added the [repository of the project](https://github.com/tomsquest/llm_extract_books)
 
 ## TL;DR
 
 - LLMs are not consistent at producing JSON, but getting better at this
 - Multiple solutions: function calling, GPT4o strict mode, JSON repair & JSON schema, or everything at once: BAML
-- [BAML](https://github.com/BoundaryML/baml) solves the problem and more: retries, cascading between LLM, compatible with multiple LLM, multiple languages, a prompt workbench...
+- [BAML](https://github.com/BoundaryML/baml) solves the problem and more: retries, cascading between LLMs, compatible with multiple LLMs, multiple languages, a prompt workbench...
 - Show me the code: [tomsquest/llm_extract_books](https://github.com/tomsquest/llm_extract_books)
 
 ## The problem
@@ -54,10 +54,12 @@ I expected a JSON like this:
 Easy, right?
 
 But:
-1. My notes are far from being consistent: multiple date format, no or inconsistent series, many authors, no rating, multiline comments, a description...
-2. LLM failed sometimes to produce a valid JSON or do not respect the given schema (I am looking at you Gemini 😡)
 
-As invalid JSON, I got: 
+1. My notes are far from being consistent: multiple date formats, no or inconsistent series, many authors, no rating, multiline comments, a description...
+2. LLMs sometimes failed to produce valid JSON or did not respect the given schema (I am looking at you Gemini 😡)
+
+As invalid JSON, I got:
+
 - Some wrong syntax: `"field": wrong`
 - Collapsed fields: `"field": "wrong" "field2": "wrong2"`
 - New unknown fields (even with a temperature of 0)
@@ -105,23 +107,24 @@ I just want to give an overview of what I did using the tool.
 
 The quest starts with the [workbench at PromptFiddle](https://www.promptfiddle.com/extract-book-info-xFZSd).
 
-![promptfilddle.jpg](/assets/images/posts/2024-08-31-get-structured-output-from-llm-using-baml/promptfilddle.jpg)
+![PromptFiddle workbench](/assets/images/posts/2024-08-31-get-structured-output-from-llm-using-baml/promptfilddle.jpg)
 
 The workbench is an editor where you write your prompt and tests, and see the results, using the LLM of your choice.
 
-By the way, BoundaryML provides a free way to use models like Gpt4, Claude...!
+By the way, BoundaryML provides a free way to use models like GPT-4, Claude...!
 
 You can have a look at my prompt and run the test cases:  
 <https://www.promptfiddle.com/extract-book-info-xFZSd>
 
 A baml file consists of:
+
 - a structure that will define what the LLM should output
 - a prompt in a "function" that will give the LLM the context and the data to process
 - some test cases to validate the output in the workbench
 
 And another file, `clients.baml`, that defines which available LLMs you can use. 
 
-Example (shorten for clarity):
+Example (shortened for clarity):
 
 {% raw %}
 ```
@@ -176,13 +179,13 @@ test Test_mini {
 ```
 {% endraw %}
 
-**Remark**: No JSON schema here, because from what I get, it consumes lots of tokens, while not being more efficient, thus not producing better results.
+**Remark**: No JSON schema here, because from what I understand, it consumes lots of tokens, while not being more efficient, thus not producing better results.
 
 ### Generating a client
 
 In your project, you store the `baml` files, and you can generate a client using the `baml` command line tool.
 
-BAML can generate clients in Python, Typescript, and Ruby currently.
+BAML can generate clients in Python, TypeScript, and Ruby currently.
 
 Typically:
 
@@ -211,7 +214,7 @@ from baml_client.types import Book
 book = extract_book(book_text)
 ```
 
-Tips: if you want to specify the model to use at runtime, you can use the `ClientRegistry`:
+Tip: if you want to specify the model to use at runtime, you can use the `ClientRegistry`:
 
 ```python
 from baml_py.baml_py import ClientRegistry
@@ -262,7 +265,7 @@ client<llm> ClaudeHaiku {
 
 A really good experience with BAML!  
 
-**Quest** for a structured output from a LLM: **achieved** ✅    
+**Quest** for a structured output from an LLM: **achieved** ✅    
 **Quest** for converting my books to JSON: **achieved** ✅  
 
 You can have a look at my [Bookshelf](/bookshelf/) page for the result.

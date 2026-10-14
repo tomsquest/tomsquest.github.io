@@ -6,7 +6,7 @@ twitter:
   card: summary
 ---
 
-Connaître un framework, c'est aussi reconnaître ses limites et ses points faibles. Pour [Wicket](http://wicketframework.org/), il m'a fallu creuser profondément. J'ai interrogé les pros de Wicket présent à cette soirée, Carl Azoury, un des boss de Zenika et Martin Dashort, committer Wicket.
+Connaître un framework, c'est aussi reconnaître ses limites et ses points faibles. Pour [Wicket](http://wicketframework.org/), il m'a fallu creuser profondément. J'ai interrogé les pros de Wicket présents à cette soirée, Carl Azoury, un des boss de Zenika et Martin Dashorst, committer Wicket.
 
 Quelles sont les limites de Wicket ? Quelles sont leurs solutions ?
 
@@ -18,7 +18,7 @@ Quelles sont les limites de Wicket ? Quelles sont leurs solutions ?
 
 L'invité de la soirée [Zenika](http://www.zenika.com/) du 29 avril était [Martin Dashorst](http://wicketinaction.com/), un des committers principaux de Wicket et coauteur du livre "Wicket In Action", dont vous trouverez [la critique ici-même](/blog/2008/12/critique-du-livre-wicket-in-action/).
 
-Martin a réalisé une introduction d'une heure à Wicket en montrant ses principaux avantages et les façons de faire les choses. La présentation a été convaincante mais j'aurai aimé plus de détails et d'exemples sur le futur de Wicket.
+Martin a réalisé une introduction d'une heure à Wicket en montrant ses principaux avantages et les façons de faire les choses. La présentation a été convaincante mais j'aurais aimé plus de détails et d'exemples sur le futur de Wicket.
 
 La soirée a encore été une nouvelle belle réussite pour Zenika, après les très bonnes sessions Terracotta et Lean.
 
@@ -30,9 +30,9 @@ Un designer intervient principalement au début du projet. C'est donc à ce mome
 
 ## Wicket ne tient pas la charge
 
-Wicket stocke beaucoup d'informations en session et il est donc trop lourd pour gérer plusieurs milliers d'utilisateurs simultanés. Le versionning des pages qui conserve l'historique de l'état des pages ouvertes par l'utilisateur en est le principal responsable. Martin a quelques références de sites à fort trafic, mais un vide se fait sentir à ce sujet.
+Wicket stocke beaucoup d'informations en session et il est donc trop lourd pour gérer plusieurs milliers d'utilisateurs simultanés. Le versioning des pages qui conserve l'historique de l'état des pages ouvertes par l'utilisateur en est le principal responsable. Martin a quelques références de sites à fort trafic, mais un vide se fait sentir à ce sujet.
 
-Oui, Wicket stocke beaucoup d'infos en session mais celles-ci sont nécessaires pour les fonctionnalités avancées comme la gestion du back button et les requêtes Ajax. Wicket propose un tas d'optimisation et un modèle de programmation qui permettent d'alléger cette charge. Par exemple, les LoadableDetachableModel permettent d'attacher et de détacher les objets à chaque affichage plutôt que de maintenir la donnée dans la session.
+Oui, Wicket stocke beaucoup d'infos en session mais celles-ci sont nécessaires pour les fonctionnalités avancées comme la gestion du back button et les requêtes Ajax. Wicket propose un tas d'optimisations et un modèle de programmation qui permettent d'alléger cette charge. Par exemple, les LoadableDetachableModel permettent d'attacher et de détacher les objets à chaque affichage plutôt que de maintenir la donnée dans la session.
 
 Certes certaines pratiques recommandées par Wicket sont assez dures à comprendre. Dans mon cas, je me pose souvent la question : si je mets mon attribut là, est-ce qu'il sera sérialisé en session avec ses dépendances ? Pour s'en convaincre, l'article suivant illustre certains de ces cas : "[Wicket Anti-Patterns: Avoiding Session Bloat](http://letsgetdugg.com/2009/04/19/wicket-anti-patterns-avoiding-session-bloat/)".
 
@@ -40,11 +40,11 @@ Certes certaines pratiques recommandées par Wicket sont assez dures à comprend
 
 Le projet WicketTester est intégré au framework même s'il n'a pas été développé par l'équipe principale. D'après Martin, il s'écarte un peu du modèle du framework lui-même et souffre de certaines limitations. Parmi celles-ci, il faut connaître le chemin complet d'un composant dans la hiérarchie pour y accéder (exemple : pour tester un lien d'un form d'un panel, il faut connaître cette hiérarchie pour cliquer sur le lien).
 
-En réalité, ces limitations ne sont pas bloquante, juste gênantes. Certains projets Wicket utilisant WicketTester ont une couverture de code importante. Martin nous a montré après la conférence des exemples de tests réels assez convaincant. Ca reste proche de l'API Selenium (sans ses bugs aléatoires, j'espère).
+En réalité, ces limitations ne sont pas bloquantes, juste gênantes. Certains projets Wicket utilisant WicketTester ont une couverture de code importante. Martin nous a montré après la conférence des exemples de tests réels assez convaincants. Ça reste proche de l'API Selenium (sans ses bugs aléatoires, j'espère).
 
-Wicket 1.5 devrait apporter un framework de test plus complet et basé sur une partie du travail accomplit sur JDave. JDave est un framework de BDD (Behavior Driven Development) qui permet de spécifier par l'exemple les comportements des objets. Plus d'infos sur : <http://www.jdave.org/bdd-wicket/>.
+Wicket 1.5 devrait apporter un framework de test plus complet et basé sur une partie du travail accompli sur JDave. JDave est un framework de BDD (Behavior Driven Development) qui permet de spécifier par l'exemple les comportements des objets. Plus d'infos sur : <http://www.jdave.org/bdd-wicket/>.
 
-L'article "[Testing Wicket with FitNesse](http://blog.xebia.com/2008/07/06/testing-wicket-with-fitnesse/)" illustre également certains problèmes rencontrés et leurs solutions pour l'écriture de fixture FitNesse.
+L'article "[Testing Wicket with FitNesse](http://blog.xebia.com/2008/07/06/testing-wicket-with-fitnesse/)" illustre également certains problèmes rencontrés et leurs solutions pour l'écriture de fixtures FitNesse.
 
 ## Les URLs générées sont moches
 
@@ -56,7 +56,7 @@ Problème récurrent des frameworks Web, la génération des URL par Wicket peut
 
 ## Spring Security s'intègre mal à Wicket
 
-Intégrer SpringSecurity/Acegi à une application Wicket n'est pas une sinécure. SpringSecurity réalise ses contrôles essentiellement à partir d'URLs (par exemple : "l'utilisateur Hadopi est-il autorisé à accéder à www.thepiratebay.com"). Hors les URL de Wicket contiennent toutes par défaut un identifiant de version, ce qui limite fortement l'usage de SpringSecurity.
+Intégrer SpringSecurity/Acegi à une application Wicket n'est pas une sinécure. SpringSecurity réalise ses contrôles essentiellement à partir d'URLs (par exemple : "l'utilisateur Hadopi est-il autorisé à accéder à www.thepiratebay.com"). Or les URL de Wicket contiennent toutes par défaut un identifiant de version, ce qui limite fortement l'usage de SpringSecurity.
 
 Wicket dispose de son propre framework de sécurité orienté composant (au lieu d'être orienté URL) donc il est plus granulaire. Avec ce système, Martin nous explique qu'il est très simple de ne pas afficher un lien si l'utilisateur n'a pas accès à sa destination. Illustration :
 
@@ -81,24 +81,24 @@ Au passage, il est même possible de développer ses propres annotations et de l
 
 ## Wicket n'est pas un framework managé
 
-Avec Wicket, vous allez réapprendre à utiliser les mots-clés "new" et "extend" pour lier vos composants. Il n'y a pas d'injection de dépendances natives entres les composants.
-Et c'est tant mieux car on n'en a pas besoin ! Avec Wicket, il y a pas de Xml pour pseudo-découpler vos composants. Et franchement, vous en avez eu souvent besoin ?
+Avec Wicket, vous allez réapprendre à utiliser les mots-clés "new" et "extend" pour lier vos composants. Il n'y a pas d'injection de dépendances native entre les composants.
+Et c'est tant mieux car on n'en a pas besoin ! Avec Wicket, il n'y a pas de Xml pour pseudo-découpler vos composants. Et franchement, vous en avez eu souvent besoin ?
 
 Côté Injection de dépendances, Wicket s'intègre très bien avec Spring et Guice. Notamment, il propose pas moins de trois solutions pour utiliser des beans Spring (service locator, proxy et annotation). Plus d'infos sur la page du [Wiki dédiée à Spring](http://cwiki.apache.org/WICKET/spring.html).
 
 ## Wicket n'est pas outillé
 
-Même si Wicket enlève sa part de Xml, il nous reste quand-même les pages en Java avec leur markup Html et leurs ressources Xml. Il peut devenir vite fastidieux de manipuler ces fichiers séparément alors qu'ils ne forment en réalité qu'une seule page.
+Même si Wicket enlève sa part de Xml, il nous reste quand même les pages en Java avec leur markup Html et leurs ressources Xml. Il peut devenir vite fastidieux de manipuler ces fichiers séparément alors qu'ils ne forment en réalité qu'une seule page.
 
 En réalité, il n'y a pas vraiment besoin d'outils pour manipuler Wicket. La plupart des choses se passent en Java. Le markup doit être valide (bons identifiants) sinon Wicket refusera de se lancer ce qui permettra de valider son code.
 
-Si vous cherchez vraiment un outil, Wicket est assez bien supporté par les IDE. Pour Eclipse. [WicketBench](http://www.laughingpanda.org/~inhuman/wicket-bench/docs/features-0.5.html) propose quelques fonctionnalités intéressantes, mais il n'est pas toujours stable.
+Si vous cherchez vraiment un outil, Wicket est assez bien supporté par les IDE. Pour Eclipse, [WicketBench](http://www.laughingpanda.org/~inhuman/wicket-bench/docs/features-0.5.html) propose quelques fonctionnalités intéressantes, mais il n'est pas toujours stable.
 
 ## L'intégration avec des frameworks JavaScript est difficile
 
-A l'usage, on se rend compte que l'intégration manuelle avec le JavaScript n'est pas évidente. Toujours ces histoires d'Id générés qui rendent plus compliqué un framework orienté Composants qu'un bon vieux Struts.
+À l'usage, on se rend compte que l'intégration manuelle avec le JavaScript n'est pas évidente. Toujours ces histoires d'Id générés qui rendent plus compliqué un framework orienté Composants qu'un bon vieux Struts.
 
-Comme toujours, un framework Javascript est d'un grand secours et Wicket ne fait pas l'impasse là-dessus. Wicket s'intègre aux principaux frameworks JavaScript : YahooUI, Dojo, Scripaculous ou encore JQuery.
+Comme toujours, un framework Javascript est d'un grand secours et Wicket ne fait pas l'impasse là-dessus. Wicket s'intègre aux principaux frameworks JavaScript : YahooUI, Dojo, Scriptaculous ou encore JQuery.
 
 L'exemple suivant montre l'usage de [WiQuery](http://code.google.com/p/wiquery/) qui intègre Jquery/JQueryUI à Wicket au travers des Behaviors, qui permettent d'ajouter des comportements à des objets existants (dont des attributs JS ou Ajax) :
 

@@ -6,14 +6,14 @@ twitter:
   card: summary
 ---
 
-Play!, the framework for the bored Java developers! Very interesting and opinated framework.
+Play!, the framework for the bored Java developers! Very interesting and opinionated framework.
 I didn't play with it a lot in the previous months, but the new book ["Play Framework Cookbook"](http://www.packtpub.com/play-framework-cookbook/book) by Packt Publishing,
 released this summer was a good way to dig into the framework.
 The ebook was offered for free to people who want to review it. No excuse.
 
 ## Contents
 
-The chapters are :
+The chapters are:
 
 - Basics of the Play Framework
 - Using Controllers
@@ -23,11 +23,11 @@ The chapters are :
 - Practical Module Examples
 - Running Into Production
 
-Each subsection is divided in parts: "Getting ready", "How to do it", "How it works", "There's more", "See also".
+Each subsection is divided into parts: "Getting ready", "How to do it", "How it works", "There's more", "See also".
 The most interesting part for me is the explanation of the internals, not the "tutorial" part.
 I have found practical information in nearly each of these.
 
-The _"There's more"_ parts are cool because it shows additional/alternate/better ways to think about what you read before.
+The _"There's more"_ parts are cool because they show additional/alternate/better ways to think about what you read before.
 For example, here is an excerpt from this part from the chapter "Understanding bytecode enhancement":
 
 > _Overriding toString() via annotation_
@@ -39,8 +39,8 @@ The idea is to complete what you may find online or in the official documentatio
 
 ## Review
 
-I give a "B" to the book, as it is 1) easy to read and well written, 2) entertaining, 3) actionnable.
-The author, Alexander Reelsen, has done a very good work.
+I give a "B" to the book, as it is 1) easy to read and well written, 2) entertaining, 3) actionable.
+The author, Alexander Reelsen, has done very good work.
 
 I learnt a lot, even as a beginner on the framework. Many of my questions were answered.
 The main benefit of the book is to complete the online documentation and go further on many topics.
@@ -54,4 +54,4 @@ What's missing? Maybe a Scala chapter, but as the author wrote:
 
 - [Book (Amazon)](http://www.amazon.fr/gp/product/1849515522?ie=UTF8&tag=tosqu-21)
 - [Book (Packt Publishing)](http://www.packtpub.com/play-framework-cookbook/book)
-- [Additional review from Lunartech-research](http://www.lunatech-research.com/archives/2011/09/19/playframework-cookbook-review)
+- [Additional review from Lunatech-research](http://www.lunatech-research.com/archives/2011/09/19/playframework-cookbook-review)

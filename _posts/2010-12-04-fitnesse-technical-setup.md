@@ -5,7 +5,7 @@ lang: en
 
 Getting [FitNesse](http://fitnesse.org) working for a development team is not particularly clear. You have many possibilities and some of them are not so effective.
 
-The Setup proposed here has a good combination of pros and cons. It will enable the work of two teams: one team of functional people using a central server and one team of developers writing the fixture straight from their workspace.
+The Setup proposed here has a good combination of pros and cons. It will enable the work of two teams: one team of functional people using a central server and one team of developers writing the fixtures straight from their workspace.
 
 ## Advantages and disadvantages
 
@@ -13,7 +13,7 @@ Pros:
 
 - Developer friendly
 - One unique source of test cases: the central server
-- Test pages backup along the source code
+- Test pages backed up along with the source code
 
 Cons:
 
@@ -24,14 +24,14 @@ Cons:
 
 The functional people use the central server to manage the test pages
 
-Each developer has its own FitNesse server, which imports the page from the central server and uses the local workspace
+Each developer has their own FitNesse server, which imports the pages from the central server and uses the local workspace
 
-A job adds, delete and commits the changes made on the central server’s pages
+A job adds, deletes and commits the changes made on the central server’s pages
 
 Basic rules:
 
 - Pages must be created on the central server, never locally
-- Pages must be modified remotely (using the “Edit Remotely” button); Local pages may be erased at the next sync, so use them carefully
+- Pages must be modified remotely (using the “Edit Remotely” button); local pages may be erased at the next sync, so use them carefully
 
 ![](/assets/images/posts/2010-12-04-fitnesse-technical-setup/fitnesse-schema_resized2.jpg)
 
@@ -53,7 +53,7 @@ The “-e 0” argument disables the built-in versioning system of FitNesse.
 
 The “-r $dir” argument tells FitNesse to use this directory as the repository of pages.
 
-The whole command line arguments are described here: [http://fitnesse.org/FitNesse.UserGuide.CommandLineArguments](http://fitnesse.org/FitNesse.UserGuide.CommandLineArguments)
+All command line arguments are described here: [http://fitnesse.org/FitNesse.UserGuide.CommandLineArguments](http://fitnesse.org/FitNesse.UserGuide.CommandLineArguments)
 
 #### Classpath
 
@@ -61,7 +61,7 @@ We use the “root” page ([http://localhost:8086/root](http://localhost:8086/r
 
 This page won’t be added to source control because its content will be different on a developer’s workstation.
 
-The [fitnesse-maven-plugin](https://github.com/joel1di1/fitnesse-maven-classpath) is used to create the list of jars we depend on. It reads the pom.xml file of our maven project, but it can also read a pom file directly from the central repository.
+The [fitnesse-maven-plugin](https://github.com/joel1di1/fitnesse-maven-classpath) is used to create the list of jars we depend on. It reads the pom.xml file of our Maven project, but it can also read a pom file directly from the central repository.
 
 Content of the root page:
 
@@ -92,7 +92,7 @@ svn commit -m "Automatic commit" %1
 
 We did try to use a FitNesse plugin for Subversion to backup the pages automatically (and in a less hacky way), but that simply did not work at all. This plugin was: [http://code.google.com/p/cm-subversion](http://code.google.com/p/cm-subversion)
 
-FitNesse has also a pseudo-native support for Git (see [here](http://fitnesse.org/FitNesse.UserGuide.SourceCodeControl.GitPlugin)), but corporate Git repositories are still not the standard.
+FitNesse also has pseudo-native support for Git (see [here](http://fitnesse.org/FitNesse.UserGuide.SourceCodeControl.GitPlugin)), but corporate Git repositories are still not the standard.
 
 #### SVN ignore
 
@@ -100,7 +100,7 @@ All files in the working directory of FitNesse can be versioned, except:
 
 - The “root” page we used earlier, this is the content.txt and properties.xml at the root of the working directory
 - The “ErrorLogs” directory
-- All zip files “\*.zip” (there should be none because of the “-e 0” flag
+- All zip files “\*.zip” (there should be none because of the “-e 0” flag)
 
 Source: [http://stackoverflow.com/questions/249580/how-do-i-add-fitnesse-pages-to-version-control](http://stackoverflow.com/questions/249580/how-do-i-add-fitnesse-pages-to-version-control)
 

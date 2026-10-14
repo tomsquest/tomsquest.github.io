@@ -8,14 +8,14 @@ twitter:
 
 [Glassfish](https://glassfish.dev.java.net/), le serveur d'app dont on entend parler [un peu partout](http://www.touilleur-express.fr/2009/01/14/compte-rendu-de-la-soiree-du-paris-jug-sur-jee6-et-glassfish/).
 
-## 1. Intégration avec Maven : semi echec
+## 1. Intégration avec Maven : semi-échec
 
 Glassfish n'a apparemment pas de support de Maven officiel. Il existe quelques plugins Maven, mais d'après [cet article](http://eskatos.wordpress.com/2008/03/28/maven-plugins-for-glassfish-ecosystem/), rien de vraiment fonctionnel à part le plugin de l'auteur.
 
-J'ai donc essayé le plugin Maven "[Asadmin](http://code.google.com/p/asadmin-maven-plugin/)" qui m'a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version 0.3-snapshot" de Asadmin a fonctionné.
+J'ai donc essayé le plugin Maven "[Asadmin](http://code.google.com/p/asadmin-maven-plugin/)" qui m'a permis de déployer un War Wicket dans Glassfish. Pour info, seule la version "0.3-snapshot" d'Asadmin a fonctionné.
 
 Une autre solution serait de démarrer soi-même un Glassfish via l'[API Embedded](https://embedded-glassfish.dev.java.net/). 
-Mais apparemment, il s'agit toujours de déployer un War. Il faut donc générer à chaque changement de code.
+Mais apparemment, il s'agit toujours de déployer un War. Il faut donc le générer à chaque changement de code.
 
 Pour résumer :
 
@@ -33,7 +33,7 @@ Le site du projet a plusieurs liens vers différents guides de démarrage qui do
 
 Aucun problème d'installation, Glassfish est très rapidement mis en place.
 
-Le démarrage est très rapide, mais si on suppose vite que plein de choses se passent en tâche de fond (comme le précise la console au lancement).
+Le démarrage est très rapide, mais on suppose vite que plein de choses se passent en tâche de fond (comme le précise la console au lancement).
 
 ## 3. Intégration à Eclipse : succès
 

@@ -20,13 +20,13 @@ I presented those tips to my coworkers and [the slides are available online](htt
 
 ## Reproducible builds
 
-**Problem**: your local installation can/will differ from another coworker, even on the CI server!
+**Problem**: your local installation can/will differ from a coworker's, even on the CI server!
 
-**Cause**: Version range are problematic: `"rxjs": "^6.2.2"`
+**Cause**: Version ranges are problematic: `"rxjs": "^6.2.2"`
 
 [Greenkeeper.io](https://greenkeeper.io) tells us that 15% of packages break the _minor_ or _patch_ updates:
 
-![Greekeeper](/assets/images/posts/2018-10-02-better-npm-ing/greenkeeper.png)
+![Greenkeeper](/assets/images/posts/2018-10-02-better-npm-ing/greenkeeper.png)
 
 **Solution**: Use `--save-exact` when installing a dependency
 
@@ -42,11 +42,11 @@ $ npm i -E aDependency
 $ npm config set save-exact true
 ```
 
-## Installing package
+## Installing packages
 
 **Problem**: Using `npm install` will try to resolve the dependency graph, possibly installing different versions (because of ranges declared in dependencies, not yours even if you used `--save-exact`) and then updating the `package-lock.json` even if you did not want to.
 
-**Solution**: Use `npm ci` which only read the `package-lock.json`
+**Solution**: Use `npm ci` which only reads the `package-lock.json`
 
 ↗ Speed (on CI and locally)
 
@@ -56,9 +56,9 @@ $ npm config set save-exact true
 $ npm ci
 ```
 
-## Global package
+## Global packages
 
-**Problem**: Polluting the global `node_modules` with global packages: nest-cli, create-react-apps (= hundreds of packages)
+**Problem**: Polluting the global `node_modules` with global packages: nest-cli, create-react-app (= hundreds of packages)
 
 **Solution**: `npx` runs a package without installing it (but first, tries to find it locally in `node_modules`)
 
@@ -73,7 +73,7 @@ $ npx cleaver watch index.md
 
 **Solution**: Use the builtin `npm audit` and `npm audit fix`
 
-➕ Fails the build given integrated it in CI
+➕ Fails the build when integrated in CI
 
 Another solution is to use the builtin services of GitHub and Gitlab.
 
@@ -83,15 +83,15 @@ $ npm audit fix
 
 ## Updating packages
 
-**Problem**: Updating dependency and finding the one that breaks the code is tedious.
+**Problem**: Updating dependencies and finding the one that breaks the code is tedious.
 
-**Solution 1 (best)**: [updtr](https://www.npmjs.com/package/updtr) update one dependency, then run the tests, then repeat
+**Solution 1 (best)**: [updtr](https://www.npmjs.com/package/updtr) updates one dependency, then run the tests, then repeat
 
 ```bash
 $ npx updtr
 ```
 
-**Solution 2**: [npm-check](https://www.npmjs.com/package/npm-check) show a pretty menu of all updates
+**Solution 2**: [npm-check](https://www.npmjs.com/package/npm-check) shows a pretty menu of all updates
 
 ```bash
 $ npx npm-check -u
@@ -103,9 +103,9 @@ $ npx npm-check -u
 
 **Problem**: When configuring Node/Typescript, the node **path** is version-dependent
 
-![List of node version from Intellij](/assets/images/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png)
+![List of node versions from IntelliJ](/assets/images/posts/2018-10-02-better-npm-ing/nvm_symlink_current.png)
 
-**Solution**: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link `~/.nvm/current` to, for example, `~/.nvm/versions/node/v11.0.0` and recreate the link when changing of node versions (automatically if you use [NVM auto-use ZSH plugin](https://github.com/tomsquest/nvm-auto-use.zsh)).
+**Solution**: if you use NVM for managing installation of Node.js, NVM can automatically manage a symlink to the current version of node. NVM will link `~/.nvm/current` to, for example, `~/.nvm/versions/node/v11.0.0` and recreate the link when changing Node versions (automatically if you use [NVM auto-use ZSH plugin](https://github.com/tomsquest/nvm-auto-use.zsh)).
 
 ```bash
 # Put this in your .bashrc/.zshrc

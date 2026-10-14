@@ -12,8 +12,8 @@ twitter:
 
 Les avantages de Jetty sont :
 
-- Lancement très rapide : sur ma machine : moins de 10 secondes au total (initialisation de la DataSource, contexte spring...) ;
-- Rechargement de l'application ultra-rapide : moins de 4 secondes pour qu'une modification d'une classe java puisse être testée dans le navigateur ;
+- Lancement très rapide : sur ma machine : moins de 10 secondes au total (initialisation de la DataSource, contexte Spring...) ;
+- Rechargement de l'application ultra-rapide : moins de 4 secondes pour qu'une modification d'une classe Java puisse être testée dans le navigateur ;
 - Compilation à la volée des JSP ;
 - Intégration directe dans le pom.xml avec peu de configuration.
 
@@ -25,7 +25,7 @@ Pour lancer Jetty, sans avoir fait aucune configuration préalable, il suffit de
 $ mvn jetty:run
 ```
 
-Cette commande démarre Jetty qui va utiliser la configuration de Maven pour savoir où est situé le code source et les ressources. Rendez-vous sur [http://localhost:8080](http://localhost:8080) pour voir votre application déployée.
+Cette commande démarre Jetty qui va utiliser la configuration de Maven pour savoir où sont situés le code source et les ressources. Rendez-vous sur [http://localhost:8080](http://localhost:8080) pour voir votre application déployée.
 
 ![](/assets/images/posts/2008-09-09-jetty-demarrage-rapide/jetty_run2.jpg)
 
@@ -67,11 +67,11 @@ Pour cela, il suffit d'ajouter au pom.xml de l'application Web :
 </profiles>
 ```
 
-Cette configuration fait référence au fichier `jetty-env.xml`. Ce fichier est placé dans le répertoire `jetty `à la racine du projet. Le fichier `webdefault.xml `peut être ignoré, il permet de configurer Jetty en profondeur.
+Cette configuration fait référence au fichier `jetty-env.xml`. Ce fichier est placé dans le répertoire `jetty` à la racine du projet. Le fichier `webdefault.xml` peut être ignoré, il permet de configurer Jetty en profondeur.
 
 ![](/assets/images/posts/2008-09-09-jetty-demarrage-rapide/fichiers_jetty.jpg)
 
-Nous avons également ajouté une dépendance vers `com.experlog.xapool` qui offre les classes nécessaires à Jetty pour avoir un pool de connexion. Le driver JDBC doit être présent dans votre projet en tant que dépendance, il n'est pas montré ici.
+Nous avons également ajouté une dépendance vers `com.experlog.xapool` qui offre les classes nécessaires à Jetty pour avoir un pool de connexions. Le driver JDBC doit être présent dans votre projet en tant que dépendance, il n'est pas montré ici.
 
 Voici un exemple de fichier jetty-env.xml :
 

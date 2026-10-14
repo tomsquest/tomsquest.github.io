@@ -3,11 +3,11 @@ title: "JPA : les illusions sur les NamedQueries"
 lang: fr
 ---
 
-Un certain nombre d'idées reçues existent sur les NamedQueries. On les dit plus performantes, car mises en cache, on les dit plus sûres car validées au chargement. Etudions ces points et regardons quels sont les réels avantages des NamedQueries.
+Un certain nombre d'idées reçues existent sur les NamedQueries. On les dit plus performantes, car mises en cache, on les dit plus sûres car validées au chargement. Étudions ces points et regardons quels sont les réels avantages des NamedQueries.
 
 ## Rappel sur les NamedQueries
 
-Une NamedQuery est une requête nommée. Ce n'est pas une nouveauté de la norme JPA car elles existaient dans Hibernate bien avant. Une namedQuery est un moyen de donner un non à une requête JPQL et de la rappeler par ce nom par la suite.
+Une NamedQuery est une requête nommée. Ce n'est pas une nouveauté de la norme JPA car elles existaient dans Hibernate bien avant. Une namedQuery est un moyen de donner un nom à une requête JPQL et de la rappeler par ce nom par la suite.
 
 Création :
 
@@ -37,9 +37,9 @@ Je n'ai pas trouvé de benchmark entre les deux approches (NamedQuery versus req
 
 ## Une NamedQuery est validée
 
-Une NamedQuery est validée au lancement de l'application avant d'être soit placée dans le statementCache. Cela permet théoriquement de contrôler la syntaxe JPQL, que le mapping est correct, que les entités utilisées sont annotées et que les colonnes ont bien un attribut (ou un getter/setter) dans les entités.
+Une NamedQuery est validée au lancement de l'application avant d'être placée dans le statementCache. Cela permet théoriquement de contrôler la syntaxe JPQL, que le mapping est correct, que les entités utilisées sont annotées et que les colonnes ont bien un attribut (ou un getter/setter) dans les entités.
 
-Dans les faits, cette phase de validation est très limitée (testée avec Hibernate 3.3 et mysql) :
+Dans les faits, cette phase de validation est très limitée (testée avec Hibernate 3.3 et MySQL) :
 
 - Pour une entité inexistante ("From EntiteInexistante"), une erreur est remontée
 - Pour une colonne inexistante ("From Client where colonneInexistante is null"), aucune erreur n'est soulevée
@@ -48,10 +48,10 @@ Aujourd'hui, je ne vois donc pas en quoi cette phase de validation apporte de la
 
 ## NamedQuery, alors pourquoi ?
 
-Une fois éliminées ces illusions, il ne reste pas grand-chose d'attrayant aux NamedQueries. On sait qu'elles ne sont pas systématiquement pas plus performantes et que la validation n'est pas complète. Il leur reste cependant trois petits avantages :
+Une fois éliminées ces illusions, il ne reste pas grand-chose d'attrayant aux NamedQueries. On sait qu'elles ne sont pas systématiquement plus performantes et que la validation n'est pas complète. Il leur reste cependant trois petits avantages :
 
 - Les NamedQueries sont réutilisables en plusieurs endroits. Ce cas est principalement utile quand l'entityManager est injecté dans la couche de service (et donc qu'il n'y a pas de couche de DAO) ;
-- Elles sont chargées au démarrage ce qui permet de diminuer la réponse de l'application au premier accès, mais c'est au détriment du temps de chargement de l'application ;
+- Elles sont chargées au démarrage ce qui permet de diminuer le temps de réponse de l'application au premier accès, mais c'est au détriment du temps de chargement de l'application ;
 - Les requêtes sont regroupées avec le mapping (@Column...), ce qui permet de faciliter leur écriture.
 
 Pour conclure, je pense que les NamedQueries résultent plus d'une question de goût et de convention d'écriture que d'un réel intérêt technique et factuel.

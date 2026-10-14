@@ -8,15 +8,15 @@ twitter:
 
 L'idée part d'un besoin simple : lancer un job [Quartz](http://www.opensymphony.com/quartz/) toutes les heures ouvrées, hors week-end et jours fériés.
 
-Pas très compliqué, mais il y a quelques trucs à savoir, notamment sur l'enchainement des calendriers.
+Pas très compliqué, mais il y a quelques trucs à savoir, notamment sur l'enchaînement des calendriers.
 
 ## Les jours fériés
 
 Il existe différents algorithmes pour calculer les jours fériés et ils sont moyennement compliqués. Mais il faut quand même un calendrier pour tester l'algo. Et bien sûr, si le client veut exclure un jour férié (pourquoi pas ?), il faudra maintenir une liste des jours exclus.
 
-La méthode retenue : mettre en dur les jours fériés pour les 20 prochaines années ! `Si l'application survit jusque là, ça sera une sacré prouesse.`
+La méthode retenue : mettre en dur les jours fériés pour les 20 prochaines années ! `Si l'application survit jusque-là, ça sera une sacrée prouesse.`
 
-La liste des jours fériés est "hardcodées" dans un fichier de conf du projet. Ce fichier est lu par la conf Spring à l'aide d'un [PropertyPlaceHolderConfigurer](http://static.springframework.org/spring/docs/2.0.x/api/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.html).
+La liste des jours fériés est "hardcodée" dans un fichier de conf du projet. Ce fichier est lu par la conf Spring à l'aide d'un [PropertyPlaceHolderConfigurer](http://static.springframework.org/spring/docs/2.0.x/api/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.html).
 
 Cela donne quelque chose comme ça pour 2008 :
 
@@ -41,7 +41,7 @@ Au total, il y aura trois calendriers :
 - Un qui exclut une plage horaire (fourni avec Quartz) ;
 - Un "fait-maison" qui exclut une plage de dates fournie en paramètre.
 
-Ces calendriers sont configurés pour être enchainés les uns aux autres. Techniquement, chaque calendrier se voit injecter dans son constructeur un autre calendrier. Ainsi chacun demande à son suivant si la date actuelle doit être exclue ou non. C'est une fonctionnalité de base des calendriers Quartz.
+Ces calendriers sont configurés pour être enchaînés les uns aux autres. Techniquement, chaque calendrier se voit injecter dans son constructeur un autre calendrier. Ainsi chacun demande à son suivant si la date actuelle doit être exclue ou non. C'est une fonctionnalité de base des calendriers Quartz.
 
 Dans la config Spring, cela donne :
 

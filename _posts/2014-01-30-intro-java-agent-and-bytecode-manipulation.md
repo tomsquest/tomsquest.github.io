@@ -49,7 +49,7 @@ public class Agent {
 
 The agent is called because the JVM is launched with the `-javaagent:myjar.jar` parameter and because the Manifest indicates this class.
 
-Command line :
+Command line:
 
 ```
 $ java -javaagent:agent/target/agent-0.1-SNAPSHOT.jar -jar other/target/other-0.1-SNAPSHOT.jar
@@ -89,7 +89,7 @@ public class ClassPrinter extends ClassVisitor {
 }
 ```
 
-Here is the output, as we intercepted the call to the `Stuff` class :
+Here is the output, as we intercepted the call to the `Stuff` class:
 
 ```java
 other/Stuff extends java/lang/Object {
@@ -103,7 +103,7 @@ I AM DOING SOME STUFF...
 
 Javassist is another bytecode manipulation framework. I found it simpler due to higher level methods like `addLocalVariable`, `insertBefore`, `insertAfter`...
 
-Here is a version of the Agent used to output the elapsed time for executing the `run` method :
+Here is a version of the Agent used to output the elapsed time for executing the `run` method:
 
 ```java
 public class Agent {
@@ -138,32 +138,32 @@ public class Agent {
 }
 ```
 
-Output :
+Output:
 
 ```
 I AM DOING SOME STUFF...
 Method Executed in ms: 1
 ```
 
-## Real case : Maven colorization
+## Real case: Maven colorization
 
 [Jean-Christophe Gay](https://twitter.com/jchristophegay) hacked Maven to colorize the output and to highlight warnings and errors.
-And it did that without altering Maven, but from the outside.
+This was done without altering Maven, from the outside.
 The idea is to start Maven with an agent which enhances Maven (3.0) output with colorization.
 
 It is interesting as a real world scenario. Maven does not expose an API to access the log in real time, and also
 because one needs to know exactly where to inject the custom code and how fragile it is to hack
 a third-party piece of code.
 
-You can see his code here : <https://github.com/jcgay/maven-color>
+You can see the code here: <https://github.com/jcgay/maven-color>
 
-In its code, the author had to :
+In this code, the author had to:
 
 - start the agent when the target program is run, this was done using the `MAVEN_OPTS` environment variable
-- find where Maven was outputting the relevant logs message (well, this has to be done for Maven and Surefire, which is even
-  more susceptible to change.
+- find where Maven was outputting the relevant log messages (well, this has to be done for Maven and Surefire, which is even
+  more susceptible to change).
 
-For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM :
+For example, this is how the new method for output colorization is created with pure bytecode injection, using ASM:
 
 ```java
 private void createSetupAnsiColorLoggerMethod() {

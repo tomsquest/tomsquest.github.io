@@ -3,7 +3,7 @@ title: "Learning to touchtype using the Colemak layout"
 lang: en
 ---
 
-I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries, and morover never looking back at my keyboard. After all, Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touchtype using a new layout, the [Colemak](http://colemak.com/).
+I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries, and moreover never looking back at my keyboard. After all, Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touchtype using a new layout, the [Colemak](http://colemak.com/).
 
 This is the result of my experience in learning to touchtype and how I remapped my brain (hard!) during a two-month period.
 
@@ -21,13 +21,13 @@ Here is a visual of the Colemak layout:
 
 ## Learning
 
-![Couverture First 20 hours book](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_first20thhours_book.jpg)
+![Cover of The First 20 Hours book](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_first20thhours_book.jpg)
 
-I used the method of the book ["The First 20 Hours"](http://first20hours.com/) by Josh Kaufman, the author behind the Personal MBA. This is an interesting book on how to learn (anything) fast. It contains two chapters on learning and how to do it well and a set of chapters on what the author learned: Yoga, Go, Programming, Ukulele and particularly **Touch typing**. It's basically the 80/20 rules applied to learning.
+I used the method of the book ["The First 20 Hours"](http://first20hours.com/) by Josh Kaufman, the author behind the Personal MBA. This is an interesting book on how to learn (anything) fast. It contains two chapters on learning and how to do it well and a set of chapters on what the author learned: Yoga, Go, Programming, Ukulele and particularly **Touch typing**. It's basically the 80/20 rule applied to learning.
 
 The recipe involves deconstructing the subject of learning, getting the tools at hand, removing the obstacles and practicing for at least 20 hours to bypass the "barrier of exasperation". Yes, this statement is really important.
 
-On any hard enough activity, there is a barrier, which once crossed, will make you feel happy. And before it sucks, really. The barrier is at a moment between hard to practice and enough-good to take some pleasure. Try playing the guitar for the first time. For the author, the barrier is around 20th hours, depending on the subject and the learner.
+On any hard enough activity, there is a barrier, which once crossed, will make you feel happy. And before, it sucks, really. The barrier is at a moment between hard to practice and good enough to take some pleasure. Try playing the guitar for the first time. For the author, the barrier is around 20 hours, depending on the subject and the learner.
 
 I found the chapter of becoming a touch typist to be an excellent motivator because I was following the steps of an already successful learner and therefore knowing that I will surely succeed in the end.
 
@@ -35,11 +35,11 @@ I found the chapter of becoming a touch typist to be an excellent motivator beca
 
 According to the book, I had to get the needed tools to practice and to measure myself.
 
-First thing first: the keyboard. You can take an old keyboard, move the keycaps around and voilà, you're done. Or you can be a good consumer and buy a shiny piece of plastic.
+First things first: the keyboard. You can take an old keyboard, move the keycaps around and voilà, you're done. Or you can be a good consumer and buy a shiny piece of plastic.
 
 One of my [teammates](https://twitter.com/BitardMichael) was using a [Typematrix](http://www.typematrix.com/) keyboard, a nice piece of hardware. The keyboard itself is small, not ergonomic, but it has a matrix design (hence the name) and it is one of the cheapest when considering to buy a blank keyboard.
 
-Yes, completely **blank** ! Like with nothing written on it. I do think this is the way to go to be a full touch typist and to never have a hope to give a look to find that key/letter/number you wanted to type. The Truth is that it is sometimes disappointing for rarely used keys, or Page-Up/down keys which are fay away (you have to move your hand, so you lose a bit of precision). The company sold skins, sort of condoms to protect the keyboard, with small indications on them (special keys) that may be useful.
+Yes, completely **blank**! Like with nothing written on it. I do think this is the way to go to be a full touch typist and to never have a hope to give a look to find that key/letter/number you wanted to type. The truth is that it is sometimes disappointing for rarely used keys, or Page-Up/down keys which are far away (you have to move your hand, so you lose a bit of precision). The company sold skins, sort of condoms to protect the keyboard, with small indications on them (special keys) that may be useful.
 
 The Typematrix blank keyboard:
 
@@ -51,24 +51,24 @@ Two recommended typing trainers are [Keyzen](https://first20hours.github.io/keyz
 
 I started with Keyzen, and my first hours of learning were completely boring but very rewarding. A session of Keyzen gives something like: Type `nnnttttntntn`, then `ntenntteetnte`, then restart because you made a mistake. After two hours, my progress was real, and after six hours I completely managed the English layout. I was still discovering how to touchtype, so I was very motivated.
 
-Then, I started to practice with Amphetype. This tool is very handy because you can import your own set of words to learn, shuffle them and measure your progress by session, sitting or days (On Linux, just checkout the source and voilà).
+Then, I started to practice with Amphetype. This tool is very handy because you can import your own set of words to learn, shuffle them and measure your progress by session, sitting or days (on Linux, just checkout the source and voilà).
 
-Repeating and repeating exercises were very boring, especially at 21 o'clock when you have so much more distracting thing to do.
+Repeating and repeating exercises were very boring, especially at 9 pm when you have so many more distracting things to do.
 
 ## Deliberate practice
 
 If you think a little bit about typing, you already know that:
 
 - some words are typed more than others, like: the, of, and, to, in...
-- some letters occur more often (that why the Colemak layout exits)
+- some letters occur more often (that's why the Colemak layout exists)
 - bigrams (two-letter), trigrams and quadrigrams can be extracted to find recurring patterns
 
 Which means: to type fast/faster, my brain and fingers have to learn the most used words and behind that the most used couples of letters.
 For example, when my eyes read "the", I should not think "t", "h", "e" but it should be a reflex for my fingers (kind of burst typing).
 This is [**deliberate practice**](https://en.wikipedia.org/wiki/Practice_%28learning_method%29#Deliberate_practice). I had to learn effectively and efficiently (do the right thing right).
 
-Josh Kaufman gives a link to the most used English words and bigrams, but I had to build mine for French, especially to learn accentuated characters.
-If you need mines, I should be able to export it from Amphetype.
+Josh Kaufman gives a link to the most used English words and bigrams, but I had to build mine for French, especially to learn accented characters.
+If you need mine, I should be able to export them from Amphetype.
 
 ## Progress
 
@@ -80,7 +80,7 @@ In October and November 2013, I tracked my sessions using a Seinfeld calendar (a
 
 Amphetype gave my speed in WPM and my error rate by session, and the calendar was stuck to the wall (hard to miss it).
 
-Here is my seinfeld calendar:
+Here is my Seinfeld calendar:
 
 ![Seinfeld calendar](/assets/images/posts/2014-09-03-learning-to-touch-type/colemak_seinfeld_calendar.jpg)
 
@@ -93,9 +93,9 @@ I completely stopped deliberate practice after a few sessions in December and Ja
 
 ## Today
 
-When writing this article, and with looking at ten months back, I am pretty happy with my results. It was hard and harder that I thought.
+When writing this article, and looking back ten months, I am pretty happy with my results. It was hard and harder than I thought.
 
-Today, I am near 60 words-per-minutes and I don't think I will go much further without typing more and exercising. I am near my level on Azerty, but I don't have so many reflexes that experience gives. When I talk about reflex, I am speaking of typing in burst without thinking about it.
+Today, I am near 60 words per minute and I don't think I will go much further without typing more and exercising. I am near my level on Azerty, but I don't have so many reflexes that experience gives. When I talk about reflex, I am speaking of typing in burst without thinking about it.
 
 I feel very comfortable with the keyboard, my fingers move less, I can type numbers and punctuation without looking at the keyboard.
 I still make typing errors, but a lot less than in Azerty.

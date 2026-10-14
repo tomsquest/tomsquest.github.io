@@ -13,7 +13,7 @@ Elasticsearch best practice: disable dynamic mapping in your indices, or even re
 - Disable dynamic mapping in your indices for better control
 - Consider rejecting unmapped fields for stricter validation
 - Document your mapping explicitly for maintainability
-- i.e. Use `dynamic: false` or `dynamic: strict` based on your requirements
+- i.e. use `dynamic: false` or `dynamic: strict` based on your requirements
 
 ## Why Disable Dynamic Mapping?
 

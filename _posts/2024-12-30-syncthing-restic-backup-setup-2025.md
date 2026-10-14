@@ -11,7 +11,7 @@ Here's my battle-tested setup and the solution I recommend for 2025.
 
 - **Goal**: multiple copies of the files, and an offsite backup
 - **Syncthing** copies the files between devices: laptop, desktop, mobile, tablet...
-- **Restic** backups the files to a remote location
+- **Restic** backs up the files to a remote location
 
 ## Syncthing (sync files)
 
@@ -30,7 +30,7 @@ Here's my battle-tested setup and the solution I recommend for 2025.
 2. Link devices via ID or QR code
 3. Select folders to sync
 
-There is no credential, no authentication, as devices need mutual authentication.
+There are no credentials to manage, as devices authenticate each other.
 
 Pure magic!
 
@@ -38,7 +38,7 @@ Pure magic!
 
 Some folders are shared between devices, but not all. 
 
-For example, the `music` directory is shared between all devices, but `documents` are not shared with my phone, as I fear it to be stolen or lost.
+For example, the `music` directory is shared between all devices, but `documents` are not shared with my phone, as I fear it could be stolen or lost.
 
 But it is just a matter of ticking a box and accepting the folder on the other side.
 
@@ -53,8 +53,8 @@ You can back up your files to a variety of storage backends, a cloud provider or
 
 ### Key Features
 
-- Encryption: all data is secured and never leave your computer unencrypted
-- Deduplication: Identical data blocks are stored only once, saving space and so, costs
+- Encryption: all data is secured and never leaves your computer unencrypted
+- Deduplication: Identical data blocks are stored only once, saving space and therefore costs
 - Incremental Backups: Only changes since the last backup are saved, reducing time and storage usage
 - Cross-platform: Linux, Windows...
 
@@ -64,16 +64,16 @@ You can back up your files to a variety of storage backends, a cloud provider or
 - Automated backups to [Scaleway](https://www.scaleway.com) object storage (twice daily)
 - Retention policy: 30 daily, 8 weekly, 12 monthly, 2 yearly snapshots
 
-As per the provider, I went from [Backblaze](http://backblaze.com/) (aka "b2") to [Scaleway](https://www.scaleway.com), because I have fees paying in dollar with my French bank. It was a matter of using `restic sync` between the old and the new providers. I would recommend Scaleway if you pay in euros.
+As for the provider, I went from [Backblaze](http://backblaze.com/) (aka "b2") to [Scaleway](https://www.scaleway.com), because my French bank charges fees on payments in dollars. It was a matter of using `restic sync` between the old and the new providers. I would recommend Scaleway if you pay in euros.
 
 ![restic.png](/assets/images/posts/2024-12-30-syncthing-restic-backup-setup-2025/restic.png)
 
 ## Next Up: Ransomware-Proof backups
 
-I wrote the following article: [Ransomware-Resistant Backups with Kopia and Scaleway Object Lock ](https://www.tomsquest.com/blog/2025/01/kopia-scaleway-object-lock/)
+I wrote the following article: [Ransomware-Resistant Backups with Kopia and Scaleway Object Lock](https://www.tomsquest.com/blog/2025/01/kopia-scaleway-object-lock/)
 
-The goal here is to protect against someone deleting, or altering the backups.  
-To achieve this level of protection, [Kopia](https://kopia.io/) is needed  
+The goal here is to protect against someone deleting or altering the backups.  
+To achieve this level of protection, [Kopia](https://kopia.io/) is needed.  
 Kopia is an alternative to Restic and also offers great features and has a User Interface.  
 For this article, I focused on Restic, because Restic is stable, maybe "less modern", but for backups, the reliable aspect is key.
 
@@ -83,6 +83,6 @@ This **Syncthing + Restic** combo delivers bulletproof file management: seamless
 
 [Syncthing](https://syncthing.net) keeps everything effortlessly in sync across your devices, while [Restic](https://restic.net/) ensures your data is safe and recoverable even in a worst-case scenario.
 
-By the way, about the software point-of-view, the changelogs of Restic are awesome, with a summary then details about each point. A big shoutout to the maintainers!
+By the way, from a software point of view, the changelogs of Restic are awesome, with a summary then details about each point. A big shoutout to the maintainers!
 
 See you soon for the next article about Ransomware protection.

@@ -33,8 +33,9 @@ Those were the main issues I had.
 
 ## Configuration
 
-The main points :
-- Set `allow_from_override` to `off` so that smtp can set the `From` field
+The main points:
+
+- Set `allow_from_override` to `off` so that msmtp can set the `From` field
 - Set a `From` in MSMTP
 - **AND** set an alias file (see below)
 
@@ -63,14 +64,16 @@ default: tom@tomsquest.com
 ```
 
 This way, all conditions are handled:
+
 - a service can set a `From` field (`root`, `@tom`...)
 - Or no `From` field at all
 
 ## About self-hosting
 
 I self-host most of my services, such as:
+
 - [Calendar/Tasks using my custom Radicale image](https://github.com/tomsquest/docker-radicale/)
-- qBittorent
+- qBittorrent
 - SearchX
 - Backup with Restic
 - Synchronization with Syncthing
@@ -92,4 +95,4 @@ I also monitor Crowdsec and update emails.
 
 Yes, upgrades run automatically, but moving from one LTS version to another requires reinstalling. I've done it twice in 8 years.
 No, I didn't go the Ansible route (it requires testing and thus time), and the same with NixOS.
-I just have a partial documentation of high-level actions and backup my /etc files.
+I just have partial documentation of high-level actions and back up my /etc files.

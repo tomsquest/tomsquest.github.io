@@ -9,7 +9,7 @@ Speed up your development workflow by enabling caching for Jest, Prettier, ESLin
 ## TL;DR
 
 - Set up a `.cache` folder in your project
-- Keep Jest's cache across restart, `--cacheDirectory .cache/jest/`
+- Keep Jest's cache across restarts, `--cacheDirectory .cache/jest/`
 - Enable ESLint's cache `--cache --cache-location .cache/eslint/`
 - Enable Prettier's cache `--cache --cache-location .cache/prettier/`
 - Enable TypeScript `incremental` builds
@@ -17,8 +17,8 @@ Speed up your development workflow by enabling caching for Jest, Prettier, ESLin
 
 ## Cache folder
 
-Store all cache files in a `.cache` folder at your project's root
-This folder will be useful to fasten your workflow locally, keep your project clean, and in the CI by storing .cache across builds.
+Store all cache files in a `.cache` folder at your project's root.
+This folder will be useful to speed up your workflow locally, keep your project clean, and in the CI by storing .cache across builds.
 
 First step, add `.cache` to your `.gitignore`:
 
@@ -46,7 +46,7 @@ Alternative on the command line:
 npx jest --cacheDirectory .cache/jest
 ```
 
-## Eslint's cache
+## ESLint's cache
 
 From the [ESLint docs](https://eslint.org/docs/latest/use/command-line-interface#caching):
 > `--cache`  
@@ -58,8 +58,8 @@ Run ESLint with the cache enabled, and specify the cache location:
 npx eslint --cache --cache-location .cache/eslint/
 ```
 
-In your CI, you will want to change the cache strategy for `content`. 
-The default is `metadata`, which is faster, but the file modification date change in the CI (due to Git clone), and the cache will not be used.
+In your CI, you will want to change the cache strategy to `content`. 
+The default is `metadata`, which is faster, but the file modification dates change in the CI (due to Git clone), and the cache will not be used.
 
 ```bash
 npm run lint -- --cache --cache-location .cache/eslint/ --cache-strategy content
@@ -74,15 +74,15 @@ You can also set the location of the cache, and the cache strategy.
 npx prettier --cache --cache-location .cache/prettier/
 ```
 
-As for ESLint, you can change the cache strategy for `content` in your CI:
+As for ESLint, you can change the cache strategy to `content` in your CI:
 
 ```bash
 npm run format -- --cache --cache-location .cache/prettier/ --cache-strategy content
 ```
 
-## Typescript's cache
+## TypeScript's cache
 
-Typescript uses `.tsbuildinfo` files placed that cannot be placed in `.cache` from what I know.
+TypeScript uses `.tsbuildinfo` files that cannot be placed in `.cache` from what I know.
 
 From the [TypeScript docs](https://www.typescriptlang.org/tsconfig/#incremental):
 > `incremental`  

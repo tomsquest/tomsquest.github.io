@@ -6,7 +6,7 @@ twitter:
   card: summary
 ---
 
-[Gradle](http://www.gradle.org/) est un outil permettant d'écrire ses scripts de build en groovy.
+[Gradle](http://www.gradle.org/) est un outil permettant d'écrire ses scripts de build en Groovy.
 Il nous a été présenté hier soir chez [Zenika](http://www.zenika.com/) par son créateur, Hans Dockter.
 
 À première vue, c'est un outil puissant et extrêmement souple. Il apporte beaucoup de bonnes idées et on s'amuse vite à le comparer à Maven.
@@ -17,7 +17,7 @@ Alors, Gradle pour tous ou seulement pour votre pire ennemi ?
 
 Gradle, c'est avant tout un DSL en Groovy pour décrire ses builds. Il bénéficie donc des améliorations du langage comme les closures et d'une syntaxe épurée.
 
-Hans Docker insiste sur ce point : un script de build qui épouse votre projet est beaucoup plus intéressant qu'un projet où la structure est imposée par l'outil de build (comme Maven).
+Hans Dockter insiste sur ce point : un script de build qui épouse votre projet est beaucoup plus intéressant qu'un projet où la structure est imposée par l'outil de build (comme Maven).
 
 Il fait un parallèle avec "l'[Anemic Object Model](http://martinfowler.com/bliki/AnemicDomainModel.html)" de Martin Fowler et le DDD dans le sens où votre build se décrit lui-même et ses buts se documentent eux-mêmes.
 
@@ -27,10 +27,10 @@ Hans oppose les notions de "Langage de build" (Gradle) et de "framework de build
 
 ## Attention, outil coupant
 
-Vous avez déjà eu des projets complexes à construire, avec par exemple de la génération de code ou des fichiers à emboiter. Vous vous êtes battu avec Maven et vous avez souvent perdu (c'est mon cas, je n'ai pas encore ma ceinture noire de Maven).
+Vous avez déjà eu des projets complexes à construire, avec par exemple de la génération de code ou des fichiers à emboîter. Vous vous êtes battu avec Maven et vous avez souvent perdu (c'est mon cas, je n'ai pas encore ma ceinture noire de Maven).
 
 Gradle vient directement répondre à ce besoin : simplifier les builds complexes.
-C'est d'ailleurs son moto : "Make the impossible possible, the possible easy, and the easy elegant".
+C'est d'ailleurs sa devise : "Make the impossible possible, the possible easy, and the easy elegant".
 
 Discussion faite avec Florent Ramière de Jaxio, nous sommes du même avis : Oui, Gradle est adapté pour les builds complexes, mais 80% ont des besoins simples, réalisables avec Maven.
 
@@ -54,7 +54,7 @@ Bref, il y a du travail et ce n'est pas la crise comme l'indique la [Roadmap](ht
 J'aime :
 
 - L'usage d'un DSL pour donner du sens à ses scripts de build ;
-- La puissante de ce DSL pour faire des choses qui font rêver (par exemple, une tâche a accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;
+- La puissance de ce DSL pour faire des choses qui font rêver (par exemple, une tâche a accès à la liste des tâches suivantes afin de pouvoir modifier son comportement) ;
 - La réutilisation des tâches Ant facilement, ce qui veut dire qu'on peut presque tout faire ;
 - La flexibilité offerte. J'adore les outils coupants qui me permettent de faire ce que je veux comme je le veux. Mais je reconnais que je n'ai pas rencontré souvent de besoin très exotique ;
 - Le Gradle Wrapper qui permet de dérouler un build Gradle sans aucune installation préalable (il télécharge ses dépendances automatiquement).
@@ -62,7 +62,7 @@ J'aime :
 Je n'aime pas :
 
 - Le fait de ne pas avoir une intégration/réutilisabilité complète avec Maven (la faute aux Plugins apparemment) ;
-- Le trop peu de convention, même si c'est le but du projet, car les conventions permettent d'entrer dans l'entreprise pour éviter que chacun puisse faire ce qu'il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu'on ne puisse pas poser une structure à respecter. Ce serait l'équivalent des normes de codages ;
+- Le trop peu de conventions, même si c'est le but du projet, car les conventions permettent d'entrer dans l'entreprise pour éviter que chacun puisse faire ce qu'il veut. Adieu structuration et normalisation entre projets. Mais rien ne dit qu'on ne puisse pas poser une structure à respecter. Ce serait l'équivalent des normes de codage ;
 - Il n'est pas à mettre entre toutes les mains. Gros risques de faire dans le non maintenable (quid du debugging, du diagnostic, des performances ?)
 - La jeunesse du projet qui ne garantit pas encore une pérennité suffisante pour l'entreprise.
 

@@ -14,9 +14,9 @@ L'auteur, [Chad Fowler](http://chadfowler.com/), établit une stratégie pour pl
 
 > Il faut se voir comme un produit qu'il faut construire et vendre
 
-Une entreprise ne nous emploie pas parce qu'elle nous aime, mais pour faire de l'argent (pour en gagner ou ne pas en perdre). En nous embauchant, la société investie en nous. Donc le challenge est de devenir un bon investissement pour elle, être rentable. Il faut juger ses performances par rapport à notre valeur ajoutée pour la société.
+Une entreprise ne nous emploie pas parce qu'elle nous aime, mais pour faire de l'argent (pour en gagner ou ne pas en perdre). En nous embauchant, la société investit en nous. Donc le challenge est de devenir un bon investissement pour elle, être rentable. Il faut juger ses performances par rapport à notre valeur ajoutée pour la société.
 
-C'est sur cette notion de R.O.I. personnelle que Chad Fowler conseille de se poser régulièrement cette question : "Suis-je un bon investissement ?".
+C'est sur cette notion de R.O.I. personnel que Chad Fowler conseille de se poser régulièrement cette question : "Suis-je un bon investissement ?".
 
 ## Ta carrière, c'est ta vie (ou presque)
 
@@ -30,17 +30,17 @@ Donc aimer son boulot, c'est aussi aimer sa vie. On se leurre souvent en chercha
 
 ### La Roadmap personnelle
 
-Chad Fowler conseille de se construire une liste des compétences que l'on veut acquérir. Cette liste est une roadmap équivalent à celle d'un projet qui permettra de planifier et de définir vers où on veut aller.
+Chad Fowler conseille de se construire une liste des compétences que l'on veut acquérir. Cette liste est une roadmap équivalente à celle d'un projet qui permettra de planifier et de définir vers où on veut aller.
 
 L'exercice peut se faire sur son passé : d'où je viens, ce que j'ai appris à chaque fois jusqu'à maintenant.
 
 ### Ne pas mettre tous ses oeufs dans le panier de quelqu'un d'autre
 
-Java, Java et rien que Java ? Pour l'auteur, l'intégrisme technologique est une mauvaise chose. Chaque techno, langage, framework progresse, stagne et décroit. Pour éviter d'investir sur un mauvais choix (une techno en déclin), il faut étudier le marché et dans tous les cas se diversifier.
+Java, Java et rien que Java ? Pour l'auteur, l'intégrisme technologique est une mauvaise chose. Chaque techno, langage, framework progresse, stagne et décroît. Pour éviter d'investir sur un mauvais choix (une techno en déclin), il faut étudier le marché et dans tous les cas se diversifier.
 
 Une entreprise a les moyens (argent et temps) de passer d'une techno à une autre. Ce n'est pas le cas pour un individu, car il n'aura pas les ressources pour le faire (moins d'argent, moins de temps).
 
-S'élargir à d'autres technos, c'est limité les risques. Comme en bourse, il s'agit de diversifier son portefeuille.
+S'élargir à d'autres technos, c'est limiter les risques. Comme en bourse, il s'agit de diversifier son portefeuille.
 
 ### Savoir dire Non
 
@@ -52,12 +52,12 @@ Petit bémol, dans certains contextes un "Oui, mais" permet de sauver sa peau.
 
 ## Mon avis
 
-J'ai aimé ce livre, car j'ai découvert un nouveau point de vue intéressant et une vision du business différente de la vision traditionnelle. On ne vit pas dans un monde de Bisounours comme diraient les Cast Codeurs.J'en tire de nombreux conseils et des actions afin de me remettre régulièrement en question et progresser.
+J'ai aimé ce livre, car j'ai découvert un nouveau point de vue intéressant et une vision du business différente de la vision traditionnelle. On ne vit pas dans un monde de Bisounours comme diraient les Cast Codeurs. J'en tire de nombreux conseils et des actions afin de me remettre régulièrement en question et progresser.
 
 Ce que je n'ai pas aimé :
 
 - Certains chapitres sont trop simplistes ou évidents. Mais, sur 53 chapitres, c'est normal que tous ne soient pas bons.
-- Beaucoup d'anecdotes divertissantes sur l'auteur et la musique, mais quelquefois trop écartés du sujet (Chad Fowler est un ancien musicien professionnel)
+- Beaucoup d'anecdotes divertissantes sur l'auteur et la musique, mais quelquefois trop écartées du sujet (Chad Fowler est un ancien musicien professionnel)
 
 **Note finale : 7/10**
 

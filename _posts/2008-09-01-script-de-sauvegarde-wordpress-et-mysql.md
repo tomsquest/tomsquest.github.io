@@ -5,7 +5,7 @@ lang: fr
 
 Qui dit nouveau blog, plugins à gogo, tests et expérimentations, dit un jour ou l'autre : "si j'avais fait une sauvegarde, ça m'aurait évité de perdre mon blog et tout son contenu !".
 
-Donc une des premières étapes de toute nouvelle installation de WordPress, il me fallait un script de backup digne de ce nom, mais très simple (car "Simple is more" 😉).
+Donc, dès la première étape de toute nouvelle installation de WordPress, il me fallait un script de backup digne de ce nom, mais très simple (car "Simple is more" 😉).
 
 ## Mission accomplie !
 
@@ -17,7 +17,7 @@ Le script que je mets ci-dessous s'occupe de 3 choses :
 
 ## Le secret
 
-Le gros avantage de ce script est que nous n'avez pas à spécifier vos paramètres MySQL (nom de la base, machine, utilisateur, mot de passe). En effet, ils sont extrait du fichier wp-config.php situé dans le répertoire de WordPress.
+Le gros avantage de ce script est que vous n'avez pas à spécifier vos paramètres MySQL (nom de la base, machine, utilisateur, mot de passe). En effet, ils sont extraits du fichier wp-config.php situé dans le répertoire de WordPress.
 
 Pour cela, j'ai utilisé un extrait du script de [AskApache.org](http://www.askapache.com), trouvable ici : [Encrypted WordPress / phpBB Backups](http://www.askapache.com/wordpress/encrypted-wordpress-site-backups.html). En particulier, le script utilise la commande `sed` pour extraire les variables MySQL et les créer en tant que variables dans le script. Une belle prouesse !
 
@@ -36,7 +36,7 @@ Ce script peut être amélioré sur les points suivants :
 
 - Sécuriser la création des archives : vérifier que ce qui est dans l'archive n'est pas corrompu. Le projet [VeriTAR](http://www.codetrax.org/projects/veritar) s'occupe de cette partie en comparant le checksum MD5 des fichiers à l'extérieur et à l'intérieur de l'archive. C'est un projet Python. Un exemple est trouvable sur le site [www.g-loaded.eu](http://www.g-loaded.eu/2007/12/01/veritar-verify-checksums-of-files-within-a-tar-archive/) ;
 - Sauvegardes incrémentales : ne garder que les changements entre deux sauvegardes ;
-- Copie sur un serveur distant : ne pas garder les sauvegardes uniquement sur la machine source. C'est le principe du "offsite backups" qui évite de perdre ses données en cas de panne ou de vol de la machine source.
+- Copie sur un serveur distant : ne pas garder les sauvegardes uniquement sur la machine source. C'est le principe des "offsite backups" qui évite de perdre ses données en cas de panne ou de vol de la machine source.
 
 ## Planification
 

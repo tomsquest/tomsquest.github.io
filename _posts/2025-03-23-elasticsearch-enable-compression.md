@@ -18,7 +18,7 @@ When using Elasticsearch in Node.js apps, there's a simple performance optimizat
 
 Elasticsearch responses can be large, especially with multiple documents or complex aggregations:
 
-- **Reduces data size**: Often by 30-70% over plain json (from what I found)
+- **Reduces data size**: Often by 30-70% over plain JSON (from what I found)
 - **Speeds up requests & responses**: Less data transfer = faster results
 
 ## Implementation
@@ -38,6 +38,6 @@ The [Basic Configuration page](https://www.elastic.co/guide/en/elasticsearch/cli
 
 ## Conclusion
 
-A quick-win for some performance gain. Always enable compression when working with Elasticsearch in Node.js. 
+A quick win for some performance gain. Always enable compression when working with Elasticsearch in Node.js. 
 
 And by the way, I don't know why it's not the default in 2025 🤷‍♂️ (broader compatibility certainly?).
