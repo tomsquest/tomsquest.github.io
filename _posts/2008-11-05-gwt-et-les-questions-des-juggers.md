@@ -2,6 +2,7 @@
 title: GWT et les questions des Juggers
 description: "Les questions des Juggers sur GWT au Paris JUG : intégration à une mise en page existante, à Maven 2, et testabilité des interfaces avec Selenium."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-11-05-gwt-et-les-questions-des-juggers/gwt.jpg
 twitter:
   card: summary

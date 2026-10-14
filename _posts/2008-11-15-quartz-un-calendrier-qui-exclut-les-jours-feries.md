@@ -2,6 +2,7 @@
 title: "Quartz : un calendrier qui exclut les jours fériés"
 description: "Exclure les week-ends, une plage horaire et les jours fériés d'un job Quartz en enchaînant trois calendriers configurés avec Spring, dont un fait maison."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-11-15-quartz-un-calendrier-qui-exclut-les-jours-feries/quartz_logo.jpg
 twitter:
   card: summary

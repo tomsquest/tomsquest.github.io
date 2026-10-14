@@ -2,6 +2,7 @@
 title: How to configure MSMTP for self-hosted email
 description: "Configure msmtp on a self-hosted server to send emails to yourself through MailJet: allow_from_override off, a From address and a default alias."
 lang: en
+locale: en_US
 ---
 
 I recently reinstalled my server and configured `msmtp` to send emails to myself. It wasn't working right at first. Here's how to configure it properly.

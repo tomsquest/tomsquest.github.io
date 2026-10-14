@@ -2,6 +2,7 @@
 title: "8 raisons d'aimer Ruby"
 description: "8 raisons d'aimer Ruby : productivité, métaprogrammation, duck typing, closures, JRuby, frameworks (Rails, Capistrano, Cucumber), Gems et communauté."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2009-11-11-8-raisons-d-aimer-ruby/ruby_logo.png
 twitter:
   card: summary

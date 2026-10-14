@@ -26,6 +26,7 @@ image_dir = "assets/images/posts/#{file_name}"
 front_matter = "---\n"
 front_matter += "title: \"#{title}\"\n"
 front_matter += "lang: en\n"
+front_matter += "locale: en_US\n"
 front_matter += "image: /assets/images/posts/#{file_name}/cover.png\n"
 front_matter += "---\n\n"
 File.open(file_path, "w") do |file|

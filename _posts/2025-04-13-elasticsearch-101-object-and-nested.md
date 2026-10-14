@@ -2,6 +2,7 @@
 title: "Elasticsearch 101: Object vs Nested"
 description: "Elasticsearch object vs nested: object flattens fields and loses their association, nested keeps it with hidden documents, at a performance cost."
 lang: en
+locale: en_US
 image: /assets/images/posts/2025-04-13-elasticsearch-101-object-and-nested/object_versus_nested.png
 twitter:
   card: summary

@@ -2,6 +2,7 @@
 title: "Présentation et retour sur GreenPepper"
 description: "Retour après une semaine avec GreenPepper : spécifications exécutables dans Confluence, qualités, problèmes (documentation, plugin Eclipse, Maven) et conseils."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-12-21-presentation-et-retour-sur-greenpepper/greenpepper-logo.png
 twitter:
   card: summary

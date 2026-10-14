@@ -2,6 +2,7 @@
 title: "De la programmation défensive"
 description: "La programmation défensive en Java : assertions, pré et post-conditions, pourquoi les laisser actives, et les bibliothèques FEST-Assert et Hamcrest."
 lang: fr
+locale: fr_FR
 ---
 
 Vous aviez développé un nouveau service. Les interfaces et les données échangées étaient définies. Vous étiez optimiste, vous connaissiez bien le client. Malheureusement celui-ci utilisait de temps en temps mal votre API, vous fournissant des paramètres invalides. Vous voilà en train de corrompre l'intégrité de vos données. Pourtant, même la Javadoc précisait le format des données. Avez-vous été trop optimiste ? Et votre code, comment aurait-il dû réagir ? Est-ce votre faute ou celle du client ?

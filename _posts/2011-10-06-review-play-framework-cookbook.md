@@ -2,6 +2,7 @@
 title: "Review: Play Framework Cookbook"
 description: "Review of the Play Framework Cookbook by Alexander Reelsen: its contents, what the \"There's more\" sections add, and how it complements the official docs."
 lang: en
+locale: en_US
 image: /assets/images/posts/2011-10-06-review-play-framework-cookbook/play_framework_cookbook.jpg
 twitter:
   card: summary

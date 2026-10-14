@@ -2,6 +2,7 @@
 title: Critique du livre "Wicket In Action"
 description: "Critique du livre Wicket In Action : pourquoi Wicket, ce que j'ai aimé et moins aimé, et le résumé de chacun des 14 chapitres."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-12-09-critique-du-livre-wicket-in-action/wicket_in_action.jpg
 twitter:
   card: summary

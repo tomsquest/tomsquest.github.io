@@ -2,6 +2,7 @@
 title: "Démarrer avec JPA, Spring, Maven et Glassfish"
 description: "Un projet de démarrage JPA et Spring déployé sous Glassfish v3, avec des tests d'intégration sans serveur d'application et le pom Maven qui va bien."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2009-02-26-demarrer-avec-jpa-spring-maven-et-glassfish/screenshot_06.jpeg
 twitter:
   card: summary
