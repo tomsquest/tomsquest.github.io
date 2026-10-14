@@ -10,21 +10,16 @@ author:
   name: Thomas Queste
   url: https://www.tomsquest.com/about/
   picture: /assets/images/about/me.jpg
-  twitter: ThomasQueste
 # seo:begin
 webmaster_verifications:
   google: nfl83aFbhw23MLLNf_GMkcp0SzoevfBy_lYvEDvwfso
   bing: 5711A2425B0124B3BBED08C611D28345
 logo: /assets/images/logo_512.png
-twitter:
-  username: ThomasQueste
 social:
   name: Thomas Queste
   links:
-    - https://twitter.com/ThomasQueste
     - https://www.linkedin.com/in/thomasqueste
     - https://github.com/tomsquest
-    - https://keybase.io/thomasqueste
 # seo:end
 sass:
   style: compressed
