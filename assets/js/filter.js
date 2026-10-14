@@ -2,7 +2,7 @@
 let activeFilters = {};
 
 /**
- * Attach click handlers to all [data-filter] elements and perform initial count calculation.
+ * Attach click handlers to all [data-filter] buttons and perform initial count calculation.
  */
 export function initializeFilters(itemsSelector) {
   document.querySelectorAll('[data-filter]').forEach(link => {
@@ -17,18 +17,18 @@ export function initializeFilters(itemsSelector) {
 }
 
 /**
- * Toggle a filter link: activate its value (and deactivate siblings of same type) or remove it.
+ * Toggle a filter button: activate its value (and deactivate siblings of same type) or remove it.
  */
 export function toggleFilter(link) {
   const type = link.dataset.filter;
   const value = link.dataset[type];
-  const wasActive = link.classList.contains('active');
+  const wasActive = link.getAttribute('aria-pressed') === 'true';
 
-  // Deactivate all links of the same filter type.
-  document.querySelectorAll(`[data-filter="${type}"]`).forEach(el => el.classList.remove('active'));
+  // Deactivate all buttons of the same filter type.
+  document.querySelectorAll(`[data-filter="${type}"]`).forEach(el => el.setAttribute('aria-pressed', 'false'));
 
   if (!wasActive) {
-    link.classList.add('active');
+    link.setAttribute('aria-pressed', 'true');
     activeFilters[type] = value;
   } else {
     delete activeFilters[type]; // remove key when toggled off
@@ -68,7 +68,13 @@ function updateCounts(itemsSelector) {
       return matchesOthers && item.getAttribute(`data-${type}`) === value;
     }).length;
 
-    const baseLabel = link.textContent.split(' (')[0];
-    link.textContent = `${baseLabel} (${count})`;
+    // Counts live in their own span so the label markup (e.g. screen-reader text) is kept.
+    let countEl = link.querySelector('.count');
+    if (!countEl) {
+      countEl = document.createElement('span');
+      countEl.className = 'count';
+      link.append(' ', countEl);
+    }
+    countEl.textContent = `(${count})`;
   });
 }
