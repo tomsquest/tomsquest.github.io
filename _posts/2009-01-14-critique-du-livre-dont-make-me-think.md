@@ -2,6 +2,8 @@
 title: Critique du livre "Don't Make Me Think"
 lang: fr
 image: /assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-cover-2nd.jpg
+twitter:
+  card: summary
 ---
 
 J'ai eu le plaisir de lire le livre de Steve Krug "[Don't Make Me Think](http://sensible.com/buythebook.html)" dont le sujet est l'usabilité Web. L'usabilité, c'est la conception d'un site afin qu'il fonctionne au mieux. Pourquoi faire un site utilisable ? Steve Krug cite sa femme : "Si quelque chose est difficile à utiliser, alors je l'utilise moins".

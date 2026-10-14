@@ -2,6 +2,8 @@
 title: "Elasticsearch best practice: aliases"
 lang: en
 image: /assets/images/posts/2025-04-01-elasticsearch-best-practice-aliases/aliases.png
+twitter:
+  card: summary
 ---
 
 Elasticsearch aliases are a best practice. They simplify alot management of indices, for example, migration between indices.

@@ -2,6 +2,8 @@
 title: "Elasticsearch JS: retry on timeout"
 lang: en
 image: /assets/images/posts/2025-03-24-elasticsearch-js-retry-on-timeout/retryOnTimeout.png
+twitter:
+  card: summary
 ---
 
 Elasticsearch.js 8.14.0 changes how request timeouts are handled.

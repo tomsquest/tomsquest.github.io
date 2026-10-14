@@ -4,7 +4,7 @@ layout: base
 
 <article class="post">
 
-  {%- if page.image -%}
+  {%- if page.image and page.image != site.default_image -%}
   <div class="post-image">
     <img src="{{ page.image }}" alt="{{ page.title | escape }}">
   </div>

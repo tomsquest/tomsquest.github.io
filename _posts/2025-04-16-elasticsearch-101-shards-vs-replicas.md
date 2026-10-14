@@ -2,6 +2,8 @@
 title: "Elasticsearch 101: Shards vs Replicas"
 lang: en
 image: /assets/images/posts/2025-04-16-elasticsearch-101-shards-vs-replicas/shard_replica.png
+twitter:
+  card: summary
 ---
 
 Understanding the critical difference between Elasticsearch shards and replicas for optimal cluster performance and reliability.

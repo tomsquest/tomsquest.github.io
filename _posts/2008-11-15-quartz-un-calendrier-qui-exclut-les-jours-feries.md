@@ -2,6 +2,8 @@
 title: "Quartz : un calendrier qui exclut les jours fériés"
 lang: fr
 image: /assets/images/posts/2008-11-15-quartz-un-calendrier-qui-exclut-les-jours-feries/quartz_logo.jpg
+twitter:
+  card: summary
 ---
 
 L'idée part d'un besoin simple : lancer un job [Quartz](http://www.opensymphony.com/quartz/) toutes les heures ouvrées, hors week-end et jours fériés.

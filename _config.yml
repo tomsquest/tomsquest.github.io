@@ -18,7 +18,6 @@ webmaster_verifications:
 logo: /assets/images/logo_512.png
 twitter:
   username: ThomasQueste
-  card: summary
 social:
   name: Thomas Queste
   links:
@@ -29,6 +28,14 @@ social:
 # seo:end
 sass:
   style: compressed
+# Default social image (og:image), used by pages and posts without their own `image`.
+# post.html does not display it as a banner: keep both paths in sync.
+default_image: /assets/images/og-default.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-default.png
 collections:
   posts:
     output: true
@@ -42,6 +49,11 @@ plugins:
   - jekyll-sitemap
 exclude:
   - .idea
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - assets/images/projects/README.md
   - .ruff_cache
   - _bin
   - _old
