@@ -2,6 +2,7 @@
 title: "Elasticsearch 101: Shards vs Replicas"
 description: "Elasticsearch shards vs replicas: shards partition data for parallelism, replicas copy it for redundancy and reads. Sizing advice for production."
 lang: en
+locale: en_US
 image: /assets/images/posts/2025-04-16-elasticsearch-101-shards-vs-replicas/shard_replica.png
 twitter:
   card: summary

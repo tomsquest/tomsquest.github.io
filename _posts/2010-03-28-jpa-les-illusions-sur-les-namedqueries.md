@@ -2,6 +2,7 @@
 title: "JPA : les illusions sur les NamedQueries"
 description: "Les NamedQueries JPA sont-elles vraiment plus performantes et mieux validées ? Ce qu'il en reste une fois ces idées reçues écartées."
 lang: fr
+locale: fr_FR
 ---
 
 Un certain nombre d'idées reçues existent sur les NamedQueries. On les dit plus performantes, car mises en cache, on les dit plus sûres car validées au chargement. Étudions ces points et regardons quels sont les réels avantages des NamedQueries.

@@ -2,6 +2,7 @@
 title: Moteur de recherche Maven par Sonatype
 description: "Sonatype lance un moteur de recherche dans les repositories Maven, basé sur son gestionnaire Nexus. Et les alternatives : MVN Repository et Javarepo."
 lang: fr
+locale: fr_FR
 ---
 
 [Sonatype](http://www.sonatype.com/) propose son propre moteur de recherche dans les repositories Maven. Il utilise le gestionnaire de Repo Nexus, [un concurrent d'Artifactory](http://cfossguy.blogspot.com/2008/09/my-artifactory-versus-nexus-experience.html) proposé par Sonatype.

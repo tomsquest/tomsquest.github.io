@@ -2,6 +2,7 @@
 title: "Les inconvénients de Selenium"
 description: "Les limites de Selenium en 2008 : Selenium IDE, intégration de Selenium RC avec Maven 2 et Hudson, upload, données de test et performances."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-11-24-les-inconvenients-de-selenium/selenium_small.jpg
 twitter:
   card: summary

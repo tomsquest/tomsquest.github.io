@@ -2,6 +2,7 @@
 title: "IntelliJ Championship"
 description: "An IntelliJ Master Championship: a presentation turned into a game where colleagues compete on IntelliJ shortcuts. Slides, shortcuts PDF and source."
 lang: en
+locale: en_US
 image: /assets/images/posts/2017-07-21-intellij-master-presentation/intellij.png
 twitter:
   card: summary

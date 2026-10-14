@@ -2,6 +2,7 @@
 title: "Jetty : démarrage rapide"
 description: "Lancer une application Web Maven avec Jetty en quelques secondes, et configurer une DataSource, une session mail et une URL dans jetty-env.xml."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-09-09-jetty-demarrage-rapide/jetty_logo.png
 twitter:
   card: summary

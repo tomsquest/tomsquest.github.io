@@ -2,6 +2,7 @@
 title: Entreprendre au JUG2B
 description: "Ce que j'ai retenu du JUG2B sur la création d'entreprise : le statut n'est qu'une coquille, se faire accompagner, financement, limites et SCOP."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-12-06-entreprendre-au-jug2b/parisjug-logo.jpg
 twitter:
   card: summary

@@ -2,6 +2,7 @@
 title: "À la découverte des Components Hibernate"
 description: "Les Components Hibernate permettent de mapper plusieurs objets dans une même table : exemple de mapping, limites et Dynamic Components."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/hibernate_logo.gif
 twitter:
   card: summary

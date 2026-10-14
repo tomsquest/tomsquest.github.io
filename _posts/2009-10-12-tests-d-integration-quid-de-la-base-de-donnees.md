@@ -2,6 +2,7 @@
 title: "Tests d'intégration : quid de la base de données ?"
 description: "Tests d'intégration et base de données : pourquoi éviter une base embarquée, et pourquoi désactiver les contraintes d'intégrité simplifie les jeux de test."
 lang: fr
+locale: fr_FR
 image: /assets/images/posts/2009-10-12-tests-d-integration-quid-de-la-base-de-donnees/serveur.jpg
 twitter:
   card: summary

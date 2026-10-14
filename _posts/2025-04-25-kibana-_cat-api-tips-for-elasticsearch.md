@@ -2,6 +2,7 @@
 title: "Kibana _cat API tips for Elasticsearch"
 description: "Kibana tips for the Elasticsearch _cat APIs: v for column headers, s to sort, h to pick columns, and what CAT actually stands for."
 lang: en
+locale: en_US
 image: /assets/images/posts/2025-04-25-kibana-_cat-api-tips-for-elasticsearch/kibana_cat_apis.png
 twitter:
   card: summary
