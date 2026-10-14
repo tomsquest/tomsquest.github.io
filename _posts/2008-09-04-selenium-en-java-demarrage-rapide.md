@@ -86,7 +86,7 @@ Tout d'abord, commençons par éditer le `pom.xml` du module de test.
 
 Les dépendances devraient ressembler à celles-ci sous Eclipse :
 
-![](/assets/images/posts/2008-09-04-selenium-en-java-demarrage-rapide/libs1.jpg)
+![Bibliothèques référencées dans Eclipse : JUnit, Jetty et les Jars Selenium](/assets/images/posts/2008-09-04-selenium-en-java-demarrage-rapide/libs1.jpg)
 
 ### 3 - Configuration de la phase de test
 

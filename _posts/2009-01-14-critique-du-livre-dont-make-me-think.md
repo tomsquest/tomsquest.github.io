@@ -33,7 +33,7 @@ Le livre a été traduit sous le titre "[Je ne veux pas chercher](http://www.ama
 
 ## Mon avis
 
-![](/assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-usability-glance.png)
+![Illustration du livre : comment on pense qu'une page est lue, et comment elle est réellement survolée](/assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-usability-glance.png)
 
 Je recommande chaudement ce livre qui se veut très simple d'accès, intéressant et agréable à lire. Il m'a fait prendre conscience de nombreuses choses, aussi bien sur comment les utilisateurs voient un site, que les tests utilisateurs ou encore l'accessibilité. Le livre m'a étonné plusieurs fois. Et ça, c'est ce que je lui demandais.
 

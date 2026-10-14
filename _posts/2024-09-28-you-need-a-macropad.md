@@ -26,7 +26,7 @@ Many sellers sell the same models, so pick the cheapest one you can find!
 
 Here's what my order looked like:
 
-![macropad_aliexpress_order.jpg](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_aliexpress_order.jpg)
+![AliExpress order for a 6-key MacroPad with a knob, 13.57 euros](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_aliexpress_order.jpg)
 
 ## Software
 
@@ -80,7 +80,7 @@ So I don't use them.
 
 ## Photos
 
-![macropad_with_keycaps.jpg](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_with_keycaps.jpg)
-![macropad_without_keycaps.jpg](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_without_keycaps.jpg)
-![macropad_vertical.jpg](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_vertical.jpg)
-![macropad_with_keyboard.jpg](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_with_keyboard.jpg)
+![The MacroPad: 6 white keys and a rotary knob](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_with_keycaps.jpg)
+![The MacroPad without keycaps, showing the red switches](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_without_keycaps.jpg)
+![The MacroPad seen from above, standing vertically](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_vertical.jpg)
+![The MacroPad next to my split keyboard](/assets/images/posts/2024-09-28-you-need-a-macropad/macropad_with_keyboard.jpg)

@@ -23,7 +23,7 @@ Dans la pratique, la création d'une spécification exécutable avec GreenPepper
 
 ### Exemple de spécification fonctionnelle
 
-![](/assets/images/posts/2008-12-21-presentation-et-retour-sur-greenpepper/gp-test2.jpg)
+![Spécification GreenPepper : ajouter deux animaux au panier puis vérifier qu'il contient 2 articles](/assets/images/posts/2008-12-21-presentation-et-retour-sur-greenpepper/gp-test2.jpg)
 
 Chaque page GreenPepper dispose d'un bouton "Execute" qui permet d'appeler les fixtures avec les paramètres du tableau. L'appui sur ce bouton invoque le système testé qui récupère dans la page les classes à créer et invoque les méthodes avec les données.
 
@@ -84,7 +84,7 @@ Au bout de quelques heures, ça fonctionne à peu près. Entre-temps, on a essay
 
 ### Capture du lancement depuis Eclipse
 
-![](/assets/images/posts/2008-12-21-presentation-et-retour-sur-greenpepper/gp-runeclipse.jpg)
+![Exécution d'une spécification GreenPepper depuis Eclipse, avec les résultats en vert](/assets/images/posts/2008-12-21-presentation-et-retour-sur-greenpepper/gp-runeclipse.jpg)
 
 ### Le classpath et Maven
 

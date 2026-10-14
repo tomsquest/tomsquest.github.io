@@ -20,7 +20,7 @@ Les PersistentUnits sont configurés par :
 
 Spring est, lui aussi, configuré en deux fois (déploiement et test). Grâce aux classpaths de Maven, le bon fichier est sélectionné.
 
-![](/assets/images/posts/2009-02-26-demarrer-avec-jpa-spring-maven-et-glassfish/screenshot_05.jpeg)
+![Arborescence Maven : spring-datasource.xml et persistence.xml pour le déploiement, orm.xml pour les tests](/assets/images/posts/2009-02-26-demarrer-avec-jpa-spring-maven-et-glassfish/screenshot_05.jpeg)
 
 Le fichier JPA pour le serveur est le suivant :
 

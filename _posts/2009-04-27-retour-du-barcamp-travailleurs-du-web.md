@@ -99,8 +99,8 @@ Merci à Babozor et à [Fred](http://www.quatuorprod.com/) pour la très bonne o
 
 Voici un échantillon des photos réalisées par Seb. Vous en trouverez d'autres sur [son site](http://tdwcamp.altrasys.fr).
 
-![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9635-150x150.jpg)
-![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9658-150x150.jpg)
-![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9659-150x150.jpg)
-![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9664-150x150.jpg)
-![](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9673-150x150.jpg)
+![La salle du Barcamp avant l'arrivée des participants](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9635-150x150.jpg)
+![Un intervenant au micro devant les participants du Barcamp](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9658-150x150.jpg)
+![Participants debout pendant l'ouverture du Barcamp](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9659-150x150.jpg)
+![Participants en discussion autour d'une table pendant une session](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9664-150x150.jpg)
+![Participants attentifs pendant une session du Barcamp](/assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/imgp9673-150x150.jpg)

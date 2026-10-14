@@ -8,7 +8,7 @@ lang: fr
 
 Il est accessible par : [Maven The Definitive Guide](http://blogs.sonatype.com/people/book/2008/11/11/searching-the-maven-repository/).
 
-![](/assets/images/posts/2008-11-12-moteur-de-recherche-maven-par-sonatype/sonatype_nexus.jpeg)
+![Recherche de l'artefact quartz dans l'interface de Sonatype Nexus](/assets/images/posts/2008-11-12-moteur-de-recherche-maven-par-sonatype/sonatype_nexus.jpeg)
 
 La news vient du blog du livre [Maven The Definitive Guide](http://blogs.sonatype.com/people/book/2008/11/11/searching-the-maven-repository/).
 
