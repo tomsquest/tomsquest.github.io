@@ -1,5 +1,6 @@
 ---
 title: "JPA : les illusions sur les NamedQueries"
+description: "Les NamedQueries JPA sont-elles vraiment plus performantes et mieux validées ? Ce qu'il en reste une fois ces idées reçues écartées."
 lang: fr
 ---
 

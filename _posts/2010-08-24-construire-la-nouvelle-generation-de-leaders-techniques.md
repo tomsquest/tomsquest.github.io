@@ -1,5 +1,6 @@
 ---
 title: "Construire la nouvelle génération de leaders techniques"
+description: "Notes sur la session de Patrick Kua à l'USI 2010 : ce qu'est un leader technique, les mauvais leaders, et comment former les bons."
 lang: fr
 ---
 

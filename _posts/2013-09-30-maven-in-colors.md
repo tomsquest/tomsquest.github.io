@@ -1,5 +1,6 @@
 ---
 title: "Maven in colors"
+description: "Colorize Maven output (green for success, red for failures, yellow for warnings) with a sed shell function, a Java agent, or Rainbow."
 lang: en
 last_modified_at: 2014-01-21
 image: /assets/images/posts/2013-09-30-maven-in-colors/maven-logo.png

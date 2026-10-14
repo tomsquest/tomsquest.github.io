@@ -1,5 +1,6 @@
 ---
 title: Better autocompletes with Fuzzy Matching
+description: "Improve an autocomplete widget with fuzzy matching: a Sinatra backend using the Levenshtein distance to return close matches, and a jQuery UI frontend."
 lang: en
 ---
 

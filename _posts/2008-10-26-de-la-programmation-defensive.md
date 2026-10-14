@@ -1,5 +1,6 @@
 ---
 title: "De la programmation défensive"
+description: "La programmation défensive en Java : assertions, pré et post-conditions, pourquoi les laisser actives, et les bibliothèques FEST-Assert et Hamcrest."
 lang: fr
 ---
 

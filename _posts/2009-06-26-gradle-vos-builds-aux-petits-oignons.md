@@ -1,5 +1,6 @@
 ---
 title: "Gradle : vos builds aux petits oignons"
+description: "Gradle présenté par Hans Dockter chez Zenika : un DSL Groovy pour des builds flexibles, comparé à Maven. Ce que j'aime et ce que je n'aime pas."
 lang: fr
 image: /assets/images/posts/2009-06-26-gradle-vos-builds-aux-petits-oignons/gradle.jpg
 twitter:

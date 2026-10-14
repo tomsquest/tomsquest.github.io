@@ -1,5 +1,6 @@
 ---
 title: "Learning to touchtype using the Colemak layout"
+description: "How I learned to touch type on the Colemak layout in two months, with a blank Typematrix keyboard, Keyzen, Amphetype and deliberate practice."
 lang: en
 ---
 

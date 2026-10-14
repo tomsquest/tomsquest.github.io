@@ -1,5 +1,6 @@
 ---
 title: "My attempt at building a production-grade Docker image"
+description: "Building a production-grade Docker image for Radicale: a smaller Alpine base, Tini as init, and fixing volume permissions without running as root."
 lang: en
 image: /assets/images/posts/2016-10-17-production-docker-image/docker.png
 twitter:

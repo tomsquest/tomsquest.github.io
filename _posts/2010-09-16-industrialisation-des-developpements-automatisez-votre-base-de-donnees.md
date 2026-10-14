@@ -1,5 +1,6 @@
 ---
 title: "Industrialisation des développements : automatisez votre base de données"
+description: "Automatiser les migrations de schéma de base de données : principes, bonnes pratiques et outils (Liquibase, DbMaintain, MyBatis Migrations)."
 lang: fr
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Backup with Restic"
+description: "Rootless Restic backups on a Linux server: backup and prune scripts, systemd timers, Healthchecks.io monitoring and email reports."
 lang: en
 ---
 

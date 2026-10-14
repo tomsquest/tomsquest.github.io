@@ -1,5 +1,6 @@
 ---
 title: "Elasticsearch JS: retry on timeout"
+description: "Since version 8.14.0, the Elasticsearch JavaScript client no longer retries timed-out requests by default. Here is how to enable retries again."
 lang: en
 image: /assets/images/posts/2025-03-24-elasticsearch-js-retry-on-timeout/retryOnTimeout.png
 twitter:

@@ -1,5 +1,6 @@
 ---
 title: Script de sauvegarde WordPress et MySQL
+description: "Un script shell simple pour sauvegarder WordPress et sa base MySQL, avec les identifiants lus dans wp-config.php et un mail de confirmation."
 lang: fr
 ---
 

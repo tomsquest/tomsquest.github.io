@@ -1,5 +1,6 @@
 ---
 title: Notes sur Rework de 37signals
+description: "Mes notes sur Rework de 37signals : apprendre de ses succès, rester petit, se passer d'investisseurs, décider par petits pas, embaucher de bons rédacteurs."
 lang: fr
 image: /assets/images/posts/2010-08-29-notes-sur-rework-de-37signals/rework_cover.jpg
 twitter:

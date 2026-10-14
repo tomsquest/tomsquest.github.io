@@ -1,5 +1,6 @@
 ---
 title: 'Présentation du livre "The Mythical Man Month"'
+description: "Revue de The Mythical Man Month de Frederick Brooks : pourquoi le lire (ou pas), à qui le conseiller, et les chapitres clés résumés."
 lang: fr
 image: /assets/images/posts/2008-10-12-the-mythical-man-month/the_mythical_man_month_cover.jpg
 twitter:

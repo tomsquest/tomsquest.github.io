@@ -1,5 +1,6 @@
 ---
 title: Les limites de Wicket
+description: "Les limites de Wicket et leurs solutions : markup non prévisualisable, poids de la session, tests, URL, sécurité, outillage et intégration JavaScript."
 lang: fr
 image: /assets/images/posts/2009-05-03-les-limites-de-wicket/wicket_logo.jpg
 twitter:

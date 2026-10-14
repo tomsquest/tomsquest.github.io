@@ -1,5 +1,6 @@
 ---
 title: Retour du Barcamp "Travailleurs Du Web"
+description: "Retour du premier Barcamp Travailleurs Du Web : Web mobile, vie de freelance, auto-entrepreneur, SCOP et équilibre entre vie et travail."
 lang: fr
 image: /assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/tdw_camp.jpg
 twitter:

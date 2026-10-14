@@ -1,5 +1,6 @@
 ---
 title: "An introduction to Java Agent and bytecode manipulation"
+description: "An introduction to Java agents and bytecode manipulation with ASM and Javassist, with a real case: colorizing Maven's output from the outside."
 lang: en
 ---
 
