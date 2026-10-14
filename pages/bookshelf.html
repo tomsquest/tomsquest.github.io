@@ -52,23 +52,23 @@ class: bookshelf
 <h2>Books</h2>
 
 <h3>Filters</h3>
-<p class="filters">
+<p class="filters" role="group" aria-label="Filter by rating">
   Rating:
-  <a data-filter="rating" data-rating="5">★★★★★</a>
-  <a data-filter="rating" data-rating="4">★★★★☆</a>
-  <a data-filter="rating" data-rating="3">★★★☆☆</a>
-  <a data-filter="rating" data-rating="2">★★☆☆☆</a>
-  <a data-filter="rating" data-rating="1">★☆☆☆☆</a>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="5">★★★★★</button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="4">★★★★☆</button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="3">★★★☆☆</button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="2">★★☆☆☆</button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="1">★☆☆☆☆</button>
 </p>
-<p class="filters">
+<p class="filters" role="group" aria-label="Filter by type">
   Type:
-  <a data-filter="type" data-type="fiction">Fiction</a>
-  <a data-filter="type" data-type="non-fiction">Non-Fiction</a>
+  <button type="button" aria-pressed="false" data-filter="type" data-type="fiction">Fiction</button>
+  <button type="button" aria-pressed="false" data-filter="type" data-type="non-fiction">Non-Fiction</button>
 </p>
-<p class="filters">
+<p class="filters" role="group" aria-label="Filter by format">
   Format:
-  <a data-filter="format" data-format="print">Print</a>
-  <a data-filter="format" data-format="audiobook">Audiobook</a>
+  <button type="button" aria-pressed="false" data-filter="format" data-format="print">Print</button>
+  <button type="button" aria-pressed="false" data-filter="format" data-format="audiobook">Audiobook</button>
 </p>
 
 {%- for book in site.data.books -%}
