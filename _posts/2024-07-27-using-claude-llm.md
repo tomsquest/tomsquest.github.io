@@ -1,6 +1,7 @@
 ---
 title: "Delightful experience with Anthropic Claude LLM"
 description: "Converting my book list from text to JSON with Claude: prompt generation, variables and test cases in the Anthropic Workbench, and the output token limit."
+lang: en
 image: /assets/images/posts/2024-07-27-using-claude-llm/banner.png
 ---
 
