@@ -63,6 +63,11 @@ layout: base
 </article>
 
 <script>
+  // Code blocks scroll horizontally: make them focusable so keyboard users can scroll them
+  document.querySelectorAll("pre.highlight").forEach(pre => {
+    pre.tabIndex = 0
+  })
+
   document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(header => {
     if (!header.querySelector(".anchor-link")) {
       const anchor = document.createElement("a")
