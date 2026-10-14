@@ -16,7 +16,7 @@
   --b-link: #8900e1;
   --b-btn-bg: #242933;
   --b-btn-txt: #fff;
-  --b-focus: #d8dee9;
+  --b-focus: #8900e1; // same as links: 6.7:1 on white (was #d8dee9, 1.35:1)
   @import "highlight-manni";
 
   @media (prefers-color-scheme: dark) {
@@ -26,6 +26,7 @@
     --b-bg-3: #b948f3; // ajout perso
     --b-line: #3b4252;
     --b-link: #e0aaff;
+    --b-focus: #e0aaff;
     @import "highlight-monokai";
 
     .logo-img {
