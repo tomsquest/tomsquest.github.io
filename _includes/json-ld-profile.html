@@ -10,9 +10,14 @@
     "name": {{ site.author.name | jsonify }},
     "url": {{ page.url | absolute_url | jsonify }},
     "image": {{ site.author.picture | absolute_url | jsonify }},
-    "jobTitle": "Software developer",
+    "jobTitle": "AI Search Engineer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lille",
+      "addressCountry": "FR"
+    },
     "description": {{ page.description | jsonify }},
-    "knowsAbout": ["Java", "Elasticsearch", "MongoDB", "Machine Learning"],
+    "knowsAbout": ["Search engines", "Elasticsearch", "Learning to Rank", "Machine Learning", "Java", "MongoDB"],
     "sameAs": {{ site.social.links | jsonify }}
   }
 }
