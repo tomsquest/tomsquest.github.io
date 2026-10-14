@@ -1,0 +1,19 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ page.url | absolute_url }}#person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ page.url | absolute_url | jsonify }},
+    "image": {{ site.author.picture | absolute_url | jsonify }},
+    "jobTitle": "Software developer",
+    "description": {{ page.description | jsonify }},
+    "knowsAbout": ["Java", "Elasticsearch", "MongoDB", "Machine Learning"],
+    "sameAs": {{ site.social.links | jsonify }}
+  }
+}
+</script>
