@@ -25,9 +25,9 @@ text_file_delta xcompare    D:\Softs\WinMerge\WinMerge.exe
 
 Ce qui donne avant et après :
 
-![](/assets/images/posts/2008-12-30-clearcase-changer-le-comparateur-de-fichier/clearcase_compare_xml.jpg)
+![Comparaison d'un pom.xml avec l'outil XML Diff Merge de ClearCase](/assets/images/posts/2008-12-30-clearcase-changer-le-comparateur-de-fichier/clearcase_compare_xml.jpg)
 
-![](/assets/images/posts/2008-12-30-clearcase-changer-le-comparateur-de-fichier/winmerge_compare_xml.jpg)
+![Comparaison du même pom.xml avec WinMerge](/assets/images/posts/2008-12-30-clearcase-changer-le-comparateur-de-fichier/winmerge_compare_xml.jpg)
 
 Les autres formats de fichier comme le HTML et le XML peuvent être également modifiés.
 Il suffit de remplacer les lignes qui contiennent "xcompare".

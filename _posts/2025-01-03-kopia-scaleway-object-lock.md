@@ -118,7 +118,7 @@ So you will see a lot of `730d` in the commands (= 2 years).
 
 ## 1. Scaleway Configuration
 
-![overview.png](/assets/images/posts/2025-01-03-kopia-scaleway-object-lock/overview.png)
+![Scaleway setup: the AWS CLI and Kopia use an API key bound to an application in a project with a bucket](/assets/images/posts/2025-01-03-kopia-scaleway-object-lock/overview.png)
 
 ### 1.1 Initial Setup
 
@@ -491,7 +491,7 @@ Scaleway provides a page ["Amazon S3 and IAM permissions equivalence"](https://w
 
 Screenshot of the IAM Policy:
 
-![iam_policy.png](/assets/images/posts/2025-01-03-kopia-scaleway-object-lock/iam_policy.png)
+![Scaleway IAM policy limited to the project with the Object Storage permission sets](/assets/images/posts/2025-01-03-kopia-scaleway-object-lock/iam_policy.png)
 
 ### 4.2 Bucket Policy
 

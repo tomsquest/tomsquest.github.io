@@ -44,7 +44,7 @@ I started with a simple sentence (basically the idea in my head) and asked Claud
 
 Prompt: `Extract structured data from this list of books in french`
 
-![workbench_prompt_generation.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_prompt_generation.png)
+![Anthropic Workbench: generating a prompt from a short task description](/assets/images/posts/2024-07-27-using-claude-llm/workbench_prompt_generation.png)
 
 Claude generated a bigger and hopefully more precise prompt, with an example structure and some instructions for itself.
 
@@ -117,19 +117,19 @@ If you have sharp eyes, you may have noticed the special {% raw %}`{{ BOOKS_LIST
 
 This is a variable that you can fill in a separate panel in the workbench:
 
-![workbench_variables.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_variables.png)
+![Anthropic Workbench: the BOOK_LIST variable in the prompt and its value panel](/assets/images/posts/2024-07-27-using-claude-llm/workbench_variables.png)
 
 ### Evaluation
 
 You can evaluate your prompt directly in the workbench, providing **test cases**:
 
-![workbench_evaluate.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_evaluate.png)
+![Anthropic Workbench: evaluating the prompt on a test case with a French book](/assets/images/posts/2024-07-27-using-claude-llm/workbench_evaluate.png)
 
 ### The code
 
 Like Google Vertex AI, Claude directly gives you the code to execute in the API:
 
-![workbench_get_code.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_get_code.png)
+![Anthropic Workbench: Python code to call the Claude API with the prompt](/assets/images/posts/2024-07-27-using-claude-llm/workbench_get_code.png)
 
 ## What failed, lessons learned
 

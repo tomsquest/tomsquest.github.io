@@ -309,7 +309,7 @@ Simple + Efficient = Awesome!
 
 In my case, I defined two checks, one for backup and one for prune.
 
-![healthcheck-io.png](/assets/images/posts/2024-12-31-backup-restic-setup/healthcheck-io.png)
+![Healthchecks.io dashboard with the Backup and Prune backups checks](/assets/images/posts/2024-12-31-backup-restic-setup/healthcheck-io.png)
 
 ## Notify success and errors
 
@@ -395,7 +395,7 @@ Note:
 
 ### Success email sample 💚
 
-![email-success.png](/assets/images/posts/2024-12-31-backup-restic-setup/email-success.png)
+![Email report of a successful backup.service run with the Restic summary](/assets/images/posts/2024-12-31-backup-restic-setup/email-success.png)
 
 ## Conclusion
 

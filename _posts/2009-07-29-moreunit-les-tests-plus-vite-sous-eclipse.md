@@ -34,13 +34,13 @@ La configuration qui fonctionne pour un projet Maven et Junit est :
 - Test suffixes : Test
 - Enable flexible naming of tests : coché
 
-![](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_maven.jpg)
+![Préférences MoreUnit pour un projet Maven : répertoire src/test/java et suffixe Test](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_maven.jpg)
 
 Pour voir le marqueur sur les méthodes (caché par d'autres annotations Eclipse), il est intéressant d'activer le soulignement des méthodes ou :
 
 - Préférences &gt; Editors &gt; Text Editors &gt; Annotations &gt; MoreUnit Marker &gt; Cocher "Test as Squiggly line"
 
-![](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_annotations.jpg)
+![Préférences d'annotations Eclipse : MoreUnit Marker affiché en ligne ondulée](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_annotations.jpg)
 
 Il est possible de créer une nouvelle méthode de test en appuyant plusieurs fois sur ctrl+u depuis la méthode de test.
 

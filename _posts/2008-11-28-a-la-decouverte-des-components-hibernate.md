@@ -13,11 +13,11 @@ Plusieurs années avec Hibernate et j'apprends une de ses fonctionnalités de ba
 
 Prenons ces deux classes :
 
-![](/assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/diag_classes2.jpg)
+![Diagramme de classes : Person (lastname, firstname) liée à Address (street, city)](/assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/diag_classes2.jpg)
 
 Et mappons-les dans une même table :
 
-![](/assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/diag_db2.jpg)
+![Table t_person avec les colonnes id, lastname, firstname, street et city](/assets/images/posts/2008-11-28-a-la-decouverte-des-components-hibernate/diag_db2.jpg)
 
 Le mapping Hibernate devient :
 

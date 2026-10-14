@@ -43,7 +43,7 @@ For example, the `music` directory is shared between all devices, but `documents
 
 But it is just a matter of ticking a box and accepting the folder on the other side.
 
-![syncthing.png](/assets/images/posts/2024-12-30-syncthing-restic-backup-setup-2025/syncthing.png)
+![Syncthing syncing files between mobile, laptop, desktop, tablet and server](/assets/images/posts/2024-12-30-syncthing-restic-backup-setup-2025/syncthing.png)
 
 ## Restic (backup files)
 
@@ -67,7 +67,7 @@ You can back up your files to a variety of storage backends, a cloud provider or
 
 As for the provider, I went from [Backblaze](http://backblaze.com/) (aka "b2") to [Scaleway](https://www.scaleway.com), because my French bank charges fees on payments in dollars. It was a matter of using `restic sync` between the old and the new providers. I would recommend Scaleway if you pay in euros.
 
-![restic.png](/assets/images/posts/2024-12-30-syncthing-restic-backup-setup-2025/restic.png)
+![Restic backing up the server to Scaleway](/assets/images/posts/2024-12-30-syncthing-restic-backup-setup-2025/restic.png)
 
 ## Next Up: Ransomware-Proof backups
 
