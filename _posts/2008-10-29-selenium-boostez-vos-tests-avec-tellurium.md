@@ -1,5 +1,6 @@
 ---
 title: "Selenium : Boostez vos tests avec Tellurium"
+description: "Tellurium améliore l'écriture des tests Selenium : structure des pages décrite à part, DSL de test et tests pilotés par les données. Premier essai."
 lang: fr
 image: /assets/images/posts/2008-10-29-selenium-boostez-vos-tests-avec-tellurium/tellurium.png
 twitter:

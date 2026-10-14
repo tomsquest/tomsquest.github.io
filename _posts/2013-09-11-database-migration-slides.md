@@ -1,5 +1,6 @@
 ---
 title: "Slides of my presentation: DB Migration Automation"
+description: "My slides on why and how we automated our database migrations with Flyway, made for an internal presentation at work."
 lang: en
 ---
 

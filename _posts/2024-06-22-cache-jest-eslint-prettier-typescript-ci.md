@@ -1,5 +1,6 @@
 ---
 title: "Maximizing Efficiency: A Guide to Caching in Jest, Prettier, ESLint, and TypeScript"
+description: "Speed up your local workflow and your CI by caching Jest, ESLint, Prettier and TypeScript results in a .cache folder kept across builds."
 lang: en
 ---
 

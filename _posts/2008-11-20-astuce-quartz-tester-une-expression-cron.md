@@ -1,5 +1,6 @@
 ---
 title: "Astuce Quartz : tester une expression Cron"
+description: "Tester rapidement une expression Cron avec la classe CronExpression de Quartz, qui donne notamment la prochaine date de lancement."
 lang: fr
 image: /assets/images/posts/2008-11-20-astuce-quartz-tester-une-expression-cron/quartz_logo.jpg
 twitter:

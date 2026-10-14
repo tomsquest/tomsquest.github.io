@@ -1,5 +1,6 @@
 ---
 title: FitNesse technical setup
+description: "A FitNesse setup for a development team: a central server for functional people, local servers for developers, Wiki import, SVN backup and debugging."
 lang: en
 ---
 
