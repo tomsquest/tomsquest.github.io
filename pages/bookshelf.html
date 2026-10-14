@@ -35,11 +35,11 @@ class: bookshelf
 
 <h3>Rating System</h3>
 <ul style="list-style: none; padding: 0;">
-  <li>★★★★★: Outstanding</li>
-  <li>★★★★☆: Really enjoyed</li>
-  <li>★★★☆☆: Good, but not great</li>
-  <li>★★☆☆☆: I think I lost my time</li>
-  <li>★☆☆☆☆: do not touch that book, even with gloves</li>
+  <li><span aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5</span>: Outstanding</li>
+  <li><span aria-hidden="true">★★★★☆</span><span class="sr-only">4 out of 5</span>: Really enjoyed</li>
+  <li><span aria-hidden="true">★★★☆☆</span><span class="sr-only">3 out of 5</span>: Good, but not great</li>
+  <li><span aria-hidden="true">★★☆☆☆</span><span class="sr-only">2 out of 5</span>: I think I lost my time</li>
+  <li><span aria-hidden="true">★☆☆☆☆</span><span class="sr-only">1 out of 5</span>: do not touch that book, even with gloves</li>
 </ul>
 
 <h3>Organization</h3>
@@ -54,11 +54,11 @@ class: bookshelf
 <h3>Filters</h3>
 <p class="filters" role="group" aria-label="Filter by rating">
   Rating:
-  <button type="button" aria-pressed="false" data-filter="rating" data-rating="5">★★★★★</button>
-  <button type="button" aria-pressed="false" data-filter="rating" data-rating="4">★★★★☆</button>
-  <button type="button" aria-pressed="false" data-filter="rating" data-rating="3">★★★☆☆</button>
-  <button type="button" aria-pressed="false" data-filter="rating" data-rating="2">★★☆☆☆</button>
-  <button type="button" aria-pressed="false" data-filter="rating" data-rating="1">★☆☆☆☆</button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="5"><span aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5</span></button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="4"><span aria-hidden="true">★★★★☆</span><span class="sr-only">4 out of 5</span></button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="3"><span aria-hidden="true">★★★☆☆</span><span class="sr-only">3 out of 5</span></button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="2"><span aria-hidden="true">★★☆☆☆</span><span class="sr-only">2 out of 5</span></button>
+  <button type="button" aria-pressed="false" data-filter="rating" data-rating="1"><span aria-hidden="true">★☆☆☆☆</span><span class="sr-only">1 out of 5</span></button>
 </p>
 <p class="filters" role="group" aria-label="Filter by type">
   Type:
@@ -114,6 +114,7 @@ class: bookshelf
 
           {%- if book.rating -%}
             Rating:
+            <span aria-hidden="true">
             {% for i in (1..5) %}
               {% if i <= book.rating %}
               ★
@@ -121,6 +122,8 @@ class: bookshelf
               ☆
               {% endif %}
             {% endfor %}
+            </span>
+            <span class="sr-only">{{ book.rating }} out of 5</span>
             <br>
           {%- endif -%}
 
