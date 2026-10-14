@@ -9,7 +9,13 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <script async data-goatcounter="https://tomsquest.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
   {%- feed_meta -%}
+  {%- if page.json_ld -%}
+  {%- capture seo_tag -%}{%- seo -%}{%- endcapture -%}
+  {{ seo_tag | split: '<script type="application/ld+json">' | first }}
+  {%- include {{ page.json_ld }} -%}
+  {%- else -%}
   {%- seo -%}
+  {%- endif -%}
 </head>
 <body>
 
