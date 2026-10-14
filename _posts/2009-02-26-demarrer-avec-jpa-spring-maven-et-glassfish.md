@@ -15,9 +15,9 @@ Le projet contient deux configurations de JPA : l'une pour le déploiement, util
 Les PersistentUnits sont configurés par :
 
 - le fichier "persistence.xml" pour Glassfish, l'attribut transaction-type doit valoir "JTA", sinon Glassfish refuse de démarrer ;
-- le fichier "orm.xml" pour les tests. L'Attribut transaction-type vaut "RESOURCE_LOCAL"
+- le fichier "orm.xml" pour les tests. L'attribut transaction-type vaut "RESOURCE_LOCAL".
 
-Spring est, lui aussi, configuré en deux fois (déploiement et test). Grâce aux classpath de Maven, le bon fichier est sélectionné.
+Spring est, lui aussi, configuré en deux fois (déploiement et test). Grâce aux classpaths de Maven, le bon fichier est sélectionné.
 
 ![](/assets/images/posts/2009-02-26-demarrer-avec-jpa-spring-maven-et-glassfish/screenshot_05.jpeg)
 
@@ -76,15 +76,15 @@ WARNING: Error in annotation processing: java.lang.NoClassDefFoundError: javax/i
 Les dépendances dans le pom.xml ont été limitées au maximum. Pour démarrer, il faut :
 
 - Spring et Spring-test pour les tests d'intégration JPA ;
-- Hibernate entity manager, c'est l'implémentation JPA utilisé pour les tests d'intégration. Elle fournit aussi un lien vers le package javax.persistence ;
-- J'ai ajouté Spring-MVC pour monter une stack complète avec un Controleur Web annoté.
+- Hibernate entity manager, c'est l'implémentation JPA utilisée pour les tests d'intégration. Elle fournit aussi un lien vers le package javax.persistence ;
+- J'ai ajouté Spring-MVC pour monter une stack complète avec un Contrôleur Web annoté.
 
 ## Améliorations
 
-Le "petites" choses à faire :
+Les "petites" choses à faire :
 
 - Utiliser la même implémentation JPA que le serveur (EclipseLink avec Glassfish) pour les tests d'intégration (Hibernate) pour éviter d'éventuels écarts de comportement ;
-- Configurer les transactions de manières déclaratives en utilisant Spring-AOP plutôt que des @Transactional un peu partout ;
+- Configurer les transactions de manière déclarative en utilisant Spring-AOP plutôt que des @Transactional un peu partout ;
 - Séparer les tests d'intégration des tests unitaires comme conseillé dans Better Builds With Maven ;
 - Utiliser DBUnit pour réinitialiser la base de données au démarrage des tests, ou passer à Unitils pour faire tout ça et encore plus.
 

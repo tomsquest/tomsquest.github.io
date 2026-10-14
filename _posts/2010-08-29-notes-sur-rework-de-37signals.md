@@ -6,11 +6,11 @@ twitter:
   card: summary
 ---
 
-Mes notes sur le deuxième livre de la société 37signals, [Rework](http://37signals.com/rework/). Il fait suite à Getting Real. J'ai avalé rapidement le livre, car les idées sont tranchantes, inspirantes et quelques fois révoltantes. Mais le but est là : réaliser qu'il y a d'autres façons de faire du business. de concevoir son entreprise et de travailler.
+Mes notes sur le deuxième livre de la société 37signals, [Rework](http://37signals.com/rework/). Il fait suite à Getting Real. J'ai avalé rapidement le livre, car les idées sont tranchantes, inspirantes et quelques fois révoltantes. Mais le but est là : réaliser qu'il y a d'autres façons de faire du business, de concevoir son entreprise et de travailler.
 
 Oui, il est possible de concevoir des applications avec moins de fonctionnalités que la concurrence. Non, l'argent des investisseurs n'est pas toujours bon à prendre.
 
-Le livre est composé d'un ensemble de courts chapitres et décrit les recettes qu’applique 37Signals pour ces produits et sa façon d’être en tant que business.
+Le livre est composé d'un ensemble de courts chapitres et décrit les recettes qu’applique 37Signals pour ses produits et sa façon d’être en tant que business.
 
 ## Learning from mistakes is overrated
 
@@ -20,19 +20,19 @@ Voir [l'article de Leslie Berlin "Try, try again, or maybe not"](http://www.nyti
 
 ## Why Grow?
 
-Une entreprise avec beaucoup d’employé n’est pas forcément saine. Avec la taille viennent de nouveaux problèmes et une plus grande complexité. Chacun doit trouver la bonne taille pour son business en commençant petit et en voyant comment il grandit.
+Une entreprise avec beaucoup d’employés n’est pas forcément saine. Avec la taille viennent de nouveaux problèmes et une plus grande complexité. Chacun doit trouver la bonne taille pour son business en commençant petit et en voyant comment il grandit.
 
 ## Start making something
 
-Une idée ne vaut rien tant que vous n'en avez rien fait. La vraie question est de quelle bonne façon, on la réalise.
+Une idée ne vaut rien tant que vous n'en avez rien fait. La vraie question est : comment bien la réaliser ?
 
 ## No time is no excuse
 
-Il est toujours possible de prendre quelques heures dans son planning pour travailler sur nos projets. Pas de temps, n'est pas une excuse !
+Il est toujours possible de prendre quelques heures dans son planning pour travailler sur nos projets. Ne pas avoir de temps n'est pas une excuse !
 
 ## Outside Money is plan Z
 
-Prendre l’argent d’investisseurs peut ne pas en valoir le coût, car :
+Prendre l’argent d’investisseurs peut ne pas en valoir le coup, car :
 
 - il fait perdre une partie du contrôle : devoir prendre en compte les ordres d'autres personnes par exemple ;
 - il occasionne une baisse de qualité au détriment du retour sur investissement rapide ;
@@ -47,11 +47,11 @@ Le mot Startup signifie être dispendieux, ne pas affronter les réalités du ma
 
 ## Embrace constraint
 
-Moins (de temps, d'argent, de personne, d'expérience) est une vraie bonne chose. Cela force à être créatif et à éviter le gâchis.
+Moins (de temps, d'argent, de personnes, d'expérience) est une vraie bonne chose. Cela force à être créatif et à éviter le gâchis.
 
 ## Illusions of agreement
 
-Essayer de supprimer les niveaux d'abstractions (docs, plans, rapports). Chacun peut imaginer une chose différente de chaque niveau. Seul le résultat (le produit) met tout le monde d'accord.
+Essayer de supprimer les niveaux d'abstraction (docs, plans, rapports). Chacun peut imaginer une chose différente de chaque niveau. Seul le résultat (le produit) met tout le monde d'accord.
 
 ## Reasons to quit
 
@@ -60,7 +60,7 @@ Questions à se poser pour s'assurer que l'on travaille sur des choses qui impor
 - Pourquoi faites-vous cela ? À qui cela bénéficie, quelle est la motivation...
 - Quel problème résolvez-vous ?
 - Est-ce utile finalement ? Faire quelque chose ou quelque chose d'utile ?
-- Ajoutez vous de la valeur ?
+- Ajoutez-vous de la valeur ?
 - Est-ce que cela changera quelque chose ?
 - Que pourriez-vous faire à la place ? Priorité…
 
@@ -68,7 +68,7 @@ Ne pas hésiter à abandonner ce que l'on est en train de faire. Des fois, c'est
 
 ## Make tiny decisions
 
-Mieux vaut faire un ensemble de petites décisions qu'une grosse décision. Grosse décision égale de grosses erreurs. Cela n'est pas vrai pour de petites décisions qui seront réparables. Cela n'empêche pas d'avoir de grosses idées et de grands plans, juste que la meilleure façon de les réaliser, c'est par petite décision.
+Mieux vaut faire un ensemble de petites décisions qu'une grosse décision. Grosse décision égale de grosses erreurs. Cela n'est pas vrai pour de petites décisions qui seront réparables. Cela n'empêche pas d'avoir de grosses idées et de grands plans, juste que la meilleure façon de les réaliser, c'est par petites décisions.
 
 Les meilleurs buts sont ceux que l'on peut atteindre, puisqu'une fois réalisés, on peut construire dessus.
 
@@ -78,7 +78,7 @@ Pour battre un compétiteur, pas besoin de faire plus. Viser à moins faire que 
 
 ## Emulate Chefs
 
-Apprendre aux autres ce que l'on connait de son business, ne veut pas dire que les autres pourront nous copier plus facilement (image des chefs cuistot qui donnent leur recette).
+Apprendre aux autres ce que l'on connaît de son business ne veut pas dire que les autres pourront nous copier plus facilement (image des chefs cuistots qui donnent leurs recettes).
 
 ## Drug dealers get it right
 
@@ -86,11 +86,11 @@ Pouvoir faire essayer un produit (une dose) car s’il est bon les clients revie
 
 ## Résumés are ridiculous
 
-Un CV est toujours exagéré, mais aussi toujours vague. Embauchez sur la base du CV est dangereux. Une lettre de motivation est déjà mieux, car il n'est pas possible que le candidat ait envoyé une lettre personnalisée à 100 entreprises.
+Un CV est toujours exagéré, mais aussi toujours vague. Embaucher sur la base du CV est dangereux. Une lettre de motivation est déjà mieux, car il n'est pas possible que le candidat ait envoyé une lettre personnalisée à 100 entreprises.
 
 ## Years of irrelevance
 
-Les années d'expérience ne veulent pas dire grand-chose. Connaitre combien de temps une personne a fait une chose ne vaut pas savoir avec quelle qualité et comment elle l'a fait.
+Les années d'expérience ne veulent pas dire grand-chose. Connaître combien de temps une personne a fait une chose ne vaut pas savoir avec quelle qualité et comment elle l'a fait.
 
 ## Hire great writers
 
@@ -98,9 +98,9 @@ Le talent pour l'écriture est un critère de choix entre candidats. Savoir bien
 
 ## Take a deep breath
 
-Les gens sont des créatures ave des habitudes, c'est pour cela que le changement est souvent vu comme négatif. Une réaction négative est presque toujours plus forte et plus passionnée qu'une réaction positive.
+Les gens sont des créatures avec des habitudes, c'est pour cela que le changement est souvent vu comme négatif. Une réaction négative est presque toujours plus forte et plus passionnée qu'une réaction positive.
 
-Quand on réalise en changement, il y aura toujours de mécontents. Il faut les écouter, attendre un peu, montrer que l'on est conscient du problème. Souvent les gens s'adapteront.
+Quand on réalise un changement, il y aura toujours des mécontents. Il faut les écouter, attendre un peu, montrer que l'on est conscient du problème. Souvent les gens s'adapteront.
 
 ## Decisions are temporary
 

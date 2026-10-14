@@ -4,10 +4,10 @@ lang: en
 last_modified_at: 2025-01-04
 ---
 
-With backups, the ultimate goal is to protect against **ransomware** attacks and for someone, even you, to prevent any deletion.  
+With backups, the ultimate goal is to protect against **ransomware** attacks and to prevent anyone, even you, from deleting anything.  
 This guide demonstrates how to set up secure backups with Object Lock. We will use [Kopia](https://kopia.io) as the backup tool and [Scaleway](https://www.scaleway.com) as the cloud provider.
 
-**Updated**: add precision about Scaleway IAM and Bucket policies
+**Updated**: added details about Scaleway IAM and Bucket policies
 
 ## What we will achieve
 
@@ -16,13 +16,13 @@ At the end of this guide, you will have:
 - A [Scaleway](https://www.scaleway.com) bucket whose content cannot be deleted until a set period
 - [Kopia](https://kopia.io) configured to use this bucket and leverage Object Lock
 
-The base of this guide is the [Kopia Ransomware Protection page](https://kopia.io/docs/advanced/ransomware-protection/), adapted to Scaleway. This page is quite good to explain the risks and steps to protect against ransomware.
+The base of this guide is the [Kopia Ransomware Protection page](https://kopia.io/docs/advanced/ransomware-protection/), adapted to Scaleway. This page is quite good at explaining the risks and steps to protect against ransomware.
 
 Estimated time: 1 hour
 
 ## Ransomware protection and deletion prevention
 
-A hacker can gain access to your backup and drop them.  
+A hacker can gain access to your backups and drop them.  
 The goal is to prevent this from happening.
 
 We will use `Object Lock` and `Compliance` to prevent deletion of the backups.
@@ -55,7 +55,7 @@ As always, make scenarios and test your backups.
 
 ## Why Kopia?
 
-[Kopia](https://kopia.io) is a modern backup tool that supports Object Lock, making it an ideal choice for creating secure, ransomware-resistant backup.
+[Kopia](https://kopia.io) is a modern backup tool that supports Object Lock, making it an ideal choice for creating secure, ransomware-resistant backups.
 
 Kopia also provides:
 
@@ -64,7 +64,7 @@ Kopia also provides:
 - notifications (e.g. summary email of snapshots, push...)
 - actions before/after snapshots
 
-### Why not keeping with Restic?
+### Why not stick with Restic?
 
 In the past, I have been using [Restic](https://restic.net/), but it lacks support for Object Lock. Technically, I would say that Restic is a really safe choice, with carefully designed features, where Kopia has more bells and whistles, but seems to be less actively maintained, with a smaller community.
 
@@ -76,7 +76,7 @@ In the past, I have been using [Restic](https://restic.net/), but it lacks suppo
 - Cheap
 - Billing in euros
 
-[Backblaze](https://www.backblaze.com/) B2 is also a good choice, but billing is in dollar.
+[Backblaze](https://www.backblaze.com/) B2 is also a good choice, but billing is in dollars.
 
 ## Scaleway IAM policy and Bucket policy
 
@@ -84,15 +84,15 @@ On Scaleway, you have two levels of security:
 - IAM Policy: restricts what a "Principal" can do
 - Bucket Policy: restricts what can be done inside the bucket (which fine-grained permissions are allowed: `s3:PutObject`, `s3:GetObject`...)
 
-I am pretty sure that if the IAM Policy described below is enough because we do not allow any write or delete operations on buckets themselves, but only on their content. Still, I included both policies.
+I am pretty sure that the IAM Policy described below is enough because we do not allow any write or delete operations on buckets themselves, but only on their content. Still, I included both policies.
 
-**Note**: Scaleway use the IAM Policy first. Then, if the policy grants the permission, the Bucket Policy will be checked if it exists. That means that the Bucket Policy is optional.
+**Note**: Scaleway uses the IAM Policy first. Then, if the policy grants the permission, the Bucket Policy will be checked if it exists. That means that the Bucket Policy is optional.
 
 ## Prerequisites
 
 - A Scaleway account
     - Scaleway will be used for Object Storage, storing the blobs of the backup
-    - You can test Scaleway Object Storage with the 750 go offered for free
+    - You can test Scaleway Object Storage with the 750 GB offered for free
 - AWS CLI installed (`brew install awscli`)
     - Needed to enable object lock on the bucket, as Scaleway does not (yet) provide a way to do it directly in the UI
 - Kopia backup software
@@ -100,9 +100,9 @@ I am pretty sure that if the IAM Policy described below is enough because we do 
 
 ## Retention period
 
-I personally keep my backup for **2 years**. Adapt the duration for your needs.
+I personally keep my backups for **2 years**. Adapt the duration for your needs.
 
-So you will see alot of `730d` in the commands (= 2 years).
+So you will see a lot of `730d` in the commands (= 2 years).
 
 ## Global overview
 
@@ -132,7 +132,7 @@ I initially did screenshots of all steps, but by following the steps, you should
     - Go to `IAM > Applications` and create a new one
 3. Generate an API key for the application
     - The `API key` is used to authenticate the application
-    - Set the `prefered project` to the project you created. This is mandatory as the Aws CLI has no notion of "projects," so we need a default one.
+    - Set the `preferred project` to the project you created. This is mandatory as the AWS CLI has no notion of "projects," so we need a default one.
     - Keep the `SCW_ACCESS_KEY` and `SCW_SECRET_KEY` for later
 4. Create an IAM Policy with `AllProductsFullAccess` permission initially attached to this application (the "Principal")
     - This broader access is **temporarily** needed to create and configure the bucket. We'll restrict the permissions after setup is complete
@@ -141,7 +141,7 @@ So far, we have an API Key allowed to do anything in the project.
 
 ### 1.2 Configure AWS CLI for Scaleway
 
-**Gooal**: create a bucket with object lock and compliance mode.
+**Goal**: create a bucket with object lock and compliance mode.
 
 **Note**: Scaleway does not provide a way to enable Object Lock directly in the UI, this is on the roadmap for 2025. So, we will use the AWS CLI to configure it.
 
@@ -251,7 +251,7 @@ kopia maintenance set --owner=me
 
 ### 2.3 Configure Kopia
 
-**Note**: Kopia used "policies" to configure itself. Those are stored in the repository.
+**Note**: Kopia uses "policies" to configure itself. Those are stored in the repository.
 
 **Note**: Maybe more convenient, the global policy can be exported, modified and re-imported:
 
@@ -315,7 +315,7 @@ useradd --system --create-home --shell /sbin/nologin kopia
 
 ### 3.2 Install and Configure Kopia Binary
 
-**Note**: the version of Kopia, adapt to the latest version.
+**Note**: adapt the version of Kopia to the latest one.
 
 Download and set up the Kopia binary with appropriate permissions:
 
@@ -336,7 +336,7 @@ setcap cap_dac_read_search=+ep kopia
 
 ### 3.3 Systemd service and timer
 
-**Note**: The snippets below are not the one I used. Mine are more complex and are adapted from my article [Backup with Restic](https://www.tomsquest.com/blog/2024/12/backup-restic-setup/#backup)
+**Note**: The snippets below are not the ones I used. Mine are more complex and are adapted from my article [Backup with Restic](https://www.tomsquest.com/blog/2024/12/backup-restic-setup/#backup)
 
 In `/etc/systemd/system/kopia-backup.service`:
 
@@ -460,7 +460,7 @@ function main {
 
 ### Recap
 
-- Backups are not automated with simple service and timer
+- Backups are now automated with a simple service and timer
 - A more powerful script is provided
 - We still need to secure the bucket and restrict the permissions
 
@@ -496,7 +496,7 @@ Screenshot of the IAM Policy:
 
 **Goal**: inside the bucket, restrict the permissions to only what is needed.
 
-**Note**: Scaleway has a convenient policy editor, but it lacks the `s3:PutObjectRetention` action, so we will need the JSON editor. A way to work around this is to create the policy in the editor, then switch to JSON mode to add the missing action. See the full [list of supported action](https://www.scaleway.com/en/docs/storage/object/api-cli/bucket-policy/#action).
+**Note**: Scaleway has a convenient policy editor, but it lacks the `s3:PutObjectRetention` action, so we will need the JSON editor. A way to work around this is to create the policy in the editor, then switch to JSON mode to add the missing action. See the full [list of supported actions](https://www.scaleway.com/en/docs/storage/object/api-cli/bucket-policy/#action).
 
 **Note**: Kopia needs the `s3:DeleteObject` action to be able to set deletion markers. This is not a real deletion, as the object lock is enabled.
 
@@ -595,7 +595,7 @@ kopia snapshot restore --snapshot-time="latest" /my-backup-dir /destination
 
 ### 5.2 Restore specific Point in Time
 
-In this scenario, something has deleted snapshots or ransomware, and we want to get back in time before the deletion.
+In this scenario, something (or ransomware) has deleted snapshots, and we want to go back in time before the deletion.
 
 We need to connect to the repository at a specific point in time using the `--point-in-time` option.
 

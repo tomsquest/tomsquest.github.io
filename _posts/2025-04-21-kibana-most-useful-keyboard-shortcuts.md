@@ -11,7 +11,7 @@ My most used keyboard shortcuts for Kibana. Yes, Kibana has keyboard shortcuts! 
 ## TL;DR
 
 - ⌨️ Ctrl/Cmd + Enter → Execute current request
-- ⌨️ Ctrl/Cmd + ↑ (and ↓) → Go the previous (or next) request
+- ⌨️ Ctrl/Cmd + ↑ (and ↓) → Go to the previous (or next) request
 - ⌨️ Ctrl/Cmd + I → Auto-indent current request
 - ⌨️ Ctrl/Cmd + / → Open relevant documentation
 
@@ -43,7 +43,7 @@ Note: This doesn't fix malformed JSON, but that's a feature opportunity for AI i
 
 This shortcut quickly opens documentation relevant to your query. 
 
-While helpful, it has limitations because it currently opens general documentation for the query type (`_search`) rather than specific type (`match_phrase`).
+While helpful, it has limitations because it currently opens general documentation for the query type (`_search`) rather than the specific type (`match_phrase`).
 
 ⌨️ **Control/Cmd + / (slash)** → Open documentation
 

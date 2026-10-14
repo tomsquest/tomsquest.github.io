@@ -35,7 +35,7 @@ In fact, replication can slow down writes, as Elasticsearch has to wait for repl
 ## Production Best Practices
 
 ✅ Our recommendations:
-- Maintain 2 replicas of each index (3 copies total) across at least 3 nodes (always minimum of 3 nodes in production)
+- Maintain 2 replicas of each index (3 copies total) across at least 3 nodes (always a minimum of 3 nodes in production)
 - Follow Elastic's guidelines: shard size between 10-50GB and <200M docs
 - Don't over-shard small indices (unnecessary overhead)
 

@@ -23,7 +23,7 @@ Object:
 - Relationships between fields in the same object are lost
 
 Nested:
-- Store each nested object as a separate hidden document
+- Stores each nested object as a separate hidden document
 - Preserves relationships between fields
 - Requires special query syntax (`nested` query)
 
@@ -46,7 +46,7 @@ PUT my_index
 }
 ```
 
-This enables to query for specific combinations of `code` and `value` within the same object.
+This makes it possible to query for specific combinations of `code` and `value` within the same object.
 
 For example, we want all documents with an attribute of `code: color` and `value: red`.  
 This is not possible with `object` type, as it flattens the structure.

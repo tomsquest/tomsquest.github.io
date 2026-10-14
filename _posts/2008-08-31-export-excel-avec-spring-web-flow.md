@@ -24,11 +24,11 @@ Comment générer un fichier Excel depuis une Action Spring Web Flow ?
 </view-state>
 ```
 
-Il est important de remarquer que le view-state `V_export` n'a pas de propriété `view`. En effet, il suffit d'ignorer cette valeur car c'est le fichier Excel qui correspond à la vue.
+Il est important de remarquer que le view-state `exportView` n'a pas de propriété `view`. En effet, il suffit d'ignorer cette valeur car c'est le fichier Excel qui correspond à la vue.
 
 ### 2 - Action d'export
 
-La création du fichier Excel peut être réalisé par différentes méthodes. Une des plus simples est d'utiliser [POI](http://poi.apache.org/) pour le faire.
+La création du fichier Excel peut être réalisée par différentes méthodes. Une des plus simples est d'utiliser [POI](http://poi.apache.org/) pour le faire.
 
 Ci-dessous la méthode `export` de la classe `ExportAction` :
 
@@ -53,7 +53,7 @@ La méthode `buildExcelDocument()` se charge de créer le fichier Excel et utili
 
 Deux choses à remarquer :
 
-- Le nom du fichier est donnée dans le header "Content-Disposition" ;
+- Le nom du fichier est donné dans le header "Content-Disposition" ;
 - Le charset CP1252 est utilisé pour forcer Excel à lire correctement les caractères spéciaux comme les accents.
 
 ### 3 - Intégration à une vue existante
@@ -68,7 +68,7 @@ Exemple d'intégration à une vue existante :
 
 ## Conclusion
 
-Nous avons vu comment exporter un fichier Excel à partir d'une vue classique Spring Web Flow. La méthode est exactement la même pour un export PDF ou de toute autre type.
+Nous avons vu comment exporter un fichier Excel à partir d'une vue classique Spring Web Flow. La méthode est exactement la même pour un export PDF ou de tout autre type.
 
 ### Classe WebFlowUtils
 

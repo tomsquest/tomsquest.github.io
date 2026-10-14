@@ -28,12 +28,12 @@ Les outils existants reposent sur les principes suivants :
 
 Sur le plan technique, le fonctionnement des outils de migration est simple. Ils se basent sur une table contenant la version de la base de données. La liste des scripts exécutés est conservée ainsi qu’une empreinte de chaque script afin de détecter une altération d’un script déjà exécuté.
 
-A chaque lancement, l’outil de migration compare la version de la base et les scripts existants et propose la mise à jour le cas échéant.
+À chaque lancement, l’outil de migration compare la version de la base et les scripts existants et propose la mise à jour le cas échéant.
 
 Il est également possible de "descendre de version" le schéma (fonctionnalité disponible dans quasiment tous les outils). Il s’agit de remettre la base de données dans un état cohérent. Deux cas d’usage :
 
 - développement d’une nouvelle fonctionnalité : il est ainsi possible de créer un script et de l’exécuter plusieurs fois (montée de version, test, modification, descente, puis nouvelle montée de version). La descente de version permet ainsi de faire revenir la base de données dans l’état précédent ;
-- Ré-alignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.
+- Réalignement automatique du schéma avec le code quand la version de la base de données n’est plus la bonne. Ce cas intervient quand il faut corriger un bug sur la version de production ou au passage à une autre branche de développement, ou encore quand un script a été exécuté puis modifié.
 
 Même si la descente de version est utile, elle a néanmoins deux inconvénients. Le premier est que les instructions de descente doivent être écrites à la main. Les outils les plus simples fonctionnent sur le principe où chaque script contient une partie montée de version et une partie descente (voir l’exemple plus bas avec MyBatis). Seul Liquibase est capable de générer les instructions de descente de version grâce à son DSL.
 
@@ -53,17 +53,17 @@ Les bonnes pratiques poussées par ces outils sont :
 
 ### Liquibase : puissant mais complexe
 
-[Liquibase](http://liquibase.org/) est le plus connu des outils de migration de base de données. Il se base sur les patterns décrits dans le livre "Refactoring database". À ce titre, il est conçu autour d’une approche théorique par pattern de refactoring.
+[Liquibase](http://liquibase.org/) est le plus connu des outils de migration de base de données. Il se base sur les patterns décrits dans le livre "Refactoring Databases". À ce titre, il est conçu autour d’une approche théorique par pattern de refactoring.
 
 Le noyau de Liquibase est son DSL basé sur XML qui a les avantages :
 
 - d’être compatible avec plusieurs moteurs SQL ;
 - de donner une sémantique aux opérations (on écrira un &lt;renameColumn&gt; plutôt qu’un alter table) ;
-- de générer automatique des instructions de rollback (par exemple, un &lt;createColumn&gt; sera compensé par un &lt;dropColumn&gt;).
+- de générer automatiquement des instructions de rollback (par exemple, un &lt;createColumn&gt; sera compensé par un &lt;dropColumn&gt;).
 
 Liquibase est complet. Il s’intègre à Maven, Grails, Spring et Hibernate et supporte la génération de documentation ou encore la création d’un diff entre schémas.
 
-L’inconvénient principal de Liquibase est une certaine complexité qui ne se retrouve pas dans les autres outils (XML, notion de changelog et de changeset, versionning sur id/auteur/chemin). La courbe d'apprentissage est donc plus élevée que les autres outils se basant purement sur du SQL.
+L’inconvénient principal de Liquibase est une certaine complexité qui ne se retrouve pas dans les autres outils (XML, notion de changelog et de changeset, versioning sur id/auteur/chemin). La courbe d'apprentissage est donc plus élevée que celle des autres outils se basant purement sur du SQL.
 
 Exemple de changeSet Liquibase :
 
@@ -82,7 +82,7 @@ Exemple de changeSet Liquibase :
 
 D’autres outils ne vont pas aussi loin que Liquibase en termes de fonctionnalités et d'abstraction, mais leur approche est pragmatique et plus simple. Ils visent avant tout à automatiser la gestion des scripts SQL. Les principaux sont [MyBatis Schema Migration](http://www.mybatis.org/java.html), [DbMaintain](http://dbmaintain.sourceforge.net/) et [C5 DB Migration](http://code.google.com/p/c5-db-migration/).
 
-Le principe de ces outils est assez simple et consiste à lancer une série de scripts stockés dans une arborescence répartie en version. Les actions sont tracées ce qui permet de connaître l’état du schéma.
+Le principe de ces outils est assez simple et consiste à lancer une série de scripts stockés dans une arborescence répartie par version. Les actions sont tracées ce qui permet de connaître l’état du schéma.
 
 Exemple d’arborescence organisée pour DbMaintain :
 
@@ -117,7 +117,7 @@ Les outils de migration de base de données permettent une meilleure productivit
 Les points clés à retenir sont :
 
 - Les outils de migration de bases de données nous permettent de gagner en efficacité lors de la manipulation du schéma de la base de données ;
-- Ces outils fiabilisent les traitements en les automatisant et en les intégrants à l’usine de développement ;
+- Ces outils fiabilisent les traitements en les automatisant et en les intégrant à l’usine de développement ;
 - Ces outils apportent de bonnes pratiques permettant un travail en équipe plus efficace ;
 - Ces outils sont disponibles, simples à mettre en place et OpenSource.
 

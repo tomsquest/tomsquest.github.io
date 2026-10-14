@@ -40,11 +40,11 @@ GreenPepper se contente donc de rendre les pages du Wiki Confluence testables en
 
 ## Qualités de GreenPepper
 
-GreenPepper, c'est avant tout Confluence. Ce dernier apporte une plateforme puissante permettant à tous les acteurs de communiquer autour du logiciel. C'est un wiki donc il apporte des notions de collaboration, de versionning et de partage.
+GreenPepper, c'est avant tout Confluence. Ce dernier apporte une plateforme puissante permettant à tous les acteurs de communiquer autour du logiciel. C'est un wiki donc il apporte des notions de collaboration, de versioning et de partage.
 
 GreenPepper s'intègre également avec Jira, un autre produit Atlassian permettant de faire du bug tracking. On peut donc imaginer avoir un rapport de bug lié à une page de spécification qui contient le test permettant de reproduire le bug.
 
-L'écriture des fixtures peut se faire en Java et en .Net. Une fixture est une simple classe et GreenPepper ne pose aucune contrainte à ce niveau. Le produit propose aussi de créer un SUD (System Under Developement) permettant de réaliser des actions quand une fixture est instanciée/libérée (sorte de "setUp/tearDown"), d'enregistrer des convertisseurs (par exemple, convertir un numéro de client en Client) et d'importer des packages de fixture par défaut. Dans notre SUD actuel, nous démarrons également le contexte Spring afin d'injecter les beans dans les fixtures.
+L'écriture des fixtures peut se faire en Java et en .Net. Une fixture est une simple classe et GreenPepper ne pose aucune contrainte à ce niveau. Le produit propose aussi de créer un SUD (System Under Development) permettant de réaliser des actions quand une fixture est instanciée/libérée (sorte de "setUp/tearDown"), d'enregistrer des convertisseurs (par exemple, convertir un numéro de client en Client) et d'importer des packages de fixture par défaut. Dans notre SUD actuel, nous démarrons également le contexte Spring afin d'injecter les beans dans les fixtures.
 
 ## Problèmes rencontrés
 
@@ -54,7 +54,7 @@ Nous avons rencontré plusieurs problèmes avec GreenPepper. Nous étions très 
 
 Le plus gros point noir du produit est sa documentation. Elle forme un patchwork difficile à ingérer. On trouve des exemples, mais pas toujours le code associé. Certaines fixtures sont détaillées, mais je n'ai pas trouvé les exemples simples ni percutants.
 
-La courbe d'apprentissage n'est donc pas basse. C'est laborieux. La documentation est difficilement compréhensible à la première lecture, voir à la deuxième. Après quelques jours, je commence enfin à en comprendre certaines sections.
+La courbe d'apprentissage n'est donc pas basse. C'est laborieux. La documentation est difficilement compréhensible à la première lecture, voire à la deuxième. Après quelques jours, je commence enfin à en comprendre certaines sections.
 
 Un exemple vécu lors de l'installation : le "step by step" est simple à suivre, mais rien ne fonctionnait à la fin. Nous avons dû désinstaller le plugin GreenPepper et le réinstaller différemment de ce qui est précisé dans la documentation. Pour cela, il a fallu chercher dans les forums afin de voir qu'il était conseillé d'installer le plugin directement dans WEB-INF/lib (plutôt que par l'installateur Confluence comme indiqué dans la doc).
 
@@ -62,17 +62,17 @@ Un exemple vécu lors de l'installation : le "step by step" est simple à suivre
 
 Le plugin permet de rapatrier les pages de tests et de les exécuter localement. Il offre la possibilité de générer le squelette des fixtures à partir des pages.
 
-Beaucoup d'options sont proposées et on a du mal à savoir quoi mettre. Il faut un répertoire de spécs que je n'ai pas. Un SUT ? Non, je n'en ai pas (encore). Et le classpath, j'ai celui d'Eclipse, pourquoi j'en utiliserai un autre ?
+Beaucoup d'options sont proposées et on a du mal à savoir quoi mettre. Il faut un répertoire de specs que je n'ai pas. Un SUT ? Non, je n'en ai pas (encore). Et le classpath, j'ai celui d'Eclipse, pourquoi j'en utiliserais un autre ?
 
-Au bout de quelques heures, ça fonctionne à peu près. Entre temps, on a essayé toutes les options dans tous les sens. C'est rigolo 5 minutes.
+Au bout de quelques heures, ça fonctionne à peu près. Entre-temps, on a essayé toutes les options dans tous les sens. C'est rigolo 5 minutes.
 
 À titre d'info, voilà la procédure :
 
-- Ecrire sa page dans Confluence et la marquer comme "Implemented" ;
-- Rafraichir la vue "Repository" dans Eclipse : la page apparaît ;
-- Executer une première fois la page depuis le menu de cette vue ;
-- Ouvrir avec le WebBrowser d'Eclipse le HTML de la page crée plus haut (répertoire /greenpepper) ;
-- Executer la page une deuxième fois, mais depuis le menu Run d'Eclipse ;
+- Écrire sa page dans Confluence et la marquer comme "Implemented" ;
+- Rafraîchir la vue "Repository" dans Eclipse : la page apparaît ;
+- Exécuter une première fois la page depuis le menu de cette vue ;
+- Ouvrir avec le WebBrowser d'Eclipse le HTML de la page créée plus haut (répertoire /greenpepper) ;
+- Exécuter la page une deuxième fois, mais depuis le menu Run d'Eclipse ;
 - La page doit enfin montrer les résultats (du jaune si les fixtures n'existent pas) ;
 
 ### Autres points :
@@ -104,7 +104,7 @@ Comme nous, l'équipe a eu beaucoup de mal à mettre en place l'outil. Mais dès
 Pour accélérer la mise en place de GreenPepper, Eric nous a conseillé de :
 
 - Soigner la HomePage. Au début du projet, il faut donner envie. La MOA va devoir se former à un nouvel outil et un Wiki est toujours un peu complexe. Il faut lutter contre la résistance au changement et montrer les avantages de cette solution ;
-- Laisser libre la MOA pour les premières pages, puis repasser derrière et compléter les tests avec les noms des fixtures, par exemple. La MOA voit ensuite les modifications et utilisent celles-ci pour les tests suivants. Il faut donc éviter un maximum de restreindre la MOA à ses débuts.
+- Laisser libre la MOA pour les premières pages, puis repasser derrière et compléter les tests avec les noms des fixtures, par exemple. La MOA voit ensuite les modifications et utilise celles-ci pour les tests suivants. Il faut donc éviter au maximum de restreindre la MOA à ses débuts.
 - Regarder les plugins Confluence. Certains sont très utiles comme le plugin Office permettant d'éditer ses pages depuis Word ;
 
 ## Conclusion

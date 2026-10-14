@@ -15,30 +15,30 @@ or Arnaud Heritier's log4j2 approach: [United Colors of Maven](http://aheritier.
 
 ## How it looks
 
-Here is a screenshot of a successful build :
+Here is a screenshot of a successful build:
 
 ![Maven successful build with colors](/assets/images/posts/2013-09-30-maven-in-colors/maven-colors-success.png)
 
-Screenshot of a failed build :
+Screenshot of a failed build:
 
 ![Maven failed build with colors](/assets/images/posts/2013-09-30-maven-in-colors/maven-colors-failure.png)
 
 ## Preferred solution: shell function
 
-My preferred solution is to pipe Maven's output to **sed** and to insert Ansi color sequences at the correct locations.
-It is done like this :
+My preferred solution is to pipe Maven's output to **sed** and to insert ANSI color sequences at the correct locations.
+It is done like this:
 
 ```bash
 mvn $goal | sed -e '/BUILD SUCCESS/$red BUILD SUCCESS/'
 ```
 
-In reality, it is a bit more complex because we want to return the exit code of the maven command
-and not the one of sed or the other chained command.
+In reality, it is a bit more complex because we want to return the exit code of the Maven command
+and not the one of sed or the other chained commands.
 
 The shell function (zsh and bash compatible) is available at:
 <https://github.com/tomsquest/dotfiles/blob/master/zsh/functions/mvn-in-colors.zsh>
 
-You just have to put this file somewhere, source it and make an alias to mvn :
+You just have to put this file somewhere, source it and make an alias to mvn:
 
 ```bash
 $ source mvn-in-colors.zsh
@@ -49,7 +49,7 @@ $ alias mvn=mvn-in-colors # done !
 
 Using this method does not work when Maven asks for input, for example, when using the release:prepare goal.
 
-Workaround :
+Workaround:
 
 - Ignore the alias with `\mvn` when releasing
 - Don't use the release plugin and prefer the solution of Axel Fontaine:
@@ -63,17 +63,17 @@ The code is here: [Maven Color on GitHub](https://github.com/jcgay/maven-color)
 
 ### Restrictions
 
-The Readme says the agent will fail when using a plugin using itself a different version of ASM (use to change the bytecode).
+The Readme says the agent will fail when using a plugin using itself a different version of ASM (used to change the bytecode).
 See the [Known issues](https://github.com/jcgay/maven-color#known-issues).
 
 ## Rainbow
 
-[Rainbow](https://github.com/nicoulaj/rainbow) is a colorizer of commands outputs written in Python.
+[Rainbow](https://github.com/nicoulaj/rainbow) is a colorizer of command outputs written in Python.
 It uses patterns to match strings to colors.
 
 And **Rainbow supports Maven out of the box**!
 
-Once installed, running Rainbow is as simple as :
+Once installed, running Rainbow is as simple as:
 
 ```bash
 $ rainbow --config=mvn3 -- mvn clean install
@@ -82,10 +82,10 @@ $ rainbow --config=mvn3 -- mvn clean install
 ### Restrictions
 
 The original Rainbow version does not return the exit code of the specified program (mvn in our case).
-This is a real problem when you want to chain mvn with a push. ie.
+This is a real problem when you want to chain mvn with a push, i.e.:
 
 ```bash
 $ rainbow --config=mvn3 -- mvn clean install && git push # will push even if the build failed !
 ```
 
-Some works try to fix the issues of rainbow. The [one from GfxMonk](https://github.com/gfxmonk/rainbow) seems to fix the lack of exit code.
+Some forks try to fix the issues of Rainbow. The [one from GfxMonk](https://github.com/gfxmonk/rainbow) seems to fix the lack of exit code.

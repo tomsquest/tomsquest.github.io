@@ -6,7 +6,7 @@ twitter:
   card: summary
 ---
 
-The `auto_expand_replicas` setting in Elasticsearch dynamically adjust replica counts during cluster scaling.
+The `auto_expand_replicas` setting in Elasticsearch dynamically adjusts replica counts during cluster scaling.
 
 ## TL;DR
  
@@ -17,7 +17,7 @@ The `auto_expand_replicas` setting in Elasticsearch dynamically adjust replica c
 
 ## How we use it
 
-Auto-expand replicas solves this by dynamically adjusting replicas based on cluster size.
+Auto-expand replicas avoids manual replica management by dynamically adjusting replicas based on cluster size.
 
 ⭐ We use this in our performance environment after scaling operations to get the appropriate number of replicas.
 

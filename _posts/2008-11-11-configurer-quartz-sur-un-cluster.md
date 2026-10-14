@@ -6,11 +6,11 @@ twitter:
   card: summary
 ---
 
-[Quartz](http://www.opensymphony.com/quartz/) est un scheduler. Il permet de lancer des Job à intervalles spécifiés ou un jour donné. Par exemple, il peut être utiliser pour réaliser des calculs à une heure où la charge serveur est faible.
+[Quartz](http://www.opensymphony.com/quartz/) est un scheduler. Il permet de lancer des Jobs à intervalles spécifiés ou un jour donné. Par exemple, il peut être utilisé pour réaliser des calculs à une heure où la charge serveur est faible.
 
 Nous allons pousser un peu l'usage de Quartz pour que celui-ci fonctionne sur un Cluster. Cette configuration a l'avantage de permettre de faire du Fail-Over : si un noeud du Cluster tombe, un autre prend le relais.
 
-Cette configuration pourrait paraître facultative, mais elle est en réalité obligatoire dés que votre application est déployée sur plusieurs noeuds. En effet, comment s'assurer que chaque JVM ne démarre pas son propre Quartz ? Ainsi les scheduler ne doivent pas tous démarrer, mais un seul doit être actif au même moment.
+Cette configuration pourrait paraître facultative, mais elle est en réalité obligatoire dès que votre application est déployée sur plusieurs noeuds. En effet, comment s'assurer que chaque JVM ne démarre pas son propre Quartz ? Ainsi les schedulers ne doivent pas tous démarrer, mais un seul doit être actif au même moment.
 
 Nous sommes passés par plusieurs problèmes avec cette configuration. Je détaille ci-dessous ce qui a fonctionné pour nous. Je n'explique pas les notions de base de Quartz (trigger, calendar et job).
 
@@ -24,7 +24,7 @@ Nous avons rencontré les problèmes suivants :
 
 ### Impossible de sérialiser la config en base de données, erreur au lancement
 
-Utilisez de bons drivers SQL ! Pour nous, c'était passage au driver JDBC de Microsoft (v1.2) car ceux fournis avec WebSphere plantent sur les Blobs.
+Utilisez de bons drivers SQL ! Pour nous, c'était le passage au driver JDBC de Microsoft (v1.2) car ceux fournis avec WebSphere plantent sur les Blobs.
 
 ### Impossible de modifier la config de Quartz, l'ancienne est toujours prise en compte même après redéploiement
 
@@ -32,7 +32,7 @@ Il faut repasser les scripts qui créent les tables Quartz pour vider entièreme
 
 ### Quartz ne prend pas le Lock (donc plusieurs Quartz tournent...)
 
-Bien vérifier s'il n'y a pas un problème avec la requête d'acquisition du lock. Un message sur le forum Spring nous a sauvé sur ce coup là. Cela semble corriger dans la version 1.6.1. Je vous conseille fortement d'utiliser la toute dernière version car il y a eu un nombre important de bugs corrigés entre la 1.6.0 et la 1.6.1 par exemple.
+Bien vérifier s'il n'y a pas un problème avec la requête d'acquisition du lock. Un message sur le forum Spring nous a sauvé sur ce coup-là. Cela semble corrigé dans la version 1.6.1. Je vous conseille fortement d'utiliser la toute dernière version car il y a eu un nombre important de bugs corrigés entre la 1.6.0 et la 1.6.1 par exemple.
 
 ## Config Spring de Quartz
 

@@ -9,19 +9,21 @@ This guide covers running Restic without root privileges, automating backups and
 ## TL;DR
 
 Most interesting bits:
+
 - Run Restic rootless
 - Alerts by SMS and email with [Healthchecks.io](https://healthchecks.io/)
 - Full log sent by email
 
 ## Restic Rootless
 
-Given you want to backup some system folders, like `/etc`, `/home`, and so on, you may want to run Restic without giving it full access to your system.  
-The old solution would have been to run the software as `root`, or setting the `setuid` bit on the binary. 
+Given you want to back up some system folders, like `/etc`, `/home`, and so on, you may want to run Restic without giving it full access to your system.  
+The old solution would have been to run the software as `root`, or to set the `setuid` bit on the binary. 
 This is **dangerous**, as the attacker would have full access to your system, in **write** mode!  
 
 The solution comes from Restic documentation in the ["Backing up your system without running restic as root"](https://restic.readthedocs.io/en/stable/080_examples.html#backing-up-your-system-without-running-restic-as-root) section.
 
 The solution boils down to:
+
 - Create a new user, `restic`
 - Put the `restic` binary in `$HOME/restic`
 - Ensure restic and root own the binary
@@ -29,7 +31,7 @@ The solution boils down to:
 
 I will not repeat the instructions here, as they are very well documented in the link above.
 
-Notice: any update to the `restic` binary requires to re-set the capability.
+Notice: any update to the `restic` binary requires setting the capability again.
 
 ## Running Restic
 
@@ -43,7 +45,7 @@ Depending on whom you use as a storage provider, you may need to create a bucket
 This is pretty straightforward, and you can follow the documentation of your provider.
 
 In my case, I use [Scaleway](https://www.scaleway.com) Object Storage, and I created a bucket named `my-bucket`.
-The provided will give you a key, a secret, and a URL to access the bucket.
+The provider will give you a key, a secret, and a URL to access the bucket.
 
 ### Credentials
 
@@ -59,10 +61,11 @@ export RESTIC_PASSWORD="MY_PASSWORD"
 ### Backup
 
 The `/home/restic/backup.sh` will:
-- backup the files according to the includes and excludes
+
+- back up the files according to the includes and excludes
 - check some parts of the backups for errors (a percentage of the data)
 - display the list of files that have changed since the last backup
-- the duration of each operation
+- display the duration of each operation
 
 ```shell
 #!/bin/bash
@@ -114,7 +117,7 @@ function main {
 main
 ```
 
-The `restic-includes.txt` and `restic-excludes.txt` are lists of files to backup or exclude.
+The `restic-includes.txt` and `restic-excludes.txt` are lists of files to back up or exclude.
 
 For instance, the `restic-includes.txt` could be:
 ```shell
@@ -131,6 +134,7 @@ And the `restic-excludes.txt` could be:
 ### Prune
 
 The `/home/restic/prune.sh` script is run once a month (not on each backup) and will:
+
 - forget the snapshots according to the retention policy
 - list the current (remaining) snapshots
 - run the `check` command of restic
@@ -193,8 +197,9 @@ Note that there are some overlaps between the two scripts, feel free to make the
 ## Scheduling
 
 My server uses Systemd, so let us declare services and timers:
-- one service and one time for `backup`
-- one service and one time for `prune`
+
+- one service and one timer for `backup`
+- one service and one timer for `prune`
 
 Create `/etc/systemd/system/backup.service`:
 ```ini
@@ -243,8 +248,8 @@ WantedBy=timers.target
 ```
 
 Note:
-- Backup is run twice a day. I want to backup my work from the morning, and the work from the afternoon.
-- The timer is `persistent`, so if the server is rebooted, the next backup will be run as soon as possible, i.e. not miss a backup.
+- Backup is run twice a day. I want to back up my work from the morning, and the work from the afternoon.
+- The timer is `persistent`, so if the server is rebooted, the next backup will be run as soon as possible, so no backup is missed.
 
 The `prune` service and timer are similar.
 
@@ -289,7 +294,7 @@ WantedBy=timers.target
 ```
 
 Note that pruning is run once a month, on the first Monday.  
-The goal is to tidy the snapshots and keep only the one we want/need.
+The goal is to tidy the snapshots and keep only the ones we want/need.
 
 ## Monitoring
 
@@ -297,8 +302,8 @@ I use [Healthchecks.io](https://healthchecks.io) to monitor the success and fail
 
 The service is free for a limited number of checks, and I find it handy to be notified by email and SMS when something goes wrong.
 
-Healthcheck.io works by adding "Checks" that get a URL to be pinged at the specified schedule. 
-If the urls are not pinged, you get a notification.  
+Healthchecks.io works by adding "Checks" that get a URL to be pinged at the specified schedule. 
+If the URLs are not pinged, you get a notification.  
 Simple + Efficient = Awesome!
 
 In my case, I defined two checks, one for backup and one for prune.
@@ -308,12 +313,14 @@ In my case, I defined two checks, one for backup and one for prune.
 ## Notify success and errors
 
 We will create two scripts in /usr/local/bin:
+
 - one to collect the logs
 - one to notify
 
 The `/usr/local/bin/notify-unit` script will:
+
 - collect the logs of the last run from the service, using `journalctl` and the service name specified as a param
-- notify Healthcheck.io
+- notify Healthchecks.io
 - send an email with the logs
 
 ```shell
@@ -382,7 +389,7 @@ EOF
 ```
 
 Note:
-- You need a properly configured mail command (a `MTA`) to be able to send emails. I use `msmtp` under the hood, and use [MailJet](https://www.mailjet.com/) as a relay.
+- You need a properly configured mail command (an `MTA`) to be able to send emails. I use `msmtp` under the hood, and use [MailJet](https://www.mailjet.com/) as a relay.
 - You need to replace the emails with your own
 
 ### Success email sample 💚

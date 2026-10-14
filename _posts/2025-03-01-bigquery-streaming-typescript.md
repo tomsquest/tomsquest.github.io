@@ -17,7 +17,7 @@ Let's explore three different ways, from normal to the fastest one I know.
 
 I provide here some functions, written in TypeScript.
 
-It should not be hard to convert to Python or other, given Google provides the Client in that language.
+It should not be hard to convert to Python or another language, given Google provides a client for it.
 
 ## Start: no streaming at all
 
@@ -89,7 +89,7 @@ export const read = (bigQuery: BigQuery): ResourceStream<Row> => {
 In theory, BigQuery Storage will fill our performance need, providing a newer and faster approach to reading.
 
 In short:
-- Faster reads that traditional streaming
+- Faster reads than traditional streaming
 - Some sort of read parallelism
 - Some important limits ([see limits below](#limits))
 
@@ -102,11 +102,11 @@ The only thing you can stream is a **Table**!
 From what we know, technically, BigQuery Storage streams the "files" containing the data. Thus, it cannot "join" files. 
 Forget any fancy SQL query. 😢
 
-Also, forget to be smart. It cannot also stream a View 😿 (as we are streaming "files" at the end).
+Also, forget being smart. It cannot stream a View either 😿 (as we are streaming "files" at the end).
 
 Still, two things can restrict the data:
-- `selectedFields` list the columns to read, eg. `selectedFields: ["name", "age"]`
-- `rowRestriction` is a kind of `WHERE` clause, eg. `rowRestriction: "name IS NOT NULL and age >= 18"`
+- `selectedFields` lists the columns to read, e.g. `selectedFields: ["name", "age"]`
+- `rowRestriction` is a kind of `WHERE` clause, e.g. `rowRestriction: "name IS NOT NULL and age >= 18"`
 
 #### 2. No ordering
 
@@ -116,7 +116,7 @@ So, there is no guarantee of the order of the rows. Maybe streaming will start w
 
 #### 3. Session time
 
-To read, you open a "read session." This session is opened for **6 hours**, and will be closed eventually by BigQuery.
+To read, you open a "read session." This session is open for **6 hours**, and will be closed eventually by BigQuery.
 
 This can be short in certain circumstances. And it seems there is no way to extend the duration.
 
@@ -127,7 +127,7 @@ So remember to retry in case of errors.
 
 ### Avro and Arrow way of streaming
 
-Two "protocols" are available when using BigQuery Storage :
+Two "protocols" are available when using BigQuery Storage:
 
 1. Apache Avro (best ⭐)
 2. Apache Arrow
@@ -135,7 +135,7 @@ Two "protocols" are available when using BigQuery Storage :
 ### Differences between Avro and Arrow formats
 
 - Apache Avro is a binary format that you decode using a Schema that knows where the data is in the binary buffer (a "Type")
-- Apache Arrow is a columnar format, so basically, you get an array of array from BigQuery
+- Apache Arrow is a columnar format, so basically, you get an array of arrays from BigQuery
 
 ### Speeds
 
@@ -156,12 +156,12 @@ Well, I would go for Avro in all cases, except when you need that structure of C
 
 ### Streaming in Avro ⭐
 
-Here is some helper function, `streamTable` to read a table, specified by its full name `project.dataset.table.`.
+Here is a helper function, `streamTable`, to read a table specified by its full name `project.dataset.table`.
 
 Notice:
 - `rowRestriction` is a kind of `WHERE` clause
 - `selectedFields` is the list of columns to read
-- We only open a single read session, else it would imply to process each session in workers (more complex code)
+- We only open a single read session, otherwise each session would need to be processed in workers (more complex code)
 - We get timestamps as numbers, but we convert them back to `Date`
 
 ```typescript
@@ -271,7 +271,7 @@ In our tests, this was not the fastest way to read from BigQuery, and the code i
 Notice:
 - We changed the `dataFormat` to `ARROW`
 - We use a couple of Node.js Stream Transform, adapted from the official BigQuery Storage client. [See here for the Google code](https://github.com/googleapis/nodejs-bigquery-storage/blob/main/src/reader/arrow_transform.ts).
-- The official Google code returns object with `f` and `v` fields. In the code below, we return the original column name.
+- The official Google code returns objects with `f` and `v` fields. In the code below, we return the original column name.
 
 ```typescript
 import { BigQueryReadClient } from "@google-cloud/bigquery-storage";
@@ -465,15 +465,15 @@ function convertArrowValue(fieldValue: any, type: DataType): any {
 }
 ```
 
-(that deserialization code reminds me some much about mapping from XML/Json to Java, Jax-Rs and such. "Happy" memory 🤔)
+(that deserialization code reminds me so much of mapping from XML/JSON to Java, Jax-Rs and such. "Happy" memory 🤔)
 
 ## Conclusion
 
-If you have a few thousand rows (that fits in memory), do not stream, get everything in one go.  
+If you have a few thousand rows (that fit in memory), do not stream, get everything in one go.  
 Else stream the regular way, as you will get all the power of regular SQL.  
 
 If you need speed and have a single source table, go for BigQuery Storage using the Avro format.
-Go for the Arrow format if you need a columnar way of getting the data (think an array of array).
+Go for the Arrow format if you need a columnar way of getting the data (think an array of arrays).
 
 Enjoy streaming as fast as you (or BigQuery) can! 🚀
 

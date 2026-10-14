@@ -19,7 +19,7 @@ Je le trouve vraiment pratique pour switcher d'une méthode aux tests et inverse
 
 ## Quelques infos
 
-MoreUnit est compatible avec Eclipse 3.5 (Galileo). Il fonctionne parfaitement avec un project Maven.
+MoreUnit est compatible avec Eclipse 3.5 (Galileo). Il fonctionne parfaitement avec un projet Maven.
 
 - [Le site](http://moreunit.sourceforge.net)
 - [L'update site](http://moreunit.sourceforge.net/org.moreunit.updatesite/)
@@ -37,7 +37,7 @@ La configuration qui fonctionne pour un projet Maven et Junit est :
 
 Pour voir le marqueur sur les méthodes (caché par d'autres annotations Eclipse), il est intéressant d'activer le soulignement des méthodes ou :
 
-- Préférences &gt; Editors &gt; Text Editors &gt; Annotations &gt; MoreUnit Marker &gt; Cocher "Test as Suiggly line"
+- Préférences &gt; Editors &gt; Text Editors &gt; Annotations &gt; MoreUnit Marker &gt; Cocher "Test as Squiggly line"
 
 ![](/assets/images/posts/2009-07-29-moreunit-les-tests-plus-vite-sous-eclipse/moreUnit_pref_annotations.jpg)
 

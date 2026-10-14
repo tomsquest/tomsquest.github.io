@@ -4,7 +4,7 @@ lang: en
 image: /assets/images/posts/2024-09-28-you-need-a-macropad/macropad_with_keycaps.jpg
 ---
 
-I found a pretty good companion for my Keyboard: a **MacroPad**! ⌨️  
+I found a pretty good companion for my keyboard: a **MacroPad**! ⌨️  
 
 These devices are surprisingly affordable and provide convenient access to custom functions.
 
@@ -18,7 +18,7 @@ A significant advantage: there's a Linux configuration tool available!
 
 ## Buying
 
-I selected a compact and straightforward model on Aliexpress.  
+I selected a compact and straightforward model on AliExpress.  
 It features `6` keys and `1` rotary encoder.
 
 Many sellers sell the same models, so pick the cheapest one you can find!
@@ -29,13 +29,13 @@ Here's what my order looked like:
 
 ## Software
 
-The provided software is a joke. Like something developed by someone that knows nothing about UI and Software.
+The provided software is a joke. Like something developed by someone who knows nothing about UI and Software.
 
-You will also find many versions of this software (I found three different on Reddit), each a bit different and limited.
+You will also find many versions of this software (I found three different ones on Reddit), each a bit different and limited.
 
-And who wants to run that kind of software on your computer? (of course, no source code)  
+And who wants to run that kind of software on their computer? (of course, no source code)  
 
-⭐ The real trick is to use the [Macro Keyboard Configuration Utility](https://github.com/kriomant/ch57x-keyboard-tool) developed by [Mikhail Trishchenkov ](https://github.com/kriomant).
+⭐ The real trick is to use the [Macro Keyboard Configuration Utility](https://github.com/kriomant/ch57x-keyboard-tool) developed by [Mikhail Trishchenkov](https://github.com/kriomant).
 
 ### Quick usage
 
@@ -47,6 +47,7 @@ And who wants to run that kind of software on your computer? (of course, no sour
 ## Mapping
 
 My keybindings are:
+
 - One row for Discord: toggle mute, toggle deafen, disconnect
 - One row for Music: previous, play/pause, next
 - The rotary encoder controls sound volume and toggles mute on push
@@ -70,9 +71,9 @@ layers:
 
 ## About LEDs
 
-The device features some RGB lightnings. But those are pretty useless.
+The device features some RGB lighting. But those are pretty useless.
 
-For instance, you can't toggle it per key, and the colors aren't configurable. Only some effects are available.
+For instance, you can't toggle them per key, and the colors aren't configurable. Only some effects are available.
 
 So I don't use them.
 

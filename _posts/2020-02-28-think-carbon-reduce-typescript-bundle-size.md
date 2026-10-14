@@ -1,9 +1,9 @@
 ---
-title: Think carbon, reduce typescript bundle size
+title: Think carbon, reduce TypeScript bundle size
 lang: en
 ---
 
-Reducing the size of JS compiled from Typescript is easy.
+Reducing the size of JS compiled from TypeScript is easy.
 
 Here are some numbers and how to do it. It's nearly free if you run on Node (!= browser).
 
@@ -16,7 +16,7 @@ Here are some numbers and how to do it. It's nearly free if you run on Node (!= 
 
 ## Size matters
 
-Sizes after and before, with the difference in percent:
+Sizes before and after, with the difference in percent:
 
 |                     |     Before |      After | Diff |
 | ------------------- | ---------: | ---------: | ---: |
@@ -43,9 +43,9 @@ Enable the import of the helper functions:
 
 ## What does it do
 
-Typescript will create helper functions for decorators, extends, assign, etc. in each compiled file.
+TypeScript will create helper functions for decorators, extends, assign, etc. in each compiled file.
 
-But, Typescript can use a reference library, [tslib](https://github.com/microsoft/tslib) and import the functions from there.
+But TypeScript can use a reference library, [tslib](https://github.com/microsoft/tslib), and import the functions from there.
 
 Sample of generated code without tslib/importHelpers:
 

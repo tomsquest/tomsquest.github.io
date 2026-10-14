@@ -19,11 +19,11 @@ Short list of books about Search that greatly helped me build our ecommerce Sear
 
 Learn the tech: manipulating data, searching, scaling, performance, administration.
 
-It is an easy read for a complex solution that is Elasticsearch.
+It is an easy read for a solution as complex as Elasticsearch.
 
 Really useful because the documentation of Elasticsearch is a reference, not a tutorial. You are not guided.
 
-I also did the Elastic Certified Engineer training, and did the certification 🥇, this also helped alot.
+I also did the Elastic Certified Engineer training, and passed the certification 🥇, which also helped a lot.
 
 ## Relevant Search, by Doug Turnbull, John Berryman, 2016
 
@@ -34,7 +34,7 @@ We enter the territory of Search: being Relevant, building an ecommerce Search f
 What I learnt:
 - Where does the business fit, and how to organize a Search team, where feedback is really what matters
 - The problems of multi-field search ("albino elephant")
-- Fixing something to break another ("whac-a-mole")
+- Fixing one thing breaks another ("whac-a-mole")
 - Searching exactly (the "sentinel" trick)
 
 **🤩 Excellent book!**
@@ -48,11 +48,11 @@ This book explores many concepts about Search, and implements them.
 Each chapter is a kind of exploration of a topic, giving the code to follow along.
 
 For example:
-- Generating a Knowledge-graph
+- Generating a Knowledge graph
 - Learning to Rank
 - Semantic search with vectors
 
-We did use it to better our ranking, with huge success (millions of revenu per month).
+We used it to improve our ranking, with huge success (millions in revenue per month).
 
 **⭐ Wonderful book and we consistently dig into it**
 
@@ -62,7 +62,7 @@ We did use it to better our ranking, with huge success (millions of revenu per m
 
 I bought that one too early in the path of building our Search engine, and it totally went above my head.
 
-The topics were too much advanced, required too much knowledge of neural network for myself at that time.
+The topics were too advanced and required too much knowledge of neural networks for me at that time.
 I included it here because it has some interesting chapters not covered elsewhere.  
 
 And this book predates AI-Powered Search by a few years.

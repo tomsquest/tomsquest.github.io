@@ -9,11 +9,11 @@ The experience and results were impressive!
 
 ## TL;DR
 
-- Claude was learnt to recognize tags, eg. `<book></books>`
-- The workbench handles variables, eg. {% raw %}`{{ BOOKS }}`{% endraw %}
+- Claude was taught to recognize tags, e.g. `<book></book>`
+- The workbench handles variables, e.g. {% raw %}`{{ BOOKS }}`{% endraw %}
 - You can evaluate your prompt with test cases
 - Flawless, I got exactly the output specified, no hallucination, no wrong JSON, using `claude-3-5-sonnet-20240620`
-- Exhausted my credit in a few runs, learning that I should not have tried to process all my book list at once
+- Exhausted my credit in a few runs, learning that I should not have tried to process my whole book list at once
 
 ## Problem: I was not consistent
 
@@ -23,7 +23,7 @@ And I am not really **consistent!**
 
 Sometimes I change the date format, or the rating, or forget to write the author's name, or put the volume number in the title, or (long list of inconsistencies...).
 
-## Solution: a LLM
+## Solution: an LLM
 
 My first approach was simple code, parsing regexes and... I quickly failed.
 
@@ -48,7 +48,7 @@ Claude generated a bigger and hopefully more precise prompt, with an example str
 
 The temperature was already set to `0`, which makes the model more deterministic and less creative.
 
-After modifying the fields for my own (like rating, date read...), the prompt become this one:
+After adapting the fields to my needs (like rating, date read...), the prompt became this one:
 
 {% raw %}
 
@@ -125,7 +125,7 @@ You can evaluate your prompt directly in the workbench, providing **test cases**
 
 ### The code
 
-As for Google VertexAI, Claude gives you directly the code to execute in the API:
+Like Google Vertex AI, Claude directly gives you the code to execute in the API:
 
 ![workbench_get_code.png](/assets/images/posts/2024-07-27-using-claude-llm/workbench_get_code.png)
 
@@ -133,21 +133,22 @@ As for Google VertexAI, Claude gives you directly the code to execute in the API
 
 **Input can be huge, but Output is limited and more expensive**.
 
-I have a big list of books (a few hundreds), and I tried to process them all at once.  
-For that, I copied my full list in the variable, and... only a few books were returned.
+I have a big list of books (a few hundred), and I tried to process them all at once.  
+For that, I copied my full list into the variable, and... only a few books were returned.
 
 **Yes, indeed**, the output is limited to a few thousand tokens depending on the model, so you **cannot** process a big list at once.
 
 Solutions:
+
 - Chunk your list in **multiple smaller lists**
-- Or, change the prompt and process books **one by one**, calling the LLM for each, which is actually more simple and can even reduce the prompt size, so the tokens, so the speed and cost
+- Or, change the prompt and process books **one by one**, calling the LLM for each, which is actually simpler and can even reduce the prompt size, so the tokens, so the speed and cost
 
 ## Conclusion
 
 I had a good experience with Anthropic Claude LLM. 👍  
 The newest models are impressive, pretty consistent, and easy to use.  
 
-But there are real differences between LLM and their capacity.  
+But there are real differences between LLMs and their capabilities.  
 For instance, I also used [Gemini Flash](https://gemini.google.com) on the same task, and the results were not as good as Claude. 
 It failed to output `JSON` and only that (no Markdown wrapper...). Same when I tried to get `JSONL` (one JSON per line).
 Could be my prompt, could be the model...

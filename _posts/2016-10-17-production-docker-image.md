@@ -1,5 +1,5 @@
 ---
-title: "My attempt at building a production grade docker image"
+title: "My attempt at building a production-grade Docker image"
 lang: en
 image: /assets/images/posts/2016-10-17-production-docker-image/docker.png
 twitter:
@@ -14,7 +14,7 @@ The first service I dockerized is [Radicale](http://radicale.org/), a calendar/c
 
 Radicale is a good choice for a start due to its simplicity:
 
-- written in python
+- written in Python
 - filesystem database
 - single config file
 - runnable directly with `radicale`
@@ -41,8 +41,8 @@ I started with a Debian base image, then switched to an Alpine image, then found
 
 The official Python images have an Alpine version: <https://hub.docker.com/_/python/>
 
-I did not set a specific image version (eg. `python:3.5.2-alpine`) in the hope that it could ease upgrades and
-that a rebuild could be automatically fired by Docker hub using a configured dependency. Forget repeatable builds!
+I did not set a specific image version (e.g. `python:3.5.2-alpine`) in the hope that it could ease upgrades and
+that a rebuild could be automatically fired by Docker Hub using a configured dependency. Forget repeatable builds!
 
 Let's go for `python:3-alpine`:
 
@@ -66,7 +66,7 @@ I started with [Yelp's Dumb Init](https://github.com/Yelp/dumb-init) but:
 - Dumb Init is in `PyPI` but requires a C compiler installed, which needs to be added to the Alpine image
 
 Alternative: use [Tini](https://github.com/krallin/tini), a `tiny but valid 'init' for containers`.
-Tini has the advantages of _just_ working and installable in Alpine with `apk add --update tini`.
+Tini has the advantages of _just_ working and being installable in Alpine with `apk add --update tini`.
 
 Here is our image with Tini:
 
@@ -79,20 +79,20 @@ ENTRYPOINT ["/tini", "--"]
 CMD ["radicale"]
 ```
 
-## Hard: Volumes and permission
+## Hard: Volumes and permissions
 
 Next best practices: Never Run As **Root**.
-We don't do that for hosted services since decades, so don't do that inside containers,
+We don't do that for hosted services for decades, so don't do that inside containers,
 especially publicly opened containers. The Docker Security team does not recommend it either
 (https://www.youtube.com/watch?v=LmUw2H6JgJo).
 
 That means: use the `USER` instruction or switch user when the container is run.
 Combined with a volume, that's where I started having **permission problems**.
 
-What seems to occur is that mounting a host volume (eg. `docker run ... -v /path:/data/radicale`)
-overwrites the permission **in** the container. What was owned by `radicale:radicale` became owned by `root:root` in the container.
+What seems to occur is that mounting a host volume (e.g. `docker run ... -v /path:/data/radicale`)
+overwrites the permissions **in** the container. What was owned by `radicale:radicale` became owned by `root:root` in the container.
 
-The reason is that the Docker daemon runs as `root`, so the mounted volume became root (UID=0) **in** the container, in which, UID=0 is also root. Note that, when the `radicale` user in the container has the UID 1000, which is my user on the host. Complete detail here: <https://denibertovic.com/posts/handling-permissions-with-docker-volumes/>
+The reason is that the Docker daemon runs as `root`, so the mounted volume became root (UID=0) **in** the container, in which, UID=0 is also root. Note that the `radicale` user in the container has the UID 1000, which is my user on the host. Complete detail here: <https://denibertovic.com/posts/handling-permissions-with-docker-volumes/>
 
 I first found a solution from [Stack Overflow](https://stackoverflow.com/questions/23544282/what-is-the-best-way-to-manage-permissions-for-docker-shared-volumes) and
 in the book [Using Docker](http://shop.oreilly.com/product/0636920035671.do) by Adrian Mouat (excellent book btw).
@@ -137,7 +137,7 @@ su-exec is available in Alpine repositories.
 
 ## S6, the alternative
 
-[S6-Overlay](https://github.com/just-containers/s6-overlay) contains the [S6](http://skarnet.org/software/s6/overview.html) series of scripts. As `overlay` they mean a tgz to unpack in the image.
+[S6-Overlay](https://github.com/just-containers/s6-overlay) contains the [S6](http://skarnet.org/software/s6/overview.html) series of scripts. By `overlay`, they mean a tgz to unpack in the image.
 
 S6-Overlay is a complete alternative, it provides:
 
@@ -158,7 +158,7 @@ There are still many things to do **outside** the image itself. I have yet to:
 - [ ] Limit the container networking
 - [ ] Limit the container resources
 - [ ] Test automatically the process when rebuilding the image (the Python version is not enforced)
-- [ ] Put the log in their own file and rotate them
+- [ ] Put the logs in their own files and rotate them
 
 My Radicale image is available at:
 

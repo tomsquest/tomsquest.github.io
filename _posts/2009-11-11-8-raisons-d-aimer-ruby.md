@@ -35,11 +35,11 @@ void genereUneMethode() {
 
 Le static typing s’oppose au duck typing. En Ruby, il n’y a pas de notion de type vérifié à la compilation.
 
-Cela veut dire, qu’il est possible d’appeler une méthode avec un Array à la place d’une String. Tant que l’autre objet répond aux méthodes de l’objet attendu, le code est valide.
+Cela veut dire qu’il est possible d’appeler une méthode avec un Array à la place d’une String. Tant que l’autre objet répond aux méthodes de l’objet attendu, le code est valide.
 
 Le Duck Typing permet d’avoir du code beaucoup plus souple. La forte orientation vers les tests de Ruby en est la conséquence.
 
-Il y a eu beaucoup de débats sur au sujet de "Static typing" contre "Duck typing". Les auteurs de "Programming Ruby 1.9" expliquent que le typage statique ne rend pas forcément un code plus fiable et peut diminuer la productivité. (Non, pas de Troll)
+Il y a eu beaucoup de débats au sujet du "Static typing" contre "Duck typing". Les auteurs de "Programming Ruby 1.9" expliquent que le typage statique ne rend pas forcément un code plus fiable et peut diminuer la productivité. (Non, pas de Troll)
 
 Plus d’info sur le [duck typing sur Wikipedia](http://en.wikipedia.org/wiki/Duck_typing).
 
@@ -49,7 +49,7 @@ Les Closures ont fortement animé les débats autour de leur inclusion (ou pas) 
 
 Elles font partie de la syntaxe de base de Ruby.
 
-Les Closures sont des méthodes dont l’exécution peut être retardée tout en retenant le contexte quand elles ont été créées. Elles ont plein d’usages mais ne sont pas pourtant pas évidentes à appréhender.
+Les Closures sont des méthodes dont l’exécution peut être retardée tout en retenant le contexte quand elles ont été créées. Elles ont plein d’usages mais ne sont pourtant pas évidentes à appréhender.
 
 ## JRuby
 
@@ -62,7 +62,7 @@ L’avantage est également de pouvoir faire du Ruby sur nos serveurs d’app Ja
 Rails, Capistrano ou encore Cucumber sont les fers de lance de Ruby et montrent ce que le langage permet de construire.
 
 - [Rails](http://rubyonrails.org/) : c’est le Framework Web qui a donné de la visibilité à Ruby. Rails permet de produire des sites Web très rapidement et de manière simple
-- [Capistrano](http://www.capify.org/) simplifie fortement le déploiement de projets Ruby et permet par exemple de se brancher sur un SVN pour faire de la mise en production en continue
+- [Capistrano](http://www.capify.org/) simplifie fortement le déploiement de projets Ruby et permet par exemple de se brancher sur un SVN pour faire de la mise en production en continu
 - [Cucumber](http://cukes.info/) est un framework de BDD simple à prendre en main. Le Meta-Programming apporte beaucoup aux frameworks de tests en permettant l’écriture de DSL de tests
 
 ## GEM : le packaging facile
