@@ -47,6 +47,22 @@
   border: 0;
 }
 
+// Hidden until focused with the keyboard (first Tab on every page)
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 1rem;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  background: var(--b-bg-1);
+  color: var(--b-link);
+  font-weight: bold;
+
+  &:focus {
+    left: 1rem;
+  }
+}
+
 pre.highlight {
   border: 1px solid var(--b-link);
 
