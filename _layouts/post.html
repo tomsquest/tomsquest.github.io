@@ -68,6 +68,15 @@ layout: base
     pre.tabIndex = 0
   })
 
+  // Same for tables: wrap them in a focusable box that scrolls on small screens
+  document.querySelectorAll(".post table").forEach(table => {
+    const wrapper = document.createElement("div")
+    wrapper.className = "table-scroll"
+    wrapper.tabIndex = 0
+    table.parentNode.insertBefore(wrapper, table)
+    wrapper.appendChild(table)
+  })
+
   // Permalink anchors are a mouse shortcut: hidden from screen readers so headings are read
   // without a trailing "Permalink", and skipped when the heading has no id (the h1)
   document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").forEach(header => {

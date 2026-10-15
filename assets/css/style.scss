@@ -77,6 +77,12 @@ pre.highlight {
   padding: 0.25em 0.75em;
   border-radius: 1em;
   white-space: nowrap;
+
+  // On small screens, long inline code must wrap instead of widening the page
+  @media (max-width: 600px) {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
 
 h2, h3, h4, h5, h6 {
@@ -316,7 +322,17 @@ footer.footer-container {
 
     th, td {
       padding: 1em 2em;
+
+      @media (max-width: 600px) {
+        padding: 0.5em 1em;
+      }
     }
+  }
+
+  // Wide tables scroll inside their own box (wrapper added by post.html)
+  .table-scroll {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
   }
 
   .edit-on-github {
