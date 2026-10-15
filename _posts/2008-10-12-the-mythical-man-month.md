@@ -65,7 +65,7 @@ L'estimation d'une tâche ne doit pas se faire uniquement sur la base du code à
 
 ### The whole and the parts (chap 13)
 
-La plupart des problèmes viennent des choses qui n'ont jamais été réellement spécifiées. Cela rejoint le chapitre 10. L'approche Top/Bottom est recommandée par l'auteur, car elle permet de préciser les choses par couches, par itérations.
+La plupart des problèmes viennent des choses qui n'ont jamais été réellement spécifiées. Cela rejoint le chapitre 10. L'approche Top-down est recommandée par l'auteur, car elle permet de préciser les choses par couches, par itérations.
 
 ### Hatching a catastrophe (chap 14)
 
