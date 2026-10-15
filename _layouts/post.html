@@ -6,7 +6,7 @@ layout: base
 
   {%- if page.image and page.image != site.default_image -%}
   <div class="post-image">
-    <img src="{{ page.image }}" alt="{{ page.title | escape }}">
+    <img src="{{ page.image }}" alt="">
   </div>
   {%- endif -%}
 
@@ -68,12 +68,16 @@ layout: base
     pre.tabIndex = 0
   })
 
-  document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(header => {
+  // Permalink anchors are a mouse shortcut: hidden from screen readers so headings are read
+  // without a trailing "Permalink", and skipped when the heading has no id (the h1)
+  document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").forEach(header => {
     if (!header.querySelector(".anchor-link")) {
       const anchor = document.createElement("a")
       anchor.href = `#${header.id}`
-      anchor.className = "anchor-link";
-      anchor.innerHTML = "<span class='sr-only'>Permalink</span><span aria-hidden='true'>§</span>";
+      anchor.className = "anchor-link"
+      anchor.setAttribute("aria-hidden", "true")
+      anchor.tabIndex = -1
+      anchor.textContent = "§"
       header.appendChild(anchor)
     }
   })
