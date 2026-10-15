@@ -95,7 +95,8 @@ class: bookshelf
      data-rating="{{ book.rating }}"
   >
     <h3>
-      [{{ total_books | minus: forloop.index0 }}/{{ total_books }}]
+      {%- comment -%} The position counter is visual only: headings read the book title first {%- endcomment -%}
+      <span aria-hidden="true">[{{ total_books | minus: forloop.index0 }}/{{ total_books }}]</span>
       {{ title }}
     </h3>
     <div class="book-row">
