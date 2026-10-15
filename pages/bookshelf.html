@@ -149,7 +149,7 @@ class: bookshelf
               Links:
               {%- for url in book.urls -%}
                 {% assign domain = url | split: '//' | last | split: '/' | first | remove: "www." %}
-                <a href="{{ url }}" target="_blank">{{ domain }}</a>
+                <a href="{{ url }}" target="_blank" rel="noopener">{{ domain }}<span class="sr-only"> (opens in a new tab)</span></a>
                 {% unless forloop.last -%}, {%- endunless %}
               {%- endfor -%}
               <br>
