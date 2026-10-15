@@ -1,0 +1,7 @@
+# Git hooks, see README.md
+pre-commit:
+  commands:
+    compress-images:
+      glob: "*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}"
+      run: compress-images {staged_files}
+      stage_fixed: true

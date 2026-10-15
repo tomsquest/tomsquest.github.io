@@ -10,6 +10,11 @@ Setup:
 2. `gem install bundler`
 3. `bundle install`
 
+Git hooks:
+
+1. `brew install lefthook caesiumclt`
+2. `lefthook install`
+
 Run:
 
 1. `bundle exec jekyll serve --livereload --drafts`
