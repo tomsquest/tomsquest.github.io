@@ -20,7 +20,7 @@ Here are some numbers and how to do it. It's nearly free if you run on Node (!= 
 
 Sizes before and after, with the difference in percent:
 
-|                     |     Before |      After | Diff |
+| Metric              |     Before |      After | Diff |
 | ------------------- | ---------: | ---------: | ---: |
 | line count \*.js    | 4397 lines | 4011 lines |  -9% |
 | size in bytes \*.js |       186k |       153k | -18% |
