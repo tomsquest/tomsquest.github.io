@@ -1,5 +1,19 @@
 [
   {
+    "title": "La Mascarade du boucher",
+    "series": "Dungeon Crawler Carl",
+    "authors": [
+      "Matt Dinniman"
+    ],
+    "rating": 4,
+    "volume": "5/7",
+    "comment": "Relecture, mais en français",
+    "date": "2026-10",
+    "fiction": true,
+    "cover": "/assets/books/dungeon-crawler-carl-5.jpg",
+    "format": "print"
+  },
+  {
     "title": "Le Portail des dieux infernaux",
     "series": "Dungeon Crawler Carl",
     "authors": [
