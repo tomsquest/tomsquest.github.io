@@ -291,11 +291,6 @@ footer.footer-container {
     display: block;
     // Use same margin down as for <p>
     margin: 0 auto 1.5rem;
-    transition: transform .3s;
-
-    &:hover {
-      transform: scale(1.5);
-    }
   }
 
   .anchor-link {
