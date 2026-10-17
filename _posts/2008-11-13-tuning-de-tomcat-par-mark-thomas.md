@@ -3,8 +3,6 @@ title: Tuning de Tomcat par Mark Thomas
 description: "Notes de la présentation de Mark Thomas aux Rencontres Spring : tuning de Tomcat en production (logs, cache, mémoire JVM, load balancing, clustering)."
 lang: fr
 image: /assets/images/posts/2008-11-13-tuning-de-tomcat-par-mark-thomas/tomcat-logo.gif
-twitter:
-  card: summary
 ---
 
 Ce matin, aux [Rencontres Spring](http://www.rencontres-spring.com/), Mark Thomas a parlé du tuning de Tomcat en production. J'y ai appris plusieurs choses intéressantes que je résume ici.

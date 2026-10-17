@@ -3,8 +3,6 @@ title: "Kibana most useful keyboard shortcuts"
 description: "The Kibana Dev Tools keyboard shortcuts I use most: run a request, move between requests, auto-indent, and open the relevant documentation."
 lang: en
 image: /assets/images/posts/2025-04-21-kibana-most-useful-keyboard-shortcuts/kibana_shortcuts.png
-twitter:
-  card: summary
 ---
 
 My most used keyboard shortcuts for Kibana. Yes, Kibana has keyboard shortcuts! 🚀

@@ -3,8 +3,6 @@ title: "Quartz : un calendrier qui exclut les jours fériés"
 description: "Exclure les week-ends, une plage horaire et les jours fériés d'un job Quartz en enchaînant trois calendriers configurés avec Spring, dont un fait maison."
 lang: fr
 image: /assets/images/posts/2008-11-15-quartz-un-calendrier-qui-exclut-les-jours-feries/quartz_logo.jpg
-twitter:
-  card: summary
 ---
 
 L'idée part d'un besoin simple : lancer un job [Quartz](http://www.opensymphony.com/quartz/) toutes les heures ouvrées, hors week-end et jours fériés.

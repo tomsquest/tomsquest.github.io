@@ -3,8 +3,6 @@ title: "Elasticsearch best practice: disable dynamic mapping"
 description: "Elasticsearch best practice: disable dynamic mapping with dynamic: false, or reject unmapped fields with dynamic: strict, to keep a documented mapping."
 lang: en
 image: /assets/images/posts/2025-04-04-elasticsearch-best-practice-disable-dynamic-mapping/dynamic_mapping.png
-twitter:
-  card: summary
 ---
 
 Elasticsearch best practice: disable dynamic mapping in your indices, or even reject unmapped fields.

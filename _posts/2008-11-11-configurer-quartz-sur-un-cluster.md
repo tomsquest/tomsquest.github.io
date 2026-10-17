@@ -3,8 +3,6 @@ title: Configurer Quartz sur un Cluster
 description: "Configurer Quartz en cluster avec Spring pour le fail-over : un seul scheduler actif grâce au lock en base, problèmes rencontrés et configuration complète."
 lang: fr
 image: /assets/images/posts/2008-11-11-configurer-quartz-sur-un-cluster/quartz_logo.jpg
-twitter:
-  card: summary
 ---
 
 [Quartz](http://www.opensymphony.com/quartz/) est un scheduler. Il permet de lancer des Jobs à intervalles spécifiés ou un jour donné. Par exemple, il peut être utilisé pour réaliser des calculs à une heure où la charge serveur est faible.

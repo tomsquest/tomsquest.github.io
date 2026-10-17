@@ -3,8 +3,6 @@ title: "Elasticsearch tips: auto_expand_replicas"
 description: "Elasticsearch auto_expand_replicas adjusts the number of replicas to the number of data nodes, so you can't forget to update it after scaling."
 lang: en
 image: /assets/images/posts/2025-04-10-elasticsearch-tips-auto-expand-replicas/auto_expand_replicas.png
-twitter:
-  card: summary
 ---
 
 The `auto_expand_replicas` setting in Elasticsearch dynamically adjusts replica counts during cluster scaling.

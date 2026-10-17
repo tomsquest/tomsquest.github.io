@@ -3,8 +3,6 @@ title: Improving Elasticsearch Performance with Compression in Node.js
 description: "Enable compression in the Elasticsearch Node.js client with compression: true. It is off by default, yet it cuts bandwidth and speeds up responses."
 lang: en
 image: /assets/images/posts/2025-03-23-elasticsearch-enable-compression/compression.png
-twitter:
-  card: summary
 ---
 
 When using Elasticsearch in Node.js apps, there's a simple performance optimization many developers miss: **compression is not enabled by default**.

@@ -4,8 +4,6 @@ description: "Colorize Maven output (green for success, red for failures, yellow
 lang: en
 last_modified_at: 2014-01-21
 image: /assets/images/posts/2013-09-30-maven-in-colors/maven-logo.png
-twitter:
-  card: summary
 ---
 
 Maven output is quite pale. Want to see some green for successes, red for failures and yellow for warnings?
