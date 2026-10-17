@@ -10,7 +10,6 @@
   <script async data-goatcounter="https://tomsquest.goatcounter.com/count" src="//gc.zgo.at/count.js"></script>
   {%- feed_meta -%}
   {%- capture seo_tag -%}{%- seo -%}{%- endcapture -%}
-  {%- comment -%} jekyll-seo-tag copies `lang` (en/fr) into og:locale, which expects en_US/fr_FR {%- endcomment -%}
   {%- assign seo_tag = seo_tag
     | replace: 'og:locale" content="en"', 'og:locale" content="en_US"'
     | replace: 'og:locale" content="fr"', 'og:locale" content="fr_FR"' -%}
