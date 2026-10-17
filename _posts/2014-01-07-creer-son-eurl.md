@@ -2,7 +2,6 @@
 title: "Créer son EURL et devenir indépendant : les étapes"
 description: "Les étapes pour créer son EURL après une rupture conventionnelle : Pôle emploi, annonce légale, banque, statuts, Guichet-Entreprises, Accre et comptable."
 lang: fr
-locale: fr_FR
 ---
 
 J'ai créé mon EURL courant octobre-novembre et je suis donc maintenant indépendant.

@@ -2,7 +2,6 @@
 title: Configurer Quartz sur un Cluster
 description: "Configurer Quartz en cluster avec Spring pour le fail-over : un seul scheduler actif grâce au lock en base, problèmes rencontrés et configuration complète."
 lang: fr
-locale: fr_FR
 image: /assets/images/posts/2008-11-11-configurer-quartz-sur-un-cluster/quartz_logo.jpg
 twitter:
   card: summary

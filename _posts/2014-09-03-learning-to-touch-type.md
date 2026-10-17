@@ -2,7 +2,6 @@
 title: "Learning to touchtype using the Colemak layout"
 description: "How I learned to touch type on the Colemak layout in two months, with a blank Typematrix keyboard, Keyzen, Amphetype and deliberate practice."
 lang: en
-locale: en_US
 ---
 
 I was always interested in keyboards and keyboard layouts: typing faster, reducing wrist injuries, and moreover never looking back at my keyboard. After all, Azerty/Qwerty were not made for developers. So last year, I decided to spend some time learning to touchtype using a new layout, the [Colemak](http://colemak.com/).

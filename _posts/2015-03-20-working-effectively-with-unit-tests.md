@@ -2,7 +2,6 @@
 title: "Working Effectively with Unit Tests by Jay Fields"
 description: "Notes on Working Effectively with Unit Tests by Jay Fields: best practices, readability over DRY, test ROI, test names, coverage and broad stack tests."
 lang: en
-locale: en_US
 image: /assets/images/posts/2015-03-20-working-effectively-with-unit-tests/wewut-cover.jpg
 twitter:
   card: summary

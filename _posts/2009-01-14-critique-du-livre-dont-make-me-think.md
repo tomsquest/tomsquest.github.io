@@ -2,7 +2,6 @@
 title: Critique du livre "Don't Make Me Think"
 description: "Critique de Don't Make Me Think de Steve Krug : l'utilisabilité Web par le bon sens et les tests utilisateurs, l'accessibilité, et quelques limites."
 lang: fr
-locale: fr_FR
 image: /assets/images/posts/2009-01-14-critique-du-livre-dont-make-me-think/dmmt-cover-2nd.jpg
 twitter:
   card: summary

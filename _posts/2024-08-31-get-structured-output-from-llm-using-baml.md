@@ -2,7 +2,6 @@
 title: "Get structured output from a Language Model using BAML"
 description: "LLMs often return invalid or off-schema JSON. How BAML fixes it with typed outputs, a prompt workbench, generated clients, retries and fallbacks."
 lang: en
-locale: en_US
 last_modified_at: 2024-09-02
 ---
 

@@ -2,7 +2,6 @@
 title: "Elasticsearch best practice: aliases"
 description: "Elasticsearch aliases are a best practice: a secondary name for your indices that lets you switch or reindex atomically, with no downtime or code change."
 lang: en
-locale: en_US
 image: /assets/images/posts/2025-04-01-elasticsearch-best-practice-aliases/aliases.png
 twitter:
   card: summary

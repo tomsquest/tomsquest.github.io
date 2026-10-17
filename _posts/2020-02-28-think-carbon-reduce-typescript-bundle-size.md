@@ -2,7 +2,6 @@
 title: Think carbon, reduce TypeScript bundle size
 description: "Cut the size of JavaScript compiled from TypeScript by 18% with tslib and importHelpers: less storage, less network, a smaller carbon footprint."
 lang: en
-locale: en_US
 ---
 
 Reducing the size of JS compiled from TypeScript is easy.

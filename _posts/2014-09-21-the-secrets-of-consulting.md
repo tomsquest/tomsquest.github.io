@@ -2,7 +2,6 @@
 title: "The Secrets of Consulting by Gerald M. Weinberg"
 description: "Review of The Secrets of Consulting by Gerald M. Weinberg: great stories and laws about change and resistance, but few takeaways you can apply right away."
 lang: en
-locale: en_US
 image: /assets/images/posts/2014-09-21-the-secrets-of-consulting/the-secrets-of-consulting.jpg
 twitter:
   card: summary

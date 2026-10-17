@@ -2,7 +2,6 @@
 title: Better autocompletes with Fuzzy Matching
 description: "Improve an autocomplete widget with fuzzy matching: a Sinatra backend using the Levenshtein distance to return close matches, and a jQuery UI frontend."
 lang: en
-locale: en_US
 ---
 
 This article is an introduction to Fuzzy Matching and how it can improve an Autocomplete widget. Fuzzy Matching is used to find the most appropriate strings in a set of strings, like finding `Sinatra` when you misspelled it `Senatra`.

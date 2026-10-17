@@ -2,7 +2,6 @@
 title: Script de sauvegarde WordPress et MySQL
 description: "Un script shell simple pour sauvegarder WordPress et sa base MySQL, avec les identifiants lus dans wp-config.php et un mail de confirmation."
 lang: fr
-locale: fr_FR
 ---
 
 Qui dit nouveau blog, plugins à gogo, tests et expérimentations, dit un jour ou l'autre : "si j'avais fait une sauvegarde, ça m'aurait évité de perdre mon blog et tout son contenu !".

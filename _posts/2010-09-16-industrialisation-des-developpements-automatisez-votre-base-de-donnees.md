@@ -2,7 +2,6 @@
 title: "Industrialisation des développements : automatisez votre base de données"
 description: "Automatiser les migrations de schéma de base de données : principes, bonnes pratiques et outils (Liquibase, DbMaintain, MyBatis Migrations)."
 lang: fr
-locale: fr_FR
 ---
 
 Le grand oubli dans l'industrialisation des développements est la base de données, cette chose monolithique et statique qui n'évolue pas aussi vite et aussi aisément que le code. Au même titre que l'intégration continue et les systèmes de gestion de version pour le code source, il existe des outils permettant de fluidifier et d'automatiser le travail autour du schéma physique des données. Travailler avec ces outils permet de compléter une démarche Agile en permettant une réactivité forte face aux changements.
