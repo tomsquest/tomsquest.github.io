@@ -3,8 +3,6 @@ title: Les limites de Wicket
 description: "Les limites de Wicket et leurs solutions : markup non prévisualisable, poids de la session, tests, URL, sécurité, outillage et intégration JavaScript."
 lang: fr
 image: /assets/images/posts/2009-05-03-les-limites-de-wicket/wicket_logo.jpg
-twitter:
-  card: summary
 ---
 
 Connaître un framework, c'est aussi reconnaître ses limites et ses points faibles. Pour [Wicket](http://wicketframework.org/), il m'a fallu creuser profondément. J'ai interrogé les pros de Wicket présents à cette soirée, Carl Azoury, un des boss de Zenika et Martin Dashorst, committer Wicket.

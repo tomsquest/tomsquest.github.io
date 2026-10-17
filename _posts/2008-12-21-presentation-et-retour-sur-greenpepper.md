@@ -3,8 +3,6 @@ title: "Présentation et retour sur GreenPepper"
 description: "Retour après une semaine avec GreenPepper : spécifications exécutables dans Confluence, qualités, problèmes (documentation, plugin Eclipse, Maven) et conseils."
 lang: fr
 image: /assets/images/posts/2008-12-21-presentation-et-retour-sur-greenpepper/greenpepper-logo.png
-twitter:
-  card: summary
 ---
 
 Au boulot, nous évaluons [GreenPepper](http://www.greenpeppersoftware.com) de la société [Pyxis](http://www.pyxis-tech.com/fr/). GreenPepper est un outil de test fonctionnel et nous souhaitons à terme que les MOA l'utilisent afin de rédiger les spécifications et les tests associés.

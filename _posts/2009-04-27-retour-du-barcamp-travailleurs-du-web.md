@@ -3,8 +3,6 @@ title: Retour du Barcamp "Travailleurs Du Web"
 description: "Retour du premier Barcamp Travailleurs Du Web : Web mobile, vie de freelance, auto-entrepreneur, SCOP et équilibre entre vie et travail."
 lang: fr
 image: /assets/images/posts/2009-04-27-retour-du-barcamp-travailleurs-du-web/tdw_camp.jpg
-twitter:
-  card: summary
 ---
 
 Samedi a eu lieu le premier [Barcamp TDW](http://barcamp.pbwiki.com/TravailleursDuWebCamp) destiné aux personnes travaillant dans le Web ou s'y intéressant : designers, développeurs, webmasters, curieux et même un mec qui fait du Java (vous avez deviné qui).

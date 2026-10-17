@@ -3,8 +3,6 @@ title: "JavaCamp 3 : Compte-rendu"
 description: "Compte-rendu du JavaCamp Paris n°3 : la pyramide des tests, le DDD, Scrum is Evil et les approches Mock, Stub ou test du seul code utile."
 lang: fr
 image: /assets/images/posts/2009-02-01-javacamp-3-compte-rendu/parisjavacamp3.jpg
-twitter:
-  card: summary
 ---
 
 J'ai assisté hier au [JavaCamp n°3](http://barcamp.org/JavaCampParis3) organisé par Valtech chez Sun. Une quinzaine de personnes étaient présentes et les sessions se sont rapidement organisées. Un compte rendu rapide des sessions auxquelles j'ai participé.

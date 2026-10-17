@@ -3,8 +3,6 @@ title: "Selenium en Java : démarrage rapide"
 description: "Écrire des tests Selenium en Java avec JUnit plutôt qu'en HTML, et les lancer avec Maven 2 : dépôts, dépendances, selenium-maven-plugin et premier test."
 lang: fr
 image: /assets/images/posts/2008-09-04-selenium-en-java-demarrage-rapide/selenium_small.jpg
-twitter:
-  card: summary
 ---
 
 L'article est un guide de démarrage rapide pour l'écriture de tests Selenium en Java. Nous allons voir ce qu'il faut configurer dans le pom.xml de Maven et comment lancer l'ensemble des tests.

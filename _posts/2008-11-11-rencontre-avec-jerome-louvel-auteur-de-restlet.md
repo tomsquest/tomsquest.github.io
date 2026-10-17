@@ -3,8 +3,6 @@ title: "Rencontre avec Jérôme Louvel, auteur de Restlet"
 description: "Interview de Jérôme Louvel, créateur de Restlet : pourquoi REST, à qui il s'adresse, JAX-RS, WADL et par où commencer un projet REST en Java."
 lang: fr
 image: /assets/images/posts/2008-11-11-rencontre-avec-jerome-louvel-auteur-de-restlet/restlet-logo.gif
-twitter:
-  card: summary
 ---
 
 Suite au dernier JUG, Jérôme Louvel, l'auteur de Restlet, a bien voulu répondre à mes questions. Les sujets incluent les apports de REST, à qui il est destiné, JAX-RS et l'intégration à un existant.

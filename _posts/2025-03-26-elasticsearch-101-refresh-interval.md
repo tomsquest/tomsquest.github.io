@@ -3,8 +3,6 @@ title: "Elasticsearch 101: refresh interval"
 description: "Elasticsearch refresh_interval explained: when indexed documents become searchable, which values to use, and disabling refresh during heavy indexing."
 lang: en
 image: /assets/images/posts/2025-03-26-elasticsearch-101-refresh-interval/refresh_interval.png
-twitter:
-  card: summary
 ---
 
 A quick guide to the Elasticsearch `refresh_interval` setting.

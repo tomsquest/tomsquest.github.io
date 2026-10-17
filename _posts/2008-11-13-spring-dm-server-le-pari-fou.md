@@ -3,8 +3,6 @@ title: Spring DM Server, le pari fou ?
 description: "Après les Rencontres Spring 2008 : comment SpringSource compte convaincre la production d'adopter Spring DM Server (coût, outillage, support), et mon avis."
 lang: fr
 image: /assets/images/posts/2008-11-13-spring-dm-server-le-pari-fou/springsource_logo.png
-twitter:
-  card: summary
 ---
 
 Après les Rencontres Spring qui ont eu lieu aujourd'hui, nous avons eu droit à quelques éléments de réponse à la question suivante :

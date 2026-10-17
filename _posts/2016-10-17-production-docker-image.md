@@ -3,8 +3,6 @@ title: "My attempt at building a production-grade Docker image"
 description: "Building a production-grade Docker image for Radicale: a smaller Alpine base, Tini as init, and fixing volume permissions without running as root."
 lang: en
 image: /assets/images/posts/2016-10-17-production-docker-image/docker.png
-twitter:
-  card: summary
 ---
 
 As I am self-hosting a couple of services, mainly for keeping my data for myself (Sorry Google, Facebook), I tried to build a "production-grade docker image". Here's my attempt and what I learnt along the way.

@@ -3,8 +3,6 @@ title: "8 raisons d'aimer Ruby"
 description: "8 raisons d'aimer Ruby : productivité, métaprogrammation, duck typing, closures, JRuby, frameworks (Rails, Capistrano, Cucumber), Gems et communauté."
 lang: fr
 image: /assets/images/posts/2009-11-11-8-raisons-d-aimer-ruby/ruby_logo.png
-twitter:
-  card: summary
 ---
 
 Ruby est un langage qui évolue vite, qui monte fortement et qui est utilisé pour faire de vraies choses (même en prod !). Cet article contient 8 points qui font de Ruby un très bon langage et une plateforme de choix pour réaliser ses futurs projets.

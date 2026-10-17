@@ -3,8 +3,6 @@ title: "Compte-rendu de la présentation de Terracotta chez Zenika"
 description: "Compte-rendu de la présentation de Terracotta par Ari Zilka chez Zenika : mémoire partagée entre JVM, clustering, outils de monitoring et questions ouvertes."
 lang: fr
 image: /assets/images/posts/2008-10-03-compte-rendu-terracotta-chez-zenika/logo_terracotta.jpg
-twitter:
-  card: summary
 ---
 
 J'ai assisté hier à la présentation de [Terracotta](http://www.terracotta.org/) par son CTO et co-fondateur, Ari Zilka, organisée par la société [Zenika](http://www.zenika.com/).
