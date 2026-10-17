@@ -2,7 +2,6 @@
 title: "Best books on Search"
 description: "The books that helped me build an e-commerce search engine: Elasticsearch in Action, Relevant Search, AI-Powered Search and Deep Learning for Search."
 lang: en
-locale: en_US
 image: /assets/images/posts/2025-05-08-best-books-on-search/cover.jpg
 ---
 

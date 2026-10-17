@@ -2,7 +2,6 @@
 title: "ClearCase : changer le comparateur de fichier"
 description: "Remplacer le comparateur de fichiers de ClearCase par WinMerge en modifiant le fichier map, pour les fichiers texte, HTML et XML."
 lang: fr
-locale: fr_FR
 ---
 
 L'astuce du jour est : "se passer de ClearCase pour comparer les fichiers".

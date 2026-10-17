@@ -2,7 +2,6 @@
 title: Streaming data from BigQuery with TypeScript, Fast!
 description: "Three ways to read BigQuery from TypeScript: a plain query, regular streaming, and the BigQuery Storage Read API with Avro or Arrow, the fastest."
 lang: en
-locale: en_US
 last_modified_at: 2025-03-11
 ---
 

@@ -2,7 +2,6 @@
 title: FitNesse technical setup
 description: "A FitNesse setup for a development team: a central server for functional people, local servers for developers, Wiki import, SVN backup and debugging."
 lang: en
-locale: en_US
 ---
 
 Getting [FitNesse](http://fitnesse.org) working for a development team is not particularly clear. You have many possibilities and some of them are not so effective.

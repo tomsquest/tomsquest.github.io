@@ -2,7 +2,6 @@
 title: "Backup with Restic"
 description: "Rootless Restic backups on a Linux server: backup and prune scripts, systemd timers, Healthchecks.io monitoring and email reports."
 lang: en
-locale: en_US
 ---
 
 Learn how to set up a secure, monitored backup system using [Restic](https://restic.net/) and [Healthchecks.io](https://healthchecks.io/).   

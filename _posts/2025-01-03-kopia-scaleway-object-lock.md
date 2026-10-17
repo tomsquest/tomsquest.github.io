@@ -2,7 +2,6 @@
 title: Ransomware-Resistant Backups with Kopia and Scaleway Object Lock
 description: "Ransomware-resistant backups with Kopia and Scaleway Object Lock in compliance mode: bucket setup, retention, restricted IAM and bucket policies, restores."
 lang: en
-locale: en_US
 last_modified_at: 2025-01-04
 ---
 

@@ -2,7 +2,6 @@
 title: Critique du livre "Passionate Programmer"
 description: "Critique de The Passionate Programmer de Chad Fowler : gérer sa carrière de développeur comme un business, roadmap personnelle, diversification, dire non."
 lang: fr
-locale: fr_FR
 image: /assets/images/posts/2009-07-19-passionate-programmer-critique-du-livre/the_passionate_programmer.jpg
 twitter:
   card: summary

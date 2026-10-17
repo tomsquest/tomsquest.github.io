@@ -2,7 +2,6 @@
 title: 30 secondes avec Glassfish v3
 description: "Premiers pas avec Glassfish v3 : intégration à Maven décevante, installation et intégration à Eclipse réussies, et comparaison avec Jetty."
 lang: fr
-locale: fr_FR
 image: /assets/images/posts/2009-01-15-30-secondes-avec-glassfish-v3/glassfish_logo.jpg
 twitter:
   card: summary

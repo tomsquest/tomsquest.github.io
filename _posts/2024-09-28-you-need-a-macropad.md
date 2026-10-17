@@ -2,7 +2,6 @@
 title: "You need a MacroPad"
 description: "A 6-key MacroPad with a rotary encoder for 13 euros, configured on Linux with an open-source tool to control Discord, media playback and volume."
 lang: en
-locale: en_US
 image: /assets/images/posts/2024-09-28-you-need-a-macropad/macropad_with_keycaps.jpg
 ---
 

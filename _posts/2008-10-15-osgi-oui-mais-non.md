@@ -2,7 +2,6 @@
 title: "OSGI : oui mais non"
 description: "Retour sur la présentation d'OSGI par Xebia au Paris JUG : les promesses de la modularité, et la réalité (club fermé, complexité, packaging des bundles)."
 lang: fr
-locale: fr_FR
 image: /assets/images/posts/2008-10-15-osgi-oui-mais-non/parisjug-logo.jpg
 twitter:
   card: summary

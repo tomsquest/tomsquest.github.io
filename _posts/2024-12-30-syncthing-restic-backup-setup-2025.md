@@ -2,7 +2,6 @@
 title: "Bulletproof Your Files in 2025: The Syncthing + Restic Setup"
 description: "My backup setup for 2025: Syncthing syncs files between all my devices, and Restic sends encrypted, deduplicated backups to Scaleway twice a day."
 lang: en
-locale: en_US
 image: /assets/images/posts/2024-12-30-syncthing-restic-backup-setup-2025/full.png
 ---
 
