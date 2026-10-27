@@ -40,7 +40,7 @@ gh api "users/tomsquest/repos?per_page=100" --jq '[.[] | select(.owner.type == "
 
 ```shell
 _bin/add_book --title "La Traque" --series "Le Puits des Mémoires" --volume 1/3 \
-  --author "Gabriel Katz" --rating 4 --date 2026-08 --comment "De l'aventure !" --tinify
+  --author "Gabriel Katz" --rating 4 --date 2026-08 --comment "De l'aventure !"
 ```
 
 Finds the cover (Decitre by ISBN, then image search), resizes it to 300px, and inserts the

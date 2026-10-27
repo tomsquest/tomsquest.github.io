@@ -31,11 +31,11 @@ Turn each photo into an entry in `_data/books.json` with a cover, using `_bin/ad
    because each entry is inserted at the top of the list.
    ```bash
    _bin/add_book --title "Le Fils de la Lune" --series "Le Puits des Mémoires" --volume 2/3 \
-     --author "Gabriel Katz" --rating 4 --date 2026-08 --comment "..." --tinify
+     --author "Gabriel Katz" --rating 4 --date 2026-08 --comment "..."
    ```
    - Non-fiction: `--non-fiction`. Audiobook: `--format audiobook`.
-   - `--tinify` compresses with TinyPNG (`TINIFY_APIKEY` comes from `.envrc`; run through
-     `direnv exec . _bin/add_book ...` if the variable is not in the environment).
+   - No extra compression step: the lefthook pre-commit hook runs `compress-images` on
+     staged images (`lefthook install` once per clone).
    - The script prints the cover source and size: **look at the saved cover** (Read the
      file) and make sure it's the right book, the right volume, and a French edition
      when one exists. Wrong cover → delete the file and re-run with `--cover-url` or
@@ -46,10 +46,7 @@ Turn each photo into an entry in `_data/books.json` with a cover, using `_bin/ad
    wide, duplicates, date order, key order). It must report 0 errors before committing;
    `--fix` reorders keys when needed. Read the warnings and mention the relevant ones.
 
-5. **Do not run `_bin/sort_books`** unless asked: it re-orders alphabetically within a
-   month, and the user prefers reading order (newest first).
-
-6. **Commit** only when the user asks, on `master`, message style:
+5. **Commit** only when the user asks, on `master`, message style:
    `feat(bookshelf): add august and september books` / `feat(bookshelf): add <title>`.
    Push only when asked.
 

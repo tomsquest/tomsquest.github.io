@@ -21,12 +21,10 @@ Cover lookup order: --cover-file > --cover-url > --isbn > ISBN found on decitre.
 via text search > DuckDuckGo image search. The chosen source is printed so it
 can be reviewed; re-run with --cover-url to override.
 
-The entry is inserted at the top of books.json (newest first). Run
-_bin/sort_books afterwards if you want strict ordering.
+The entry is inserted at the top of books.json (newest first).
 """
 import argparse
 import json
-import os
 import re
 import sys
 import time
@@ -59,7 +57,7 @@ def volume_number(volume: str | None) -> str:
 
 
 def cover_slug(title: str, series: str | None, volume: str | None) -> str:
-    # Same convention as download_covers.py: series + volume, else title
+    # Series + volume, else title
     name = series or title
     return slugify(f"{name} {volume_number(volume)}")
 
@@ -164,21 +162,6 @@ def save_cover(img: Image.Image, dest: Path) -> None:
     img.save(dest, "JPEG", quality=JPEG_QUALITY, optimize=True, progressive=True)
 
 
-def tinify(dest: Path) -> None:
-    key = os.environ.get("TINIFY_APIKEY")
-    if not key:
-        print("  TINIFY_APIKEY not set, skipping tinify")
-        return
-    r = requests.post("https://api.tinify.com/shrink", auth=("api", key), data=dest.read_bytes(), timeout=60)
-    if r.status_code != 201:
-        print(f"  tinify failed: {r.text[:200]}")
-        return
-    out = requests.get(r.json()["output"]["url"], timeout=60)
-    before = dest.stat().st_size
-    dest.write_bytes(out.content)
-    print(f"  tinify: {before} -> {dest.stat().st_size} bytes")
-
-
 # ---------- main ----------
 
 def main() -> None:
@@ -199,7 +182,6 @@ def main() -> None:
     p.add_argument("--cover-url")
     p.add_argument("--cover-file")
     p.add_argument("--no-cover", action="store_true", help="skip cover lookup entirely")
-    p.add_argument("--tinify", action="store_true", help="also compress the cover with TinyPNG (needs TINIFY_APIKEY)")
     p.add_argument("--dry-run", action="store_true", help="print the entry, do not write anything")
     args = p.parse_args()
 
@@ -236,8 +218,6 @@ def main() -> None:
                 print(f"  {dest.relative_to(ROOT)} already exists, keeping it")
             elif not args.dry_run:
                 save_cover(img, dest)
-                if args.tinify:
-                    tinify(dest)
                 print(f"  saved {dest.relative_to(ROOT)}")
             book["cover"] = f"/{dest.relative_to(ROOT)}"
         else:
