@@ -1,5 +1,17 @@
 [
   {
+    "title": "Une brève histoire de l'économie",
+    "authors": [
+      "Daniel Cohen"
+    ],
+    "rating": 4,
+    "comment": "Court, intéressant, humain, optimiste.",
+    "date": "2026-10",
+    "fiction": false,
+    "cover": "/assets/books/une-breve-histoire-de-l-economie.jpg",
+    "format": "print"
+  },
+  {
     "title": "La Mascarade du boucher",
     "series": "Dungeon Crawler Carl",
     "authors": [
